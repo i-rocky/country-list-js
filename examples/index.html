@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Country JS</title>
+    <script src="../dist/country.min.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input type="text" id="query"></td>
+            <td>
+                <select id="search-by">
+                    <option value="1">ISO-2</option>
+                    <option value="2">ISO-3</option>
+                    <option value="3">Name</option>
+                    <option value="4">Capital</option>
+                    <option value="5">Currency</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="find">Search</button></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td>Continent</td>
+            <td id="continent"></td>
+        </tr>
+        <tr>
+            <td>Capital</td>
+            <td id="capital"></td>
+        </tr>
+        <tr>
+            <td>ISO-2</td>
+            <td id="iso-2"></td>
+        </tr>
+        <tr>
+            <td>ISO-3</td>
+            <td id="iso-3"></td>
+        </tr>
+        <tr>
+            <td>Currency</td>
+            <td id="currency"></td>
+        </tr>
+        <tr>
+            <td>Dialing Code</td>
+            <td id="dialing-code"></td>
+        </tr>
+    </table>
+<script>
+    var country = new Country;
+    var queryInput = getEL('query');
+    var searchByOption = getEL('search-by');
+    var findBtn = getEL('find');
+    findBtn.onclick = function () {
+        var query = queryInput.value;
+        if(!query.length) {
+            alert("Type anything relevant to this project to search");
+            return;
+        }
+        var option = searchByOption.value;
+        var info = country.find(query, option);
+        if(!info) {
+            alert("Not found");
+            return;
+        }
+        setEL('name', info.name);
+        setEL('continent', info.continent);
+        setEL('capital', info.capital);
+        setEL('iso-2', info.code.iso2);
+        setEL('iso-3', info.code.iso3);
+        setEL('currency', info.currency);
+        setEL('dialing-code', info.dialing_code);
+    };
+
+    function getEL(id) {
+        return document.getElementById(id);
+    }
+    function setEL(id, value) {
+        getEL(id).innerText = value;
+    }
+</script>
+</body>
+</html>
