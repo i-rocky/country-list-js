@@ -18,7 +18,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "bbb"
+      "url": "https://github.com/i-rocky/country-js/blob/master/LICENSE"
     }
   ],
   "main": "./build/index.js",
