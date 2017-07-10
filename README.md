@@ -4,16 +4,20 @@
 
 ## Installation
 
-``` <script src="/path/to//country.min.js"></script>```
+```html
+<script src="/path/to/country.min.js"></script>
+```
 
 ## Basic Usage
 #### Instantiation
 
-``` var country = new Country; ```
+```javascript 
+var country = new Country; 
+```
 
 #### Searching
 
-``` 
+```javascript
 var found = country.find('BD', country.FIND_BY_ISO_ALPHA_2);
 var found = country.find('BGD', country.FIND_BY_ISO_ALPHA_3);
 var found = country.find('Bangladesh', country.FIND_BY_NAME);
@@ -23,7 +27,7 @@ var found = country.find('BDT', country.FIND_BY_CURRENCY);
 
 The search option can also be hard coded as following
 
-``` 
+```javascript
 country.FIND_BY_ALPHA_2 = 1
 country.FIND_BY_ALPHA_3 = 2
 country.FIND_BY_NAME = 3
@@ -31,12 +35,12 @@ country.FIND_BY_CAPITAL = 4
 country.FIND_BY_CURRENCY = 5
 ```
 
-``` country.find('BD', country.FIND_BY_ISO_ALPHA_2); ``` can be written as ```country.find('BD', 1);```
+```country.find('BD', country.FIND_BY_ISO_ALPHA_2);``` can be written as ```country.find('BD', 1);```
 
 If the country was not found, the variable ```found``` will be ```null.
 The return value of all of those above will be similar to the following
 
-```
+```javascript
 {
     continent: "Asia",
     name: "Bangladesh",
@@ -52,7 +56,7 @@ The return value of all of those above will be similar to the following
 
 Once the search has been made, if the country was found, the information is stored in the instance. We can retrieve the information without having to search again.
 
-```
+```javascript
 var found = country.info();
 var name = country.info('name'); //Bangladesh
 var iso_alpha_2 = country.info('iso_alpha_2'); //BD
