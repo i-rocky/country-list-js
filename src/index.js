@@ -2,7 +2,7 @@
 
 import continents from '../data/continents';
 import continent from '../data/continent';
-import iso3 from '../data/iso3';
+import iso_alpha_3 from '../data/iso_alpha_3';
 import capital from '../data/capital';
 import currency from '../data/currency';
 import names from '../data/names';
@@ -11,15 +11,22 @@ import phone from '../data/phone';
 function Country() {
     let countryInfo = null;
 
-    this.FIND_BY_ISO2 = 1;
-    this.FIND_BY_ISO3 = 2;
+    this.FIND_BY_ISO_ALPHA_2 = 1;
+    this.FIND_BY_ISO_ALPHA_3 = 2;
     this.FIND_BY_NAME = 3;
     this.FIND_BY_CAPITAL = 4;
     this.FIND_BY_CURRENCY = 5;
 
+    /**
+     * Looks up the needle according to flag and returns found result
+     * 
+     * @param needle
+     * @param flag
+     * @returns {*}
+     */
     this.find = function (needle, flag = 1) {
         switch (parseInt(flag)) {
-            case this.FIND_BY_ISO2:
+            case this.FIND_BY_ISO_ALPHA_2:
                 if(needle===null || needle===undefined) {
                     countryInfo = null;
                     return null;
@@ -27,8 +34,8 @@ function Country() {
                 countryInfo = pullDataForCountry(needle);
                 return countryInfo;
                 break;
-            case this.FIND_BY_ISO3:
-                return findByISO3(needle);
+            case this.FIND_BY_ISO_ALPHA_3:
+                return findByISO_ALPHA_3(needle);
                 break;
             case this.FIND_BY_NAME:
                 return findByName(needle);
@@ -45,16 +52,22 @@ function Country() {
         }
     };
 
+    /**
+     * Pulls data from previous result
+     * 
+     * @param hook
+     * @returns {*}
+     */
     this.info = function (hook=null) {
         if(countryInfo===null) {
             return null;
         }
         switch (hook) {
-            case "iso2":
-                return countryInfo.code.iso2;
+            case "iso_alpha_2":
+                return countryInfo.code.iso_alpha_2;
                 break;
-            case "iso3":
-                return countryInfo.code.iso3;
+            case "iso_alpha_3":
+                return countryInfo.code.iso_alpha_3;
                 break;
             case "name":
                 return countryInfo.name;
@@ -75,23 +88,30 @@ function Country() {
         }
     };
 
+    /**
+     * Populates country data
+     * 
+     * @param code
+     * @returns {*}
+     */
     function pullDataForCountry(code) {
         if(names[code]===undefined)
             return null;
         return {
+            continent: continents[continent[code]],
             name: names[code],
             code: {
-                iso2: code,
-                iso3: iso3[code]
+                iso_alpha_2: code,
+                iso_alpha_3: iso_alpha_3[code]
             },
-            continent: continents[continent[code]],
             capital: capital[code],
             currency: currency[code],
             dialing_code: phone[code]
         };
     }
-    function findByISO3(needle) {
-        return findInObject(iso3, needle);
+
+    function findByISO_ALPHA_3(needle) {
+        return findInObject(iso_alpha_3, needle);
     }
     function findByName(needle) {
         return findInObject(names, needle);
@@ -103,10 +123,18 @@ function Country() {
         return findInObject(currency, needle);
     }
 
-    function findInObject(obj, needle) {
-        for(const key in obj) {
-            if(obj.hasOwnProperty(key)) {
-                if(obj[key].toLowerCase()===needle.toLowerCase()) {
+    /**
+     * Finds for a needle in haystack
+     * 
+     * @param haystack
+     * @param needle
+     * @returns {*}
+     */
+    function findInObject(haystack, needle) {
+        for(const key in haystack) {
+            if(haystack.hasOwnProperty(key)) {
+                //check if we have a match
+                if(haystack[key].toLowerCase()===needle.toLowerCase()) {
                     countryInfo = pullDataForCountry(key);
                     return countryInfo;
                 }

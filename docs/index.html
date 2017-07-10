@@ -9,8 +9,8 @@
             <td><input type="text" id="query"></td>
             <td>
                 <select id="search-by">
-                    <option value="1">ISO-2</option>
-                    <option value="2">ISO-3</option>
+                    <option value="1">ISO-ALPHA-2</option>
+                    <option value="2">ISO-ALPHA-3</option>
                     <option value="3">Name</option>
                     <option value="4">Capital</option>
                     <option value="5">Currency</option>
@@ -34,12 +34,12 @@
             <td id="capital"></td>
         </tr>
         <tr>
-            <td>ISO-2</td>
-            <td id="iso-2"></td>
+            <td>ISO-ALPHA-2</td>
+            <td id="iso-alpha-2"></td>
         </tr>
         <tr>
-            <td>ISO-3</td>
-            <td id="iso-3"></td>
+            <td>ISO-ALPHA-3</td>
+            <td id="iso-alpha-3"></td>
         </tr>
         <tr>
             <td>Currency</td>
@@ -70,8 +70,8 @@
         setEL('name', info.name);
         setEL('continent', info.continent);
         setEL('capital', info.capital);
-        setEL('iso-2', info.code.iso2);
-        setEL('iso-3', info.code.iso3);
+        setEL('iso-alpha-2', info.code.iso_alpha_2);
+        setEL('iso-alpha-3', info.code.iso_alpha_3);
         setEL('currency', info.currency);
         setEL('dialing-code', info.dialing_code);
     };
