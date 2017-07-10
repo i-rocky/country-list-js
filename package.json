@@ -1,5 +1,5 @@
 {
-  "name": "country-js",
+  "name": "country-list-js",
   "version": "0.0.1",
   "description": "Country list with ISO2, ISO3 code, continent, capital, dialing code",
   "homepage": "https://github.com/i-rocky/country-js.git",

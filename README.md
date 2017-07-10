@@ -1,6 +1,7 @@
-## Country JS
+## Country List JS
 
-> https://i-rocky.github.io/country-js/
+> https://i-rocky.github.io/country-list-js/
+> https://www.npmjs.com/package/country-list-js
 
 ## Installation
 
@@ -8,6 +9,11 @@
 <script src="/path/to/country.min.js"></script>
 ```
 
+or
+
+```
+npm install country-list-js
+```
 ## Basic Usage
 #### Instantiation
 
@@ -65,4 +71,16 @@ var continent = country.info('continent'); //Asia
 var capital = country.info('capital'); //Dhaka
 var currency = country.info('currency'); //BDT
 var dialing_code = country.info('dialing_code'); //880
+```
+
+### npm commands
+
+##### Test
+```
+npm run test
+```
+
+##### Build
+```
+npm run build
 ```
