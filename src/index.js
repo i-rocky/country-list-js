@@ -17,6 +17,16 @@ function Country() {
     this.FIND_BY_CAPITAL = 4;
     this.FIND_BY_CURRENCY = 5;
 
+    this.all = function () {
+        const all = [];
+        for(const key in names) {
+            if(names.hasOwnProperty(key)) {
+                all.push(pullDataForCountry(key));
+            }
+        }
+        return all;
+    };
+
     /**
      * Looks up the needle according to flag and returns found result
      * 
