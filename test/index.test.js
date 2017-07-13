@@ -51,7 +51,11 @@ describe('Country', ()=>{
                 iso_alpha_3: "BGD"
             },
             capital: "Dhaka",
-            currency: "BDT",
+            currency: {
+                code: "BDT",
+                symbol: "Tk",
+                decimal: "2"
+            },
             dialing_code: "880"
         });
     }
@@ -63,7 +67,7 @@ describe('Country', ()=>{
         expect(country.info('iso_alpha_3')).to.be.equal('BGD');
         expect(country.info('continent')).to.be.equal('Asia');
         expect(country.info('capital')).to.be.equal('Dhaka');
-        expect(country.info('currency')).to.be.equal('BDT');
+        expect(country.info('currency')).to.deep.equal({code: "BDT", symbol: "Tk", decimal: "2"});
         expect(country.info('dialing_code')).to.be.equal('880');
     });
 
