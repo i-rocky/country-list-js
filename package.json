@@ -1,8 +1,8 @@
 {
   "name": "country-list-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Country list with ISO2, ISO3 code, continent, capital, dialing code",
-  "homepage": "https://github.com/i-rocky/country-js.git",
+  "homepage": "https://github.com/i-rocky/country-list-js.git",
   "author": {
     "name": "Rocky",
     "url": "https://github.com/users/i-rocky",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i-rocky/country-js.git"
+    "url": "git+https://github.com/i-rocky/country-list-js.git"
   },
   "bugs": {
-    "url": "https://github.com/i-rocky/country-js/issues"
+    "url": "https://github.com/i-rocky/country-list-js/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/i-rocky/country-js/blob/master/LICENSE"
+      "url": "https://github.com/i-rocky/country-list-js/blob/master/LICENSE"
     }
   ],
   "main": "./build/index.js",

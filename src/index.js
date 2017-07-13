@@ -5,6 +5,7 @@ import continent from '../data/continent';
 import iso_alpha_3 from '../data/iso_alpha_3';
 import capital from '../data/capital';
 import currency from '../data/currency';
+import currency_info from '../data/currency_info';
 import names from '../data/names';
 import phone from '../data/phone';
 
@@ -107,6 +108,7 @@ function Country() {
     function pullDataForCountry(code) {
         if(names[code]===undefined)
             return null;
+        const currencyInfo = currency_info[currency[code]];
         return {
             continent: continents[continent[code]],
             name: names[code],
@@ -115,7 +117,11 @@ function Country() {
                 iso_alpha_3: iso_alpha_3[code]
             },
             capital: capital[code],
-            currency: currency[code],
+            currency: {
+                code: currency[code],
+                symbol: currencyInfo.symbol,
+                decimal: currencyInfo.decimal
+            },
             dialing_code: phone[code]
         };
     }

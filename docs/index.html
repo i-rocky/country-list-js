@@ -42,8 +42,16 @@
             <td id="iso-alpha-3"></td>
         </tr>
         <tr>
-            <td>Currency</td>
-            <td id="currency"></td>
+            <td>Currency Code</td>
+            <td id="currency_code"></td>
+        </tr>
+        <tr>
+            <td>Currency Symbol</td>
+            <td id="currency_symbol"></td>
+        </tr>
+        <tr>
+            <td>Currency Decimal</td>
+            <td id="currency_decimal"></td>
         </tr>
         <tr>
             <td>Dialing Code</td>
@@ -72,7 +80,10 @@
         setEL('capital', info.capital);
         setEL('iso-alpha-2', info.code.iso_alpha_2);
         setEL('iso-alpha-3', info.code.iso_alpha_3);
-        setEL('currency', info.currency);
+        var currency = info.currency;
+        setEL('currency_code', currency.code);
+        setEL('currency_symbol', currency.symbol);
+        setEL('currency_decimal', currency.decimal);
         setEL('dialing-code', info.dialing_code);
     };
 

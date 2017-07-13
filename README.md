@@ -1,5 +1,9 @@
 ## Country List JS
 
+[![Build Status](https://travis-ci.org/i-rocky/country-list-js.svg?branch=master)](https://travis-ci.org/i-rocky/country-list-js) [![Version](https://img.shields.io/npm/v/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
+[![Total Downloads](https://img.shields.io/npm/dt/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
+[![License](https://img.shields.io/github/license/i-rocky/country-list-js.svg)](https://github.com/i-rocky/country-list-js/blob/master/LICENSE)
+
 > https://i-rocky.github.io/country-list-js/
 
 > https://www.npmjs.com/package/country-list-js
@@ -32,6 +36,8 @@ var found = country.find('Capital', country.FIND_BY_CAPITAL);
 var found = country.find('BDT', country.FIND_BY_CURRENCY);
 ```
 
+* Note: Search query is case insensitive.
+
 The search option can also be hard coded as following
 
 ```javascript
@@ -44,7 +50,7 @@ country.FIND_BY_CURRENCY = 5
 
 ```country.find('BD', country.FIND_BY_ISO_ALPHA_2);``` can be written as ```country.find('BD', 1);```
 
-If the country was not found, the variable ```found``` will be ```null.
+If the country was not found, the variable ```found``` will be ```null```.
 The return value of all of those above will be similar to the following
 
 ```javascript
@@ -56,7 +62,11 @@ The return value of all of those above will be similar to the following
         iso_alpha_3: "BGD"
     },
     capital: "Dhaka",
-    currency: "BDT",
+    currency: {
+        code: "BDT",
+        symbol: "Tk",
+        decimal: "2"
+    },
     dialing_code: "880"
 }
 ```
@@ -70,7 +80,10 @@ var iso_alpha_2 = country.info('iso_alpha_2'); //BD
 var iso_alpha_3 = country.info('iso_alpha_3'); //BGD
 var continent = country.info('continent'); //Asia
 var capital = country.info('capital'); //Dhaka
-var currency = country.info('currency'); //BDT
+var currency = country.info('currency'); //{ code: "BDT", symbol: "Tk", decimal: "2"}
+currency.code //BDT
+currency.symbol //Tk
+currency.decimal //2
 var dialing_code = country.info('dialing_code'); //880
 ```
 
