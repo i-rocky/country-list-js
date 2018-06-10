@@ -1,15 +1,15 @@
 "use strict";
 
-import continents from '../data/continents';
-import continent from '../data/continent';
-import iso_alpha_3 from '../data/iso_alpha_3';
-import capital from '../data/capital';
-import currency from '../data/currency';
-import currency_info from '../data/currency_info';
-import names from '../data/names';
-import phone from '../data/phone';
+const continents = require('./../data/continents.json');
+const continent = require('../data/continent.json');
+const iso_alpha_3 = require('../data/iso_alpha_3.json');
+const capital = require('../data/capital.json');
+const currency = require('../data/currency.json');
+const currency_info = require('../data/currency_info.json');
+const names = require('../data/names.json');
+const phone = require('../data/phone.json');
 
-function Country() {
+function Country () {
     let countryInfo = null;
 
     this.FIND_BY_ISO_ALPHA_2 = 1;
@@ -30,7 +30,7 @@ function Country() {
 
     /**
      * Looks up the needle according to flag and returns found result
-     * 
+     *
      * @param needle
      * @param flag
      * @returns {*}
@@ -60,7 +60,7 @@ function Country() {
 
     /**
      * Pulls data from previous result
-     * 
+     *
      * @param hook
      * @returns {*}
      */
@@ -89,7 +89,7 @@ function Country() {
 
     /**
      * Populates country data
-     * 
+     *
      * @param code
      * @returns {*}
      */
@@ -129,7 +129,7 @@ function Country() {
 
     /**
      * Finds for a needle in haystack
-     * 
+     *
      * @param haystack
      * @param needle
      * @returns {*}
@@ -149,5 +149,4 @@ function Country() {
     }
 }
 
-global.Country = Country;
 module.exports = Country;
