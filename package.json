@@ -21,7 +21,7 @@
       "url": "https://github.com/i-rocky/country-list-js/blob/master/LICENSE"
     }
   ],
-  "main": "./src/index.js",
+  "main": "./build/index.js",
   "keywords": [
     "country",
     "country js",

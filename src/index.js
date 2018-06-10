@@ -36,30 +36,25 @@ function Country() {
      * @returns {*}
      */
     this.find = function (needle, flag = 1) {
-        switch (parseInt(flag)) {
-            case this.FIND_BY_ISO_ALPHA_2:
-                if(needle===null || needle===undefined) {
-                    countryInfo = null;
-                    return null;
-                }
-                countryInfo = pullDataForCountry(needle);
-                return countryInfo;
-                break;
-            case this.FIND_BY_ISO_ALPHA_3:
-                return findByISO_ALPHA_3(needle);
-                break;
-            case this.FIND_BY_NAME:
-                return findByName(needle);
-                break;
-            case this.FIND_BY_CAPITAL:
-                return findByCapital(needle);
-                break;
-            case this.FIND_BY_CURRENCY:
-                return findByCurrency(needle);
-                break;
-            default:
-                countryInfo = pullDataForCountry(needle);
-                return countryInfo;
+        let number = parseInt(flag);
+        if (number === this.FIND_BY_ISO_ALPHA_2) {
+            if (needle === null || needle === undefined) {
+                countryInfo = null;
+                return null;
+            }
+            countryInfo = pullDataForCountry(needle);
+            return countryInfo;
+        } else if (number === this.FIND_BY_ISO_ALPHA_3) {
+            return findByISO_ALPHA_3(needle);
+        } else if (number === this.FIND_BY_NAME) {
+            return findByName(needle);
+        } else if (number === this.FIND_BY_CAPITAL) {
+            return findByCapital(needle);
+        } else if (number === this.FIND_BY_CURRENCY) {
+            return findByCurrency(needle);
+        } else {
+            countryInfo = pullDataForCountry(needle);
+            return countryInfo;
         }
     };
 
@@ -73,29 +68,22 @@ function Country() {
         if(countryInfo===null) {
             return null;
         }
-        switch (hook) {
-            case "iso_alpha_2":
-                return countryInfo.code.iso_alpha_2;
-                break;
-            case "iso_alpha_3":
-                return countryInfo.code.iso_alpha_3;
-                break;
-            case "name":
-                return countryInfo.name;
-                break;
-            case "continent":
-                return countryInfo.continent;
-                break;
-            case "capital":
-                return countryInfo.capital;
-            case "currency":
-                return countryInfo.currency;
-                break;
-            case "dialing_code":
-                return countryInfo.dialing_code;
-                break;
-            default:
-                return countryInfo;
+        if (hook === "iso_alpha_2") {
+            return countryInfo.code.iso_alpha_2;
+        } else if (hook === "iso_alpha_3") {
+            return countryInfo.code.iso_alpha_3;
+        } else if (hook === "name") {
+            return countryInfo.name;
+        } else if (hook === "continent") {
+            return countryInfo.continent;
+        } else if (hook === "capital") {
+            return countryInfo.capital;
+        } else if (hook === "currency") {
+            return countryInfo.currency;
+        } else if (hook === "dialing_code") {
+            return countryInfo.dialing_code;
+        } else {
+            return countryInfo;
         }
     };
 

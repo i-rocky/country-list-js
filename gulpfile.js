@@ -15,8 +15,7 @@ gulp.task('compile', function() {
         .pipe(rename('country.min.js'))
         .pipe(sourcemaps.write())
         .pipe(notify("Build complete"))
-        .pipe(gulp.dest('./dist'))
-        .pipe(gulp.dest('./docs'));
+        .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('watch', function() {
