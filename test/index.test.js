@@ -39,6 +39,9 @@ describe('Country', ()=>{
     it('Find by currency', function () {
         validate_result(country.find('BDT', country.FIND_BY_CURRENCY));
     });
+    it('find by phone number', function() {
+        validate_result(country.find('+8805551212', country.FIND_BY_PHONE_NBR));
+    });
 
     function validate_result(info) {
         expect(Object.keys(info).length).to.be.equal(6);

@@ -17,6 +17,7 @@ function Country () {
     this.FIND_BY_NAME = 3;
     this.FIND_BY_CAPITAL = 4;
     this.FIND_BY_CURRENCY = 5;
+    this.FIND_BY_PHONE_NBR = 6;
 
     this.all = function () {
         const all = [];
@@ -52,6 +53,8 @@ function Country () {
             return findByCapital(needle);
         } else if (number === this.FIND_BY_CURRENCY) {
             return findByCurrency(needle);
+        } else if (number === this.FIND_BY_PHONE_NBR) {
+            return findByPhoneNbr(needle);
         } else {
             countryInfo = pullDataForCountry(needle);
             return countryInfo;
@@ -125,6 +128,34 @@ function Country () {
     }
     function findByCurrency(needle) {
         return findInObject(currency, needle);
+    }
+    function findByPhoneNbr(needle) {
+        // make sure the phone number is clean
+
+        var nbr = needle.replace(/\D/g, '');
+
+        // create an equally clean list of prefixes
+
+        var ls = [];
+        for(const key in phone) {
+            if(phone.hasOwnProperty(key)) {
+                ls.push({code: key, nbr: phone[key].replace(/\D/g, '')})
+            }
+        }
+
+        // we need to match the phone number against the longest
+        // prefix we can find.  that avoids matching against 1 (US)
+        // when we should be matching against 1246 (Barbados)
+
+        ls.sort((a,b) => a.nbr.length < b.nbr.length ? 1 : -1);
+
+        // now match prefixes against the phone number
+
+        for (var i = 0; i < ls.length; i++) {
+            if (nbr.startsWith(ls[i].nbr)) {
+                return pullDataForCountry(ls[i].code);
+            }
+        }
     }
 
     /**
