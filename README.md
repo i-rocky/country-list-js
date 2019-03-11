@@ -89,6 +89,24 @@ currency.decimal //2
 var dialing_code = country.info('dialing_code'); //880
 ```
 
+Object destructor supported since `2.0.0`
+
+```javascript
+import {findByName} from 'country-list-js';
+
+const country = findByName('Bangladesh');
+```
+
+Available functions
+
+* getInstance
+* findByISOAlpha2
+* findByISOAlpha3
+* findByName
+* findByCapital
+* findByCurrency
+* findByPhoneNbr 
+
 ### npm commands
 
 ##### Test
