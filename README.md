@@ -92,21 +92,22 @@ var dialing_code = country.info('dialing_code'); //880
 Added static methods since `2.0.0`
 
 ```javascript
-import Country, {findByName} from 'country-list-js';
+import Country, {findByName, findByPhoneNumber} from 'country-list-js';
 
 const country = Country.findByName('Bangladesh');
 const country = findByName('Bangladesh');
+const country = findByPhoneNumber('+8801333333333');
 ```
 
 Available functions
 
-* getInstance
-* findByISOAlpha2
-* findByISOAlpha3
-* findByName
-* findByCapital
-* findByCurrency
-* findByPhoneNumber (Thanks to @ekkis)
+* `getInstance`
+* `findByISOAlpha2`
+* `findByISOAlpha3`
+* `findByName`
+* `findByCapital`
+* `findByCurrency`
+* `findByPhoneNumber` (Thanks to @ekkis)
 
 ### npm commands
 
