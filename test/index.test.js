@@ -1,7 +1,7 @@
 "use strict";
 
 import { expect} from 'chai';
-import Country from "./../src/index";
+import Country, {findByCapital, findByName} from './../src/index';
 
 describe('Country', ()=>{
 
@@ -39,7 +39,7 @@ describe('Country', ()=>{
     it('Find by currency', function () {
         validate_result(country.find('BDT', country.FIND_BY_CURRENCY));
     });
-    it('find by phone number', function() {
+    it('Find by phone number', function() {
         validate_result(country.find('+8805551212', country.FIND_BY_PHONE_NBR));
     });
 
@@ -76,6 +76,11 @@ describe('Country', ()=>{
 
     it('null is returned if not found', function () {
         expect(country.find('XX', country.FIND_BY_ISO_ALPHA_2)).to.be.equal(null);
+    });
+
+    it('object destructor should work', function() {
+        validate_result(findByName('Bangladesh'));
+        validate_result(findByCapital('Dhaka'));
     });
 
 });
