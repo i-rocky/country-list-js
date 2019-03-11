@@ -105,7 +105,7 @@ Available functions
 * findByName
 * findByCapital
 * findByCurrency
-* findByPhoneNbr 
+* findByPhoneNbr (Thanks to @ekkis)
 
 ### npm commands
 

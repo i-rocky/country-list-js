@@ -200,32 +200,32 @@ function Country() {
 
 const instance = new Country;
 
-export function getInstance() {
+Country.getInstance = function() {
   return instance;
-}
+};
 
-export function findByISOALpha2(code) {
-  return getInstance().find(code, getInstance().FIND_BY_ISO_ALPHA_2);
-}
+Country.findByISOAlpha2 = function(code) {
+  return Country.Country.getInstance().find(code, Country.getInstance().FIND_BY_ISO_ALPHA_2);
+};
 
-export function findByISOAlpha3(code) {
-  return getInstance().find(code, getInstance().FIND_BY_ISO_ALPHA_3);
-}
+Country.findByISOAlpha3 = function(code) {
+  return Country.getInstance().find(code, Country.getInstance().FIND_BY_ISO_ALPHA_3);
+};
 
-export function findByName(name) {
-  return getInstance().find(name, getInstance().FIND_BY_NAME);
-}
+Country.findByName = function(name) {
+  return Country.getInstance().find(name, Country.getInstance().FIND_BY_NAME);
+};
 
-export function findByCapital(capital) {
-  return getInstance().find(capital, getInstance().FIND_BY_CAPITAL);
-}
+Country.findByCapital = function(capital) {
+  return Country.getInstance().find(capital, Country.getInstance().FIND_BY_CAPITAL);
+};
 
-export function findByCurrency(currency) {
-  return getInstance().find(currency, getInstance().FIND_BY_CURRENCY);
-}
+Country.findByCurrency = function(currency) {
+  return Country.getInstance().find(currency, Country.getInstance().FIND_BY_CURRENCY);
+};
 
-export function findByPhoneNbr(phone) {
-  return getInstance().find(capital, getInstance().FIND_BY_PHONE_NBR);
-}
+Country.findByPhoneNbr = function(phone) {
+  return Country.getInstance().find(capital, Country.getInstance().FIND_BY_PHONE_NBR);
+};
 
-export default Country;
+module.exports = Country;
