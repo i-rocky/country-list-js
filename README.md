@@ -17,7 +17,7 @@
 or
 
 ```
-npm install country-list-js
+npm install --save country-list-js
 ```
 ## Basic Usage
 #### Instantiation
@@ -34,6 +34,7 @@ var found = country.find('BGD', country.FIND_BY_ISO_ALPHA_3);
 var found = country.find('Bangladesh', country.FIND_BY_NAME);
 var found = country.find('Capital', country.FIND_BY_CAPITAL);
 var found = country.find('BDT', country.FIND_BY_CURRENCY);
+var found = country.find('880', country.FIND_BY_PHONE_NBR);
 ```
 
 * Note: Search query is case insensitive.
@@ -46,6 +47,7 @@ country.FIND_BY_ALPHA_3 = 2
 country.FIND_BY_NAME = 3
 country.FIND_BY_CAPITAL = 4
 country.FIND_BY_CURRENCY = 5
+country.FIND_BY_PHONE_NBR = 6
 ```
 
 ```country.find('BD', country.FIND_BY_ISO_ALPHA_2);``` can be written as ```country.find('BD', 1);```
