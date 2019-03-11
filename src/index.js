@@ -17,7 +17,7 @@ function Country() {
   this.FIND_BY_NAME = 3;
   this.FIND_BY_CAPITAL = 4;
   this.FIND_BY_CURRENCY = 5;
-  this.FIND_BY_PHONE_NBR = 6;
+  this.FIND_BY_PHONE_NUMBER = 6;
 
   this.all = function() {
     const all = [];
@@ -58,8 +58,8 @@ function Country() {
     else if (number === this.FIND_BY_CURRENCY) {
       return findByCurrency(needle);
     }
-    else if (number === this.FIND_BY_PHONE_NBR) {
-      return findByPhoneNbr(needle);
+    else if (number === this.FIND_BY_PHONE_NUMBER) {
+      return findByPhoneNumber(needle);
     }
     else {
       countryInfo = pullDataForCountry(needle);
@@ -147,14 +147,14 @@ function Country() {
     return findInObject(currency, needle);
   }
 
-  function findByPhoneNbr(needle) {
+  function findByPhoneNumber(needle) {
     // make sure the phone number is clean
 
-    var nbr = needle.replace(/\D/g, '');
+    const nbr = needle.replace(/\D/g, '');
 
     // create an equally clean list of prefixes
 
-    var ls = [];
+    const ls = [];
     for (const key in phone) {
       if (phone.hasOwnProperty(key)) {
         ls.push({code: key, nbr: phone[key].replace(/\D/g, '')});
@@ -169,7 +169,7 @@ function Country() {
 
     // now match prefixes against the phone number
 
-    for (var i = 0; i < ls.length; i++) {
+    for (let i = 0; i < ls.length; i++) {
       if (nbr.startsWith(ls[i].nbr)) {
         return pullDataForCountry(ls[i].code);
       }
@@ -205,7 +205,7 @@ Country.getInstance = function() {
 };
 
 Country.findByISOAlpha2 = function(code) {
-  return Country.Country.getInstance().find(code, Country.getInstance().FIND_BY_ISO_ALPHA_2);
+  return Country.getInstance().find(code, Country.getInstance().FIND_BY_ISO_ALPHA_2);
 };
 
 Country.findByISOAlpha3 = function(code) {
@@ -224,8 +224,8 @@ Country.findByCurrency = function(currency) {
   return Country.getInstance().find(currency, Country.getInstance().FIND_BY_CURRENCY);
 };
 
-Country.findByPhoneNbr = function(phone) {
-  return Country.getInstance().find(capital, Country.getInstance().FIND_BY_PHONE_NBR);
+Country.findByPhoneNumber = function(phone) {
+  return Country.getInstance().find(phone, Country.getInstance().FIND_BY_PHONE_NUMBER);
 };
 
 module.exports = Country;

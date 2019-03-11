@@ -89,11 +89,12 @@ currency.decimal //2
 var dialing_code = country.info('dialing_code'); //880
 ```
 
-Object destructure supported since `2.0.0`
+Added static methods since `2.0.0`
 
 ```javascript
-import {findByName} from 'country-list-js';
+import Country, {findByName} from 'country-list-js';
 
+const country = Country.findByName('Bangladesh');
 const country = findByName('Bangladesh');
 ```
 
@@ -105,7 +106,7 @@ Available functions
 * findByName
 * findByCapital
 * findByCurrency
-* findByPhoneNbr (Thanks to @ekkis)
+* findByPhoneNumber (Thanks to @ekkis)
 
 ### npm commands
 

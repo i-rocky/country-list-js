@@ -1,7 +1,7 @@
 "use strict";
 
 import { expect} from 'chai';
-import Country, {findByCapital, findByName} from './../src/index';
+import Country, {findByISOAlpha2, findByISOAlpha3, findByCapital, findByName, findByCurrency, findByPhoneNumber} from './../src/index';
 
 describe('Country', ()=>{
 
@@ -40,7 +40,7 @@ describe('Country', ()=>{
         validate_result(country.find('BDT', country.FIND_BY_CURRENCY));
     });
     it('Find by phone number', function() {
-        validate_result(country.find('+8805551212', country.FIND_BY_PHONE_NBR));
+        validate_result(country.find('+8805551212', country.FIND_BY_PHONE_NUMBER));
     });
 
     function validate_result(info) {
@@ -79,8 +79,12 @@ describe('Country', ()=>{
     });
 
     it('object destructor should work', function() {
+        validate_result(findByISOAlpha2('BD'));
+        validate_result(findByISOAlpha3('BGD'));
         validate_result(findByName('Bangladesh'));
         validate_result(findByCapital('Dhaka'));
+        validate_result(findByCurrency('BDT'));
+        validate_result(findByPhoneNumber('+8801333333'));
     });
 
 });
