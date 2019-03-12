@@ -58,6 +58,7 @@ The return value of all of those above will be similar to the following
 ```javascript
 {
     continent: "Asia",
+    region: "Southern Asia",
     name: "Bangladesh",
     code: {
         iso_alpha_2: "BD",

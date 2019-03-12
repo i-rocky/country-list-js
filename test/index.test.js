@@ -44,10 +44,11 @@ describe('Country', ()=>{
     });
 
     function validate_result(info) {
-        expect(Object.keys(info).length).to.be.equal(6);
+        expect(Object.keys(info).length).to.be.equal(7);
 
         expect(info).to.deep.equal({
             continent: "Asia",
+            region: "Southern Asia",
             name: "Bangladesh",
             code: {
                 iso_alpha_2: "BD",

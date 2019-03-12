@@ -8,6 +8,7 @@ const currency = require('../data/currency.json');
 const currency_info = require('../data/currency_info.json');
 const names = require('../data/names.json');
 const phone = require('../data/phone.json');
+const regions = require('../data/regions.json');
 
 function Country () {
     let countryInfo = null;
@@ -85,6 +86,8 @@ function Country () {
             return countryInfo.currency;
         } else if (hook === "dialing_code") {
             return countryInfo.dialing_code;
+        } else if (hook === 'region') {
+            return countryInfo.region;
         } else {
             return countryInfo;
         }
@@ -102,6 +105,7 @@ function Country () {
         const currencyInfo = currency_info[currency[code]];
         return {
             continent: continents[continent[code]],
+            region: regions[code],
             name: names[code],
             code: {
                 iso_alpha_2: code,
