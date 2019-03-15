@@ -1,28 +1,32 @@
-## Country List JS
+# Country List JS
 
 [![Build Status](https://travis-ci.org/i-rocky/country-list-js.svg?branch=master)](https://travis-ci.org/i-rocky/country-list-js) [![Version](https://img.shields.io/npm/v/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
 [![Total Downloads](https://img.shields.io/npm/dt/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
 [![License](https://img.shields.io/github/license/i-rocky/country-list-js.svg)](https://github.com/i-rocky/country-list-js/blob/master/LICENSE)
 
-## Installation
+This module contains country information including 2 and 3 character ISO codes, country and capital names,
+currency information, telephone calling codes, and provinces (first-tier political subdivisions)
 
+## Installation
+```
+npm install --save country-list-js
+```
+
+## Basic Usage
+
+In a web page, include  like this:
 ```html
 <script src="/path/to/country.min.js"></script>
 ```
 
-or
-
-```
-npm install --save country-list-js
-```
-## Basic Usage
-In CommonJs envrionments, require as usual:
+For CommonJs envrionments, require as usual:
 ```javascript 
 var country = require('country-list-js'); 
 ```
 
 #### Searching
 Searches can be conducted by any of the following methods:
+
 ```javascript
 var found = country.findByIso2('BD');
 var found = country.findByIso3('BGD');
@@ -30,34 +34,41 @@ var found = country.findByName('Bangladesh');
 var found = country.findByCapital('Dakha');
 var found = country.findByCurrency('BDT');
 var found = country.findByPhoneNbr('+8804005050');
+var found = country.findByProvince('Steiermark');
 ```
 
-Note: Search queries are case insensitive.
-
-If the country cannot be found, the return value is  ```undefined```.
-The return value of all of those above will be similar to the following
+If the country cannot be found, the return value is  `undefined`.
+If a single value is found, it is returned as an object similar to the
+one shown below, and if multiple matches are made, an array of such
+objects is returned
 
 ```javascript
-{
-    continent: "Asia",
-    region: "Southern Asia",
-    name: "Bangladesh",
-    code: {
-        iso_alpha_2: "BD",
-        iso_alpha_3: "BGD"
-    },
-    capital: "Dhaka",
-    currency: {
-        code: "BDT",
-        symbol: "Tk",
-        decimal: "2"
-    },
-    dialing_code: "880"
+{ 
+    name: 'Denmark',
+    continent: 'Europe',
+    region: 'Scandinavia, Nordic Countries',
+    capital: 'Copenhagen',
+    currency: { code: 'DKK', symbol: 'Dkr', decimal: '2' },
+    dialing_code: '45',
+    provinces: [
+        { name: 'Hovedstaden', alias: null },
+        { name: 'Midtjylland', alias: null },
+        { name: 'Nordjylland', alias: null },
+        { name: 'Sjælland', alias: [ 'Zealand' ] },
+        { name: 'Syddanmark', alias: null }
+    ],
+    code: { iso_alpha_2: 'DK', iso_alpha_3: 'DNK' } 
 }
 ```
 
-Queries are cached so only the first time a country is searched by requires traversal
-of the internal structures and thus calls will resolve very quickly.
+## Notes
+
+* Queries are cached so only the first time a country is searched by requires traversal
+of the internal structures and thus calls will resolve very quickly
+
+* Search queries are case insensitive
+
+* Province searches include aliases so you may search for either ***Sjælland*** or ***Zealand***
 
 ## NPM Commands
 

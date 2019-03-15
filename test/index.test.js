@@ -5,67 +5,78 @@ import country from "./../src/index";
 import { ok } from 'assert';
 
 describe('Country', () => {
+    var DK = { 
+        name: 'Denmark',
+        continent: 'Europe',
+        region: 'Scandinavia, Nordic Countries',
+        capital: 'Copenhagen',
+        currency: { code: 'DKK', symbol: 'Dkr', decimal: '2' },
+        dialing_code: '45',
+        provinces: [
+            { name: 'Hovedstaden', alias: null },
+            { name: 'Midtjylland', alias: null },
+            { name: 'Nordjylland', alias: null },
+            { name: 'Sjælland', alias: [ 'Zealand' ] },
+            { name: 'Syddanmark', alias: null }
+        ],
+        code: { iso2: 'DK', iso3: 'DNK' } 
+    };
+
     it('There has to be total of 250 countries', () => {
         expect(Object.keys(country.all).length).to.be.equal(250);
     });
-
+    it('There must be 8 keys in the object', () => {
+        expect(Object.keys(country.findByIso2('DK')).length).to.be.equal(8);
+    });
     it('Find by iso alpha 2', function() {
-        validate_result(country.findByIso2('BD'));
+        var actual = country.findByIso2('DK');
+        expect(actual).to.deep.equal(DK);
     });
-
     it('Find by iso alpha 3', function () {
-        validate_result(country.findByIso3('BGD'));
+        var actual = country.findByIso3('DNK');
+        expect(actual).to.deep.equal(DK);
     });
-
     it('Find by Name', function () {
-        validate_result(country.findByName('Bangladesh'));
+        var actual = country.findByName('Denmark');
+        expect(actual).to.deep.equal(DK);
     });
-
     it('Find by capital', function () {
-        validate_result(country.findByCapital('Dhaka'));
+        var actual = country.findByCapital('Copenhagen');
+        expect(actual).to.deep.equal(DK);
     });
     it('Find by currency', function () {
-        validate_result(country.findByCurrency('BDT'));
+        var actual = country.findByCurrency('DKK');
+        expect(actual).to.have.lengthOf(3);
     });
     it('find by phone number', function() {
-        validate_result(country.findByPhoneNbr('+8805551212'));
+        var actual = country.findByPhoneNbr('+4505551212');
+        expect(actual.code.iso2).to.equal('DK');
+    });
+    it('find by province', function() {
+        var actual = country.findByProvince('Nordjylland');
+        expect(actual).to.deep.equal(DK);
+    });
+    it('find by province alias', function() {
+        var actual = country.findByProvince('Zealand');
+        expect(actual).to.deep.equal(DK);
     });
 
-    function validate_result(info) {
-        expect(Object.keys(info).length).to.be.equal(7);
-
-        expect(info).to.deep.equal({
-            code: {
-                iso_alpha_2: "BD",
-                iso_alpha_3: "BGD"
-            },
-            name: "Bangladesh",
-            continent: "Asia",
-            region: "Southern Asia",
-            capital: "Dhaka",
-            currency: {
-                code: "BDT",
-                symbol: "Tk",
-                decimal: "2"
-            },
-            dialing_code: "880"
-        });
-    }
-
-    it('Once the search has been made, the data is cached', function () {
-        ok('BGD' in country.cache.iso3, 'ISO3 cache failed');
-        ok('Bangladesh' in country.cache.name, 'Country name cache failed');
-        ok('Dhaka' in country.cache.capital, 'Capital cache failed');
-        ok('BDT' in country.cache.currency, 'Currency cache failed');
+    it('Cache presence tests', function () {
+        ok('DNK' in country.cache.iso3, 'ISO3 cache failed');
+        ok('Denmark' in country.cache.name, 'Country name cache failed');
+        ok('Copenhagen' in country.cache.capital, 'Capital cache failed');
+        ok('DKK' in country.cache.currency, 'Currency cache failed');
+        ok('Nordjylland' in country.cache.province, 'Province cache failed');
+        ok('Zealand' in country.cache.province, 'Province cache failed');
     });
 
-    it('null is returned if not found', function () {
+    it('Null is returned if not found', function () {
         expect(country.findByIso2('XX')).to.be.equal(undefined);
         expect(country.findByIso3('XX')).to.be.equal(undefined);
         expect(country.findByName('XX')).to.be.equal(undefined);
         expect(country.findByCapital('XX')).to.be.equal(undefined);
         expect(country.findByCurrency('XX')).to.be.equal(undefined);
-        console.log(country.findByPhoneNbr('XX'))
         expect(country.findByPhoneNbr('XX')).to.be.equal(undefined);
+        expect(country.findByProvince('XX')).to.be.equal(undefined);
     });
 });

@@ -8,13 +8,29 @@ var self = module.exports = {
     findByName: name => find('name', name),
     findByCapital: name => find('capital', name),
     findByCurrency: code => find('currency', code),
+    findByProvince(name) {
+        if (!self.cache.province) self.cache.province = {};
+        if (self.cache.province[name])
+            return self.cache.province[name].map(o => x(o));
+    
+        return self.cache.province[name] = Object.keys(self.all)
+            .map(k => self.all[k])
+            .filter(o => o.provinces)
+            .filter(o => o.provinces.filter(
+                o => o.name == name || (o.alias || []).indexOf(name) > -1
+              ).length > 0
+            )
+            .map(o => x(o))
+            .unpack(undefined);
+    },
     findByPhoneNbr(nbr) {
-        nbr = nbr.replace(/\D/g, '');   // make sure the phone number is clean
+        // make sure the phone number is clean
+        nbr = nbr.replace(/\D/g, '');
         
         // now match prefixes against the phone number
-        for (var i = 0; i < phones.length; i++)
-            if (phones[i].nbr && nbr.startsWith(phones[i].nbr))
-                return x(self.all[phones[i].code]);
+        return phones.filter(o => o.nbr && nbr.startsWith(o.nbr))
+            .map(o => x(self.all[o.code]))
+            .unpack(undefined);
     }
 };
 
@@ -22,16 +38,15 @@ var self = module.exports = {
 
 function x(o) {
     if (!o) return;
+    if (Array.isArray(o)) return o.map(x(o));
+
     var ret = Object.assign({}, o);
     ret.currency = {
         code: ret.currency, 
         symbol: ret.currency_symbol, 
         decimal: ret.currency_decimal
     };
-    ret.code = {
-        iso_alpha_2: ret.iso2,
-        iso_alpha_3: ret.iso3
-    }
+    ret.code = {iso2: ret.iso2, iso3: ret.iso3}
     for (var k of 'iso2|iso3|currency_symbol|currency_decimal'.split('|'))
         delete ret[k];
     return ret;    
@@ -42,9 +57,10 @@ function find(prop, val) {
     if (self.cache[prop][val])
         return x(self.cache[prop][val]);
 
-    for (var k in self.all)
-        if (self.all[k][prop] == val)
-            return x(self.cache[prop][val] = self.all[k]);
+    return self.cache[prop][val] = Object.keys(self.all)
+        .filter(k => self.all[k][prop] == val)
+        .map(k => x(self.all[k]))
+        .unpack(undefined);
 }
 
 var continents = require('./../data/continents.json');
@@ -56,6 +72,7 @@ var currency_info = require('../data/currency_info.json');
 var names = require('../data/names.json');
 var phone = require('../data/phone.json');
 var regions = require('../data/regions.json');
+var provinces = require('../data/provinces.json');
 
 // compact it into a single object
 
@@ -70,14 +87,15 @@ for (var k in iso_alpha_3)
         currency: currency[k],
         currency_symbol: currency_info[currency[k]].symbol,
         currency_decimal: currency_info[currency[k]].decimal,
-        dialing_code: phone[k]
+        dialing_code: phone[k],
+        provinces: provinces[k]
     };
 
 // release memory (except for phone)
 
 continents = continent = iso_alpha_3 
     = capital = currency = currency_info 
-    = names = regions 
+    = names = regions = provinces
     = null;
 
 // phone gets turned into a sorted array
@@ -92,3 +110,11 @@ for (var k in phone)
 
 phones.sort((a,b) => a.nbr.length < b.nbr.length ? 1 : -1);
 phone = null;
+
+Array.prototype.unpack = function() {
+    var l = this.length;
+    return l == 1 ? this[0] 
+        : l == 0 && arguments.length > 0
+        ? undefined
+        : this;
+}
