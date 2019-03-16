@@ -7,24 +7,30 @@
 This module contains country information including 2 and 3 character ISO codes, country and capital names,
 currency information, telephone calling codes, and provinces (first-tier political subdivisions)
 
-## Installation
+## Install
+Add to your project from the NPM repository:
 ```
 npm install --save country-list-js
 ```
+And get an instance of the module:
+```javascript
+// using ES6 modules
 
-## Basic Usage
+import country from 'country-list-js';
 
-In a web page, include  like this:
+// using CommonJS modules
+var country = require('country-list-js'); 
+```
+In a web page, you can include the modulelike this:
 ```html
 <script src="/path/to/country.min.js"></script>
 ```
 
-For CommonJs envrionments, require as usual:
-```javascript 
-var country = require('country-list-js'); 
-```
+## Basic Usage
 
-#### Searching
+The following methods are available:
+
+### Searching
 Searches can be conducted by any of the following methods:
 
 ```javascript
