@@ -20,9 +20,7 @@ var self = module.exports = {
                                              .map(k => self.all[k])
                                              .filter(o => o.provinces)
                                              .filter(o => o.provinces.filter(
-                                                 o => o.name == name || (o.alias || []).indexOf(name) > -1,
-                                                 ).length > 0,
-                                             )
+                                                 o => o.name == name || (o.alias || []).indexOf(name) > -1).length > 0)
                                              .map(o => x(o))
                                              .unpack(undefined);
   },
