@@ -76,7 +76,7 @@ var provinces = require('../data/provinces.json');
 
 // compact it into a single object
 
-for (var k in iso_alpha_3)
+Object.keys(iso_alpha_3).forEach(function (k) {
     self.all[k] = {
         iso2: k,
         iso3: iso_alpha_3[k],
@@ -90,6 +90,7 @@ for (var k in iso_alpha_3)
         dialing_code: phone[k],
         provinces: provinces[k]
     };
+});
 
 // release memory (except for phone)
 
@@ -99,10 +100,10 @@ continents = continent = iso_alpha_3
     = null;
 
 // phone gets turned into a sorted array
-    
-var phones = [];
-for (var k in phone)
-    phones.push({code: k, nbr: phone[k].replace(/\D/g, '')})
+
+var phones = Object.keys(phone).map(function (k) {
+    return {code: k, nbr: phone[k].replace(/\D/g, '')}
+})
 
 // we need to match the phone number against the longest
 // prefix we can find.  that avoids matching against 1 (US)

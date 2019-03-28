@@ -1,8 +1,17 @@
 "use strict";
 
-import {expect} from 'chai';
-import country from "./../src/index";
-import { ok } from 'assert';
+const expect = require('chai').expect;
+const ok = require('assert').ok;
+
+// this prototype tests that property loops in the
+// module are safe.  the prototype must be installed
+// before the module is required
+
+Object.prototype.__test_function__ = () => null;
+
+// require the module
+
+const country = require('../src/index')
 
 describe('Country', () => {
     var DK = { 
