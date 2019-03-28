@@ -1,5 +1,6 @@
 # Country List JS
 
+[![npm version](https://badge.fury.io/js/country-list-js.svg)](https://badge.fury.io/js/country-list-js)
 [![Build Status](https://travis-ci.org/i-rocky/country-list-js.svg?branch=master)](https://travis-ci.org/i-rocky/country-list-js) [![Version](https://img.shields.io/npm/v/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
 [![Total Downloads](https://img.shields.io/npm/dt/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
 [![License](https://img.shields.io/github/license/i-rocky/country-list-js.svg)](https://github.com/i-rocky/country-list-js/blob/master/LICENSE)
@@ -83,7 +84,8 @@ The built-in test suite may be run in the traditional way
 npm run test
 ```
 
-and to build the project:
+and to build the minified file for web run:
 ```
 npm run build
 ```
+and retrieve it from `dist/country.min.js`
