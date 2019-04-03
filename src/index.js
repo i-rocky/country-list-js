@@ -43,6 +43,7 @@ var self = module.exports = {
     },
     capitals() {
         return this.ls('capital');
+    }
 };
 
 // transform to the old format for backward-compatibility
