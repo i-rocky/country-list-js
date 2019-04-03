@@ -31,6 +31,18 @@ var self = module.exports = {
         return phones.filter(o => o.nbr && nbr.startsWith(o.nbr))
             .map(o => x(self.all[o.code]))
             .unpack(undefined);
+    },
+    ls(field) {
+        return Object.keys(this.all).map(k => this.all[k][field]);
+    },
+    continents() {
+        return this.ls('continent').unique();
+    },
+    names() {
+        return this.ls('name');
+    },
+    capitals() {
+        return this.ls('capital');
     }
 };
 
@@ -118,4 +130,8 @@ Array.prototype.unpack = function() {
         : l == 0 && arguments.length > 0
         ? undefined
         : this;
+}
+
+Array.prototype.unique = function() {
+    return this.filter((e, pos) => this.indexOf(e) == pos);
 }

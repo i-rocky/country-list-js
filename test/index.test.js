@@ -12,8 +12,31 @@ Object.prototype.__test_function__ = () => null;
 // require the module
 
 const country = require('../src/index')
+const NOF = 250;
 
-describe('Country', () => {
+describe('Lists', () => {
+    it('Names', () => {
+        var actual = country.names()
+        ok(Array.isArray(actual), 'Is not an array')
+        expect(actual).to.have.lengthOf(NOF)
+    })
+    it('Continents', () => {
+        var actual = country.continents()
+        ok(Array.isArray(actual), 'Is not an array')
+        expect(actual).to.have.lengthOf(7)
+    })
+    it('Capitals', () => {
+        var actual = country.capitals()
+        ok(Array.isArray(actual), 'Is not an array')
+        expect(actual).to.have.lengthOf(NOF)
+    })
+    it('Generic lister', () => {
+        var actual = country.ls('region').unique();
+        ok(Array.isArray(actual), 'Is not an array')
+        expect(actual).to.have.lengthOf(36)
+    })
+})
+describe('Searches', () => {
     var DK = { 
         name: 'Denmark',
         continent: 'Europe',
@@ -31,8 +54,8 @@ describe('Country', () => {
         code: { iso2: 'DK', iso3: 'DNK' } 
     };
 
-    it('There has to be total of 250 countries', () => {
-        expect(Object.keys(country.all).length).to.be.equal(250);
+    it('There has to be specific number of countries', () => {
+        expect(Object.keys(country.all).length).to.be.equal(NOF);
     });
     it('There must be 8 keys in the object', () => {
         expect(Object.keys(country.findByIso2('DK')).length).to.be.equal(8);
