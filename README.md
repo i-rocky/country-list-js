@@ -31,6 +31,21 @@ In a web page, you can include the modulelike this:
 
 The following methods are available:
 
+### Listing
+Lists can be generated using the following convenience functions:
+```js
+var country_names = country.names();
+var continents = country.continents();
+var capitals = country.capitals();
+```
+but, in general, any of a country's attributes can be retrieved using
+the `ls` method, which can also produce the above:
+```js
+var country_names = country.ls('name');
+var continents = country.ls('continent');
+var capitals = country.ls('capital');
+```
+
 ### Searching
 Searches can be conducted by any of the following methods:
 

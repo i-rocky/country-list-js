@@ -1,38 +1,48 @@
 'use strict';
 
 var self = module.exports = {
-  all: {},
-  cache: {},
-  findByIso2: code => x(self.all[code]),
-  findByIso3: code => find('iso3', code),
-  findByName: name => find('name', name),
-  findByCapital: name => find('capital', name),
-  findByCurrency: code => find('currency', code),
-  findByProvince(name) {
-    if (!self.cache.province) {
-      self.cache.province = {};
-    }
-    if (self.cache.province[name]) {
-      return self.cache.province[name].map(o => x(o));
-    }
-
-    return self.cache.province[name] = Object.keys(self.all)
-                                             .map(k => self.all[k])
-                                             .filter(o => o.provinces)
-                                             .filter(o => o.provinces.filter(
-                                                 o => o.name == name || (o.alias || []).indexOf(name) > -1).length > 0)
-                                             .map(o => x(o))
-                                             .unpack(undefined);
-  },
-  findByPhoneNbr(nbr) {
-    // make sure the phone number is clean
-    nbr = nbr.replace(/\D/g, '');
-
-    // now match prefixes against the phone number
-    return phones.filter(o => o.nbr && nbr.startsWith(o.nbr))
-                 .map(o => x(self.all[o.code]))
-                 .unpack(undefined);
-  },
+    all: {},
+    cache: {},
+    findByIso2: code => x(self.all[code]),
+    findByIso3: code => find('iso3', code),
+    findByName: name => find('name', name),
+    findByCapital: name => find('capital', name),
+    findByCurrency: code => find('currency', code),
+    findByProvince(name) {
+        if (!self.cache.province) self.cache.province = {};
+        if (self.cache.province[name])
+            return self.cache.province[name].map(o => x(o));
+    
+        return self.cache.province[name] = Object.keys(self.all)
+            .map(k => self.all[k])
+            .filter(o => o.provinces)
+            .filter(o => o.provinces.filter(
+                o => o.name == name || (o.alias || []).indexOf(name) > -1
+              ).length > 0
+            )
+            .map(o => x(o))
+            .unpack(undefined);
+    },
+    findByPhoneNbr(nbr) {
+        // make sure the phone number is clean
+        nbr = nbr.replace(/\D/g, '');
+        
+        // now match prefixes against the phone number
+        return phones.filter(o => o.nbr && nbr.startsWith(o.nbr))
+            .map(o => x(self.all[o.code]))
+            .unpack(undefined);
+    },
+    ls(field) {
+        return Object.keys(this.all).map(k => this.all[k][field]);
+    },
+    continents() {
+        return this.ls('continent').unique();
+    },
+    names() {
+        return this.ls('name');
+    },
+    capitals() {
+        return this.ls('capital');
 };
 
 // transform to the old format for backward-compatibility
@@ -122,9 +132,14 @@ phones.sort((a, b) => a.nbr.length < b.nbr.length ? 1 : -1);
 phone = null;
 
 Array.prototype.unpack = function() {
-  var l = this.length;
-  return l == 1 ? this[0]
-      : l == 0 && arguments.length > 0
-          ? undefined
-          : this;
-};
+    var l = this.length;
+    return l == 1 ? this[0] 
+        : l == 0 && arguments.length > 0
+        ? undefined
+        : this;
+}
+
+Array.prototype.unique = function() {
+    return this.filter((e, pos) => this.indexOf(e) == pos);
+}
+
