@@ -1,5 +1,5 @@
 {
-  "name": "ekkis-country-list-js",
+  "name": "country-list-js",
   "version": "1.0.2",
   "description": "Country list with ISO2, ISO3 code, continent, capital, dialing code",
   "homepage": "https://github.com/i-rocky/country-list-js.git",
