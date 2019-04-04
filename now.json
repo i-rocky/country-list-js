@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "name": "country-list-js",
     "builds": [
       { "src": "server.js", "use": "@now/node" }
     ]
