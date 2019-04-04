@@ -1,10 +1,10 @@
 const country = require('./index');
 
-module.exports = (req) => {
+module.exports = (req, res) => {
     var cmd = url(req.url);
     var fn = country[cmd.method];
     var p = params(fn).map(nm => cmd[nm])
-    return fn.apply(country, p);
+    res.end(JSON.stringify(fn.apply(country, p)));
 }
 
 function url(s) {
