@@ -40,8 +40,9 @@
     "test": "eslint *.js && mocha t/*.js",
     "preversion": "npm run test",
     "version": "",
-    "postversion": "git push --tags && npm publish",
-    "debug": "node --inspect node_modules/.bin/micro-dev server.js"
+    "postversion": "git push --tags && npm publish && npm run now",
+    "debug": "node --inspect node_modules/.bin/micro-dev server.js",
+    "now": "now --target staging"
   },
   "devDependencies": {
     "browserify": "^16.2.3",
