@@ -1,6 +1,6 @@
 const country = require('./index');
 
-module.exports = (req, res) => {
+module.exports = (req) => {
     var cmd = url(req.url);
     var fn = country[cmd.method];
     var p = params(fn).map(nm => cmd[nm])
