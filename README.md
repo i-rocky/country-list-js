@@ -8,6 +8,10 @@
 This module contains country information including 2 and 3 character ISO codes, country and capital names,
 currency information, telephone calling codes, and provinces (first-tier political subdivisions)
 
+The functionality in this package is also available as a service, hosted on the Now platform.  This modality
+lends itself well to microservice architectures.  For more information please see the section on *Now* at
+the end of this document
+
 ## Install
 Add to your project from the NPM repository:
 ```
@@ -96,11 +100,35 @@ of the internal structures and thus calls will resolve very quickly
 
 The built-in test suite may be run in the traditional way
 ```
-npm run test
+npm test
 ```
 
-and to build the minified file for web run:
+and to build the minified file for web, run:
 ```
 npm run build
 ```
-and retrieve it from `dist/country.min.js`
+and retrieve the file from `dist/country.min.js`
+
+## Module-as-a-service on the Now platform
+
+The functionality in this module is also available via a REST API where any methods 
+may be called by passing parameters to the service's url.  The parameter "method" is
+used to indicate which method to call, and additional parameters should match the
+signature of the method, for example:
+```bash
+curl "http://country-list-js.npm.now.sh/?method=findByIso2&code=DK"
+```
+returns a JSON object with information for Denmark.  In Javascript you may use your fevourite
+package for fetching instead:
+```js
+const fetch = require('node-fetch')
+const url = 'http://country-list-js.npm.now.sh/?method=findByIso2&code=DK'
+fetch(url).then(res => res.json())
+    .then(o => {
+        console.log(o)  // will show Denmark
+    })
+```
+
+## Licence
+
+MIT
