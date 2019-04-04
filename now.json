@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "scope": "NPM",
+    "scope": "npm",
     "builds": [
       { "src": "server.js", "use": "@now/node" }
     ]
