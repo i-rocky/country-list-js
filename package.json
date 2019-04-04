@@ -40,7 +40,7 @@
     "test": "eslint *.js && mocha t/*.js",
     "preversion": "npm run test",
     "version": "",
-    "postversion": "git push && git push --tags && npm publish",
+    "postversion": "git push --tags && npm publish",
     "debug": "node --inspect node_modules/.bin/micro-dev server.js"
   },
   "devDependencies": {
