@@ -116,13 +116,13 @@ may be called by passing parameters to the service's url.  The parameter "method
 used to indicate which method to call, and additional parameters should match the
 signature of the method, for example:
 ```bash
-curl "https://npm-country-list-js.npm.now.sh/server.js?method=findByIso2&code=DK"
+curl "https://country-list-js.npm.now.sh/server.js?method=findByIso2&code=DK"
 ```
 returns a JSON object with information for Denmark.  In Javascript you may use your fevourite
 package for fetching instead:
 ```js
 const fetch = require('node-fetch')
-const url = 'https://npm-country-list-js.npm.now.sh/server.js?method=findByIso2&code=DK'
+const url = 'https://country-list-js.npm.now.sh/server.js?method=findByIso2&code=DK'
 fetch(url).then(res => res.json())
     .then(o => {
         console.log(o)  // will show Denmark
