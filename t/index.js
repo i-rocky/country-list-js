@@ -72,6 +72,10 @@ describe('Searches', () => {
         var actual = country.findByName('Denmark');
         expect(actual).to.deep.equal(DK);
     });
+    it('Find by Name repeated', function () {
+        var actual = country.findByName('Denmark');
+        expect(actual).to.deep.equal(DK);
+    });
     it('Find by capital', function () {
         var actual = country.findByCapital('Copenhagen');
         expect(actual).to.deep.equal(DK);
