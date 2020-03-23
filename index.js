@@ -67,7 +67,7 @@ function x(o) {
 function find(prop, val) {
     if (!(prop in self.cache)) self.cache[prop] = {};
     if (self.cache[prop][val])
-        return x(self.cache[prop][val]);
+        return self.cache[prop][val];
 
     return self.cache[prop][val] = Object.keys(self.all)
         .filter(k => self.all[k][prop] == val)

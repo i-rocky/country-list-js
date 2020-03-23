@@ -2,3 +2,4 @@
 *.iml
 yarn.lock
 /node_modules
+.now

@@ -1,6 +1,7 @@
 'use strict';
 
 const expect = require('chai').expect;
+const assert = require('assert');
 const ok = require('assert').ok;
 
 // this prototype tests that property loops in the
@@ -101,6 +102,12 @@ describe('Searches', () => {
         ok('Nordjylland' in country.cache.province, 'Province cache failed');
         ok('Zealand' in country.cache.province, 'Province cache failed');
     });
+
+	it('Returns cached results same as original', function() {
+		var first = country.findByIso3('USA');
+		var second = country.findByIso3('USA');
+		assert.deepEqual(first, second);
+	});
 
     it('Null is returned if not found', function () {
         expect(country.findByIso2('XX')).to.be.equal(undefined);
