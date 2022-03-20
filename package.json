@@ -47,7 +47,7 @@
     "browserify": "^16.2.3",
     "chai": "^4.0.2",
     "eslint": "^5.16.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-streamify": "^1.0.2",
@@ -61,6 +61,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "micro": "^9.3.3"
+    "micro": "^9.3.3",
+    "vercel": "^24.0.0"
   }
 }
