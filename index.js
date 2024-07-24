@@ -1,5 +1,18 @@
 'use strict';
 
+function unpack(arr, defaultValue) {
+    if (arr.length === 1) {
+        return arr[0];
+    } else if (arr.length === 0 && arguments.length > 1) {
+        return defaultValue;
+    }
+    return arr;
+}
+
+function unique(arr) {
+    return arr.filter((e, pos) => arr.indexOf(e) === pos);
+}
+
 var self = module.exports = {
     all: {},
     cache: {},
@@ -12,31 +25,32 @@ var self = module.exports = {
         if (!self.cache.province) self.cache.province = {};
         if (self.cache.province[name])
             return self.cache.province[name].map(o => x(o));
-    
-        return self.cache.province[name] = Object.keys(self.all)
-            .map(k => self.all[k])
-            .filter(o => o.provinces)
-            .filter(o => o.provinces.filter(
-                o => o.name == name || (o.alias || []).indexOf(name) > -1
-              ).length > 0
-            )
-            .map(o => x(o))
-            .unpack(undefined);
+
+        return self.cache.province[name] = unpack(
+            Object.keys(self.all)
+                .map(k => self.all[k])
+                .filter(o => o.provinces)
+                .filter(o => o.provinces.filter(
+                    o => o.name == name || (o.alias || []).indexOf(name) > -1
+                ).length > 0)
+                .map(o => x(o))
+        );
     },
     findByPhoneNbr(nbr) {
         // make sure the phone number is clean
         nbr = nbr.replace(/\D/g, '');
-        
+
         // now match prefixes against the phone number
-        return phones.filter(o => o.nbr && nbr.startsWith(o.nbr))
-            .map(o => x(self.all[o.code]))
-            .unpack(undefined);
+        return unpack(
+            phones.filter(o => o.nbr && nbr.startsWith(o.nbr))
+                .map(o => x(self.all[o.code]))
+        );
     },
     ls(field) {
         return Object.keys(this.all).map(k => this.all[k][field]);
     },
     continents() {
-        return this.ls('continent').unique();
+        return unique(this.ls('continent'));
     },
     names() {
         return this.ls('name');
@@ -54,14 +68,14 @@ function x(o) {
 
     var ret = Object.assign({}, o);
     ret.currency = {
-        code: ret.currency, 
-        symbol: ret.currency_symbol, 
+        code: ret.currency,
+        symbol: ret.currency_symbol,
         decimal: ret.currency_decimal
     };
     ret.code = {iso2: ret.iso2, iso3: ret.iso3}
     for (var k of 'iso2|iso3|currency_symbol|currency_decimal'.split('|'))
         delete ret[k];
-    return ret;    
+    return ret;
 }
 
 function find(prop, val) {
@@ -69,10 +83,11 @@ function find(prop, val) {
     if (self.cache[prop][val])
         return self.cache[prop][val];
 
-    return self.cache[prop][val] = Object.keys(self.all)
-        .filter(k => self.all[k][prop] == val)
-        .map(k => x(self.all[k]))
-        .unpack(undefined);
+    return self.cache[prop][val] = unpack(
+        Object.keys(self.all)
+            .filter(k => self.all[k][prop] == val)
+            .map(k => x(self.all[k]))
+    );
 }
 
 var continents = require('./data/continents.json');
@@ -106,8 +121,8 @@ Object.keys(iso_alpha_3).forEach(function (k) {
 
 // release memory (except for phone)
 
-continents = continent = iso_alpha_3 
-    = capital = currency = currency_info 
+continents = continent = iso_alpha_3
+    = capital = currency = currency_info
     = names = regions = provinces
     = null;
 
@@ -123,15 +138,3 @@ var phones = Object.keys(phone).map(function (k) {
 
 phones.sort((a,b) => a.nbr.length < b.nbr.length ? 1 : -1);
 phone = null;
-
-Array.prototype.unpack = function() {
-    var l = this.length;
-    return l == 1 ? this[0] 
-        : l == 0 && arguments.length > 0
-        ? undefined
-        : this;
-}
-
-Array.prototype.unique = function() {
-    return this.filter((e, pos) => this.indexOf(e) == pos);
-}
