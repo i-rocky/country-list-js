@@ -1,0 +1,166 @@
+{
+    "meta": {
+        "ES": [
+            "Autonomous community group",
+            "Autonomous community",
+            "Province",
+            "Comarca",
+            "Municipality (municipio)"
+        ]
+    },
+    "data": {
+        "ES": {
+            "North West": {
+                "Galicia": {
+                    "A Coruña": {
+                        "A Coruña": {
+                            "A Coruña": {},
+                            "Elviña": {},
+                            "Oza": {},
+                            "San Cristovo das Viñas": {},
+                            "Visma": {}
+                        },
+                        "Arteixo": {
+                            "Armentón": {},
+                            "Arteixo": {},
+                            "Barrañán": {},
+                            "Chamín": {},
+                            "Lañas": {},
+                            "Larín": {},
+                            "Loureda": {},
+                            "Monteagudo": {},
+                            "Morás": {},
+                            "Oseiro": {},
+                            "Pastoriza": {},
+                            "Sorrizo": {},
+                            "Suevos": {}
+                        },
+                        "Cambre": {
+                            "Anceis": {},
+                            "Andeiro": {},
+                            "Brexo": {},
+                            "Bribes": {},
+                            "Cambre": {},
+                            "Cecebre": {},
+                            "Cela": {},
+                            "Meixigo": {},
+                            "Pravio": {},
+                            "Sigrás": {},
+                            "O Temple": {},
+                            "Vigo": {}
+                        },
+                        "Bergondo": {
+                            "Bergondo": {},
+                            "Cortiñán": {},
+                            "Guísamo": {},
+                            "Lubre": {},
+                            "Moruxo": {},
+                            "Ouces": {},
+                            "Rois": {},
+                            "Santa María de Babío": {},
+                            "Vixoi": {}
+                        },
+                        "Sada": {
+                            "Carnoedo": {},
+                            "Meirás": {},
+                            "Mondego": {},
+                            "Mosteirón": {},
+                            "Osedo": {},
+                            "Sada": {},
+                            "Soñeiro": {},
+                            "Veigue": {}
+                        },
+                        "Oleiros": {
+                            "Dexo": {},
+                            "Dorneda": {},
+                            "Iñás": {},
+                            "Liáns": {},
+                            "Maianca": {},
+                            "Oleiros": {},
+                            "Perillo": {},
+                            "San Pedro de Nós": {},
+                            "Serantes": {}
+                        },
+                        "Culleredo": {
+                            "Almeiras": {},
+                            "O Burgo": {},
+                            "Castelo": {},
+                            "Celas": {},
+                            "Culleredo": {},
+                            "Ledoño": {},
+                            "Orro": {},
+                            "Rutis": {},
+                            "Sésamo": {},
+                            "Sueiro": {},
+                            "Veiga": {}
+                        },
+                        "Carral": {
+                            "Beira": {},
+                            "Cañás": {},
+                            "Paleo": {},
+                            "Quembre": {},
+                            "Sergude": {},
+                            "Sumio": {},
+                            "Tabeaio": {},
+                            "Vigo": {}
+                        },
+                        "Abegondo": {
+                            "Abegondo": {},
+                            "Cabanas": {},
+                            "Cerneda": {},
+                            "Cos": {},
+                            "Crendes": {},
+                            "Cullergondo": {},
+                            "Figueroa": {},
+                            "Folgoso": {},
+                            "Leiro": {},
+                            "Limiñón": {},
+                            "Mabegondo": {},
+                            "Meangos": {},
+                            "Montouto": {},
+                            "Orto": {},
+                            "Presedo": {},
+                            "Sarandós": {},
+                            "Vilacova": {},
+                            "Viós": {},
+                            "Vizoño": {}
+                        }
+                    },
+                    "Pontevedra": {},
+                    "Ourense": {},
+                    "Lugo": {}
+                },
+                "Asturies": {},
+                "Cantabria": {}
+            },
+            "North East": {
+                "Basque Community": {},
+                "Navarre": {},
+                "La Rioja": {},
+                "Aragon": {}
+            },
+            "Community of Madrid": {
+                "Community of Madrid": {}
+            },
+            "Centre": {
+                "Castile and León": {},
+                "Castile-La Mancha": {},
+                "Extremadura": {}
+            },
+            "East": {
+                "Catalonia": {},
+                "Valencia": {},
+                "Balearic Islands": {}
+            },
+            "South": {
+                "Andalusia": {},
+                "Region of Murcia": {},
+                "Ceuta": {},
+                "Melilla": {}
+            },
+            "Canary Islands": {
+                "Canary Islands": {}
+            }
+        }
+    }
+}
