@@ -1,6 +1,6 @@
 {
   "name": "@unstoppabledomains/country-list-js",
-  "version": "3.1.5",
+  "version": "3.1.9",
   "description": "Country list with ISO2, ISO3 code, continent, capital, dialing code",
   "homepage": "https://github.com/i-rocky/country-list-js.git",
   "author": {
@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/i-rocky/country-list-js/issues"
   },
-  "license": "MIT",
   "licenses": [
     {
       "type": "MIT",
@@ -45,15 +44,15 @@
     "debug": "node --inspect node_modules/.bin/micro-dev server.js"
   },
   "devDependencies": {
-    "browserify": "^16.2.3",
-    "chai": "^4.0.2",
-    "eslint": "^5.16.0",
-    "gulp": "^5.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^2.6.0",
+    "browserify": "^17.0.0",
+    "chai": "^4.3.10",
+    "eslint": "^8.52.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-streamify": "^1.0.2",
     "gulp-uglify-es": "^3.0.0",
-    "micro-dev": "^3.0.0",
+    "micro-dev": "^3.1.0",
     "mocha": "^10.2.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
