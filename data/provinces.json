@@ -1981,7 +1981,7 @@
     {
       "name": "La Coruña",
       "short": "C",
-      "alias": ["La Coruna"]
+      "alias": ["La Coruna", "A Coruña"]
     },
     {
       "name": "Lugo",
@@ -2185,7 +2185,7 @@
     },
     {
       "name": "Orense",
-      "short": "OU",
+      "short": "OR",
       "alias": null
     },
     {
@@ -2207,6 +2207,11 @@
       "name": "Guadalajara",
       "short": "GU",
       "alias": null
+    },
+    {
+      "name": "Baleares",
+      "short": "PM",
+      "alias": ["Balears"]
     }
   ],
   "ET": [
