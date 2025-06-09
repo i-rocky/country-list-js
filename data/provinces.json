@@ -1984,6 +1984,11 @@
       "alias": ["La Coruna", "A Coruña"]
     },
     {
+      "name": "Asturias",
+      "short": "O",
+      "alias": ["Asturias", "Asturies"]
+    },
+    {
       "name": "Lugo",
       "short": "LU",
       "alias": null
