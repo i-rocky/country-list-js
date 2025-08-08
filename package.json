@@ -1,6 +1,6 @@
 {
   "name": "@unstoppabledomains/country-list-js",
-  "version": "3.1.9",
+  "version": "3.1.10",
   "description": "Country list with ISO2, ISO3 code, continent, capital, dialing code",
   "homepage": "https://github.com/i-rocky/country-list-js.git",
   "author": {
@@ -34,33 +34,27 @@
   ],
   "scripts": {
     "build": "gulp",
-    "start": "micro server.js",
-    "dev": "micro-dev",
+    "start": "node server.js",
+    "dev": "node server.js",
     "pretest": "npm install",
     "test": "eslint *.js && mocha t/*.js",
     "preversion": "npm run test",
     "version": "",
     "postversion": "git push --tags && npm publish",
-    "debug": "node --inspect node_modules/.bin/micro-dev server.js"
+    "debug": "node --inspect server.js"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
-    "chai": "^4.3.10",
-    "eslint": "^8.52.0",
-    "gulp": "^4.0.2",
+    "chai": "^4.5.0",
+    "eslint": "^8.57.0",
+    "gulp": "^5.0.1",
     "gulp-rename": "^2.0.0",
-    "gulp-sourcemaps": "^3.0.0",
+    "gulp-sourcemaps": "2.6.5",
     "gulp-streamify": "^1.0.2",
     "gulp-uglify-es": "^3.0.0",
-    "micro-dev": "^3.1.0",
-    "mocha": "^10.2.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
+    "mocha": "^10.7.3",
     "test-listen": "^1.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "dependencies": {
-    "micro": "^9.3.3"
   }
 }
