@@ -6121,8 +6121,8 @@
       "alias": ["Quang Tri"]
     },
     {
-      "name": "Thừa Thiên–Huế",
-      "alias": ["Thua Thien–Hue", "Thua Thien Hue"]
+      "name": "Huế",
+      "alias": ["Hue"]
     },
     {
       "name": "Đà Nẵng",
@@ -6158,11 +6158,11 @@
     },
     {
       "name": "Kon Tum",
-      "alias": null
+      "alias": ["Kon Tum"]
     },
     {
       "name": "Gia Lai",
-      "alias": null
+      "alias": ["Gia Lai"]
     },
     {
       "name": "Đắk Lắk",
@@ -6193,8 +6193,8 @@
       "alias": ["Dong Nai"]
     },
     {
-      "name": "Bà Rịa–Vũng Tàu",
-      "alias": ["Ba Ria–Vung Tau", "Ba Ria Vung Tau"]
+      "name": "Bà Rịa-Vũng Tàu",
+      "alias": ["Ba Ria-Vung Tau", "Ba Ria Vung Tau", "BRVT"]
     },
     {
       "name": "Thành phố Hồ Chí Minh",
@@ -6202,7 +6202,7 @@
     },
     {
       "name": "Long An",
-      "alias": null
+      "alias": ["Long An"]
     },
     {
       "name": "Tiền Giang",
@@ -6226,7 +6226,7 @@
     },
     {
       "name": "An Giang",
-      "alias": null
+      "alias": ["An Giang"]
     },
     {
       "name": "Kiên Giang",
@@ -6234,7 +6234,7 @@
     },
     {
       "name": "Cần Thơ",
-      "alias": ["Can Thơ"]
+      "alias": ["Can Tho"]
     },
     {
       "name": "Hậu Giang",
