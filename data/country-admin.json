@@ -2,7 +2,7 @@
   "AR": {
     "divisions": {
       "CA": {
-        "name": "Ciudad Autónoma de Buenos Aires",
+        "name": "Ciudad Aut\u00f3noma de Buenos Aires",
         "alias": [
           "Ciudad Autonoma de Buenos Aires"
         ],
@@ -34,8 +34,8 @@
           "Patagonia"
         ]
       },
-      "CÓR": {
-        "name": "Córdoba",
+      "C\u00d3R": {
+        "name": "C\u00f3rdoba",
         "alias": [
           "Cordoba"
         ],
@@ -50,7 +50,7 @@
         ]
       },
       "ER": {
-        "name": "Entre Ríos",
+        "name": "Entre R\u00edos",
         "alias": [
           "Entre Rios"
         ],
@@ -95,7 +95,7 @@
         ]
       },
       "NEU": {
-        "name": "Neuquén",
+        "name": "Neuqu\u00e9n",
         "alias": [
           "Neuquen"
         ],
@@ -104,7 +104,7 @@
         ]
       },
       "RN": {
-        "name": "Río Negro",
+        "name": "R\u00edo Negro",
         "alias": [
           "Rio Negro"
         ],
@@ -149,13 +149,13 @@
         ]
       },
       "TD": {
-        "name": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+        "name": "Tierra del Fuego, Ant\u00e1rtida e Islas del Atl\u00e1ntico Sur",
         "alias": [
           "Tierra del Fuego, Antartida e Islas del Atlantico Sur"
         ]
       },
       "TUC": {
-        "name": "Tucumán",
+        "name": "Tucum\u00e1n",
         "alias": [
           "Tucuman"
         ],
@@ -173,64 +173,64 @@
       "BUR": {
         "name": "Burgenland",
         "regions": [
-          "Ostösterreich"
+          "Ost\u00f6sterreich"
         ]
       },
-      "KÄR": {
-        "name": "Kärnten",
+      "K\u00c4R": {
+        "name": "K\u00e4rnten",
         "alias": [
           "Karnten"
         ],
         "regions": [
-          "Südösterreich"
+          "S\u00fcd\u00f6sterreich"
         ]
       },
       "NIE": {
-        "name": "Niederösterreich",
+        "name": "Nieder\u00f6sterreich",
         "alias": [
           "Niederosterreich"
         ],
         "regions": [
-          "Ostösterreich"
+          "Ost\u00f6sterreich"
         ]
       },
       "OBE": {
-        "name": "Oberösterreich",
+        "name": "Ober\u00f6sterreich",
         "alias": [
           "Oberosterreich"
         ],
         "regions": [
-          "Westösterreich"
+          "West\u00f6sterreich"
         ]
       },
       "SAL": {
         "name": "Salzburg",
         "regions": [
-          "Westösterreich"
+          "West\u00f6sterreich"
         ]
       },
       "STE": {
         "name": "Steiermark",
         "regions": [
-          "Südösterreich"
+          "S\u00fcd\u00f6sterreich"
         ]
       },
       "TIR": {
         "name": "Tirol",
         "regions": [
-          "Westösterreich"
+          "West\u00f6sterreich"
         ]
       },
       "VOR": {
         "name": "Vorarlberg",
         "regions": [
-          "Westösterreich"
+          "West\u00f6sterreich"
         ]
       },
       "WIE": {
         "name": "Wien",
         "regions": [
-          "Ostösterreich"
+          "Ost\u00f6sterreich"
         ]
       }
     },
@@ -310,380 +310,380 @@
   },
   "BD": {
     "divisions": {
-      "বরগ": {
-        "name": "বরগুনা",
+      "\u09ac\u09b0\u0997": {
+        "name": "\u09ac\u09b0\u0997\u09c1\u09a8\u09be",
         "alias": [
           "Barguna"
         ]
       },
-      "বরি": {
-        "name": "বরিশাল",
+      "\u09ac\u09b0\u09bf": {
+        "name": "\u09ac\u09b0\u09bf\u09b6\u09be\u09b2",
         "alias": [
           "Barisal"
         ]
       },
-      "ভোল": {
-        "name": "ভোলা",
+      "\u09ad\u09cb\u09b2": {
+        "name": "\u09ad\u09cb\u09b2\u09be",
         "alias": [
           "Bhola"
         ]
       },
-      "ঝাল": {
-        "name": "ঝালকাঠি",
+      "\u099d\u09be\u09b2": {
+        "name": "\u099d\u09be\u09b2\u0995\u09be\u09a0\u09bf",
         "alias": [
           "Jhalokati"
         ]
       },
-      "পটু": {
-        "name": "পটুয়াখালী",
+      "\u09aa\u099f\u09c1": {
+        "name": "\u09aa\u099f\u09c1\u09af\u09bc\u09be\u0996\u09be\u09b2\u09c0",
         "alias": [
           "Patuakhali"
         ]
       },
-      "পির": {
-        "name": "পিরোজপুর",
+      "\u09aa\u09bf\u09b0": {
+        "name": "\u09aa\u09bf\u09b0\u09cb\u099c\u09aa\u09c1\u09b0",
         "alias": [
           "Pirojpur"
         ]
       },
-      "বান": {
-        "name": "বান্দরবান",
+      "\u09ac\u09be\u09a8": {
+        "name": "\u09ac\u09be\u09a8\u09cd\u09a6\u09b0\u09ac\u09be\u09a8",
         "alias": [
           "Bandarban"
         ]
       },
-      "ব্র": {
-        "name": "ব্রাহ্মণবাড়ীয়া",
+      "\u09ac\u09cd\u09b0": {
+        "name": "\u09ac\u09cd\u09b0\u09be\u09b9\u09cd\u09ae\u09a3\u09ac\u09be\u09a1\u09bc\u09c0\u09af\u09bc\u09be",
         "alias": [
           "Brahmanbaria"
         ]
       },
-      "চাঁ": {
-        "name": "চাঁদপুর",
+      "\u099a\u09be\u0981": {
+        "name": "\u099a\u09be\u0981\u09a6\u09aa\u09c1\u09b0",
         "alias": [
           "Chandpur"
         ]
       },
-      "চট্": {
-        "name": "চট্টগ্রাম",
+      "\u099a\u099f\u09cd": {
+        "name": "\u099a\u099f\u09cd\u099f\u0997\u09cd\u09b0\u09be\u09ae",
         "alias": [
           "Chittagong"
         ]
       },
-      "কুম": {
-        "name": "কুমিল্লা",
+      "\u0995\u09c1\u09ae": {
+        "name": "\u0995\u09c1\u09ae\u09bf\u09b2\u09cd\u09b2\u09be",
         "alias": [
           "Comilla"
         ]
       },
-      "কক্": {
-        "name": "কক্সবাজার",
+      "\u0995\u0995\u09cd": {
+        "name": "\u0995\u0995\u09cd\u09b8\u09ac\u09be\u099c\u09be\u09b0",
         "alias": [
           "Cox's Bazar"
         ]
       },
-      "ফেন": {
-        "name": "ফেনী",
+      "\u09ab\u09c7\u09a8": {
+        "name": "\u09ab\u09c7\u09a8\u09c0",
         "alias": [
           "Feni"
         ]
       },
-      "খাগ": {
-        "name": "খাগড়াছড়ি",
+      "\u0996\u09be\u0997": {
+        "name": "\u0996\u09be\u0997\u09a1\u09bc\u09be\u099b\u09a1\u09bc\u09bf",
         "alias": [
           "Khagrachhari"
         ]
       },
-      "লক্": {
-        "name": "লক্ষীপুর",
+      "\u09b2\u0995\u09cd": {
+        "name": "\u09b2\u0995\u09cd\u09b7\u09c0\u09aa\u09c1\u09b0",
         "alias": [
           "Lakshmipur"
         ]
       },
-      "নোয": {
-        "name": "নোয়াখালী",
+      "\u09a8\u09cb\u09af": {
+        "name": "\u09a8\u09cb\u09af\u09bc\u09be\u0996\u09be\u09b2\u09c0",
         "alias": [
           "Noakhali"
         ]
       },
-      "রাঙ": {
-        "name": "রাঙ্গামাটি",
+      "\u09b0\u09be\u0999": {
+        "name": "\u09b0\u09be\u0999\u09cd\u0997\u09be\u09ae\u09be\u099f\u09bf",
         "alias": [
           "Rangamati"
         ]
       },
-      "ঢাক": {
-        "name": "ঢাকা",
+      "\u09a2\u09be\u0995": {
+        "name": "\u09a2\u09be\u0995\u09be",
         "alias": [
           "Dhaka"
         ]
       },
-      "ফরি": {
-        "name": "ফরিদপুর",
+      "\u09ab\u09b0\u09bf": {
+        "name": "\u09ab\u09b0\u09bf\u09a6\u09aa\u09c1\u09b0",
         "alias": [
           "Faridpur"
         ]
       },
-      "গাজ": {
-        "name": "গাজীপুর",
+      "\u0997\u09be\u099c": {
+        "name": "\u0997\u09be\u099c\u09c0\u09aa\u09c1\u09b0",
         "alias": [
           "Gazipur"
         ]
       },
-      "গোপ": {
-        "name": "গোপালগঞ্জ",
+      "\u0997\u09cb\u09aa": {
+        "name": "\u0997\u09cb\u09aa\u09be\u09b2\u0997\u099e\u09cd\u099c",
         "alias": [
           "Gopalganj"
         ]
       },
-      "জাম": {
-        "name": "জামালপুর",
+      "\u099c\u09be\u09ae": {
+        "name": "\u099c\u09be\u09ae\u09be\u09b2\u09aa\u09c1\u09b0",
         "alias": [
           "Jamalpur"
         ]
       },
-      "কিশ": {
-        "name": "কিশোরগঞ্জ",
+      "\u0995\u09bf\u09b6": {
+        "name": "\u0995\u09bf\u09b6\u09cb\u09b0\u0997\u099e\u09cd\u099c",
         "alias": [
           "Kishoreganj"
         ]
       },
-      "মাদ": {
-        "name": "মাদারীপুর",
+      "\u09ae\u09be\u09a6": {
+        "name": "\u09ae\u09be\u09a6\u09be\u09b0\u09c0\u09aa\u09c1\u09b0",
         "alias": [
           "Madaripur"
         ]
       },
-      "মান": {
-        "name": "মানিকগঞ্জ",
+      "\u09ae\u09be\u09a8": {
+        "name": "\u09ae\u09be\u09a8\u09bf\u0995\u0997\u099e\u09cd\u099c",
         "alias": [
           "Manikganj"
         ]
       },
-      "মুন": {
-        "name": "মুন্সীগঞ্জ",
+      "\u09ae\u09c1\u09a8": {
+        "name": "\u09ae\u09c1\u09a8\u09cd\u09b8\u09c0\u0997\u099e\u09cd\u099c",
         "alias": [
           "Munshiganj"
         ]
       },
-      "ময়": {
-        "name": "ময়মনসিংহ",
+      "\u09ae\u09af\u09bc": {
+        "name": "\u09ae\u09af\u09bc\u09ae\u09a8\u09b8\u09bf\u0982\u09b9",
         "alias": [
           "Mymensingh"
         ]
       },
-      "নার": {
-        "name": "নারায়ণগঞ্জ",
+      "\u09a8\u09be\u09b0": {
+        "name": "\u09a8\u09be\u09b0\u09be\u09af\u09bc\u09a3\u0997\u099e\u09cd\u099c",
         "alias": [
           "Narayanganj"
         ]
       },
-      "নরস": {
-        "name": "নরসিংদী",
+      "\u09a8\u09b0\u09b8": {
+        "name": "\u09a8\u09b0\u09b8\u09bf\u0982\u09a6\u09c0",
         "alias": [
           "Narsingdi"
         ]
       },
-      "নেত": {
-        "name": "নেত্রকোনা",
+      "\u09a8\u09c7\u09a4": {
+        "name": "\u09a8\u09c7\u09a4\u09cd\u09b0\u0995\u09cb\u09a8\u09be",
         "alias": [
           "Netrakona"
         ]
       },
-      "রাজ": {
-        "name": "রাজশাহী",
+      "\u09b0\u09be\u099c": {
+        "name": "\u09b0\u09be\u099c\u09b6\u09be\u09b9\u09c0",
         "alias": [
           "Rajshahi"
         ]
       },
-      "শরী": {
-        "name": "শরীয়তপুর",
+      "\u09b6\u09b0\u09c0": {
+        "name": "\u09b6\u09b0\u09c0\u09af\u09bc\u09a4\u09aa\u09c1\u09b0",
         "alias": [
           "Shariatpur"
         ]
       },
-      "শের": {
-        "name": "শেরপুর",
+      "\u09b6\u09c7\u09b0": {
+        "name": "\u09b6\u09c7\u09b0\u09aa\u09c1\u09b0",
         "alias": [
           "Sherpur"
         ]
       },
-      "টাঙ": {
-        "name": "টাঙ্গাইল",
+      "\u099f\u09be\u0999": {
+        "name": "\u099f\u09be\u0999\u09cd\u0997\u09be\u0987\u09b2",
         "alias": [
           "Tangail"
         ]
       },
-      "বাগ": {
-        "name": "বাগেরহাট",
+      "\u09ac\u09be\u0997": {
+        "name": "\u09ac\u09be\u0997\u09c7\u09b0\u09b9\u09be\u099f",
         "alias": [
           "Bagerhat"
         ]
       },
-      "চুয": {
-        "name": "চুয়াডাঙ্গা",
+      "\u099a\u09c1\u09af": {
+        "name": "\u099a\u09c1\u09af\u09bc\u09be\u09a1\u09be\u0999\u09cd\u0997\u09be",
         "alias": [
           "Chuadanga"
         ]
       },
-      "যশো": {
-        "name": "যশোর",
+      "\u09af\u09b6\u09cb": {
+        "name": "\u09af\u09b6\u09cb\u09b0",
         "alias": [
           "Jessore"
         ]
       },
-      "ঝিন": {
-        "name": "ঝিনাইদহ",
+      "\u099d\u09bf\u09a8": {
+        "name": "\u099d\u09bf\u09a8\u09be\u0987\u09a6\u09b9",
         "alias": [
           "Jhenaidah"
         ]
       },
-      "খুল": {
-        "name": "খুলনা",
+      "\u0996\u09c1\u09b2": {
+        "name": "\u0996\u09c1\u09b2\u09a8\u09be",
         "alias": [
           "Khulna"
         ]
       },
-      "কুষ": {
-        "name": "কুষ্টিয়া",
+      "\u0995\u09c1\u09b7": {
+        "name": "\u0995\u09c1\u09b7\u09cd\u099f\u09bf\u09af\u09bc\u09be",
         "alias": [
           "Kushtia"
         ]
       },
-      "মাগ": {
-        "name": "মাগুরা",
+      "\u09ae\u09be\u0997": {
+        "name": "\u09ae\u09be\u0997\u09c1\u09b0\u09be",
         "alias": [
           "Magura"
         ]
       },
-      "মেহ": {
-        "name": "মেহেরপুর",
+      "\u09ae\u09c7\u09b9": {
+        "name": "\u09ae\u09c7\u09b9\u09c7\u09b0\u09aa\u09c1\u09b0",
         "alias": [
           "Meherpur"
         ]
       },
-      "নড়": {
-        "name": "নড়াইল",
+      "\u09a8\u09a1\u09bc": {
+        "name": "\u09a8\u09a1\u09bc\u09be\u0987\u09b2",
         "alias": [
           "Narail"
         ]
       },
-      "সাত": {
-        "name": "সাতক্ষিরা",
+      "\u09b8\u09be\u09a4": {
+        "name": "\u09b8\u09be\u09a4\u0995\u09cd\u09b7\u09bf\u09b0\u09be",
         "alias": [
           "Satkhira"
         ]
       },
-      "বগু": {
-        "name": "বগুড়া",
+      "\u09ac\u0997\u09c1": {
+        "name": "\u09ac\u0997\u09c1\u09a1\u09bc\u09be",
         "alias": [
           "Bogra"
         ]
       },
-      "জয়": {
-        "name": "জয়পুরহাট",
+      "\u099c\u09af\u09bc": {
+        "name": "\u099c\u09af\u09bc\u09aa\u09c1\u09b0\u09b9\u09be\u099f",
         "alias": [
           "Joypurhat"
         ]
       },
-      "নওগ": {
-        "name": "নওগাঁ",
+      "\u09a8\u0993\u0997": {
+        "name": "\u09a8\u0993\u0997\u09be\u0981",
         "alias": [
           "Naogaon"
         ]
       },
-      "নাট": {
-        "name": "নাটোর",
+      "\u09a8\u09be\u099f": {
+        "name": "\u09a8\u09be\u099f\u09cb\u09b0",
         "alias": [
           "Natore"
         ]
       },
-      "নওয": {
-        "name": "নওয়াবগঞ্জ",
+      "\u09a8\u0993\u09af": {
+        "name": "\u09a8\u0993\u09af\u09bc\u09be\u09ac\u0997\u099e\u09cd\u099c",
         "alias": [
           "Chapainawabganj"
         ]
       },
-      "পাব": {
-        "name": "পাবনা",
+      "\u09aa\u09be\u09ac": {
+        "name": "\u09aa\u09be\u09ac\u09a8\u09be",
         "alias": [
           "Pabna"
         ]
       },
-      "সির": {
-        "name": "সিরাজগঞ্জ",
+      "\u09b8\u09bf\u09b0": {
+        "name": "\u09b8\u09bf\u09b0\u09be\u099c\u0997\u099e\u09cd\u099c",
         "alias": [
           "Sirajganj"
         ]
       },
-      "দিন": {
-        "name": "দিনাজপুর",
+      "\u09a6\u09bf\u09a8": {
+        "name": "\u09a6\u09bf\u09a8\u09be\u099c\u09aa\u09c1\u09b0",
         "alias": [
           "Dinajpur"
         ]
       },
-      "গাই": {
-        "name": "গাইবান্ধা",
+      "\u0997\u09be\u0987": {
+        "name": "\u0997\u09be\u0987\u09ac\u09be\u09a8\u09cd\u09a7\u09be",
         "alias": [
           "Gaibandha"
         ]
       },
-      "কুড": {
-        "name": "কুড়িগ্রাম",
+      "\u0995\u09c1\u09a1": {
+        "name": "\u0995\u09c1\u09a1\u09bc\u09bf\u0997\u09cd\u09b0\u09be\u09ae",
         "alias": [
           "Kurigram"
         ]
       },
-      "লাল": {
-        "name": "লালমনিরহাট",
+      "\u09b2\u09be\u09b2": {
+        "name": "\u09b2\u09be\u09b2\u09ae\u09a8\u09bf\u09b0\u09b9\u09be\u099f",
         "alias": [
           "Lalmonirhat"
         ]
       },
-      "নীল": {
-        "name": "নীলফামারী",
+      "\u09a8\u09c0\u09b2": {
+        "name": "\u09a8\u09c0\u09b2\u09ab\u09be\u09ae\u09be\u09b0\u09c0",
         "alias": [
           "Nilphamari"
         ]
       },
-      "পঞ্": {
-        "name": "পঞ্চগড়",
+      "\u09aa\u099e\u09cd": {
+        "name": "\u09aa\u099e\u09cd\u099a\u0997\u09a1\u09bc",
         "alias": [
           "Panchagarh"
         ]
       },
-      "রংপ": {
-        "name": "রংপুর",
+      "\u09b0\u0982\u09aa": {
+        "name": "\u09b0\u0982\u09aa\u09c1\u09b0",
         "alias": [
           "Rangpur"
         ]
       },
-      "ঠাক": {
-        "name": "ঠাকুরগাঁ",
+      "\u09a0\u09be\u0995": {
+        "name": "\u09a0\u09be\u0995\u09c1\u09b0\u0997\u09be\u0981",
         "alias": [
           "Thakurgaon"
         ]
       },
-      "হবি": {
-        "name": "হবিগঞ্জ",
+      "\u09b9\u09ac\u09bf": {
+        "name": "\u09b9\u09ac\u09bf\u0997\u099e\u09cd\u099c",
         "alias": [
           "Habiganj"
         ]
       },
-      "মৌল": {
-        "name": "মৌলভীবাজার",
+      "\u09ae\u09cc\u09b2": {
+        "name": "\u09ae\u09cc\u09b2\u09ad\u09c0\u09ac\u09be\u099c\u09be\u09b0",
         "alias": [
           "Moulvibazar"
         ]
       },
-      "সুন": {
-        "name": "সুনামগঞ্জ",
+      "\u09b8\u09c1\u09a8": {
+        "name": "\u09b8\u09c1\u09a8\u09be\u09ae\u0997\u099e\u09cd\u099c",
         "alias": [
           "Sunamganj"
         ]
       },
-      "সিল": {
-        "name": "সিলেট",
+      "\u09b8\u09bf\u09b2": {
+        "name": "\u09b8\u09bf\u09b2\u09c7\u099f",
         "alias": [
           "Sylhet"
         ]
@@ -713,7 +713,7 @@
       "LUI": {
         "name": "Luik",
         "alias": [
-          "Liège",
+          "Li\u00e8ge",
           "Liege"
         ],
         "regions": [
@@ -787,8 +787,8 @@
           "BO"
         ]
       },
-      "ITÉ": {
-        "name": "Iténez",
+      "IT\u00c9": {
+        "name": "It\u00e9nez",
         "alias": [
           "Itenez"
         ],
@@ -797,7 +797,7 @@
         ]
       },
       "JB": {
-        "name": "José Ballivián",
+        "name": "Jos\u00e9 Ballivi\u00e1n",
         "alias": [
           "Jose Ballivian"
         ],
@@ -806,7 +806,7 @@
         ]
       },
       "MAM": {
-        "name": "Mamoré",
+        "name": "Mamor\u00e9",
         "alias": [
           "Mamore"
         ],
@@ -815,7 +815,7 @@
         ]
       },
       "MAR": {
-        "name": "Marbán",
+        "name": "Marb\u00e1n",
         "alias": [
           "Marban"
         ],
@@ -830,7 +830,7 @@
         ]
       },
       "VD": {
-        "name": "Vaca Díez",
+        "name": "Vaca D\u00edez",
         "alias": [
           "Vaca Diez"
         ],
@@ -863,7 +863,7 @@
         ]
       },
       "JZ": {
-        "name": "Jaime Zudáñez",
+        "name": "Jaime Zud\u00e1\u00f1ez",
         "alias": [
           "Jaime Zudanez"
         ],
@@ -902,7 +902,7 @@
         ]
       },
       "YAM": {
-        "name": "Yamparáez",
+        "name": "Yampar\u00e1ez",
         "alias": [
           "Yamparaez"
         ],
@@ -953,7 +953,7 @@
         ]
       },
       "GJ": {
-        "name": "Germán Jordán",
+        "name": "Germ\u00e1n Jord\u00e1n",
         "alias": [
           "German Jordan"
         ],
@@ -986,7 +986,7 @@
         ]
       },
       "BOL": {
-        "name": "Bolívar",
+        "name": "Bol\u00edvar",
         "alias": [
           "Bolivar"
         ],
@@ -995,7 +995,7 @@
         ]
       },
       "TAP": {
-        "name": "Tapacarí",
+        "name": "Tapacar\u00ed",
         "alias": [
           "Tapacari"
         ],
@@ -1010,7 +1010,7 @@
         ]
       },
       "AI": {
-        "name": "Andrés Ibáñez",
+        "name": "Andr\u00e9s Ib\u00e1\u00f1ez",
         "alias": [
           "Andres Ibanez"
         ],
@@ -1061,9 +1061,9 @@
         ]
       },
       "JM": {
-        "name": "José María Avilés",
+        "name": "Jos\u00e9 Mar\u00eda Avil\u00e9s",
         "alias": [
-          "Jose María Aviles"
+          "Jose Mar\u00eda Aviles"
         ],
         "regions": [
           "BO"
@@ -1093,8 +1093,8 @@
           "BO"
         ]
       },
-      "MUÑ": {
-        "name": "Muñecas",
+      "MU\u00d1": {
+        "name": "Mu\u00f1ecas",
         "alias": [
           "Munecas"
         ],
@@ -1151,7 +1151,7 @@
         ]
       },
       "POO": {
-        "name": "Poopó",
+        "name": "Poop\u00f3",
         "alias": [
           "Poopo"
         ],
@@ -1166,7 +1166,7 @@
         ]
       },
       "SP": {
-        "name": "Sebastián Pagador",
+        "name": "Sebasti\u00e1n Pagador",
         "alias": [
           "Sebastian Pagador"
         ],
@@ -1175,7 +1175,7 @@
         ]
       },
       "SAU": {
-        "name": "Saucarí",
+        "name": "Saucar\u00ed",
         "alias": [
           "Saucari"
         ],
@@ -1184,7 +1184,7 @@
         ]
       },
       "TB": {
-        "name": "Tomas Barrón",
+        "name": "Tomas Barr\u00f3n",
         "alias": [
           "Tomas Barron"
         ],
@@ -1193,7 +1193,7 @@
         ]
       },
       "ABU": {
-        "name": "Abuná",
+        "name": "Abun\u00e1",
         "alias": [
           "Abuna"
         ],
@@ -1202,7 +1202,7 @@
         ]
       },
       "FR": {
-        "name": "Federico Román",
+        "name": "Federico Rom\u00e1n",
         "alias": [
           "Federico Roman"
         ],
@@ -1223,7 +1223,7 @@
         ]
       },
       "NS": {
-        "name": "Nicolás Suárez",
+        "name": "Nicol\u00e1s Su\u00e1rez",
         "alias": [
           "Nicolas Suarez"
         ],
@@ -1232,7 +1232,7 @@
         ]
       },
       "AD": {
-        "name": "Alonso de Ibáñez",
+        "name": "Alonso de Ib\u00e1\u00f1ez",
         "alias": [
           "Alonso de Ibanez"
         ],
@@ -1271,7 +1271,7 @@
         ]
       },
       "NL": {
-        "name": "Nor Lípez",
+        "name": "Nor L\u00edpez",
         "alias": [
           "Nor Lipez"
         ],
@@ -1286,7 +1286,7 @@
         ]
       },
       "SL": {
-        "name": "Sur Lípez",
+        "name": "Sur L\u00edpez",
         "alias": [
           "Sur Lipez"
         ],
@@ -1295,7 +1295,7 @@
         ]
       },
       "TF": {
-        "name": "Tomás Frías",
+        "name": "Tom\u00e1s Fr\u00edas",
         "alias": [
           "Tomas Frias"
         ],
@@ -1303,8 +1303,8 @@
           "BO"
         ]
       },
-      "ÁS": {
-        "name": "Ángel Sandoval",
+      "\u00c1S": {
+        "name": "\u00c1ngel Sandoval",
         "alias": [
           "Angel Sandoval"
         ],
@@ -1331,7 +1331,7 @@
         ]
       },
       "GB": {
-        "name": "Germán Busch",
+        "name": "Germ\u00e1n Busch",
         "alias": [
           "German Busch"
         ],
@@ -1358,7 +1358,7 @@
         ]
       },
       "MM": {
-        "name": "Manuel María Caballero",
+        "name": "Manuel Mar\u00eda Caballero",
         "alias": [
           "Manuel Maria Caballero"
         ],
@@ -1366,8 +1366,8 @@
           "BO"
         ]
       },
-      "ÑD": {
-        "name": "Ñuflo de Chávez",
+      "\u00d1D": {
+        "name": "\u00d1uflo de Ch\u00e1vez",
         "alias": [
           "Nuflo de Chavez"
         ],
@@ -1406,7 +1406,7 @@
         ]
       },
       "EM": {
-        "name": "Eustaquio Méndez",
+        "name": "Eustaquio M\u00e9ndez",
         "alias": [
           "Eustaquio Mendez"
         ],
@@ -1452,7 +1452,7 @@
         ]
       },
       "CEA": {
-        "name": "Ceará",
+        "name": "Cear\u00e1",
         "alias": [
           "Ceara"
         ],
@@ -1467,7 +1467,7 @@
         ]
       },
       "ES": {
-        "name": "Espírito Santo",
+        "name": "Esp\u00edrito Santo",
         "alias": [
           "Espirito Santo"
         ],
@@ -1476,7 +1476,7 @@
         ]
       },
       "GOI": {
-        "name": "Goiás",
+        "name": "Goi\u00e1s",
         "alias": [
           "Goias"
         ],
@@ -1485,7 +1485,7 @@
         ]
       },
       "MAR": {
-        "name": "Maranhão",
+        "name": "Maranh\u00e3o",
         "alias": [
           "Maranhao"
         ],
@@ -1500,7 +1500,7 @@
         ]
       },
       "PAR": {
-        "name": "Paraná",
+        "name": "Paran\u00e1",
         "alias": [
           "Parana"
         ],
@@ -1515,7 +1515,7 @@
         ]
       },
       "PIA": {
-        "name": "Piauí",
+        "name": "Piau\u00ed",
         "alias": [
           "Piaui"
         ],
@@ -1536,7 +1536,7 @@
         ]
       },
       "RON": {
-        "name": "Rondônia",
+        "name": "Rond\u00f4nia",
         "alias": [
           "Rondonia"
         ],
@@ -1557,7 +1557,7 @@
         ]
       },
       "SP": {
-        "name": "São Paulo",
+        "name": "S\u00e3o Paulo",
         "alias": [
           "Sao Paulo"
         ],
@@ -1677,7 +1677,7 @@
         ]
       },
       "COP": {
-        "name": "Copiapó",
+        "name": "Copiap\u00f3",
         "alias": [
           "Copiapo"
         ],
@@ -1704,7 +1704,7 @@
         ]
       },
       "LIM": {
-        "name": "Limarí",
+        "name": "Limar\u00ed",
         "alias": [
           "Limari"
         ],
@@ -1797,7 +1797,7 @@
         ]
       },
       "CUR": {
-        "name": "Curicó",
+        "name": "Curic\u00f3",
         "alias": [
           "Curico"
         ],
@@ -1812,7 +1812,7 @@
         ]
       },
       "CON": {
-        "name": "Concepción",
+        "name": "Concepci\u00f3n",
         "alias": [
           "Concepcion"
         ],
@@ -1820,8 +1820,8 @@
           "CL"
         ]
       },
-      "ÑUB": {
-        "name": "Ñuble",
+      "\u00d1UB": {
+        "name": "\u00d1uble",
         "alias": [
           "Nuble"
         ],
@@ -1830,7 +1830,7 @@
         ]
       },
       "BIO": {
-        "name": "Biobío",
+        "name": "Biob\u00edo",
         "alias": [
           "Biobio"
         ],
@@ -1887,7 +1887,7 @@
         ]
       },
       "AIS": {
-        "name": "Aisén",
+        "name": "Ais\u00e9n",
         "alias": [
           "Aisen"
         ],
@@ -1926,7 +1926,7 @@
         ]
       },
       "AC": {
-        "name": "Antártica Chilena",
+        "name": "Ant\u00e1rtica Chilena",
         "alias": [
           "Antartica Chilena"
         ],
@@ -1968,56 +1968,56 @@
       "CHO": {
         "name": "Chongqing",
         "alias": [
-          "重庆",
-          "渝",
+          "\u91cd\u5e86",
+          "\u6e1d",
           "Chongqing Shi"
         ]
       },
       "HEI": {
         "name": "Heilongjiang",
         "alias": [
-          "黑龙江",
-          "黑",
+          "\u9ed1\u9f99\u6c5f",
+          "\u9ed1",
           "Heilongjiang Sheng"
         ]
       },
       "JIL": {
         "name": "Jilin",
         "alias": [
-          "吉林",
-          "吉",
+          "\u5409\u6797",
+          "\u5409",
           "Jilin Sheng"
         ]
       },
       "HAI": {
         "name": "Hainan",
         "alias": [
-          "海南",
-          "琼",
+          "\u6d77\u5357",
+          "\u743c",
           "Hainan Sheng"
         ]
       },
       "BEI": {
         "name": "Beijing",
         "alias": [
-          "北京",
-          "京",
+          "\u5317\u4eac",
+          "\u4eac",
           "Beijing Shi"
         ]
       },
       "LIA": {
         "name": "Liaoning",
         "alias": [
-          "辽宁",
-          "辽",
+          "\u8fbd\u5b81",
+          "\u8fbd",
           "Liaoning Sheng"
         ]
       },
       "IM": {
         "name": "Inner Mongolia",
         "alias": [
-          "内蒙古",
-          "蒙",
+          "\u5185\u8499\u53e4",
+          "\u8499",
           "Nei Menggu Zizhiqu"
         ]
       },
@@ -2025,152 +2025,152 @@
         "name": "Tibet",
         "alias": [
           "Xizang",
-          "西藏",
-          "藏",
+          "\u897f\u85cf",
+          "\u85cf",
           "Xizang Zizhiqu"
         ]
       },
       "QIN": {
         "name": "Qinghai",
         "alias": [
-          "青海",
-          "青",
+          "\u9752\u6d77",
+          "\u9752",
           "Qinghai Sheng"
         ]
       },
       "NIN": {
         "name": "Ningxia",
         "alias": [
-          "宁夏",
-          "宁",
+          "\u5b81\u590f",
+          "\u5b81",
           "Ningxia Huizu Zizhiqu"
         ]
       },
       "XIN": {
         "name": "Xinjiang",
         "alias": [
-          "新疆",
-          "新",
+          "\u65b0\u7586",
+          "\u65b0",
           "Xinjiang Weiwuer Zizhiqu"
         ]
       },
       "GAN": {
         "name": "Gansu",
         "alias": [
-          "甘肃",
-          "甘",
+          "\u7518\u8083",
+          "\u7518",
           "Gansu Sheng"
         ]
       },
       "HEB": {
         "name": "Hebei",
         "alias": [
-          "河北",
-          "冀",
+          "\u6cb3\u5317",
+          "\u5180",
           "Hebei Sheng"
         ]
       },
       "HEN": {
         "name": "Henan",
         "alias": [
-          "河南",
-          "豫",
+          "\u6cb3\u5357",
+          "\u8c6b",
           "Henan Sheng"
         ]
       },
       "HUB": {
         "name": "Hubei",
         "alias": [
-          "湖北",
-          "鄂",
+          "\u6e56\u5317",
+          "\u9102",
           "Hubei Sheng"
         ]
       },
       "HUN": {
         "name": "Hunan",
         "alias": [
-          "湖南",
-          "湘",
+          "\u6e56\u5357",
+          "\u6e58",
           "Hunan Sheng"
         ]
       },
       "SHA": {
         "name": "Shanghai",
         "alias": [
-          "上海",
-          "沪",
+          "\u4e0a\u6d77",
+          "\u6caa",
           "Shanghai Shi"
         ]
       },
       "JIA": {
         "name": "Jiangxi",
         "alias": [
-          "江西",
-          "赣",
+          "\u6c5f\u897f",
+          "\u8d63",
           "Jiangxi Sheng"
         ]
       },
       "ANH": {
         "name": "Anhui",
         "alias": [
-          "安徽",
-          "皖",
+          "\u5b89\u5fbd",
+          "\u7696",
           "Anhui Sheng"
         ]
       },
       "SIC": {
         "name": "Sichuan",
         "alias": [
-          "四川",
-          "川",
+          "\u56db\u5ddd",
+          "\u5ddd",
           "Sichuan Sheng"
         ]
       },
       "YUN": {
         "name": "Yunnan",
         "alias": [
-          "云南",
-          "滇",
+          "\u4e91\u5357",
+          "\u6ec7",
           "Yunnan Sheng"
         ]
       },
       "GUI": {
         "name": "Guizhou",
         "alias": [
-          "贵州",
-          "黔",
+          "\u8d35\u5dde",
+          "\u9ed4",
           "Guizhou Sheng"
         ]
       },
       "ZHE": {
         "name": "Zhejiang",
         "alias": [
-          "浙江",
-          "浙",
+          "\u6d59\u6c5f",
+          "\u6d59",
           "Zhejiang Sheng"
         ]
       },
       "FUJ": {
         "name": "Fujian",
         "alias": [
-          "福建",
-          "闽",
+          "\u798f\u5efa",
+          "\u95fd",
           "Fujian Sheng"
         ]
       },
       "GUA": {
         "name": "Guangdong",
         "alias": [
-          "广东",
-          "粤",
+          "\u5e7f\u4e1c",
+          "\u7ca4",
           "Guangdong Sheng"
         ]
       },
       "TIA": {
         "name": "Tianjin",
         "alias": [
-          "天津",
-          "津",
+          "\u5929\u6d25",
+          "\u6d25",
           "Tianjin Shi"
         ]
       },
@@ -2178,8 +2178,8 @@
         "name": "Hong Kong",
         "alias": [
           "Xianggang",
-          "香港",
-          "港",
+          "\u9999\u6e2f",
+          "\u6e2f",
           "Xianggang Tebie Xingzhengqu"
         ]
       },
@@ -2187,16 +2187,16 @@
         "name": "Macau",
         "alias": [
           "Aomen",
-          "澳门",
-          "澳",
+          "\u6fb3\u95e8",
+          "\u6fb3",
           "Aomen Tebie Xingzhengqu"
         ]
       },
       "TAI": {
         "name": "Taiwan",
         "alias": [
-          "台湾",
-          "台",
+          "\u53f0\u6e7e",
+          "\u53f0",
           "Taiwan Shi"
         ]
       }
@@ -2208,13 +2208,13 @@
   "CU": {
     "divisions": {
       "CAM": {
-        "name": "Camagüey",
+        "name": "Camag\u00fcey",
         "alias": [
           "Camaguey"
         ]
       },
       "CD": {
-        "name": "Ciego de Ávila",
+        "name": "Ciego de \u00c1vila",
         "alias": [
           "Ciego de Avila"
         ]
@@ -2229,13 +2229,13 @@
         "name": "Bayamo"
       },
       "GUA": {
-        "name": "Guantánamo",
+        "name": "Guant\u00e1namo",
         "alias": [
           "Guantanamo"
         ]
       },
       "HOL": {
-        "name": "Holguín",
+        "name": "Holgu\u00edn",
         "alias": [
           "Holguin"
         ]
@@ -2253,19 +2253,19 @@
         "name": "Matanzas"
       },
       "SJ": {
-        "name": "San José de las Lajas",
+        "name": "San Jos\u00e9 de las Lajas",
         "alias": [
           "San Jose de las Lajas"
         ]
       },
       "PD": {
-        "name": "Pinar del Río",
+        "name": "Pinar del R\u00edo",
         "alias": [
           "Pinar del Rio"
         ]
       },
       "SS": {
-        "name": "Sancti Spíritus",
+        "name": "Sancti Sp\u00edritus",
         "alias": [
           "Sancti Spiritus"
         ]
@@ -2284,20 +2284,20 @@
   "DE": {
     "divisions": {
       "BW": {
-        "name": "Baden-Württemberg",
+        "name": "Baden-W\u00fcrttemberg",
         "alias": [
           "Baden-Wurttemberg",
-          "Baden Württemberg",
+          "Baden W\u00fcrttemberg",
           "Baden Wurttemberg"
         ],
         "regions": [
-          "Süddeutschland"
+          "S\u00fcddeutschland"
         ]
       },
       "BAY": {
         "name": "Bayern",
         "regions": [
-          "Süddeutschland"
+          "S\u00fcddeutschland"
         ]
       },
       "BE": {
@@ -2387,8 +2387,8 @@
           "Norddeutschland"
         ]
       },
-      "THÜ": {
-        "name": "Thüringen",
+      "TH\u00dc": {
+        "name": "Th\u00fcringen",
         "alias": [
           "Thuringen"
         ],
@@ -2421,8 +2421,8 @@
           "Denmark"
         ]
       },
-      "SJÆ": {
-        "name": "Sjælland",
+      "SJ\u00c6": {
+        "name": "Sj\u00e6lland",
         "alias": [
           "Zealand"
         ],
@@ -2446,10 +2446,10 @@
   "ES": {
     "divisions": {
       "LC": {
-        "name": "La Coruña",
+        "name": "La Coru\u00f1a",
         "alias": [
           "La Coruna",
-          "A Coruña"
+          "A Coru\u00f1a"
         ],
         "regions": [
           "Galicia"
@@ -2477,7 +2477,7 @@
         ]
       },
       "GUI": {
-        "name": "Guipúzcoa",
+        "name": "Guip\u00fazcoa",
         "alias": [
           "Guipuzcoa"
         ],
@@ -2491,8 +2491,8 @@
           "Andalusia"
         ]
       },
-      "LÉR": {
-        "name": "Lérida",
+      "L\u00c9R": {
+        "name": "L\u00e9rida",
         "alias": [
           "Lerida"
         ],
@@ -2519,7 +2519,7 @@
         ]
       },
       "CAS": {
-        "name": "Castellón",
+        "name": "Castell\u00f3n",
         "alias": [
           "Castellon"
         ],
@@ -2530,7 +2530,7 @@
       "VAL": {
         "name": "Valladolid",
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
       "ALI": {
@@ -2581,8 +2581,8 @@
           "Andalusia"
         ]
       },
-      "MÁL": {
-        "name": "Málaga",
+      "M\u00c1L": {
+        "name": "M\u00e1laga",
         "alias": [
           "Malaga"
         ],
@@ -2596,8 +2596,8 @@
           "Canary Islands"
         ]
       },
-      "CÁD": {
-        "name": "Cádiz",
+      "C\u00c1D": {
+        "name": "C\u00e1diz",
         "alias": [
           "Cadiz"
         ],
@@ -2629,8 +2629,8 @@
           "Extremadura"
         ]
       },
-      "CÁC": {
-        "name": "Cáceres",
+      "C\u00c1C": {
+        "name": "C\u00e1ceres",
         "alias": [
           "Caceres"
         ],
@@ -2653,11 +2653,11 @@
       "SAL": {
         "name": "Salamanca",
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
-      "CÓR": {
-        "name": "Córdoba",
+      "C\u00d3R": {
+        "name": "C\u00f3rdoba",
         "alias": [
           "Cordoba"
         ],
@@ -2665,8 +2665,8 @@
           "Andalusia"
         ]
       },
-      "JAÉ": {
-        "name": "Jaén",
+      "JA\u00c9": {
+        "name": "Ja\u00e9n",
         "alias": [
           "Jaen"
         ],
@@ -2674,23 +2674,23 @@
           "Andalusia"
         ]
       },
-      "ÁVI": {
-        "name": "Ávila",
+      "\u00c1VI": {
+        "name": "\u00c1vila",
         "alias": [
           "Avila"
         ],
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
       "ZAM": {
         "name": "Zamora",
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
-      "ÁLA": {
-        "name": "Álava",
+      "\u00c1LA": {
+        "name": "\u00c1lava",
         "alias": [
           "Alava"
         ],
@@ -2701,13 +2701,13 @@
       "SEG": {
         "name": "Segovia",
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
       "BUR": {
         "name": "Burgos",
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
       "PON": {
@@ -2716,13 +2716,13 @@
           "Galicia"
         ]
       },
-      "LEÓ": {
-        "name": "León",
+      "LE\u00d3": {
+        "name": "Le\u00f3n",
         "alias": [
           "Leon"
         ],
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
       "ORE": {
@@ -2734,7 +2734,7 @@
       "PAL": {
         "name": "Palencia",
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
       "LR": {
@@ -2746,7 +2746,7 @@
       "SOR": {
         "name": "Soria",
         "regions": [
-          "Castile and León"
+          "Castile and Le\u00f3n"
         ]
       },
       "GUA": {
@@ -2819,7 +2819,7 @@
         "name": "Bali"
       },
       "BI": {
-        "name": "Bangka–Belitung Islands",
+        "name": "Bangka\u2013Belitung Islands",
         "alias": [
           "Bangka Belitung Islands"
         ]
@@ -3093,8 +3093,8 @@
   },
   "JP": {
     "divisions": {
-      "愛知県": {
-        "name": "愛知県",
+      "\u611b\u77e5\u770c": {
+        "name": "\u611b\u77e5\u770c",
         "alias": [
           "Aichi"
         ],
@@ -3102,8 +3102,8 @@
           "Chubu"
         ]
       },
-      "秋田県": {
-        "name": "秋田県",
+      "\u79cb\u7530\u770c": {
+        "name": "\u79cb\u7530\u770c",
         "alias": [
           "Akita"
         ],
@@ -3111,8 +3111,8 @@
           "Tohoku"
         ]
       },
-      "青森県": {
-        "name": "青森県",
+      "\u9752\u68ee\u770c": {
+        "name": "\u9752\u68ee\u770c",
         "alias": [
           "Aomori"
         ],
@@ -3120,8 +3120,8 @@
           "Tohoku"
         ]
       },
-      "千葉県": {
-        "name": "千葉県",
+      "\u5343\u8449\u770c": {
+        "name": "\u5343\u8449\u770c",
         "alias": [
           "Chiba"
         ],
@@ -3129,8 +3129,8 @@
           "Kanto"
         ]
       },
-      "愛媛県": {
-        "name": "愛媛県",
+      "\u611b\u5a9b\u770c": {
+        "name": "\u611b\u5a9b\u770c",
         "alias": [
           "Ehime"
         ],
@@ -3138,8 +3138,8 @@
           "Shikoku"
         ]
       },
-      "福井県": {
-        "name": "福井県",
+      "\u798f\u4e95\u770c": {
+        "name": "\u798f\u4e95\u770c",
         "alias": [
           "Fukui"
         ],
@@ -3147,8 +3147,8 @@
           "Chubu"
         ]
       },
-      "福岡県": {
-        "name": "福岡県",
+      "\u798f\u5ca1\u770c": {
+        "name": "\u798f\u5ca1\u770c",
         "alias": [
           "Fukuoka"
         ],
@@ -3156,8 +3156,8 @@
           "Kyushu"
         ]
       },
-      "福島県": {
-        "name": "福島県",
+      "\u798f\u5cf6\u770c": {
+        "name": "\u798f\u5cf6\u770c",
         "alias": [
           "Fukushima"
         ],
@@ -3165,8 +3165,8 @@
           "Tohoku"
         ]
       },
-      "岐阜県": {
-        "name": "岐阜県",
+      "\u5c90\u961c\u770c": {
+        "name": "\u5c90\u961c\u770c",
         "alias": [
           "Gifu"
         ],
@@ -3174,8 +3174,8 @@
           "Chubu"
         ]
       },
-      "群馬県": {
-        "name": "群馬県",
+      "\u7fa4\u99ac\u770c": {
+        "name": "\u7fa4\u99ac\u770c",
         "alias": [
           "Gunma"
         ],
@@ -3183,8 +3183,8 @@
           "Kanto"
         ]
       },
-      "広島県": {
-        "name": "広島県",
+      "\u5e83\u5cf6\u770c": {
+        "name": "\u5e83\u5cf6\u770c",
         "alias": [
           "Hiroshima"
         ],
@@ -3192,27 +3192,27 @@
           "Chugoku"
         ]
       },
-      "北海道": {
-        "name": "北海道",
+      "\u5317\u6d77\u9053": {
+        "name": "\u5317\u6d77\u9053",
         "alias": [
-          "Hokkaidō"
+          "Hokkaid\u014d"
         ],
         "regions": [
           "Hokkaido"
         ]
       },
-      "兵庫県": {
-        "name": "兵庫県",
+      "\u5175\u5eab\u770c": {
+        "name": "\u5175\u5eab\u770c",
         "alias": [
-          "Hyōgo",
+          "Hy\u014dgo",
           "Hyogo"
         ],
         "regions": [
           "Kansai"
         ]
       },
-      "茨城県": {
-        "name": "茨城県",
+      "\u8328\u57ce\u770c": {
+        "name": "\u8328\u57ce\u770c",
         "alias": [
           "Ibaraki"
         ],
@@ -3220,8 +3220,8 @@
           "Kanto"
         ]
       },
-      "石川県": {
-        "name": "石川県",
+      "\u77f3\u5ddd\u770c": {
+        "name": "\u77f3\u5ddd\u770c",
         "alias": [
           "Ishikawa"
         ],
@@ -3229,8 +3229,8 @@
           "Chubu"
         ]
       },
-      "岩手県": {
-        "name": "岩手県",
+      "\u5ca9\u624b\u770c": {
+        "name": "\u5ca9\u624b\u770c",
         "alias": [
           "Iwate"
         ],
@@ -3238,8 +3238,8 @@
           "Tohoku"
         ]
       },
-      "香川県": {
-        "name": "香川県",
+      "\u9999\u5ddd\u770c": {
+        "name": "\u9999\u5ddd\u770c",
         "alias": [
           "Kagawa"
         ],
@@ -3247,30 +3247,30 @@
           "Shikoku"
         ]
       },
-      "鹿児島": {
-        "name": "鹿児島県",
+      "\u9e7f\u5150\u5cf6": {
+        "name": "\u9e7f\u5150\u5cf6\u770c",
         "alias": [
           "Kagoshima"
         ]
       },
-      "神奈川": {
-        "name": "神奈川県",
+      "\u795e\u5948\u5ddd": {
+        "name": "\u795e\u5948\u5ddd\u770c",
         "alias": [
           "Kanagawa"
         ]
       },
-      "高知県": {
-        "name": "高知県",
+      "\u9ad8\u77e5\u770c": {
+        "name": "\u9ad8\u77e5\u770c",
         "alias": [
-          "Kōchi",
+          "K\u014dchi",
           "Kochi"
         ],
         "regions": [
           "Shikoku"
         ]
       },
-      "熊本県": {
-        "name": "熊本県",
+      "\u718a\u672c\u770c": {
+        "name": "\u718a\u672c\u770c",
         "alias": [
           "Kumamoto"
         ],
@@ -3278,18 +3278,18 @@
           "Kyushu"
         ]
       },
-      "京都府": {
-        "name": "京都府",
+      "\u4eac\u90fd\u5e9c": {
+        "name": "\u4eac\u90fd\u5e9c",
         "alias": [
-          "Kyōto",
+          "Ky\u014dto",
           "Kyoto"
         ],
         "regions": [
           "Kansai"
         ]
       },
-      "三重県": {
-        "name": "三重県",
+      "\u4e09\u91cd\u770c": {
+        "name": "\u4e09\u91cd\u770c",
         "alias": [
           "Mie"
         ],
@@ -3297,8 +3297,8 @@
           "Kansai"
         ]
       },
-      "宮城県": {
-        "name": "宮城県",
+      "\u5bae\u57ce\u770c": {
+        "name": "\u5bae\u57ce\u770c",
         "alias": [
           "Miyagi"
         ],
@@ -3306,8 +3306,8 @@
           "Tohoku"
         ]
       },
-      "宮崎県": {
-        "name": "宮崎県",
+      "\u5bae\u5d0e\u770c": {
+        "name": "\u5bae\u5d0e\u770c",
         "alias": [
           "Miyazaki"
         ],
@@ -3315,8 +3315,8 @@
           "Kyushu"
         ]
       },
-      "長野県": {
-        "name": "長野県",
+      "\u9577\u91ce\u770c": {
+        "name": "\u9577\u91ce\u770c",
         "alias": [
           "Nagano"
         ],
@@ -3324,8 +3324,8 @@
           "Chubu"
         ]
       },
-      "長崎県": {
-        "name": "長崎県",
+      "\u9577\u5d0e\u770c": {
+        "name": "\u9577\u5d0e\u770c",
         "alias": [
           "Nagasaki"
         ],
@@ -3333,8 +3333,8 @@
           "Kyushu"
         ]
       },
-      "奈良県": {
-        "name": "奈良県",
+      "\u5948\u826f\u770c": {
+        "name": "\u5948\u826f\u770c",
         "alias": [
           "Nara"
         ],
@@ -3342,8 +3342,8 @@
           "Kansai"
         ]
       },
-      "新潟県": {
-        "name": "新潟県",
+      "\u65b0\u6f5f\u770c": {
+        "name": "\u65b0\u6f5f\u770c",
         "alias": [
           "Niigata"
         ],
@@ -3351,18 +3351,18 @@
           "Chubu"
         ]
       },
-      "大分県": {
-        "name": "大分県",
+      "\u5927\u5206\u770c": {
+        "name": "\u5927\u5206\u770c",
         "alias": [
-          "Ōita",
+          "\u014cita",
           "Oita"
         ],
         "regions": [
           "Kyushu"
         ]
       },
-      "岡山県": {
-        "name": "岡山県",
+      "\u5ca1\u5c71\u770c": {
+        "name": "\u5ca1\u5c71\u770c",
         "alias": [
           "Okayama"
         ],
@@ -3370,8 +3370,8 @@
           "Chugoku"
         ]
       },
-      "沖縄県": {
-        "name": "沖縄県",
+      "\u6c96\u7e04\u770c": {
+        "name": "\u6c96\u7e04\u770c",
         "alias": [
           "Okinawa"
         ],
@@ -3379,17 +3379,17 @@
           "Kyushu"
         ]
       },
-      "大阪府": {
-        "name": "大阪府",
+      "\u5927\u962a\u5e9c": {
+        "name": "\u5927\u962a\u5e9c",
         "alias": [
-          "Ōsaka"
+          "\u014csaka"
         ],
         "regions": [
           "Kansai"
         ]
       },
-      "佐賀県": {
-        "name": "佐賀県",
+      "\u4f50\u8cc0\u770c": {
+        "name": "\u4f50\u8cc0\u770c",
         "alias": [
           "Saga"
         ],
@@ -3397,8 +3397,8 @@
           "Kyushu"
         ]
       },
-      "埼玉県": {
-        "name": "埼玉県",
+      "\u57fc\u7389\u770c": {
+        "name": "\u57fc\u7389\u770c",
         "alias": [
           "Saitama"
         ],
@@ -3406,8 +3406,8 @@
           "Kanto"
         ]
       },
-      "滋賀県": {
-        "name": "滋賀県",
+      "\u6ecb\u8cc0\u770c": {
+        "name": "\u6ecb\u8cc0\u770c",
         "alias": [
           "Shiga"
         ],
@@ -3415,8 +3415,8 @@
           "Kansai"
         ]
       },
-      "島根県": {
-        "name": "島根県",
+      "\u5cf6\u6839\u770c": {
+        "name": "\u5cf6\u6839\u770c",
         "alias": [
           "Shimane"
         ],
@@ -3424,8 +3424,8 @@
           "Chugoku"
         ]
       },
-      "静岡県": {
-        "name": "静岡県",
+      "\u9759\u5ca1\u770c": {
+        "name": "\u9759\u5ca1\u770c",
         "alias": [
           "Shizuoka"
         ],
@@ -3433,8 +3433,8 @@
           "Chubu"
         ]
       },
-      "栃木県": {
-        "name": "栃木県",
+      "\u6803\u6728\u770c": {
+        "name": "\u6803\u6728\u770c",
         "alias": [
           "Tochigi"
         ],
@@ -3442,8 +3442,8 @@
           "Kanto"
         ]
       },
-      "徳島県": {
-        "name": "徳島県",
+      "\u5fb3\u5cf6\u770c": {
+        "name": "\u5fb3\u5cf6\u770c",
         "alias": [
           "Tokushima"
         ],
@@ -3451,18 +3451,18 @@
           "Shikoku"
         ]
       },
-      "東京都": {
-        "name": "東京都",
+      "\u6771\u4eac\u90fd": {
+        "name": "\u6771\u4eac\u90fd",
         "alias": [
-          "Tōkyō",
+          "T\u014dky\u014d",
           "Tokyo"
         ],
         "regions": [
           "Kanto"
         ]
       },
-      "鳥取県": {
-        "name": "鳥取県",
+      "\u9ce5\u53d6\u770c": {
+        "name": "\u9ce5\u53d6\u770c",
         "alias": [
           "Tottori"
         ],
@@ -3470,8 +3470,8 @@
           "Chugoku"
         ]
       },
-      "富山県": {
-        "name": "富山県",
+      "\u5bcc\u5c71\u770c": {
+        "name": "\u5bcc\u5c71\u770c",
         "alias": [
           "Toyama"
         ],
@@ -3479,14 +3479,14 @@
           "Chubu"
         ]
       },
-      "和歌山": {
-        "name": "和歌山県",
+      "\u548c\u6b4c\u5c71": {
+        "name": "\u548c\u6b4c\u5c71\u770c",
         "alias": [
           "Wakayama"
         ]
       },
-      "山形県": {
-        "name": "山形県",
+      "\u5c71\u5f62\u770c": {
+        "name": "\u5c71\u5f62\u770c",
         "alias": [
           "Yamagata"
         ],
@@ -3494,8 +3494,8 @@
           "Tohoku"
         ]
       },
-      "山口県": {
-        "name": "山口県",
+      "\u5c71\u53e3\u770c": {
+        "name": "\u5c71\u53e3\u770c",
         "alias": [
           "Yamaguchi"
         ],
@@ -3503,8 +3503,8 @@
           "Chugoku"
         ]
       },
-      "山梨県": {
-        "name": "山梨県",
+      "\u5c71\u68a8\u770c": {
+        "name": "\u5c71\u68a8\u770c",
         "alias": [
           "Yamanashi"
         ],
@@ -3519,118 +3519,118 @@
   },
   "KH": {
     "divisions": {
-      "ភ្ន": {
-        "name": "ភ្នំពេញ",
+      "\u1797\u17d2\u1793": {
+        "name": "\u1797\u17d2\u1793\u17c6\u1796\u17c1\u1789",
         "alias": [
           "Phnom Penh Municipality"
         ]
       },
-      "បន្": {
-        "name": "បន្ទាយមានជ័យ",
+      "\u1794\u1793\u17d2": {
+        "name": "\u1794\u1793\u17d2\u1791\u17b6\u1799\u1798\u17b6\u1793\u1787\u17d0\u1799",
         "alias": [
           "Banteay Meanchey"
         ]
       },
-      "បាត": {
-        "name": "បាត់ដំបង",
+      "\u1794\u17b6\u178f": {
+        "name": "\u1794\u17b6\u178f\u17cb\u178a\u17c6\u1794\u1784",
         "alias": [
           "Battambang"
         ]
       },
-      "កំព": {
-        "name": "កំពត",
+      "\u1780\u17c6\u1796": {
+        "name": "\u1780\u17c6\u1796\u178f",
         "alias": [
           "Kampot"
         ]
       },
-      "កណ្": {
-        "name": "កណ្តាល",
+      "\u1780\u178e\u17d2": {
+        "name": "\u1780\u178e\u17d2\u178f\u17b6\u179b",
         "alias": [
           "Kandal"
         ]
       },
-      "កោះ": {
-        "name": "កោះកុង",
+      "\u1780\u17c4\u17c7": {
+        "name": "\u1780\u17c4\u17c7\u1780\u17bb\u1784",
         "alias": [
           "Koh Kong"
         ]
       },
-      "កែប": {
-        "name": "កែប",
+      "\u1780\u17c2\u1794": {
+        "name": "\u1780\u17c2\u1794",
         "alias": [
           "Kep"
         ]
       },
-      "ក្រ": {
-        "name": "ក្រចេះ",
+      "\u1780\u17d2\u179a": {
+        "name": "\u1780\u17d2\u179a\u1785\u17c1\u17c7",
         "alias": [
-          "Kratié",
+          "Krati\u00e9",
           "Kratie"
         ]
       },
-      "មណ្": {
-        "name": "មណ្ឌលគីរី",
+      "\u1798\u178e\u17d2": {
+        "name": "\u1798\u178e\u17d2\u178c\u179b\u1782\u17b8\u179a\u17b8",
         "alias": [
           "Mondulkiri"
         ]
       },
-      "ឧត្": {
-        "name": "ឧត្តរមានជ័យ",
+      "\u17a7\u178f\u17d2": {
+        "name": "\u17a7\u178f\u17d2\u178f\u179a\u1798\u17b6\u1793\u1787\u17d0\u1799",
         "alias": [
           "Oddar Meanchey"
         ]
       },
-      "បៃល": {
-        "name": "បៃលិន",
+      "\u1794\u17c3\u179b": {
+        "name": "\u1794\u17c3\u179b\u17b7\u1793",
         "alias": [
           "Pailin"
         ]
       },
-      "ព្រ": {
-        "name": "ព្រៃវែង",
+      "\u1796\u17d2\u179a": {
+        "name": "\u1796\u17d2\u179a\u17c3\u179c\u17c2\u1784",
         "alias": [
           "Prey Veng"
         ]
       },
-      "ពោធ": {
-        "name": "ពោធិ៍សាត់",
+      "\u1796\u17c4\u1792": {
+        "name": "\u1796\u17c4\u1792\u17b7\u17cd\u179f\u17b6\u178f\u17cb",
         "alias": [
           "Pursat"
         ]
       },
-      "រតន": {
-        "name": "រតនគីរី",
+      "\u179a\u178f\u1793": {
+        "name": "\u179a\u178f\u1793\u1782\u17b8\u179a\u17b8",
         "alias": [
           "Ratanakiri"
         ]
       },
-      "សៀម": {
-        "name": "សៀមរាប",
+      "\u179f\u17c0\u1798": {
+        "name": "\u179f\u17c0\u1798\u179a\u17b6\u1794",
         "alias": [
           "Siem Reap"
         ]
       },
-      "ស្ទ": {
-        "name": "ស្ទឹងត្រែង",
+      "\u179f\u17d2\u1791": {
+        "name": "\u179f\u17d2\u1791\u17b9\u1784\u178f\u17d2\u179a\u17c2\u1784",
         "alias": [
           "Stung Treng"
         ]
       },
-      "ស្វ": {
-        "name": "ស្វាយរៀង",
+      "\u179f\u17d2\u179c": {
+        "name": "\u179f\u17d2\u179c\u17b6\u1799\u179a\u17c0\u1784",
         "alias": [
           "Svay Rieng"
         ]
       },
-      "តាក": {
-        "name": "តាកែវ",
+      "\u178f\u17b6\u1780": {
+        "name": "\u178f\u17b6\u1780\u17c2\u179c",
         "alias": [
-          "Takéo",
+          "Tak\u00e9o",
           "Takeo"
         ]
       },
-      "ត្ប": {
-        "name": "ត្បូងឃ្មុំ",
+      "\u178f\u17d2\u1794": {
+        "name": "\u178f\u17d2\u1794\u17bc\u1784\u1783\u17d2\u1798\u17bb\u17c6",
         "alias": [
           "Tbong Khmum"
         ]
@@ -3730,7 +3730,7 @@
         ]
       },
       "MIC": {
-        "name": "Michoacán",
+        "name": "Michoac\u00e1n",
         "alias": [
           "Mich",
           "MIC",
@@ -3752,7 +3752,7 @@
         ]
       },
       "NL": {
-        "name": "Nuevo León",
+        "name": "Nuevo Le\u00f3n",
         "alias": [
           "NLE",
           "Nuevo Leon"
@@ -3773,7 +3773,7 @@
         ]
       },
       "QUE": {
-        "name": "Querétaro",
+        "name": "Quer\u00e9taro",
         "alias": [
           "Qro",
           "QUE",
@@ -3788,7 +3788,7 @@
         ]
       },
       "SL": {
-        "name": "San Luis Potosí",
+        "name": "San Luis Potos\u00ed",
         "alias": [
           "SLP",
           "San Luis Potosi"
@@ -3833,7 +3833,7 @@
         ]
       },
       "YUC": {
-        "name": "Yucatán",
+        "name": "Yucat\u00e1n",
         "alias": [
           "YUC",
           "Yucatan"
@@ -4052,7 +4052,7 @@
         "name": "Sint Eustatius"
       },
       "CUR": {
-        "name": "Curaçao"
+        "name": "Cura\u00e7ao"
       },
       "SM": {
         "name": "Sint Maarten"
@@ -4068,967 +4068,967 @@
       "CHA": {
         "name": "Chanchamayo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "BAG": {
         "name": "Bagua",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "BON": {
-        "name": "Bongará",
+        "name": "Bongar\u00e1",
         "alias": [
           "Bongara"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CON": {
-        "name": "Concepción",
+        "name": "Concepci\u00f3n",
         "alias": [
           "Concepcion"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LUY": {
         "name": "Luya",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "RD": {
-        "name": "Rodríguez de Mendoza",
+        "name": "Rodr\u00edguez de Mendoza",
         "alias": [
           "Rodriguez de Mendoza"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "UTC": {
         "name": "Utcubamba",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "HUA": {
         "name": "Huallaga",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "AIJ": {
         "name": "Aija",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "AR": {
         "name": "Antonio Raymondi",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ASU": {
-        "name": "Asunción",
+        "name": "Asunci\u00f3n",
         "alias": [
           "Asuncion"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "BOL": {
-        "name": "Bolívar",
+        "name": "Bol\u00edvar",
         "alias": [
           "Bolivar"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CAR": {
         "name": "Carabaya",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CF": {
-        "name": "Carlos Fermín Fitzcarrald",
+        "name": "Carlos Ferm\u00edn Fitzcarrald",
         "alias": [
           "Carlos Fermin Fitzcarrald"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CAS": {
         "name": "Castrovirreyna",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "COR": {
         "name": "Corongo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ML": {
         "name": "Mariscal Luzuriaga",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "OCR": {
         "name": "Ocros",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PAL": {
         "name": "Palpa",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "POM": {
         "name": "Pomabamba",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "REC": {
         "name": "Recuay",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SAN": {
         "name": "Sandia",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SIH": {
         "name": "Sihuas",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "YUN": {
         "name": "Yunguyo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ABA": {
         "name": "Abancay",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "AND": {
         "name": "Andahuaylas",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ANT": {
         "name": "Anta",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "AYM": {
         "name": "Aymaraes",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "COT": {
         "name": "Cotabambas",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CHI": {
         "name": "Chiclayo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "GRA": {
         "name": "Grau",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ARE": {
         "name": "Arequipa",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CAM": {
-        "name": "Camaná",
+        "name": "Caman\u00e1",
         "alias": [
           "Camana"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CAY": {
         "name": "Caylloma",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ISL": {
         "name": "Islay",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LU": {
-        "name": "La Unión",
+        "name": "La Uni\u00f3n",
         "alias": [
           "La Union"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CAN": {
         "name": "Candarave",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "HS": {
         "name": "Huanca Sancos",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LM": {
         "name": "La Mar",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LUC": {
         "name": "Lucanas",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PAR": {
         "name": "Paruro",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PD": {
-        "name": "Páucar del Sara Sara",
+        "name": "P\u00e1ucar del Sara Sara",
         "alias": [
           "Paucar del Sara Sara"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SUC": {
         "name": "Sucre",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "VF": {
-        "name": "Víctor Fajardo",
+        "name": "V\u00edctor Fajardo",
         "alias": [
           "Victor Fajardo"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "VH": {
-        "name": "Vilcas Huamán",
+        "name": "Vilcas Huam\u00e1n",
         "alias": [
           "Vilcas Huaman"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CAJ": {
         "name": "Cajatambo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CEL": {
-        "name": "Celendín",
+        "name": "Celend\u00edn",
         "alias": [
           "Celendin"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CHO": {
         "name": "Chota",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CUT": {
         "name": "Cutervo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
-      "JAÉ": {
-        "name": "Jaén",
+      "JA\u00c9": {
+        "name": "Ja\u00e9n",
         "alias": [
           "Jaen"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SI": {
         "name": "San Ignacio",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SM": {
-        "name": "San Martín",
+        "name": "San Mart\u00edn",
         "alias": [
           "San Martin"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SP": {
         "name": "San Pablo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SC": {
-        "name": "Sánchez Carrión",
+        "name": "S\u00e1nchez Carri\u00f3n",
         "alias": [
           "Sanchez Carrion"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CAL": {
         "name": "Calca",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CUS": {
         "name": "Cusco",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ACO": {
         "name": "Acobamba",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CHU": {
         "name": "Chucuito",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ESP": {
         "name": "Espinar",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LC": {
-        "name": "La Convención",
+        "name": "La Convenci\u00f3n",
         "alias": [
           "La Convencion"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PAU": {
         "name": "Paucartambo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "QUI": {
         "name": "Quispicanchi",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "URU": {
         "name": "Urubamba",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ANG": {
         "name": "Angaraes",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TAY": {
         "name": "Tayacaja",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
-      "HUÁ": {
-        "name": "Huánuco",
+      "HU\u00c1": {
+        "name": "Hu\u00e1nuco",
         "alias": [
           "Huanuco"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "AMB": {
         "name": "Ambo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "DD": {
-        "name": "Datem del Marañón",
+        "name": "Datem del Mara\u00f1\u00f3n",
         "alias": [
           "Datem del Maranon"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LP": {
         "name": "Leoncio Prado",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MAR": {
-        "name": "Marañón",
+        "name": "Mara\u00f1\u00f3n",
         "alias": [
           "Maranon"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PAC": {
         "name": "Pacasmayo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PI": {
         "name": "Puerto Inca",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LAU": {
         "name": "Lauricocha",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "YAR": {
         "name": "Yarowilca",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ICA": {
         "name": "Ica",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "NAZ": {
         "name": "Nazca",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PIS": {
         "name": "Pisco",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "JAU": {
         "name": "Jauja",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "JUN": {
-        "name": "Junín",
+        "name": "Jun\u00edn",
         "alias": [
           "Junin"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SAT": {
         "name": "Satipo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TAR": {
         "name": "Tarata",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "YAU": {
         "name": "Yauyos",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TRU": {
         "name": "Trujillo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ASC": {
         "name": "Ascope",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CHE": {
-        "name": "Chepén",
+        "name": "Chep\u00e9n",
         "alias": [
           "Chepen"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "JUL": {
-        "name": "Julcán",
+        "name": "Julc\u00e1n",
         "alias": [
           "Julcan"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "OTU": {
         "name": "Otuzco",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PAT": {
         "name": "Pataz",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SD": {
         "name": "Santiago de Chuco",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "GC": {
-        "name": "Gran Chimú",
+        "name": "Gran Chim\u00fa",
         "alias": [
           "Gran Chimu"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "VIR": {
-        "name": "Virú",
+        "name": "Vir\u00fa",
         "alias": [
           "Viru"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "FER": {
-        "name": "Ferreñafe",
+        "name": "Ferre\u00f1afe",
         "alias": [
           "Ferrenafe"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LAM": {
         "name": "Lamas",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LIM": {
         "name": "Lima",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "BAR": {
         "name": "Barranca",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
-      "CAÑ": {
-        "name": "Cañete",
+      "CA\u00d1": {
+        "name": "Ca\u00f1ete",
         "alias": [
           "Canete"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
-      "OYÓ": {
-        "name": "Oyón",
+      "OY\u00d3": {
+        "name": "Oy\u00f3n",
         "alias": [
           "Oyon"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MAY": {
         "name": "Maynas",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "AA": {
         "name": "Aliaso Amazonas",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "LOR": {
         "name": "Loreto",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MR": {
-        "name": "Mariscal Ramón Castilla",
+        "name": "Mariscal Ram\u00f3n Castilla",
         "alias": [
           "Mariscal Ramon Castilla"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PUT": {
         "name": "Putumayo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "REQ": {
         "name": "Requena",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "UCA": {
         "name": "Ucayali",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TAM": {
         "name": "Tambopata",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MAN": {
-        "name": "Manú",
+        "name": "Man\u00fa",
         "alias": [
           "Manu"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TAH": {
         "name": "Tahuamanu",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MN": {
         "name": "Mariscal Nieto",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "GS": {
-        "name": "General Sánchez Cerro",
+        "name": "General S\u00e1nchez Cerro",
         "alias": [
           "General Sanchez Cerro"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ILO": {
         "name": "Ilo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PAS": {
         "name": "Pasco",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "DA": {
-        "name": "Daniel Alcídes Carrión",
+        "name": "Daniel Alc\u00eddes Carri\u00f3n",
         "alias": [
           "Daniel Alcides Carrion"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "OXA": {
         "name": "Oxapampa",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PIU": {
         "name": "Piura",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "AYA": {
         "name": "Ayabaca",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MOR": {
-        "name": "Morropón",
+        "name": "Morrop\u00f3n",
         "alias": [
           "Morropon"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PAI": {
         "name": "Paita",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SUL": {
         "name": "Sullana",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TAL": {
         "name": "Talara",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SEC": {
         "name": "Sechura",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PUN": {
         "name": "Puno",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
-      "AZÁ": {
-        "name": "Azángaro",
+      "AZ\u00c1": {
+        "name": "Az\u00e1ngaro",
         "alias": [
           "Azangaro"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "EC": {
         "name": "El Collao",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MEL": {
         "name": "Melgar",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MOH": {
         "name": "Moho",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SA": {
         "name": "San Antonio de Putina",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "SR": {
-        "name": "San Román",
+        "name": "San Rom\u00e1n",
         "alias": [
           "San Roman"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MOY": {
         "name": "Moyobamba",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "BEL": {
         "name": "Bellavista",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ED": {
         "name": "El Dorado",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "MC": {
-        "name": "Mariscal Cáceres",
+        "name": "Mariscal C\u00e1ceres",
         "alias": [
           "Mariscal Caceres"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PIC": {
         "name": "Picota",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "RIO": {
         "name": "Rioja",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TOC": {
         "name": "Tocache",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TAC": {
         "name": "Tacna",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "JB": {
         "name": "Jorge Basadre",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "TUM": {
         "name": "Tumbes",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CV": {
         "name": "Contralmirante Villar",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ZAR": {
         "name": "Zarumilla",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "CP": {
         "name": "Coronel Portillo",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "ATA": {
         "name": "Atalaya",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PA": {
         "name": "Padre Abad",
         "regions": [
-          "PE"
+          "South America"
         ]
       },
       "PUR": {
-        "name": "Purús",
+        "name": "Pur\u00fas",
         "alias": [
           "Purus"
         ],
         "regions": [
-          "PE"
+          "South America"
         ]
       }
     },
@@ -5372,7 +5372,7 @@
         ]
       },
       "ADI": {
-        "name": "Adıyaman",
+        "name": "Ad\u0131yaman",
         "alias": [
           "Adiyaman"
         ],
@@ -5386,8 +5386,8 @@
           "Central Anatolia"
         ]
       },
-      "AĞR": {
-        "name": "Ağrı",
+      "A\u011eR": {
+        "name": "A\u011fr\u0131",
         "alias": [
           "Agri"
         ],
@@ -5420,7 +5420,7 @@
         ]
       },
       "AYD": {
-        "name": "Aydın",
+        "name": "Ayd\u0131n",
         "alias": [
           "Aydin"
         ],
@@ -5429,7 +5429,7 @@
         ]
       },
       "BAL": {
-        "name": "Balıkesir",
+        "name": "Bal\u0131kesir",
         "alias": [
           "Balikesir"
         ],
@@ -5444,7 +5444,7 @@
         ]
       },
       "BIN": {
-        "name": "Bingöl",
+        "name": "Bing\u00f6l",
         "alias": [
           "Bingol"
         ],
@@ -5470,8 +5470,8 @@
           "Marmara"
         ]
       },
-      "ÇAN": {
-        "name": "Çankırı",
+      "\u00c7AN": {
+        "name": "\u00c7ank\u0131r\u0131",
         "alias": [
           "Cankiri"
         ],
@@ -5479,8 +5479,8 @@
           "Central Anatolia"
         ]
       },
-      "ÇOR": {
-        "name": "Çorum",
+      "\u00c7OR": {
+        "name": "\u00c7orum",
         "alias": [
           "Corum"
         ],
@@ -5495,7 +5495,7 @@
         ]
       },
       "DIY": {
-        "name": "Diyarbakır",
+        "name": "Diyarbak\u0131r",
         "alias": [
           "Diyarbakir"
         ],
@@ -5510,7 +5510,7 @@
         ]
       },
       "ELA": {
-        "name": "Elazığ",
+        "name": "Elaz\u0131\u011f",
         "alias": [
           "Elazig"
         ],
@@ -5525,7 +5525,7 @@
         ]
       },
       "ESK": {
-        "name": "Eskişehir",
+        "name": "Eski\u015fehir",
         "alias": [
           "Eskisehir"
         ],
@@ -5545,8 +5545,8 @@
           "Black Sea"
         ]
       },
-      "GÜM": {
-        "name": "Gümüşhane",
+      "G\u00dcM": {
+        "name": "G\u00fcm\u00fc\u015fhane",
         "alias": [
           "Gumushane"
         ],
@@ -5555,7 +5555,7 @@
         ]
       },
       "HAK": {
-        "name": "Hakkâri",
+        "name": "Hakk\u00e2ri",
         "alias": [
           "Hakkari"
         ],
@@ -5587,8 +5587,8 @@
           "Marmara"
         ]
       },
-      "İZM": {
-        "name": "İzmir",
+      "\u0130ZM": {
+        "name": "\u0130zmir",
         "alias": [
           "Izmir"
         ],
@@ -5597,7 +5597,7 @@
         ]
       },
       "KAR": {
-        "name": "Karabük",
+        "name": "Karab\u00fck",
         "alias": [
           "Karabuk"
         ],
@@ -5618,7 +5618,7 @@
         ]
       },
       "KIR": {
-        "name": "Kırıkkale",
+        "name": "K\u0131r\u0131kkale",
         "alias": [
           "Kirikkale"
         ],
@@ -5638,8 +5638,8 @@
           "Central Anatolia"
         ]
       },
-      "KÜT": {
-        "name": "Kütahya",
+      "K\u00dcT": {
+        "name": "K\u00fctahya",
         "alias": [
           "Kutahya"
         ],
@@ -5660,7 +5660,7 @@
         ]
       },
       "KAH": {
-        "name": "Kahramanmaraş",
+        "name": "Kahramanmara\u015f",
         "alias": [
           "Kahramanmaras"
         ],
@@ -5674,15 +5674,15 @@
           "Southeastern Anatolia"
         ]
       },
-      "MUĞ": {
-        "name": "Muğla",
+      "MU\u011e": {
+        "name": "Mu\u011fla",
         "alias": "Mugla",
         "regions": [
           "Aegean"
         ]
       },
-      "MUŞ": {
-        "name": "Muş",
+      "MU\u015e": {
+        "name": "Mu\u015f",
         "alias": [
           "Mus"
         ],
@@ -5691,7 +5691,7 @@
         ]
       },
       "NEV": {
-        "name": "Nevşehir",
+        "name": "Nev\u015fehir",
         "alias": [
           "Nevsehir"
         ],
@@ -5699,8 +5699,8 @@
           "Central Anatolia"
         ]
       },
-      "NIĞ": {
-        "name": "Niğde",
+      "NI\u011e": {
+        "name": "Ni\u011fde",
         "alias": [
           "Nigde"
         ],
@@ -5751,7 +5751,7 @@
         ]
       },
       "TEK": {
-        "name": "Tekirdağ",
+        "name": "Tekirda\u011f",
         "alias": [
           "Tekirdag"
         ],
@@ -5777,8 +5777,8 @@
           "Eastern Anatolia"
         ]
       },
-      "ŞAN": {
-        "name": "Şanlıurfa",
+      "\u015eAN": {
+        "name": "\u015eanl\u0131urfa",
         "alias": [
           "Sanliurfa"
         ],
@@ -5786,8 +5786,8 @@
           "Southeastern Anatolia"
         ]
       },
-      "UŞA": {
-        "name": "Uşak",
+      "U\u015eA": {
+        "name": "U\u015fak",
         "alias": [
           "Usak"
         ],
@@ -5831,8 +5831,8 @@
           "Southeastern Anatolia"
         ]
       },
-      "ŞIR": {
-        "name": "Şırnak",
+      "\u015eIR": {
+        "name": "\u015e\u0131rnak",
         "alias": [
           "Sirnak"
         ],
@@ -5841,7 +5841,7 @@
         ]
       },
       "BAR": {
-        "name": "Bartın",
+        "name": "Bart\u0131n",
         "alias": [
           "Bartin"
         ],
@@ -5855,8 +5855,8 @@
           "Eastern Anatolia"
         ]
       },
-      "IĞD": {
-        "name": "Iğdır",
+      "I\u011eD": {
+        "name": "I\u011fd\u0131r",
         "alias": [
           "Igdir"
         ],
@@ -5882,8 +5882,8 @@
           "Mediterranean"
         ]
       },
-      "DÜZ": {
-        "name": "Düzce",
+      "D\u00dcZ": {
+        "name": "D\u00fczce",
         "alias": [
           "Duzce"
         ],
@@ -8423,7 +8423,7 @@
           "Colfax",
           "Los Alamos",
           "Bernalillo",
-          "Do�a Ana",
+          "Do\ufffda Ana",
           "Chaves",
           "Valencia",
           "Rio Arriba",
@@ -9928,212 +9928,212 @@
   "VN": {
     "divisions": {
       "HN": {
-        "name": "Hà Nam",
+        "name": "H\u00e0 Nam",
         "alias": [
           "Ha Nam"
         ]
       },
       "HG": {
-        "name": "Hậu Giang",
+        "name": "H\u1eadu Giang",
         "alias": [
           "Hau Giang"
         ]
       },
       "CB": {
-        "name": "Cao Bằng",
+        "name": "Cao B\u1eb1ng",
         "alias": [
           "Cao Bang"
         ]
       },
       "BK": {
-        "name": "Bắc Kạn",
+        "name": "B\u1eafc K\u1ea1n",
         "alias": [
           "Bac Kan"
         ]
       },
       "TQ": {
-        "name": "Tuyên Quang",
+        "name": "Tuy\u00ean Quang",
         "alias": [
           "Tuyen Quang"
         ]
       },
       "LC": {
-        "name": "Lai Châu",
+        "name": "Lai Ch\u00e2u",
         "alias": [
           "Lai Chau"
         ]
       },
-      "ĐB": {
-        "name": "Điện Biên",
+      "\u0110B": {
+        "name": "\u0110i\u1ec7n Bi\u00ean",
         "alias": [
           "Dien Bien"
         ]
       },
       "SL": {
-        "name": "Sơn La",
+        "name": "S\u01a1n La",
         "alias": [
           "Son La"
         ]
       },
       "YB": {
-        "name": "Yên Bái",
+        "name": "Y\u00ean B\u00e1i",
         "alias": [
           "Yen Bai"
         ]
       },
       "HB": {
-        "name": "Hòa Bình",
+        "name": "H\u00f2a B\u00ecnh",
         "alias": [
           "Hoa Binh"
         ]
       },
       "TN": {
-        "name": "Tây Ninh",
+        "name": "T\u00e2y Ninh",
         "alias": [
           "Tay Ninh"
         ]
       },
       "LS": {
-        "name": "Lạng Sơn",
+        "name": "L\u1ea1ng S\u01a1n",
         "alias": [
           "Lang Son"
         ]
       },
       "QN": {
-        "name": "Quảng Ngãi",
+        "name": "Qu\u1ea3ng Ng\u00e3i",
         "alias": [
           "Quang Ngai"
         ]
       },
       "BG": {
-        "name": "Bắc Giang",
+        "name": "B\u1eafc Giang",
         "alias": [
           "Bac Giang"
         ]
       },
       "PT": {
-        "name": "Phú Thọ",
+        "name": "Ph\u00fa Th\u1ecd",
         "alias": [
           "Phu Tho"
         ]
       },
       "VP": {
-        "name": "Vĩnh Phúc",
+        "name": "V\u0129nh Ph\u00fac",
         "alias": [
           "Vinh Phuc"
         ]
       },
       "BN": {
-        "name": "Bắc Ninh",
+        "name": "B\u1eafc Ninh",
         "alias": [
           "Bac Ninh"
         ]
       },
       "HD": {
-        "name": "Hải Dương",
+        "name": "H\u1ea3i D\u01b0\u01a1ng",
         "alias": [
           "Hai Duong"
         ]
       },
       "HP": {
-        "name": "Hải Phòng",
+        "name": "H\u1ea3i Ph\u00f2ng",
         "alias": [
           "Hai Phong"
         ]
       },
       "HY": {
-        "name": "Hưng Yên",
+        "name": "H\u01b0ng Y\u00ean",
         "alias": [
           "Hung Yen"
         ]
       },
       "TB": {
-        "name": "Thái Bình",
+        "name": "Th\u00e1i B\u00ecnh",
         "alias": [
           "Thai Binh"
         ]
       },
-      "NĐ": {
-        "name": "Nam Định",
+      "N\u0110": {
+        "name": "Nam \u0110\u1ecbnh",
         "alias": [
           "Nam Dinh"
         ]
       },
       "NB": {
-        "name": "Ninh Bình",
+        "name": "Ninh B\u00ecnh",
         "alias": [
           "Ninh Binh"
         ]
       },
       "TH": {
-        "name": "Thanh Hóa",
+        "name": "Thanh H\u00f3a",
         "alias": [
           "Thanh Hoa"
         ]
       },
       "NA": {
-        "name": "Nghệ An",
+        "name": "Ngh\u1ec7 An",
         "alias": [
           "Nghe An"
         ]
       },
       "HT": {
-        "name": "Hà Tĩnh",
+        "name": "H\u00e0 T\u0129nh",
         "alias": [
           "Ha Tinh"
         ]
       },
       "QB": {
-        "name": "Quảng Bình",
+        "name": "Qu\u1ea3ng B\u00ecnh",
         "alias": [
           "Quang Binh"
         ]
       },
       "QT": {
-        "name": "Quảng Trị",
+        "name": "Qu\u1ea3ng Tr\u1ecb",
         "alias": [
           "Quang Tri"
         ]
       },
       "TT": {
-        "name": "Thừa Thiên–Huế",
+        "name": "Th\u1eeba Thi\u00ean\u2013Hu\u1ebf",
         "alias": [
-          "Thua Thien–Hue",
+          "Thua Thien\u2013Hue",
           "Thua Thien Hue"
         ]
       },
-      "ĐN": {
-        "name": "Đồng Nai",
+      "\u0110N": {
+        "name": "\u0110\u1ed3ng Nai",
         "alias": [
           "Dong Nai"
         ]
       },
-      "BĐ": {
-        "name": "Bình Định",
+      "B\u0110": {
+        "name": "B\u00ecnh \u0110\u1ecbnh",
         "alias": [
           "Binh Dinh"
         ]
       },
       "PY": {
-        "name": "Phú Yên",
+        "name": "Ph\u00fa Y\u00ean",
         "alias": [
           "Phu Yen"
         ]
       },
       "KH": {
-        "name": "Khánh Hòa",
+        "name": "Kh\u00e1nh H\u00f2a",
         "alias": [
           "Khanh Hoa"
         ]
       },
       "NT": {
-        "name": "Ninh Thuận",
+        "name": "Ninh Thu\u1eadn",
         "alias": [
           "Ninh Thuan"
         ]
       },
       "BT": {
-        "name": "Bến Tre",
+        "name": "B\u1ebfn Tre",
         "alias": [
           "Ben Tre"
         ]
@@ -10144,37 +10144,37 @@
       "GL": {
         "name": "Gia Lai"
       },
-      "ĐL": {
-        "name": "Đắk Lắk",
+      "\u0110L": {
+        "name": "\u0110\u1eafk L\u1eafk",
         "alias": [
           "Dak Lak"
         ]
       },
-      "LĐ": {
-        "name": "Lâm Đồng",
+      "L\u0110": {
+        "name": "L\u00e2m \u0110\u1ed3ng",
         "alias": [
           "Lam Dong"
         ]
       },
       "BP": {
-        "name": "Bình Phước",
+        "name": "B\u00ecnh Ph\u01b0\u1edbc",
         "alias": "Binh Phuoc"
       },
       "BD": {
-        "name": "Bình Dương",
+        "name": "B\u00ecnh D\u01b0\u01a1ng",
         "alias": [
           "Binh Duong"
         ]
       },
       "BR": {
-        "name": "Bà Rịa–Vũng Tàu",
+        "name": "B\u00e0 R\u1ecba\u2013V\u0169ng T\u00e0u",
         "alias": [
-          "Ba Ria–Vung Tau",
+          "Ba Ria\u2013Vung Tau",
           "Ba Ria Vung Tau"
         ]
       },
       "TP": {
-        "name": "Thành phố Hồ Chí Minh",
+        "name": "Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh",
         "alias": [
           "Thanh pho Ho Chi Minh"
         ]
@@ -10183,25 +10183,25 @@
         "name": "Long An"
       },
       "TG": {
-        "name": "Tiền Giang",
+        "name": "Ti\u1ec1n Giang",
         "alias": [
           "Tien Giang"
         ]
       },
       "TV": {
-        "name": "Trà Vinh",
+        "name": "Tr\u00e0 Vinh",
         "alias": [
           "Tra Vinh"
         ]
       },
       "VL": {
-        "name": "Vĩnh Long",
+        "name": "V\u0129nh Long",
         "alias": [
           "Vinh Long"
         ]
       },
-      "ĐT": {
-        "name": "Đồng Tháp",
+      "\u0110T": {
+        "name": "\u0110\u1ed3ng Th\u00e1p",
         "alias": [
           "Dong Thap"
         ]
@@ -10210,31 +10210,31 @@
         "name": "An Giang"
       },
       "KG": {
-        "name": "Kiên Giang",
+        "name": "Ki\u00ean Giang",
         "alias": [
           "Kien Giang"
         ]
       },
       "CT": {
-        "name": "Cần Thơ",
+        "name": "C\u1ea7n Th\u01a1",
         "alias": [
-          "Can Thơ"
+          "Can Th\u01a1"
         ]
       },
       "ST": {
-        "name": "Sóc Trăng",
+        "name": "S\u00f3c Tr\u0103ng",
         "alias": [
           "Soc Trang"
         ]
       },
       "BL": {
-        "name": "Bạc Liêu",
+        "name": "B\u1ea1c Li\u00eau",
         "alias": [
           "Bac Lieu"
         ]
       },
       "CM": {
-        "name": "Cà Mau",
+        "name": "C\u00e0 Mau",
         "alias": [
           "Ca Mau"
         ]
@@ -10427,7 +10427,7 @@
         ]
       },
       "FOR": {
-        "name": "Forlì-Cesena"
+        "name": "Forl\u00ec-Cesena"
       },
       "FRO": {
         "name": "Frosinone",
@@ -11004,7 +11004,7 @@
         ]
       },
       "NOROS": {
-        "name": "North Ossetia–Alania",
+        "name": "North Ossetia\u2013Alania",
         "regions": [
           "North Caucasian"
         ]
@@ -11023,27 +11023,27 @@
         ]
       },
       "VASGO": {
-        "name": "Västra Götaland",
+        "name": "V\u00e4stra G\u00f6taland",
         "regions": [
-          "Västra Götaland"
+          "V\u00e4stra G\u00f6taland"
         ]
       },
       "SKA": {
-        "name": "Skåne",
+        "name": "Sk\u00e5ne",
         "regions": [
-          "Skåne"
+          "Sk\u00e5ne"
         ]
       },
       "VAS": {
-        "name": "Västernorrland",
+        "name": "V\u00e4sternorrland",
         "regions": [
-          "Västernorrland"
+          "V\u00e4sternorrland"
         ]
       },
       "OST": {
-        "name": "Östergötland",
+        "name": "\u00d6sterg\u00f6tland",
         "regions": [
-          "Östergötland"
+          "\u00d6sterg\u00f6tland"
         ]
       },
       "UPP": {
@@ -11053,21 +11053,21 @@
         ]
       },
       "SOD": {
-        "name": "Södermanland",
+        "name": "S\u00f6dermanland",
         "regions": [
-          "Södermanland"
+          "S\u00f6dermanland"
         ]
       },
       "ORE": {
-        "name": "Örebro",
+        "name": "\u00d6rebro",
         "regions": [
-          "Örebro"
+          "\u00d6rebro"
         ]
       },
       "GAV": {
-        "name": "Gävleborg",
+        "name": "G\u00e4vleborg",
         "regions": [
-          "Gävleborg"
+          "G\u00e4vleborg"
         ]
       },
       "HAL": {
@@ -11077,9 +11077,9 @@
         ]
       },
       "JON": {
-        "name": "Jönköping",
+        "name": "J\u00f6nk\u00f6ping",
         "regions": [
-          "Jönköping"
+          "J\u00f6nk\u00f6ping"
         ]
       },
       "KRO": {
@@ -11101,9 +11101,9 @@
         ]
       },
       "VAR": {
-        "name": "Värmland",
+        "name": "V\u00e4rmland",
         "regions": [
-          "Värmland"
+          "V\u00e4rmland"
         ]
       },
       "DAL": {
@@ -11128,15 +11128,15 @@
   "FR": {
     "divisions": {
       "AUV": {
-        "name": "Auvergne-Rhône-Alpes",
+        "name": "Auvergne-Rh\u00f4ne-Alpes",
         "regions": [
-          "Auvergne-Rhône-Alpes"
+          "Auvergne-Rh\u00f4ne-Alpes"
         ]
       },
       "BOU": {
-        "name": "Bourgogne-Franche-Comté",
+        "name": "Bourgogne-Franche-Comt\u00e9",
         "regions": [
-          "Bourgogne-Franche-Comté"
+          "Bourgogne-Franche-Comt\u00e9"
         ]
       },
       "BRI": {
@@ -11170,9 +11170,9 @@
         ]
       },
       "ILE": {
-        "name": "Île-de-France",
+        "name": "\u00cele-de-France",
         "regions": [
-          "Île-de-France"
+          "\u00cele-de-France"
         ]
       },
       "NOR": {
@@ -11200,9 +11200,9 @@
         ]
       },
       "PROD'": {
-        "name": "Provence-Alpes-Côte d'Azur",
+        "name": "Provence-Alpes-C\u00f4te d'Azur",
         "regions": [
-          "Provence-Alpes-Côte d'Azur"
+          "Provence-Alpes-C\u00f4te d'Azur"
         ]
       },
       "GUA": {
@@ -11224,9 +11224,9 @@
         ]
       },
       "REU": {
-        "name": "Réunion",
+        "name": "R\u00e9union",
         "regions": [
-          "Réunion"
+          "R\u00e9union"
         ]
       },
       "MAY": {
@@ -11243,9 +11243,9 @@
   "NO": {
     "divisions": {
       "STF": {
-        "name": "Østfold",
+        "name": "\u00d8stfold",
         "regions": [
-          "Østfold"
+          "\u00d8stfold"
         ]
       },
       "AKE": {
@@ -11321,21 +11321,21 @@
         ]
       },
       "MREOG": {
-        "name": "Møre og Romsdal",
+        "name": "M\u00f8re og Romsdal",
         "regions": [
-          "Møre og Romsdal"
+          "M\u00f8re og Romsdal"
         ]
       },
       "SR-": {
-        "name": "Sør-Trøndelag",
+        "name": "S\u00f8r-Tr\u00f8ndelag",
         "regions": [
-          "Sør-Trøndelag"
+          "S\u00f8r-Tr\u00f8ndelag"
         ]
       },
       "NOR": {
-        "name": "Nord-Trøndelag",
+        "name": "Nord-Tr\u00f8ndelag",
         "regions": [
-          "Nord-Trøndelag"
+          "Nord-Tr\u00f8ndelag"
         ]
       },
       "NOR1": {
@@ -11372,9 +11372,9 @@
   "FI": {
     "divisions": {
       "ALA": {
-        "name": "Åland",
+        "name": "\u00c5land",
         "regions": [
-          "Åland"
+          "\u00c5land"
         ]
       },
       "LAP": {
@@ -11414,9 +11414,9 @@
         ]
       },
       "PAI": {
-        "name": "Päijät-Häme",
+        "name": "P\u00e4ij\u00e4t-H\u00e4me",
         "regions": [
-          "Päijät-Häme"
+          "P\u00e4ij\u00e4t-H\u00e4me"
         ]
       },
       "KYM": {
@@ -11493,39 +11493,39 @@
         ]
       },
       "JOG": {
-        "name": "Jõgeva",
+        "name": "J\u00f5geva",
         "regions": [
-          "Jõgeva"
+          "J\u00f5geva"
         ]
       },
       "JAR": {
-        "name": "Järva",
+        "name": "J\u00e4rva",
         "regions": [
-          "Järva"
+          "J\u00e4rva"
         ]
       },
       "LAA": {
-        "name": "Lääne",
+        "name": "L\u00e4\u00e4ne",
         "regions": [
-          "Lääne"
+          "L\u00e4\u00e4ne"
         ]
       },
       "LAA1": {
-        "name": "Lääne-Viru",
+        "name": "L\u00e4\u00e4ne-Viru",
         "regions": [
-          "Lääne-Viru"
+          "L\u00e4\u00e4ne-Viru"
         ]
       },
       "POL": {
-        "name": "Põlva",
+        "name": "P\u00f5lva",
         "regions": [
-          "Põlva"
+          "P\u00f5lva"
         ]
       },
       "PAR": {
-        "name": "Pärnu",
+        "name": "P\u00e4rnu",
         "regions": [
-          "Pärnu"
+          "P\u00e4rnu"
         ]
       },
       "RAP": {
@@ -11559,9 +11559,9 @@
         ]
       },
       "VOR": {
-        "name": "Võru",
+        "name": "V\u00f5ru",
         "regions": [
-          "Võru"
+          "V\u00f5ru"
         ]
       }
     },
@@ -11620,15 +11620,15 @@
         ]
       },
       "BEV": {
-        "name": "Beverīna",
+        "name": "Bever\u012bna",
         "regions": [
-          "Beverīna"
+          "Bever\u012bna"
         ]
       },
       "BRO": {
-        "name": "Brocēni",
+        "name": "Broc\u0113ni",
         "regions": [
-          "Brocēni"
+          "Broc\u0113ni"
         ]
       },
       "BUR": {
@@ -11650,9 +11650,9 @@
         ]
       },
       "CES1": {
-        "name": "Cēsis",
+        "name": "C\u0113sis",
         "regions": [
-          "Cēsis"
+          "C\u0113sis"
         ]
       },
       "CIB": {
@@ -11704,9 +11704,9 @@
         ]
       },
       "ERG": {
-        "name": "Ērgļi",
+        "name": "\u0112rg\u013ci",
         "regions": [
-          "Ērgļi"
+          "\u0112rg\u013ci"
         ]
       },
       "GAR": {
@@ -11716,9 +11716,9 @@
         ]
       },
       "GRO": {
-        "name": "Grobiņa",
+        "name": "Grobi\u0146a",
         "regions": [
-          "Grobiņa"
+          "Grobi\u0146a"
         ]
       },
       "GUL": {
@@ -11734,21 +11734,21 @@
         ]
       },
       "IKS": {
-        "name": "Ikšķile",
+        "name": "Ik\u0161\u0137ile",
         "regions": [
-          "Ikšķile"
+          "Ik\u0161\u0137ile"
         ]
       },
       "ILU": {
-        "name": "Ilūkste",
+        "name": "Il\u016bkste",
         "regions": [
-          "Ilūkste"
+          "Il\u016bkste"
         ]
       },
       "INC": {
-        "name": "Inčukalns",
+        "name": "In\u010dukalns",
         "regions": [
-          "Inčukalns"
+          "In\u010dukalns"
         ]
       },
       "JAU": {
@@ -11782,9 +11782,9 @@
         ]
       },
       "JEKMU": {
-        "name": "Jēkabpils Municipality",
+        "name": "J\u0113kabpils Municipality",
         "regions": [
-          "Jēkabpils Municipality"
+          "J\u0113kabpils Municipality"
         ]
       },
       "JELMU1": {
@@ -11794,9 +11794,9 @@
         ]
       },
       "JUR": {
-        "name": "Jūrmala",
+        "name": "J\u016brmala",
         "regions": [
-          "Jūrmala"
+          "J\u016brmala"
         ]
       },
       "KAN": {
@@ -11806,15 +11806,15 @@
         ]
       },
       "KAR": {
-        "name": "Kārsava",
+        "name": "K\u0101rsava",
         "regions": [
-          "Kārsava"
+          "K\u0101rsava"
         ]
       },
       "KOC": {
-        "name": "Kocēni",
+        "name": "Koc\u0113ni",
         "regions": [
-          "Kocēni"
+          "Koc\u0113ni"
         ]
       },
       "KOK": {
@@ -11824,9 +11824,9 @@
         ]
       },
       "KRA": {
-        "name": "Krāslava",
+        "name": "Kr\u0101slava",
         "regions": [
-          "Krāslava"
+          "Kr\u0101slava"
         ]
       },
       "KRI": {
@@ -11842,39 +11842,39 @@
         ]
       },
       "KUL": {
-        "name": "Kuldīga",
+        "name": "Kuld\u012bga",
         "regions": [
-          "Kuldīga"
+          "Kuld\u012bga"
         ]
       },
       "LIE": {
-        "name": "Lielvārde",
+        "name": "Lielv\u0101rde",
         "regions": [
-          "Lielvārde"
+          "Lielv\u0101rde"
         ]
       },
       "LIM": {
-        "name": "Limbaži",
+        "name": "Limba\u017ei",
         "regions": [
-          "Limbaži"
+          "Limba\u017ei"
         ]
       },
       "LIG": {
-        "name": "Līgatne",
+        "name": "L\u012bgatne",
         "regions": [
-          "Līgatne"
+          "L\u012bgatne"
         ]
       },
       "LIV": {
-        "name": "Līvāni",
+        "name": "L\u012bv\u0101ni",
         "regions": [
-          "Līvāni"
+          "L\u012bv\u0101ni"
         ]
       },
       "LUB": {
-        "name": "Lubāna",
+        "name": "Lub\u0101na",
         "regions": [
-          "Lubāna"
+          "Lub\u0101na"
         ]
       },
       "LUD": {
@@ -11896,27 +11896,27 @@
         ]
       },
       "MAL": {
-        "name": "Mālpils",
+        "name": "M\u0101lpils",
         "regions": [
-          "Mālpils"
+          "M\u0101lpils"
         ]
       },
       "MAR": {
-        "name": "Mārupe",
+        "name": "M\u0101rupe",
         "regions": [
-          "Mārupe"
+          "M\u0101rupe"
         ]
       },
       "MER": {
-        "name": "Mērsrags",
+        "name": "M\u0113rsrags",
         "regions": [
-          "Mērsrags"
+          "M\u0113rsrags"
         ]
       },
       "NAU": {
-        "name": "Naukšēni",
+        "name": "Nauk\u0161\u0113ni",
         "regions": [
-          "Naukšēni"
+          "Nauk\u0161\u0113ni"
         ]
       },
       "NER": {
@@ -11926,9 +11926,9 @@
         ]
       },
       "NIC": {
-        "name": "Nīca",
+        "name": "N\u012bca",
         "regions": [
-          "Nīca"
+          "N\u012bca"
         ]
       },
       "OGR": {
@@ -11950,27 +11950,27 @@
         ]
       },
       "PAR": {
-        "name": "Pārgauja",
+        "name": "P\u0101rgauja",
         "regions": [
-          "Pārgauja"
+          "P\u0101rgauja"
         ]
       },
       "PAV": {
-        "name": "Pāvilosta",
+        "name": "P\u0101vilosta",
         "regions": [
-          "Pāvilosta"
+          "P\u0101vilosta"
         ]
       },
       "PLA": {
-        "name": "Pļaviņas",
+        "name": "P\u013cavi\u0146as",
         "regions": [
-          "Pļaviņas"
+          "P\u013cavi\u0146as"
         ]
       },
       "PRE": {
-        "name": "Preiļi",
+        "name": "Prei\u013ci",
         "regions": [
-          "Preiļi"
+          "Prei\u013ci"
         ]
       },
       "PRI": {
@@ -11980,9 +11980,9 @@
         ]
       },
       "PRI1": {
-        "name": "Priekuļi",
+        "name": "Prieku\u013ci",
         "regions": [
-          "Priekuļi"
+          "Prieku\u013ci"
         ]
       },
       "RAU": {
@@ -11992,15 +11992,15 @@
         ]
       },
       "REZ": {
-        "name": "Rēzekne",
+        "name": "R\u0113zekne",
         "regions": [
-          "Rēzekne"
+          "R\u0113zekne"
         ]
       },
       "REZMU": {
-        "name": "Rēzekne Municipality",
+        "name": "R\u0113zekne Municipality",
         "regions": [
-          "Rēzekne Municipality"
+          "R\u0113zekne Municipality"
         ]
       },
       "RIG": {
@@ -12016,9 +12016,9 @@
         ]
       },
       "ROP": {
-        "name": "Ropaži",
+        "name": "Ropa\u017ei",
         "regions": [
-          "Ropaži"
+          "Ropa\u017ei"
         ]
       },
       "RUC": {
@@ -12028,15 +12028,15 @@
         ]
       },
       "RUG": {
-        "name": "Rugāji",
+        "name": "Rug\u0101ji",
         "regions": [
-          "Rugāji"
+          "Rug\u0101ji"
         ]
       },
       "RUJ": {
-        "name": "Rūjiena",
+        "name": "R\u016bjiena",
         "regions": [
-          "Rūjiena"
+          "R\u016bjiena"
         ]
       },
       "SAL": {
@@ -12046,9 +12046,9 @@
         ]
       },
       "SAL1": {
-        "name": "Salacgrīva",
+        "name": "Salacgr\u012bva",
         "regions": [
-          "Salacgrīva"
+          "Salacgr\u012bva"
         ]
       },
       "SAL2": {
@@ -12070,9 +12070,9 @@
         ]
       },
       "SEJ": {
-        "name": "Sēja",
+        "name": "S\u0113ja",
         "regions": [
-          "Sēja"
+          "S\u0113ja"
         ]
       },
       "SIG": {
@@ -12088,15 +12088,15 @@
         ]
       },
       "STO": {
-        "name": "Stopiņi",
+        "name": "Stopi\u0146i",
         "regions": [
-          "Stopiņi"
+          "Stopi\u0146i"
         ]
       },
       "STR": {
-        "name": "Strenči",
+        "name": "Stren\u010di",
         "regions": [
-          "Strenči"
+          "Stren\u010di"
         ]
       },
       "TAL": {
@@ -12106,15 +12106,15 @@
         ]
       },
       "TER": {
-        "name": "Tērvete",
+        "name": "T\u0113rvete",
         "regions": [
-          "Tērvete"
+          "T\u0113rvete"
         ]
       },
       "VAI": {
-        "name": "Vaiņode",
+        "name": "Vai\u0146ode",
         "regions": [
-          "Vaiņode"
+          "Vai\u0146ode"
         ]
       },
       "VAL": {
@@ -12130,9 +12130,9 @@
         ]
       },
       "VAR": {
-        "name": "Varakļāni",
+        "name": "Varak\u013c\u0101ni",
         "regions": [
-          "Varakļāni"
+          "Varak\u013c\u0101ni"
         ]
       },
       "VEC": {
@@ -12160,21 +12160,21 @@
         ]
       },
       "VIE": {
-        "name": "Viesīte",
+        "name": "Vies\u012bte",
         "regions": [
-          "Viesīte"
+          "Vies\u012bte"
         ]
       },
       "VIL": {
-        "name": "Viļaka",
+        "name": "Vi\u013caka",
         "regions": [
-          "Viļaka"
+          "Vi\u013caka"
         ]
       },
       "VIL1": {
-        "name": "Viļāni",
+        "name": "Vi\u013c\u0101ni",
         "regions": [
-          "Viļāni"
+          "Vi\u013c\u0101ni"
         ]
       },
       "ZIL": {
@@ -12203,39 +12203,39 @@
         ]
       },
       "KLA": {
-        "name": "Klaipėda",
+        "name": "Klaip\u0117da",
         "regions": [
-          "Klaipėda"
+          "Klaip\u0117da"
         ]
       },
       "MAR": {
-        "name": "Marijampolė",
+        "name": "Marijampol\u0117",
         "regions": [
-          "Marijampolė"
+          "Marijampol\u0117"
         ]
       },
       "PAN": {
-        "name": "Panevėžys",
+        "name": "Panev\u0117\u017eys",
         "regions": [
-          "Panevėžys"
+          "Panev\u0117\u017eys"
         ]
       },
       "SIA": {
-        "name": "Šiauliai",
+        "name": "\u0160iauliai",
         "regions": [
-          "Šiauliai"
+          "\u0160iauliai"
         ]
       },
       "TAU": {
-        "name": "Tauragė",
+        "name": "Taurag\u0117",
         "regions": [
-          "Tauragė"
+          "Taurag\u0117"
         ]
       },
       "TEL": {
-        "name": "Telšiai",
+        "name": "Tel\u0161iai",
         "regions": [
-          "Telšiai"
+          "Tel\u0161iai"
         ]
       },
       "UTE": {
@@ -12276,9 +12276,9 @@
         ]
       },
       "ODZ": {
-        "name": "Łódź",
+        "name": "\u0141\u00f3d\u017a",
         "regions": [
-          "Łódź"
+          "\u0141\u00f3d\u017a"
         ]
       },
       "LOWSI": {
@@ -12324,9 +12324,9 @@
         ]
       },
       "SWI": {
-        "name": "Świętokrzyskie",
+        "name": "\u015awi\u0119tokrzyskie",
         "regions": [
-          "Świętokrzyskie"
+          "\u015awi\u0119tokrzyskie"
         ]
       },
       "WAR": {
@@ -12361,9 +12361,9 @@
         ]
       },
       "PLZ": {
-        "name": "Plzeň",
+        "name": "Plze\u0148",
         "regions": [
-          "Plzeň"
+          "Plze\u0148"
         ]
       },
       "KARVA": {
@@ -12373,9 +12373,9 @@
         ]
       },
       "USTNA": {
-        "name": "Ústí nad Labem",
+        "name": "\u00dast\u00ed nad Labem",
         "regions": [
-          "Ústí nad Labem"
+          "\u00dast\u00ed nad Labem"
         ]
       },
       "LIB": {
@@ -12385,9 +12385,9 @@
         ]
       },
       "HRAKR": {
-        "name": "Hradec Králové",
+        "name": "Hradec Kr\u00e1lov\u00e9",
         "regions": [
-          "Hradec Králové"
+          "Hradec Kr\u00e1lov\u00e9"
         ]
       },
       "PAR": {
@@ -12397,9 +12397,9 @@
         ]
       },
       "VYS": {
-        "name": "Vysočina",
+        "name": "Vyso\u010dina",
         "regions": [
-          "Vysočina"
+          "Vyso\u010dina"
         ]
       },
       "SOUMO": {
@@ -12415,9 +12415,9 @@
         ]
       },
       "ZLI": {
-        "name": "Zlín",
+        "name": "Zl\u00edn",
         "regions": [
-          "Zlín"
+          "Zl\u00edn"
         ]
       },
       "MOR": {
@@ -12440,9 +12440,9 @@
   "SK": {
     "divisions": {
       "BANBY": {
-        "name": "Banská Bystrica",
+        "name": "Bansk\u00e1 Bystrica",
         "regions": [
-          "Banská Bystrica"
+          "Bansk\u00e1 Bystrica"
         ]
       },
       "BRA": {
@@ -12452,9 +12452,9 @@
         ]
       },
       "KOS": {
-        "name": "Košice",
+        "name": "Ko\u0161ice",
         "regions": [
-          "Košice"
+          "Ko\u0161ice"
         ]
       },
       "NIT": {
@@ -12464,15 +12464,15 @@
         ]
       },
       "PRE": {
-        "name": "Prešov",
+        "name": "Pre\u0161ov",
         "regions": [
-          "Prešov"
+          "Pre\u0161ov"
         ]
       },
       "TRE": {
-        "name": "Trenčín",
+        "name": "Tren\u010d\u00edn",
         "regions": [
-          "Trenčín"
+          "Tren\u010d\u00edn"
         ]
       },
       "TRN": {
@@ -12482,9 +12482,9 @@
         ]
       },
       "ZIL": {
-        "name": "Žilina",
+        "name": "\u017dilina",
         "regions": [
-          "Žilina"
+          "\u017dilina"
         ]
       }
     },
@@ -12495,9 +12495,9 @@
   "HU": {
     "divisions": {
       "BAC": {
-        "name": "Bács-Kiskun",
+        "name": "B\u00e1cs-Kiskun",
         "regions": [
-          "Bács-Kiskun"
+          "B\u00e1cs-Kiskun"
         ]
       },
       "BAR": {
@@ -12507,15 +12507,15 @@
         ]
       },
       "BEK": {
-        "name": "Békés",
+        "name": "B\u00e9k\u00e9s",
         "regions": [
-          "Békés"
+          "B\u00e9k\u00e9s"
         ]
       },
       "BOR": {
-        "name": "Borsod-Abaúj-Zemplén",
+        "name": "Borsod-Aba\u00faj-Zempl\u00e9n",
         "regions": [
-          "Borsod-Abaúj-Zemplén"
+          "Borsod-Aba\u00faj-Zempl\u00e9n"
         ]
       },
       "BUD": {
@@ -12525,21 +12525,21 @@
         ]
       },
       "FEJ": {
-        "name": "Fejér",
+        "name": "Fej\u00e9r",
         "regions": [
-          "Fejér"
+          "Fej\u00e9r"
         ]
       },
       "GYO": {
-        "name": "Győr-Moson-Sopron",
+        "name": "Gy\u0151r-Moson-Sopron",
         "regions": [
-          "Győr-Moson-Sopron"
+          "Gy\u0151r-Moson-Sopron"
         ]
       },
       "HAJ": {
-        "name": "Hajdú-Bihar",
+        "name": "Hajd\u00fa-Bihar",
         "regions": [
-          "Hajdú-Bihar"
+          "Hajd\u00fa-Bihar"
         ]
       },
       "HEV": {
@@ -12549,21 +12549,21 @@
         ]
       },
       "JAS": {
-        "name": "Jász-Nagykun-Szolnok",
+        "name": "J\u00e1sz-Nagykun-Szolnok",
         "regions": [
-          "Jász-Nagykun-Szolnok"
+          "J\u00e1sz-Nagykun-Szolnok"
         ]
       },
       "KOM": {
-        "name": "Komárom-Esztergom",
+        "name": "Kom\u00e1rom-Esztergom",
         "regions": [
-          "Komárom-Esztergom"
+          "Kom\u00e1rom-Esztergom"
         ]
       },
       "NOG": {
-        "name": "Nógrád",
+        "name": "N\u00f3gr\u00e1d",
         "regions": [
-          "Nógrád"
+          "N\u00f3gr\u00e1d"
         ]
       },
       "PES": {
@@ -12579,9 +12579,9 @@
         ]
       },
       "SZA": {
-        "name": "Szabolcs-Szatmár-Bereg",
+        "name": "Szabolcs-Szatm\u00e1r-Bereg",
         "regions": [
-          "Szabolcs-Szatmár-Bereg"
+          "Szabolcs-Szatm\u00e1r-Bereg"
         ]
       },
       "TOL": {
@@ -12597,9 +12597,9 @@
         ]
       },
       "VES": {
-        "name": "Veszprém",
+        "name": "Veszpr\u00e9m",
         "regions": [
-          "Veszprém"
+          "Veszpr\u00e9m"
         ]
       },
       "ZAL": {
@@ -12628,15 +12628,15 @@
         ]
       },
       "ARG": {
-        "name": "Argeș",
+        "name": "Arge\u0219",
         "regions": [
-          "Argeș"
+          "Arge\u0219"
         ]
       },
       "BAC": {
-        "name": "Bacău",
+        "name": "Bac\u0103u",
         "regions": [
-          "Bacău"
+          "Bac\u0103u"
         ]
       },
       "BIH": {
@@ -12646,45 +12646,45 @@
         ]
       },
       "BIS": {
-        "name": "Bistrița-Năsăud",
+        "name": "Bistri\u021ba-N\u0103s\u0103ud",
         "regions": [
-          "Bistrița-Năsăud"
+          "Bistri\u021ba-N\u0103s\u0103ud"
         ]
       },
       "BOT": {
-        "name": "Botoșani",
+        "name": "Boto\u0219ani",
         "regions": [
-          "Botoșani"
+          "Boto\u0219ani"
         ]
       },
       "BRA": {
-        "name": "Brașov",
+        "name": "Bra\u0219ov",
         "regions": [
-          "Brașov"
+          "Bra\u0219ov"
         ]
       },
       "BRA1": {
-        "name": "Brăila",
+        "name": "Br\u0103ila",
         "regions": [
-          "Brăila"
+          "Br\u0103ila"
         ]
       },
       "BUZ": {
-        "name": "Buzău",
+        "name": "Buz\u0103u",
         "regions": [
-          "Buzău"
+          "Buz\u0103u"
         ]
       },
       "CAL": {
-        "name": "Călărași",
+        "name": "C\u0103l\u0103ra\u0219i",
         "regions": [
-          "Călărași"
+          "C\u0103l\u0103ra\u0219i"
         ]
       },
       "CAR": {
-        "name": "Caraș-Severin",
+        "name": "Cara\u0219-Severin",
         "regions": [
-          "Caraș-Severin"
+          "Cara\u0219-Severin"
         ]
       },
       "CLU": {
@@ -12694,9 +12694,9 @@
         ]
       },
       "CON": {
-        "name": "Constanța",
+        "name": "Constan\u021ba",
         "regions": [
-          "Constanța"
+          "Constan\u021ba"
         ]
       },
       "COV": {
@@ -12706,9 +12706,9 @@
         ]
       },
       "DAM": {
-        "name": "Dâmbovița",
+        "name": "D\u00e2mbovi\u021ba",
         "regions": [
-          "Dâmbovița"
+          "D\u00e2mbovi\u021ba"
         ]
       },
       "DOL": {
@@ -12718,9 +12718,9 @@
         ]
       },
       "GAL": {
-        "name": "Galați",
+        "name": "Gala\u021bi",
         "regions": [
-          "Galați"
+          "Gala\u021bi"
         ]
       },
       "GIU": {
@@ -12748,15 +12748,15 @@
         ]
       },
       "IAL": {
-        "name": "Ialomița",
+        "name": "Ialomi\u021ba",
         "regions": [
-          "Ialomița"
+          "Ialomi\u021ba"
         ]
       },
       "IAS": {
-        "name": "Iași",
+        "name": "Ia\u0219i",
         "regions": [
-          "Iași"
+          "Ia\u0219i"
         ]
       },
       "ILF": {
@@ -12766,27 +12766,27 @@
         ]
       },
       "MAR": {
-        "name": "Maramureș",
+        "name": "Maramure\u0219",
         "regions": [
-          "Maramureș"
+          "Maramure\u0219"
         ]
       },
       "MEH": {
-        "name": "Mehedinți",
+        "name": "Mehedin\u021bi",
         "regions": [
-          "Mehedinți"
+          "Mehedin\u021bi"
         ]
       },
       "MUR": {
-        "name": "Mureș",
+        "name": "Mure\u0219",
         "regions": [
-          "Mureș"
+          "Mure\u0219"
         ]
       },
       "NEA": {
-        "name": "Neamț",
+        "name": "Neam\u021b",
         "regions": [
-          "Neamț"
+          "Neam\u021b"
         ]
       },
       "OLT": {
@@ -12808,9 +12808,9 @@
         ]
       },
       "SAL": {
-        "name": "Sălaj",
+        "name": "S\u0103laj",
         "regions": [
-          "Sălaj"
+          "S\u0103laj"
         ]
       },
       "SIB": {
@@ -12832,9 +12832,9 @@
         ]
       },
       "TIM": {
-        "name": "Timiș",
+        "name": "Timi\u0219",
         "regions": [
-          "Timiș"
+          "Timi\u0219"
         ]
       },
       "TUL": {
@@ -12850,9 +12850,9 @@
         ]
       },
       "VAL": {
-        "name": "Vâlcea",
+        "name": "V\u00e2lcea",
         "regions": [
-          "Vâlcea"
+          "V\u00e2lcea"
         ]
       },
       "VRA": {
@@ -13147,9 +13147,9 @@
         ]
       },
       "BRA1": {
-        "name": "Bragança",
+        "name": "Bragan\u00e7a",
         "regions": [
-          "Bragança"
+          "Bragan\u00e7a"
         ]
       },
       "CASBR": {
@@ -13165,9 +13165,9 @@
         ]
       },
       "EVO": {
-        "name": "Évora",
+        "name": "\u00c9vora",
         "regions": [
-          "Évora"
+          "\u00c9vora"
         ]
       },
       "FAR": {
@@ -13207,15 +13207,15 @@
         ]
       },
       "SAN": {
-        "name": "Santarém",
+        "name": "Santar\u00e9m",
         "regions": [
-          "Santarém"
+          "Santar\u00e9m"
         ]
       },
       "SET": {
-        "name": "Setúbal",
+        "name": "Set\u00fabal",
         "regions": [
-          "Setúbal"
+          "Set\u00fabal"
         ]
       },
       "VIADO": {
@@ -13256,9 +13256,9 @@
         ]
       },
       "GOR1": {
-        "name": "Goriška",
+        "name": "Gori\u0161ka",
         "regions": [
-          "Goriška"
+          "Gori\u0161ka"
         ]
       },
       "JUGSL": {
@@ -13268,15 +13268,15 @@
         ]
       },
       "KOR": {
-        "name": "Koroška",
+        "name": "Koro\u0161ka",
         "regions": [
-          "Koroška"
+          "Koro\u0161ka"
         ]
       },
       "OBA": {
-        "name": "Obalno-Kraška",
+        "name": "Obalno-Kra\u0161ka",
         "regions": [
-          "Obalno-Kraška"
+          "Obalno-Kra\u0161ka"
         ]
       },
       "OSR": {
@@ -13335,9 +13335,9 @@
         ]
       },
       "SIB": {
-        "name": "Šibenik-Knin",
+        "name": "\u0160ibenik-Knin",
         "regions": [
-          "Šibenik-Knin"
+          "\u0160ibenik-Knin"
         ]
       },
       "LIK": {
@@ -13347,9 +13347,9 @@
         ]
       },
       "MEI": {
-        "name": "Međimurje",
+        "name": "Me\u0111imurje",
         "regions": [
-          "Međimurje"
+          "Me\u0111imurje"
         ]
       },
       "OSI": {
@@ -13359,9 +13359,9 @@
         ]
       },
       "POZ": {
-        "name": "Požega-Slavonia",
+        "name": "Po\u017eega-Slavonia",
         "regions": [
-          "Požega-Slavonia"
+          "Po\u017eega-Slavonia"
         ]
       },
       "VIR": {
@@ -13401,9 +13401,9 @@
         ]
       },
       "KOP": {
-        "name": "Koprivnica-Križevci",
+        "name": "Koprivnica-Kri\u017eevci",
         "regions": [
-          "Koprivnica-Križevci"
+          "Koprivnica-Kri\u017eevci"
         ]
       },
       "KRA": {
@@ -13413,9 +13413,9 @@
         ]
       },
       "POZ1": {
-        "name": "Požega-Slavonia",
+        "name": "Po\u017eega-Slavonia",
         "regions": [
-          "Požega-Slavonia"
+          "Po\u017eega-Slavonia"
         ]
       },
       "SIS": {
@@ -13505,9 +13505,9 @@
         ]
       },
       "NIK": {
-        "name": "Nikšić",
+        "name": "Nik\u0161i\u0107",
         "regions": [
-          "Nikšić"
+          "Nik\u0161i\u0107"
         ]
       },
       "PLJ": {
@@ -13547,9 +13547,9 @@
         ]
       },
       "ROZ": {
-        "name": "Rožaje",
+        "name": "Ro\u017eaje",
         "regions": [
-          "Rožaje"
+          "Ro\u017eaje"
         ]
       },
       "DAN": {
@@ -13559,9 +13559,9 @@
         ]
       },
       "SAV": {
-        "name": "Šavnik",
+        "name": "\u0160avnik",
         "regions": [
-          "Šavnik"
+          "\u0160avnik"
         ]
       }
     },
@@ -13584,15 +13584,15 @@
         ]
       },
       "NIS": {
-        "name": "Nišava",
+        "name": "Ni\u0161ava",
         "regions": [
-          "Nišava"
+          "Ni\u0161ava"
         ]
       },
       "SUMAN": {
-        "name": "Šumadija and Western Serbia",
+        "name": "\u0160umadija and Western Serbia",
         "regions": [
-          "Šumadija and Western Serbia"
+          "\u0160umadija and Western Serbia"
         ]
       },
       "SOUAN": {
@@ -13632,9 +13632,9 @@
         ]
       },
       "BRA": {
-        "name": "Braničevo",
+        "name": "Brani\u010devo",
         "regions": [
-          "Braničevo"
+          "Brani\u010devo"
         ]
       },
       "JAB": {
@@ -13644,9 +13644,9 @@
         ]
       },
       "PCI": {
-        "name": "Pčinja",
+        "name": "P\u010dinja",
         "regions": [
-          "Pčinja"
+          "P\u010dinja"
         ]
       },
       "POM": {
@@ -13668,9 +13668,9 @@
         ]
       },
       "MAC": {
-        "name": "Mačva",
+        "name": "Ma\u010dva",
         "regions": [
-          "Mačva"
+          "Ma\u010dva"
         ]
       },
       "BOR": {
@@ -13680,15 +13680,15 @@
         ]
       },
       "BRA1": {
-        "name": "Braničevo",
+        "name": "Brani\u010devo",
         "regions": [
-          "Braničevo"
+          "Brani\u010devo"
         ]
       },
       "PCI1": {
-        "name": "Pčinja",
+        "name": "P\u010dinja",
         "regions": [
-          "Pčinja"
+          "P\u010dinja"
         ]
       }
     },
@@ -13705,15 +13705,15 @@
         ]
       },
       "DIB": {
-        "name": "Dibër",
+        "name": "Dib\u00ebr",
         "regions": [
-          "Dibër"
+          "Dib\u00ebr"
         ]
       },
       "DUR": {
-        "name": "Durrës",
+        "name": "Durr\u00ebs",
         "regions": [
-          "Durrës"
+          "Durr\u00ebs"
         ]
       },
       "ELB": {
@@ -13729,33 +13729,33 @@
         ]
       },
       "GJI": {
-        "name": "Gjirokastër",
+        "name": "Gjirokast\u00ebr",
         "regions": [
-          "Gjirokastër"
+          "Gjirokast\u00ebr"
         ]
       },
       "KOR": {
-        "name": "Korçë",
+        "name": "Kor\u00e7\u00eb",
         "regions": [
-          "Korçë"
+          "Kor\u00e7\u00eb"
         ]
       },
       "KUK": {
-        "name": "Kukës",
+        "name": "Kuk\u00ebs",
         "regions": [
-          "Kukës"
+          "Kuk\u00ebs"
         ]
       },
       "LEZ": {
-        "name": "Lezhë",
+        "name": "Lezh\u00eb",
         "regions": [
-          "Lezhë"
+          "Lezh\u00eb"
         ]
       },
       "SHK": {
-        "name": "Shkodër",
+        "name": "Shkod\u00ebr",
         "regions": [
-          "Shkodër"
+          "Shkod\u00ebr"
         ]
       },
       "TIR": {
@@ -13765,9 +13765,9 @@
         ]
       },
       "VLO": {
-        "name": "Vlorë",
+        "name": "Vlor\u00eb",
         "regions": [
-          "Vlorë"
+          "Vlor\u00eb"
         ]
       }
     },
@@ -13784,9 +13784,9 @@
         ]
       },
       "ARA": {
-        "name": "Aračinovo",
+        "name": "Ara\u010dinovo",
         "regions": [
-          "Aračinovo"
+          "Ara\u010dinovo"
         ]
       },
       "BER": {
@@ -13832,15 +13832,15 @@
         ]
       },
       "CAI": {
-        "name": "Čair",
+        "name": "\u010cair",
         "regions": [
-          "Čair"
+          "\u010cair"
         ]
       },
       "CAS": {
-        "name": "Čaška",
+        "name": "\u010ca\u0161ka",
         "regions": [
-          "Čaška"
+          "\u010ca\u0161ka"
         ]
       },
       "CEN": {
@@ -13850,15 +13850,15 @@
         ]
       },
       "CENZU": {
-        "name": "Centar Župa",
+        "name": "Centar \u017dupa",
         "regions": [
-          "Centar Župa"
+          "Centar \u017dupa"
         ]
       },
       "CUC": {
-        "name": "Čučer-Sandevo",
+        "name": "\u010cu\u010der-Sandevo",
         "regions": [
-          "Čučer-Sandevo"
+          "\u010cu\u010der-Sandevo"
         ]
       },
       "DEB": {
@@ -13874,9 +13874,9 @@
         ]
       },
       "DEL": {
-        "name": "Delčevo",
+        "name": "Del\u010devo",
         "regions": [
-          "Delčevo"
+          "Del\u010devo"
         ]
       },
       "DEMHI": {
@@ -13922,9 +13922,9 @@
         ]
       },
       "GJOPE": {
-        "name": "Gjorče Petrov",
+        "name": "Gjor\u010de Petrov",
         "regions": [
-          "Gjorče Petrov"
+          "Gjor\u010de Petrov"
         ]
       },
       "GOS": {
@@ -13964,9 +13964,9 @@
         ]
       },
       "KIC": {
-        "name": "Kičevo",
+        "name": "Ki\u010devo",
         "regions": [
-          "Kičevo"
+          "Ki\u010devo"
         ]
       },
       "KISVO": {
@@ -13976,15 +13976,15 @@
         ]
       },
       "KOC": {
-        "name": "Kočani",
+        "name": "Ko\u010dani",
         "regions": [
-          "Kočani"
+          "Ko\u010dani"
         ]
       },
       "KON": {
-        "name": "Konče",
+        "name": "Kon\u010de",
         "regions": [
-          "Konče"
+          "Kon\u010de"
         ]
       },
       "KRA": {
@@ -14000,9 +14000,9 @@
         ]
       },
       "KRU": {
-        "name": "Kruševo",
+        "name": "Kru\u0161evo",
         "regions": [
-          "Kruševo"
+          "Kru\u0161evo"
         ]
       },
       "KUM": {
@@ -14030,9 +14030,9 @@
         ]
       },
       "MAVAN": {
-        "name": "Mavrovo and Rostuša",
+        "name": "Mavrovo and Rostu\u0161a",
         "regions": [
-          "Mavrovo and Rostuša"
+          "Mavrovo and Rostu\u0161a"
         ]
       },
       "MOG": {
@@ -14066,9 +14066,9 @@
         ]
       },
       "PEH": {
-        "name": "Pehčevo",
+        "name": "Peh\u010devo",
         "regions": [
-          "Pehčevo"
+          "Peh\u010devo"
         ]
       },
       "PET": {
@@ -14090,15 +14090,15 @@
         ]
       },
       "PRO": {
-        "name": "Probištip",
+        "name": "Probi\u0161tip",
         "regions": [
-          "Probištip"
+          "Probi\u0161tip"
         ]
       },
       "RAD": {
-        "name": "Radoviš",
+        "name": "Radovi\u0161",
         "regions": [
-          "Radoviš"
+          "Radovi\u0161"
         ]
       },
       "RAN": {
@@ -14126,15 +14126,15 @@
         ]
       },
       "SOP": {
-        "name": "Sopište",
+        "name": "Sopi\u0161te",
         "regions": [
-          "Sopište"
+          "Sopi\u0161te"
         ]
       },
       "STANA": {
-        "name": "Staro Nagoričane",
+        "name": "Staro Nagori\u010dane",
         "regions": [
-          "Staro Nagoričane"
+          "Staro Nagori\u010dane"
         ]
       },
       "STR": {
@@ -14150,15 +14150,15 @@
         ]
       },
       "STU": {
-        "name": "Studeničani",
+        "name": "Studeni\u010dani",
         "regions": [
-          "Studeničani"
+          "Studeni\u010dani"
         ]
       },
       "STI": {
-        "name": "Štip",
+        "name": "\u0160tip",
         "regions": [
-          "Štip"
+          "\u0160tip"
         ]
       },
       "TET": {
@@ -14186,9 +14186,9 @@
         ]
       },
       "VRA": {
-        "name": "Vrapčište",
+        "name": "Vrap\u010di\u0161te",
         "regions": [
-          "Vrapčište"
+          "Vrap\u010di\u0161te"
         ]
       }
     },
@@ -14301,15 +14301,15 @@
         ]
       },
       "GRA": {
-        "name": "Graubünden",
+        "name": "Graub\u00fcnden",
         "regions": [
-          "Graubünden"
+          "Graub\u00fcnden"
         ]
       },
       "NEU": {
-        "name": "Neuchâtel",
+        "name": "Neuch\u00e2tel",
         "regions": [
-          "Neuchâtel"
+          "Neuch\u00e2tel"
         ]
       },
       "SANGA": {
@@ -14918,21 +14918,21 @@
         ]
       },
       "CALAR": {
-        "name": "Călărași",
+        "name": "C\u0103l\u0103ra\u0219i",
         "regions": [
-          "Călărași"
+          "C\u0103l\u0103ra\u0219i"
         ]
       },
       "CAUSEN": {
-        "name": "Căușeni",
+        "name": "C\u0103u\u0219eni",
         "regions": [
-          "Căușeni"
+          "C\u0103u\u0219eni"
         ]
       },
       "CIMIS": {
-        "name": "Cimișlia",
+        "name": "Cimi\u0219lia",
         "regions": [
-          "Cimișlia"
+          "Cimi\u0219lia"
         ]
       },
       "CRIUL": {
@@ -14942,9 +14942,9 @@
         ]
       },
       "DONDU": {
-        "name": "Dondușeni",
+        "name": "Dondu\u0219eni",
         "regions": [
-          "Dondușeni"
+          "Dondu\u0219eni"
         ]
       },
       "DROCH": {
@@ -14954,27 +14954,27 @@
         ]
       },
       "DUBAS": {
-        "name": "Dubăsari",
+        "name": "Dub\u0103sari",
         "regions": [
-          "Dubăsari"
+          "Dub\u0103sari"
         ]
       },
       "EDINE": {
-        "name": "Edineț",
+        "name": "Edine\u021b",
         "regions": [
-          "Edineț"
+          "Edine\u021b"
         ]
       },
       "FALEST": {
-        "name": "Fălești",
+        "name": "F\u0103le\u0219ti",
         "regions": [
-          "Fălești"
+          "F\u0103le\u0219ti"
         ]
       },
       "FLORE": {
-        "name": "Florești",
+        "name": "Flore\u0219ti",
         "regions": [
-          "Florești"
+          "Flore\u0219ti"
         ]
       },
       "GAGAU": {
@@ -14990,9 +14990,9 @@
         ]
       },
       "HINC": {
-        "name": "Hîncești",
+        "name": "H\u00eence\u0219ti",
         "regions": [
-          "Hîncești"
+          "H\u00eence\u0219ti"
         ]
       },
       "IALOV": {
@@ -15014,9 +15014,9 @@
         ]
       },
       "OCNIT": {
-        "name": "Ocnița",
+        "name": "Ocni\u021ba",
         "regions": [
-          "Ocnița"
+          "Ocni\u021ba"
         ]
       },
       "ORHEI": {
@@ -15032,15 +15032,15 @@
         ]
       },
       "RISC": {
-        "name": "Rîșcani",
+        "name": "R\u00ee\u0219cani",
         "regions": [
-          "Rîșcani"
+          "R\u00ee\u0219cani"
         ]
       },
       "SING": {
-        "name": "Sîngerei",
+        "name": "S\u00eengerei",
         "regions": [
-          "Sîngerei"
+          "S\u00eengerei"
         ]
       },
       "SOROC": {
@@ -15050,15 +15050,15 @@
         ]
       },
       "STIR": {
-        "name": "Stîrcea",
+        "name": "St\u00eercea",
         "regions": [
-          "Stîrcea"
+          "St\u00eercea"
         ]
       },
       "STRAS": {
-        "name": "Strășeni",
+        "name": "Str\u0103\u0219eni",
         "regions": [
-          "Strășeni"
+          "Str\u0103\u0219eni"
         ]
       },
       "TRANS": {
@@ -15068,9 +15068,9 @@
         ]
       },
       "TELEN": {
-        "name": "Telenești",
+        "name": "Telene\u0219ti",
         "regions": [
-          "Telenești"
+          "Telene\u0219ti"
         ]
       },
       "UNGHE": {
@@ -15080,15 +15080,15 @@
         ]
       },
       "CHISIN": {
-        "name": "Chișinău",
+        "name": "Chi\u0219in\u0103u",
         "regions": [
-          "Chișinău"
+          "Chi\u0219in\u0103u"
         ]
       },
       "BALT": {
-        "name": "Bălți",
+        "name": "B\u0103l\u021bi",
         "regions": [
-          "Bălți"
+          "B\u0103l\u021bi"
         ]
       },
       "BENDER": {
@@ -15141,9 +15141,9 @@
         ]
       },
       "SANTJULIA": {
-        "name": "Sant Julià de Lòria",
+        "name": "Sant Juli\u00e0 de L\u00f2ria",
         "regions": [
-          "Sant Julià de Lòria"
+          "Sant Juli\u00e0 de L\u00f2ria"
         ]
       }
     },
@@ -15154,9 +15154,9 @@
   "AX": {
     "divisions": {
       "ALAND": {
-        "name": "Åland Islands",
+        "name": "\u00c5land Islands",
         "regions": [
-          "Åland Islands"
+          "\u00c5land Islands"
         ]
       }
     },
@@ -16398,15 +16398,15 @@
         ]
       },
       "LAUTEM": {
-        "name": "Lautém",
+        "name": "Laut\u00e9m",
         "regions": [
-          "Lautém"
+          "Laut\u00e9m"
         ]
       },
       "LIQUI": {
-        "name": "Liquiçá",
+        "name": "Liqui\u00e7\u00e1",
         "regions": [
-          "Liquiçá"
+          "Liqui\u00e7\u00e1"
         ]
       },
       "MANUFA": {
@@ -16836,9 +16836,9 @@
         ]
       },
       "TUV": {
-        "name": "Töv",
+        "name": "T\u00f6v",
         "regions": [
-          "Töv"
+          "T\u00f6v"
         ]
       },
       "UVS": {
@@ -16872,9 +16872,9 @@
         ]
       },
       "KHOVG": {
-        "name": "Khövsgöl",
+        "name": "Kh\u00f6vsg\u00f6l",
         "regions": [
-          "Khövsgöl"
+          "Kh\u00f6vsg\u00f6l"
         ]
       },
       "ORKHON": {
@@ -16967,7 +16967,7 @@
         "name": "Ouled Djellal"
       },
       "SK": {
-        "name": "Sidi Bel Abbès"
+        "name": "Sidi Bel Abb\u00e8s"
       },
       "TH": {
         "name": "Tamanrasset"
@@ -16994,13 +16994,13 @@
         "name": "Msila"
       },
       "SET": {
-        "name": "Sétif"
+        "name": "S\u00e9tif"
       },
       "SAI": {
-        "name": "Saïda"
+        "name": "Sa\u00efda"
       },
       "TEB": {
-        "name": "Tébessa"
+        "name": "T\u00e9bessa"
       }
     },
     "regions": [
@@ -17016,7 +17016,7 @@
         "name": "Namibe"
       },
       "HS": {
-        "name": "Huíla"
+        "name": "Hu\u00edla"
       },
       "CC": {
         "name": "Cuando Cubango"
@@ -17040,7 +17040,7 @@
         "name": "Huambo"
       },
       "BI": {
-        "name": "Bié"
+        "name": "Bi\u00e9"
       },
       "CU": {
         "name": "Cuanza Sul"
@@ -17188,7 +17188,7 @@
         "name": "Mono"
       },
       "OU": {
-        "name": "Ouémé"
+        "name": "Ou\u00e9m\u00e9"
       },
       "PL": {
         "name": "Plateau"
@@ -17232,7 +17232,7 @@
   "BF": {
     "divisions": {
       "BAL": {
-        "name": "Balé"
+        "name": "Bal\u00e9"
       },
       "BAM": {
         "name": "Bam"
@@ -17241,7 +17241,7 @@
         "name": "Banwa"
       },
       "BAZ": {
-        "name": "Bazèga"
+        "name": "Baz\u00e8ga"
       },
       "BGR": {
         "name": "Bougouriba"
@@ -17250,10 +17250,10 @@
         "name": "Boulgou"
       },
       "BLK": {
-        "name": "Boulkiemdé"
+        "name": "Boulkiemd\u00e9"
       },
       "COM": {
-        "name": "Comoé"
+        "name": "Como\u00e9"
       },
       "GAN": {
         "name": "Ganzourgou"
@@ -17271,7 +17271,7 @@
         "name": "Kadiogo"
       },
       "KEN": {
-        "name": "Kénédougou"
+        "name": "K\u00e9n\u00e9dougou"
       },
       "KMD": {
         "name": "Komondjari"
@@ -17280,7 +17280,7 @@
         "name": "Kompienga"
       },
       "KOP": {
-        "name": "Koulpélogo"
+        "name": "Koulp\u00e9logo"
       },
       "KOS": {
         "name": "Kossi"
@@ -17289,10 +17289,10 @@
         "name": "Kouritenga"
       },
       "KOW": {
-        "name": "Kourwéogo"
+        "name": "Kourw\u00e9ogo"
       },
       "LER": {
-        "name": "Léraba"
+        "name": "L\u00e9raba"
       },
       "LOR": {
         "name": "Loroum"
@@ -17316,13 +17316,13 @@
         "name": "Oudalan"
       },
       "PAS": {
-        "name": "Passoré"
+        "name": "Passor\u00e9"
       },
       "PON": {
         "name": "Poni"
       },
       "SEN": {
-        "name": "Séno"
+        "name": "S\u00e9no"
       },
       "SIS": {
         "name": "Sissili"
@@ -17352,7 +17352,7 @@
         "name": "Zondoma"
       },
       "ZOU": {
-        "name": "Zoundwéogo"
+        "name": "Zoundw\u00e9ogo"
       }
     },
     "regions": [
@@ -17414,7 +17414,7 @@
         "name": "Haut-Mbomou"
       },
       "KG": {
-        "name": "Kémo"
+        "name": "K\u00e9mo"
       },
       "LO": {
         "name": "Lobaye"
@@ -17426,7 +17426,7 @@
         "name": "Ombella-M'Poko"
       },
       "NM": {
-        "name": "Nana-Mambéré"
+        "name": "Nana-Mamb\u00e9r\u00e9"
       },
       "UK": {
         "name": "Ouaka"
@@ -17435,10 +17435,10 @@
         "name": "Ouham"
       },
       "OP": {
-        "name": "Ouham Péndé"
+        "name": "Ouham P\u00e9nd\u00e9"
       },
       "SE": {
-        "name": "Sangha-Mbaéré"
+        "name": "Sangha-Mba\u00e9r\u00e9"
       },
       "VK": {
         "name": "Vakaga"
@@ -17463,7 +17463,7 @@
         "name": "Chari-Baguirmi"
       },
       "GC": {
-        "name": "Guéra"
+        "name": "Gu\u00e9ra"
       },
       "KA": {
         "name": "Kanem"
@@ -17481,19 +17481,19 @@
         "name": "Mandoul"
       },
       "ME": {
-        "name": "Mayo-Kébbi Est"
+        "name": "Mayo-K\u00e9bbi Est"
       },
       "MO": {
         "name": "Moyen-Chari"
       },
       "OA": {
-        "name": "Ouaddaï"
+        "name": "Ouadda\u00ef"
       },
       "SA": {
         "name": "Salamat"
       },
       "TA": {
-        "name": "Tandjilé"
+        "name": "Tandjil\u00e9"
       }
     },
     "regions": [
@@ -17512,19 +17512,19 @@
         "name": "Arauca"
       },
       "ATL": {
-        "name": "Atlántico"
+        "name": "Atl\u00e1ntico"
       },
       "BOL": {
-        "name": "Bolívar"
+        "name": "Bol\u00edvar"
       },
       "BOY": {
-        "name": "Boyacá"
+        "name": "Boyac\u00e1"
       },
       "CAL": {
         "name": "Caldas"
       },
       "CAQ": {
-        "name": "Caquetá"
+        "name": "Caquet\u00e1"
       },
       "CAS": {
         "name": "Casanare"
@@ -17536,10 +17536,10 @@
         "name": "Cesar"
       },
       "CHO": {
-        "name": "Chocó"
+        "name": "Choc\u00f3"
       },
       "COR": {
-        "name": "Córdoba"
+        "name": "C\u00f3rdoba"
       },
       "CUN": {
         "name": "Cundinamarca"
@@ -17548,7 +17548,7 @@
         "name": "Distrito Capital"
       },
       "GUA": {
-        "name": "Guainía"
+        "name": "Guain\u00eda"
       },
       "GUV": {
         "name": "Guaviare"
@@ -17566,7 +17566,7 @@
         "name": "Meta"
       },
       "NAR": {
-        "name": "Nariño"
+        "name": "Nari\u00f1o"
       },
       "NSA": {
         "name": "Norte de Santander"
@@ -17575,7 +17575,7 @@
         "name": "Putumayo"
       },
       "QUI": {
-        "name": "Quindío"
+        "name": "Quind\u00edo"
       },
       "RIS": {
         "name": "Risaralda"
@@ -17584,7 +17584,7 @@
         "name": "Santander"
       },
       "SAP": {
-        "name": "San Andrés y Providencia"
+        "name": "San Andr\u00e9s y Providencia"
       },
       "SUC": {
         "name": "Sucre"
@@ -17639,22 +17639,22 @@
         "name": "Sal"
       },
       "SM": {
-        "name": "São Miguel"
+        "name": "S\u00e3o Miguel"
       },
       "SO": {
-        "name": "São Lourenço dos Órgãos"
+        "name": "S\u00e3o Louren\u00e7o dos \u00d3rg\u00e3os"
       },
       "SS": {
-        "name": "São Salvador do Mundo"
+        "name": "S\u00e3o Salvador do Mundo"
       },
       "SV": {
-        "name": "São Vicente"
+        "name": "S\u00e3o Vicente"
       },
       "TA": {
         "name": "Tarrafal"
       },
       "TS": {
-        "name": "Tarrafal de São Nicolau"
+        "name": "Tarrafal de S\u00e3o Nicolau"
       }
     },
     "regions": [
@@ -17695,7 +17695,7 @@
         "name": "Grande Comore"
       },
       "MO": {
-        "name": "Mohéli"
+        "name": "Moh\u00e9li"
       }
     },
     "regions": [
@@ -18044,7 +18044,7 @@
         "name": "Mopti"
       },
       "SH": {
-        "name": "Ségou"
+        "name": "S\u00e9gou"
       },
       "SL": {
         "name": "Sikasso"
@@ -18124,7 +18124,7 @@
         "name": "Port Louis"
       },
       "RR": {
-        "name": "Rivière du Rempart"
+        "name": "Rivi\u00e8re du Rempart"
       },
       "SA": {
         "name": "Savanne"
@@ -18158,7 +18158,7 @@
         "name": "Tahoua"
       },
       "TL": {
-        "name": "Tillabéri"
+        "name": "Tillab\u00e9ri"
       },
       "ZD": {
         "name": "Zinder"
@@ -18171,10 +18171,10 @@
   "NI": {
     "divisions": {
       "AN": {
-        "name": "Atlántico Norte"
+        "name": "Atl\u00e1ntico Norte"
       },
       "AS": {
-        "name": "Atlántico Sur"
+        "name": "Atl\u00e1ntico Sur"
       },
       "BO": {
         "name": "Boaco"
@@ -18189,7 +18189,7 @@
         "name": "Chontales"
       },
       "ES": {
-        "name": "Estelí"
+        "name": "Estel\u00ed"
       },
       "GR": {
         "name": "Granada"
@@ -18198,7 +18198,7 @@
         "name": "Jinotega"
       },
       "LE": {
-        "name": "León"
+        "name": "Le\u00f3n"
       },
       "MD": {
         "name": "Madriz"
@@ -18219,7 +18219,7 @@
         "name": "Rivas"
       },
       "SJ": {
-        "name": "San José"
+        "name": "San Jos\u00e9"
       }
     },
     "regions": [
