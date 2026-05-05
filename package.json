@@ -63,6 +63,7 @@
   },
   "dependencies": {
     "micro": "^9.3.3",
+    "provinces": "^1.11.0",
     "remote-lib": "file:../../home/ekkis/.hermes/projects/remote-lib"
   }
 }

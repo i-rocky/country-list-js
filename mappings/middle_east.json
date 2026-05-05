@@ -1,0 +1,294 @@
+{
+  "JO": {
+    "Irbid": [
+      "North"
+    ],
+    "Ajloun": [
+      "North"
+    ],
+    "Jerash": [
+      "North"
+    ],
+    "Mafraq": [
+      "North"
+    ],
+    "Amman": [
+      "Central"
+    ],
+    "Balqa": [
+      "Central"
+    ],
+    "Zarqa": [
+      "Central"
+    ],
+    "Madaba": [
+      "Central"
+    ],
+    "Karak": [
+      "South"
+    ],
+    "Tafilah": [
+      "South"
+    ],
+    "Ma'an": [
+      "South"
+    ],
+    "Aqaba": [
+      "South"
+    ]
+  },
+  "TR": {
+    "Adana": [
+      "Mediterranean"
+    ],
+    "Adıyaman": [
+      "Southeastern Anatolia"
+    ],
+    "Afyonkarahisar": [
+      "Central Anatolia"
+    ],
+    "Ağrı": [
+      "Eastern Anatolia"
+    ],
+    "Amasya": [
+      "Black Sea"
+    ],
+    "Ankara": [
+      "Central Anatolia"
+    ],
+    "Antalya": [
+      "Mediterranean"
+    ],
+    "Artvin": [
+      "Black Sea"
+    ],
+    "Aydın": [
+      "Aegean"
+    ],
+    "Balıkesir": [
+      "Marmara"
+    ],
+    "Bilecik": [
+      "Marmara"
+    ],
+    "Bingöl": [
+      "Eastern Anatolia"
+    ],
+    "Bitlis": [
+      "Eastern Anatolia"
+    ],
+    "Bolu": [
+      "Black Sea"
+    ],
+    "Burdur": [
+      "Mediterranean"
+    ],
+    "Bursa": [
+      "Marmara"
+    ],
+    "Çanakkale": [
+      "Marmara"
+    ],
+    "Çankırı": [
+      "Central Anatolia"
+    ],
+    "Çorum": [
+      "Black Sea"
+    ],
+    "Denizli": [
+      "Aegean"
+    ],
+    "Diyarbakır": [
+      "Southeastern Anatolia"
+    ],
+    "Edirne": [
+      "Marmara"
+    ],
+    "Elazığ": [
+      "Eastern Anatolia"
+    ],
+    "Erzincan": [
+      "Eastern Anatolia"
+    ],
+    "Erzurum": [
+      "Eastern Anatolia"
+    ],
+    "Eskişehir": [
+      "Central Anatolia"
+    ],
+    "Gaziantep": [
+      "Southeastern Anatolia"
+    ],
+    "Giresun": [
+      "Black Sea"
+    ],
+    "Gümüşhane": [
+      "Black Sea"
+    ],
+    "Hakkari": [
+      "Eastern Anatolia"
+    ],
+    "Hatay": [
+      "Mediterranean"
+    ],
+    "Isparta": [
+      "Mediterranean"
+    ],
+    "Mersin": [
+      "Mediterranean"
+    ],
+    "İstanbul": [
+      "Marmara"
+    ],
+    "İzmir": [
+      "Aegean"
+    ],
+    "Kahramanmaraş": [
+      "Mediterranean"
+    ],
+    "Karabük": [
+      "Black Sea"
+    ],
+    "Karaman": [
+      "Central Anatolia"
+    ],
+    "Kars": [
+      "Eastern Anatolia"
+    ],
+    "Kastamonu": [
+      "Black Sea"
+    ],
+    "Kayseri": [
+      "Central Anatolia"
+    ],
+    "Kırıkkale": [
+      "Central Anatolia"
+    ],
+    "Kırklareli": [
+      "Marmara"
+    ],
+    "Kırşehir": [
+      "Central Anatolia"
+    ],
+    "Kocaeli": [
+      "Marmara"
+    ],
+    "Konya": [
+      "Central Anatolia"
+    ],
+    "Kütahya": [
+      "Aegean"
+    ],
+    "Malatya": [
+      "Eastern Anatolia"
+    ],
+    "Manisa": [
+      "Aegean"
+    ],
+    "Mardin": [
+      "Southeastern Anatolia"
+    ],
+    "Muğa": [
+      "Aegean"
+    ],
+    "Muş": [
+      "Eastern Anatolia"
+    ],
+    "Nevşehir": [
+      "Central Anatolia"
+    ],
+    "Niğde": [
+      "Central Anatolia"
+    ],
+    "Ordu": [
+      "Black Sea"
+    ],
+    "Rize": [
+      "Black Sea"
+    ],
+    "Sakarya": [
+      "Marmara"
+    ],
+    "Samsun": [
+      "Black Sea"
+    ],
+    "Siirt": [
+      "Eastern Anatolia"
+    ],
+    "Sinop": [
+      "Black Sea"
+    ],
+    "Sivas": [
+      "Central Anatolia"
+    ],
+    "Tekirdağ": [
+      "Marmara"
+    ],
+    "Tokat": [
+      "Black Sea"
+    ],
+    "Trabzon": [
+      "Black Sea"
+    ],
+    "Tunceli": [
+      "Eastern Anatolia"
+    ],
+    "Uşak": [
+      "Aegean"
+    ],
+    "Van": [
+      "Eastern Anatolia"
+    ],
+    "Yalova": [
+      "Marmara"
+    ],
+    "Yozgat": [
+      "Central Anatolia"
+    ],
+    "Zonguldak": [
+      "Black Sea"
+    ],
+    "Bayburt": [
+      "Black Sea"
+    ],
+    "Batman": [
+      "Southeastern Anatolia"
+    ],
+    "Şırnak": [
+      "Southeastern Anatolia"
+    ],
+    "Bartın": [
+      "Black Sea"
+    ],
+    "Ardahan": [
+      "Eastern Anatolia"
+    ],
+    "Iğdır": [
+      "Eastern Anatolia"
+    ],
+    "Kilis": [
+      "Southeastern Anatolia"
+    ],
+    "Osmaniye": [
+      "Mediterranean"
+    ],
+    "Düzce": [
+      "Black Sea"
+    ],
+    "Hakkâri": [
+      "Eastern Anatolia"
+    ],
+    "Istanbul": [
+      "Marmara"
+    ],
+    "Muğla": [
+      "Aegean"
+    ],
+    "Şanlıurfa": [
+      "Southeastern Anatolia"
+    ],
+    "Aksaray": [
+      "Central Anatolia"
+    ]
+  }
+}
