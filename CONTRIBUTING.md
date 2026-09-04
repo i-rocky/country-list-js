@@ -1,0 +1,85 @@
+# Contributing
+
+Thanks for helping keep this data correct.
+
+## Fixing country data
+
+**Everything starts and ends in `countries/<ISO2>.json`.** One file per
+country. Editing Bulgaria's currency is a one-line diff:
+
+```diff
+  "capital": "Sofia",
+- "currency": "BGN",
++ "currency": "EUR",
+```
+
+Everything under `data/` is **generated** from those files by
+`scripts/build.js`. Don't edit it; your change would be overwritten on the next
+build, and the diff would be unreadable anyway.
+
+The other sources are:
+
+| path | holds |
+|---|---|
+| `countries/<ISO2>.json` | one country |
+| `reference/currencies.json` | currency code → symbol and minor unit |
+| `reference/continents.json` | continent code → name |
+| `reference/name-aliases.json` | alternative country names |
+| `reference/retired-currencies.json` | ISO 4217 codes that no longer exist |
+| `reference/order.json` | the canonical country order |
+| `schema/country.schema.json` | what a country file may contain |
+
+`reference/order.json` decides the order of `names()`, `capitals()` and `ls()`.
+That order is observable, so a new country goes at the end rather than in
+alphabetical position.
+
+## Before you open a pull request
+
+```sh
+npm install     # installs, and builds data/
+npm test        # lint, validate the data, run the suite
+```
+
+`npm test` runs `scripts/validate.js`, which checks rather more than the schema
+can: that the filename matches `iso2`, that ISO-3 and numeric codes are unique,
+that currencies and continents resolve, that borders are symmetric, that time
+zones are real IANA identifiers, and that every field the runtime calls a
+string method on really is a string.
+
+That last rule exists for a reason. Merging `"AC": 247` unquoted — a number
+where a string belonged — made `require('country-list-js')` throw on load, and
+the break sat on `master` for nearly two years because nothing checked.
+
+## Some rules the data follows
+
+- **Names** are common short names in English, transliterated to ASCII.
+  Alternative and native forms go in `reference/name-aliases.json`, not in
+  `name`. Renaming a country would break `findByName` for everyone using the
+  old name.
+- **A province alias is an array or `null`.** Never a bare string: `indexOf` on
+  a string is a substring search, and three of these once made
+  `findByProvince('B')` answer Vietnam.
+- **Borders are symmetric.** If you add A → B, add B → A.
+- **Dialing codes are strings**, even when they look like numbers.
+- **Don't add `population`.** It changes every year and there is no way to keep
+  250 figures current.
+
+## Changing behaviour
+
+The public API is frozen. `t/contract.js` diffs this package against the real,
+published 3.1.8 for all 250 countries and 42 recorded calls, and it fails on
+any difference that is not declared in that file with a reason. It also fails
+if a declared difference turns out to be identical, so the list cannot go
+stale.
+
+If your change moves observable behaviour, declare it there and say why. If you
+cannot justify it, it probably should not change: 15,000 installs a week depend
+on this behaving the way it always has.
+
+## Releasing
+
+Work happens on `v4.x`. Merging `v4.x` into `master` triggers the release:
+CI runs the suite, packs the tarball, installs it into a throwaway project
+beside the published 3.1.8, and runs every check against the *installed*
+package before publishing. A broken `exports` map or a missing file fails there
+rather than on npm.

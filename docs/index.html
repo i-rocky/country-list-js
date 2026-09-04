@@ -1,98 +1,428 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Country List JS</title>
-    <script src="//cdn.rawgit.com/i-rocky/country-list-js/00fd1e87/dist/country.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>country-list-js — every country, in one dependency-free package</title>
+<meta name="description" content="ISO 3166-1 codes, names, capitals, currencies, dialing codes, subdivisions, land borders and IANA time zones for 250 countries and territories.">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg:#fbfbfc; --surface:#fff; --raise:#fff;
+  --ink:#0e1216; --muted:#5b646f; --faint:#98a1ac;
+  --line:#e8ebef; --line-soft:#f1f3f5;
+  --accent:#0c7a6d; --accent-ink:#0c7a6d; --tint:#e9f8f5;
+  --shadow:0 1px 2px rgba(16,24,32,.04), 0 8px 24px -12px rgba(16,24,32,.10);
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Roboto,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0a0d0f; --surface:#12171a; --raise:#171d21;
+  --ink:#e9edf0; --muted:#98a2ad; --faint:#606a75;
+  --line:#212a2f; --line-soft:#1a2226;
+  --accent:#3ed7c0; --accent-ink:#3ed7c0; --tint:#0e2b27;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--sans);
+  -webkit-font-smoothing:antialiased;font-feature-settings:"kern","liga","cv11"}
+.wrap{max-width:74rem;margin:0 auto;padding:0 1.75rem}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+h1,h2,h3{letter-spacing:-.021em}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:1.5rem;height:60px}
+.brand{font:600 .98rem/1 var(--mono);letter-spacing:-.02em}
+nav .sp{flex:1}
+nav a{color:var(--muted);font-size:.92rem;font-weight:500}
+nav a:hover{color:var(--accent-ink);text-decoration:none}
+
+/* hero */
+.hero{padding:clamp(3rem,8vw,5.5rem) 0 0}
+.hero h1{margin:0;font-size:clamp(2.3rem,5.4vw,3.6rem);line-height:1.08;font-weight:640;max-width:19ch}
+.lede{margin:1.15rem 0 0;max-width:44rem;font-size:clamp(1.02rem,1.6vw,1.16rem);color:var(--muted)}
+.facets{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.5rem 0 0;padding:0;list-style:none}
+.facets li{font:500 .82rem/1 var(--mono);color:var(--muted);
+  border:1px solid var(--line);border-radius:999px;padding:.42rem .78rem;background:var(--surface)}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin-top:1.9rem}
+.install{display:inline-flex;align-items:center;gap:.85rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:11px;padding:.62rem .7rem .62rem .95rem;
+  font:500 .93rem/1 var(--mono);box-shadow:var(--shadow)}
+.install span{color:var(--ink)}
+.install button{border:0;background:var(--tint);color:var(--accent-ink);cursor:pointer;
+  border-radius:7px;padding:.34rem .6rem;font:600 .76rem/1 var(--sans);letter-spacing:.01em}
+.install button:hover{filter:brightness(.96)}
+.ghost{border:1px solid var(--line);border-radius:11px;padding:.68rem 1rem;
+  font:500 .93rem/1 var(--sans);color:var(--muted);background:var(--surface)}
+.ghost:hover{color:var(--accent-ink);border-color:var(--accent);text-decoration:none}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));
+  gap:1px;background:var(--line);border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden;margin:3rem 0 0;box-shadow:var(--shadow)}
+.stat{background:var(--surface);padding:1.15rem 1.25rem}
+.stat b{display:block;font:640 1.7rem/1.15 var(--sans);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:.2rem;font-size:.8rem;color:var(--muted)}
+
+/* sections */
+section{padding:clamp(3rem,7vw,4.75rem) 0}
+.eyebrow{font:600 .78rem/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 .7rem}
+section h2{margin:0 0 .55rem;font-size:clamp(1.5rem,3vw,1.95rem);font-weight:640}
+.sub{margin:0 0 1.9rem;color:var(--muted);max-width:46rem}
+.sub code{font:.88em var(--mono);background:var(--line-soft);padding:.1em .38em;border-radius:5px}
+
+/* search */
+.searchbox{position:relative}
+#q{width:100%;padding:1.15rem 1.3rem;border:1px solid var(--line);border-radius:var(--r);
+  background:var(--surface);color:var(--ink);font:400 1.1rem var(--mono);box-shadow:var(--shadow)}
+#q::placeholder{color:var(--faint)}
+#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--tint)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:.95rem 0 0;padding:0;list-style:none}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--muted);
+  border-radius:999px;padding:.36rem .8rem;cursor:pointer;font:500 .84rem/1 var(--mono);transition:.12s}
+.chip:hover{border-color:var(--accent);color:var(--accent-ink);background:var(--tint)}
+
+/* result */
+#results{margin-top:1.75rem;display:grid;gap:1.1rem}
+.card{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);
+  overflow:hidden;box-shadow:var(--shadow)}
+.card-head{display:flex;align-items:center;gap:1.05rem;padding:1.35rem 1.5rem;
+  border-bottom:1px solid var(--line-soft)}
+.flag{font-size:2.3rem;line-height:1;flex:none;filter:saturate(1.05)}
+.who{min-width:0;flex:1}
+.who h3{margin:0;font-size:1.35rem;font-weight:640;overflow-wrap:anywhere}
+.who p{margin:.16rem 0 0;font:500 .84rem/1.4 var(--mono);color:var(--faint)}
+.via{flex:none;font:600 .76rem/1 var(--sans);color:var(--accent-ink);background:var(--tint);
+  border-radius:999px;padding:.44rem .78rem;white-space:nowrap}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr));
+  gap:1px;background:var(--line-soft);margin:0}
+.field{background:var(--surface);padding:.9rem 1.5rem;min-width:0}
+.field dt{margin:0 0 .22rem;font:600 .72rem/1 var(--sans);letter-spacing:.055em;
+  text-transform:uppercase;color:var(--faint)}
+.field dd{margin:0;font:.93rem/1.5 var(--mono);overflow-wrap:anywhere}
+.field dd.none{color:var(--faint)}
+.snippet{margin:0;padding:.95rem 1.5rem;background:var(--line-soft);
+  font:.87rem/1.6 var(--mono);color:var(--muted);overflow-x:auto}
+.snippet b{color:var(--accent-ink);font-weight:600}
+.notice{padding:2.5rem 1rem;text-align:center;color:var(--muted);
+  border:1px dashed var(--line);border-radius:var(--r)}
+.notice b{color:var(--ink)}
+
+/* table */
+.tools{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;margin-bottom:1.1rem}
+.tools input,.tools select{border:1px solid var(--line);border-radius:10px;background:var(--surface);
+  color:var(--ink);padding:.6rem .8rem;font:.94rem var(--sans)}
+.tools input:focus,.tools select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--tint)}
+#count{color:var(--muted);font-size:.88rem;font-variant-numeric:tabular-nums}
+.scroll{overflow:auto;max-height:34rem;border:1px solid var(--line);border-radius:var(--r);
+  background:var(--surface);box-shadow:var(--shadow)}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:.62rem .95rem;border-bottom:1px solid var(--line-soft);white-space:nowrap}
+th{position:sticky;top:0;z-index:1;background:var(--surface);font:600 .73rem/1 var(--sans);
+  letter-spacing:.055em;text-transform:uppercase;color:var(--muted);cursor:pointer;user-select:none;
+  border-bottom:1px solid var(--line)}
+th:hover{color:var(--accent-ink)}
+th[aria-sort]{color:var(--accent-ink)}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--tint)}
+tbody tr:last-child td{border-bottom:0}
+td.mono{font-family:var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+td.nm{font-weight:530}
+td.fl{width:1.6rem;font-size:1.05rem}
+
+footer{border-top:1px solid var(--line);padding:2.5rem 0 4.5rem;color:var(--muted);font-size:.91rem}
+footer p{margin:.45rem 0;max-width:52rem}
+</style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td><input type="text" id="query"></td>
-            <td>
-                <select id="search-by">
-                    <option value="1">ISO-ALPHA-2</option>
-                    <option value="2">ISO-ALPHA-3</option>
-                    <option value="3">Name</option>
-                    <option value="4">Capital</option>
-                    <option value="5">Currency</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><button id="find">Search</button></td>
-        </tr>
-        <tr>
-            <td>Name</td>
-            <td id="name"></td>
-        </tr>
-        <tr>
-            <td>Continent</td>
-            <td id="continent"></td>
-        </tr>
-        <tr>
-            <td>Capital</td>
-            <td id="capital"></td>
-        </tr>
-        <tr>
-            <td>ISO-ALPHA-2</td>
-            <td id="iso-alpha-2"></td>
-        </tr>
-        <tr>
-            <td>ISO-ALPHA-3</td>
-            <td id="iso-alpha-3"></td>
-        </tr>
-        <tr>
-            <td>Currency Code</td>
-            <td id="currency_code"></td>
-        </tr>
-        <tr>
-            <td>Currency Symbol</td>
-            <td id="currency_symbol"></td>
-        </tr>
-        <tr>
-            <td>Currency Decimal</td>
-            <td id="currency_decimal"></td>
-        </tr>
-        <tr>
-            <td>Dialing Code</td>
-            <td id="dialing-code"></td>
-        </tr>
-    </table>
-<script>
-    var country = new Country;
-    var queryInput = getEL('query');
-    var searchByOption = getEL('search-by');
-    var findBtn = getEL('find');
-    findBtn.onclick = function () {
-        var query = queryInput.value;
-        if(!query.length) {
-            alert("Type anything relevant to this project to search");
-            return;
-        }
-        var option = searchByOption.value;
-        var info = country.find(query, option);
-        if(!info) {
-            alert("Not found");
-            return;
-        }
-        setEL('name', info.name);
-        setEL('continent', info.continent);
-        setEL('capital', info.capital);
-        setEL('iso-alpha-2', info.code.iso_alpha_2);
-        setEL('iso-alpha-3', info.code.iso_alpha_3);
-        var currency = info.currency;
-        setEL('currency_code', currency.code);
-        setEL('currency_symbol', currency.symbol);
-        setEL('currency_decimal', currency.decimal);
-        setEL('dialing-code', info.dialing_code);
-    };
 
-    function getEL(id) {
-        return document.getElementById(id);
+<nav><div class="wrap">
+  <span class="brand">country-list-js</span>
+  <span class="sp"></span>
+  <a href="#try">Try it</a>
+  <a href="#browse">Browse</a>
+  <a href="https://github.com/i-rocky/country-list-js">GitHub</a>
+  <a href="https://www.npmjs.com/package/country-list-js">npm</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>Every country, in one dependency-free package.</h1>
+  <p class="lede">
+    250 countries and territories with the details applications actually ask for —
+    and a lookup that forgives how people really type.
+  </p>
+  <ul class="facets">
+    <li>ISO 3166-1</li><li>capitals</li><li>currencies</li><li>dialing codes</li>
+    <li>subdivisions</li><li>land borders</li><li>IANA time zones</li>
+  </ul>
+  <div class="cta">
+    <span class="install"><span>npm install country-list-js</span><button id="copy" type="button">Copy</button></span>
+    <a class="ghost" href="https://github.com/i-rocky/country-list-js#readme">Read the docs</a>
+  </div>
+  <div class="stats" id="stats"></div>
+</div></header>
+
+<section id="try"><div class="wrap">
+  <p class="eyebrow">Try it</p>
+  <h2>One box, every lookup</h2>
+  <p class="sub">
+    Type a country, an ISO code, a capital, a currency, a province or a phone number.
+    This runs each <code>findBy…</code> in turn and tells you which one answered —
+    including the aliases and the case-insensitive fallback.
+  </p>
+  <div class="searchbox">
+    <input id="q" type="search" placeholder="Denmark, dk, Türkiye, Copenhagen, HRK, Zealand, +45…" autocomplete="off" spellcheck="false" aria-label="Search countries">
+  </div>
+  <ul class="chips" id="chips"></ul>
+  <div id="results"></div>
+</div></section>
+
+<section id="browse"><div class="wrap">
+  <p class="eyebrow">Browse</p>
+  <h2>All 250, end to end</h2>
+  <p class="sub">Sort any column. Click a row to look it up above.</p>
+  <div class="tools">
+    <input id="filter" type="search" placeholder="Filter…" autocomplete="off" aria-label="Filter table">
+    <select id="continent" aria-label="Filter by continent"><option value="">All continents</option></select>
+    <span id="count"></span>
+  </div>
+  <div class="scroll"><table id="table">
+    <thead><tr>
+      <th></th><th data-k="name">Country</th><th data-k="iso2">ISO-2</th><th data-k="iso3">ISO-3</th>
+      <th data-k="capital">Capital</th><th data-k="continent">Continent</th>
+      <th data-k="currency">Currency</th><th data-k="dial">Dialing</th>
+      <th data-k="tzn">Zones</th><th data-k="borders">Borders</th>
+    </tr></thead><tbody></tbody>
+  </table></div>
+</div></section>
+
+<footer><div class="wrap">
+  <p>Time zones come from the <a href="https://www.iana.org/time-zones">IANA time zone database</a>, which is in the public domain.</p>
+  <p>MIT licensed. A data correction is a one-line pull request against <code>countries/&lt;ISO2&gt;.json</code> — see <a href="https://github.com/i-rocky/country-list-js/blob/master/CONTRIBUTING.md">CONTRIBUTING</a>.</p>
+</div></footer>
+
+<script src="./country.min.js" onerror="window.__localBundleFailed=1"></script>
+<script>
+(function () {
+  'use strict';
+  var $ = function (s) { return document.querySelector(s); };
+  var esc = function (v) {
+    return String(v == null ? '' : v)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  };
+
+  // The page is served from docs/ on Pages, where the bundle sits beside it.
+  // Opened straight off a clean checkout there is nothing to load, so fall back
+  // to the CDN -- which also happens to be exactly how the README says to use it.
+  function boot() {
+    if (typeof country !== 'undefined') return start();
+    var s = document.createElement('script');
+    s.src = 'https://unpkg.com/country-list-js/dist/country.min.js';
+    s.onload = function () {
+      typeof country === 'undefined' ? fail('The CDN bundle loaded but defined no global.') : start();
+    };
+    s.onerror = function () { fail('Could not load the bundle, locally or from unpkg.'); };
+    document.head.appendChild(s);
+  }
+
+  function fail(msg) {
+    $('#results').innerHTML = '<p class="notice"><b>' + esc(msg) + '</b><br>'
+      + 'Run <code>npm run build</code> and copy <code>dist/country.min.js</code> into <code>docs/</code>, '
+      + 'or open this page over http rather than from the filesystem.</p>';
+  }
+
+  function flag(iso2) {
+    // regional indicator symbols: 'DK' -> the Danish flag, no image assets
+    return String.fromCodePoint.apply(String, iso2.toUpperCase().split('')
+      .map(function (c) { return 0x1F1E6 + c.charCodeAt(0) - 65; }));
+  }
+
+  function start() {
+    var codes = Object.keys(country.all);
+    var records = codes.map(function (c) { return country.findByIso2(c); });
+    var flat = function (a) { return [].concat.apply([], a); };
+
+    /* stats, counted from the data rather than written down */
+    var withProv = records.filter(function (c) { return c.provinces; });
+    [[codes.length, 'countries and territories'],
+     [country.continents().length, 'continents'],
+     [new Set(records.map(function (c) { return c.currency.code; })).size, 'currencies'],
+     [withProv.reduce(function (n, c) { return n + c.provinces.length; }, 0), 'subdivisions'],
+     [new Set(flat(records.map(function (c) { return c.timezones || []; }))).size, 'time zones'],
+     [0, 'runtime dependencies']]
+      .forEach(function (s) {
+        $('#stats').insertAdjacentHTML('beforeend',
+          '<div class="stat"><b>' + s[0].toLocaleString() + '</b><span>' + s[1] + '</span></div>');
+      });
+
+    /* the lookups, tried in order */
+    var LOOKUPS = [
+      ['findByIso2', function (q) { return country.findByIso2(q); }],
+      ['findByIso3', function (q) { return country.findByIso3(q); }],
+      ['findByName', function (q) { return country.findByName(q); }],
+      ['findByCapital', function (q) { return country.findByCapital(q); }],
+      ['findByCurrency', function (q) { return country.findByCurrency(q); }],
+      ['findByProvince', function (q) { return country.findByProvince(q); }],
+      ['findByPhoneNbr', function (q) { return /[+\d]/.test(q) ? country.findByPhoneNbr(q) : undefined; }]
+    ];
+
+    var FIELDS = [
+      ['native_name', 'Native name'], ['capital', 'Capital'], ['continent', 'Continent'],
+      ['region', 'Region'], ['demonym', 'Demonym'], ['currency', 'Currency'],
+      ['dialing_code', 'Dialing code'], ['languages', 'Languages'], ['tld', 'Domain'],
+      ['area', 'Area'], ['latlng', 'Coordinates'], ['timezones', 'Time zones'],
+      ['borders', 'Borders'], ['provinces', 'Subdivisions']
+    ];
+
+    function value(key, v) {
+      if (v === undefined || v === null || v === '') return null;
+      if (key === 'currency') return v.code + ' · ' + v.symbol + ' · ' + v.decimal + 'dp';
+      if (key === 'area') return v.toLocaleString() + ' km²';
+      if (key === 'latlng') return v[0] + ', ' + v[1];
+      if (key === 'dialing_code') return '+' + String(v).replace(/^\+/, '');
+      if (key === 'borders') return v.map(function (b) { return flag(b) + ' ' + b; }).join('  ');
+      if (key === 'provinces') return v.length + ' — ' + v.slice(0, 3).map(function (p) { return p.name; }).join(', ')
+        + (v.length > 3 ? ', …' : '');
+      if (Array.isArray(v)) return v.join(', ');
+      return v;
     }
-    function setEL(id, value) {
-        getEL(id).innerText = value;
+
+    function card(c, via, query) {
+      var fields = FIELDS.map(function (f) {
+        var v = value(f[0], c[f[0]]);
+        return '<div class="field"><dt>' + f[1] + '</dt><dd' + (v === null ? ' class="none"' : '') + '>'
+             + (v === null ? '—' : esc(v)) + '</dd></div>';
+      }).join('');
+      return '<article class="card">'
+        + '<div class="card-head"><span class="flag">' + flag(c.code.iso2) + '</span>'
+        + '<span class="who"><h3>' + esc(c.name) + '</h3><p>' + esc(c.code.iso2) + ' · '
+        + esc(c.code.iso3) + (c.code.numeric ? ' · ' + esc(c.code.numeric) : '') + '</p></span>'
+        + '<span class="via">' + esc(via) + '</span></div>'
+        + '<dl class="fields">' + fields + '</dl>'
+        + '<pre class="snippet">country.<b>' + esc(via) + '</b>(' + esc(JSON.stringify(query)) + ')</pre>'
+        + '</article>';
     }
+
+    function search(q) {
+      var out = $('#results');
+      q = (q || '').trim();
+      if (!q) { out.innerHTML = ''; return; }
+
+      for (var i = 0; i < LOOKUPS.length; i++) {
+        var hit;
+        try { hit = LOOKUPS[i][1](q); } catch (e) { hit = undefined; }
+        if (!hit) continue;
+        var list = Array.isArray(hit) ? hit : [hit];
+        var name = LOOKUPS[i][0];
+        out.innerHTML = list.slice(0, 8).map(function (c) { return card(c, name, q); }).join('')
+          + (list.length > 8 ? '<p class="notice">and ' + (list.length - 8) + ' more</p>' : '');
+        return;
+      }
+      out.innerHTML = '<p class="notice">Nothing matched <b>' + esc(q)
+        + '</b>. Every finder returned <code>undefined</code>.</p>';
+    }
+
+    var timer;
+    $('#q').addEventListener('input', function (e) {
+      clearTimeout(timer);
+      var v = e.target.value;
+      timer = setTimeout(function () { search(v); }, 90);
+    });
+
+    /* each chip shows off something different */
+    $('#chips').innerHTML = ['Denmark', 'dk', 'Türkiye', 'Czechia', 'USA', 'Copenhagen',
+                             'HRK', 'Zealand', '+12465551212']
+      .map(function (e) { return '<li class="chip" data-q="' + esc(e) + '">' + esc(e) + '</li>'; }).join('');
+    $('#chips').addEventListener('click', function (e) {
+      var chip = e.target.closest('.chip');
+      if (!chip) return;
+      $('#q').value = chip.dataset.q;
+      search(chip.dataset.q);
+    });
+
+    /* the table */
+    var rows = records.map(function (c) {
+      return {
+        flag: flag(c.code.iso2), name: c.name, iso2: c.code.iso2, iso3: c.code.iso3,
+        capital: c.capital || '—', continent: c.continent, currency: c.currency.code,
+        dial: c.dialing_code ? '+' + c.dialing_code.replace(/^\+/, '') : '—',
+        tzn: (c.timezones || []).length,
+        borders: (c.borders || []).join(' ') || '—'
+      };
+    });
+    var sortKey = 'name', asc = true;
+
+    country.continents().slice().sort().forEach(function (c) {
+      $('#continent').insertAdjacentHTML('beforeend', '<option>' + esc(c) + '</option>');
+    });
+
+    function paint() {
+      var f = $('#filter').value.trim().toLowerCase();
+      var cont = $('#continent').value;
+      var shown = rows.filter(function (r) {
+        if (cont && r.continent !== cont) return false;
+        if (!f) return true;
+        return (r.name + ' ' + r.iso2 + ' ' + r.iso3 + ' ' + r.capital + ' ' + r.currency)
+          .toLowerCase().indexOf(f) > -1;
+      }).sort(function (a, b) {
+        var x = a[sortKey], y = b[sortKey];
+        if (typeof x === 'number' && typeof y === 'number') return asc ? x - y : y - x;
+        return asc ? String(x).localeCompare(String(y)) : String(y).localeCompare(String(x));
+      });
+
+      $('#count').textContent = shown.length === rows.length
+        ? rows.length + ' countries' : shown.length + ' of ' + rows.length;
+
+      $('#table tbody').innerHTML = shown.map(function (r) {
+        return '<tr data-n="' + esc(r.name) + '"><td class="fl">' + r.flag
+          + '</td><td class="nm">' + esc(r.name) + '</td><td class="mono">' + esc(r.iso2)
+          + '</td><td class="mono">' + esc(r.iso3) + '</td><td>' + esc(r.capital)
+          + '</td><td>' + esc(r.continent) + '</td><td class="mono">' + esc(r.currency)
+          + '</td><td class="mono">' + esc(r.dial) + '</td><td class="mono">' + r.tzn
+          + '</td><td class="mono">' + esc(r.borders) + '</td></tr>';
+      }).join('');
+    }
+
+    $('#filter').addEventListener('input', paint);
+    $('#continent').addEventListener('change', paint);
+    Array.prototype.forEach.call(document.querySelectorAll('#table th[data-k]'), function (th) {
+      th.addEventListener('click', function () {
+        var k = th.dataset.k;
+        if (k === sortKey) asc = !asc; else { sortKey = k; asc = true; }
+        Array.prototype.forEach.call(document.querySelectorAll('#table th'), function (o) {
+          o.removeAttribute('aria-sort');
+        });
+        th.setAttribute('aria-sort', asc ? 'ascending' : 'descending');
+        paint();
+      });
+    });
+    $('#table tbody').addEventListener('click', function (e) {
+      var tr = e.target.closest('tr');
+      if (!tr) return;
+      $('#q').value = tr.dataset.n;
+      search(tr.dataset.n);
+      $('#try').scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
+
+    $('#copy').addEventListener('click', function () {
+      navigator.clipboard.writeText('npm install country-list-js').then(function () {
+        $('#copy').textContent = 'Copied';
+        setTimeout(function () { $('#copy').textContent = 'Copy'; }, 1500);
+      });
+    });
+
+    paint();
+    $('#q').value = 'Denmark';
+    search('Denmark');
+  }
+
+  boot();
+})();
 </script>
 </body>
 </html>
