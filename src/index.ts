@@ -1,26 +1,21 @@
 /**
  * Country data: ISO codes, names, capitals, currencies, dialing codes,
- * provinces, borders and time zones.
- *
- * The public surface is deliberately identical to 3.1.8. Anything added is
- * additive; nothing that worked before returns something different.
+ * subdivisions, borders and time zones for 250 countries and territories.
  */
 
 import type {
     Country, CountryCode, CountryRecord, Currency, Found, Iso2, Iso3,
-    PhoneOptions, Province, CurrencyCode, ContinentName,
+    Province, CurrencyCode, ContinentName,
 } from './types';
 
 export type {
     Country, CountryCode, CountryRecord, Currency, Found, Iso2, Iso3,
-    PhoneOptions, Province, CurrencyCode, ContinentName,
+    Province, CurrencyCode, ContinentName,
 };
 
-// The data files stay separate rather than being inlined, so that the copy in
-// data/ is the only copy and callers who deep-import
-// `country-list-js/data/names.json` read the same bytes the runtime does.
-// These specifiers are marked external at build time and survive verbatim into
-// the emitted index.js, which sits beside data/.
+// The data files are loaded rather than inlined so that the copy in data/ is
+// the only copy.  These specifiers are marked external at build time and
+// survive verbatim into the emitted index.js, which sits beside data/.
 
 declare function require(path: string): any;
 
@@ -32,17 +27,16 @@ const retiredCurrencies: Record<string, {successor: string; countries: Iso2[]; r
 type Field = 'iso3' | 'name' | 'capital' | 'currency';
 
 const all = {} as Record<string, CountryRecord>;
-const cache = {} as Record<string, Record<string, Found>>;
 
 // -- the public country shape ------------------------------------------------
 
-// callers see currency and the ISO codes grouped; the stored record keeps them
-// flat because that is the shape the data files hold
+// Callers see currency and the ISO codes grouped; the stored record keeps them
+// flat, because that is the shape the data files hold.  A fresh object is built
+// on every lookup, so a caller who writes to a result cannot affect any other.
 
 function transform(r: CountryRecord | undefined): Country | undefined {
     if (!r) return undefined;
     return {
-        // the eight fields 3.1.8 returned, in the order it returned them
         name: r.name,
         continent: r.continent,
         region: r.region,
@@ -55,9 +49,6 @@ function transform(r: CountryRecord | undefined): Country | undefined {
         dialing_code: r.dialing_code,
         provinces: r.provinces,
         code: {iso2: r.iso2, iso3: r.iso3, numeric: r.iso_numeric},
-
-        // added in 4.0.  Always present, undefined where unknown, so every
-        // country has the same shape
         native_name: r.native_name,
         demonym: r.demonym,
         languages: r.languages,
@@ -69,8 +60,7 @@ function transform(r: CountryRecord | undefined): Country | undefined {
     };
 }
 
-// no match is undefined, one match is the country itself, several are an
-// array -- the shape callers have always seen
+// No match is undefined, one match is the country itself, several are an array.
 
 function pack(list: CountryRecord[] | undefined): Found {
     if (!list || !list.length) return undefined;
@@ -79,56 +69,12 @@ function pack(list: CountryRecord[] | undefined): Found {
         : (list.map(transform) as Country[]);
 }
 
-// Cached results are rebuilt on the way out.  3.1.8 handed back the very
-// object it had cached, so a caller who wrote to a result poisoned the cache
-// for the whole process: after `findByName('Denmark').name = 'x'`, every later
-// lookup of Denmark answered 'x'.
-
-function copy(found: Found): Found {
-    if (!found) return undefined;
-    return Array.isArray(found) ? found.map(clone) : clone(found);
-}
-
-function clone(c: Country): Country {
-    return {
-        name: c.name,
-        continent: c.continent,
-        region: c.region,
-        capital: c.capital,
-        currency: {code: c.currency.code, symbol: c.currency.symbol, decimal: c.currency.decimal},
-        dialing_code: c.dialing_code,
-        provinces: c.provinces,
-        code: {iso2: c.code.iso2, iso3: c.code.iso3, numeric: c.code.numeric},
-
-        native_name: c.native_name,
-        demonym: c.demonym,
-        languages: c.languages,
-        tld: c.tld,
-        area: c.area,
-        latlng: c.latlng,
-        timezones: c.timezones,
-        borders: c.borders,
-    };
-}
-
 function find(field: Field, value: unknown): Found {
-    const key = String(value);
-    if (!(field in cache)) cache[field] = {};
-    if (key in cache[field]) return copy(cache[field][key]);
-
-    const hit = pack(resolve(field, value));
-
-    // Only hits are cached.  3.1.8 cached misses too, so a caller feeding user
-    // input to findByName grew the cache by one key per distinct typo, with
-    // nothing to evict it.  Lookups are index reads now, so the cache buys no
-    // speed -- it is kept because it is observable, not because it is needed.
-    if (hit) cache[field][key] = hit;
-    return copy(hit);
+    return pack(resolve(field, value));
 }
 
-// Exact match first, always.  Everything after it only ever turns a lookup
-// that used to answer undefined into a hit; no query that works today can
-// start answering something else.
+// Exact match first, always: an alias or a case fold can only turn a lookup
+// that answered undefined into a hit, never change one that already worked.
 
 function resolve(field: Field, value: unknown): CountryRecord[] | undefined {
     const exact = index[field][value as string];
@@ -140,8 +86,6 @@ function resolve(field: Field, value: unknown): CountryRecord[] | undefined {
         if (owner) return [all[owner]];
     }
 
-    // the README has claimed case-insensitive search since 3.1.0 and it has
-    // never been true: findByName('denmark') answered undefined
     const key = value.toLowerCase();
     const insensitive = lowercase()[field][key];
     if (insensitive) return insensitive;
@@ -153,10 +97,9 @@ function resolve(field: Field, value: unknown): CountryRecord[] | undefined {
     return undefined;
 }
 
-// Everything below the exact match is built on first use.  An exact hit is by
-// far the common case, and paying to lowercase 250 records five times over --
-// plus parsing and indexing 682 aliases -- on every require() is most of what
-// separates this from 3.1.8's load time.
+// Everything below the exact match is built on first use.  An exact hit is the
+// common case, and lowercasing 250 records five times over -- plus parsing and
+// indexing the alias table -- is work most callers never need.
 
 let lowerMaps: Record<Field | 'iso2', Record<string, CountryRecord[]>> | null = null;
 
@@ -200,9 +143,9 @@ let prefixLengths: number[] = [];
     const lengths: Record<number, true> = {};
 
     for (const r of records) {
-        // the key has to exist and be undefined rather than be absent:
-        // `'provinces' in country` is true for all 250, and reads as
-        // undefined for the 219 that have none
+        // the key has to exist and read as undefined rather than be absent:
+        // `'provinces' in country` is true for all 250, and undefined for the
+        // countries that have none
         r.provinces = provincesByCode[r.iso2];
         all[r.iso2] = r;
 
@@ -214,17 +157,11 @@ let prefixLengths: number[] = [];
         const prefix = r.dialing_code.replace(/\D/g, '');
         if (!prefix) continue;
 
-        // unshift, not push.  3.1.8 ordered its prefix table with
-        // `(a, b) => a.nbr.length < b.nbr.length ? 1 : -1`, which answers -1
-        // for equal lengths -- an inconsistent comparator whose observable
-        // effect is to reverse each group of same-length prefixes.  That is
-        // why +1 answers [UM, US, Canada] and not [Canada, US, UM].  Encoded
-        // here rather than left to depend on the engine's sort.
-        (byPrefix[prefix] || (byPrefix[prefix] = [])).unshift(r);
+        (byPrefix[prefix] || (byPrefix[prefix] = [])).push(r);
         lengths[prefix.length] = true;
     }
 
-    // longest prefix first, so +1-246 leads Barbados ahead of the +1 block
+    // longest prefix first, so +1-246 finds Barbados before the +1 block
     prefixLengths = Object.keys(lengths).map(Number).sort((a, b) => b - a);
 
     // Codes ISO 4217 has retired resolve to the countries that used them, so
@@ -238,7 +175,7 @@ let prefixLengths: number[] = [];
 })();
 
 // Province lookup is built on the first call rather than at load: it walks
-// 1432 subdivisions and their aliases, and most callers never ask.
+// every subdivision and its aliases, and most callers never ask.
 
 let provinceMap: Map<string, CountryRecord[]> | null = null;
 
@@ -255,13 +192,7 @@ function provinceIndex(): Map<string, CountryRecord[]> {
     for (const r of records)
         for (const p of r.provinces || []) {
             add(p.name, r);
-
-            // an alias is an array or null.  Three entries used to carry a
-            // bare string, and String.indexOf is a substring search, so
-            // findByProvince('B') answered Vietnam by way of 'Binh Phuoc'.
-            const alias = p.alias;
-            if (!alias) continue;
-            for (const a of Array.isArray(alias) ? alias : [alias]) add(a, r);
+            for (const a of p.alias || []) add(a, r);
         }
 
     return map;
@@ -272,12 +203,6 @@ function provinceIndex(): Map<string, CountryRecord[]> {
 const country = {
     /** Every country, keyed by ISO 3166-1 alpha-2 code. */
     all,
-
-    /**
-     * Memoised lookup results, keyed by field then by query. Exposed because
-     * it always has been; lookups are index reads and do not depend on it.
-     */
-    cache,
 
     /** Find by ISO 3166-1 alpha-2 code. Falls back to a case-insensitive match. */
     findByIso2(code: string): Country | undefined {
@@ -291,7 +216,7 @@ const country = {
     /** Find by ISO 3166-1 alpha-3 code. */
     findByIso3: (code: string): Found => find('iso3', code),
 
-    /** Find by name. Accepts native forms, official long forms and modern ISO names. */
+    /** Find by name. Accepts native forms, official long forms and former names. */
     findByName: (name: string): Found => find('name', name),
 
     /** Find by capital city. */
@@ -301,44 +226,31 @@ const country = {
     findByCurrency: (code: string): Found => find('currency', code),
 
     /** Find by first-tier subdivision, by name or by alias. */
-    findByProvince(name: string): Found {
-        if (!cache.province) cache.province = {};
-        if (!(name in cache.province))
-            cache.province[name] = pack(provinceIndex().get(name));
-        return copy(cache.province[name]);
-    },
+    findByProvince: (name: string): Found => pack(provinceIndex().get(name)),
 
     /**
-     * Find by telephone number. Returns every country whose dialing code is a
-     * prefix of the number, most specific first.
-     *
-     * `{longestMatch: true}` narrows to the most specific prefix, so
-     * `'+1246...'` answers Barbados alone rather than
-     * `[Barbados, UM, US, Canada]`.
+     * Find by telephone number, on the most specific dialing code that prefixes
+     * it: `'+1246...'` is Barbados, not the whole `+1` block. Codes genuinely
+     * shared at the same length still return every country holding them, so
+     * `'+1...'` answers Canada, the United States and the U.S. Minor Outlying
+     * Islands together.
      */
-    findByPhoneNbr(nbr: string, opts?: PhoneOptions): Found {
-        // a lookup has no business throwing on bad input: 3.1.8 raised a
-        // TypeError for anything that was not a string, where every other
-        // finder simply returned undefined
+    findByPhoneNbr(nbr: string): Found {
         if (typeof nbr !== 'string') return undefined;
 
         const digits = nbr.replace(/\D/g, '');
         if (!digits) return undefined;
 
-        // probe one hash per distinct prefix length, longest first, rather
-        // than testing the number against all 250 prefixes
-        const longestOnly = !!(opts && opts.longestMatch);
-        let hits: CountryRecord[] = [];
+        // one hash read per distinct prefix length, longest first, rather than
+        // testing the number against every prefix in the table
         for (const len of prefixLengths) {
             const found = byPrefix[digits.slice(0, len)];
-            if (!found) continue;
-            hits = hits.concat(found);
-            if (longestOnly) break;
+            if (found) return pack(found);
         }
-        return pack(hits);
+        return undefined;
     },
 
-    /** List one field across every country, in canonical order. */
+    /** List one field across every country, in name order. */
     ls<K extends keyof CountryRecord>(field: K): CountryRecord[K][] {
         return records.map(r => r[field]);
     },
@@ -349,42 +261,15 @@ const country = {
         return seen.filter((c, i) => seen.indexOf(c) === i);
     },
 
-    /** Every country name, in canonical order. */
+    /** Every country name, in name order. */
     names(): string[] {
         return country.ls('name');
     },
 
-    /** Every capital, in canonical order. */
+    /** Every capital, in name order. */
     capitals(): string[] {
         return country.ls('capital');
     },
 };
-
-// -- Array.prototype ---------------------------------------------------------
-
-// Installed since 1.0 for the convenience of callers, and kept because callers
-// may use them. They are deliberately not declared in the published types:
-// nothing here uses them, and new code should not start.
-//
-// They must not be enumerable. An enumerable prototype property shows up in
-// every for..in loop over an array in the host application.
-
-const helpers: Record<string, (this: unknown[], ...args: unknown[]) => unknown> = {
-    unpack(...args) {
-        const l = this.length;
-        return l === 1 ? this[0] : l === 0 && args.length > 0 ? undefined : this;
-    },
-    unique() {
-        return this.filter((e, pos) => this.indexOf(e) === pos);
-    },
-};
-
-for (const name of Object.keys(helpers))
-    Object.defineProperty(Array.prototype, name, {
-        configurable: true,
-        writable: true,
-        enumerable: false,
-        value: helpers[name],
-    });
 
 export default country;

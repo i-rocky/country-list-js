@@ -30,8 +30,6 @@
     },
     "./index.js": "./index.js",
     "./index": "./index.js",
-    "./data/*.json": "./data/*.json",
-    "./data/*": "./data/*.json",
     "./dist/*": "./dist/*",
     "./package.json": "./package.json"
   },

@@ -19,7 +19,6 @@ const check = (ok, msg) => { if (!ok) problems.push(msg); };
 const order = readJson('catalog/reference/order.json');
 const continents = readJson('catalog/reference/continents.json');
 const currencies = readJson('catalog/reference/currencies.json');
-const unassigned = readJson('catalog/reference/unassigned-dialing-codes.json');
 const aliases = readJson('catalog/reference/name-aliases.json');
 
 const files = fs.readdirSync(path.join(root, 'catalog', 'countries'))
@@ -103,10 +102,6 @@ for (const [alias, iso2] of Object.entries(aliases)) {
         ' is the real name of ' + owner + ' but points at ' + iso2);
 }
 
-for (const code of Object.keys(unassigned))
-    check(!countries[code], code + ' is in catalog/reference/unassigned-dialing-codes.json ' +
-        'but catalog/countries/' + code + '.json exists');
-
 // -- the fields added in 4.0 -------------------------------------------------
 
 const zoneOk = z => {
@@ -157,10 +152,6 @@ for (const code of codes)
             code + '.' + field + ' is ' + typeof countries[code][field] +
             ', must be a string');
 
-for (const [code, value] of Object.entries(unassigned))
-    check(typeof value === 'string',
-        'unassigned dialing code ' + code + ' is ' + typeof value + ', must be a string');
-
 // -- report ------------------------------------------------------------------
 
 if (problems.length) {
@@ -173,11 +164,11 @@ const withProvinces = codes.filter(c => countries[c].provinces);
 const count = f => codes.filter(c => countries[c][f] !== undefined).length;
 
 console.error('%d countries, %d with provinces (%d subdivisions), %d currencies, ' +
-    '%d continents, %d aliases, %d unassigned dialing codes -- all valid',
+    '%d continents, %d aliases -- all valid',
     codes.length, withProvinces.length,
     withProvinces.reduce((n, c) => n + countries[c].provinces.length, 0),
     Object.keys(currencies).length, Object.keys(continents).length,
-    Object.keys(aliases).length, Object.keys(unassigned).length);
+    Object.keys(aliases).length);
 
 console.error('coverage: %s',
     ['iso_numeric', 'native_name', 'demonym', 'languages', 'tld', 'area',

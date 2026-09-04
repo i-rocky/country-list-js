@@ -1,5 +1,5 @@
 // Public types.  Iso2, Iso3 and CurrencyCode are generated from the data by
-// scripts/build-data.js, so an editor autocompletes all 250 codes and a typo is a
+// scripts/build-data.js, so an editor autocompletes every code and a typo is a
 // compile error rather than an undefined at runtime.
 
 import type {Iso2, Iso3, CurrencyCode, ContinentName} from './generated';
@@ -13,14 +13,11 @@ export interface CountryCode {
     numeric: string | undefined;
 }
 
-/**
- * `decimal` is the number of minor units, as a string -- `'2'`, not `2`.
- * It has been a string since 1.0 and callers parse it as one.
- */
 export interface Currency {
     code: CurrencyCode;
     symbol: string;
-    decimal: string;
+    /** Number of minor units the currency divides into: 2 for USD, 0 for JPY. */
+    decimal: number;
 }
 
 /** A first-tier political subdivision. */
@@ -70,15 +67,6 @@ export interface Country {
 /** No match is `undefined`, one match is the country, several are an array. */
 export type Found = Country | Country[] | undefined;
 
-export interface PhoneOptions {
-    /**
-     * Narrow the result to the most specific prefix: `'+1246...'` answers
-     * Barbados alone rather than `[Barbados, UM, US, Canada]`.
-     * Off by default.
-     */
-    longestMatch?: boolean;
-}
-
 /** The stored record. Exposed through `all`; flatter than what finders return. */
 export interface CountryRecord {
     iso2: Iso2;
@@ -90,7 +78,7 @@ export interface CountryRecord {
     capital: string;
     currency: CurrencyCode;
     currency_symbol: string;
-    currency_decimal: string;
+    currency_decimal: number;
     dialing_code: string;
     provinces: Province[] | undefined;
     native_name?: string;

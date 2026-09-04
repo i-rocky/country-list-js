@@ -43,11 +43,10 @@ describe('README', () => {
     });
 
     it('shows the phone results it actually returns', () => {
-        expect(country.findByPhoneNbr('+12465551212').map(c => c.name))
-            .to.deep.equal(['Barbados', 'United States Minor Outlying Islands',
-                            'United States', 'Canada']);
-        expect(country.findByPhoneNbr('+12465551212', {longestMatch: true}).name)
-            .to.equal('Barbados');
+        expect(country.findByPhoneNbr('+12465551212').name).to.equal('Barbados');
+        expect(country.findByPhoneNbr('+12125551212').map(c => c.name))
+            .to.deep.equal(['Canada', 'United States',
+                            'United States Minor Outlying Islands']);
     });
 
     it('shows a Denmark record that matches the real one', () => {
@@ -55,7 +54,7 @@ describe('README', () => {
         // the code has never returned
         const dk = country.findByIso2('DK');
         expect(dk.code).to.deep.equal({iso2: 'DK', iso3: 'DNK', numeric: '208'});
-        expect(dk.currency).to.deep.equal({code: 'DKK', symbol: 'Dkr', decimal: '2'});
+        expect(dk.currency).to.deep.equal({code: 'DKK', symbol: 'Dkr', decimal: 2});
         expect(dk.native_name).to.equal('Danmark');
         expect(dk.demonym).to.equal('Danish');
         expect(dk.languages).to.deep.equal(['da']);
@@ -69,8 +68,8 @@ describe('README', () => {
             ['Hovedstaden', 'Midtjylland', 'Nordjylland', 'Sjælland', 'Syddanmark']);
     });
 
-    it('is right that currency.decimal is a string', () => {
-        expect(country.findByIso2('DK').currency.decimal).to.be.a('string');
+    it('is right that currency.decimal is a number', () => {
+        expect(country.findByIso2('DK').currency.decimal).to.be.a('number');
     });
 
     it('is right about the counts it quotes', () => {

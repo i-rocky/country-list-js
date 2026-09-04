@@ -2,21 +2,14 @@
 
 // Generates everything under data/ from the sources in catalog/.  data/ is not
 // hand-edited and is not in git; it is built here and shipped in the npm
-// tarball.
+// tarball, where it is private to the runtime.
 //
-// Two kinds of output:
-//
-//   data/countries.json  the compiled records the runtime loads, already
-//                        joined and in canonical order.  Provinces are not
-//                        inlined here: they are 121KB of the 170KB and live
-//                        in data/provinces.json, which has to be generated
-//                        anyway for callers that deep-import it.  Duplicating
-//                        them would be 40% of the tarball and a second copy
-//                        free to drift.
-//
-//   data/*.json          the ten aggregate files 3.1.8 shipped.  They are
-//                        deep-imported in the wild (`require('country-list-js/
-//                        data/names.json')`) so they keep their exact shape.
+//   countries.json          the compiled records, joined and in name order
+//   provinces.json          subdivisions, keyed by ISO-2.  Kept out of
+//                           countries.json because they are most of the bytes
+//                           and most callers never read them
+//   retired-currencies.json withdrawn ISO 4217 codes and their successors
+//   name-aliases.json       alternative names findByName accepts
 
 const fs = require('fs');
 const path = require('path');
@@ -27,14 +20,9 @@ const readJson = p => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
 const order = readJson('catalog/reference/order.json');
 const continents = readJson('catalog/reference/continents.json');
 const currencies = readJson('catalog/reference/currencies.json');
-const unassigned = readJson('catalog/reference/unassigned-dialing-codes.json');
 const retired = readJson('catalog/reference/retired-currencies.json');
 const aliases = readJson('catalog/reference/name-aliases.json');
 
-// Shipped since 3.1.x and deep-importable, so it keeps shipping. Nothing in
-// the runtime reads it: it is the prototype of the subdivision meta-layer from
-// issue #28, and it covers Spain only.
-const politicalDivisions = readJson('catalog/reference/political-divisions.json');
 
 const countries = order.map(code => readJson('catalog/countries/' + code + '.json'));
 
@@ -75,7 +63,10 @@ for (const c of countries) {
 
 // -- output ------------------------------------------------------------------
 
+// Cleared first: a file that stops being generated must stop being shipped,
+// and `files` ships the whole directory.
 const out = p => path.join(root, 'data', p);
+fs.rmSync(out(''), {recursive: true, force: true});
 fs.mkdirSync(out(''), {recursive: true});
 
 const write = (name, value, pretty) => {
@@ -107,37 +98,19 @@ const compiled = countries.map(c => ({
     borders: c.borders,
 }));
 
-const pick = f => Object.fromEntries(countries.map(c => [c.iso2, c[f]]));
-
 const written = [
     write('countries.json', compiled),
-    write('iso_alpha_3.json', pick('iso3'), true),
-    write('names.json', pick('name'), true),
-    write('continent.json', pick('continent'), true),
-    write('regions.json', pick('region'), true),
-    write('capital.json', pick('capital'), true),
-    write('currency.json', pick('currency'), true),
+
     write('provinces.json', Object.fromEntries(
         countries.filter(c => c.provinces).map(c => [c.iso2, c.provinces])), true),
-
-    // dialing codes carry the unassigned prefixes too, appended after the
-    // countries.  The order matters: index.js sorts prefixes by length and
-    // the sort is stable, so key order decides which of the +1 territories
-    // leads the result for a North American number.
-    write('phone.json', {...pick('dialing_code'), ...unassigned}, true),
-
-    write('continents.json', continents, true),
-    write('currency_info.json', currencies, true),
 
     // codes that ISO 4217 has retired, kept resolvable so that a lookup which
     // works today does not start answering undefined once the data is corrected
     write('retired-currencies.json', retired, true),
 
-    // alternative country names -- native forms, official long forms, and the
-    // modern ISO short names for the countries this dataset still lists under
-    // their older name
+    // alternative country names: native forms, official long forms and the
+    // names countries carried before they were renamed
     write('name-aliases.json', aliases, true),
-    write('political_divisions.json', politicalDivisions, true),
 ];
 
 // -- generated types ---------------------------------------------------------

@@ -27,7 +27,7 @@ let n = 0;
 const ok = (label, cond) => { assert.ok(cond, label); n++; };
 
 ok('a <script> tag defines window.country', typeof country === 'object' && country !== null);
-ok('with all 13 members', Object.keys(country).length === 13);
+ok('with all 12 members', Object.keys(country).length === 12);
 ok('findByIso2', country.findByIso2('DK').name === 'Denmark');
 ok('case-insensitive', country.findByIso2('dk').name === 'Denmark');
 ok('name alias', country.findByName('Türkiye').name === 'Turkey');
@@ -41,6 +41,7 @@ ok('provinces', country.findByProvince('Zealand').name === 'Denmark');
 
 const seen = [];
 for (const k in [1, 2]) seen.push(k);
-ok('no Array.prototype leak in the browser', !seen.includes('unpack'));
+ok('does not extend Array.prototype in the browser',
+   !seen.includes('unpack') && !('unpack' in Array.prototype));
 
 console.log('browser: %d checks passed', n);

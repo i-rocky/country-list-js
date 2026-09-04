@@ -1,17 +1,48 @@
 'use strict';
 
-// The compatibility contract.
+// The compatibility contract, and the machine-checked half of the changelog.
 //
-// test/fixtures/baseline-3.1.8.json is a capture of the observable surface of the real,
-// published country-list-js@3.1.8 -- the version that 62k downloads a month
-// are actually running.  Every assertion here says "4.x still does what 3.1.8
-// did".  Anything that legitimately changes must be declared below, with a
-// reason.  An undeclared difference is a regression.
+// test/fixtures/baseline-3.1.8.json captures the observable surface of the
+// real, published country-list-js@3.1.8.  4.0 breaks with it deliberately in
+// places; every one of those breaks is declared here with a reason, and
+// everything not declared still has to match byte for byte.  An undeclared
+// difference is a regression, and a declared one that turns out to be
+// identical fails too, so the list cannot go stale.
 
 const expect = require('chai').expect;
 const assert = require('assert');
 const base = require('./fixtures/baseline-3.1.8.json');
 const country = require('../index');
+
+// -- breaking changes that apply to the whole surface ------------------------
+//
+// Declared once rather than country by country.  Each migrates the baseline
+// into what 4.0 promises, so every value not covered by one still compares
+// exactly.
+
+const BREAKING = [{
+    what: 'currency.decimal is a number, not a string',
+    why: 'it counts minor units. 3.1.8 returned the string "2"; code that ' +
+         'compares it against "2" now fails quietly, which is why this is ' +
+         'called out in the changelog and not only here.',
+    migrate: c => { c.currency.decimal = Number(c.currency.decimal); },
+}];
+
+// Members 3.1.8 exported that 4.0 does not.
+
+const REMOVED_MEMBERS = {
+    cache: 'internal memoisation, exposed on the module because it always ' +
+           'had been. Lookups are index reads and keep no state, so there is ' +
+           'nothing left to expose.',
+};
+
+(function migrate(v) {
+    if (Array.isArray(v)) return v.forEach(migrate);
+    if (!v || typeof v !== 'object') return;
+    if (v.currency && typeof v.currency === 'object')
+        for (const b of BREAKING) b.migrate(v);
+    Object.values(v).forEach(migrate);
+})(base);
 
 // Country records that intentionally differ from published 3.1.8.
 
@@ -58,12 +89,24 @@ const CASE_INSENSITIVE =
     'fallback runs only after an exact miss, so this turns undefined into a ' +
     'hit and can never change a lookup that already worked.';
 
+const LONGEST_PREFIX =
+    '3.1.8 returned every country whose dialing code prefixed the number, so ' +
+    '"+1246..." answered [Barbados, UM, US, Canada] -- the caller had to know ' +
+    'that the first element was the specific one. It now answers on the most ' +
+    'specific prefix only, so "+1246..." is Barbados. Codes genuinely shared ' +
+    'at the same length still return every holder, so "+1..." is still three ' +
+    'territories.';
+
 const CHANGED_CALLS = {
     'findByIso2("dk")': CASE_INSENSITIVE,
     'findByIso3("dnk")': CASE_INSENSITIVE,
     'findByName("denmark")': CASE_INSENSITIVE,
     'findByCapital("copenhagen")': CASE_INSENSITIVE,
     'findByCurrency("dkk")': CASE_INSENSITIVE,
+
+    'findByPhoneNbr("+12465551212")': LONGEST_PREFIX,
+    'findByPhoneNbr("+12125551212")': LONGEST_PREFIX,
+    'findByPhoneNbr("+441534123456")': LONGEST_PREFIX,
 
     'findByProvince("")':
         '3.1.8 answered [Ethiopia, Turkey, Vietnam] for the empty string. ' +
@@ -131,14 +174,22 @@ function compare(name, actual, expected) {
 }
 
 describe('Contract: module surface', () => {
-    it('exports exactly the 3.1.8 members, no more and no fewer', () => {
-        expect(Object.keys(country).sort()).to.deep.equal(base.members);
+    it('exports every 3.1.8 member except the ones declared removed', () => {
+        expect(Object.keys(country).sort())
+            .to.deep.equal(base.members.filter(m => !(m in REMOVED_MEMBERS)));
     });
 
-    it('every member is of the type it was in 3.1.8', () => {
+    it('really did remove the members declared removed', () => {
+        for (const m of Object.keys(REMOVED_MEMBERS)) {
+            expect(base.members, m + ' was never in 3.1.8').to.include(m);
+            expect(country, m).to.not.have.property(m);
+        }
+    });
+
+    it('every member it kept is of the type it was in 3.1.8', () => {
         for (const m of base.members) {
-            const expected = m === 'all' || m === 'cache' ? 'object' : 'function';
-            expect(typeof country[m], m).to.equal(expected);
+            if (m in REMOVED_MEMBERS) continue;
+            expect(typeof country[m], m).to.equal(m === 'all' ? 'object' : 'function');
         }
     });
 
@@ -207,11 +258,11 @@ describe('Contract: country records', () => {
             expect('provinces' in country.findByIso2(iso2), iso2).to.equal(true);
     });
 
-    it('keeps currency as {code, symbol, decimal} with decimal a string', () => {
+    it('keeps currency as {code, symbol, decimal}, decimal now a number', () => {
         for (const iso2 of Object.keys(base.countries)) {
             const c = country.findByIso2(iso2).currency;
             expect(Object.keys(c).sort(), iso2).to.deep.equal(['code', 'decimal', 'symbol']);
-            expect(c.decimal, iso2 + '.currency.decimal').to.be.a('string');
+            expect(c.decimal, iso2 + '.currency.decimal').to.be.a('number');
             expect(c.code, iso2 + '.currency.code').to.be.a('string');
         }
     });
@@ -250,7 +301,7 @@ describe('Contract: list functions', () => {
 
     it('continents() returns the 7 continents, deduplicated', () => {
         expect(country.continents()).to.have.lengthOf(7);
-        expect(country.continents()).to.deep.equal(country.continents().unique());
+        expect(new Set(country.continents()).size).to.equal(7);
     });
 });
 
@@ -276,30 +327,13 @@ describe('Contract: recorded calls reproduce 3.1.8', () => {
     });
 });
 
-describe('Contract: cache keys stay populated', () => {
-    it('populates cache.iso3/name/capital/currency/province', () => {
-        country.findByIso3('DNK');
-        country.findByName('Denmark');
-        country.findByCapital('Copenhagen');
-        country.findByCurrency('DKK');
-        country.findByProvince('Nordjylland');
-        country.findByProvince('Zealand');
-
-        assert.ok('DNK' in country.cache.iso3, 'ISO3 cache');
-        assert.ok('Denmark' in country.cache.name, 'name cache');
-        assert.ok('Copenhagen' in country.cache.capital, 'capital cache');
-        assert.ok('DKK' in country.cache.currency, 'currency cache');
-        assert.ok('Nordjylland' in country.cache.province, 'province cache');
-        assert.ok('Zealand' in country.cache.province, 'province alias cache');
-    });
-});
-
-describe('Contract: Array.prototype extensions', () => {
-    it('still provides unpack() and unique()', () => {
-        expect([7].unpack()).to.equal(7);
-        expect([].unpack(undefined)).to.equal(undefined);
-        expect([1, 2].unpack()).to.deep.equal([1, 2]);
-        expect([1, 1, 2].unique()).to.deep.equal([1, 2]);
+describe('Contract: Array.prototype is left alone', () => {
+    it('no longer installs unpack() and unique()', () => {
+        // 3.1.8 patched Array.prototype for every application that required
+        // it. Removing that is the point, not a side effect.
+        for (const p of ['unpack', 'unique'])
+            expect(Object.getOwnPropertyDescriptor(Array.prototype, p), p)
+                .to.equal(undefined);
     });
 
     it('does not leak into for..in over arrays', () => {

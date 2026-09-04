@@ -139,66 +139,34 @@ describe('Case-insensitive fallback', () => {
     });
 });
 
-describe('Cache', () => {
-    it('caches hits', () => {
-        country.findByName('Denmark');
-        expect('Denmark' in country.cache.name).to.equal(true);
-    });
-
-    it('does not grow on misses', () => {
-        // 3.1.8 cached misses, so feeding user input to findByName added one
-        // key per distinct typo with nothing to evict it.  Lookups are index
-        // reads now, so the cache buys no speed and a miss costs no memory.
-        const before = Object.keys(country.cache.name).length;
-        for (let i = 0; i < 5000; i++) country.findByName('no-such-country-' + i);
-        expect(Object.keys(country.cache.name).length - before).to.equal(0);
-    });
-
-    it('a cached hit is still handed out as a fresh object', () => {
-        country.findByName('Denmark').name = 'MUTATED';
-        expect(country.findByName('Denmark').name).to.equal('Denmark');
-        expect(country.cache.name.Denmark.name).to.equal('Denmark');
-    });
-});
-
-describe('findByPhoneNbr longest-prefix option', () => {
+describe('findByPhoneNbr', () => {
     const names = r => (r === undefined ? [] : Array.isArray(r) ? r : [r]).map(c => c.name);
 
-    it('returns every matching prefix by default, as it always has', () => {
-        expect(names(country.findByPhoneNbr('+12465551212')))
-            .to.deep.equal(['Barbados', 'United States Minor Outlying Islands',
-                            'United States', 'Canada']);
-        expect(names(country.findByPhoneNbr('+441534123456')))
-            .to.deep.equal(['Jersey', 'United Kingdom']);
-    });
-
-    it('narrows to the most specific prefix when asked', () => {
-        expect(country.findByPhoneNbr('+12465551212', {longestMatch: true}))
+    it('answers on the most specific prefix, not the block above it', () => {
+        expect(country.findByPhoneNbr('+12465551212'))
             .to.have.property('name', 'Barbados');
-        expect(country.findByPhoneNbr('+441534123456', {longestMatch: true}))
+        expect(country.findByPhoneNbr('+441534123456'))
             .to.have.property('name', 'Jersey');
     });
 
-    it('leaves genuine ties alone -- +1 really is three territories', () => {
-        expect(names(country.findByPhoneNbr('+12125551212', {longestMatch: true})))
-            .to.deep.equal(['United States Minor Outlying Islands',
-                            'United States', 'Canada']);
+    it('still returns every country sharing one prefix', () => {
+        // +1 really is held by three territories at the same length
+        expect(names(country.findByPhoneNbr('+12125551212')).sort())
+            .to.deep.equal(['Canada', 'United States',
+                            'United States Minor Outlying Islands']);
     });
 
-    it('agrees with the default wherever only one prefix length matches', () => {
+    it('answers every country from its own dialing code', () => {
         for (const iso2 of Object.keys(country.all)) {
             const code = country.findByIso2(iso2).dialing_code.replace(/\D/g, '');
             if (!code) continue;
-            const nbr = '+' + code + '5551212';
-            const a = names(country.findByPhoneNbr(nbr));
-            const b = names(country.findByPhoneNbr(nbr, {longestMatch: true}));
-            expect(a.slice(0, b.length), nbr).to.deep.equal(b);
+            expect(names(country.findByPhoneNbr('+' + code + '5551212')), iso2)
+                .to.not.be.empty;
         }
     });
 
-    it('ignores the option for input that matches nothing', () => {
+    it('answers undefined for input that matches nothing', () => {
         for (const v of ['XX', '', '+', null, 42])
-            expect(country.findByPhoneNbr(v, {longestMatch: true}), String(v))
-                .to.equal(undefined);
+            expect(country.findByPhoneNbr(v), String(v)).to.equal(undefined);
     });
 });

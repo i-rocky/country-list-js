@@ -1,132 +1,115 @@
 'use strict';
 
+// The module's public surface, and the guarantees that hold for every member
+// of it.
+
 const expect = require('chai').expect;
-const ok = require('assert').ok;
 
-// this prototype tests that property loops in the
-// module are safe.  the prototype must be installed
-// before the module is required
+// Installed before the module is required: property loops inside the module
+// must not pick up inherited keys.
+Object.prototype.__test_inherited__ = () => null;
 
-Object.prototype.__test_function__ = () => null;
+const country = require('../index');
 
-// require the module
+const MEMBERS = [
+    'all', 'findByIso2', 'findByIso3', 'findByName', 'findByCapital',
+    'findByCurrency', 'findByProvince', 'findByPhoneNbr', 'ls', 'continents',
+    'names', 'capitals',
+];
 
-const country = require('../index')
-const NOF = 250;
+const COUNTRIES = 250;
 
-describe('Lists', () => {
-    it('Names', () => {
-        var actual = country.names()
-        ok(Array.isArray(actual), 'Is not an array')
-        expect(actual).to.have.lengthOf(NOF)
-    })
-    it('Continents', () => {
-        var actual = country.continents()
-        ok(Array.isArray(actual), 'Is not an array')
-        expect(actual).to.have.lengthOf(7)
-    })
-    it('Capitals', () => {
-        var actual = country.capitals()
-        ok(Array.isArray(actual), 'Is not an array')
-        expect(actual).to.have.lengthOf(NOF)
-    })
-    it('Generic lister', () => {
-        var actual = country.ls('region').unique();
-        ok(Array.isArray(actual), 'Is not an array')
-        expect(actual).to.have.lengthOf(36)
-    })
-})
-describe('Searches', () => {
-    var DK = {
-        name: 'Denmark',
-        continent: 'Europe',
-        region: 'Scandinavia, Nordic Countries',
-        capital: 'Copenhagen',
-        currency: { code: 'DKK', symbol: 'Dkr', decimal: '2' },
-        dialing_code: '45',
-        provinces: [
-            { name: 'Hovedstaden', alias: null },
-            { name: 'Midtjylland', alias: null },
-            { name: 'Nordjylland', alias: null },
-            { name: 'Sjælland', alias: [ 'Zealand' ] },
-            { name: 'Syddanmark', alias: null }
-        ],
-        code: { iso2: 'DK', iso3: 'DNK', numeric: '208' },
-        native_name: 'Danmark',
-        demonym: 'Danish',
-        languages: [ 'da' ],
-        tld: [ '.dk' ],
-        area: 43094,
-        latlng: [ 56, 10 ],
-        timezones: [ 'Europe/Copenhagen' ],
-        borders: [ 'DE' ]
-    };
-
-    it('There has to be specific number of countries', () => {
-        expect(Object.keys(country.all).length).to.be.equal(NOF);
-    });
-    it('The object carries exactly these keys', () => {
-        // named rather than counted: a count says nothing about which field
-        // went missing, and it has to be edited every time one is added
-        expect(Object.keys(country.findByIso2('DK')).sort()).to.deep.equal([
-            'area', 'borders', 'capital', 'code', 'continent', 'currency',
-            'demonym', 'dialing_code', 'languages', 'latlng', 'name',
-            'native_name', 'provinces', 'region', 'timezones', 'tld'
-        ]);
-    });
-    it('Find by iso alpha 2', function() {
-        var actual = country.findByIso2('DK');
-        expect(actual).to.deep.equal(DK);
-    });
-    it('Find by iso alpha 3', function () {
-        var actual = country.findByIso3('DNK');
-        expect(actual).to.deep.equal(DK);
-    });
-    it('Find by Name', function () {
-        var actual = country.findByName('Denmark');
-        expect(actual).to.deep.equal(DK);
-    });
-    it('Find by Name repeated', function () {
-        var actual = country.findByName('Denmark');
-        expect(actual).to.deep.equal(DK);
-    });
-    it('Find by capital', function () {
-        var actual = country.findByCapital('Copenhagen');
-        expect(actual).to.deep.equal(DK);
-    });
-    it('Find by currency', function () {
-        var actual = country.findByCurrency('DKK');
-        expect(actual).to.have.lengthOf(3);
-    });
-    it('find by phone number', function() {
-        var actual = country.findByPhoneNbr('+4505551212');
-        expect(actual.code.iso2).to.equal('DK');
-    });
-    it('find by province', function() {
-        var actual = country.findByProvince('Nordjylland');
-        expect(actual).to.deep.equal(DK);
-    });
-    it('find by province alias', function() {
-        var actual = country.findByProvince('Zealand');
-        expect(actual).to.deep.equal(DK);
+describe('surface', () => {
+    it('exports exactly these members', () => {
+        expect(Object.keys(country).sort()).to.deep.equal([...MEMBERS].sort());
     });
 
-    it('Cache presence tests', function () {
-        ok('DNK' in country.cache.iso3, 'ISO3 cache failed');
-        ok('Denmark' in country.cache.name, 'Country name cache failed');
-        ok('Copenhagen' in country.cache.capital, 'Capital cache failed');
-        ok('DKK' in country.cache.currency, 'Currency cache failed');
-        ok('Nordjylland' in country.cache.province, 'Province cache failed');
-        ok('Zealand' in country.cache.province, 'Province cache failed');
+    it('exports no cache: lookups are index reads and keep no state', () => {
+        expect(country).to.not.have.property('cache');
     });
 
-    it('Null is returned if not found', function () {
-        expect(country.findByIso2('XX')).to.be.equal(undefined);
-        expect(country.findByIso3('XX')).to.be.equal(undefined);
-        expect(country.findByName('XX')).to.be.equal(undefined);
-        expect(country.findByCapital('XX')).to.be.equal(undefined);
-        expect(country.findByCurrency('XX')).to.be.equal(undefined);
-        expect(country.findByPhoneNbr('XX')).to.be.equal(undefined);
-        expect(country.findByProvince('XX')).to.be.equal(undefined);
+    it('adds nothing to Array.prototype', () => {
+        expect(Array.prototype).to.not.have.property('unpack');
+        expect(Array.prototype).to.not.have.property('unique');
     });
+
+    it('keys `all` by ISO-2', () => {
+        expect(Object.keys(country.all)).to.have.lengthOf(COUNTRIES);
+        expect(country.all.DK.name).to.equal('Denmark');
+    });
+});
+
+describe('lists', () => {
+    it('names() is every country, once', () => {
+        const names = country.names();
+        expect(names).to.have.lengthOf(COUNTRIES);
+        expect(new Set(names).size).to.equal(COUNTRIES);
+    });
+
+    it('capitals() is one entry per country', () => {
+        expect(country.capitals()).to.have.lengthOf(COUNTRIES);
+    });
+
+    it('continents() is the seven continents, deduplicated', () => {
+        const c = country.continents();
+        expect(c).to.have.lengthOf(7);
+        expect(new Set(c).size).to.equal(7);
+    });
+
+    it('ls() reads any field across every country', () => {
+        expect(country.ls('region')).to.have.lengthOf(COUNTRIES);
+        expect(country.ls('iso3')).to.have.lengthOf(COUNTRIES);
+    });
+
+    it('ls(), names() and capitals() agree on order', () => {
+        expect(country.names()).to.deep.equal(country.ls('name'));
+        expect(country.capitals()).to.deep.equal(country.ls('capital'));
+    });
+});
+
+describe('lookups', () => {
+    it('findByIso2 answers the country', () => {
+        expect(country.findByIso2('DK').name).to.equal('Denmark');
+    });
+
+    it('findByIso3 answers the country', () => {
+        expect(country.findByIso3('DNK').name).to.equal('Denmark');
+    });
+
+    it('findByName answers the country', () => {
+        expect(country.findByName('Denmark').code.iso2).to.equal('DK');
+    });
+
+    it('findByCapital answers the country', () => {
+        expect(country.findByCapital('Copenhagen').code.iso2).to.equal('DK');
+    });
+
+    it('findByCurrency answers every country using the code', () => {
+        const dkk = country.findByCurrency('DKK');
+        expect(dkk.map(c => c.code.iso2).sort()).to.deep.equal(['DK', 'FO', 'GL']);
+    });
+
+    it('findByProvince answers by name and by alias', () => {
+        expect(country.findByProvince('Nordjylland').code.iso2).to.equal('DK');
+        expect(country.findByProvince('Zealand').code.iso2).to.equal('DK');
+    });
+
+    it('findByPhoneNbr answers on the most specific prefix', () => {
+        expect(country.findByPhoneNbr('+4505551212').code.iso2).to.equal('DK');
+    });
+
+    it('returns a fresh object every time, so a caller cannot poison a later one', () => {
+        const first = country.findByIso2('DK');
+        first.name = 'mutated';
+        expect(country.findByIso2('DK').name).to.equal('Denmark');
+    });
+});
+
+describe('inherited properties', () => {
+    it('does not leak Object.prototype keys into any result', () => {
+        expect(country.findByIso2('DK')).to.not.have.own.property('__test_inherited__');
+        expect(country.names()).to.have.lengthOf(COUNTRIES);
+    });
+
+    after(() => { delete Object.prototype.__test_inherited__; });
 });

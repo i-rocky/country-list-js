@@ -75,19 +75,19 @@ already worked.
 
 ### Telephone numbers
 
-`findByPhoneNbr` returns every country whose dialing code prefixes the number,
-most specific first. `+1-246` is Barbados and `+1` is three more territories,
-so all four come back:
+`findByPhoneNbr` answers on the most specific dialing code that prefixes the
+number. `+1-246` is Barbados, not the whole `+1` block:
 
 ```js
-country.findByPhoneNbr('+12465551212').map(c => c.name);
-// ['Barbados', 'United States Minor Outlying Islands', 'United States', 'Canada']
+country.findByPhoneNbr('+12465551212').name;   // 'Barbados'
 ```
 
-Pass `{longestMatch: true}` for the most specific prefix only:
+Codes genuinely shared at the same length still return every country holding
+them:
 
 ```js
-country.findByPhoneNbr('+12465551212', {longestMatch: true}).name;   // 'Barbados'
+country.findByPhoneNbr('+12125551212').map(c => c.name);
+// ['Canada', 'United States', 'United States Minor Outlying Islands']
 ```
 
 ### Lists
@@ -108,7 +108,7 @@ country.all;              // everything, keyed by ISO-2
   continent: 'Europe',
   region: 'Scandinavia, Nordic Countries',
   capital: 'Copenhagen',
-  currency: { code: 'DKK', symbol: 'Dkr', decimal: '2' },
+  currency: { code: 'DKK', symbol: 'Dkr', decimal: 2 },
   dialing_code: '45',
   provinces: [
     { name: 'Hovedstaden', alias: null },
@@ -132,8 +132,6 @@ country.all;              // everything, keyed by ISO-2
 Every key is always present. The ones that can be `undefined` are undefined
 where the value does not exist: an uninhabited territory has no time zone, an
 island nation has no land border, Kosovo has no ISO numeric code.
-
-`currency.decimal` is a **string**, not a number. It has been since 1.0.
 
 ## Notes on the data
 

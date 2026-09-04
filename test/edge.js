@@ -57,12 +57,10 @@ describe('Happy path', () => {
         expect(country.findByPhoneNbr('+8804005050').name).to.equal('Bangladesh');
     });
 
-    it('findByPhoneNbr prefers the longest prefix first', () => {
-        // +1-246 is Barbados; +1 is US/Canada/UM.  All four match, and the
-        // most specific must lead
-        const r = country.findByPhoneNbr('+12465551212');
-        expect(r).to.be.an('array');
-        expect(r[0].name).to.equal('Barbados');
+    it('findByPhoneNbr answers on the most specific prefix', () => {
+        // +1-246 is Barbados and +1 is US/Canada/UM.  Barbados is the answer;
+        // the wider block is not.
+        expect(country.findByPhoneNbr('+12465551212').name).to.equal('Barbados');
     });
 
     it('findByPhoneNbr distinguishes +44 from +44-1534', () => {
@@ -189,25 +187,20 @@ describe('Edge cases', () => {
         expect(seen).to.not.include('unpack');
         expect(seen).to.not.include('unique');
 
-        for (const p of ['unpack', 'unique']) {
-            const d = Object.getOwnPropertyDescriptor(Array.prototype, p);
-            expect(d, 'Array.prototype.' + p).to.exist;
-            expect(d.enumerable, 'Array.prototype.' + p + ' enumerable').to.equal(false);
-        }
+        for (const p of ['unpack', 'unique'])
+            expect(Object.getOwnPropertyDescriptor(Array.prototype, p),
+                'Array.prototype.' + p).to.equal(undefined);
         expect(Object.keys(Array.prototype)).to.deep.equal([]);
     });
 
     it('every data value the code calls string methods on is a string', () => {
-        // "AC": 247 was merged as a number and made require() itself throw
-        // with "phone[k].replace is not a function"
-        const phone = require('../data/phone.json');
-        for (const [k, v] of Object.entries(phone))
-            expect(v, 'phone.' + k + ' = ' + JSON.stringify(v)).to.be.a('string');
-
-        for (const file of ['names', 'capital', 'currency', 'iso_alpha_3',
-                            'continent', 'regions'])
-            for (const [k, v] of Object.entries(require('../data/' + file + '.json')))
-                expect(v, file + '.' + k + ' = ' + JSON.stringify(v)).to.be.a('string');
+        // A dialing code merged as a number once made require() itself throw,
+        // with "phone[k].replace is not a function".
+        for (const r of require('../data/countries.json'))
+            for (const f of ['iso2', 'iso3', 'name', 'capital', 'currency',
+                             'currency_symbol', 'dialing_code', 'region'])
+                expect(r[f], r.iso2 + '.' + f + ' = ' + JSON.stringify(r[f]))
+                    .to.be.a('string');
     });
 
     it('handles the countries with a blank capital or a blank dialing code', () => {
