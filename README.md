@@ -160,8 +160,17 @@ Croatia is on the euro now.
 **Time zones** come from the [IANA time zone
 database](https://www.iana.org/time-zones), which is in the public domain.
 
-**Borders** are symmetric: if A borders B then B borders A. Some entries
-follow de-facto rather than universally recognised boundaries.
+**Borders** are land borders, and symmetric: if A borders B then B borders A.
+Maritime neighbours are not borders — Sri Lanka has none, because the Palk
+Strait is not a land boundary. A territory listed separately carries its own
+borders rather than lending them to the state that administers it: French
+Guiana borders Brazil and Suriname; France does not.
+
+One entry is a live territorial dispute rather than a fact. India and
+Afghanistan are recorded as neighbours, which holds only across
+Pakistan-administered Gilgit-Baltistan — territory India claims and does not
+control. It is kept because removing it would take the opposite side just as
+firmly, and named here so it is a documented choice rather than a silent one.
 
 **Subdivisions** are first-tier only, and 31 of the 250 countries have them.
 Every entry carries the same four keys — `name`, `code` (the local
