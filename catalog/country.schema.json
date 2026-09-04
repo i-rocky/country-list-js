@@ -32,7 +32,7 @@
       "pattern": "^[0-9]{3}$"
     },
     "name": {
-      "description": "Common short name in English, transliterated to ASCII.",
+      "description": "Common short name in English. The current name where a country has been renamed; the former name goes in name-aliases.json.",
       "type": "string",
       "minLength": 1
     },

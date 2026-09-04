@@ -35,9 +35,9 @@ describe('README', () => {
     });
 
     it('resolves every alias it advertises', () => {
-        const aliases = {Danmark: 'Denmark', 'Türkiye': 'Turkey',
-                         Eswatini: 'Swaziland', Czechia: 'Czech Republic',
-                         USA: 'United States'};
+        const aliases = {Danmark: 'Denmark', USA: 'United States',
+                         Turkey: 'Türkiye', Swaziland: 'Eswatini',
+                         'Czech Republic': 'Czechia'};
         for (const [alias, name] of Object.entries(aliases))
             expect(country.findByName(alias).name, alias).to.equal(name);
     });

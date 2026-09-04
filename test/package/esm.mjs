@@ -11,7 +11,7 @@ const ok = (label, cond) => { assert.ok(cond, label); n++; };
 ok('default export is the module object', typeof country === 'object' && !!country.findByIso2);
 ok('default export has 12 members', Object.keys(country).length === 12);
 ok('named findByIso2', findByIso2('DK').name === 'Denmark');
-ok('named findByName with alias', findByName('Türkiye').name === 'Turkey');
+ok('named findByName with a former name', findByName('Turkey').name === 'Türkiye');
 ok('named names()', names().length === 250);
 ok('named ls()', ls('name').length === 250);
 ok('named all', Object.keys(all).length === 250);

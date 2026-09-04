@@ -17,29 +17,28 @@ const path = require('path');
 const root = path.join(__dirname, '..');
 const readJson = p => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
 
-const order = readJson('catalog/reference/order.json');
 const continents = readJson('catalog/reference/continents.json');
 const currencies = readJson('catalog/reference/currencies.json');
 const retired = readJson('catalog/reference/retired-currencies.json');
 const aliases = readJson('catalog/reference/name-aliases.json');
 
 
-const countries = order.map(code => readJson('catalog/countries/' + code + '.json'));
-
-// -- checks that must hold before anything is written ------------------------
-
 const files = fs.readdirSync(path.join(root, 'catalog', 'countries'))
     .filter(f => f.endsWith('.json')).map(f => f.replace(/\.json$/, '')).sort();
 
+// Everything a caller can observe -- names(), capitals(), ls(), the key order
+// of all -- comes out in this order.  It is derived rather than maintained:
+// sorted by name, with the collation named rather than left to the platform's
+// default, so adding a country is one file and nothing else.
+const countries = files.map(code => readJson('catalog/countries/' + code + '.json'))
+    .sort((a, b) => a.name.localeCompare(b.name, 'en'));
+
+// -- checks that must hold before anything is written ------------------------
+
 const fail = m => { throw new Error('build: ' + m); };
 
-if (files.join() !== [...order].sort().join())
-    fail('catalog/countries/ and catalog/reference/order.json disagree: ' +
-        'only in catalog/countries/: [' + files.filter(f => !order.includes(f)) + '], ' +
-        'only in order.json: [' + order.filter(o => !files.includes(o)) + ']');
-
 for (const [alias, iso2] of Object.entries(aliases)) {
-    if (!order.includes(iso2))
+    if (!files.includes(iso2))
         fail('alias ' + JSON.stringify(alias) + ' points at ' + iso2 + ', which does not exist');
     if (countries.some(c => c.name === alias && c.iso2 !== iso2))
         fail('alias ' + JSON.stringify(alias) + ' is another country\'s real name');
@@ -50,7 +49,7 @@ for (const [code, r] of Object.entries(retired)) {
         fail('retired currency ' + code + ' names successor ' + r.successor +
             ', which catalog/reference/currencies.json does not define');
     for (const iso2 of r.countries)
-        if (!order.includes(iso2))
+        if (!files.includes(iso2))
             fail('retired currency ' + code + ' names country ' + iso2 + ', which does not exist');
 }
 

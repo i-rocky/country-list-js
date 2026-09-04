@@ -68,6 +68,24 @@ const STRING_ALIAS =
     'findByProvince("B") answered Vietnam and the empty string matched all ' +
     'three.  The three are now arrays like the other 440.';
 
+const RENAMED = {
+    TR: ['Turkey', 'Türkiye', 'the UN accepted the change in 2022'],
+    SZ: ['Swaziland', 'Eswatini', 'renamed in 2018'],
+    MK: ['Macedonia', 'North Macedonia', 'renamed in 2019 by the Prespa agreement'],
+    CZ: ['Czech Republic', 'Czechia', 'short name registered with the UN in 2016'],
+    CV: ['Cape Verde', 'Cabo Verde', 'ISO and UN form since 2013'],
+    CI: ['Ivory Coast', "Côte d'Ivoire", 'the ISO and UN form; the state asks for it untranslated'],
+    TL: ['East Timor', 'Timor-Leste', 'the ISO and UN form'],
+    VA: ['Vatican', 'Holy See', 'the ISO and UN form'],
+};
+
+const renamed = iso2 => {
+    const [from, to, why] = RENAMED[iso2];
+    return 'name ' + JSON.stringify(from) + ' -> ' + JSON.stringify(to) + ' (' + why +
+        '). The former name is an alias, so findByName(' + JSON.stringify(from) +
+        ') still answers.';
+};
+
 const currency = (from, to, on, why) =>
     'currency ' + from + ' -> ' + to + ' on ' + on + ' (' + why + ').';
 
@@ -78,7 +96,11 @@ const CHANGED = {
     ES: 'provinces 46 -> 48.  Merged community fixes (PRs #71, #75).',
     NG: 'provinces 12 -> 36.  Merged community fix (PR #69).',
 
-    ET: STRING_ALIAS, TR: STRING_ALIAS, VN: STRING_ALIAS,
+    ET: STRING_ALIAS, VN: STRING_ALIAS,
+    TR: STRING_ALIAS + '  Also ' + renamed('TR'),
+
+    SZ: renamed('SZ'), MK: renamed('MK'), CZ: renamed('CZ'),
+    CV: renamed('CV'), CI: renamed('CI'), TL: renamed('TL'), VA: renamed('VA'),
 
     // ISO 4217 corrections.  Every one is a documented redenomination or euro
     // accession, and the retired code stays resolvable through
@@ -176,16 +198,19 @@ function compare(name, actual, expected) {
     assert.deepStrictEqual(offenders, [],
         name + ' differs from 3.1.8 for undeclared countries: ' + offenders.join(', '));
 
-    // the set of matched countries is unchanged, so the return shape --
-    // undefined vs single object vs array, and the order within an array --
-    // must be unchanged too.  Content is already covered per-country above.
+    // The set of matched countries is unchanged, so the shape of the result
+    // must be too.  Its order is no longer 3.1.8's: a result comes back in the
+    // same name order as names() and ls(), rather than in the insertion order
+    // of the file 3.1.8 kept its countries in.
     if ([...a.keys()].sort().join() === [...e.keys()].sort().join()) {
         expect(Array.isArray(actual), name + ' array-ness')
             .to.equal(Array.isArray(expected));
         expect(actual === undefined, name + ' undefined-ness')
             .to.equal(expected === undefined);
-        expect([...a.keys()], name + ' result order')
-            .to.deep.equal([...e.keys()]);
+
+        const names = asList(actual).map(c => c.name);
+        expect(names, name + ' is not in name order')
+            .to.deep.equal([...names].sort((x, y) => x.localeCompare(y, 'en')));
     }
 }
 
@@ -295,18 +320,42 @@ describe('Contract: country records', () => {
     });
 });
 
-describe('Contract: list functions', () => {
-    for (const fn of ['names', 'capitals', 'continents'])
-        it(fn + '() is unchanged from 3.1.8', () => {
-            expect(country[fn]()).to.deep.equal(base[fn]);
-        });
+// Every list a caller can observe is now ordered by country name.  3.1.8's
+// order was the insertion order of a hand-maintained file, which meant a new
+// country went on the end and nothing about the sequence was stated anywhere.
 
-    it("ls('region') is unchanged from 3.1.8", () => {
-        expect(country.ls('region')).to.deep.equal(base.regions);
+describe('Contract: list functions', () => {
+    const bag = a => [...a].sort();
+    const renames = new Map(Object.values(RENAMED).map(([from, to]) => [from, to]));
+    const rename = n => renames.get(n) || n;
+
+    it('names() holds the same countries, renames aside', () => {
+        expect(bag(country.names())).to.deep.equal(bag(base.names.map(rename)));
     });
 
-    it("ls('iso3') is unchanged from 3.1.8", () => {
-        expect(country.ls('iso3')).to.deep.equal(base.iso3s);
+    it('names() is ordered by name, which 3.1.8 never was', () => {
+        const n = country.names();
+        expect(n).to.deep.equal([...n].sort((a, b) => a.localeCompare(b, 'en')));
+        expect(n).to.not.deep.equal(base.names);
+    });
+
+    for (const [fn, key] of [['capitals', 'capitals'], ['continents', 'continents']])
+        it(fn + '() holds the same values as 3.1.8', () => {
+            expect(bag(country[fn]())).to.deep.equal(bag(base[key]));
+        });
+
+    it('every list is in the same order as names()', () => {
+        const order = country.ls('name');
+        expect(country.names()).to.deep.equal(order);
+        expect(country.capitals()).to.have.lengthOf(order.length);
+    });
+
+    it("ls('region') holds the same values as 3.1.8", () => {
+        expect(bag(country.ls('region'))).to.deep.equal(bag(base.regions));
+    });
+
+    it("ls('iso3') holds the same codes as 3.1.8", () => {
+        expect(bag(country.ls('iso3'))).to.deep.equal(bag(base.iso3s));
     });
 
     it('ls() on an unknown field returns 250 undefineds rather than throwing', () => {

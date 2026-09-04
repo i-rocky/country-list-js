@@ -26,12 +26,12 @@ The other sources are:
 | `catalog/reference/continents.json` | continent code → name |
 | `catalog/reference/name-aliases.json` | alternative country names |
 | `catalog/reference/retired-currencies.json` | ISO 4217 codes that no longer exist |
-| `catalog/reference/order.json` | the canonical country order |
 | `catalog/country.schema.json` | what a country file may contain |
 
-`catalog/reference/order.json` decides the order of `names()`, `capitals()` and
-`ls()`. That order is observable, so a new country goes at the end rather than
-in alphabetical position.
+Everything a caller can observe -- `names()`, `capitals()`, `ls()`, the key
+order of `all`, and the order of any multi-country result -- comes out sorted
+by country name, with `localeCompare(name, 'en')`. Nothing maintains that
+order: adding a country is one new file and nothing else.
 
 ## Before you open a pull request
 
@@ -55,10 +55,12 @@ the break sat on `master` for nearly two years because nothing checked.
 
 ## Some rules the data follows
 
-- **Names** are common short names in English, transliterated to ASCII.
-  Alternative and native forms go in `catalog/reference/name-aliases.json`,
-  not in `name`. Renaming a country would break `findByName` for everyone
-  using the old name.
+- **Names** are the current common short name in English. When a country is
+  renamed, change `name` and add the former name to
+  `catalog/reference/name-aliases.json` in the same commit -- an alias only
+  ever turns a lookup that answered nothing into a hit, so nobody using the
+  old name loses anything. Native and official long forms go in the alias
+  file too, never in `name`.
 - **A province alias is an array or `null`.** Never a bare string: `indexOf` on
   a string is a substring search, and three of these once made
   `findByProvince('B')` answer Vietnam.

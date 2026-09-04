@@ -16,7 +16,6 @@ const readJson = p => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
 const problems = [];
 const check = (ok, msg) => { if (!ok) problems.push(msg); };
 
-const order = readJson('catalog/reference/order.json');
 const continents = readJson('catalog/reference/continents.json');
 const currencies = readJson('catalog/reference/currencies.json');
 const aliases = readJson('catalog/reference/name-aliases.json');
@@ -47,13 +46,7 @@ for (const file of files) {
 
 const codes = Object.keys(countries);
 
-check(JSON.stringify([...order].sort()) === JSON.stringify(codes),
-    'catalog/reference/order.json does not match catalog/countries/: only in order.json [' +
-    order.filter(c => !codes.includes(c)) + '], only in catalog/countries/ [' +
-    codes.filter(c => !order.includes(c)) + ']');
-
-check(order.length === new Set(order).size,
-    'catalog/reference/order.json contains duplicates');
+check(codes.length === new Set(codes).size, 'duplicate country files');
 
 const dup = (field, label) => {
     const seen = new Map();

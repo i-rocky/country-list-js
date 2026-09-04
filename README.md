@@ -63,16 +63,16 @@ You never have to test the shape of a result before using it.
 
 Lookups try the exact value first. If that misses, they try again
 case-insensitively, and `findByName` also tries 682 alternative names — native
-forms, official long forms, and the current ISO short names for countries this
-list still records under an older one:
+forms, official long forms, and the names countries carried before they were
+renamed:
 
 ```js
-country.findByName('denmark');    // Denmark
-country.findByName('Danmark');    // Denmark
-country.findByName('Türkiye');    // Turkey
-country.findByName('Eswatini');   // Swaziland
-country.findByName('Czechia');    // Czech Republic
-country.findByName('USA');        // United States
+country.findByName('denmark');         // Denmark
+country.findByName('Danmark');         // Denmark
+country.findByName('USA');             // United States
+country.findByName('Turkey');          // Türkiye
+country.findByName('Swaziland');       // Eswatini
+country.findByName('Czech Republic');  // Czechia
 ```
 
 The exact value always wins, so adding an alias can never change a lookup that
@@ -140,9 +140,18 @@ island nation has no land border, Kosovo has no ISO numeric code.
 
 ## Notes on the data
 
-**Names** are common short names in English, transliterated to ASCII —
-`Ivory Coast`, not `Côte d'Ivoire`; `Reykjavik`, not `Reykjavík`. They are not
-ISO 3166-1 official names. Both forms resolve through `findByName`.
+**Names** are the common short name in English, and the *current* one: a
+country that has been renamed carries the name it was renamed to — `Türkiye`,
+`Eswatini`, `Czechia`, `Cabo Verde`, `North Macedonia`, `Timor-Leste`,
+`Côte d'Ivoire`, `Holy See`. Every former name is an alias, so lookups that
+worked before still work.
+
+They are not ISO 3166-1's *registered* short names, which are inverted for
+indexing — `Korea, Republic of`, `Russian Federation`, `Virgin Islands,
+British`. Where ISO reads like a registry rather than a name, the common form
+is kept: `South Korea`, `Russia`, `British Virgin Islands`.
+
+**Capitals** are transliterated to ASCII — `Reykjavik`, not `Reykjavík`.
 
 **Currencies** follow ISO 4217. Codes ISO has retired still resolve to the
 country that used them, so `findByCurrency('HRK')` answers Croatia even though

@@ -17,7 +17,10 @@ ok('no default key', !('default' in now));
 ok('no __esModule key', !('__esModule' in now));
 
 // 2. every country, every field 3.1.8 returned
-const DECLARED = new Set(['BY','ES','NG','ET','TR','VN','HR','LT','BG','VE','MR','ST','SL','ZW','ZM']);
+// data corrections, plus the eight countries carrying a name they were
+// renamed to since 3.1.8 was published
+const DECLARED = new Set(['BY','ES','NG','ET','VN','HR','LT','BG','VE','MR','ST','SL','ZW','ZM',
+                          'TR','SZ','MK','CZ','CV','CI','TL','VA']);
 const restrict = (a, e) => {
     if (Array.isArray(e)) return Array.isArray(a) ? a.map((v,i)=>restrict(v,e[i])) : a;
     if (e && typeof e === 'object' && a && typeof a === 'object') {
@@ -38,10 +41,20 @@ assert.deepStrictEqual(undeclared, [], 'undeclared country differences: ' + unde
 checks++;
 
 // 3. list functions unchanged
-for (const fn of ['names', 'capitals', 'continents']) {
-    assert.deepStrictEqual(now[fn](), old[fn](), fn + '()'); checks++;
+// 4.0 orders every list by country name; 3.1.8 used the insertion order of a
+// hand-maintained file. Same values, stated order.
+const RENAMED = {Turkey:'Türkiye', Swaziland:'Eswatini', Macedonia:'North Macedonia',
+    'Czech Republic':'Czechia', 'Cape Verde':'Cabo Verde', 'Ivory Coast':"Côte d'Ivoire",
+    'East Timor':'Timor-Leste', Vatican:'Holy See'};
+const bag = a => [...a].sort();
+assert.deepStrictEqual(bag(now.names()), bag(old.names().map(n => RENAMED[n] || n)), 'names()');
+checks++;
+for (const fn of ['capitals', 'continents']) {
+    assert.deepStrictEqual(bag(now[fn]()), bag(old[fn]()), fn + '()'); checks++;
 }
-assert.deepStrictEqual(now.ls('region'), old.ls('region'), "ls('region')"); checks++;
+assert.deepStrictEqual(bag(now.ls('region')), bag(old.ls('region')), "ls('region')"); checks++;
+ok('names() is in name order',
+   now.names().every((n, i, a) => i === 0 || a[i-1].localeCompare(n, 'en') <= 0));
 
 // 4. deep imports.  data/ is private in 4.0: the aggregates 3.1.8 shipped are
 // gone, and what remains is an implementation detail the exports map blocks.
@@ -86,7 +99,8 @@ ok('a mutated result does not affect the next lookup',
 ok('borders', now.findByIso2('PT').borders.join() === 'ES');
 ok('timezones', now.findByIso2('DK').timezones[0] === 'Europe/Copenhagen');
 ok('iso numeric', now.findByIso2('DK').code.numeric === '208');
-ok('alias', now.findByName('Türkiye').name === 'Turkey');
+ok('renamed country carries its current name', now.findByIso2('TR').name === 'Türkiye');
+ok('the former name is still an alias', now.findByName('Turkey').name === 'Türkiye');
 ok('case-insensitive', now.findByIso2('dk').name === 'Denmark');
 ok('retired currency', now.findByCurrency('HRK')[0].name === 'Croatia');
 ok('Bulgaria is on the euro', now.findByIso2('BG').currency.code === 'EUR');

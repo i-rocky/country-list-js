@@ -258,18 +258,20 @@ describe('Edge cases', () => {
     it('round-trips non-ASCII values', () => {
         expect(country.findByProvince('Sjælland')[0].name).to.equal('Denmark');
         expect(country.findByProvince('Zealand')[0].name).to.equal('Denmark');
-        expect(country.findByProvince('Muğla')[0].name).to.equal('Turkey');
+        expect(country.findByProvince('Muğla')[0].name).to.equal('Türkiye');
         expect(country.findByProvince('Bình Phước')[0].name).to.equal('Vietnam');
         expect(country.findByProvince('বরিশাল')[0].name).to.equal('Bangladesh');
         expect(country.findByName('Ivory Coast').code.iso2).to.equal('CI');
+        expect(country.findByName("Côte d'Ivoire").code.iso2).to.equal('CI');
     });
 
-    it('carries transliterated country names and capitals, not native forms', () => {
-        // worth pinning: not one of the 250 names or capitals contains a
-        // non-ASCII character -- they are all transliterated (Bogota,
-        // Reykjavik, Asuncion) -- while province names are not
+    it('carries transliterated capitals, and names as the country spells them', () => {
+        // Capitals are all transliterated (Bogota, Reykjavik, Asuncion).
+        // Names are not: a country that has been renamed carries the name it
+        // was renamed to, diacritics and all.
         const nonAscii = s => [...s].some(ch => ch.codePointAt(0) > 127);
-        expect(country.names().filter(nonAscii)).to.deep.equal([]);
+        expect(country.names().filter(nonAscii).sort())
+            .to.deep.equal(["Côte d'Ivoire", 'Türkiye']);
         expect(country.capitals().filter(nonAscii)).to.deep.equal([]);
         expect(country.findByIso2('CO').capital).to.equal('Bogota');
         expect(country.findByIso2('IS').capital).to.equal('Reykjavik');

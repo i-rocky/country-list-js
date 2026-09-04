@@ -59,14 +59,16 @@ describe('Name aliases', () => {
     });
 
     it('resolves the modern ISO names for countries listed under an older one', () => {
-        const modern = {
-            'Türkiye': 'Turkey', 'Turkiye': 'Turkey',
-            'Eswatini': 'Swaziland', 'North Macedonia': 'Macedonia',
-            'Czechia': 'Czech Republic', 'Cabo Verde': 'Cape Verde',
-            'Timor-Leste': 'East Timor', "Côte d'Ivoire": 'Ivory Coast',
-            'Holy See': 'Vatican', 'Myanmar': 'Myanmar',
+        // the rename went the other way in 4.0: the country carries its
+        // current name, and the name it used to carry is the alias
+        const former = {
+            'Turkey': 'Türkiye', 'Turkiye': 'Türkiye',
+            'Swaziland': 'Eswatini', 'Macedonia': 'North Macedonia',
+            'Czech Republic': 'Czechia', 'Cape Verde': 'Cabo Verde',
+            'East Timor': 'Timor-Leste', 'Ivory Coast': "Côte d'Ivoire",
+            'Vatican': 'Holy See', 'Burma': 'Myanmar',
         };
-        for (const [alias, name] of Object.entries(modern))
+        for (const [alias, name] of Object.entries(former))
             expect(one(country.findByName(alias)), alias).to.have.property('name', name);
     });
 
@@ -117,8 +119,8 @@ describe('Case-insensitive fallback', () => {
     });
 
     it('applies to aliases too', () => {
-        expect(one(country.findByName('türkiye'))).to.have.property('name', 'Turkey');
-        expect(one(country.findByName('CZECHIA'))).to.have.property('name', 'Czech Republic');
+        expect(one(country.findByName('türkiye'))).to.have.property('name', 'Türkiye');
+        expect(one(country.findByName('CZECH REPUBLIC'))).to.have.property('name', 'Czechia');
     });
 
     it('exact match always wins', () => {
