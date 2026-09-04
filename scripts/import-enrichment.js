@@ -24,8 +24,8 @@ if (!source || !zoneTab || !zone1970Tab) {
 
 const root = path.join(__dirname, '..');
 const countries = {};
-for (const f of fs.readdirSync(path.join(root, 'countries'))) {
-    const c = JSON.parse(fs.readFileSync(path.join(root, 'countries', f), 'utf8'));
+for (const f of fs.readdirSync(path.join(root, 'catalog', 'countries'))) {
+    const c = JSON.parse(fs.readFileSync(path.join(root, 'catalog', 'countries', f), 'utf8'));
     countries[c.iso2] = c;
 }
 
@@ -157,7 +157,7 @@ for (const [iso2, e] of Object.entries(extra)) {
         if (k in e) merged[k] = e[k];
         else if (k in c) merged[k] = c[k];
     }
-    fs.writeFileSync(path.join(root, 'countries', iso2 + '.json'),
+    fs.writeFileSync(path.join(root, 'catalog', 'countries', iso2 + '.json'),
         JSON.stringify(merged, null, 2) + '\n');
     written++;
 }

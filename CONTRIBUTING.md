@@ -4,7 +4,7 @@ Thanks for helping keep this data correct.
 
 ## Fixing country data
 
-**Everything starts and ends in `countries/<ISO2>.json`.** One file per
+**Everything starts and ends in `catalog/countries/<ISO2>.json`.** One file per
 country. Editing Bulgaria's currency is a one-line diff:
 
 ```diff
@@ -21,17 +21,17 @@ The other sources are:
 
 | path | holds |
 |---|---|
-| `countries/<ISO2>.json` | one country |
-| `reference/currencies.json` | currency code → symbol and minor unit |
-| `reference/continents.json` | continent code → name |
-| `reference/name-aliases.json` | alternative country names |
-| `reference/retired-currencies.json` | ISO 4217 codes that no longer exist |
-| `reference/order.json` | the canonical country order |
-| `schema/country.schema.json` | what a country file may contain |
+| `catalog/countries/<ISO2>.json` | one country |
+| `catalog/reference/currencies.json` | currency code → symbol and minor unit |
+| `catalog/reference/continents.json` | continent code → name |
+| `catalog/reference/name-aliases.json` | alternative country names |
+| `catalog/reference/retired-currencies.json` | ISO 4217 codes that no longer exist |
+| `catalog/reference/order.json` | the canonical country order |
+| `catalog/country.schema.json` | what a country file may contain |
 
-`reference/order.json` decides the order of `names()`, `capitals()` and `ls()`.
-That order is observable, so a new country goes at the end rather than in
-alphabetical position.
+`catalog/reference/order.json` decides the order of `names()`, `capitals()` and
+`ls()`. That order is observable, so a new country goes at the end rather than
+in alphabetical position.
 
 ## Before you open a pull request
 
@@ -53,7 +53,7 @@ the break sat on `master` for nearly two years because nothing checked.
 ## Some rules the data follows
 
 - **Names** are common short names in English, transliterated to ASCII.
-  Alternative and native forms go in `reference/name-aliases.json`, not in
+  Alternative and native forms go in `catalog/reference/name-aliases.json`, not in
   `name`. Renaming a country would break `findByName` for everyone using the
   old name.
 - **A province alias is an array or `null`.** Never a bare string: `indexOf` on

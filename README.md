@@ -167,9 +167,10 @@ const code: Iso2 = 'DKK';   // Type '"DKK"' is not assignable to type 'Iso2'
 
 ## Contributing
 
-Country data lives in `countries/<ISO2>.json`, one file per country, validated
-against `schema/country.schema.json`. Correcting a country is a one-line diff.
-Everything under `data/` is generated from those files — don't edit it.
+Country data lives in `catalog/countries/<ISO2>.json`, one file per country,
+validated against `catalog/country.schema.json`. Correcting a country is a
+one-line diff. Everything under `data/` is generated from those files — don't
+edit it.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 

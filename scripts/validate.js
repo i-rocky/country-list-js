@@ -16,24 +16,24 @@ const readJson = p => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
 const problems = [];
 const check = (ok, msg) => { if (!ok) problems.push(msg); };
 
-const order = readJson('reference/order.json');
-const continents = readJson('reference/continents.json');
-const currencies = readJson('reference/currencies.json');
-const unassigned = readJson('reference/unassigned-dialing-codes.json');
-const aliases = readJson('reference/name-aliases.json');
+const order = readJson('catalog/reference/order.json');
+const continents = readJson('catalog/reference/continents.json');
+const currencies = readJson('catalog/reference/currencies.json');
+const unassigned = readJson('catalog/reference/unassigned-dialing-codes.json');
+const aliases = readJson('catalog/reference/name-aliases.json');
 
-const files = fs.readdirSync(path.join(root, 'countries'))
+const files = fs.readdirSync(path.join(root, 'catalog', 'countries'))
     .filter(f => f.endsWith('.json')).sort();
 
 // -- schema ------------------------------------------------------------------
 
 const validate = new Ajv({allErrors: true, strict: false})
-    .compile(readJson('schema/country.schema.json'));
+    .compile(readJson('catalog/country.schema.json'));
 
 const countries = {};
 for (const file of files) {
     const code = file.replace(/\.json$/, '');
-    const c = readJson('countries/' + file);
+    const c = readJson('catalog/countries/' + file);
     countries[code] = c;
 
     if (!validate(c))
@@ -49,12 +49,12 @@ for (const file of files) {
 const codes = Object.keys(countries);
 
 check(JSON.stringify([...order].sort()) === JSON.stringify(codes),
-    'reference/order.json does not match countries/: only in order.json [' +
-    order.filter(c => !codes.includes(c)) + '], only in countries/ [' +
+    'catalog/reference/order.json does not match catalog/countries/: only in order.json [' +
+    order.filter(c => !codes.includes(c)) + '], only in catalog/countries/ [' +
     codes.filter(c => !order.includes(c)) + ']');
 
 check(order.length === new Set(order).size,
-    'reference/order.json contains duplicates');
+    'catalog/reference/order.json contains duplicates');
 
 const dup = (field, label) => {
     const seen = new Map();
@@ -72,9 +72,9 @@ dup('iso_numeric', 'ISO numeric code');
 for (const code of codes) {
     const c = countries[code];
     check(currencies[c.currency],
-        code + ' uses currency ' + c.currency + ', not defined in reference/currencies.json');
+        code + ' uses currency ' + c.currency + ', not defined in catalog/reference/currencies.json');
     check(continents[c.continent],
-        code + ' is on continent ' + c.continent + ', not defined in reference/continents.json');
+        code + ' is on continent ' + c.continent + ', not defined in catalog/reference/continents.json');
 
     for (const p of c.provinces || []) {
         const aliases = p.alias || [];
@@ -104,8 +104,8 @@ for (const [alias, iso2] of Object.entries(aliases)) {
 }
 
 for (const code of Object.keys(unassigned))
-    check(!countries[code], code + ' is in reference/unassigned-dialing-codes.json ' +
-        'but countries/' + code + '.json exists');
+    check(!countries[code], code + ' is in catalog/reference/unassigned-dialing-codes.json ' +
+        'but catalog/countries/' + code + '.json exists');
 
 // -- the fields added in 4.0 -------------------------------------------------
 

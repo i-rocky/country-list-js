@@ -9,7 +9,8 @@
 // that the bulk source is missing.
 //
 // This exists so the import is reproducible and reviewable, not so it runs in
-// CI.  reference/name-aliases.json is checked in and hand-editable after this.
+// CI.  catalog/reference/name-aliases.json is checked in and hand-editable
+// after this.
 
 const fs = require('fs');
 const path = require('path');
@@ -22,8 +23,8 @@ if (!source) {
 
 const root = path.join(__dirname, '..');
 const ours = {};
-for (const f of fs.readdirSync(path.join(root, 'countries'))) {
-    const c = JSON.parse(fs.readFileSync(path.join(root, 'countries', f), 'utf8'));
+for (const f of fs.readdirSync(path.join(root, 'catalog', 'countries'))) {
+    const c = JSON.parse(fs.readFileSync(path.join(root, 'catalog', 'countries', f), 'utf8'));
     ours[c.iso2] = c;
 }
 
@@ -113,7 +114,7 @@ for (const [alias, owners] of [...claims].sort((a, b) => a[0].localeCompare(b[0]
     aliases[alias] = iso2;
 }
 
-fs.writeFileSync(path.join(root, 'reference', 'name-aliases.json'),
+fs.writeFileSync(path.join(root, 'catalog', 'reference', 'name-aliases.json'),
     JSON.stringify(aliases, null, 2) + '\n');
 
 console.log('kept %d aliases for %d countries',

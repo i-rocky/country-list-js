@@ -102,7 +102,7 @@ describe('README', () => {
     });
 
     it('points at files that exist', () => {
-        for (const f of ['LICENSE', 'CONTRIBUTING.md', 'schema/country.schema.json',
+        for (const f of ['LICENSE', 'CONTRIBUTING.md', 'catalog/country.schema.json',
                          'index.d.ts', 'package.json'])
             expect(fs.existsSync(path.join(__dirname, '..', f)), f).to.equal(true);
     });
