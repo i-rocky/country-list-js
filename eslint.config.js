@@ -26,7 +26,7 @@ module.exports = [
     },
     {
         // build outputs, not source
-        ignores: ['dist/**', 'node_modules/**', 'index.js', 'index.d.ts',
-                  'docs/country.min.js', 'src/generated.ts'],
+        ignores: ['dist/**', 'build/**', 'node_modules/**', 'index.js',
+                  'index.d.ts', 'src/generated.ts'],
     },
 ];
