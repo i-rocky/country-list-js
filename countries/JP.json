@@ -1,0 +1,299 @@
+{
+  "iso2": "JP",
+  "iso3": "JPN",
+  "name": "Japan",
+  "continent": "AS",
+  "region": "East Asia",
+  "capital": "Tokyo",
+  "currency": "JPY",
+  "dialing_code": "81",
+  "provinces": [
+    {
+      "name": "愛知県",
+      "alias": [
+        "Aichi"
+      ]
+    },
+    {
+      "name": "秋田県",
+      "alias": [
+        "Akita"
+      ]
+    },
+    {
+      "name": "青森県",
+      "alias": [
+        "Aomori"
+      ]
+    },
+    {
+      "name": "千葉県",
+      "alias": [
+        "Chiba"
+      ]
+    },
+    {
+      "name": "愛媛県",
+      "alias": [
+        "Ehime"
+      ]
+    },
+    {
+      "name": "福井県",
+      "alias": [
+        "Fukui"
+      ]
+    },
+    {
+      "name": "福岡県",
+      "alias": [
+        "Fukuoka"
+      ]
+    },
+    {
+      "name": "福島県",
+      "alias": [
+        "Fukushima"
+      ]
+    },
+    {
+      "name": "岐阜県",
+      "alias": [
+        "Gifu"
+      ]
+    },
+    {
+      "name": "群馬県",
+      "alias": [
+        "Gunma"
+      ]
+    },
+    {
+      "name": "広島県",
+      "alias": [
+        "Hiroshima"
+      ]
+    },
+    {
+      "name": "北海道",
+      "alias": [
+        "Hokkaidō"
+      ]
+    },
+    {
+      "name": "兵庫県",
+      "alias": [
+        "Hyōgo",
+        "Hyogo"
+      ]
+    },
+    {
+      "name": "茨城県",
+      "alias": [
+        "Ibaraki"
+      ]
+    },
+    {
+      "name": "石川県",
+      "alias": [
+        "Ishikawa"
+      ]
+    },
+    {
+      "name": "岩手県",
+      "alias": [
+        "Iwate"
+      ]
+    },
+    {
+      "name": "香川県",
+      "alias": [
+        "Kagawa"
+      ]
+    },
+    {
+      "name": "鹿児島県",
+      "alias": [
+        "Kagoshima"
+      ]
+    },
+    {
+      "name": "神奈川県",
+      "alias": [
+        "Kanagawa"
+      ]
+    },
+    {
+      "name": "高知県",
+      "alias": [
+        "Kōchi",
+        "Kochi"
+      ]
+    },
+    {
+      "name": "熊本県",
+      "alias": [
+        "Kumamoto"
+      ]
+    },
+    {
+      "name": "京都府",
+      "alias": [
+        "Kyōto",
+        "Kyoto"
+      ]
+    },
+    {
+      "name": "三重県",
+      "alias": [
+        "Mie"
+      ]
+    },
+    {
+      "name": "宮城県",
+      "alias": [
+        "Miyagi"
+      ]
+    },
+    {
+      "name": "宮崎県",
+      "alias": [
+        "Miyazaki"
+      ]
+    },
+    {
+      "name": "長野県",
+      "alias": [
+        "Nagano"
+      ]
+    },
+    {
+      "name": "長崎県",
+      "alias": [
+        "Nagasaki"
+      ]
+    },
+    {
+      "name": "奈良県",
+      "alias": [
+        "Nara"
+      ]
+    },
+    {
+      "name": "新潟県",
+      "alias": [
+        "Niigata"
+      ]
+    },
+    {
+      "name": "大分県",
+      "alias": [
+        "Ōita",
+        "Oita"
+      ]
+    },
+    {
+      "name": "岡山県",
+      "alias": [
+        "Okayama"
+      ]
+    },
+    {
+      "name": "沖縄県",
+      "alias": [
+        "Okinawa"
+      ]
+    },
+    {
+      "name": "大阪府",
+      "alias": [
+        "Ōsaka"
+      ]
+    },
+    {
+      "name": "佐賀県",
+      "alias": [
+        "Saga"
+      ]
+    },
+    {
+      "name": "埼玉県",
+      "alias": [
+        "Saitama"
+      ]
+    },
+    {
+      "name": "滋賀県",
+      "alias": [
+        "Shiga"
+      ]
+    },
+    {
+      "name": "島根県",
+      "alias": [
+        "Shimane"
+      ]
+    },
+    {
+      "name": "静岡県",
+      "alias": [
+        "Shizuoka"
+      ]
+    },
+    {
+      "name": "栃木県",
+      "alias": [
+        "Tochigi"
+      ]
+    },
+    {
+      "name": "徳島県",
+      "alias": [
+        "Tokushima"
+      ]
+    },
+    {
+      "name": "東京都",
+      "alias": [
+        "Tōkyō",
+        "Tokyo"
+      ]
+    },
+    {
+      "name": "鳥取県",
+      "alias": [
+        "Tottori"
+      ]
+    },
+    {
+      "name": "富山県",
+      "alias": [
+        "Toyama"
+      ]
+    },
+    {
+      "name": "和歌山県",
+      "alias": [
+        "Wakayama"
+      ]
+    },
+    {
+      "name": "山形県",
+      "alias": [
+        "Yamagata"
+      ]
+    },
+    {
+      "name": "山口県",
+      "alias": [
+        "Yamaguchi"
+      ]
+    },
+    {
+      "name": "山梨県",
+      "alias": [
+        "Yamanashi"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "iso2": "DE",
+  "iso3": "DEU",
+  "name": "Germany",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Berlin",
+  "currency": "EUR",
+  "dialing_code": "49",
+  "provinces": [
+    {
+      "short": "BW",
+      "name": "Baden-Württemberg",
+      "alias": [
+        "Baden-Wurttemberg",
+        "Baden Württemberg",
+        "Baden Wurttemberg"
+      ]
+    },
+    {
+      "short": "BY",
+      "name": "Bayern",
+      "alias": null
+    },
+    {
+      "short": "BE",
+      "name": "Berlin",
+      "alias": null
+    },
+    {
+      "short": "BB",
+      "name": "Brandenburg",
+      "alias": null
+    },
+    {
+      "short": "HB",
+      "name": "Bremen",
+      "alias": null
+    },
+    {
+      "short": "HH",
+      "name": "Hamburg",
+      "alias": null
+    },
+    {
+      "short": "HE",
+      "name": "Hessen",
+      "alias": null
+    },
+    {
+      "short": "MV",
+      "name": "Mecklenburg-Vorpommern",
+      "alias": [
+        "Mecklenburg Vorpommern"
+      ]
+    },
+    {
+      "short": "NI",
+      "name": "Niedersachsen",
+      "alias": null
+    },
+    {
+      "short": "NW",
+      "name": "Nordrhein-Westfalen",
+      "alias": [
+        "Nordrhein Westfalen"
+      ]
+    },
+    {
+      "short": "RP",
+      "name": "Rheinland-Pfalz",
+      "alias": [
+        "Rheinland Pfalz"
+      ]
+    },
+    {
+      "short": "SL",
+      "name": "Saarland",
+      "alias": null
+    },
+    {
+      "short": "SN",
+      "name": "Sachsen",
+      "alias": null
+    },
+    {
+      "short": "ST",
+      "name": "Sachsen-Anhalt",
+      "alias": [
+        "Sachsen Anhalt"
+      ]
+    },
+    {
+      "short": "SH",
+      "name": "Schleswig-Holstein",
+      "alias": [
+        "Schleswig Holstein"
+      ]
+    },
+    {
+      "short": "TH",
+      "name": "Thüringen",
+      "alias": [
+        "Thuringen"
+      ]
+    }
+  ]
+}

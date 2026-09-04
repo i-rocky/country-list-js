@@ -1,0 +1,164 @@
+{
+  "iso2": "KH",
+  "iso3": "KHM",
+  "name": "Cambodia",
+  "continent": "AS",
+  "region": "South-East Asia",
+  "capital": "Phnom Penh",
+  "currency": "KHR",
+  "dialing_code": "855",
+  "provinces": [
+    {
+      "name": "ភ្នំពេញ",
+      "alias": [
+        "Phnom Penh Municipality"
+      ]
+    },
+    {
+      "name": "បន្ទាយមានជ័យ",
+      "alias": [
+        "Banteay Meanchey"
+      ]
+    },
+    {
+      "name": "បាត់ដំបង",
+      "alias": [
+        "Battambang"
+      ]
+    },
+    {
+      "name": "កំពង់ចាម",
+      "alias": [
+        "Kampong Cham"
+      ]
+    },
+    {
+      "name": "កំពង់ឆ្នាំង",
+      "alias": [
+        "Kampong Chhnang"
+      ]
+    },
+    {
+      "name": "កំពង់ស្ពឺ",
+      "alias": [
+        "Kampong Speu"
+      ]
+    },
+    {
+      "name": "កំពង់ធំ",
+      "alias": [
+        "Kampong Thom"
+      ]
+    },
+    {
+      "name": "កំពត",
+      "alias": [
+        "Kampot"
+      ]
+    },
+    {
+      "name": "កណ្តាល",
+      "alias": [
+        "Kandal"
+      ]
+    },
+    {
+      "name": "កោះកុង",
+      "alias": [
+        "Koh Kong"
+      ]
+    },
+    {
+      "name": "កែប",
+      "alias": [
+        "Kep"
+      ]
+    },
+    {
+      "name": "ក្រចេះ",
+      "alias": [
+        "Kratié",
+        "Kratie"
+      ]
+    },
+    {
+      "name": "មណ្ឌលគីរី",
+      "alias": [
+        "Mondulkiri"
+      ]
+    },
+    {
+      "name": "ឧត្តរមានជ័យ",
+      "alias": [
+        "Oddar Meanchey"
+      ]
+    },
+    {
+      "name": "បៃលិន",
+      "alias": [
+        "Pailin"
+      ]
+    },
+    {
+      "name": "ព្រះសីហនុ",
+      "alias": [
+        "Preah Sihanouk"
+      ]
+    },
+    {
+      "name": "ព្រះវិហារ",
+      "alias": [
+        "Preah Vihear"
+      ]
+    },
+    {
+      "name": "ពោធិ៍សាត់",
+      "alias": [
+        "Pursat"
+      ]
+    },
+    {
+      "name": "ព្រៃវែង",
+      "alias": [
+        "Prey Veng"
+      ]
+    },
+    {
+      "name": "រតនគីរី",
+      "alias": [
+        "Ratanakiri"
+      ]
+    },
+    {
+      "name": "សៀមរាប",
+      "alias": [
+        "Siem Reap"
+      ]
+    },
+    {
+      "name": "ស្ទឹងត្រែង",
+      "alias": [
+        "Stung Treng"
+      ]
+    },
+    {
+      "name": "ស្វាយរៀង",
+      "alias": [
+        "Svay Rieng"
+      ]
+    },
+    {
+      "name": "តាកែវ",
+      "alias": [
+        "Takéo",
+        "Takeo"
+      ]
+    },
+    {
+      "name": "ត្បូងឃ្មុំ",
+      "alias": [
+        "Tbong Khmum"
+      ]
+    }
+  ]
+}

@@ -297,10 +297,45 @@ describe('Edge cases', () => {
     });
 
     it('a mutated result does not corrupt the next lookup', () => {
-        const a = country.findByIso2('FR');
-        a.name = 'MUTATED';
-        a.currency.code = 'MUT';
-        expect(country.findByIso2('FR').name).to.equal('France');
-        expect(country.findByIso2('FR').currency.code).to.equal('EUR');
+        // 3.1.8 cached the transformed object and handed back that very
+        // object every time, so `findByName('Denmark').name = 'x'` poisoned
+        // the cache for the life of the process -- every later lookup of
+        // Denmark answered 'x'.  findByIso2 was fine; the other five were not.
+        const calls = [['findByIso2', 'FR'], ['findByIso3', 'FRA'],
+                       ['findByName', 'France'], ['findByCapital', 'Paris'],
+                       ['findByProvince', 'Texas'], ['findByPhoneNbr', '+33123456789']];
+
+        for (const [fn, arg] of calls) {
+            const before = JSON.parse(JSON.stringify(country[fn](arg)));
+            const victim = country[fn](arg);
+            const one = Array.isArray(victim) ? victim[0] : victim;
+
+            one.name = 'MUTATED';
+            one.capital = 'MUTATED';
+            one.currency.code = 'MUT';
+            one.code.iso2 = 'MU';
+
+            expect(JSON.parse(JSON.stringify(country[fn](arg))), fn + '(' + arg + ')')
+                .to.deep.equal(before);
+        }
+    });
+
+    it('hands back a distinct object on every call', () => {
+        const calls = [['findByIso2', 'DK'], ['findByIso3', 'DNK'],
+                       ['findByName', 'Denmark'], ['findByCapital', 'Copenhagen'],
+                       ['findByProvince', 'Zealand'], ['findByPhoneNbr', '+4505551212']];
+        for (const [fn, arg] of calls) {
+            const a = country[fn](arg), b = country[fn](arg);
+            expect(a, fn).to.not.equal(b);
+            expect(a.currency, fn + ' currency').to.not.equal(b.currency);
+            expect(a.code, fn + ' code').to.not.equal(b.code);
+            expect(a, fn).to.deep.equal(b);
+        }
+    });
+
+    it('does not let a mutation through the all map either', () => {
+        const before = country.all.DE.name;
+        country.findByIso2('DE').name = 'MUTATED';
+        expect(country.all.DE.name).to.equal(before);
     });
 });

@@ -1,0 +1,75 @@
+{
+  "iso2": "BE",
+  "iso3": "BEL",
+  "name": "Belgium",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Brussels",
+  "currency": "EUR",
+  "dialing_code": "32",
+  "provinces": [
+    {
+      "short": "ANT",
+      "name": "Antwerpen",
+      "alias": null
+    },
+    {
+      "short": "HAI",
+      "name": "Henegouwen",
+      "alias": [
+        "Hainaut"
+      ]
+    },
+    {
+      "short": "LIE",
+      "name": "Luik",
+      "alias": [
+        "Liège",
+        "Liege"
+      ]
+    },
+    {
+      "short": "LIM",
+      "name": "Limburg",
+      "alias": null
+    },
+    {
+      "short": "LUX",
+      "name": "Luxemburg",
+      "alias": null
+    },
+    {
+      "short": "NAM",
+      "name": "Namen",
+      "alias": null
+    },
+    {
+      "short": "OVL",
+      "name": "Oost-Vlaanderen",
+      "alias": [
+        "Oost Vlaanderen"
+      ]
+    },
+    {
+      "short": "VBR",
+      "name": "Vlaams-Brabant",
+      "alias": [
+        "Vlaams Brabant"
+      ]
+    },
+    {
+      "short": "WBR",
+      "name": "Waals-Brabant",
+      "alias": [
+        "Waals Brabant"
+      ]
+    },
+    {
+      "short": "WVL",
+      "name": "West-Vlaanderen",
+      "alias": [
+        "West Vlaanderen"
+      ]
+    }
+  ]
+}

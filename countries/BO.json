@@ -1,0 +1,638 @@
+{
+  "iso2": "BO",
+  "iso3": "BOL",
+  "name": "Bolivia",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Sucre",
+  "currency": "BOB",
+  "dialing_code": "591",
+  "provinces": [
+    {
+      "name": "Cercado",
+      "region": "Beni",
+      "alias": null
+    },
+    {
+      "name": "Iténez",
+      "region": "Beni",
+      "alias": [
+        "Itenez"
+      ]
+    },
+    {
+      "name": "José Ballivián",
+      "region": "Beni",
+      "alias": [
+        "Jose Ballivian"
+      ]
+    },
+    {
+      "name": "Mamoré",
+      "region": "Beni",
+      "alias": [
+        "Mamore"
+      ]
+    },
+    {
+      "name": "Marbán",
+      "region": "Beni",
+      "alias": [
+        "Marban"
+      ]
+    },
+    {
+      "name": "Moxos",
+      "region": "Beni",
+      "alias": null
+    },
+    {
+      "name": "Vaca Díez",
+      "region": "Beni",
+      "alias": [
+        "Vaca Diez"
+      ]
+    },
+    {
+      "name": "Yacuma",
+      "region": "Beni",
+      "alias": null
+    },
+    {
+      "name": "Azurduy",
+      "region": "Chuquisaca",
+      "alias": null
+    },
+    {
+      "name": "Belisario Boeto",
+      "region": "Chuquisaca",
+      "alias": null
+    },
+    {
+      "name": "Hernando Siles",
+      "region": "Chuquisaca",
+      "alias": null
+    },
+    {
+      "name": "Jaime Zudáñez",
+      "region": "Chuquisaca",
+      "alias": [
+        "Jaime Zudanez"
+      ]
+    },
+    {
+      "name": "Luis Calvo",
+      "region": "Chuquisaca",
+      "alias": null
+    },
+    {
+      "name": "Nor Cinti",
+      "region": "Chuquisaca",
+      "alias": null
+    },
+    {
+      "name": "Oropeza",
+      "region": "Chuquisaca",
+      "alias": null
+    },
+    {
+      "name": "Sud Cinti",
+      "region": "Chuquisaca",
+      "alias": null
+    },
+    {
+      "name": "Tomina",
+      "region": "Chuquisaca",
+      "alias": null
+    },
+    {
+      "name": "Yamparáez",
+      "region": "Chuquisaca",
+      "alias": [
+        "Yamparaez"
+      ]
+    },
+    {
+      "name": "Arani",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Arque",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Ayopaya",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Capinota",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Carrasco",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Cercado",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Chapare",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Esteban Arce",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Germán Jordán",
+      "region": "Cochabamba",
+      "alias": [
+        "German Jordan"
+      ]
+    },
+    {
+      "name": "Mizque",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Campero",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Punata",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Quillacollo",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Bolívar",
+      "region": "Cochabamba",
+      "alias": [
+        "Bolivar"
+      ]
+    },
+    {
+      "name": "Tapacarí",
+      "region": "Cochabamba",
+      "alias": [
+        "Tapacari"
+      ]
+    },
+    {
+      "name": "Tiraque",
+      "region": "Cochabamba",
+      "alias": null
+    },
+    {
+      "name": "Abel Iturralde",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Aroma",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Bautista Saavedra",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Caranavi",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Eliodoro Camacho",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Franz Tamayo",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Gualberto Villarroel",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Ingavi",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Inquisivi",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "José Manuel Pando",
+      "region": "La Paz",
+      "alias": [
+        "Jose Manuel Pando"
+      ]
+    },
+    {
+      "name": "Larecaja",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Loayza",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Los Andes",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Manco Kapac",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Muñecas",
+      "region": "La Paz",
+      "alias": [
+        "Munecas"
+      ]
+    },
+    {
+      "name": "Nor Yungas",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Omasuyos",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Pacajes",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Murillo",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Sud Yungas",
+      "region": "La Paz",
+      "alias": null
+    },
+    {
+      "name": "Atahuallpa",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Carangas",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Cercado",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Eduardo Avaroa",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Ladislao Cabrera",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Litoral",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Nor Carangas",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Pantaléon Dalence",
+      "region": "Oruro",
+      "alias": [
+        "Pantaleon Dalence"
+      ]
+    },
+    {
+      "name": "Poopó",
+      "region": "Oruro",
+      "alias": [
+        "Poopo"
+      ]
+    },
+    {
+      "name": "Puerto de Mejillones",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Sajama",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "San Pedro de Totora",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Saucarí",
+      "region": "Oruro",
+      "alias": [
+        "Saucari"
+      ]
+    },
+    {
+      "name": "Sebastián Pagador",
+      "region": "Oruro",
+      "alias": [
+        "Sebastian Pagador"
+      ]
+    },
+    {
+      "name": "Sud Carangas",
+      "region": "Oruro",
+      "alias": null
+    },
+    {
+      "name": "Tomas Barrón",
+      "region": "Oruro",
+      "alias": [
+        "Tomas Barron"
+      ]
+    },
+    {
+      "name": "Abuná",
+      "region": "Pando",
+      "alias": [
+        "Abuna"
+      ]
+    },
+    {
+      "name": "Federico Román",
+      "region": "Pando",
+      "alias": [
+        "Federico Roman"
+      ]
+    },
+    {
+      "name": "Madre de Dios",
+      "region": "Pando",
+      "alias": null
+    },
+    {
+      "name": "Manuripi",
+      "region": "Pando",
+      "alias": null
+    },
+    {
+      "name": "Nicolás Suárez",
+      "region": "Pando",
+      "alias": [
+        "Nicolas Suarez"
+      ]
+    },
+    {
+      "name": "Alonso de Ibáñez",
+      "region": "Potosí",
+      "alias": [
+        "Alonso de Ibanez"
+      ]
+    },
+    {
+      "name": "Antonio Quijarro",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Bernardino Bilbao",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Charcas",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Chayanta",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Cornelio Saavedra",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Daniel Campos",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Enrique Baldivieso",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "José María Linares",
+      "region": "Potosí",
+      "alias": [
+        "José Maria Linares"
+      ]
+    },
+    {
+      "name": "Modesto Omiste",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Nor Chichas",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Nor Lípez",
+      "region": "Potosí",
+      "alias": [
+        "Nor Lipez"
+      ]
+    },
+    {
+      "name": "Rafael Bustillo",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Sur Chichas",
+      "region": "Potosí",
+      "alias": null
+    },
+    {
+      "name": "Sur Lípez",
+      "region": "Potosí",
+      "alias": [
+        "Sur Lipez"
+      ]
+    },
+    {
+      "name": "Tomás Frías",
+      "region": "Potosí",
+      "alias": [
+        "Tomas Frias"
+      ]
+    },
+    {
+      "name": "Andrés Ibáñez",
+      "region": "Santa Cruz",
+      "alias": [
+        "Andres Ibanez"
+      ]
+    },
+    {
+      "name": "Ángel Sandoval",
+      "region": "Santa Cruz",
+      "alias": [
+        "Angel Sandoval"
+      ]
+    },
+    {
+      "name": "Chiquitos",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Cordillera",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Florida",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Germán Busch",
+      "region": "Santa Cruz",
+      "alias": [
+        "German Busch"
+      ]
+    },
+    {
+      "name": "Guarayos",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Ichilo",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Ignacio Warnes",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "José Miguel de Velasco",
+      "region": "Santa Cruz",
+      "alias": [
+        "Jose Miguel de Velasco"
+      ]
+    },
+    {
+      "name": "Manuel María Caballero",
+      "region": "Santa Cruz",
+      "alias": [
+        "Manuel Maria Caballero"
+      ]
+    },
+    {
+      "name": "Ñuflo de Chávez",
+      "region": "Santa Cruz",
+      "alias": [
+        "Nuflo de Chavez"
+      ]
+    },
+    {
+      "name": "Obispo Santistevan",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Sara",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Vallegrande",
+      "region": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Aniceto Arce",
+      "region": "Tarija",
+      "alias": null
+    },
+    {
+      "name": "Burnet O'Connor",
+      "region": "Tarija",
+      "alias": null
+    },
+    {
+      "name": "Cercado",
+      "region": "Tarija",
+      "alias": null
+    },
+    {
+      "name": "Eustaquio Méndez",
+      "region": "Tarija",
+      "alias": [
+        "Eustaquio Mendez"
+      ]
+    },
+    {
+      "name": "Gran Chaco",
+      "region": "Tarija",
+      "alias": null
+    },
+    {
+      "name": "José María Avilés",
+      "region": "Tarija",
+      "alias": [
+        "Jose María Aviles"
+      ]
+    }
+  ]
+}

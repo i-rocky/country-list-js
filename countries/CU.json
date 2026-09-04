@@ -1,0 +1,90 @@
+{
+  "iso2": "CU",
+  "iso3": "CUB",
+  "name": "Cuba",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "Havana",
+  "currency": "CUP",
+  "dialing_code": "53",
+  "provinces": [
+    {
+      "name": "Camagüey",
+      "alias": [
+        "Camaguey"
+      ]
+    },
+    {
+      "name": "Ciego de Ávila",
+      "alias": [
+        "Ciego de Avila"
+      ]
+    },
+    {
+      "name": "Cienfuegos",
+      "alias": null
+    },
+    {
+      "name": "Havana",
+      "alias": null
+    },
+    {
+      "name": "Bayamo",
+      "alias": null
+    },
+    {
+      "name": "Guantánamo",
+      "alias": [
+        "Guantanamo"
+      ]
+    },
+    {
+      "name": "Holguín",
+      "alias": [
+        "Holguin"
+      ]
+    },
+    {
+      "name": "Nueva Gerona",
+      "alias": null
+    },
+    {
+      "name": "Artemisa",
+      "alias": null
+    },
+    {
+      "name": "Las Tunas",
+      "alias": null
+    },
+    {
+      "name": "Matanzas",
+      "alias": null
+    },
+    {
+      "name": "San José de las Lajas",
+      "alias": [
+        "San Jose de las Lajas"
+      ]
+    },
+    {
+      "name": "Pinar del Río",
+      "alias": [
+        "Pinar del Rio"
+      ]
+    },
+    {
+      "name": "Sancti Spíritus",
+      "alias": [
+        "Sancti Spiritus"
+      ]
+    },
+    {
+      "name": "Santiago de Cuba",
+      "alias": null
+    },
+    {
+      "name": "Santa Clara",
+      "alias": null
+    }
+  ]
+}

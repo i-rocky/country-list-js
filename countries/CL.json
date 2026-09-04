@@ -1,0 +1,302 @@
+{
+  "iso2": "CL",
+  "iso3": "CHL",
+  "name": "Chile",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Santiago",
+  "currency": "CLP",
+  "dialing_code": "56",
+  "provinces": [
+    {
+      "name": "Arica",
+      "region": "XV Arica and Parinacota",
+      "alias": null
+    },
+    {
+      "name": "Parinacota",
+      "region": "XV Arica and Parinacota",
+      "alias": null
+    },
+    {
+      "name": "Iquique",
+      "region": "I Tarapacá",
+      "alias": null
+    },
+    {
+      "name": "Tamarugal",
+      "region": "I Tarapacá",
+      "alias": null
+    },
+    {
+      "name": "Antofagasta",
+      "region": "II Antofagasta",
+      "alias": null
+    },
+    {
+      "name": "El Loa",
+      "region": "II Antofagasta",
+      "alias": null
+    },
+    {
+      "name": "Tocopilla",
+      "region": "II Antofagasta",
+      "alias": null
+    },
+    {
+      "name": "Copiapó",
+      "region": "III Atacama",
+      "alias": [
+        "Copiapo"
+      ]
+    },
+    {
+      "name": "Huasco",
+      "region": "III Atacama",
+      "alias": null
+    },
+    {
+      "name": "Chañaral",
+      "region": "III Atacama",
+      "alias": [
+        "Chanaral"
+      ]
+    },
+    {
+      "name": "Elqui",
+      "region": "IV Coquimbo",
+      "alias": null
+    },
+    {
+      "name": "Limarí",
+      "region": "IV Coquimbo",
+      "alias": [
+        "Limari"
+      ]
+    },
+    {
+      "name": "Choapa",
+      "region": "IV Coquimbo",
+      "alias": null
+    },
+    {
+      "name": "Isla de Pascua",
+      "region": "V Valparaíso",
+      "alias": null
+    },
+    {
+      "name": "Los Andes",
+      "region": "V Valparaíso",
+      "alias": null
+    },
+    {
+      "name": "Marga Marga",
+      "region": "V Valparaíso",
+      "alias": null
+    },
+    {
+      "name": "Petorca",
+      "region": "V Valparaíso",
+      "alias": null
+    },
+    {
+      "name": "Quillota",
+      "region": "V Valparaíso",
+      "alias": null
+    },
+    {
+      "name": "San Antonio",
+      "region": "V Valparaíso",
+      "alias": null
+    },
+    {
+      "name": "San Felipe de Aconcagua",
+      "region": "V Valparaíso",
+      "alias": null
+    },
+    {
+      "name": "Valparaíso",
+      "region": "V Valparaíso",
+      "alias": [
+        "Valparaiso"
+      ]
+    },
+    {
+      "name": "Cachapoal",
+      "region": "VI O'Higgins",
+      "alias": null
+    },
+    {
+      "name": "Colchagua",
+      "region": "VI O'Higgins",
+      "alias": null
+    },
+    {
+      "name": "Cardenal Caro",
+      "region": "VI O'Higgins",
+      "alias": null
+    },
+    {
+      "name": "Talca",
+      "region": "VII Maule",
+      "alias": null
+    },
+    {
+      "name": "Linares",
+      "region": "VII Maule",
+      "alias": null
+    },
+    {
+      "name": "Curicó",
+      "region": "VII Maule",
+      "alias": [
+        "Curico"
+      ]
+    },
+    {
+      "name": "Cauquenes",
+      "region": "VII Maule",
+      "alias": null
+    },
+    {
+      "name": "Concepción",
+      "region": "VIII Biobío",
+      "alias": [
+        "Concepcion"
+      ]
+    },
+    {
+      "name": "Ñuble",
+      "region": "VIII Biobío",
+      "alias": [
+        "Nuble"
+      ]
+    },
+    {
+      "name": "Biobío",
+      "region": "VIII Biobío",
+      "alias": [
+        "Biobio"
+      ]
+    },
+    {
+      "name": "Arauco",
+      "region": "VIII Biobío",
+      "alias": null
+    },
+    {
+      "name": "Cautin",
+      "region": "IX Araucanía",
+      "alias": null
+    },
+    {
+      "name": "Malleco",
+      "region": "IX Araucanía",
+      "alias": null
+    },
+    {
+      "name": "Valdivia",
+      "region": "XIV Los Ríos",
+      "alias": null
+    },
+    {
+      "name": "Ranco",
+      "region": "XIV Los Ríos",
+      "alias": null
+    },
+    {
+      "name": "Llanquihue",
+      "region": "X Los Lagos",
+      "alias": null
+    },
+    {
+      "name": "Osorno",
+      "region": "X Los Lagos",
+      "alias": null
+    },
+    {
+      "name": "Chiloe",
+      "region": "X Los Lagos",
+      "alias": null
+    },
+    {
+      "name": "Palena",
+      "region": "X Los Lagos",
+      "alias": null
+    },
+    {
+      "name": "Coihaique",
+      "region": "XI Aisén",
+      "alias": null
+    },
+    {
+      "name": "Aisén",
+      "region": "XI Aisén",
+      "alias": [
+        "Aisen"
+      ]
+    },
+    {
+      "name": "General Carrera",
+      "region": "XI Aisén",
+      "alias": null
+    },
+    {
+      "name": "Capitan Prat",
+      "region": "XI Aisén",
+      "alias": null
+    },
+    {
+      "name": "Magallanes",
+      "region": "XII Magallanes",
+      "alias": null
+    },
+    {
+      "name": "Ultima Esperanza",
+      "region": "XII Magallanes",
+      "alias": null
+    },
+    {
+      "name": "Tierra del Fuego",
+      "region": "XII Magallanes",
+      "alias": null
+    },
+    {
+      "name": "Antártica Chilena",
+      "region": "XII Magallanes",
+      "alias": [
+        "Antartica Chilena"
+      ]
+    },
+    {
+      "name": "Santiago",
+      "region": "RM Santiago Metropolitan",
+      "alias": null
+    },
+    {
+      "name": "Cordillera",
+      "region": "RM Santiago Metropolitan",
+      "alias": null
+    },
+    {
+      "name": "Maipo",
+      "region": "RM Santiago Metropolitan",
+      "alias": null
+    },
+    {
+      "name": "Talagante",
+      "region": "RM Santiago Metropolitan",
+      "alias": null
+    },
+    {
+      "name": "Melipilla",
+      "region": "RM Santiago Metropolitan",
+      "alias": null
+    },
+    {
+      "name": "Chacabuco",
+      "region": "RM Santiago Metropolitan",
+      "alias": null
+    }
+  ]
+}

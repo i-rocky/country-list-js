@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/i-rocky/country-list-js/schema/country.schema.json",
+  "title": "country-list-js country record",
+  "description": "One file per country under countries/, named <ISO2>.json. This is the source of truth; everything under data/ is generated from it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["iso2", "iso3", "name", "continent", "region", "capital", "currency", "dialing_code"],
+  "properties": {
+    "iso2": {
+      "description": "ISO 3166-1 alpha-2 code. Must match the filename.",
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "iso3": {
+      "description": "ISO 3166-1 alpha-3 code.",
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "name": {
+      "description": "Common short name in English, transliterated to ASCII.",
+      "type": "string",
+      "minLength": 1
+    },
+    "continent": {
+      "description": "Continent code, defined in reference/continents.json.",
+      "type": "string",
+      "enum": ["AF", "AN", "AS", "EU", "NA", "OC", "SA"]
+    },
+    "region": {
+      "description": "Sub-continental region. Free text, shared across countries.",
+      "type": "string",
+      "minLength": 1
+    },
+    "capital": {
+      "description": "Capital city. Empty for territories that have none.",
+      "type": "string"
+    },
+    "currency": {
+      "description": "ISO 4217 code. Must be defined in reference/currencies.json.",
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "dialing_code": {
+      "description": "E.164 country calling code. A string, never a number: merging 247 unquoted made require() itself throw. Empty for territories with no code.",
+      "type": "string",
+      "pattern": "^$|^ $|^\\+?[0-9]+(-[0-9]+)?( and [0-9-]+)?$"
+    },
+    "provinces": {
+      "description": "First-tier political subdivisions. Omit the key entirely rather than using an empty array.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "alias"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "alias": {
+            "description": "Alternative names. Always an array or null -- a bare string turns lookups into a substring search.",
+            "oneOf": [
+              {"type": "null"},
+              {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+            ]
+          },
+          "short": {
+            "description": "Local subdivision code, where one exists.",
+            "type": "string",
+            "minLength": 1
+          },
+          "region": {
+            "description": "Parent grouping, where the country has one above provinces.",
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

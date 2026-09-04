@@ -1,0 +1,108 @@
+{
+  "iso2": "NL",
+  "iso3": "NLD",
+  "name": "Netherlands",
+  "continent": "EU",
+  "region": "Western Europe, Nordic Countries",
+  "capital": "Amsterdam",
+  "currency": "EUR",
+  "dialing_code": "31",
+  "provinces": [
+    {
+      "short": "DR",
+      "name": "Drenthe",
+      "alias": null
+    },
+    {
+      "short": "FL",
+      "name": "Flevoland",
+      "alias": null
+    },
+    {
+      "short": "FR",
+      "name": "Friesland",
+      "alias": null
+    },
+    {
+      "short": "GD",
+      "name": "Gelderland",
+      "alias": null
+    },
+    {
+      "short": "GR",
+      "name": "Groningen",
+      "alias": null
+    },
+    {
+      "short": "LB",
+      "name": "Limburg",
+      "alias": null
+    },
+    {
+      "short": "NB",
+      "name": "Noord-Brabant",
+      "alias": [
+        "Noord Brabant"
+      ]
+    },
+    {
+      "short": "NH",
+      "name": "Noord-Holland",
+      "alias": [
+        "Noord Holland"
+      ]
+    },
+    {
+      "short": "OV",
+      "name": "Overijssel",
+      "alias": null
+    },
+    {
+      "short": "UT",
+      "name": "Utrecht",
+      "alias": null
+    },
+    {
+      "short": "ZH",
+      "name": "Zuid-Holland",
+      "alias": [
+        "Zuid Holland"
+      ]
+    },
+    {
+      "short": "ZL",
+      "name": "Zeeland",
+      "alias": null
+    },
+    {
+      "short": "AW",
+      "name": "Aruba",
+      "alias": null
+    },
+    {
+      "short": "BQ",
+      "name": "Bonaire",
+      "alias": null
+    },
+    {
+      "short": "BQ2",
+      "name": "Saba",
+      "alias": null
+    },
+    {
+      "short": "BQ3",
+      "name": "Sint Eustatius",
+      "alias": null
+    },
+    {
+      "short": "CW",
+      "name": "Curaçao",
+      "alias": null
+    },
+    {
+      "short": "SX",
+      "name": "Sint Maarten",
+      "alias": null
+    }
+  ]
+}

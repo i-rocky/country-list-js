@@ -1,0 +1,80 @@
+{
+  "iso2": "CA",
+  "iso3": "CAN",
+  "name": "Canada",
+  "continent": "NA",
+  "region": "North America",
+  "capital": "Ottawa",
+  "currency": "CAD",
+  "dialing_code": "1",
+  "provinces": [
+    {
+      "short": "AB",
+      "name": "Alberta",
+      "alias": null
+    },
+    {
+      "short": "BC",
+      "name": "British Columbia",
+      "alias": null
+    },
+    {
+      "short": "MB",
+      "name": "Manitoba",
+      "alias": null
+    },
+    {
+      "short": "NB",
+      "name": "New Brunswick",
+      "alias": null
+    },
+    {
+      "short": "NL",
+      "name": "Newfoundland and Labrador",
+      "alias": [
+        "Newfoundland",
+        "Labrador"
+      ]
+    },
+    {
+      "short": "NS",
+      "name": "Nova Scotia",
+      "alias": null
+    },
+    {
+      "short": "NU",
+      "name": "Nunavut",
+      "alias": null
+    },
+    {
+      "short": "NT",
+      "name": "Northwest Territories",
+      "alias": null
+    },
+    {
+      "short": "ON",
+      "name": "Ontario",
+      "alias": null
+    },
+    {
+      "short": "PE",
+      "name": "Prince Edward Island",
+      "alias": null
+    },
+    {
+      "short": "QC",
+      "name": "Quebec",
+      "alias": null
+    },
+    {
+      "short": "SK",
+      "name": "Saskatchewan",
+      "alias": null
+    },
+    {
+      "short": "YT",
+      "name": "Yukon",
+      "alias": null
+    }
+  ]
+}

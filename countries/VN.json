@@ -1,0 +1,384 @@
+{
+  "iso2": "VN",
+  "iso3": "VNM",
+  "name": "Vietnam",
+  "continent": "AS",
+  "region": "South-East Asia",
+  "capital": "Hanoi",
+  "currency": "VND",
+  "dialing_code": "84",
+  "provinces": [
+    {
+      "name": "Hà Nội",
+      "alias": [
+        "Ha Noi"
+      ]
+    },
+    {
+      "name": "Hà Giang",
+      "alias": [
+        "Ha Giang"
+      ]
+    },
+    {
+      "name": "Cao Bằng",
+      "alias": [
+        "Cao Bang"
+      ]
+    },
+    {
+      "name": "Bắc Kạn",
+      "alias": [
+        "Bac Kan"
+      ]
+    },
+    {
+      "name": "Tuyên Quang",
+      "alias": [
+        "Tuyen Quang"
+      ]
+    },
+    {
+      "name": "Lào Cai",
+      "alias": [
+        "Lao Cai"
+      ]
+    },
+    {
+      "name": "Điện Biên",
+      "alias": [
+        "Dien Bien"
+      ]
+    },
+    {
+      "name": "Lai Châu",
+      "alias": [
+        "Lai Chau"
+      ]
+    },
+    {
+      "name": "Sơn La",
+      "alias": [
+        "Son La"
+      ]
+    },
+    {
+      "name": "Yên Bái",
+      "alias": [
+        "Yen Bai"
+      ]
+    },
+    {
+      "name": "Hòa Bình",
+      "alias": [
+        "Hoa Binh"
+      ]
+    },
+    {
+      "name": "Thái Nguyên",
+      "alias": [
+        "Thai Nguyen"
+      ]
+    },
+    {
+      "name": "Lạng Sơn",
+      "alias": [
+        "Lang Son"
+      ]
+    },
+    {
+      "name": "Quảng Ninh",
+      "alias": [
+        "Quang Ninh"
+      ]
+    },
+    {
+      "name": "Bắc Giang",
+      "alias": [
+        "Bac Giang"
+      ]
+    },
+    {
+      "name": "Phú Thọ",
+      "alias": [
+        "Phu Tho"
+      ]
+    },
+    {
+      "name": "Vĩnh Phúc",
+      "alias": [
+        "Vinh Phuc"
+      ]
+    },
+    {
+      "name": "Bắc Ninh",
+      "alias": [
+        "Bac Ninh"
+      ]
+    },
+    {
+      "name": "Hải Dương",
+      "alias": [
+        "Hai Duong"
+      ]
+    },
+    {
+      "name": "Hải Phòng",
+      "alias": [
+        "Hai Phong"
+      ]
+    },
+    {
+      "name": "Hưng Yên",
+      "alias": [
+        "Hung Yen"
+      ]
+    },
+    {
+      "name": "Thái Bình",
+      "alias": [
+        "Thai Binh"
+      ]
+    },
+    {
+      "name": "Hà Nam",
+      "alias": [
+        "Ha Nam"
+      ]
+    },
+    {
+      "name": "Nam Định",
+      "alias": [
+        "Nam Dinh"
+      ]
+    },
+    {
+      "name": "Ninh Bình",
+      "alias": [
+        "Ninh Binh"
+      ]
+    },
+    {
+      "name": "Thanh Hóa",
+      "alias": [
+        "Thanh Hoa"
+      ]
+    },
+    {
+      "name": "Nghệ An",
+      "alias": [
+        "Nghe An"
+      ]
+    },
+    {
+      "name": "Hà Tĩnh",
+      "alias": [
+        "Ha Tinh"
+      ]
+    },
+    {
+      "name": "Quảng Bình",
+      "alias": [
+        "Quang Binh"
+      ]
+    },
+    {
+      "name": "Quảng Trị",
+      "alias": [
+        "Quang Tri"
+      ]
+    },
+    {
+      "name": "Thừa Thiên–Huế",
+      "alias": [
+        "Thua Thien–Hue",
+        "Thua Thien Hue"
+      ]
+    },
+    {
+      "name": "Đà Nẵng",
+      "alias": [
+        "Da Nang"
+      ]
+    },
+    {
+      "name": "Quảng Nam",
+      "alias": [
+        "Quang Nam"
+      ]
+    },
+    {
+      "name": "Quảng Ngãi",
+      "alias": [
+        "Quang Ngai"
+      ]
+    },
+    {
+      "name": "Bình Định",
+      "alias": [
+        "Binh Dinh"
+      ]
+    },
+    {
+      "name": "Phú Yên",
+      "alias": [
+        "Phu Yen"
+      ]
+    },
+    {
+      "name": "Khánh Hòa",
+      "alias": [
+        "Khanh Hoa"
+      ]
+    },
+    {
+      "name": "Ninh Thuận",
+      "alias": [
+        "Ninh Thuan"
+      ]
+    },
+    {
+      "name": "Bình Thuận",
+      "alias": [
+        "Binh Thuan"
+      ]
+    },
+    {
+      "name": "Kon Tum",
+      "alias": null
+    },
+    {
+      "name": "Gia Lai",
+      "alias": null
+    },
+    {
+      "name": "Đắk Lắk",
+      "alias": [
+        "Dak Lak"
+      ]
+    },
+    {
+      "name": "Đắk Nông",
+      "alias": [
+        "Dak Nong"
+      ]
+    },
+    {
+      "name": "Lâm Đồng",
+      "alias": [
+        "Lam Dong"
+      ]
+    },
+    {
+      "name": "Bình Phước",
+      "alias": [
+        "Binh Phuoc"
+      ]
+    },
+    {
+      "name": "Tây Ninh",
+      "alias": [
+        "Tay Ninh"
+      ]
+    },
+    {
+      "name": "Bình Dương",
+      "alias": [
+        "Binh Duong"
+      ]
+    },
+    {
+      "name": "Đồng Nai",
+      "alias": [
+        "Dong Nai"
+      ]
+    },
+    {
+      "name": "Bà Rịa–Vũng Tàu",
+      "alias": [
+        "Ba Ria–Vung Tau",
+        "Ba Ria Vung Tau"
+      ]
+    },
+    {
+      "name": "Thành phố Hồ Chí Minh",
+      "alias": [
+        "Thanh pho Ho Chi Minh"
+      ]
+    },
+    {
+      "name": "Long An",
+      "alias": null
+    },
+    {
+      "name": "Tiền Giang",
+      "alias": [
+        "Tien Giang"
+      ]
+    },
+    {
+      "name": "Bến Tre",
+      "alias": [
+        "Ben Tre"
+      ]
+    },
+    {
+      "name": "Trà Vinh",
+      "alias": [
+        "Tra Vinh"
+      ]
+    },
+    {
+      "name": "Vĩnh Long",
+      "alias": [
+        "Vinh Long"
+      ]
+    },
+    {
+      "name": "Đồng Tháp",
+      "alias": [
+        "Dong Thap"
+      ]
+    },
+    {
+      "name": "An Giang",
+      "alias": null
+    },
+    {
+      "name": "Kiên Giang",
+      "alias": [
+        "Kien Giang"
+      ]
+    },
+    {
+      "name": "Cần Thơ",
+      "alias": [
+        "Can Thơ"
+      ]
+    },
+    {
+      "name": "Hậu Giang",
+      "alias": [
+        "Hau Giang"
+      ]
+    },
+    {
+      "name": "Sóc Trăng",
+      "alias": [
+        "Soc Trang"
+      ]
+    },
+    {
+      "name": "Bạc Liêu",
+      "alias": [
+        "Bac Lieu"
+      ]
+    },
+    {
+      "name": "Cà Mau",
+      "alias": [
+        "Ca Mau"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "iso2": "CN",
+  "iso3": "CHN",
+  "name": "China",
+  "continent": "AS",
+  "region": "East Asia",
+  "capital": "Beijing",
+  "currency": "CNY",
+  "dialing_code": "86",
+  "provinces": [
+    {
+      "name": "Chongqing",
+      "short": "CQ",
+      "alias": [
+        "重庆",
+        "渝",
+        "Chongqing Shi"
+      ]
+    },
+    {
+      "name": "Heilongjiang",
+      "short": "HL",
+      "alias": [
+        "黑龙江",
+        "黑",
+        "Heilongjiang Sheng"
+      ]
+    },
+    {
+      "name": "Jilin",
+      "short": "JL",
+      "alias": [
+        "吉林",
+        "吉",
+        "Jilin Sheng"
+      ]
+    },
+    {
+      "name": "Hainan",
+      "short": "HI",
+      "alias": [
+        "海南",
+        "琼",
+        "Hainan Sheng"
+      ]
+    },
+    {
+      "name": "Beijing",
+      "short": "BJ",
+      "alias": [
+        "北京",
+        "京",
+        "Beijing Shi"
+      ]
+    },
+    {
+      "name": "Liaoning",
+      "short": "LN",
+      "alias": [
+        "辽宁",
+        "辽",
+        "Liaoning Sheng"
+      ]
+    },
+    {
+      "name": "Inner Mongolia",
+      "short": "NM",
+      "alias": [
+        "内蒙古",
+        "蒙",
+        "Nei Menggu Zizhiqu"
+      ]
+    },
+    {
+      "name": "Tibet",
+      "short": "XZ",
+      "alias": [
+        "Xizang",
+        "西藏",
+        "藏",
+        "Xizang Zizhiqu"
+      ]
+    },
+    {
+      "name": "Qinghai",
+      "short": "QH",
+      "alias": [
+        "青海",
+        "青",
+        "Qinghai Sheng"
+      ]
+    },
+    {
+      "name": "Ningxia",
+      "short": "NX",
+      "alias": [
+        "宁夏",
+        "宁",
+        "Ningxia Huizu Zizhiqu"
+      ]
+    },
+    {
+      "name": "Xinjiang",
+      "short": "XJ",
+      "alias": [
+        "新疆",
+        "新",
+        "Xinjiang Weiwuer Zizhiqu"
+      ]
+    },
+    {
+      "name": "Gansu",
+      "short": "GS",
+      "alias": [
+        "甘肃",
+        "甘",
+        "Gansu Sheng"
+      ]
+    },
+    {
+      "name": "Hebei",
+      "short": "HE",
+      "alias": [
+        "河北",
+        "冀",
+        "Hebei Sheng"
+      ]
+    },
+    {
+      "name": "Henan",
+      "short": "HA",
+      "alias": [
+        "河南",
+        "豫",
+        "Henan Sheng"
+      ]
+    },
+    {
+      "name": "Hubei",
+      "short": "HB",
+      "alias": [
+        "湖北",
+        "鄂",
+        "Hubei Sheng"
+      ]
+    },
+    {
+      "name": "Hunan",
+      "short": "HN",
+      "alias": [
+        "湖南",
+        "湘",
+        "Hunan Sheng"
+      ]
+    },
+    {
+      "name": "Shandong",
+      "short": "SD",
+      "alias": [
+        "山东",
+        "鲁",
+        "Shandong Sheng"
+      ]
+    },
+    {
+      "name": "Jiangsu",
+      "short": "JS",
+      "alias": [
+        "江苏",
+        "苏",
+        "Jiangsu Sheng"
+      ]
+    },
+    {
+      "name": "Anhui",
+      "short": "AH",
+      "alias": [
+        "安徽",
+        "皖",
+        "Anhui Sheng"
+      ]
+    },
+    {
+      "name": "Shanxi",
+      "short": "SX",
+      "alias": [
+        "山西",
+        "晋",
+        "Shānxī Sheng"
+      ]
+    },
+    {
+      "name": "Shaanxi",
+      "short": "SN",
+      "alias": [
+        "陕西",
+        "陕",
+        "Shǎnxī Sheng"
+      ]
+    },
+    {
+      "name": "Sichuan",
+      "short": "SC",
+      "alias": [
+        "四川",
+        "川",
+        "Sichuan Sheng"
+      ]
+    },
+    {
+      "name": "Yunnan",
+      "short": "YN",
+      "alias": [
+        "云南",
+        "滇",
+        "Yunnan Sheng"
+      ]
+    },
+    {
+      "name": "Guizhou",
+      "short": "GZ",
+      "alias": [
+        "贵州",
+        "黔",
+        "Guizhou Sheng"
+      ]
+    },
+    {
+      "name": "Zhejiang",
+      "short": "ZJ",
+      "alias": [
+        "浙江",
+        "浙",
+        "Zhejiang Sheng"
+      ]
+    },
+    {
+      "name": "Fujian",
+      "short": "FJ",
+      "alias": [
+        "福建",
+        "闽",
+        "Fujian Sheng"
+      ]
+    },
+    {
+      "name": "Guangxi",
+      "short": "GX",
+      "alias": [
+        "广西",
+        "桂",
+        "Guangxi Zhuangzu Zizhiqu"
+      ]
+    },
+    {
+      "name": "Shanghai",
+      "short": "SH",
+      "alias": [
+        "上海",
+        "沪",
+        "Shanghai Shi"
+      ]
+    },
+    {
+      "name": "Tianjin",
+      "short": "TJ",
+      "alias": [
+        "天津",
+        "津",
+        "Tianjin Shi"
+      ]
+    },
+    {
+      "name": "Hong Kong",
+      "short": "HK",
+      "alias": [
+        "Xianggang",
+        "香港",
+        "港",
+        "Xianggang Tebie Xingzhengqu"
+      ]
+    },
+    {
+      "name": "Macau",
+      "short": "MC",
+      "alias": [
+        "Aomen",
+        "澳门",
+        "澳",
+        "Aomen Tebie Xingzhengqu"
+      ]
+    },
+    {
+      "name": "Taiwan",
+      "short": "TW",
+      "alias": [
+        "台湾",
+        "台",
+        "Taiwan Shi"
+      ]
+    },
+    {
+      "name": "Jiangxi",
+      "short": "JX ",
+      "alias": [
+        "江西",
+        "赣",
+        "Jiangxi Sheng"
+      ]
+    },
+    {
+      "name": "Guangdong",
+      "short": "GD",
+      "alias": [
+        "广东",
+        "粤",
+        "Guangdong Sheng"
+      ]
+    }
+  ]
+}

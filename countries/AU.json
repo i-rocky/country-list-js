@@ -1,0 +1,91 @@
+{
+  "iso2": "AU",
+  "iso3": "AUS",
+  "name": "Australia",
+  "continent": "OC",
+  "region": "Oceania",
+  "capital": "Canberra",
+  "currency": "AUD",
+  "dialing_code": "61",
+  "provinces": [
+    {
+      "name": "Ashmore and Cartier Islands",
+      "alias": null
+    },
+    {
+      "name": "Australian Antarctic Territory",
+      "alias": null
+    },
+    {
+      "short": "ACT",
+      "name": "Australian Capital Territory",
+      "alias": null
+    },
+    {
+      "short": "CX",
+      "name": "Christmas Island",
+      "alias": null
+    },
+    {
+      "short": "CC",
+      "name": "Cocos Islands",
+      "alias": [
+        "Keeling Islands"
+      ]
+    },
+    {
+      "name": "Coral Sea Islands",
+      "alias": null
+    },
+    {
+      "short": "HM",
+      "name": "Heard Island and McDonald Islands",
+      "alias": null
+    },
+    {
+      "short": "JBT",
+      "name": "Jervis Bay Territory",
+      "alias": null
+    },
+    {
+      "short": "NSW",
+      "name": "New South Wales",
+      "alias": null
+    },
+    {
+      "short": "NF",
+      "name": "Norfolk Island",
+      "alias": null
+    },
+    {
+      "short": "NT",
+      "name": "Northern Territory",
+      "alias": null
+    },
+    {
+      "short": "QLD",
+      "name": "Queensland",
+      "alias": null
+    },
+    {
+      "short": "SA",
+      "name": "South Australia",
+      "alias": null
+    },
+    {
+      "short": "TAS",
+      "name": "Tasmania",
+      "alias": null
+    },
+    {
+      "short": "VIC",
+      "name": "Victoria",
+      "alias": null
+    },
+    {
+      "short": "WA",
+      "name": "Western Australia",
+      "alias": null
+    }
+  ]
+}

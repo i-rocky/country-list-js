@@ -1,0 +1,122 @@
+{
+  "iso2": "AR",
+  "iso3": "ARG",
+  "name": "Argentina",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Buenos Aires",
+  "currency": "ARS",
+  "dialing_code": "54",
+  "provinces": [
+    {
+      "name": "Ciudad Autónoma de Buenos Aires",
+      "alias": [
+        "Ciudad Autonoma de Buenos Aires"
+      ]
+    },
+    {
+      "name": "Buenos Aires",
+      "alias": null
+    },
+    {
+      "name": "Catamarca",
+      "alias": null
+    },
+    {
+      "name": "Chaco",
+      "alias": null
+    },
+    {
+      "name": "Chubut",
+      "alias": null
+    },
+    {
+      "name": "Córdoba",
+      "alias": [
+        "Cordoba"
+      ]
+    },
+    {
+      "name": "Corrientes",
+      "alias": null
+    },
+    {
+      "name": "Entre Ríos",
+      "alias": [
+        "Entre Rios"
+      ]
+    },
+    {
+      "name": "Formosa",
+      "alias": null
+    },
+    {
+      "name": "Jujuy",
+      "alias": null
+    },
+    {
+      "name": "La Pampa",
+      "alias": null
+    },
+    {
+      "name": "La Rioja",
+      "alias": null
+    },
+    {
+      "name": "Mendoza",
+      "alias": null
+    },
+    {
+      "name": "Misiones",
+      "alias": null
+    },
+    {
+      "name": "Neuquén",
+      "alias": [
+        "Neuquen"
+      ]
+    },
+    {
+      "name": "Río Negro",
+      "alias": [
+        "Rio Negro"
+      ]
+    },
+    {
+      "name": "Salta",
+      "alias": null
+    },
+    {
+      "name": "San Juan",
+      "alias": null
+    },
+    {
+      "name": "San Luis",
+      "alias": null
+    },
+    {
+      "name": "Santa Cruz",
+      "alias": null
+    },
+    {
+      "name": "Santa Fe",
+      "alias": null
+    },
+    {
+      "name": "Santiago del Estero",
+      "alias": null
+    },
+    {
+      "name": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+      "alias": [
+        "Tierra del Fuego, Antartida e Islas del Atlantico Sur"
+      ]
+    },
+    {
+      "name": "Tucumán",
+      "alias": [
+        "Tucuman"
+      ]
+    }
+  ]
+}

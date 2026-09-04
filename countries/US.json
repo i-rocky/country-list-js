@@ -1,0 +1,312 @@
+{
+  "iso2": "US",
+  "iso3": "USA",
+  "name": "United States",
+  "continent": "NA",
+  "region": "North America",
+  "capital": "Washington",
+  "currency": "USD",
+  "dialing_code": "1",
+  "provinces": [
+    {
+      "short": "AL",
+      "name": "Alabama",
+      "alias": null
+    },
+    {
+      "short": "AK",
+      "name": "Alaska",
+      "alias": null
+    },
+    {
+      "short": "AZ",
+      "name": "Arizona",
+      "alias": null
+    },
+    {
+      "short": "AR",
+      "name": "Arkansas",
+      "alias": null
+    },
+    {
+      "short": "CA",
+      "name": "California",
+      "alias": null
+    },
+    {
+      "short": "CO",
+      "name": "Colorado",
+      "alias": null
+    },
+    {
+      "short": "CT",
+      "name": "Connecticut",
+      "alias": null
+    },
+    {
+      "short": "DC",
+      "name": "District of Columbia",
+      "alias": null
+    },
+    {
+      "short": "DE",
+      "name": "Delaware",
+      "alias": null
+    },
+    {
+      "short": "FL",
+      "name": "Florida",
+      "alias": null
+    },
+    {
+      "short": "FM",
+      "name": "Micronesia",
+      "alias": null
+    },
+    {
+      "short": "GA",
+      "name": "Georgia",
+      "alias": null
+    },
+    {
+      "short": "HI",
+      "name": "Hawaii",
+      "alias": null
+    },
+    {
+      "short": "ID",
+      "name": "Idaho",
+      "alias": null
+    },
+    {
+      "short": "IL",
+      "name": "Illinois",
+      "alias": null
+    },
+    {
+      "short": "IN",
+      "name": "Indiana",
+      "alias": null
+    },
+    {
+      "short": "IA",
+      "name": "Iowa",
+      "alias": null
+    },
+    {
+      "short": "KS",
+      "name": "Kansas",
+      "alias": null
+    },
+    {
+      "short": "KY",
+      "name": "Kentucky",
+      "alias": null
+    },
+    {
+      "short": "LA",
+      "name": "Louisiana",
+      "alias": null
+    },
+    {
+      "short": "ME",
+      "name": "Maine",
+      "alias": null
+    },
+    {
+      "short": "MD",
+      "name": "Maryland",
+      "alias": null
+    },
+    {
+      "short": "MA",
+      "name": "Massachusetts",
+      "alias": null
+    },
+    {
+      "short": "MI",
+      "name": "Michigan",
+      "alias": null
+    },
+    {
+      "short": "MN",
+      "name": "Minnesota",
+      "alias": null
+    },
+    {
+      "short": "MH",
+      "name": "Marshall Islands",
+      "alias": null
+    },
+    {
+      "short": "MS",
+      "name": "Mississippi",
+      "alias": null
+    },
+    {
+      "short": "MO",
+      "name": "Missouri",
+      "alias": null
+    },
+    {
+      "short": "MT",
+      "name": "Montana",
+      "alias": null
+    },
+    {
+      "short": "NE",
+      "name": "Nebraska",
+      "alias": null
+    },
+    {
+      "short": "NV",
+      "name": "Nevada",
+      "alias": null
+    },
+    {
+      "short": "NH",
+      "name": "New Hampshire",
+      "alias": null
+    },
+    {
+      "short": "NJ",
+      "name": "New Jersey",
+      "alias": null
+    },
+    {
+      "short": "NM",
+      "name": "New Mexico",
+      "alias": null
+    },
+    {
+      "short": "NY",
+      "name": "New York",
+      "alias": null
+    },
+    {
+      "short": "NC",
+      "name": "North Carolina",
+      "alias": null
+    },
+    {
+      "short": "ND",
+      "name": "North Dakota",
+      "alias": null
+    },
+    {
+      "short": "OH",
+      "name": "Ohio",
+      "alias": null
+    },
+    {
+      "short": "OK",
+      "name": "Oklahoma",
+      "alias": null
+    },
+    {
+      "short": "OR",
+      "name": "Oregon",
+      "alias": null
+    },
+    {
+      "short": "PA",
+      "name": "Pennsylvania",
+      "alias": null
+    },
+    {
+      "short": "PW",
+      "name": "Palau",
+      "alias": null
+    },
+    {
+      "short": "RI",
+      "name": "Rhode Island",
+      "alias": null
+    },
+    {
+      "short": "SC",
+      "name": "South Carolina",
+      "alias": null
+    },
+    {
+      "short": "SD",
+      "name": "South Dakota",
+      "alias": null
+    },
+    {
+      "short": "TN",
+      "name": "Tennessee",
+      "alias": null
+    },
+    {
+      "short": "TX",
+      "name": "Texas",
+      "alias": null
+    },
+    {
+      "short": "UT",
+      "name": "Utah",
+      "alias": null
+    },
+    {
+      "short": "VT",
+      "name": "Vermont",
+      "alias": null
+    },
+    {
+      "short": "VA",
+      "name": "Virginia",
+      "alias": null
+    },
+    {
+      "short": "WA",
+      "name": "Washington",
+      "alias": null
+    },
+    {
+      "short": "WV",
+      "name": "West Virginia",
+      "alias": null
+    },
+    {
+      "short": "WI",
+      "name": "Wisconsin",
+      "alias": null
+    },
+    {
+      "short": "WY",
+      "name": "Wyoming",
+      "alias": null
+    },
+    {
+      "short": "AS",
+      "name": "American Samoa",
+      "alias": null
+    },
+    {
+      "short": "GU",
+      "name": "Guam",
+      "alias": null
+    },
+    {
+      "short": "MP",
+      "name": "Northern Mariana Islands",
+      "alias": null
+    },
+    {
+      "short": "PR",
+      "name": "Puerto Rico",
+      "alias": null
+    },
+    {
+      "short": "UM",
+      "name": "United States Minor Outlying Islands",
+      "alias": null
+    },
+    {
+      "short": "VI",
+      "name": "Virgin Islands",
+      "alias": null
+    }
+  ]
+}

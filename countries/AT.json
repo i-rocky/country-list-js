@@ -1,0 +1,63 @@
+{
+  "iso2": "AT",
+  "iso3": "AUT",
+  "name": "Austria",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Vienna",
+  "currency": "EUR",
+  "dialing_code": "43",
+  "provinces": [
+    {
+      "short": "B",
+      "name": "Burgenland",
+      "alias": null
+    },
+    {
+      "short": "K",
+      "name": "Kärnten",
+      "alias": [
+        "Karnten"
+      ]
+    },
+    {
+      "short": "NÖ",
+      "name": "Niederösterreich",
+      "alias": [
+        "Niederosterreich"
+      ]
+    },
+    {
+      "short": "OÖ",
+      "name": "Oberösterreich",
+      "alias": [
+        "Oberosterreich"
+      ]
+    },
+    {
+      "short": "S",
+      "name": "Salzburg",
+      "alias": null
+    },
+    {
+      "short": "ST",
+      "name": "Steiermark",
+      "alias": null
+    },
+    {
+      "short": "T",
+      "name": "Tirol",
+      "alias": null
+    },
+    {
+      "short": "V",
+      "name": "Vorarlberg",
+      "alias": null
+    },
+    {
+      "short": "W",
+      "name": "Wien",
+      "alias": null
+    }
+  ]
+}

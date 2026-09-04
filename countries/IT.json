@@ -1,0 +1,542 @@
+{
+  "iso2": "IT",
+  "iso3": "ITA",
+  "name": "Italy",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Rome",
+  "currency": "EUR",
+  "dialing_code": "39",
+  "provinces": [
+    {
+      "short": "AG",
+      "name": "Agrigento",
+      "alias": null
+    },
+    {
+      "short": "AL",
+      "name": "Alessandria",
+      "alias": null
+    },
+    {
+      "short": "AN",
+      "name": "Ancona",
+      "alias": null
+    },
+    {
+      "short": "AO",
+      "name": "Aosta",
+      "alias": null
+    },
+    {
+      "short": "AR",
+      "name": "Arezzo",
+      "alias": null
+    },
+    {
+      "short": "AP",
+      "name": "Ascoli Piceno",
+      "alias": null
+    },
+    {
+      "short": "AT",
+      "name": "Asti",
+      "alias": null
+    },
+    {
+      "short": "AV",
+      "name": "Avellino",
+      "alias": null
+    },
+    {
+      "short": "BA",
+      "name": "Bari",
+      "alias": null
+    },
+    {
+      "short": "BT",
+      "name": "Barletta-Andria-Trani",
+      "alias": null
+    },
+    {
+      "short": "BL",
+      "name": "Belluno",
+      "alias": null
+    },
+    {
+      "short": "BN",
+      "name": "Benevento",
+      "alias": null
+    },
+    {
+      "short": "BG",
+      "name": "Bergamo",
+      "alias": null
+    },
+    {
+      "short": "BI",
+      "name": "Biella",
+      "alias": null
+    },
+    {
+      "short": "BO",
+      "name": "Bologna",
+      "alias": null
+    },
+    {
+      "short": "BZ",
+      "name": "Bolzano",
+      "alias": null
+    },
+    {
+      "short": "BS",
+      "name": "Brescia",
+      "alias": null
+    },
+    {
+      "short": "BR",
+      "name": "Brindisi",
+      "alias": null
+    },
+    {
+      "short": "CA",
+      "name": "Cagliari",
+      "alias": null
+    },
+    {
+      "short": "CL",
+      "name": "Caltanissetta",
+      "alias": null
+    },
+    {
+      "short": "CB",
+      "name": "Campobasso",
+      "alias": null
+    },
+    {
+      "short": "CE",
+      "name": "Caserta",
+      "alias": null
+    },
+    {
+      "short": "CT",
+      "name": "Catania",
+      "alias": null
+    },
+    {
+      "short": "CZ",
+      "name": "Catanzaro",
+      "alias": null
+    },
+    {
+      "short": "CH",
+      "name": "Chieti",
+      "alias": null
+    },
+    {
+      "short": "CO",
+      "name": "Como",
+      "alias": null
+    },
+    {
+      "short": "CS",
+      "name": "Cosenza",
+      "alias": null
+    },
+    {
+      "short": "CR",
+      "name": "Cremona",
+      "alias": null
+    },
+    {
+      "short": "KR",
+      "name": "Crotone",
+      "alias": null
+    },
+    {
+      "short": "CN",
+      "name": "Cuneo",
+      "alias": null
+    },
+    {
+      "short": "EN",
+      "name": "Enna",
+      "alias": null
+    },
+    {
+      "short": "FM",
+      "name": "Fermo",
+      "alias": null
+    },
+    {
+      "short": "FE",
+      "name": "Ferrara",
+      "alias": null
+    },
+    {
+      "short": "FI",
+      "name": "Firenze",
+      "alias": null
+    },
+    {
+      "short": "FG",
+      "name": "Foggia",
+      "alias": null
+    },
+    {
+      "short": "FC",
+      "name": "Forlì-Cesena",
+      "alias": null
+    },
+    {
+      "short": "FR",
+      "name": "Frosinone",
+      "alias": null
+    },
+    {
+      "short": "GE",
+      "name": "Genova",
+      "alias": null
+    },
+    {
+      "short": "GO",
+      "name": "Gorizia",
+      "alias": null
+    },
+    {
+      "short": "GR",
+      "name": "Grosseto",
+      "alias": null
+    },
+    {
+      "short": "IM",
+      "name": "Imperia",
+      "alias": null
+    },
+    {
+      "short": "IS",
+      "name": "Isernia",
+      "alias": null
+    },
+    {
+      "short": "AQ",
+      "name": "L'Aquila",
+      "alias": null
+    },
+    {
+      "short": "SP",
+      "name": "La Spezia",
+      "alias": null
+    },
+    {
+      "short": "LT",
+      "name": "Latina",
+      "alias": null
+    },
+    {
+      "short": "LE",
+      "name": "Lecce",
+      "alias": null
+    },
+    {
+      "short": "LC",
+      "name": "Lecco",
+      "alias": null
+    },
+    {
+      "short": "LI",
+      "name": "Livorno",
+      "alias": null
+    },
+    {
+      "short": "LO",
+      "name": "Lodi",
+      "alias": null
+    },
+    {
+      "short": "LU",
+      "name": "Lucca",
+      "alias": null
+    },
+    {
+      "short": "MC",
+      "name": "Macerata",
+      "alias": null
+    },
+    {
+      "short": "MN",
+      "name": "Mantova",
+      "alias": null
+    },
+    {
+      "short": "MS",
+      "name": "Massa-Carrara",
+      "alias": null
+    },
+    {
+      "short": "MT",
+      "name": "Matera",
+      "alias": null
+    },
+    {
+      "short": "ME",
+      "name": "Messina",
+      "alias": null
+    },
+    {
+      "short": "MI",
+      "name": "Milano",
+      "alias": null
+    },
+    {
+      "short": "MO",
+      "name": "Modena",
+      "alias": null
+    },
+    {
+      "short": "MB",
+      "name": "Monza e della Brianza",
+      "alias": null
+    },
+    {
+      "short": "NA",
+      "name": "Napoli",
+      "alias": null
+    },
+    {
+      "short": "NO",
+      "name": "Novara",
+      "alias": null
+    },
+    {
+      "short": "NU",
+      "name": "Nuoro",
+      "alias": null
+    },
+    {
+      "short": "OR",
+      "name": "Oristano",
+      "alias": null
+    },
+    {
+      "short": "PD",
+      "name": "Padova",
+      "alias": null
+    },
+    {
+      "short": "PA",
+      "name": "Palermo",
+      "alias": null
+    },
+    {
+      "short": "PR",
+      "name": "Parma",
+      "alias": null
+    },
+    {
+      "short": "PV",
+      "name": "Pavia",
+      "alias": null
+    },
+    {
+      "short": "PG",
+      "name": "Perugia",
+      "alias": null
+    },
+    {
+      "short": "PU",
+      "name": "Pesaro e Urbino",
+      "alias": null
+    },
+    {
+      "short": "PE",
+      "name": "Pescara",
+      "alias": null
+    },
+    {
+      "short": "PC",
+      "name": "Piacenza",
+      "alias": null
+    },
+    {
+      "short": "PI",
+      "name": "Pisa",
+      "alias": null
+    },
+    {
+      "short": "PT",
+      "name": "Pistoia",
+      "alias": null
+    },
+    {
+      "short": "PN",
+      "name": "Pordenone",
+      "alias": null
+    },
+    {
+      "short": "PZ",
+      "name": "Potenza",
+      "alias": null
+    },
+    {
+      "short": "PO",
+      "name": "Prato",
+      "alias": null
+    },
+    {
+      "short": "RG",
+      "name": "Ragusa",
+      "alias": null
+    },
+    {
+      "short": "RA",
+      "name": "Ravenna",
+      "alias": null
+    },
+    {
+      "short": "RC",
+      "name": "Reggio Calabria",
+      "alias": null
+    },
+    {
+      "short": "RE",
+      "name": "Reggio Emilia",
+      "alias": null
+    },
+    {
+      "short": "RI",
+      "name": "Rieti",
+      "alias": null
+    },
+    {
+      "short": "RN",
+      "name": "Rimini",
+      "alias": null
+    },
+    {
+      "short": "RM",
+      "name": "Roma",
+      "alias": null
+    },
+    {
+      "short": "RO",
+      "name": "Rovigo",
+      "alias": null
+    },
+    {
+      "short": "SA",
+      "name": "Salerno",
+      "alias": null
+    },
+    {
+      "short": "SS",
+      "name": "Sassari",
+      "alias": null
+    },
+    {
+      "short": "SV",
+      "name": "Savona",
+      "alias": null
+    },
+    {
+      "short": "SI",
+      "name": "Siena",
+      "alias": null
+    },
+    {
+      "short": "SR",
+      "name": "Siracusa",
+      "alias": null
+    },
+    {
+      "short": "SO",
+      "name": "Sondrio",
+      "alias": null
+    },
+    {
+      "short": "TA",
+      "name": "Taranto",
+      "alias": null
+    },
+    {
+      "short": "TE",
+      "name": "Teramo",
+      "alias": null
+    },
+    {
+      "short": "TR",
+      "name": "Terni",
+      "alias": null
+    },
+    {
+      "short": "TO",
+      "name": "Torino",
+      "alias": null
+    },
+    {
+      "short": "TP",
+      "name": "Trapani",
+      "alias": null
+    },
+    {
+      "short": "TN",
+      "name": "Trento",
+      "alias": null
+    },
+    {
+      "short": "TV",
+      "name": "Treviso",
+      "alias": null
+    },
+    {
+      "short": "TS",
+      "name": "Trieste",
+      "alias": null
+    },
+    {
+      "short": "UD",
+      "name": "Udine",
+      "alias": null
+    },
+    {
+      "short": "VA",
+      "name": "Varese",
+      "alias": null
+    },
+    {
+      "short": "VE",
+      "name": "Venezia",
+      "alias": null
+    },
+    {
+      "short": "VB",
+      "name": "Verbano-Cusio-Ossola",
+      "alias": null
+    },
+    {
+      "short": "VC",
+      "name": "Vercelli",
+      "alias": null
+    },
+    {
+      "short": "VR",
+      "name": "Verona",
+      "alias": null
+    },
+    {
+      "short": "VV",
+      "name": "Vibo Valentia",
+      "alias": null
+    },
+    {
+      "short": "VI",
+      "name": "Vicenza",
+      "alias": null
+    },
+    {
+      "short": "VT",
+      "name": "Viterbo",
+      "alias": null
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "iso2": "JO",
+  "iso3": "JOR",
+  "name": "Jordan",
+  "continent": "AS",
+  "region": "Western Asia, Middle East",
+  "capital": "Amman",
+  "currency": "JOD",
+  "dialing_code": "962",
+  "provinces": [
+    {
+      "name": "Irbid",
+      "alias": null
+    },
+    {
+      "name": "Ajloun",
+      "alias": null
+    },
+    {
+      "name": "Jerash",
+      "alias": null
+    },
+    {
+      "name": "Mafraq",
+      "alias": null
+    },
+    {
+      "name": "Balqa",
+      "alias": null
+    },
+    {
+      "name": "Amman",
+      "alias": null
+    },
+    {
+      "name": "Zarqa",
+      "alias": null
+    },
+    {
+      "name": "Madaba",
+      "alias": null
+    },
+    {
+      "name": "Karak",
+      "alias": null
+    },
+    {
+      "name": "Tafilah",
+      "alias": null
+    },
+    {
+      "name": "Ma'an",
+      "alias": null
+    },
+    {
+      "name": "Aqaba",
+      "alias": null
+    }
+  ]
+}
