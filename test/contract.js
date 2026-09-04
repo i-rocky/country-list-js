@@ -110,6 +110,11 @@ const CHANGED = {
         'carried the fix since before v3.1.8, but the v3.1.8 tag was cut off ' +
         'master and published a tree where it had been reverted.',
     ES: 'provinces 46 -> 48.  Merged community fixes (PRs #71, #75).',
+    GB: 'subdivisions 114 -> 4. The list was historic counties, and four of ' +
+        'them -- Avon, Cleveland, Humberside, Middlesex -- have not existed ' +
+        'since 1996, 1996, 1996 and 1965. Replaced with what ISO 3166-2:GB ' +
+        'actually defines at the first tier: England, Northern Ireland, ' +
+        'Scotland and Wales.',
     NG: 'provinces 12 -> 36.  Merged community fix (PR #69).',
 
     ET: STRING_ALIAS, VN: STRING_ALIAS,
