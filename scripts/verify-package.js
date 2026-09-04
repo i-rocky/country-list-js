@@ -25,7 +25,7 @@ const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'country-list-js-verify-'));
 let failed = false;
 
 try {
-    console.log('packing into %s', dir);
+    console.error('packing into %s', dir);
     run('npm', ['pack', '--pack-destination', dir], root);
 
     const tarball = fs.readdirSync(dir).find(f => f.endsWith('.tgz'));
@@ -34,19 +34,19 @@ try {
     fs.writeFileSync(path.join(dir, 'package.json'),
         JSON.stringify({name: 'verify', version: '1.0.0', private: true}) + '\n');
 
-    console.log('\ninstalling %s alongside country-list-js@%s', tarball, BASELINE);
+    console.error('\ninstalling %s alongside country-list-js@%s', tarball, BASELINE);
     run('npm', ['install', './' + tarball, 'old@npm:country-list-js@' + BASELINE,
                 '--no-audit', '--no-fund'], dir);
 
     for (const f of ['cjs.js', 'esm.mjs'])
         fs.copyFileSync(path.join(root, 'test', 'package', f), path.join(dir, f));
 
-    console.log();
+    console.error();
     run('node', ['cjs.js'], dir);
     run('node', ['esm.mjs'], dir);
     run('node', [path.join(root, 'test', 'package', 'browser.js')], root);
 
-    console.log('\npackage verified against the published %s', BASELINE);
+    console.error('\npackage verified against the published %s', BASELINE);
 } catch (e) {
     failed = true;
     console.error('\nPACKAGE VERIFICATION FAILED: %s', e.message);

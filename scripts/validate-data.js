@@ -172,14 +172,14 @@ if (problems.length) {
 const withProvinces = codes.filter(c => countries[c].provinces);
 const count = f => codes.filter(c => countries[c][f] !== undefined).length;
 
-console.log('%d countries, %d with provinces (%d subdivisions), %d currencies, ' +
+console.error('%d countries, %d with provinces (%d subdivisions), %d currencies, ' +
     '%d continents, %d aliases, %d unassigned dialing codes -- all valid',
     codes.length, withProvinces.length,
     withProvinces.reduce((n, c) => n + countries[c].provinces.length, 0),
     Object.keys(currencies).length, Object.keys(continents).length,
     Object.keys(aliases).length, Object.keys(unassigned).length);
 
-console.log('coverage: %s',
+console.error('coverage: %s',
     ['iso_numeric', 'native_name', 'demonym', 'languages', 'tld', 'area',
      'latlng', 'timezones', 'borders']
         .map(f => f + ' ' + count(f)).join(', '));

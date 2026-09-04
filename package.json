@@ -68,16 +68,19 @@
     "geography"
   ],
   "scripts": {
-    "build:data": "node scripts/build.js",
+    "build": "npm run build:data && npm run build:types && npm run build:bundles",
+    "build:data": "node scripts/build-data.js",
     "build:types": "tsc",
-    "build:bundle": "node scripts/bundle.js",
-    "build": "npm run build:data && npm run build:types && npm run build:bundle",
-    "validate": "node scripts/validate.js",
+    "build:bundles": "node scripts/build-bundles.js",
+    "site": "node scripts/build-site.js",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate-data.js",
+    "test:unit": "mocha test/*.js",
+    "test": "npm run lint && npm run typecheck && npm run validate && npm run test:unit",
+    "verify": "node scripts/verify-package.js",
     "prepare": "npm run build",
-    "pretest": "npm run build",
-    "test": "eslint . && npm run validate && mocha test/*.js",
-    "verify:package": "node scripts/verify-package.js"
+    "pretest": "npm run build"
   },
   "devDependencies": {
     "ajv": "^8.20.0",

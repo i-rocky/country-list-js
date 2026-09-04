@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 const version = process.argv[2];
-if (!version) { console.error('usage: node scripts/changelog-section.js <version>'); process.exit(1); }
+if (!version) { console.error('usage: node scripts/release-notes.js <version>'); process.exit(1); }
 
 const changelog = fs.readFileSync(path.join(__dirname, '..', 'CHANGELOG.md'), 'utf8');
 const lines = changelog.split('\n');

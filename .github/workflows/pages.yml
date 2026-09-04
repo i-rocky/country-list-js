@@ -29,9 +29,9 @@ jobs:
       - uses: actions/setup-node@v4
         with: {node-version: '22', cache: npm}
       - run: npm ci
-      - run: cp dist/country.min.js docs/
+      - run: npm run site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
-        with: {path: docs}
+        with: {path: build/site}
       - id: deploy
         uses: actions/deploy-pages@v4

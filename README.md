@@ -153,6 +153,12 @@ follow de-facto rather than universally recognised boundaries.
 
 **Subdivisions** are first-tier only, and 31 of the 250 countries have them.
 
+**Sources.** Native names, demonyms, languages, TLDs, areas, coordinates,
+borders and the alternative-name list were imported from
+[countryinfo](https://github.com/porimol/countryinfo), which is MIT licensed.
+The imports are recorded in `scripts/import/`; the data is maintained here, in
+`catalog/`.
+
 ## TypeScript
 
 Types ship with the package; nothing extra to install. The ISO code types are
@@ -175,9 +181,10 @@ edit it.
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ```sh
-npm install        # also builds data/
-npm test           # lint, validate the data, run the suite
+npm install        # installs, and builds data/
+npm test           # lint, typecheck, validate the data, run the suite
 npm run build      # data, types and bundles
+npm run site       # assemble the demo site into build/site/
 ```
 
 ## Licence

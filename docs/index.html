@@ -216,9 +216,9 @@ footer p{margin:.45rem 0;max-width:52rem}
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   };
 
-  // The page is served from docs/ on Pages, where the bundle sits beside it.
-  // Opened straight off a clean checkout there is nothing to load, so fall back
-  // to the CDN -- which also happens to be exactly how the README says to use it.
+  // The page is published from build/site/, where the bundle sits beside it.
+  // Opened straight out of docs/ there is nothing to load, so fall back to the
+  // CDN -- which also happens to be exactly how the README says to use it.
   function boot() {
     if (typeof country !== 'undefined') return start();
     var s = document.createElement('script');
@@ -232,7 +232,7 @@ footer p{margin:.45rem 0;max-width:52rem}
 
   function fail(msg) {
     $('#results').innerHTML = '<p class="notice"><b>' + esc(msg) + '</b><br>'
-      + 'Run <code>npm run build</code> and copy <code>dist/country.min.js</code> into <code>docs/</code>, '
+      + 'Run <code>npm run build && npm run site</code> and serve <code>build/site/</code>, '
       + 'or open this page over http rather than from the filesystem.</p>';
   }
 

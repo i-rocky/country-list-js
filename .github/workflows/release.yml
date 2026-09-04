@@ -56,9 +56,6 @@ jobs:
         run: npm ci
 
       - if: steps.plan.outputs.publish == 'true'
-        run: npm run typecheck
-
-      - if: steps.plan.outputs.publish == 'true'
         run: npm test
 
       # Packs the tarball, installs it into a throwaway project beside the last
@@ -66,7 +63,7 @@ jobs:
       # every deep import, both module systems, the types, the browser bundle.
       # A broken exports map or a file missing from `files` fails here.
       - if: steps.plan.outputs.publish == 'true'
-        run: npm run verify:package
+        run: npm run verify
 
       - name: Publish ${{ steps.plan.outputs.version }} to the ${{ steps.plan.outputs.tag }} tag
         if: steps.plan.outputs.publish == 'true'
@@ -83,6 +80,6 @@ jobs:
         run: |
           git tag "v$VERSION"
           git push origin "v$VERSION"
-          node scripts/changelog-section.js "$VERSION" > /tmp/notes.md
+          node scripts/release-notes.js "$VERSION" > /tmp/notes.md
           gh release create "v$VERSION" --title "v$VERSION" --notes-file /tmp/notes.md \
             $([ "$TAG" = "next" ] && echo --prerelease)

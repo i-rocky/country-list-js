@@ -1,5 +1,5 @@
 // Public types.  Iso2, Iso3 and CurrencyCode are generated from the data by
-// scripts/build.js, so an editor autocompletes all 250 codes and a typo is a
+// scripts/build-data.js, so an editor autocompletes all 250 codes and a typo is a
 // compile error rather than an undefined at runtime.
 
 import type {Iso2, Iso3, CurrencyCode, ContinentName} from './generated';

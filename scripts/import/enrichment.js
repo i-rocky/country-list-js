@@ -11,18 +11,18 @@
 //
 // Kept so the import is reproducible and reviewable, not so it runs in CI.
 //
-//   node scripts/import-enrichment.js <countryinfo/data> <zone.tab> <zone1970.tab>
+//   node scripts/import/enrichment.js <countryinfo/data> <zone.tab> <zone1970.tab>
 
 const fs = require('fs');
 const path = require('path');
 
 const [source, zoneTab, zone1970Tab] = process.argv.slice(2);
 if (!source || !zoneTab || !zone1970Tab) {
-    console.error('usage: node scripts/import-enrichment.js <countryinfo data dir> <zone.tab> <zone1970.tab>');
+    console.error('usage: node scripts/import/enrichment.js <countryinfo data dir> <zone.tab> <zone1970.tab>');
     process.exit(1);
 }
 
-const root = path.join(__dirname, '..');
+const root = path.join(__dirname, '..', '..');
 const countries = {};
 for (const f of fs.readdirSync(path.join(root, 'catalog', 'countries'))) {
     const c = JSON.parse(fs.readFileSync(path.join(root, 'catalog', 'countries', f), 'utf8'));
@@ -163,14 +163,14 @@ for (const [iso2, e] of Object.entries(extra)) {
 }
 
 const coverage = f => Object.values(extra).filter(e => e[f] !== undefined).length;
-console.log('enriched %d of %d countries\n', written, Object.keys(countries).length);
+console.error('enriched %d of %d countries\n', written, Object.keys(countries).length);
 for (const f of ['iso_numeric', 'native_name', 'demonym', 'languages', 'tld',
                  'area', 'latlng', 'timezones', 'borders'])
-    console.log('  %s %s / 250', f.padEnd(13), String(coverage(f)).padStart(3));
+    console.error('  %s %s / 250', f.padEnd(13), String(coverage(f)).padStart(3));
 
-console.log('\nzones in zone1970.tab this Node does not recognise: %d%s',
+console.error('\nzones in zone1970.tab this Node does not recognise: %d%s',
     unknownZones.size, unknownZones.size ? ' (' + [...unknownZones].join(', ') + ')' : '');
-console.log('border codes that map to no country in our set: %d%s',
+console.error('border codes that map to no country in our set: %d%s',
     unmappedBorders.size, unmappedBorders.size ? ' (' + [...unmappedBorders].join(', ') + ')' : '');
-console.log('reverse borders added to make the relation symmetric: %d%s', added.length,
+console.error('reverse borders added to make the relation symmetric: %d%s', added.length,
     added.length ? '\n  ' + added.join('\n  ') : '');

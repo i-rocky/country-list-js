@@ -17,11 +17,11 @@ const path = require('path');
 
 const source = process.argv[2];
 if (!source) {
-    console.error('usage: node scripts/import-aliases.js <path to countryinfo/countryinfo/data>');
+    console.error('usage: node scripts/import/aliases.js <path to countryinfo/countryinfo/data>');
     process.exit(1);
 }
 
-const root = path.join(__dirname, '..');
+const root = path.join(__dirname, '..', '..');
 const ours = {};
 for (const f of fs.readdirSync(path.join(root, 'catalog', 'countries'))) {
     const c = JSON.parse(fs.readFileSync(path.join(root, 'catalog', 'countries', f), 'utf8'));
@@ -117,8 +117,8 @@ for (const [alias, owners] of [...claims].sort((a, b) => a[0].localeCompare(b[0]
 fs.writeFileSync(path.join(root, 'catalog', 'reference', 'name-aliases.json'),
     JSON.stringify(aliases, null, 2) + '\n');
 
-console.log('kept %d aliases for %d countries',
+console.error('kept %d aliases for %d countries',
     Object.keys(aliases).length, new Set(Object.values(aliases)).size);
 for (const [why, list] of Object.entries(rejected))
-    if (list.length) console.log('  rejected %d as %s%s', list.length, why,
+    if (list.length) console.error('  rejected %d as %s%s', list.length, why,
         list.length <= 6 ? ': ' + list.join(', ') : '');
