@@ -28,6 +28,8 @@ const order = readJson('reference/order.json');
 const continents = readJson('reference/continents.json');
 const currencies = readJson('reference/currencies.json');
 const unassigned = readJson('reference/unassigned-dialing-codes.json');
+const retired = readJson('reference/retired-currencies.json');
+const aliases = readJson('reference/name-aliases.json');
 
 const countries = order.map(code => readJson('countries/' + code + '.json'));
 
@@ -42,6 +44,22 @@ if (files.join() !== [...order].sort().join())
     fail('countries/ and reference/order.json disagree: ' +
         'only in countries/: [' + files.filter(f => !order.includes(f)) + '], ' +
         'only in order.json: [' + order.filter(o => !files.includes(o)) + ']');
+
+for (const [alias, iso2] of Object.entries(aliases)) {
+    if (!order.includes(iso2))
+        fail('alias ' + JSON.stringify(alias) + ' points at ' + iso2 + ', which does not exist');
+    if (countries.some(c => c.name === alias && c.iso2 !== iso2))
+        fail('alias ' + JSON.stringify(alias) + ' is another country\'s real name');
+}
+
+for (const [code, r] of Object.entries(retired)) {
+    if (!currencies[r.successor])
+        fail('retired currency ' + code + ' names successor ' + r.successor +
+            ', which reference/currencies.json does not define');
+    for (const iso2 of r.countries)
+        if (!order.includes(iso2))
+            fail('retired currency ' + code + ' names country ' + iso2 + ', which does not exist');
+}
 
 for (const c of countries) {
     if (!currencies[c.currency])
@@ -96,6 +114,15 @@ const written = [
 
     write('continents.json', continents, true),
     write('currency_info.json', currencies, true),
+
+    // codes that ISO 4217 has retired, kept resolvable so that a lookup which
+    // works today does not start answering undefined once the data is corrected
+    write('retired-currencies.json', retired, true),
+
+    // alternative country names -- native forms, official long forms, and the
+    // modern ISO short names for the countries this dataset still lists under
+    // their older name
+    write('name-aliases.json', aliases, true),
 ];
 
 console.log('built %d files from %d countries', written.length, countries.length);

@@ -21,6 +21,9 @@ const STRING_ALIAS =
     'findByProvince("B") answered Vietnam and the empty string matched all ' +
     'three.  The three are now arrays like the other 440.';
 
+const currency = (from, to, on, why) =>
+    'currency ' + from + ' -> ' + to + ' on ' + on + ' (' + why + ').';
+
 const CHANGED = {
     BY: 'currency BYR -> BYN.  Belarus redenominated in 2016; master has ' +
         'carried the fix since before v3.1.8, but the v3.1.8 tag was cut off ' +
@@ -29,13 +32,39 @@ const CHANGED = {
     NG: 'provinces 12 -> 36.  Merged community fix (PR #69).',
 
     ET: STRING_ALIAS, TR: STRING_ALIAS, VN: STRING_ALIAS,
+
+    // ISO 4217 corrections.  Every one is a documented redenomination or euro
+    // accession, and the retired code stays resolvable through
+    // reference/retired-currencies.json, so findByCurrency('HRK') still
+    // answers Croatia rather than turning into undefined.
+    HR: currency('HRK', 'EUR', '2023-01-01', 'euro area accession'),
+    LT: currency('LTL', 'EUR', '2015-01-01', 'euro area accession'),
+    BG: currency('BGN', 'EUR', '2026-01-01', 'euro area accession, issue #84'),
+    VE: currency('VEF', 'VES', '2018-08-20', 'redenomination'),
+    MR: currency('MRO', 'MRU', '2018-01-01', 'redenomination'),
+    ST: currency('STD', 'STN', '2018-01-01', 'redenomination'),
+    SL: currency('SLL', 'SLE', '2022-07-01', 'redenomination'),
+    ZW: currency('ZWL', 'ZWG', '2024-04-08', 'replaced by Zimbabwe Gold'),
+    ZM: currency('ZMK', 'ZMW', '2013-01-01', 'redenomination'),
 };
 
 // Individual recorded calls that intentionally differ, keyed as fn(arg).  Use
 // this only where the country records themselves are unchanged and it is the
 // lookup behaviour that moved.
 
+const CASE_INSENSITIVE =
+    'the README has claimed case-insensitive search since 3.1.0 and it was ' +
+    'never true.  Exact matching is untouched and still wins; a lowercase ' +
+    'fallback runs only after an exact miss, so this turns undefined into a ' +
+    'hit and can never change a lookup that already worked.';
+
 const CHANGED_CALLS = {
+    'findByIso2("dk")': CASE_INSENSITIVE,
+    'findByIso3("dnk")': CASE_INSENSITIVE,
+    'findByName("denmark")': CASE_INSENSITIVE,
+    'findByCapital("copenhagen")': CASE_INSENSITIVE,
+    'findByCurrency("dkk")': CASE_INSENSITIVE,
+
     'findByProvince("")':
         '3.1.8 answered [Ethiopia, Turkey, Vietnam] for the empty string. ' +
         'Those three carry a bare-string province alias instead of an array, ' +
