@@ -35,50 +35,72 @@
   "provinces": [
     {
       "name": "Addis Ababa",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Afar Region",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Amhara Region",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Benishangul-Gumuz",
+      "code": null,
+      "region": null,
       "alias": [
         "Benishangul Gumuz"
       ]
     },
     {
       "name": "Dire Dawa",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Gambela",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Harari",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Oromia",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Somali",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Southern Nations, Nationalities, and Peoples' Region",
+      "code": null,
+      "region": null,
       "alias": [
         "SNNPR"
       ]
     },
     {
       "name": "Tigray Region",
+      "code": null,
+      "region": null,
       "alias": null
     }
   ]

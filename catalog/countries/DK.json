@@ -30,24 +30,34 @@
   "provinces": [
     {
       "name": "Hovedstaden",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Midtjylland",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Nordjylland",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Sjælland",
+      "code": null,
+      "region": null,
       "alias": [
         "Zealand"
       ]
     },
     {
       "name": "Syddanmark",
+      "code": null,
+      "region": null,
       "alias": null
     }
   ]

@@ -116,11 +116,11 @@ country.all;              // everything, keyed by ISO-2
   currency: { code: 'DKK', symbol: 'Dkr', decimal: 2 },
   dialing_code: '45',
   provinces: [
-    { name: 'Hovedstaden', alias: null },
-    { name: 'Midtjylland', alias: null },
-    { name: 'Nordjylland', alias: null },
-    { name: 'Sjælland', alias: ['Zealand'] },
-    { name: 'Syddanmark', alias: null }
+    { name: 'Hovedstaden', code: null, region: null, alias: null },
+    { name: 'Midtjylland',  code: null, region: null, alias: null },
+    { name: 'Nordjylland',  code: null, region: null, alias: null },
+    { name: 'Sjælland',     code: null, region: null, alias: ['Zealand'] },
+    { name: 'Syddanmark',   code: null, region: null, alias: null }
   ],
   code: { iso2: 'DK', iso3: 'DNK', numeric: '208' },
   native_name: 'Danmark',
@@ -164,6 +164,10 @@ database](https://www.iana.org/time-zones), which is in the public domain.
 follow de-facto rather than universally recognised boundaries.
 
 **Subdivisions** are first-tier only, and 31 of the 250 countries have them.
+Every entry carries the same four keys — `name`, `code` (the local
+subdivision code, `AL` for Alabama), `region` (the parent grouping,
+`England` for Berkshire) and `alias` — null where the country has no such
+thing, so there is nothing to test for before reading one.
 
 **Sources.** Native names, demonyms, languages, TLDs, areas, coordinates,
 borders and the alternative-name list were imported from

@@ -30,7 +30,16 @@ const restrict = (a, e) => {
 };
 // currency.decimal became a number; migrate the baseline rather than
 // exempting all 250 countries from the comparison
-const migrate = c => { c.currency.decimal = Number(c.currency.decimal); return c; };
+const migrate = c => {
+    c.currency.decimal = Number(c.currency.decimal);
+    if (c.provinces) c.provinces = c.provinces.map(p => ({
+        name: p.name,
+        code: p.short === undefined ? null : p.short,
+        region: p.region === undefined ? null : p.region,
+        alias: p.alias === undefined ? null : p.alias,
+    }));
+    return c;
+};
 const undeclared = [];
 for (const iso2 of Object.keys(old.all)) {
     const e = migrate(old.findByIso2(iso2)), a = now.findByIso2(iso2);

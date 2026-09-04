@@ -34,50 +34,74 @@
   "provinces": [
     {
       "name": "Irbid",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Ajloun",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Jerash",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Mafraq",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Balqa",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Amman",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Zarqa",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Madaba",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Karak",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Tafilah",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Ma'an",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Aqaba",
+      "code": null,
+      "region": null,
       "alias": null
     }
   ]

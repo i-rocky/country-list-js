@@ -45,110 +45,158 @@
   "provinces": [
     {
       "name": "Ciudad Autónoma de Buenos Aires",
+      "code": null,
+      "region": null,
       "alias": [
         "Ciudad Autonoma de Buenos Aires"
       ]
     },
     {
       "name": "Buenos Aires",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Catamarca",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Chaco",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Chubut",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Córdoba",
+      "code": null,
+      "region": null,
       "alias": [
         "Cordoba"
       ]
     },
     {
       "name": "Corrientes",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Entre Ríos",
+      "code": null,
+      "region": null,
       "alias": [
         "Entre Rios"
       ]
     },
     {
       "name": "Formosa",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Jujuy",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "La Pampa",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "La Rioja",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Mendoza",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Misiones",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Neuquén",
+      "code": null,
+      "region": null,
       "alias": [
         "Neuquen"
       ]
     },
     {
       "name": "Río Negro",
+      "code": null,
+      "region": null,
       "alias": [
         "Rio Negro"
       ]
     },
     {
       "name": "Salta",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "San Juan",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "San Luis",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Santa Cruz",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Santa Fe",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Santiago del Estero",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+      "code": null,
+      "region": null,
       "alias": [
         "Tierra del Fuego, Antartida e Islas del Atlantico Sur"
       ]
     },
     {
       "name": "Tucumán",
+      "code": null,
+      "region": null,
       "alias": [
         "Tucuman"
       ]

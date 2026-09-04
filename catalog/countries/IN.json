@@ -37,183 +37,219 @@
   ],
   "provinces": [
     {
-      "short": "AP",
       "name": "Andhra Pradesh",
+      "code": "AP",
+      "region": null,
       "alias": null
     },
     {
-      "short": "AR",
       "name": "Arunachal Pradesh",
+      "code": "AR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "AS",
       "name": "Assam",
+      "code": "AS",
+      "region": null,
       "alias": null
     },
     {
-      "short": "BR",
       "name": "Bihar",
+      "code": "BR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "CT",
       "name": "Chhattisgarh",
+      "code": "CT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "GA",
       "name": "Goa",
+      "code": "GA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "GJ",
       "name": "Gujarat",
+      "code": "GJ",
+      "region": null,
       "alias": null
     },
     {
-      "short": "HR",
       "name": "Haryana",
+      "code": "HR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "HP",
       "name": "Himachal Pradesh",
+      "code": "HP",
+      "region": null,
       "alias": null
     },
     {
-      "short": "JK",
       "name": "Jammu and Kashmir",
+      "code": "JK",
+      "region": null,
       "alias": null
     },
     {
-      "short": "JH",
       "name": "Jharkhand",
+      "code": "JH",
+      "region": null,
       "alias": null
     },
     {
-      "short": "KA",
       "name": "Karnataka",
+      "code": "KA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "KL",
       "name": "Kerala",
+      "code": "KL",
+      "region": null,
       "alias": null
     },
     {
-      "short": "MP",
       "name": "Madhya Pradesh",
+      "code": "MP",
+      "region": null,
       "alias": null
     },
     {
-      "short": "MH",
       "name": "Maharashtra",
+      "code": "MH",
+      "region": null,
       "alias": null
     },
     {
-      "short": "MN",
       "name": "Manipur",
+      "code": "MN",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ML",
       "name": "Meghalaya",
+      "code": "ML",
+      "region": null,
       "alias": null
     },
     {
-      "short": "MZ",
       "name": "Mizoram",
+      "code": "MZ",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NL",
       "name": "Nagaland",
+      "code": "NL",
+      "region": null,
       "alias": null
     },
     {
-      "short": "OR",
       "name": "Odisha",
+      "code": "OR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "PB",
       "name": "Punjab",
+      "code": "PB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "RJ",
       "name": "Rajasthan",
+      "code": "RJ",
+      "region": null,
       "alias": null
     },
     {
-      "short": "SK",
       "name": "Sikkim",
+      "code": "SK",
+      "region": null,
       "alias": null
     },
     {
-      "short": "TN",
       "name": "Tamil Nadu",
+      "code": "TN",
+      "region": null,
       "alias": null
     },
     {
-      "short": "TG",
       "name": "Telangana",
+      "code": "TG",
+      "region": null,
       "alias": null
     },
     {
-      "short": "TR",
       "name": "Tripura",
+      "code": "TR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "UP",
       "name": "Uttar Pradesh",
+      "code": "UP",
+      "region": null,
       "alias": null
     },
     {
-      "short": "UT",
       "name": "Uttarakhand",
+      "code": "UT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "WB",
       "name": "West Bengal",
+      "code": "WB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "AN",
       "name": "Andaman and Nicobar Islands",
+      "code": "AN",
+      "region": null,
       "alias": null
     },
     {
-      "short": "CH",
       "name": "Chandigarh",
+      "code": "CH",
+      "region": null,
       "alias": null
     },
     {
-      "short": "DN",
       "name": "Dadra and Nagar Haveli",
+      "code": "DN",
+      "region": null,
       "alias": null
     },
     {
-      "short": "DD",
       "name": "Daman and Diu",
+      "code": "DD",
+      "region": null,
       "alias": null
     },
     {
-      "short": "LD",
       "name": "Lakshadweep",
+      "code": "LD",
+      "region": null,
       "alias": null
     },
     {
-      "short": "DL",
       "name": "National Capital Territory of Delhi",
+      "code": "DL",
+      "region": null,
       "alias": null
     },
     {
-      "short": "PY",
       "name": "Puducherry",
+      "code": "PY",
+      "region": null,
       "alias": null
     }
   ]

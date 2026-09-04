@@ -30,99 +30,117 @@
   ],
   "provinces": [
     {
-      "short": "DR",
       "name": "Drenthe",
+      "code": "DR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "FL",
       "name": "Flevoland",
+      "code": "FL",
+      "region": null,
       "alias": null
     },
     {
-      "short": "FR",
       "name": "Friesland",
+      "code": "FR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "GD",
       "name": "Gelderland",
+      "code": "GD",
+      "region": null,
       "alias": null
     },
     {
-      "short": "GR",
       "name": "Groningen",
+      "code": "GR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "LB",
       "name": "Limburg",
+      "code": "LB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NB",
       "name": "Noord-Brabant",
+      "code": "NB",
+      "region": null,
       "alias": [
         "Noord Brabant"
       ]
     },
     {
-      "short": "NH",
       "name": "Noord-Holland",
+      "code": "NH",
+      "region": null,
       "alias": [
         "Noord Holland"
       ]
     },
     {
-      "short": "OV",
       "name": "Overijssel",
+      "code": "OV",
+      "region": null,
       "alias": null
     },
     {
-      "short": "UT",
       "name": "Utrecht",
+      "code": "UT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ZH",
       "name": "Zuid-Holland",
+      "code": "ZH",
+      "region": null,
       "alias": [
         "Zuid Holland"
       ]
     },
     {
-      "short": "ZL",
       "name": "Zeeland",
+      "code": "ZL",
+      "region": null,
       "alias": null
     },
     {
-      "short": "AW",
       "name": "Aruba",
+      "code": "AW",
+      "region": null,
       "alias": null
     },
     {
-      "short": "BQ",
       "name": "Bonaire",
+      "code": "BQ",
+      "region": null,
       "alias": null
     },
     {
-      "short": "BQ2",
       "name": "Saba",
+      "code": "BQ2",
+      "region": null,
       "alias": null
     },
     {
-      "short": "BQ3",
       "name": "Sint Eustatius",
+      "code": "BQ3",
+      "region": null,
       "alias": null
     },
     {
-      "short": "CW",
       "name": "Curaçao",
+      "code": "CW",
+      "region": null,
       "alias": null
     },
     {
-      "short": "SX",
       "name": "Sint Maarten",
+      "code": "SX",
+      "region": null,
       "alias": null
     }
   ]

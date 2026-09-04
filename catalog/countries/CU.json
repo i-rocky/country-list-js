@@ -26,80 +26,112 @@
   "provinces": [
     {
       "name": "Camagüey",
+      "code": null,
+      "region": null,
       "alias": [
         "Camaguey"
       ]
     },
     {
       "name": "Ciego de Ávila",
+      "code": null,
+      "region": null,
       "alias": [
         "Ciego de Avila"
       ]
     },
     {
       "name": "Cienfuegos",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Havana",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Bayamo",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Guantánamo",
+      "code": null,
+      "region": null,
       "alias": [
         "Guantanamo"
       ]
     },
     {
       "name": "Holguín",
+      "code": null,
+      "region": null,
       "alias": [
         "Holguin"
       ]
     },
     {
       "name": "Nueva Gerona",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Artemisa",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Las Tunas",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Matanzas",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "San José de las Lajas",
+      "code": null,
+      "region": null,
       "alias": [
         "San Jose de las Lajas"
       ]
     },
     {
       "name": "Pinar del Río",
+      "code": null,
+      "region": null,
       "alias": [
         "Pinar del Rio"
       ]
     },
     {
       "name": "Sancti Spíritus",
+      "code": null,
+      "region": null,
       "alias": [
         "Sancti Spiritus"
       ]
     },
     {
       "name": "Santiago de Cuba",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Santa Clara",
+      "code": null,
+      "region": null,
       "alias": null
     }
   ]

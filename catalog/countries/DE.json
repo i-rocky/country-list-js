@@ -38,8 +38,9 @@
   ],
   "provinces": [
     {
-      "short": "BW",
       "name": "Baden-Württemberg",
+      "code": "BW",
+      "region": null,
       "alias": [
         "Baden-Wurttemberg",
         "Baden Württemberg",
@@ -47,88 +48,103 @@
       ]
     },
     {
-      "short": "BY",
       "name": "Bayern",
+      "code": "BY",
+      "region": null,
       "alias": null
     },
     {
-      "short": "BE",
       "name": "Berlin",
+      "code": "BE",
+      "region": null,
       "alias": null
     },
     {
-      "short": "BB",
       "name": "Brandenburg",
+      "code": "BB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "HB",
       "name": "Bremen",
+      "code": "HB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "HH",
       "name": "Hamburg",
+      "code": "HH",
+      "region": null,
       "alias": null
     },
     {
-      "short": "HE",
       "name": "Hessen",
+      "code": "HE",
+      "region": null,
       "alias": null
     },
     {
-      "short": "MV",
       "name": "Mecklenburg-Vorpommern",
+      "code": "MV",
+      "region": null,
       "alias": [
         "Mecklenburg Vorpommern"
       ]
     },
     {
-      "short": "NI",
       "name": "Niedersachsen",
+      "code": "NI",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NW",
       "name": "Nordrhein-Westfalen",
+      "code": "NW",
+      "region": null,
       "alias": [
         "Nordrhein Westfalen"
       ]
     },
     {
-      "short": "RP",
       "name": "Rheinland-Pfalz",
+      "code": "RP",
+      "region": null,
       "alias": [
         "Rheinland Pfalz"
       ]
     },
     {
-      "short": "SL",
       "name": "Saarland",
+      "code": "SL",
+      "region": null,
       "alias": null
     },
     {
-      "short": "SN",
       "name": "Sachsen",
+      "code": "SN",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ST",
       "name": "Sachsen-Anhalt",
+      "code": "ST",
+      "region": null,
       "alias": [
         "Sachsen Anhalt"
       ]
     },
     {
-      "short": "SH",
       "name": "Schleswig-Holstein",
+      "code": "SH",
+      "region": null,
       "alias": [
         "Schleswig Holstein"
       ]
     },
     {
-      "short": "TH",
       "name": "Thüringen",
+      "code": "TH",
+      "region": null,
       "alias": [
         "Thuringen"
       ]

@@ -61,8 +61,10 @@ the break sat on `master` for nearly two years because nothing checked.
   ever turns a lookup that answered nothing into a hit, so nobody using the
   old name loses anything. Native and official long forms go in the alias
   file too, never in `name`.
-- **A province alias is an array or `null`.** Never a bare string: `indexOf` on
-  a string is a substring search, and three of these once made
+- **A subdivision carries all four keys** -- `name`, `code`, `region`,
+  `alias` -- with `null` where the country has no such thing.
+- **An alias is a list or `null`.** Never a bare string: `indexOf` on a
+  string is a substring search, and three of these once made
   `findByProvince('B')` answer Vietnam.
 - **Borders are symmetric.** If you add A → B, add B → A.
 - **Dialing codes are strings**, even when they look like numbers.

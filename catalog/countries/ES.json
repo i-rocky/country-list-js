@@ -36,7 +36,8 @@
   "provinces": [
     {
       "name": "La Coruña",
-      "short": "C",
+      "code": "C",
+      "region": null,
       "alias": [
         "La Coruna",
         "A Coruña"
@@ -44,261 +45,308 @@
     },
     {
       "name": "Asturias",
-      "short": "O",
+      "code": "O",
+      "region": null,
       "alias": [
         "Asturies"
       ]
     },
     {
       "name": "Lugo",
-      "short": "LU",
+      "code": "LU",
+      "region": null,
       "alias": null
     },
     {
       "name": "Vizcaya",
-      "short": "BI",
+      "code": "BI",
+      "region": null,
       "alias": null
     },
     {
       "name": "Guipúzcoa",
-      "short": "SS",
+      "code": "SS",
+      "region": null,
       "alias": [
         "Guipuzcoa"
       ]
     },
     {
       "name": "Huesca",
-      "short": "HU",
+      "code": "HU",
+      "region": null,
       "alias": null
     },
     {
       "name": "Lérida",
-      "short": "L",
+      "code": "L",
+      "region": null,
       "alias": [
         "Lerida"
       ]
     },
     {
       "name": "Gerona",
-      "short": "GI",
+      "code": "GI",
+      "region": null,
       "alias": null
     },
     {
       "name": "Barcelona",
-      "short": "B",
+      "code": "B",
+      "region": null,
       "alias": null
     },
     {
       "name": "Tarragona",
-      "short": "T",
+      "code": "T",
+      "region": null,
       "alias": null
     },
     {
       "name": "Castellón",
-      "short": "CS",
+      "code": "CS",
+      "region": null,
       "alias": [
         "Castellon"
       ]
     },
     {
       "name": "Valencia",
-      "short": "V",
+      "code": "V",
+      "region": null,
       "alias": null
     },
     {
       "name": "Alicante",
-      "short": "A",
+      "code": "A",
+      "region": null,
       "alias": null
     },
     {
       "name": "Murcia",
-      "short": "MU",
+      "code": "MU",
+      "region": null,
       "alias": null
     },
     {
       "name": "Zaragoza",
-      "short": "Z",
+      "code": "Z",
+      "region": null,
       "alias": null
     },
     {
       "name": "Teruel",
-      "short": "TE",
+      "code": "TE",
+      "region": null,
       "alias": null
     },
     {
       "name": "Cuenca",
-      "short": "CU",
+      "code": "CU",
+      "region": null,
       "alias": null
     },
     {
       "name": "Albacete",
-      "short": "AB",
+      "code": "AB",
+      "region": null,
       "alias": null
     },
     {
       "name": "Almeria",
-      "short": "AL",
+      "code": "AL",
+      "region": null,
       "alias": null
     },
     {
       "name": "Granada",
-      "short": "GR",
+      "code": "GR",
+      "region": null,
       "alias": null
     },
     {
       "name": "Málaga",
-      "short": "MA",
+      "code": "MA",
+      "region": null,
       "alias": [
         "Malaga"
       ]
     },
     {
       "name": "Tenerife",
-      "short": "TF",
+      "code": "TF",
+      "region": null,
       "alias": null
     },
     {
       "name": "Cádiz",
-      "short": "CA",
+      "code": "CA",
+      "region": null,
       "alias": [
         "Cadiz"
       ]
     },
     {
       "name": "Sevilla",
-      "short": "SE",
+      "code": "SE",
+      "region": null,
       "alias": null
     },
     {
       "name": "Huelva",
-      "short": "H",
+      "code": "H",
+      "region": null,
       "alias": null
     },
     {
       "name": "Las Palmas",
-      "short": "GC",
+      "code": "GC",
+      "region": null,
       "alias": null
     },
     {
       "name": "Madrid",
-      "short": "M",
+      "code": "M",
+      "region": null,
       "alias": null
     },
     {
       "name": "Badajoz",
-      "short": "BA",
+      "code": "BA",
+      "region": null,
       "alias": null
     },
     {
       "name": "Cáceres",
-      "short": "CC",
+      "code": "CC",
+      "region": null,
       "alias": [
         "Caceres"
       ]
     },
     {
       "name": "Toledo",
-      "short": "TO",
+      "code": "TO",
+      "region": null,
       "alias": null
     },
     {
       "name": "Ciudad Real",
-      "short": "CR",
+      "code": "CR",
+      "region": null,
       "alias": null
     },
     {
       "name": "Salamanca",
-      "short": "SA",
+      "code": "SA",
+      "region": null,
       "alias": null
     },
     {
       "name": "Córdoba",
-      "short": "CO",
+      "code": "CO",
+      "region": null,
       "alias": [
         "Cordoba"
       ]
     },
     {
       "name": "Jaén",
-      "short": "J",
+      "code": "J",
+      "region": null,
       "alias": [
         "Jaen"
       ]
     },
     {
       "name": "Ávila",
-      "short": "AV",
+      "code": "AV",
+      "region": null,
       "alias": [
         "Avila"
       ]
     },
     {
       "name": "Valladolid",
-      "short": "VA",
+      "code": "VA",
+      "region": null,
       "alias": null
     },
     {
       "name": "Zamora",
-      "short": "ZA",
+      "code": "ZA",
+      "region": null,
       "alias": null
     },
     {
       "name": "Álava",
-      "short": "VI",
+      "code": "VI",
+      "region": null,
       "alias": [
         "Alava"
       ]
     },
     {
       "name": "Segovia",
-      "short": "SG",
+      "code": "SG",
+      "region": null,
       "alias": null
     },
     {
       "name": "Burgos",
-      "short": "BU",
+      "code": "BU",
+      "region": null,
       "alias": null
     },
     {
       "name": "Pontevedra",
-      "short": "PO",
+      "code": "PO",
+      "region": null,
       "alias": null
     },
     {
       "name": "León",
-      "short": "LE",
+      "code": "LE",
+      "region": null,
       "alias": [
         "Leon"
       ]
     },
     {
       "name": "Orense",
-      "short": "OR",
+      "code": "OR",
+      "region": null,
       "alias": null
     },
     {
       "name": "Palencia",
-      "short": "P",
+      "code": "P",
+      "region": null,
       "alias": null
     },
     {
       "name": "La Rioja",
-      "short": "LO",
+      "code": "LO",
+      "region": null,
       "alias": null
     },
     {
       "name": "Soria",
-      "short": "SO",
+      "code": "SO",
+      "region": null,
       "alias": null
     },
     {
       "name": "Guadalajara",
-      "short": "GU",
+      "code": "GU",
+      "region": null,
       "alias": null
     },
     {
       "name": "Baleares",
-      "short": "PM",
+      "code": "PM",
+      "region": null,
       "alias": [
         "Balears"
       ]

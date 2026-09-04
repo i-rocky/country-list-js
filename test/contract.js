@@ -26,6 +26,22 @@ const BREAKING = [{
          'compares it against "2" now fails quietly, which is why this is ' +
          'called out in the changelog and not only here.',
     migrate: c => { c.currency.decimal = Number(c.currency.decimal); },
+}, {
+    what: 'every subdivision carries the same four keys',
+    why: '3.1.8 had three shapes -- {name, alias}, plus "short" for 14 ' +
+         'countries and "region" for 5 -- so a caller had to test for a key ' +
+         'before reading it. Every entry is now {name, code, region, alias}, ' +
+         'null where the country has no such thing. "short" is renamed "code": ' +
+         'it holds a subdivision code, not an abbreviated name.',
+    migrate: c => {
+        if (!c.provinces) return;
+        c.provinces = c.provinces.map(p => ({
+            name: p.name,
+            code: p.short === undefined ? null : p.short,
+            region: p.region === undefined ? null : p.region,
+            alias: p.alias === undefined ? null : p.alias,
+        }));
+    },
 }];
 
 // Finders whose return type changed from "country, list, or undefined,

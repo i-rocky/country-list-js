@@ -43,28 +43,32 @@
   "provinces": [
     {
       "name": "Aguascalientes",
-      "short": "AG",
+      "code": "AG",
+      "region": null,
       "alias": [
         "AGS"
       ]
     },
     {
       "name": "Baja California",
-      "short": "BC",
+      "code": "BC",
+      "region": null,
       "alias": [
         "BCN"
       ]
     },
     {
       "name": "Baja California Sur",
-      "short": "BS",
+      "code": "BS",
+      "region": null,
       "alias": [
         "BCS"
       ]
     },
     {
       "name": "Campeche",
-      "short": "CM",
+      "code": "CM",
+      "region": null,
       "alias": [
         "Camp",
         "CAM"
@@ -72,7 +76,8 @@
     },
     {
       "name": "Chiapas",
-      "short": "CS",
+      "code": "CS",
+      "region": null,
       "alias": [
         "Chis",
         "CHP"
@@ -80,7 +85,8 @@
     },
     {
       "name": "Chihuahua",
-      "short": "CH",
+      "code": "CH",
+      "region": null,
       "alias": [
         "Chih",
         "CHH"
@@ -88,7 +94,8 @@
     },
     {
       "name": "Coahuila",
-      "short": "MX",
+      "code": "MX",
+      "region": null,
       "alias": [
         "Coah",
         "COA"
@@ -96,21 +103,24 @@
     },
     {
       "name": "Colima",
-      "short": "CL",
+      "code": "CL",
+      "region": null,
       "alias": [
         "COL"
       ]
     },
     {
       "name": "Federal District",
-      "short": "DF",
+      "code": "DF",
+      "region": null,
       "alias": [
         "DIF"
       ]
     },
     {
       "name": "Durango",
-      "short": "DG",
+      "code": "DG",
+      "region": null,
       "alias": [
         "Dgo",
         "DUR"
@@ -118,7 +128,8 @@
     },
     {
       "name": "Guanajuato",
-      "short": "GT",
+      "code": "GT",
+      "region": null,
       "alias": [
         "Gto",
         "GUA"
@@ -126,7 +137,8 @@
     },
     {
       "name": "Guerrero",
-      "short": "GR",
+      "code": "GR",
+      "region": null,
       "alias": [
         "Gro",
         "GRO"
@@ -134,7 +146,8 @@
     },
     {
       "name": "Hidalgo",
-      "short": "HG",
+      "code": "HG",
+      "region": null,
       "alias": [
         "Hgo",
         "HID"
@@ -142,7 +155,8 @@
     },
     {
       "name": "Jalisco",
-      "short": "JA",
+      "code": "JA",
+      "region": null,
       "alias": [
         "Jal",
         "JAL"
@@ -150,7 +164,8 @@
     },
     {
       "name": "Mexico",
-      "short": "ME",
+      "code": "ME",
+      "region": null,
       "alias": [
         "Edomex",
         "MEX"
@@ -158,7 +173,8 @@
     },
     {
       "name": "Michoacán",
-      "short": "MI",
+      "code": "MI",
+      "region": null,
       "alias": [
         "Mich",
         "MIC",
@@ -167,7 +183,8 @@
     },
     {
       "name": "Morelos",
-      "short": "MO",
+      "code": "MO",
+      "region": null,
       "alias": [
         "Mor",
         "MOR"
@@ -175,7 +192,8 @@
     },
     {
       "name": "Nayarit",
-      "short": "NA",
+      "code": "NA",
+      "region": null,
       "alias": [
         "Nay",
         "NAY"
@@ -183,7 +201,8 @@
     },
     {
       "name": "Nuevo León",
-      "short": "NL",
+      "code": "NL",
+      "region": null,
       "alias": [
         "NLE",
         "Nuevo Leon"
@@ -191,7 +210,8 @@
     },
     {
       "name": "Oaxaca",
-      "short": "OA",
+      "code": "OA",
+      "region": null,
       "alias": [
         "Oax",
         "OAX"
@@ -199,7 +219,8 @@
     },
     {
       "name": "Puebla",
-      "short": "PU",
+      "code": "PU",
+      "region": null,
       "alias": [
         "Pue",
         "PUE"
@@ -207,7 +228,8 @@
     },
     {
       "name": "Querétaro",
-      "short": "QE",
+      "code": "QE",
+      "region": null,
       "alias": [
         "Qro",
         "QUE",
@@ -216,7 +238,8 @@
     },
     {
       "name": "Quintana Roo",
-      "short": "QR",
+      "code": "QR",
+      "region": null,
       "alias": [
         "Q Roo",
         "ROO"
@@ -224,7 +247,8 @@
     },
     {
       "name": "San Luis Potosí",
-      "short": "SL",
+      "code": "SL",
+      "region": null,
       "alias": [
         "SLP",
         "San Luis Potosi"
@@ -232,28 +256,32 @@
     },
     {
       "name": "Sinaloa",
-      "short": "SI",
+      "code": "SI",
+      "region": null,
       "alias": [
         "SIN"
       ]
     },
     {
       "name": "Sonora",
-      "short": "SO",
+      "code": "SO",
+      "region": null,
       "alias": [
         "SON"
       ]
     },
     {
       "name": "Tabasco",
-      "short": "TB",
+      "code": "TB",
+      "region": null,
       "alias": [
         "TAB"
       ]
     },
     {
       "name": "Tamaulipas",
-      "short": "TM",
+      "code": "TM",
+      "region": null,
       "alias": [
         "Tamps",
         "TAM"
@@ -261,7 +289,8 @@
     },
     {
       "name": "Tlaxcala",
-      "short": "TL",
+      "code": "TL",
+      "region": null,
       "alias": [
         "Tlax",
         "TLA"
@@ -269,14 +298,16 @@
     },
     {
       "name": "Veracruz",
-      "short": "VE",
+      "code": "VE",
+      "region": null,
       "alias": [
         "VER"
       ]
     },
     {
       "name": "Yucatán",
-      "short": "YU",
+      "code": "YU",
+      "region": null,
       "alias": [
         "YUC",
         "Yucatan"
@@ -284,7 +315,8 @@
     },
     {
       "name": "Zacatecas",
-      "short": "ZA",
+      "code": "ZA",
+      "region": null,
       "alias": [
         "ZAC"
       ]

@@ -33,30 +33,44 @@
   "provinces": [
     {
       "name": "Azad Kashmir",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Bahawalpur",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Bannu",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Dera Ghazi Khan",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Dera Ismail Khan",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Faisalabad",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Federally Administered Tribal Areas",
+      "code": null,
+      "region": null,
       "alias": [
         "FATA",
         "F.A.T.A."
@@ -64,98 +78,146 @@
     },
     {
       "name": "Gujranwala",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Hazara",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Hyderabad",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Islamabad",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Kalat",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Karachi",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Kohat",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Lahore",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Larkana",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Makran",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Malakand",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Mardan",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Mirpur Khas",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Multan",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Nasirabad",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Northern Areas",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Peshawar",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Quetta",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Rawalpindi",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Sargodha",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Sahiwal",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Sibi",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Sukkur",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Zhob",
+      "code": null,
+      "region": null,
       "alias": null
     }
   ]

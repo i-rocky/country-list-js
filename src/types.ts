@@ -20,15 +20,18 @@ export interface Currency {
     decimal: number;
 }
 
-/** A first-tier political subdivision. */
+/**
+ * A first-tier political subdivision. Every key is always present, and null
+ * where the country has no such thing -- there is nothing to test for.
+ */
 export interface Province {
     name: string;
-    /** Alternative names, or null. Always a list -- never a bare string. */
+    /** Local subdivision code: 'AL' for Alabama. Null where there is none. */
+    code: string | null;
+    /** Parent grouping: 'England' for Berkshire. Null where there is none. */
+    region: string | null;
+    /** Alternative names. Always a list or null -- never a bare string. */
     alias: string[] | null;
-    /** Local subdivision code, where one exists. */
-    short?: string;
-    /** Parent grouping, where the country has one above provinces. */
-    region?: string;
 }
 
 /**

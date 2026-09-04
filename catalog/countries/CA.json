@@ -51,71 +51,84 @@
   ],
   "provinces": [
     {
-      "short": "AB",
       "name": "Alberta",
+      "code": "AB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "BC",
       "name": "British Columbia",
+      "code": "BC",
+      "region": null,
       "alias": null
     },
     {
-      "short": "MB",
       "name": "Manitoba",
+      "code": "MB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NB",
       "name": "New Brunswick",
+      "code": "NB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NL",
       "name": "Newfoundland and Labrador",
+      "code": "NL",
+      "region": null,
       "alias": [
         "Newfoundland",
         "Labrador"
       ]
     },
     {
-      "short": "NS",
       "name": "Nova Scotia",
+      "code": "NS",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NU",
       "name": "Nunavut",
+      "code": "NU",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NT",
       "name": "Northwest Territories",
+      "code": "NT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ON",
       "name": "Ontario",
+      "code": "ON",
+      "region": null,
       "alias": null
     },
     {
-      "short": "PE",
       "name": "Prince Edward Island",
+      "code": "PE",
+      "region": null,
       "alias": null
     },
     {
-      "short": "QC",
       "name": "Quebec",
+      "code": "QC",
+      "region": null,
       "alias": null
     },
     {
-      "short": "SK",
       "name": "Saskatchewan",
+      "code": "SK",
+      "region": null,
       "alias": null
     },
     {
-      "short": "YT",
       "name": "Yukon",
+      "code": "YT",
+      "region": null,
       "alias": null
     }
   ]

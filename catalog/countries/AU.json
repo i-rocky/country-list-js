@@ -37,81 +37,100 @@
   "provinces": [
     {
       "name": "Ashmore and Cartier Islands",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
       "name": "Australian Antarctic Territory",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
-      "short": "ACT",
       "name": "Australian Capital Territory",
+      "code": "ACT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "CX",
       "name": "Christmas Island",
+      "code": "CX",
+      "region": null,
       "alias": null
     },
     {
-      "short": "CC",
       "name": "Cocos Islands",
+      "code": "CC",
+      "region": null,
       "alias": [
         "Keeling Islands"
       ]
     },
     {
       "name": "Coral Sea Islands",
+      "code": null,
+      "region": null,
       "alias": null
     },
     {
-      "short": "HM",
       "name": "Heard Island and McDonald Islands",
+      "code": "HM",
+      "region": null,
       "alias": null
     },
     {
-      "short": "JBT",
       "name": "Jervis Bay Territory",
+      "code": "JBT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NSW",
       "name": "New South Wales",
+      "code": "NSW",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NF",
       "name": "Norfolk Island",
+      "code": "NF",
+      "region": null,
       "alias": null
     },
     {
-      "short": "NT",
       "name": "Northern Territory",
+      "code": "NT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "QLD",
       "name": "Queensland",
+      "code": "QLD",
+      "region": null,
       "alias": null
     },
     {
-      "short": "SA",
       "name": "South Australia",
+      "code": "SA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "TAS",
       "name": "Tasmania",
+      "code": "TAS",
+      "region": null,
       "alias": null
     },
     {
-      "short": "VIC",
       "name": "Victoria",
+      "code": "VIC",
+      "region": null,
       "alias": null
     },
     {
-      "short": "WA",
       "name": "Western Australia",
+      "code": "WA",
+      "region": null,
       "alias": null
     }
   ]

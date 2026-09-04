@@ -32,72 +32,96 @@
   "provinces": [
     {
       "name": "ភ្នំពេញ",
+      "code": null,
+      "region": null,
       "alias": [
         "Phnom Penh Municipality"
       ]
     },
     {
       "name": "បន្ទាយមានជ័យ",
+      "code": null,
+      "region": null,
       "alias": [
         "Banteay Meanchey"
       ]
     },
     {
       "name": "បាត់ដំបង",
+      "code": null,
+      "region": null,
       "alias": [
         "Battambang"
       ]
     },
     {
       "name": "កំពង់ចាម",
+      "code": null,
+      "region": null,
       "alias": [
         "Kampong Cham"
       ]
     },
     {
       "name": "កំពង់ឆ្នាំង",
+      "code": null,
+      "region": null,
       "alias": [
         "Kampong Chhnang"
       ]
     },
     {
       "name": "កំពង់ស្ពឺ",
+      "code": null,
+      "region": null,
       "alias": [
         "Kampong Speu"
       ]
     },
     {
       "name": "កំពង់ធំ",
+      "code": null,
+      "region": null,
       "alias": [
         "Kampong Thom"
       ]
     },
     {
       "name": "កំពត",
+      "code": null,
+      "region": null,
       "alias": [
         "Kampot"
       ]
     },
     {
       "name": "កណ្តាល",
+      "code": null,
+      "region": null,
       "alias": [
         "Kandal"
       ]
     },
     {
       "name": "កោះកុង",
+      "code": null,
+      "region": null,
       "alias": [
         "Koh Kong"
       ]
     },
     {
       "name": "កែប",
+      "code": null,
+      "region": null,
       "alias": [
         "Kep"
       ]
     },
     {
       "name": "ក្រចេះ",
+      "code": null,
+      "region": null,
       "alias": [
         "Kratié",
         "Kratie"
@@ -105,72 +129,96 @@
     },
     {
       "name": "មណ្ឌលគីរី",
+      "code": null,
+      "region": null,
       "alias": [
         "Mondulkiri"
       ]
     },
     {
       "name": "ឧត្តរមានជ័យ",
+      "code": null,
+      "region": null,
       "alias": [
         "Oddar Meanchey"
       ]
     },
     {
       "name": "បៃលិន",
+      "code": null,
+      "region": null,
       "alias": [
         "Pailin"
       ]
     },
     {
       "name": "ព្រះសីហនុ",
+      "code": null,
+      "region": null,
       "alias": [
         "Preah Sihanouk"
       ]
     },
     {
       "name": "ព្រះវិហារ",
+      "code": null,
+      "region": null,
       "alias": [
         "Preah Vihear"
       ]
     },
     {
       "name": "ពោធិ៍សាត់",
+      "code": null,
+      "region": null,
       "alias": [
         "Pursat"
       ]
     },
     {
       "name": "ព្រៃវែង",
+      "code": null,
+      "region": null,
       "alias": [
         "Prey Veng"
       ]
     },
     {
       "name": "រតនគីរី",
+      "code": null,
+      "region": null,
       "alias": [
         "Ratanakiri"
       ]
     },
     {
       "name": "សៀមរាប",
+      "code": null,
+      "region": null,
       "alias": [
         "Siem Reap"
       ]
     },
     {
       "name": "ស្ទឹងត្រែង",
+      "code": null,
+      "region": null,
       "alias": [
         "Stung Treng"
       ]
     },
     {
       "name": "ស្វាយរៀង",
+      "code": null,
+      "region": null,
       "alias": [
         "Svay Rieng"
       ]
     },
     {
       "name": "តាកែវ",
+      "code": null,
+      "region": null,
       "alias": [
         "Takéo",
         "Takeo"
@@ -178,6 +226,8 @@
     },
     {
       "name": "ត្បូងឃ្មុំ",
+      "code": null,
+      "region": null,
       "alias": [
         "Tbong Khmum"
       ]

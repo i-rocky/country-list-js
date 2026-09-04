@@ -46,7 +46,8 @@
   "provinces": [
     {
       "name": "Chongqing",
-      "short": "CQ",
+      "code": "CQ",
+      "region": null,
       "alias": [
         "重庆",
         "渝",
@@ -55,7 +56,8 @@
     },
     {
       "name": "Heilongjiang",
-      "short": "HL",
+      "code": "HL",
+      "region": null,
       "alias": [
         "黑龙江",
         "黑",
@@ -64,7 +66,8 @@
     },
     {
       "name": "Jilin",
-      "short": "JL",
+      "code": "JL",
+      "region": null,
       "alias": [
         "吉林",
         "吉",
@@ -73,7 +76,8 @@
     },
     {
       "name": "Hainan",
-      "short": "HI",
+      "code": "HI",
+      "region": null,
       "alias": [
         "海南",
         "琼",
@@ -82,7 +86,8 @@
     },
     {
       "name": "Beijing",
-      "short": "BJ",
+      "code": "BJ",
+      "region": null,
       "alias": [
         "北京",
         "京",
@@ -91,7 +96,8 @@
     },
     {
       "name": "Liaoning",
-      "short": "LN",
+      "code": "LN",
+      "region": null,
       "alias": [
         "辽宁",
         "辽",
@@ -100,7 +106,8 @@
     },
     {
       "name": "Inner Mongolia",
-      "short": "NM",
+      "code": "NM",
+      "region": null,
       "alias": [
         "内蒙古",
         "蒙",
@@ -109,7 +116,8 @@
     },
     {
       "name": "Tibet",
-      "short": "XZ",
+      "code": "XZ",
+      "region": null,
       "alias": [
         "Xizang",
         "西藏",
@@ -119,7 +127,8 @@
     },
     {
       "name": "Qinghai",
-      "short": "QH",
+      "code": "QH",
+      "region": null,
       "alias": [
         "青海",
         "青",
@@ -128,7 +137,8 @@
     },
     {
       "name": "Ningxia",
-      "short": "NX",
+      "code": "NX",
+      "region": null,
       "alias": [
         "宁夏",
         "宁",
@@ -137,7 +147,8 @@
     },
     {
       "name": "Xinjiang",
-      "short": "XJ",
+      "code": "XJ",
+      "region": null,
       "alias": [
         "新疆",
         "新",
@@ -146,7 +157,8 @@
     },
     {
       "name": "Gansu",
-      "short": "GS",
+      "code": "GS",
+      "region": null,
       "alias": [
         "甘肃",
         "甘",
@@ -155,7 +167,8 @@
     },
     {
       "name": "Hebei",
-      "short": "HE",
+      "code": "HE",
+      "region": null,
       "alias": [
         "河北",
         "冀",
@@ -164,7 +177,8 @@
     },
     {
       "name": "Henan",
-      "short": "HA",
+      "code": "HA",
+      "region": null,
       "alias": [
         "河南",
         "豫",
@@ -173,7 +187,8 @@
     },
     {
       "name": "Hubei",
-      "short": "HB",
+      "code": "HB",
+      "region": null,
       "alias": [
         "湖北",
         "鄂",
@@ -182,7 +197,8 @@
     },
     {
       "name": "Hunan",
-      "short": "HN",
+      "code": "HN",
+      "region": null,
       "alias": [
         "湖南",
         "湘",
@@ -191,7 +207,8 @@
     },
     {
       "name": "Shandong",
-      "short": "SD",
+      "code": "SD",
+      "region": null,
       "alias": [
         "山东",
         "鲁",
@@ -200,7 +217,8 @@
     },
     {
       "name": "Jiangsu",
-      "short": "JS",
+      "code": "JS",
+      "region": null,
       "alias": [
         "江苏",
         "苏",
@@ -209,7 +227,8 @@
     },
     {
       "name": "Anhui",
-      "short": "AH",
+      "code": "AH",
+      "region": null,
       "alias": [
         "安徽",
         "皖",
@@ -218,7 +237,8 @@
     },
     {
       "name": "Shanxi",
-      "short": "SX",
+      "code": "SX",
+      "region": null,
       "alias": [
         "山西",
         "晋",
@@ -227,7 +247,8 @@
     },
     {
       "name": "Shaanxi",
-      "short": "SN",
+      "code": "SN",
+      "region": null,
       "alias": [
         "陕西",
         "陕",
@@ -236,7 +257,8 @@
     },
     {
       "name": "Sichuan",
-      "short": "SC",
+      "code": "SC",
+      "region": null,
       "alias": [
         "四川",
         "川",
@@ -245,7 +267,8 @@
     },
     {
       "name": "Yunnan",
-      "short": "YN",
+      "code": "YN",
+      "region": null,
       "alias": [
         "云南",
         "滇",
@@ -254,7 +277,8 @@
     },
     {
       "name": "Guizhou",
-      "short": "GZ",
+      "code": "GZ",
+      "region": null,
       "alias": [
         "贵州",
         "黔",
@@ -263,7 +287,8 @@
     },
     {
       "name": "Zhejiang",
-      "short": "ZJ",
+      "code": "ZJ",
+      "region": null,
       "alias": [
         "浙江",
         "浙",
@@ -272,7 +297,8 @@
     },
     {
       "name": "Fujian",
-      "short": "FJ",
+      "code": "FJ",
+      "region": null,
       "alias": [
         "福建",
         "闽",
@@ -281,7 +307,8 @@
     },
     {
       "name": "Guangxi",
-      "short": "GX",
+      "code": "GX",
+      "region": null,
       "alias": [
         "广西",
         "桂",
@@ -290,7 +317,8 @@
     },
     {
       "name": "Shanghai",
-      "short": "SH",
+      "code": "SH",
+      "region": null,
       "alias": [
         "上海",
         "沪",
@@ -299,7 +327,8 @@
     },
     {
       "name": "Tianjin",
-      "short": "TJ",
+      "code": "TJ",
+      "region": null,
       "alias": [
         "天津",
         "津",
@@ -308,7 +337,8 @@
     },
     {
       "name": "Hong Kong",
-      "short": "HK",
+      "code": "HK",
+      "region": null,
       "alias": [
         "Xianggang",
         "香港",
@@ -318,7 +348,8 @@
     },
     {
       "name": "Macau",
-      "short": "MC",
+      "code": "MC",
+      "region": null,
       "alias": [
         "Aomen",
         "澳门",
@@ -328,7 +359,8 @@
     },
     {
       "name": "Taiwan",
-      "short": "TW",
+      "code": "TW",
+      "region": null,
       "alias": [
         "台湾",
         "台",
@@ -337,7 +369,8 @@
     },
     {
       "name": "Jiangxi",
-      "short": "JX ",
+      "code": "JX ",
+      "region": null,
       "alias": [
         "江西",
         "赣",
@@ -346,7 +379,8 @@
     },
     {
       "name": "Guangdong",
-      "short": "GD",
+      "code": "GD",
+      "region": null,
       "alias": [
         "广东",
         "粤",

@@ -33,175 +33,209 @@
   ],
   "provinces": [
     {
-      "short": "ID-AC",
       "name": "Special Region of Aceh",
+      "code": "ID-AC",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-BA",
       "name": "Bali",
+      "code": "ID-BA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-BB",
       "name": "Bangka–Belitung Islands",
+      "code": "ID-BB",
+      "region": null,
       "alias": [
         "Bangka Belitung Islands"
       ]
     },
     {
-      "short": "ID-BT",
       "name": "Banten",
+      "code": "ID-BT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-BE",
       "name": "Bengkulu",
+      "code": "ID-BE",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-JT",
       "name": "Central Java",
+      "code": "ID-JT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-KT",
       "name": "Central Kalimantan",
+      "code": "ID-KT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-ST",
       "name": "Central Sulawesi",
+      "code": "ID-ST",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-JI",
       "name": "East Java",
+      "code": "ID-JI",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-KI",
       "name": "East Kalimantan",
+      "code": "ID-KI",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-NT",
       "name": "East Nusa Tenggara",
+      "code": "ID-NT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-GO",
       "name": "Gorontalo",
+      "code": "ID-GO",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-JK",
       "name": "Jakarta Special Capital Region",
+      "code": "ID-JK",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-JA",
       "name": "Jambi",
+      "code": "ID-JA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-LA",
       "name": "Lampung",
+      "code": "ID-LA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-MA",
       "name": "Maluku",
+      "code": "ID-MA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-KU",
       "name": "North Kalimantan",
+      "code": "ID-KU",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-MU",
       "name": "North Maluku",
+      "code": "ID-MU",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-SA",
       "name": "North Sulawesi",
+      "code": "ID-SA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-SU",
       "name": "North Sumatra",
+      "code": "ID-SU",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-PA",
       "name": "Special Region of Papua",
+      "code": "ID-PA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-RI",
       "name": "Riau",
+      "code": "ID-RI",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-KR",
       "name": "Riau Islands",
+      "code": "ID-KR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-SG",
       "name": "Southeast Sulawesi",
+      "code": "ID-SG",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-KS",
       "name": "South Kalimantan",
+      "code": "ID-KS",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-SN",
       "name": "South Sulawesi",
+      "code": "ID-SN",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-SS",
       "name": "South Sumatra",
+      "code": "ID-SS",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-JB",
       "name": "West Java",
+      "code": "ID-JB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-KB",
       "name": "West Kalimantan",
+      "code": "ID-KB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-NB",
       "name": "West Nusa Tenggara",
+      "code": "ID-NB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-PB",
       "name": "Special Region of West Papua",
+      "code": "ID-PB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-SR",
       "name": "West Sulawesi",
+      "code": "ID-SR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-SB",
       "name": "West Sumatra",
+      "code": "ID-SB",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ID-YO",
       "name": "Special Region of Yogyakarta",
+      "code": "ID-YO",
+      "region": null,
       "alias": null
     }
   ]

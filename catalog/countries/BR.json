@@ -53,160 +53,187 @@
   ],
   "provinces": [
     {
-      "short": "AC",
       "name": "Acre",
+      "code": "AC",
+      "region": null,
       "alias": null
     },
     {
-      "short": "AL",
       "name": "Alagoas",
+      "code": "AL",
+      "region": null,
       "alias": null
     },
     {
-      "short": "AP",
       "name": "Amapá",
+      "code": "AP",
+      "region": null,
       "alias": [
         "Amapa"
       ]
     },
     {
-      "short": "AM",
       "name": "Amazonas",
+      "code": "AM",
+      "region": null,
       "alias": null
     },
     {
-      "short": "BA",
       "name": "Bahia",
+      "code": "BA",
+      "region": null,
       "alias": null
     },
     {
-      "short": "CE",
       "name": "Ceará",
+      "code": "CE",
+      "region": null,
       "alias": [
         "Ceara"
       ]
     },
     {
-      "short": "DF",
       "name": "Distrito Federal",
+      "code": "DF",
+      "region": null,
       "alias": null
     },
     {
-      "short": "ES",
       "name": "Espírito Santo",
+      "code": "ES",
+      "region": null,
       "alias": [
         "Espirito Santo"
       ]
     },
     {
-      "short": "GO",
       "name": "Goiás",
+      "code": "GO",
+      "region": null,
       "alias": [
         "Goias"
       ]
     },
     {
-      "short": "MA",
       "name": "Maranhão",
+      "code": "MA",
+      "region": null,
       "alias": [
         "Maranhao"
       ]
     },
     {
-      "short": "MT",
       "name": "Mato Grosso",
+      "code": "MT",
+      "region": null,
       "alias": null
     },
     {
-      "short": "MS",
       "name": "Mato Grosso do Sul",
+      "code": "MS",
+      "region": null,
       "alias": null
     },
     {
-      "short": "MG",
       "name": "Minas Gerais",
+      "code": "MG",
+      "region": null,
       "alias": null
     },
     {
-      "short": "PA",
       "name": "Pará",
+      "code": "PA",
+      "region": null,
       "alias": [
         "Para"
       ]
     },
     {
-      "short": "PB",
       "name": "Paraíba",
+      "code": "PB",
+      "region": null,
       "alias": [
         "Paraiba"
       ]
     },
     {
-      "short": "PR",
       "name": "Paraná",
+      "code": "PR",
+      "region": null,
       "alias": [
         "Parana"
       ]
     },
     {
-      "short": "PE",
       "name": "Pernambuco",
+      "code": "PE",
+      "region": null,
       "alias": null
     },
     {
-      "short": "PI",
       "name": "Piauí",
+      "code": "PI",
+      "region": null,
       "alias": [
         "Piaui"
       ]
     },
     {
-      "short": "RJ",
       "name": "Rio de Janeiro",
+      "code": "RJ",
+      "region": null,
       "alias": null
     },
     {
-      "short": "RN",
       "name": "Rio Grande do Norte",
+      "code": "RN",
+      "region": null,
       "alias": null
     },
     {
-      "short": "RS",
       "name": "Rio Grande do Sul",
+      "code": "RS",
+      "region": null,
       "alias": null
     },
     {
-      "short": "RO",
       "name": "Rondônia",
+      "code": "RO",
+      "region": null,
       "alias": [
         "Rondonia"
       ]
     },
     {
-      "short": "RR",
       "name": "Roraima",
+      "code": "RR",
+      "region": null,
       "alias": null
     },
     {
-      "short": "SC",
       "name": "Santa Catarina",
+      "code": "SC",
+      "region": null,
       "alias": null
     },
     {
-      "short": "SP",
       "name": "São Paulo",
+      "code": "SP",
+      "region": null,
       "alias": [
         "Sao Paulo"
       ]
     },
     {
-      "short": "SE",
       "name": "Sergipe",
+      "code": "SE",
+      "region": null,
       "alias": null
     },
     {
-      "short": "TO",
       "name": "Tocantins",
+      "code": "TO",
+      "region": null,
       "alias": null
     }
   ]

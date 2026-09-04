@@ -34,41 +34,49 @@
   "provinces": [
     {
       "name": "Arica",
+      "code": null,
       "region": "XV Arica and Parinacota",
       "alias": null
     },
     {
       "name": "Parinacota",
+      "code": null,
       "region": "XV Arica and Parinacota",
       "alias": null
     },
     {
       "name": "Iquique",
+      "code": null,
       "region": "I Tarapacá",
       "alias": null
     },
     {
       "name": "Tamarugal",
+      "code": null,
       "region": "I Tarapacá",
       "alias": null
     },
     {
       "name": "Antofagasta",
+      "code": null,
       "region": "II Antofagasta",
       "alias": null
     },
     {
       "name": "El Loa",
+      "code": null,
       "region": "II Antofagasta",
       "alias": null
     },
     {
       "name": "Tocopilla",
+      "code": null,
       "region": "II Antofagasta",
       "alias": null
     },
     {
       "name": "Copiapó",
+      "code": null,
       "region": "III Atacama",
       "alias": [
         "Copiapo"
@@ -76,11 +84,13 @@
     },
     {
       "name": "Huasco",
+      "code": null,
       "region": "III Atacama",
       "alias": null
     },
     {
       "name": "Chañaral",
+      "code": null,
       "region": "III Atacama",
       "alias": [
         "Chanaral"
@@ -88,11 +98,13 @@
     },
     {
       "name": "Elqui",
+      "code": null,
       "region": "IV Coquimbo",
       "alias": null
     },
     {
       "name": "Limarí",
+      "code": null,
       "region": "IV Coquimbo",
       "alias": [
         "Limari"
@@ -100,46 +112,55 @@
     },
     {
       "name": "Choapa",
+      "code": null,
       "region": "IV Coquimbo",
       "alias": null
     },
     {
       "name": "Isla de Pascua",
+      "code": null,
       "region": "V Valparaíso",
       "alias": null
     },
     {
       "name": "Los Andes",
+      "code": null,
       "region": "V Valparaíso",
       "alias": null
     },
     {
       "name": "Marga Marga",
+      "code": null,
       "region": "V Valparaíso",
       "alias": null
     },
     {
       "name": "Petorca",
+      "code": null,
       "region": "V Valparaíso",
       "alias": null
     },
     {
       "name": "Quillota",
+      "code": null,
       "region": "V Valparaíso",
       "alias": null
     },
     {
       "name": "San Antonio",
+      "code": null,
       "region": "V Valparaíso",
       "alias": null
     },
     {
       "name": "San Felipe de Aconcagua",
+      "code": null,
       "region": "V Valparaíso",
       "alias": null
     },
     {
       "name": "Valparaíso",
+      "code": null,
       "region": "V Valparaíso",
       "alias": [
         "Valparaiso"
@@ -147,31 +168,37 @@
     },
     {
       "name": "Cachapoal",
+      "code": null,
       "region": "VI O'Higgins",
       "alias": null
     },
     {
       "name": "Colchagua",
+      "code": null,
       "region": "VI O'Higgins",
       "alias": null
     },
     {
       "name": "Cardenal Caro",
+      "code": null,
       "region": "VI O'Higgins",
       "alias": null
     },
     {
       "name": "Talca",
+      "code": null,
       "region": "VII Maule",
       "alias": null
     },
     {
       "name": "Linares",
+      "code": null,
       "region": "VII Maule",
       "alias": null
     },
     {
       "name": "Curicó",
+      "code": null,
       "region": "VII Maule",
       "alias": [
         "Curico"
@@ -179,11 +206,13 @@
     },
     {
       "name": "Cauquenes",
+      "code": null,
       "region": "VII Maule",
       "alias": null
     },
     {
       "name": "Concepción",
+      "code": null,
       "region": "VIII Biobío",
       "alias": [
         "Concepcion"
@@ -191,6 +220,7 @@
     },
     {
       "name": "Ñuble",
+      "code": null,
       "region": "VIII Biobío",
       "alias": [
         "Nuble"
@@ -198,6 +228,7 @@
     },
     {
       "name": "Biobío",
+      "code": null,
       "region": "VIII Biobío",
       "alias": [
         "Biobio"
@@ -205,56 +236,67 @@
     },
     {
       "name": "Arauco",
+      "code": null,
       "region": "VIII Biobío",
       "alias": null
     },
     {
       "name": "Cautin",
+      "code": null,
       "region": "IX Araucanía",
       "alias": null
     },
     {
       "name": "Malleco",
+      "code": null,
       "region": "IX Araucanía",
       "alias": null
     },
     {
       "name": "Valdivia",
+      "code": null,
       "region": "XIV Los Ríos",
       "alias": null
     },
     {
       "name": "Ranco",
+      "code": null,
       "region": "XIV Los Ríos",
       "alias": null
     },
     {
       "name": "Llanquihue",
+      "code": null,
       "region": "X Los Lagos",
       "alias": null
     },
     {
       "name": "Osorno",
+      "code": null,
       "region": "X Los Lagos",
       "alias": null
     },
     {
       "name": "Chiloe",
+      "code": null,
       "region": "X Los Lagos",
       "alias": null
     },
     {
       "name": "Palena",
+      "code": null,
       "region": "X Los Lagos",
       "alias": null
     },
     {
       "name": "Coihaique",
+      "code": null,
       "region": "XI Aisén",
       "alias": null
     },
     {
       "name": "Aisén",
+      "code": null,
       "region": "XI Aisén",
       "alias": [
         "Aisen"
@@ -262,31 +304,37 @@
     },
     {
       "name": "General Carrera",
+      "code": null,
       "region": "XI Aisén",
       "alias": null
     },
     {
       "name": "Capitan Prat",
+      "code": null,
       "region": "XI Aisén",
       "alias": null
     },
     {
       "name": "Magallanes",
+      "code": null,
       "region": "XII Magallanes",
       "alias": null
     },
     {
       "name": "Ultima Esperanza",
+      "code": null,
       "region": "XII Magallanes",
       "alias": null
     },
     {
       "name": "Tierra del Fuego",
+      "code": null,
       "region": "XII Magallanes",
       "alias": null
     },
     {
       "name": "Antártica Chilena",
+      "code": null,
       "region": "XII Magallanes",
       "alias": [
         "Antartica Chilena"
@@ -294,31 +342,37 @@
     },
     {
       "name": "Santiago",
+      "code": null,
       "region": "RM Santiago Metropolitan",
       "alias": null
     },
     {
       "name": "Cordillera",
+      "code": null,
       "region": "RM Santiago Metropolitan",
       "alias": null
     },
     {
       "name": "Maipo",
+      "code": null,
       "region": "RM Santiago Metropolitan",
       "alias": null
     },
     {
       "name": "Talagante",
+      "code": null,
       "region": "RM Santiago Metropolitan",
       "alias": null
     },
     {
       "name": "Melipilla",
+      "code": null,
       "region": "RM Santiago Metropolitan",
       "alias": null
     },
     {
       "name": "Chacabuco",
+      "code": null,
       "region": "RM Santiago Metropolitan",
       "alias": null
     }

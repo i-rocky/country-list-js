@@ -138,6 +138,8 @@
         "additionalProperties": false,
         "required": [
           "name",
+          "code",
+          "region",
           "alias"
         ],
         "properties": {
@@ -145,31 +147,30 @@
             "type": "string",
             "minLength": 1
           },
-          "alias": {
-            "description": "Alternative names. Always an array or null -- a bare string turns lookups into a substring search.",
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "type": "array",
-                "minItems": 1,
-                "items": {
-                  "type": "string",
-                  "minLength": 1
-                }
-              }
-            ]
-          },
-          "short": {
-            "description": "Local subdivision code, where one exists.",
-            "type": "string",
-            "minLength": 1
+          "code": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Local subdivision code, null where the country has none."
           },
           "region": {
-            "description": "Parent grouping, where the country has one above provinces.",
-            "type": "string",
-            "minLength": 1
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Parent grouping, null where the country has none above this tier."
+          },
+          "alias": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "description": "Alternative names. Always a list or null -- never a bare string."
           }
         }
       }
