@@ -6,7 +6,7 @@
   "native_name": "Lietuva",
   "demonym": "Lithuanian",
   "continent": "EU",
-  "region": "Baltic Countries",
+  "region": "Northern Europe",
   "capital": "Vilnius",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".lt"
   ],
-  "area": 65300,
   "latlng": [
     56,
     24

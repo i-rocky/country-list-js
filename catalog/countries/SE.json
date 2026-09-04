@@ -6,7 +6,7 @@
   "native_name": "Sverige",
   "demonym": "Swedish",
   "continent": "EU",
-  "region": "Scandinavia, Nordic Countries",
+  "region": "Northern Europe",
   "capital": "Stockholm",
   "currency": "SEK",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".se"
   ],
-  "area": 450295,
   "latlng": [
     62,
     15

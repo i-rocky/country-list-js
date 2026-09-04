@@ -22,10 +22,10 @@ The other sources are:
 | path | holds |
 |---|---|
 | `catalog/countries/<ISO2>.json` | one country |
-| `catalog/reference/currencies.json` | currency code → symbol and minor unit |
+| `catalog/reference/currencies.json` | currency code → CLDR symbol and ISO 4217 minor unit |
 | `catalog/reference/continents.json` | continent code → name |
 | `catalog/reference/name-aliases.json` | alternative country names |
-| `catalog/reference/retired-currencies.json` | ISO 4217 codes that no longer exist |
+| `catalog/reference/retired-currencies.json` | ISO 4217 codes that no longer exist, and what replaced them |
 | `catalog/country.schema.json` | what a country file may contain |
 
 Everything a caller can observe -- `names()`, `capitals()`, `ls()`, the key
@@ -55,21 +55,36 @@ the break sat on `master` for nearly two years because nothing checked.
 
 ## Some rules the data follows
 
-- **Names** are the current common short name in English. When a country is
-  renamed, change `name` and add the former name to
-  `catalog/reference/name-aliases.json` in the same commit -- an alias only
-  ever turns a lookup that answered nothing into a hit, so nobody using the
-  old name loses anything. Native and official long forms go in the alias
-  file too, never in `name`.
+The README's "Notes on the data" says what each field means and where it
+comes from. When you change a value, change it to what that source says, and
+say which source in the commit.
+
+- **Names** are the current common short name in English, spelled as the
+  place spells it. When a country is renamed, change `name` and add the former
+  name to `catalog/reference/name-aliases.json` in the same commit -- an alias
+  only ever turns a lookup that answered nothing into a hit, so nobody using
+  the old name loses anything. Native and official long forms go in the alias
+  file too, never in `name`. Don't add the ASCII form of an accented name as
+  an alias: lookups fold diacritics, so it already resolves.
+- **A value that does not exist is absent**, never `''`, `null` or `' '`.
+  Antarctica has no `capital` and no `currency`; Bouvet Island has no
+  `dialing_code`.
+- **`region` is a UN M49 name**, and `continent` the continent M49 places it
+  in. The schema lists the 23 regions; a value outside them fails validation.
+- **`dialing_code` is digits only**, the E.164 country calling code without
+  the plus. What identifies a territory within a shared code goes in
+  `area_codes`: Antigua is `"1"` with `["268"]`, never `"+1-268"`.
 - **A subdivision carries all four keys** -- `name`, `code`, `region`,
   `alias` -- with `null` where the country has no such thing.
 - **An alias is a list or `null`.** Never a bare string: `indexOf` on a
   string is a substring search, and three of these once made
   `findByProvince('B')` answer Vietnam.
-- **Borders are symmetric.** If you add A → B, add B → A.
-- **Dialing codes are strings**, even when they look like numbers.
-- **Don't add `population`.** It changes every year and there is no way to keep
-  250 figures current.
+- **Borders are land borders as they stand, and symmetric.** If you add
+  A → B, add B → A. A claim is not a border.
+- **A retired currency goes in `retired-currencies.json`** with its successor
+  and the date, and comes out of `currencies.json`. Its code keeps resolving.
+- **Don't add `area` or `population`.** No two sources agree on what an area
+  includes, and population changes every year; neither can be kept correct.
 
 ## Changing behaviour
 

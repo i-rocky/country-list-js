@@ -24,7 +24,14 @@ const provincesByCode: Record<string, Province[]> = require('./data/provinces.js
 const retiredCurrencies: Record<string, {successor: string; countries: Iso2[]; retired: string}> =
     require('./data/retired-currencies.json');
 
-type Field = 'iso3' | 'name' | 'capital' | 'currency';
+type Field = 'iso2' | 'iso3' | 'name' | 'capital' | 'currency';
+const FIELDS: Field[] = ['iso2', 'iso3', 'name', 'capital', 'currency'];
+
+type Table = Record<string, CountryRecord[]>;
+
+// Lookup tables have no prototype, so a query of "constructor" or "toString"
+// reads as a miss rather than as Object.prototype's own property.
+const table = (): Table => Object.create(null);
 
 const all = {} as Record<string, CountryRecord>;
 
@@ -41,19 +48,19 @@ function transform(r: CountryRecord | undefined): Country | undefined {
         continent: r.continent,
         region: r.region,
         capital: r.capital,
-        currency: {
+        currency: r.currency === undefined ? undefined : {
             code: r.currency,
-            symbol: r.currency_symbol,
-            decimal: r.currency_decimal,
+            symbol: r.currency_symbol as string,
+            decimal: r.currency_decimal as number,
         },
         dialing_code: r.dialing_code,
+        area_codes: r.area_codes,
         provinces: r.provinces,
         code: {iso2: r.iso2, iso3: r.iso3, numeric: r.iso_numeric},
         native_name: r.native_name,
         demonym: r.demonym,
         languages: r.languages,
         tld: r.tld,
-        area: r.area,
         latlng: r.latlng,
         timezones: r.timezones,
         borders: r.borders,
@@ -72,70 +79,85 @@ function many(list: CountryRecord[] | undefined): Country[] {
     return list ? (list.map(transform) as Country[]) : [];
 }
 
-// Exact match first, always: an alias or a case fold can only turn a lookup
-// that answered undefined into a hit, never change one that already worked.
+// Case and Latin diacritics are folded away for the fallback match, so that
+// 'bogota' finds Bogotá and 'sao tome' finds São Tomé.  Only the combining
+// marks of the Latin, Greek and Cyrillic scripts are stripped; the vowel signs
+// of Indic and Arabic scripts are letters in their own right and stay.
+
+function fold(s: string): string {
+    return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[\u02bb\u2018\u2019]/g, "'").toLowerCase();
+}
+
+// Exact match first, always: an alias or a fold can only turn a lookup that
+// answered undefined into a hit, never change one that already worked.
 
 function resolve(field: Field, value: unknown): CountryRecord[] | undefined {
-    const exact = index[field][value as string];
-    if (exact) return exact;
     if (typeof value !== 'string') return undefined;
+
+    const exact = index[field][value];
+    if (exact) return exact;
 
     if (field === 'name') {
         const owner = aliases().exact[value];
         if (owner) return [all[owner]];
     }
 
-    const key = value.toLowerCase();
-    const insensitive = lowercase()[field][key];
-    if (insensitive) return insensitive;
+    const key = fold(value);
+    const loose = folded()[field][key];
+    if (loose) return loose;
 
     if (field === 'name') {
-        const owner = aliases().lower[key];
+        const owner = aliases().folded[key];
         if (owner) return [all[owner]];
     }
     return undefined;
 }
 
 // Everything below the exact match is built on first use.  An exact hit is the
-// common case, and lowercasing 250 records five times over -- plus parsing and
+// common case, and folding 250 records five times over -- plus parsing and
 // indexing the alias table -- is work most callers never need.
 
-let lowerMaps: Record<Field | 'iso2', Record<string, CountryRecord[]>> | null = null;
+let foldedMaps: Record<Field, Table> | null = null;
 
-function lowercase() {
-    if (lowerMaps) return lowerMaps;
-    const maps = lowerMaps =
-        {iso2: {}, iso3: {}, name: {}, capital: {}, currency: {}} as
-        Record<Field | 'iso2', Record<string, CountryRecord[]>>;
+function folded(): Record<Field, Table> {
+    if (foldedMaps) return foldedMaps;
+    const maps = foldedMaps = {
+        iso2: table(), iso3: table(), name: table(), capital: table(), currency: table(),
+    };
 
     for (const r of records)
-        for (const f of ['iso2', 'iso3', 'name', 'capital', 'currency'] as (Field | 'iso2')[]) {
-            const k = String(r[f]).toLowerCase();
+        for (const f of FIELDS) {
+            const v = r[f];
+            if (v === undefined) continue;
+            const k = fold(v);
             (maps[f][k] || (maps[f][k] = [])).push(r);
         }
 
     // a retired code has to be reachable case-insensitively too
     for (const code of Object.keys(retiredCurrencies))
-        maps.currency[code.toLowerCase()] ||= retiredCurrencies[code].countries.map(c => all[c]);
+        maps.currency[fold(code)] ||= retiredCurrencies[code].countries.map(c => all[c]);
 
     return maps;
 }
 
-let aliasMaps: {exact: Record<string, Iso2>; lower: Record<string, Iso2>} | null = null;
+let aliasMaps: {exact: Record<string, Iso2>; folded: Record<string, Iso2>} | null = null;
 
 function aliases() {
     if (aliasMaps) return aliasMaps;
-    const exact: Record<string, Iso2> = require('./data/name-aliases.json');
-    const lower: Record<string, Iso2> = {};
-    for (const a of Object.keys(exact)) lower[a.toLowerCase()] = exact[a];
-    return (aliasMaps = {exact, lower});
+    const exact: Record<string, Iso2> = Object.assign(
+        Object.create(null), require('./data/name-aliases.json'));
+    const loose: Record<string, Iso2> = Object.create(null);
+    for (const a of Object.keys(exact)) loose[fold(a)] = exact[a];
+    return (aliasMaps = {exact, folded: loose});
 }
 
 // -- indexes -----------------------------------------------------------------
 
-const index: Record<Field, Record<string, CountryRecord[]>> =
-    {iso3: {}, name: {}, capital: {}, currency: {}};
-const byPrefix: Record<string, CountryRecord[]> = {};
+const index: Record<Field, Table> = {
+    iso2: table(), iso3: table(), name: table(), capital: table(), currency: table(),
+};
+const byPrefix: Table = table();
 let prefixLengths: number[] = [];
 
 (function build() {
@@ -148,19 +170,27 @@ let prefixLengths: number[] = [];
         r.provinces = provincesByCode[r.iso2];
         all[r.iso2] = r;
 
-        for (const f of ['iso3', 'name', 'capital', 'currency'] as Field[]) {
-            const v = r[f] as string;
+        for (const f of FIELDS) {
+            const v = r[f];
+            if (v === undefined) continue;
             (index[f][v] || (index[f][v] = [])).push(r);
         }
 
-        const prefix = r.dialing_code.replace(/\D/g, '');
-        if (!prefix) continue;
+        if (r.dialing_code === undefined) continue;
 
-        (byPrefix[prefix] || (byPrefix[prefix] = [])).push(r);
-        lengths[prefix.length] = true;
+        // a territory with area codes is reachable only through them: Antigua
+        // is +1 268, and the bare +1 stays with the countries that hold the
+        // whole code
+        const prefixes = r.area_codes
+            ? r.area_codes.map(a => r.dialing_code + a)
+            : [r.dialing_code];
+        for (const p of prefixes) {
+            (byPrefix[p] || (byPrefix[p] = [])).push(r);
+            lengths[p.length] = true;
+        }
     }
 
-    // longest prefix first, so +1-246 finds Barbados before the +1 block
+    // longest prefix first, so +1 246 finds Barbados before the +1 block
     prefixLengths = Object.keys(lengths).map(Number).sort((a, b) => b - a);
 
     // Codes ISO 4217 has retired resolve to the countries that used them, so
@@ -176,25 +206,27 @@ let prefixLengths: number[] = [];
 // Province lookup is built on the first call rather than at load: it walks
 // every subdivision and its aliases, and most callers never ask.
 
-let provinceMap: Map<string, CountryRecord[]> | null = null;
+let provinceMaps: {exact: Map<string, CountryRecord[]>; folded: Map<string, CountryRecord[]>} | null = null;
 
-function provinceIndex(): Map<string, CountryRecord[]> {
-    if (provinceMap) return provinceMap;
-    const map = provinceMap = new Map<string, CountryRecord[]>();
+function provinces() {
+    if (provinceMaps) return provinceMaps;
+    const exact = new Map<string, CountryRecord[]>();
+    const loose = new Map<string, CountryRecord[]>();
 
-    const add = (key: string, r: CountryRecord) => {
+    const add = (map: Map<string, CountryRecord[]>, key: string, r: CountryRecord) => {
         const list = map.get(key);
         if (!list) map.set(key, [r]);
-        else if (list[list.length - 1] !== r) list.push(r);
+        else if (!list.includes(r)) list.push(r);
     };
 
     for (const r of records)
-        for (const p of r.provinces || []) {
-            add(p.name, r);
-            for (const a of p.alias || []) add(a, r);
-        }
+        for (const p of r.provinces || [])
+            for (const name of [p.name, ...(p.alias || [])]) {
+                add(exact, name, r);
+                add(loose, fold(name), r);
+            }
 
-    return map;
+    return (provinceMaps = {exact, folded: loose});
 }
 
 // -- the module --------------------------------------------------------------
@@ -203,14 +235,8 @@ const country = {
     /** Every country, keyed by ISO 3166-1 alpha-2 code. */
     all,
 
-    /** Find by ISO 3166-1 alpha-2 code. Falls back to a case-insensitive match. */
-    findByIso2(code: string): Country | undefined {
-        const r = all[code];
-        if (r) return transform(r);
-        if (typeof code !== 'string') return undefined;
-        const hit = lowercase().iso2[code.toLowerCase()];
-        return hit && transform(hit[0]);
-    },
+    /** Find by ISO 3166-1 alpha-2 code. Unique, so one country or none. */
+    findByIso2: (code: string): Country | undefined => one(resolve('iso2', code)),
 
     /** Find by ISO 3166-1 alpha-3 code. Unique, so one country or none. */
     findByIso3: (code: string): Country | undefined => one(resolve('iso3', code)),
@@ -234,14 +260,18 @@ const country = {
     findByCurrency: (code: string): Country[] => many(resolve('currency', code)),
 
     /** Find by subdivision, by name or by alias. */
-    findByProvince: (name: string): Country[] => many(provinceIndex().get(name)),
+    findByProvince(name: string): Country[] {
+        if (typeof name !== 'string') return [];
+        const maps = provinces();
+        return many(maps.exact.get(name) || maps.folded.get(fold(name)));
+    },
 
     /**
      * Find by telephone number, on the most specific dialing code that prefixes
      * it: `'+1246...'` is Barbados, not the whole `+1` block. Codes genuinely
      * shared at the same length still return every country holding them, so
-     * `'+1...'` answers Canada, the United States and the U.S. Minor Outlying
-     * Islands together.
+     * `'+1 212...'` answers Canada, the United States and the U.S. Minor
+     * Outlying Islands together.
      */
     findByPhoneNbr(nbr: string): Country[] {
         if (typeof nbr !== 'string') return [];
@@ -274,8 +304,8 @@ const country = {
         return country.ls('name');
     },
 
-    /** Every capital, in name order. */
-    capitals(): string[] {
+    /** Every capital, in name order; undefined for the territories that have none. */
+    capitals(): (string | undefined)[] {
         return country.ls('capital');
     },
 };

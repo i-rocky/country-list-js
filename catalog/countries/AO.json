@@ -5,7 +5,7 @@
   "name": "Angola",
   "demonym": "Angolan",
   "continent": "AF",
-  "region": "Central Africa",
+  "region": "Middle Africa",
   "capital": "Luanda",
   "currency": "AOA",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".ao"
   ],
-  "area": 1246700,
   "latlng": [
     -12.5,
     18.5

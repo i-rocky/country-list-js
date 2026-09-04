@@ -3,9 +3,8 @@
   "iso3": "IOT",
   "iso_numeric": "086",
   "name": "British Indian Ocean Territory",
-  "demonym": "Indian",
-  "continent": "AS",
-  "region": "Southern Asia",
+  "continent": "AF",
+  "region": "Eastern Africa",
   "capital": "Diego Garcia",
   "currency": "USD",
   "languages": [
@@ -15,7 +14,6 @@
   "tld": [
     ".io"
   ],
-  "area": 60,
   "latlng": [
     -6,
     71.5

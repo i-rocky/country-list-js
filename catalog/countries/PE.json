@@ -16,7 +16,6 @@
   "tld": [
     ".pe"
   ],
-  "area": 1285216,
   "latlng": [
     -10,
     -76
@@ -48,9 +47,7 @@
       "name": "Bongará",
       "code": null,
       "region": "Amazonas",
-      "alias": [
-        "Bongara"
-      ]
+      "alias": null
     },
     {
       "name": "Condorcanqui",
@@ -68,9 +65,7 @@
       "name": "Rodríguez de Mendoza",
       "code": null,
       "region": "Amazonas",
-      "alias": [
-        "Rodriguez de Mendoza"
-      ]
+      "alias": null
     },
     {
       "name": "Utcubamba",
@@ -100,9 +95,7 @@
       "name": "Asunción",
       "code": null,
       "region": "Ancash",
-      "alias": [
-        "Asuncion"
-      ]
+      "alias": null
     },
     {
       "name": "Bolognesi",
@@ -120,9 +113,7 @@
       "name": "Carlos Fermín Fitzcarrald",
       "code": null,
       "region": "Ancash",
-      "alias": [
-        "Carlos Fermin Fitzcarrald"
-      ]
+      "alias": null
     },
     {
       "name": "Casma",
@@ -254,17 +245,13 @@
       "name": "Camaná",
       "code": null,
       "region": "Arequipa",
-      "alias": [
-        "Camana"
-      ]
+      "alias": null
     },
     {
       "name": "Caravelí",
       "code": null,
       "region": "Arequipa",
-      "alias": [
-        "Caraveli"
-      ]
+      "alias": null
     },
     {
       "name": "Castilla",
@@ -294,9 +281,7 @@
       "name": "La Unión",
       "code": null,
       "region": "Arequipa",
-      "alias": [
-        "La Union"
-      ]
+      "alias": null
     },
     {
       "name": "Huamanga",
@@ -344,9 +329,7 @@
       "name": "Páucar del Sara Sara",
       "code": null,
       "region": "Ayacucho",
-      "alias": [
-        "Paucar del Sara Sara"
-      ]
+      "alias": null
     },
     {
       "name": "Sucre",
@@ -358,17 +341,13 @@
       "name": "Víctor Fajardo",
       "code": null,
       "region": "Ayacucho",
-      "alias": [
-        "Victor Fajardo"
-      ]
+      "alias": null
     },
     {
       "name": "Vilcas Huamán",
       "code": null,
       "region": "Ayacucho",
-      "alias": [
-        "Vilcas Huaman"
-      ]
+      "alias": null
     },
     {
       "name": "Cajamarca",
@@ -386,9 +365,7 @@
       "name": "Celendín",
       "code": null,
       "region": "Cajamarca",
-      "alias": [
-        "Celendin"
-      ]
+      "alias": null
     },
     {
       "name": "Chota",
@@ -400,9 +377,7 @@
       "name": "Contumazá",
       "code": null,
       "region": "Cajamarca",
-      "alias": [
-        "Contumaza"
-      ]
+      "alias": null
     },
     {
       "name": "Cutervo",
@@ -420,9 +395,7 @@
       "name": "Jaén",
       "code": null,
       "region": "Cajamarca",
-      "alias": [
-        "Jaen"
-      ]
+      "alias": null
     },
     {
       "name": "San Ignacio",
@@ -512,9 +485,7 @@
       "name": "La Convención",
       "code": null,
       "region": "Cusco",
-      "alias": [
-        "La Convencion"
-      ]
+      "alias": null
     },
     {
       "name": "Paruro",
@@ -574,9 +545,7 @@
       "name": "Huaytará",
       "code": null,
       "region": "Huancavelica",
-      "alias": [
-        "Huaytara"
-      ]
+      "alias": null
     },
     {
       "name": "Tayacaja",
@@ -588,9 +557,7 @@
       "name": "Huánuco",
       "code": null,
       "region": "Huánuco",
-      "alias": [
-        "Huanuco"
-      ]
+      "alias": null
     },
     {
       "name": "Ambo",
@@ -614,9 +581,7 @@
       "name": "Huamalíes",
       "code": null,
       "region": "Huánuco",
-      "alias": [
-        "Huamalies"
-      ]
+      "alias": null
     },
     {
       "name": "Leoncio Prado",
@@ -628,9 +593,7 @@
       "name": "Marañón",
       "code": null,
       "region": "Huánuco",
-      "alias": [
-        "Maranon"
-      ]
+      "alias": null
     },
     {
       "name": "Pachitea",
@@ -696,9 +659,7 @@
       "name": "Concepción",
       "code": null,
       "region": "Junín",
-      "alias": [
-        "Concepcion"
-      ]
+      "alias": null
     },
     {
       "name": "Chanchamayo",
@@ -716,9 +677,7 @@
       "name": "Junín",
       "code": null,
       "region": "Junín",
-      "alias": [
-        "Junin"
-      ]
+      "alias": null
     },
     {
       "name": "Satipo",
@@ -760,25 +719,19 @@
       "name": "Bolívar",
       "code": null,
       "region": "La Libertad",
-      "alias": [
-        "Bolivar"
-      ]
+      "alias": null
     },
     {
       "name": "Chepén",
       "code": null,
       "region": "La Libertad",
-      "alias": [
-        "Chepen"
-      ]
+      "alias": null
     },
     {
       "name": "Julcán",
       "code": null,
       "region": "La Libertad",
-      "alias": [
-        "Julcan"
-      ]
+      "alias": null
     },
     {
       "name": "Otuzco",
@@ -802,9 +755,7 @@
       "name": "Sánchez Carrión",
       "code": null,
       "region": "La Libertad",
-      "alias": [
-        "Sanchez Carrion"
-      ]
+      "alias": null
     },
     {
       "name": "Santiago de Chuco",
@@ -816,17 +767,13 @@
       "name": "Gran Chimú",
       "code": null,
       "region": "La Libertad",
-      "alias": [
-        "Gran Chimu"
-      ]
+      "alias": null
     },
     {
       "name": "Virú",
       "code": null,
       "region": "La Libertad",
-      "alias": [
-        "Viru"
-      ]
+      "alias": null
     },
     {
       "name": "Chiclayo",
@@ -838,9 +785,7 @@
       "name": "Ferreñafe",
       "code": null,
       "region": "Lambayeque",
-      "alias": [
-        "Ferrenafe"
-      ]
+      "alias": null
     },
     {
       "name": "Lambayeque",
@@ -882,9 +827,7 @@
       "name": "Cañete",
       "code": null,
       "region": "Lima",
-      "alias": [
-        "Canete"
-      ]
+      "alias": null
     },
     {
       "name": "Huaral",
@@ -902,9 +845,7 @@
       "name": "Oyón",
       "code": null,
       "region": "Lima",
-      "alias": [
-        "Oyon"
-      ]
+      "alias": null
     },
     {
       "name": "Yauyos",
@@ -934,9 +875,7 @@
       "name": "Mariscal Ramón Castilla",
       "code": null,
       "region": "Loreto",
-      "alias": [
-        "Mariscal Ramon Castilla"
-      ]
+      "alias": null
     },
     {
       "name": "Putumayo",
@@ -960,9 +899,7 @@
       "name": "Datem del Marañón",
       "code": null,
       "region": "Loreto",
-      "alias": [
-        "Datem del Maranon"
-      ]
+      "alias": null
     },
     {
       "name": "Tambopata",
@@ -974,9 +911,7 @@
       "name": "Manú",
       "code": null,
       "region": "Madre de Dios",
-      "alias": [
-        "Manu"
-      ]
+      "alias": null
     },
     {
       "name": "Tahuamanu",
@@ -994,9 +929,7 @@
       "name": "General Sánchez Cerro",
       "code": null,
       "region": "Moquegua",
-      "alias": [
-        "General Sanchez Cerro"
-      ]
+      "alias": null
     },
     {
       "name": "Ilo",
@@ -1014,9 +947,7 @@
       "name": "Daniel Alcídes Carrión",
       "code": null,
       "region": "Pasco",
-      "alias": [
-        "Daniel Alcides Carrion"
-      ]
+      "alias": null
     },
     {
       "name": "Oxapampa",
@@ -1046,9 +977,7 @@
       "name": "Morropón",
       "code": null,
       "region": "Piura",
-      "alias": [
-        "Morropon"
-      ]
+      "alias": null
     },
     {
       "name": "Paita",
@@ -1084,9 +1013,7 @@
       "name": "Azángaro",
       "code": null,
       "region": "Puno",
-      "alias": [
-        "Azangaro"
-      ]
+      "alias": null
     },
     {
       "name": "Carabaya",
@@ -1110,9 +1037,7 @@
       "name": "Huancané",
       "code": null,
       "region": "Puno",
-      "alias": [
-        "Huancane"
-      ]
+      "alias": null
     },
     {
       "name": "Lampa",
@@ -1142,9 +1067,7 @@
       "name": "San Román",
       "code": null,
       "region": "Puno",
-      "alias": [
-        "San Roman"
-      ]
+      "alias": null
     },
     {
       "name": "Sandia",
@@ -1192,9 +1115,7 @@
       "name": "Mariscal Cáceres",
       "code": null,
       "region": "San Martín",
-      "alias": [
-        "Mariscal Caceres"
-      ]
+      "alias": null
     },
     {
       "name": "Picota",
@@ -1212,9 +1133,7 @@
       "name": "San Martín",
       "code": null,
       "region": "San Martín",
-      "alias": [
-        "San Martin"
-      ]
+      "alias": null
     },
     {
       "name": "Tocache",
@@ -1286,9 +1205,7 @@
       "name": "Purús",
       "code": null,
       "region": "Ucayali",
-      "alias": [
-        "Purus"
-      ]
+      "alias": null
     }
   ]
 }

@@ -3,7 +3,7 @@
   "iso3": "ECU",
   "iso_numeric": "218",
   "name": "Ecuador",
-  "demonym": "Ecuadorean",
+  "demonym": "Ecuadorian",
   "continent": "SA",
   "region": "South America",
   "capital": "Quito",
@@ -15,7 +15,6 @@
   "tld": [
     ".ec"
   ],
-  "area": 276841,
   "latlng": [
     -2,
     -77.5

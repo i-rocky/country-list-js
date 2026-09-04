@@ -4,10 +4,10 @@
   "iso_numeric": "462",
   "name": "Maldives",
   "native_name": "ދިވެހިރާއްޖެ",
-  "demonym": "Maldivan",
+  "demonym": "Maldivian",
   "continent": "AS",
   "region": "Southern Asia",
-  "capital": "Male",
+  "capital": "Malé",
   "currency": "MVR",
   "languages": [
     "dv"
@@ -16,7 +16,6 @@
   "tld": [
     ".mv"
   ],
-  "area": 300,
   "latlng": [
     3.25,
     73

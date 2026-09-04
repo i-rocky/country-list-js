@@ -6,7 +6,7 @@
   "native_name": "الكويت",
   "demonym": "Kuwaiti",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Kuwait City",
   "currency": "KWD",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".kw"
   ],
-  "area": 17818,
   "latlng": [
     29.5,
     45.75
@@ -26,7 +25,6 @@
   ],
   "borders": [
     "IQ",
-    "IR",
     "SA"
   ]
 }

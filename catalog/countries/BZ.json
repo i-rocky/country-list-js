@@ -5,18 +5,16 @@
   "name": "Belize",
   "demonym": "Belizean",
   "continent": "NA",
-  "region": "Caribbean",
+  "region": "Central America",
   "capital": "Belmopan",
   "currency": "BZD",
   "languages": [
-    "en",
-    "es"
+    "en"
   ],
   "dialing_code": "501",
   "tld": [
     ".bz"
   ],
-  "area": 22966,
   "latlng": [
     17.25,
     -88.75

@@ -3,7 +3,7 @@
   "iso3": "KAZ",
   "iso_numeric": "398",
   "name": "Kazakhstan",
-  "native_name": "Қазақстан",
+  "native_name": "Қазақстан / Казахстан",
   "demonym": "Kazakhstani",
   "continent": "AS",
   "region": "Central Asia",
@@ -14,11 +14,14 @@
     "ru"
   ],
   "dialing_code": "7",
+  "area_codes": [
+    "6",
+    "7"
+  ],
   "tld": [
     ".kz",
     ".қаз"
   ],
-  "area": 2724900,
   "latlng": [
     48,
     68

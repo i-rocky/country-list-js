@@ -6,17 +6,17 @@
   "native_name": "Україна",
   "demonym": "Ukrainian",
   "continent": "EU",
-  "region": "Central Europe",
-  "capital": "Kiev",
+  "region": "Eastern Europe",
+  "capital": "Kyiv",
   "currency": "UAH",
   "languages": [
     "uk"
   ],
   "dialing_code": "380",
   "tld": [
-    ".ua"
+    ".ua",
+    ".укр"
   ],
-  "area": 603700,
   "latlng": [
     49,
     32

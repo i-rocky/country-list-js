@@ -5,7 +5,7 @@
   "name": "United Kingdom",
   "demonym": "British",
   "continent": "EU",
-  "region": "Western Europe",
+  "region": "Northern Europe",
   "capital": "London",
   "currency": "GBP",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".uk"
   ],
-  "area": 242900,
   "latlng": [
     54,
     -2
@@ -24,7 +23,6 @@
     "Europe/London"
   ],
   "borders": [
-    "CY",
     "IE"
   ],
   "provinces": [

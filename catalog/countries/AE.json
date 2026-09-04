@@ -3,10 +3,10 @@
   "iso3": "ARE",
   "iso_numeric": "784",
   "name": "United Arab Emirates",
-  "native_name": "دولة الإمارات العربية المتحدة",
+  "native_name": "الإمارات العربية المتحدة",
   "demonym": "Emirati",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Abu Dhabi",
   "currency": "AED",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "971",
   "tld": [
-    ".ae"
+    ".ae",
+    ".امارات"
   ],
-  "area": 83600,
   "latlng": [
     24,
     54

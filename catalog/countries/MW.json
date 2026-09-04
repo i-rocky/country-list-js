@@ -5,18 +5,16 @@
   "name": "Malawi",
   "demonym": "Malawian",
   "continent": "AF",
-  "region": "East Africa, Southern Africa",
+  "region": "Eastern Africa",
   "capital": "Lilongwe",
   "currency": "MWK",
   "languages": [
-    "en",
-    "ny"
+    "en"
   ],
   "dialing_code": "265",
   "tld": [
     ".mw"
   ],
-  "area": 118484,
   "latlng": [
     -13.5,
     34

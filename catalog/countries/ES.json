@@ -16,7 +16,6 @@
   "tld": [
     ".es"
   ],
-  "area": 505992,
   "latlng": [
     40,
     -4
@@ -39,7 +38,6 @@
       "code": "C",
       "region": null,
       "alias": [
-        "La Coruna",
         "A Coruña"
       ]
     },
@@ -70,8 +68,7 @@
       "code": "SS",
       "region": null,
       "alias": [
-        "Gipuzkoa",
-        "Guipuzcoa"
+        "Gipuzkoa"
       ]
     },
     {
@@ -85,7 +82,6 @@
       "code": "L",
       "region": null,
       "alias": [
-        "Lerida",
         "Lleida"
       ]
     },
@@ -113,9 +109,7 @@
       "name": "Castellón",
       "code": "CS",
       "region": null,
-      "alias": [
-        "Castellon"
-      ]
+      "alias": null
     },
     {
       "name": "Valencia",
@@ -163,9 +157,7 @@
       "name": "Almeria",
       "code": "AL",
       "region": null,
-      "alias": [
-        "Almería"
-      ]
+      "alias": null
     },
     {
       "name": "Granada",
@@ -177,9 +169,7 @@
       "name": "Málaga",
       "code": "MA",
       "region": null,
-      "alias": [
-        "Malaga"
-      ]
+      "alias": null
     },
     {
       "name": "Tenerife",
@@ -193,9 +183,7 @@
       "name": "Cádiz",
       "code": "CA",
       "region": null,
-      "alias": [
-        "Cadiz"
-      ]
+      "alias": null
     },
     {
       "name": "Sevilla",
@@ -233,9 +221,7 @@
       "name": "Cáceres",
       "code": "CC",
       "region": null,
-      "alias": [
-        "Caceres"
-      ]
+      "alias": null
     },
     {
       "name": "Toledo",
@@ -259,25 +245,19 @@
       "name": "Córdoba",
       "code": "CO",
       "region": null,
-      "alias": [
-        "Cordoba"
-      ]
+      "alias": null
     },
     {
       "name": "Jaén",
       "code": "J",
       "region": null,
-      "alias": [
-        "Jaen"
-      ]
+      "alias": null
     },
     {
       "name": "Ávila",
       "code": "AV",
       "region": null,
-      "alias": [
-        "Avila"
-      ]
+      "alias": null
     },
     {
       "name": "Valladolid",
@@ -295,9 +275,7 @@
       "name": "Álava",
       "code": "VI",
       "region": null,
-      "alias": [
-        "Alava"
-      ]
+      "alias": null
     },
     {
       "name": "Segovia",
@@ -321,9 +299,7 @@
       "name": "León",
       "code": "LE",
       "region": null,
-      "alias": [
-        "Leon"
-      ]
+      "alias": null
     },
     {
       "name": "Orense",

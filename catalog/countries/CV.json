@@ -3,7 +3,7 @@
   "iso3": "CPV",
   "iso_numeric": "132",
   "name": "Cabo Verde",
-  "demonym": "Cape Verdian",
+  "demonym": "Cabo Verdean",
   "continent": "AF",
   "region": "Western Africa",
   "capital": "Praia",
@@ -15,7 +15,6 @@
   "tld": [
     ".cv"
   ],
-  "area": 4033,
   "latlng": [
     16,
     -24

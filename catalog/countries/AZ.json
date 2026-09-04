@@ -10,14 +10,12 @@
   "capital": "Baku",
   "currency": "AZN",
   "languages": [
-    "az",
-    "hy"
+    "az"
   ],
   "dialing_code": "994",
   "tld": [
     ".az"
   ],
-  "area": 86600,
   "latlng": [
     40.5,
     47.5

@@ -3,7 +3,7 @@
   "iso3": "ATG",
   "iso_numeric": "028",
   "name": "Antigua and Barbuda",
-  "demonym": "Antiguan,Barbudan",
+  "demonym": "Antiguan and Barbudan",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "St. John's",
@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-268",
+  "dialing_code": "1",
+  "area_codes": [
+    "268"
+  ],
   "tld": [
     ".ag"
   ],
-  "area": 442,
   "latlng": [
     17.05,
     -61.8

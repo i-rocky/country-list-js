@@ -5,8 +5,8 @@
   "name": "United States",
   "demonym": "American",
   "continent": "NA",
-  "region": "North America",
-  "capital": "Washington",
+  "region": "Northern America",
+  "capital": "Washington, D.C.",
   "currency": "USD",
   "languages": [
     "en"
@@ -15,7 +15,6 @@
   "tld": [
     ".us"
   ],
-  "area": 9629091,
   "latlng": [
     38,
     -97

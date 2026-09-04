@@ -82,5 +82,20 @@
       "LV"
     ],
     "retired": "2014-01-01"
+  },
+  "ANG": {
+    "successor": "XCG",
+    "countries": [
+      "CW",
+      "SX"
+    ],
+    "retired": "2025-03-31"
+  },
+  "VES": {
+    "successor": "VED",
+    "countries": [
+      "VE"
+    ],
+    "retired": "2021-10-01"
   }
 }

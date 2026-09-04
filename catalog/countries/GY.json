@@ -5,7 +5,7 @@
   "name": "Guyana",
   "demonym": "Guyanese",
   "continent": "SA",
-  "region": "Caribbean",
+  "region": "South America",
   "capital": "Georgetown",
   "currency": "GYD",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".gy"
   ],
-  "area": 214969,
   "latlng": [
     5,
     -59

@@ -3,11 +3,11 @@
   "iso3": "LBY",
   "iso_numeric": "434",
   "name": "Libya",
-  "native_name": "‏ليبيا",
+  "native_name": "ليبيا",
   "demonym": "Libyan",
   "continent": "AF",
   "region": "Northern Africa",
-  "capital": "Tripolis",
+  "capital": "Tripoli",
   "currency": "LYD",
   "languages": [
     "ar"
@@ -16,7 +16,6 @@
   "tld": [
     ".ly"
   ],
-  "area": 1759540,
   "latlng": [
     25,
     17

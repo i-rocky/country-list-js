@@ -6,7 +6,7 @@
   "native_name": "Danmark",
   "demonym": "Danish",
   "continent": "EU",
-  "region": "Scandinavia, Nordic Countries",
+  "region": "Northern Europe",
   "capital": "Copenhagen",
   "currency": "DKK",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".dk"
   ],
-  "area": 43094,
   "latlng": [
     56,
     10

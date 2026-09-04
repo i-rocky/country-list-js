@@ -5,7 +5,7 @@
   "name": "Brunei",
   "demonym": "Bruneian",
   "continent": "AS",
-  "region": "South-East Asia",
+  "region": "South-eastern Asia",
   "capital": "Bandar Seri Begawan",
   "currency": "BND",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".bn"
   ],
-  "area": 5765,
   "latlng": [
     4.5,
     114.66666666

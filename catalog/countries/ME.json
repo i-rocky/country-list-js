@@ -3,10 +3,10 @@
   "iso3": "MNE",
   "iso_numeric": "499",
   "name": "Montenegro",
-  "native_name": "Crna Gora",
+  "native_name": "Crna Gora / Црна Гора",
   "demonym": "Montenegrin",
   "continent": "EU",
-  "region": "Balkans",
+  "region": "Southern Europe",
   "capital": "Podgorica",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".me"
   ],
-  "area": 13812,
   "latlng": [
     42.7044223,
     19.3957785

@@ -5,14 +5,17 @@
   "name": "Malaysia",
   "demonym": "Malaysian",
   "continent": "AS",
-  "region": "South-East Asia",
+  "region": "South-eastern Asia",
   "capital": "Kuala Lumpur",
   "currency": "MYR",
+  "languages": [
+    "ms"
+  ],
   "dialing_code": "60",
   "tld": [
-    ".my"
+    ".my",
+    ".مليسيا"
   ],
-  "area": 330803,
   "latlng": [
     2.5,
     112.5

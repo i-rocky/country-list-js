@@ -3,19 +3,20 @@
   "iso3": "PLW",
   "iso_numeric": "585",
   "name": "Palau",
+  "native_name": "Belau",
   "demonym": "Palauan",
   "continent": "OC",
-  "region": "Oceania",
-  "capital": "Melekeok",
+  "region": "Micronesia",
+  "capital": "Ngerulmud",
   "currency": "USD",
   "languages": [
-    "en"
+    "en",
+    "pau"
   ],
   "dialing_code": "680",
   "tld": [
     ".pw"
   ],
-  "area": 459,
   "latlng": [
     7.5,
     134.5

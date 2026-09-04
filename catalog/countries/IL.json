@@ -3,21 +3,20 @@
   "iso3": "ISR",
   "iso_numeric": "376",
   "name": "Israel",
-  "native_name": "יִשְׂרָאֵל",
+  "native_name": "ישראל",
   "demonym": "Israeli",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Jerusalem",
   "currency": "ILS",
   "languages": [
-    "he",
-    "ar"
+    "he"
   ],
   "dialing_code": "972",
   "tld": [
-    ".il"
+    ".il",
+    ".ישראל"
   ],
-  "area": 20770,
   "latlng": [
     31.5,
     34.75

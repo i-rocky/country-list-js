@@ -5,18 +5,17 @@
   "name": "Tonga",
   "demonym": "Tongan",
   "continent": "OC",
-  "region": "Oceania",
-  "capital": "Nuku'alofa",
+  "region": "Polynesia",
+  "capital": "Nukuʻalofa",
   "currency": "TOP",
   "languages": [
-    "en",
-    "to"
+    "to",
+    "en"
   ],
   "dialing_code": "676",
   "tld": [
     ".to"
   ],
-  "area": 747,
   "latlng": [
     -20,
     -175

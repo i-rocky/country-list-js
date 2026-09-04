@@ -6,21 +6,16 @@
   "native_name": "République démocratique du Congo",
   "demonym": "Congolese",
   "continent": "AF",
-  "region": "Central Africa",
+  "region": "Middle Africa",
   "capital": "Kinshasa",
   "currency": "CDF",
   "languages": [
-    "fr",
-    "ln",
-    "kg",
-    "sw",
-    "lu"
+    "fr"
   ],
   "dialing_code": "243",
   "tld": [
     ".cd"
   ],
-  "area": 2344858,
   "latlng": [
     0,
     25

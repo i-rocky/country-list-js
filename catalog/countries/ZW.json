@@ -5,19 +5,30 @@
   "name": "Zimbabwe",
   "demonym": "Zimbabwean",
   "continent": "AF",
-  "region": "East Africa, Southern Africa",
+  "region": "Eastern Africa",
   "capital": "Harare",
   "currency": "ZWG",
   "languages": [
     "en",
+    "ny",
+    "bwg",
+    "kck",
+    "nd",
+    "ndc",
+    "nmq",
     "sn",
-    "nd"
+    "st",
+    "tn",
+    "toi",
+    "ts",
+    "ve",
+    "xh",
+    "zib"
   ],
   "dialing_code": "263",
   "tld": [
     ".zw"
   ],
-  "area": 390757,
   "latlng": [
     -20,
     30

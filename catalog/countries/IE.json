@@ -3,10 +3,10 @@
   "iso3": "IRL",
   "iso_numeric": "372",
   "name": "Ireland",
-  "native_name": "Éire / Ireland",
+  "native_name": "Éire",
   "demonym": "Irish",
   "continent": "EU",
-  "region": "Western Europe",
+  "region": "Northern Europe",
   "capital": "Dublin",
   "currency": "EUR",
   "languages": [
@@ -17,7 +17,6 @@
   "tld": [
     ".ie"
   ],
-  "area": 70273,
   "latlng": [
     53,
     -8

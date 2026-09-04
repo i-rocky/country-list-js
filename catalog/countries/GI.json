@@ -3,7 +3,7 @@
   "iso3": "GIB",
   "iso_numeric": "292",
   "name": "Gibraltar",
-  "demonym": "Gibraltar",
+  "demonym": "Gibraltarian",
   "continent": "EU",
   "region": "Southern Europe",
   "capital": "Gibraltar",
@@ -15,7 +15,6 @@
   "tld": [
     ".gi"
   ],
-  "area": 6,
   "latlng": [
     36.13333333,
     -5.35

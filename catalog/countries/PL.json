@@ -6,7 +6,7 @@
   "native_name": "Polska",
   "demonym": "Polish",
   "continent": "EU",
-  "region": "Central Europe",
+  "region": "Eastern Europe",
   "capital": "Warsaw",
   "currency": "PLN",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".pl"
   ],
-  "area": 312679,
   "latlng": [
     52,
     20

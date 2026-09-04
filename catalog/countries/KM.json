@@ -3,10 +3,10 @@
   "iso3": "COM",
   "iso_numeric": "174",
   "name": "Comoros",
-  "native_name": "Comores Komori جزر القمر",
-  "demonym": "Comoran",
+  "native_name": "Komori / جزر القمر / Comores",
+  "demonym": "Comorian",
   "continent": "AF",
-  "region": "East Africa",
+  "region": "Eastern Africa",
   "capital": "Moroni",
   "currency": "KMF",
   "languages": [
@@ -17,7 +17,6 @@
   "tld": [
     ".km"
   ],
-  "area": 1862,
   "latlng": [
     -12.16666666,
     44.25

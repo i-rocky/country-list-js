@@ -3,20 +3,12 @@
   "iso3": "HMD",
   "iso_numeric": "334",
   "name": "Heard Island and McDonald Islands",
-  "demonym": "Heard and McDonald Islander",
-  "continent": "AN",
-  "region": "Oceania",
-  "capital": "",
+  "continent": "OC",
+  "region": "Australia and New Zealand",
   "currency": "AUD",
-  "languages": [
-    "en"
-  ],
-  "dialing_code": " ",
   "tld": [
-    ".hm",
-    ".aq"
+    ".hm"
   ],
-  "area": 412,
   "latlng": [
     -53.1,
     72.51666666

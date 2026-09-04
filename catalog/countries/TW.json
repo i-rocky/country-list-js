@@ -6,7 +6,7 @@
   "native_name": "臺灣",
   "demonym": "Taiwanese",
   "continent": "AS",
-  "region": "East Asia",
+  "region": "Eastern Asia",
   "capital": "Taipei",
   "currency": "TWD",
   "languages": [
@@ -14,9 +14,10 @@
   ],
   "dialing_code": "886",
   "tld": [
-    ".tw"
+    ".tw",
+    ".台湾",
+    ".台灣"
   ],
-  "area": 36193,
   "latlng": [
     23.5,
     121

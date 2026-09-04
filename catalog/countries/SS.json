@@ -5,7 +5,7 @@
   "name": "South Sudan",
   "demonym": "South Sudanese",
   "continent": "AF",
-  "region": "East Africa, Northern Africa",
+  "region": "Eastern Africa",
   "capital": "Juba",
   "currency": "SSP",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".ss"
   ],
-  "area": 619745,
   "latlng": [
     7,
     30
@@ -29,7 +28,6 @@
     "ET",
     "KE",
     "SD",
-    "TD",
     "UG"
   ]
 }

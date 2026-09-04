@@ -6,7 +6,7 @@
   "native_name": "中国",
   "demonym": "Chinese",
   "continent": "AS",
-  "region": "East Asia",
+  "region": "Eastern Asia",
   "capital": "Beijing",
   "currency": "CNY",
   "languages": [
@@ -14,9 +14,10 @@
   ],
   "dialing_code": "86",
   "tld": [
-    ".cn"
+    ".cn",
+    ".中国",
+    ".中國"
   ],
-  "area": 9640011,
   "latlng": [
     35,
     105

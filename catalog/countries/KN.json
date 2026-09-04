@@ -3,7 +3,7 @@
   "iso3": "KNA",
   "iso_numeric": "659",
   "name": "Saint Kitts and Nevis",
-  "demonym": "Kittian and Nevisian",
+  "demonym": "Kittitian and Nevisian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Basseterre",
@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-869",
+  "dialing_code": "1",
+  "area_codes": [
+    "869"
+  ],
   "tld": [
     ".kn"
   ],
-  "area": 261,
   "latlng": [
     17.33333333,
     -62.75

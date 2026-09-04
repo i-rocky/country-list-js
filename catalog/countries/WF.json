@@ -3,11 +3,11 @@
   "iso3": "WLF",
   "iso_numeric": "876",
   "name": "Wallis and Futuna",
-  "native_name": "Wallis et Futuna",
-  "demonym": "Wallis and Futuna Islander",
+  "native_name": "Wallis-et-Futuna",
+  "demonym": "Wallisian and Futunan",
   "continent": "OC",
-  "region": "Oceania",
-  "capital": "Mata Utu",
+  "region": "Polynesia",
+  "capital": "Mata-Utu",
   "currency": "XPF",
   "languages": [
     "fr"
@@ -16,7 +16,6 @@
   "tld": [
     ".wf"
   ],
-  "area": 142,
   "latlng": [
     -13.3,
     -176.2

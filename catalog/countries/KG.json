@@ -4,7 +4,7 @@
   "iso_numeric": "417",
   "name": "Kyrgyzstan",
   "native_name": "Кыргызстан",
-  "demonym": "Kirghiz",
+  "demonym": "Kyrgyzstani",
   "continent": "AS",
   "region": "Central Asia",
   "capital": "Bishkek",
@@ -17,7 +17,6 @@
   "tld": [
     ".kg"
   ],
-  "area": 199951,
   "latlng": [
     41,
     75

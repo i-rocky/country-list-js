@@ -16,7 +16,6 @@
   "tld": [
     ".de"
   ],
-  "area": 357114,
   "latlng": [
     51,
     9
@@ -42,7 +41,6 @@
       "code": "BW",
       "region": null,
       "alias": [
-        "Baden-Wurttemberg",
         "Baden Württemberg",
         "Baden Wurttemberg"
       ]
@@ -157,7 +155,6 @@
       "code": "TH",
       "region": null,
       "alias": [
-        "Thuringen",
         "Thuringia"
       ]
     }

@@ -6,7 +6,7 @@
   "demonym": "Togolese",
   "continent": "AF",
   "region": "Western Africa",
-  "capital": "Lome",
+  "capital": "Lomé",
   "currency": "XOF",
   "languages": [
     "fr"
@@ -15,7 +15,6 @@
   "tld": [
     ".tg"
   ],
-  "area": 56785,
   "latlng": [
     8,
     1.16666666

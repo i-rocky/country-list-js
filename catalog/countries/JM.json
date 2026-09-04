@@ -3,7 +3,6 @@
   "iso3": "JAM",
   "iso_numeric": "388",
   "name": "Jamaica",
-  "native_name": "Jumieka",
   "demonym": "Jamaican",
   "continent": "NA",
   "region": "Caribbean",
@@ -12,11 +11,14 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-876",
+  "dialing_code": "1",
+  "area_codes": [
+    "876",
+    "658"
+  ],
   "tld": [
     ".jm"
   ],
-  "area": 10991,
   "latlng": [
     17.971389,
     -76.793056

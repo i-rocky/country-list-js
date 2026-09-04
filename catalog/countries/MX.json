@@ -6,7 +6,7 @@
   "native_name": "México",
   "demonym": "Mexican",
   "continent": "NA",
-  "region": "North America",
+  "region": "Central America",
   "capital": "Mexico City",
   "currency": "MXN",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".mx"
   ],
-  "area": 1964375,
   "latlng": [
     23,
     -102
@@ -181,8 +180,7 @@
       "region": null,
       "alias": [
         "Mich",
-        "MIC",
-        "Michoacan"
+        "MIC"
       ]
     },
     {
@@ -208,8 +206,7 @@
       "code": "NL",
       "region": null,
       "alias": [
-        "NLE",
-        "Nuevo Leon"
+        "NLE"
       ]
     },
     {
@@ -236,8 +233,7 @@
       "region": null,
       "alias": [
         "Qro",
-        "QUE",
-        "Queretaro"
+        "QUE"
       ]
     },
     {
@@ -254,8 +250,7 @@
       "code": "SL",
       "region": null,
       "alias": [
-        "SLP",
-        "San Luis Potosi"
+        "SLP"
       ]
     },
     {
@@ -313,8 +308,7 @@
       "code": "YU",
       "region": null,
       "alias": [
-        "YUC",
-        "Yucatan"
+        "YUC"
       ]
     },
     {

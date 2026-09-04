@@ -6,7 +6,7 @@
   "native_name": "العراق",
   "demonym": "Iraqi",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Baghdad",
   "currency": "IQD",
   "languages": [
@@ -15,9 +15,9 @@
   ],
   "dialing_code": "964",
   "tld": [
-    ".iq"
+    ".iq",
+    ".عراق"
   ],
-  "area": 438317,
   "latlng": [
     33,
     44

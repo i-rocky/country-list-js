@@ -5,9 +5,17 @@
   "name": "Antarctica",
   "continent": "AN",
   "region": "Antarctica",
-  "capital": "",
-  "currency": "XCD",
-  "dialing_code": "",
+  "dialing_code": "672",
+  "area_codes": [
+    "1"
+  ],
+  "tld": [
+    ".aq"
+  ],
+  "latlng": [
+    -90,
+    0
+  ],
   "timezones": [
     "Antarctica/Casey",
     "Antarctica/Davis",

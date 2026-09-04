@@ -3,12 +3,30 @@
   "iso3": "SXM",
   "iso_numeric": "534",
   "name": "Sint Maarten",
+  "demonym": "Sint Maartener",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Philipsburg",
-  "currency": "ANG",
-  "dialing_code": "599",
+  "currency": "XCG",
+  "languages": [
+    "nl",
+    "en"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "721"
+  ],
+  "tld": [
+    ".sx"
+  ],
+  "latlng": [
+    18.03,
+    -63.07
+  ],
   "timezones": [
     "America/Lower_Princes"
+  ],
+  "borders": [
+    "MF"
   ]
 }

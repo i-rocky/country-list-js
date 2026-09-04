@@ -3,9 +3,10 @@
   "iso3": "WSM",
   "iso_numeric": "882",
   "name": "Samoa",
+  "native_name": "Sāmoa",
   "demonym": "Samoan",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Polynesia",
   "capital": "Apia",
   "currency": "WST",
   "languages": [
@@ -16,7 +17,6 @@
   "tld": [
     ".ws"
   ],
-  "area": 2842,
   "latlng": [
     -13.58333333,
     -172.33333333

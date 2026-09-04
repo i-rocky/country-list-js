@@ -5,7 +5,7 @@
   "name": "Ghana",
   "demonym": "Ghanaian",
   "continent": "AF",
-  "region": "Western African",
+  "region": "Western Africa",
   "capital": "Accra",
   "currency": "GHS",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".gh"
   ],
-  "area": 238533,
   "latlng": [
     8,
     -2

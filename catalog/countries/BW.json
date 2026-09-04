@@ -9,14 +9,12 @@
   "capital": "Gaborone",
   "currency": "BWP",
   "languages": [
-    "en",
-    "tn"
+    "en"
   ],
   "dialing_code": "267",
   "tld": [
     ".bw"
   ],
-  "area": 582000,
   "latlng": [
     -22,
     24

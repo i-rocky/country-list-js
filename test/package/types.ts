@@ -8,14 +8,18 @@ import country, {Country, Iso2, Iso3, Province, Currency} from 'country-list-js'
 const dk: Country | undefined = country.findByIso2('DK');
 if (dk) {
     const name: string = dk.name;
-    const cur: Currency = dk.currency;
-    const decimal: number = cur.decimal;          // minor units, a number
+    const cur: Currency | undefined = dk.currency;   // Antarctica has none
+    const decimal: number | undefined = cur && cur.decimal;   // ISO 4217 minor units, a number
+    const capital: string | undefined = dk.capital;
+    const dialing: string | undefined = dk.dialing_code;
+    const area: string[] | undefined = dk.area_codes;
     const borders: Iso2[] | undefined = dk.borders;
     const tz: string[] | undefined = dk.timezones;
     const prov: Province[] | undefined = dk.provinces;
     const numeric: string | undefined = dk.code.numeric;
-    console.log(name, decimal, borders, tz, prov, numeric);
+    console.log(name, decimal, capital, dialing, area, borders, tz, prov, numeric);
 }
+const capitals: (string | undefined)[] = country.capitals();
 
 // a finder that can match several: always a list, never undefined
 const euro: Country[] = country.findByCurrency('EUR');
@@ -36,4 +40,4 @@ const iso2: Iso2 = 'DK';
 const iso3: Iso3 = 'DNK';
 const list: string[] = country.names();
 console.log(euro.length, caps.length, phone.length, provs.length,
-            iso2, iso3, list.length, country.continents());
+            iso2, iso3, list.length, capitals.length, country.continents());

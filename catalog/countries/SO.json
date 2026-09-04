@@ -3,10 +3,10 @@
   "iso3": "SOM",
   "iso_numeric": "706",
   "name": "Somalia",
-  "native_name": "Soomaaliya الصومال",
+  "native_name": "Soomaaliya / الصومال",
   "demonym": "Somali",
   "continent": "AF",
-  "region": "East Africa",
+  "region": "Eastern Africa",
   "capital": "Mogadishu",
   "currency": "SOS",
   "languages": [
@@ -17,7 +17,6 @@
   "tld": [
     ".so"
   ],
-  "area": 637657,
   "latlng": [
     10,
     49

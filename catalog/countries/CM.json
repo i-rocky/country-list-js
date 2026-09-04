@@ -6,8 +6,8 @@
   "native_name": "Cameroun",
   "demonym": "Cameroonian",
   "continent": "AF",
-  "region": "Central Africa",
-  "capital": "Yaounde",
+  "region": "Middle Africa",
+  "capital": "Yaoundé",
   "currency": "XAF",
   "languages": [
     "en",
@@ -17,7 +17,6 @@
   "tld": [
     ".cm"
   ],
-  "area": 475442,
   "latlng": [
     6,
     12

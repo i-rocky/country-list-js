@@ -6,18 +6,16 @@
   "native_name": "لبنان",
   "demonym": "Lebanese",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Beirut",
   "currency": "LBP",
   "languages": [
-    "ar",
-    "fr"
+    "ar"
   ],
   "dialing_code": "961",
   "tld": [
     ".lb"
   ],
-  "area": 10452,
   "latlng": [
     33.83333333,
     35.83333333

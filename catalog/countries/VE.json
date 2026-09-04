@@ -7,7 +7,7 @@
   "continent": "SA",
   "region": "South America",
   "capital": "Caracas",
-  "currency": "VES",
+  "currency": "VED",
   "languages": [
     "es"
   ],
@@ -15,7 +15,6 @@
   "tld": [
     ".ve"
   ],
-  "area": 916445,
   "latlng": [
     8,
     -66

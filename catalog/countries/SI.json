@@ -6,7 +6,7 @@
   "native_name": "Slovenija",
   "demonym": "Slovene",
   "continent": "EU",
-  "region": "Balkans",
+  "region": "Southern Europe",
   "capital": "Ljubljana",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".si"
   ],
-  "area": 20273,
   "latlng": [
     46.11666666,
     14.81666666

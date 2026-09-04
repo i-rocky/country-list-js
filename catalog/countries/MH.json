@@ -6,18 +6,17 @@
   "native_name": "M̧ajeļ",
   "demonym": "Marshallese",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Micronesia",
   "capital": "Majuro",
   "currency": "USD",
   "languages": [
-    "en",
-    "mh"
+    "mh",
+    "en"
   ],
   "dialing_code": "692",
   "tld": [
     ".mh"
   ],
-  "area": 181,
   "latlng": [
     9,
     168

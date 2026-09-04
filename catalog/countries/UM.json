@@ -4,10 +4,16 @@
   "iso_numeric": "581",
   "name": "United States Minor Outlying Islands",
   "continent": "OC",
-  "region": "Oceania",
-  "capital": "",
+  "region": "Micronesia",
   "currency": "USD",
+  "languages": [
+    "en"
+  ],
   "dialing_code": "1",
+  "latlng": [
+    19.3,
+    166.63
+  ],
   "timezones": [
     "Pacific/Midway",
     "Pacific/Wake"

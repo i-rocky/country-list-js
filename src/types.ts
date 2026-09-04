@@ -15,8 +15,9 @@ export interface CountryCode {
 
 export interface Currency {
     code: CurrencyCode;
+    /** The symbol the currency is written with: `kr` for DKK, `₹` for INR. The code where it has none. */
     symbol: string;
-    /** Number of minor units the currency divides into: 2 for USD, 0 for JPY. */
+    /** Minor unit exponent per ISO 4217: 2 for USD, 0 for JPY, 3 for BHD. */
     decimal: number;
 }
 
@@ -40,16 +41,25 @@ export interface Province {
 
 /**
  * Every key is always present. The ones that can be `undefined` are undefined
- * for territories where the value does not exist -- an uninhabited island has
- * no timezone, an island nation has no land border.
+ * where the value does not exist -- Antarctica has no capital and no currency,
+ * an uninhabited island has no time zone, an island nation has no land border.
  */
 export interface Country {
     name: string;
     continent: ContinentName;
+    /** UN M49 region: `Northern Europe`, `Caribbean`, `Eastern Asia`. */
     region: string;
-    capital: string;
-    currency: Currency;
-    dialing_code: string;
+    capital: string | undefined;
+    currency: Currency | undefined;
+    /** ITU-T E.164 country calling code, digits only: `45`, `1`, `44`. */
+    dialing_code: string | undefined;
+    /**
+     * Where the calling code is shared, the area codes that belong to this
+     * territory within it: `['268']` for Antigua under +1, `['1534']` for
+     * Jersey under +44. Undefined where the calling code alone identifies the
+     * country, and for the principal holder of a shared code.
+     */
+    area_codes: string[] | undefined;
     provinces: Province[] | undefined;
     code: CountryCode;
 
@@ -57,12 +67,13 @@ export interface Country {
     native_name: string | undefined;
     /** What a person from this country is called in English. */
     demonym: string | undefined;
-    /** ISO 639 codes. */
+    /**
+     * Languages with official status for the whole country, as ISO 639-1
+     * codes, or ISO 639-3 where the language has no two-letter code.
+     */
     languages: string[] | undefined;
-    /** Country code top-level domains, dot first, possibly internationalized. */
+    /** Country code top-level domains delegated in the IANA root, dot first, possibly internationalized. */
     tld: string[] | undefined;
-    /** Land area in square kilometres. */
-    area: number | undefined;
     /** Approximate geographic centre, `[latitude, longitude]`. */
     latlng: [number, number] | undefined;
     /** IANA time zone identifiers. */
@@ -79,17 +90,17 @@ export interface CountryRecord {
     name: string;
     continent: ContinentName;
     region: string;
-    capital: string;
-    currency: CurrencyCode;
-    currency_symbol: string;
-    currency_decimal: number;
-    dialing_code: string;
+    capital?: string;
+    currency?: CurrencyCode;
+    currency_symbol?: string;
+    currency_decimal?: number;
+    dialing_code?: string;
+    area_codes?: string[];
     provinces: Province[] | undefined;
     native_name?: string;
     demonym?: string;
     languages?: string[];
     tld?: string[];
-    area?: number;
     latlng?: [number, number];
     timezones?: string[];
     borders?: Iso2[];

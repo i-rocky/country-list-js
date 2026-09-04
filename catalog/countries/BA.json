@@ -4,9 +4,9 @@
   "iso_numeric": "070",
   "name": "Bosnia and Herzegovina",
   "native_name": "Bosna i Hercegovina / Босна и Херцеговина",
-  "demonym": "Bosnian,Herzegovinian",
+  "demonym": "Bosnian and Herzegovinian",
   "continent": "EU",
-  "region": "Balkans",
+  "region": "Southern Europe",
   "capital": "Sarajevo",
   "currency": "BAM",
   "languages": [
@@ -18,7 +18,6 @@
   "tld": [
     ".ba"
   ],
-  "area": 51209,
   "latlng": [
     44,
     18

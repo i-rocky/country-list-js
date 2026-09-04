@@ -6,7 +6,7 @@
   "demonym": "Costa Rican",
   "continent": "NA",
   "region": "Central America",
-  "capital": "San Jose",
+  "capital": "San José",
   "currency": "CRC",
   "languages": [
     "es"
@@ -15,7 +15,6 @@
   "tld": [
     ".cr"
   ],
-  "area": 51100,
   "latlng": [
     10,
     -84

@@ -6,7 +6,7 @@
   "native_name": "عمان",
   "demonym": "Omani",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Muscat",
   "currency": "OMR",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "968",
   "tld": [
-    ".om"
+    ".om",
+    ".عمان"
   ],
-  "area": 309500,
   "latlng": [
     21,
     57

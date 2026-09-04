@@ -3,10 +3,9 @@
   "iso3": "MUS",
   "iso_numeric": "480",
   "name": "Mauritius",
-  "native_name": "Maurice",
   "demonym": "Mauritian",
   "continent": "AF",
-  "region": "East Africa",
+  "region": "Eastern Africa",
   "capital": "Port Louis",
   "currency": "MUR",
   "languages": [
@@ -16,7 +15,6 @@
   "tld": [
     ".mu"
   ],
-  "area": 2040,
   "latlng": [
     -20.28333333,
     57.55

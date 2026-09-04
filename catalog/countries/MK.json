@@ -3,20 +3,21 @@
   "iso3": "MKD",
   "iso_numeric": "807",
   "name": "North Macedonia",
-  "native_name": "Македонија",
+  "native_name": "Северна Македонија / Maqedonia e Veriut",
   "demonym": "Macedonian",
   "continent": "EU",
-  "region": "Balkans",
+  "region": "Southern Europe",
   "capital": "Skopje",
   "currency": "MKD",
   "languages": [
-    "mk"
+    "mk",
+    "sq"
   ],
   "dialing_code": "389",
   "tld": [
-    ".mk"
+    ".mk",
+    ".мкд"
   ],
-  "area": 25713,
   "latlng": [
     41.83333333,
     22

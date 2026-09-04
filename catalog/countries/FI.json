@@ -6,7 +6,7 @@
   "native_name": "Suomi",
   "demonym": "Finnish",
   "continent": "EU",
-  "region": "Nordic Countries",
+  "region": "Northern Europe",
   "capital": "Helsinki",
   "currency": "EUR",
   "languages": [
@@ -17,7 +17,6 @@
   "tld": [
     ".fi"
   ],
-  "area": 338424,
   "latlng": [
     64,
     26

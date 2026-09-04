@@ -174,11 +174,15 @@ describe('Edge cases', () => {
 
     it('sweeps every dialing code without producing a hole', () => {
         for (const iso2 of Object.keys(country.all)) {
-            const code = country.findByIso2(iso2).dialing_code.replace(/\D/g, '');
-            if (!code) continue;
-            const r = country.findByPhoneNbr('+' + code + '5551212');
-            expect(r.length && r.every(o => o && o.name), iso2 + ' (+' + code + ')')
-                .to.be.ok;
+            const c = country.findByIso2(iso2);
+            if (!c.dialing_code) continue;
+            for (const area of c.area_codes || ['']) {
+                const r = country.findByPhoneNbr('+' + c.dialing_code + area + '5551212');
+                expect(r.length && r.every(o => o && o.name), iso2 + ' (+' + c.dialing_code + area + ')')
+                    .to.be.ok;
+                expect(r.map(o => o.code.iso2), iso2 + ' (+' + c.dialing_code + area + ')')
+                    .to.include(iso2);
+            }
         }
     });
 
@@ -199,35 +203,53 @@ describe('Edge cases', () => {
         expect(Object.keys(Array.prototype)).to.deep.equal([]);
     });
 
-    it('every data value the code calls string methods on is a string', () => {
+    it('every data value the code indexes or concatenates is a string', () => {
         // A dialing code merged as a number once made require() itself throw,
-        // with "phone[k].replace is not a function".
-        for (const r of require('../data/countries.json'))
-            for (const f of ['iso2', 'iso3', 'name', 'capital', 'currency',
-                             'currency_symbol', 'dialing_code', 'region'])
+        // with "phone[k].replace is not a function".  The optional fields are
+        // a string or absent, never anything else.
+        for (const r of require('../data/countries.json')) {
+            for (const f of ['iso2', 'iso3', 'name', 'region'])
                 expect(r[f], r.iso2 + '.' + f + ' = ' + JSON.stringify(r[f]))
                     .to.be.a('string');
+            for (const f of ['capital', 'currency', 'currency_symbol', 'dialing_code'])
+                expect(r[f], r.iso2 + '.' + f + ' = ' + JSON.stringify(r[f]))
+                    .to.satisfy(v => v === undefined || typeof v === 'string');
+            for (const a of r.area_codes || [])
+                expect(a, r.iso2 + ' area code').to.match(/^[0-9]+$/);
+        }
     });
 
-    it('handles the countries with a blank capital or a blank dialing code', () => {
+    it('handles the territories with no capital, no dialing code or no currency', () => {
         // uninhabited or disputed territories: they are real records with real
-        // ISO codes and must round-trip, blank fields and all
-        const blankCapital = Object.keys(country.all)
-            .filter(k => !country.findByIso2(k).capital.trim());
-        const blankDialing = Object.keys(country.all)
-            .filter(k => !country.findByIso2(k).dialing_code.trim());
+        // ISO codes and must round-trip.  A value that does not exist is
+        // undefined, never an empty string -- 3.1.8 carried '' for the capital
+        // of Antarctica and ' ' for the dialing code of Heard Island
+        const without = f => Object.keys(country.all)
+            .filter(k => country.findByIso2(k)[f] === undefined);
 
-        expect(blankCapital).to.have.members(['AQ', 'BQ', 'BV', 'HM', 'TK', 'UM']);
-        expect(blankDialing).to.have.members(['AQ', 'BV', 'GS', 'HM', 'TF', 'XK']);
+        expect(without('capital')).to.have.members(['AQ', 'BQ', 'BV', 'HM', 'TK', 'UM']);
+        expect(without('dialing_code')).to.have.members(['BV', 'HM', 'TF']);
+        expect(without('currency')).to.deep.equal(['AQ']);
 
-        for (const iso2 of new Set([...blankCapital, ...blankDialing])) {
+        for (const iso2 of Object.keys(country.all)) {
             const c = country.findByIso2(iso2);
             expect(c.name, iso2).to.be.a('string').and.not.equal('');
-            expect(c.capital, iso2).to.be.a('string');
-            expect(c.dialing_code, iso2).to.be.a('string');
             expect(c.code.iso2, iso2).to.equal(iso2);
             expect(c.code.iso3, iso2).to.match(/^[A-Z]{3}$/);
+            for (const f of ['capital', 'dialing_code'])
+                expect(c[f], iso2 + '.' + f).to.satisfy(v => v === undefined || (typeof v === 'string' && v.trim() === v && v !== ''));
         }
+    });
+
+    it('does not read Object.prototype as data', () => {
+        // the indexes are keyed by value; a plain object would answer
+        // findByIso2('constructor') with Object itself
+        for (const q of ['constructor', '__proto__', 'toString', 'hasOwnProperty', 'valueOf'])
+            for (const fn of UNIQUE)
+                expect(country[fn](q), fn + '(' + q + ')').to.equal(undefined);
+        for (const q of ['constructor', '__proto__', 'toString', 'hasOwnProperty'])
+            for (const fn of LIST)
+                expect(country[fn](q), fn + '(' + q + ')').to.deep.equal([]);
     });
 
     it('handles the 219 countries that have no provinces', () => {
@@ -269,21 +291,48 @@ describe('Edge cases', () => {
         expect(country.findByName("Côte d'Ivoire").code.iso2).to.equal('CI');
     });
 
-    it('carries transliterated capitals, and names as the country spells them', () => {
-        // Capitals are all transliterated (Bogota, Reykjavik, Asuncion).
-        // Names are not: a country that has been renamed carries the name it
-        // was renamed to, diacritics and all.
+    it('spells names and capitals as they are spelled, and finds them without the marks', () => {
+        // Bogotá is Bogotá.  The ASCII form a caller types still finds it,
+        // because a lookup that misses exactly is retried with case and Latin
+        // diacritics folded away.
         const nonAscii = s => [...s].some(ch => ch.codePointAt(0) > 127);
-        expect(country.names().filter(nonAscii).sort())
-            .to.deep.equal(["Côte d'Ivoire", 'Türkiye']);
-        expect(country.capitals().filter(nonAscii)).to.deep.equal([]);
-        expect(country.findByIso2('CO').capital).to.equal('Bogota');
-        expect(country.findByIso2('IS').capital).to.equal('Reykjavik');
+        expect(country.names().filter(nonAscii).sort()).to.deep.equal([
+            "Côte d'Ivoire", 'Curaçao', 'Réunion', 'Saint Barthélemy',
+            'São Tomé and Príncipe', 'Türkiye', 'Åland Islands',
+        ].sort());
+        expect(country.capitals().filter(c => c && nonAscii(c)).length).to.be.at.least(15);
+        expect(country.findByIso2('CO').capital).to.equal('Bogotá');
+        expect(country.findByIso2('IS').capital).to.equal('Reykjavík');
+
+        for (const [q, name] of [['Bogota', 'Colombia'], ['REYKJAVIK', 'Iceland'],
+                                 ['Sao Tome', 'São Tomé and Príncipe'], ['Nuku\'alofa', 'Tonga'],
+                                 ['Chisinau', 'Moldova'], ['hagatna', 'Guam']])
+            expect(country.findByCapital(q).map(c => c.name), q).to.deep.equal([name]);
+        for (const [q, name] of [['Aland Islands', 'Åland Islands'], ['curacao', 'Curaçao'],
+                                 ['Reunion', 'Réunion'], ['Sao Tome and Principe', 'São Tomé and Príncipe']])
+            expect(country.findByName(q).name, q).to.equal(name);
 
         const provinces = [].concat(...Object.keys(country.all)
             .map(k => country.findByIso2(k).provinces || []).map(ps => ps.map(p => p.name)));
         expect(provinces.filter(nonAscii).length, 'provinces with non-ASCII names')
             .to.be.greaterThan(100);
+        for (const [q, name] of [['Cordoba', 'Argentina'], ['camaguey', 'Cuba'], ['Mugla', 'Türkiye'],
+                                 ['Bac Ninh', 'Vietnam'], ['Michoacan', 'Mexico']])
+            expect(country.findByProvince(q).map(c => c.name), q).to.include(name);
+    });
+
+    it('folds only Latin diacritics, never the letters of another script', () => {
+        // stripping every combining mark would turn Bengali vowel signs into
+        // nothing and merge words that differ
+        expect(country.findByProvince('বরিশাল').map(c => c.name)).to.deep.equal(['Bangladesh']);
+        expect(country.findByName('日本').name).to.equal('Japan');
+        expect(country.findByName('मारत')).to.equal(undefined);
+    });
+
+    it('an exact match still wins over a folded one', () => {
+        // Kingston (exact) answers both holders; folding cannot add a third
+        expect(country.findByCapital('Kingston').map(c => c.code.iso2).sort()).to.deep.equal(['JM', 'NF']);
+        expect(country.findByCapital('kingston').map(c => c.code.iso2).sort()).to.deep.equal(['JM', 'NF']);
     });
 
     it('matches a province alias whole, never as a substring', () => {

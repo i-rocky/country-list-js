@@ -3,10 +3,10 @@
   "iso3": "ERI",
   "iso_numeric": "232",
   "name": "Eritrea",
-  "native_name": "ኤርትራ Eritrea إرتريا",
+  "native_name": "ኤርትራ / إرتريا",
   "demonym": "Eritrean",
   "continent": "AF",
-  "region": "East Africa",
+  "region": "Eastern Africa",
   "capital": "Asmara",
   "currency": "ERN",
   "languages": [
@@ -18,7 +18,6 @@
   "tld": [
     ".er"
   ],
-  "area": 117600,
   "latlng": [
     15,
     39

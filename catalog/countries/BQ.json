@@ -2,12 +2,24 @@
   "iso2": "BQ",
   "iso3": "BES",
   "iso_numeric": "535",
-  "name": "Bonaire, Saint Eustatius and Saba ",
+  "name": "Bonaire, Sint Eustatius and Saba",
+  "native_name": "Caribisch Nederland",
   "continent": "NA",
   "region": "Caribbean",
-  "capital": "",
   "currency": "USD",
+  "languages": [
+    "nl"
+  ],
   "dialing_code": "599",
+  "area_codes": [
+    "3",
+    "4",
+    "7"
+  ],
+  "latlng": [
+    12.18,
+    -68.23
+  ],
   "timezones": [
     "America/Kralendijk"
   ]

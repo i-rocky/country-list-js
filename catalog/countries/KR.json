@@ -6,7 +6,7 @@
   "native_name": "대한민국",
   "demonym": "South Korean",
   "continent": "AS",
-  "region": "East Asia",
+  "region": "Eastern Asia",
   "capital": "Seoul",
   "currency": "KRW",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "82",
   "tld": [
-    ".kr"
+    ".kr",
+    ".한국"
   ],
-  "area": 100210,
   "latlng": [
     37,
     127.5

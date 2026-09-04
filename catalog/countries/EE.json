@@ -6,7 +6,7 @@
   "native_name": "Eesti",
   "demonym": "Estonian",
   "continent": "EU",
-  "region": "Baltic Countries",
+  "region": "Northern Europe",
   "capital": "Tallinn",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".ee"
   ],
-  "area": 45227,
   "latlng": [
     59,
     26

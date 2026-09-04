@@ -6,7 +6,7 @@
   "native_name": "Kalaallit Nunaat",
   "demonym": "Greenlandic",
   "continent": "NA",
-  "region": "North America",
+  "region": "Northern America",
   "capital": "Nuuk",
   "currency": "DKK",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".gl"
   ],
-  "area": 2166086,
   "latlng": [
     72,
     -40
@@ -26,5 +25,8 @@
     "America/Nuuk",
     "America/Scoresbysund",
     "America/Thule"
+  ],
+  "borders": [
+    "CA"
   ]
 }

@@ -3,7 +3,7 @@
   "iso3": "BTN",
   "iso_numeric": "064",
   "name": "Bhutan",
-  "native_name": "འབྲུགཡུལ་",
+  "native_name": "འབྲུག་ཡུལ་",
   "demonym": "Bhutanese",
   "continent": "AS",
   "region": "Southern Asia",
@@ -16,7 +16,6 @@
   "tld": [
     ".bt"
   ],
-  "area": 38394,
   "latlng": [
     27.5,
     90.5
@@ -26,7 +25,6 @@
   ],
   "borders": [
     "CN",
-    "IN",
-    "MM"
+    "IN"
   ]
 }

@@ -6,7 +6,7 @@
   "native_name": "قطر",
   "demonym": "Qatari",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Doha",
   "currency": "QAR",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "974",
   "tld": [
-    ".qa"
+    ".qa",
+    ".قطر"
   ],
-  "area": 11586,
   "latlng": [
     25.5,
     51.25

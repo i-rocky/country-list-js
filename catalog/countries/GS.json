@@ -3,16 +3,14 @@
   "iso3": "SGS",
   "iso_numeric": "239",
   "name": "South Georgia and the South Sandwich Islands",
-  "native_name": "South Georgia",
-  "demonym": "South Georgia and the South Sandwich Islander",
-  "continent": "AN",
+  "continent": "SA",
   "region": "South America",
-  "capital": "Grytviken",
+  "capital": "King Edward Point",
   "currency": "GBP",
   "languages": [
     "en"
   ],
-  "dialing_code": "",
+  "dialing_code": "500",
   "tld": [
     ".gs"
   ],

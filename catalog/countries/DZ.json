@@ -3,7 +3,7 @@
   "iso3": "DZA",
   "iso_numeric": "012",
   "name": "Algeria",
-  "native_name": "Algérie / ⵍⵣⵣⴰⵢⴻⵔ / الجزائر",
+  "native_name": "الجزائر",
   "demonym": "Algerian",
   "continent": "AF",
   "region": "Northern Africa",
@@ -17,7 +17,6 @@
     ".dz",
     ".الجزائر"
   ],
-  "area": 2381741,
   "latlng": [
     28,
     3

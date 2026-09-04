@@ -5,17 +5,17 @@
   "name": "Tuvalu",
   "demonym": "Tuvaluan",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Polynesia",
   "capital": "Funafuti",
   "currency": "AUD",
   "languages": [
+    "tvl",
     "en"
   ],
   "dialing_code": "688",
   "tld": [
     ".tv"
   ],
-  "area": 26,
   "latlng": [
     -8,
     178

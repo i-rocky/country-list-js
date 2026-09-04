@@ -6,18 +6,17 @@
   "native_name": "Madagasikara",
   "demonym": "Malagasy",
   "continent": "AF",
-  "region": "East Africa, Southern Africa",
+  "region": "Eastern Africa",
   "capital": "Antananarivo",
   "currency": "MGA",
   "languages": [
-    "fr",
-    "mg"
+    "mg",
+    "fr"
   ],
   "dialing_code": "261",
   "tld": [
     ".mg"
   ],
-  "area": 587041,
   "latlng": [
     -20,
     47

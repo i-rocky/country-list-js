@@ -3,20 +3,18 @@
   "iso3": "BFA",
   "iso_numeric": "854",
   "name": "Burkina Faso",
-  "demonym": "Burkinabe",
+  "demonym": "Burkinabé",
   "continent": "AF",
   "region": "Western Africa",
   "capital": "Ouagadougou",
   "currency": "XOF",
   "languages": [
-    "fr",
-    "ff"
+    "fr"
   ],
   "dialing_code": "226",
   "tld": [
     ".bf"
   ],
-  "area": 272967,
   "latlng": [
     13,
     -2

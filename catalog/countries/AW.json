@@ -10,13 +10,12 @@
   "currency": "AWG",
   "languages": [
     "nl",
-    "pa"
+    "pap"
   ],
   "dialing_code": "297",
   "tld": [
     ".aw"
   ],
-  "area": 180,
   "latlng": [
     12.5,
     -69.96666666

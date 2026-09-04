@@ -5,8 +5,8 @@
   "name": "Moldova",
   "demonym": "Moldovan",
   "continent": "EU",
-  "region": "Central Europe",
-  "capital": "Chisinau",
+  "region": "Eastern Europe",
+  "capital": "Chișinău",
   "currency": "MDL",
   "languages": [
     "ro"
@@ -15,7 +15,6 @@
   "tld": [
     ".md"
   ],
-  "area": 33846,
   "latlng": [
     47,
     29

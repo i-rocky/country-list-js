@@ -3,7 +3,7 @@
   "iso3": "TTO",
   "iso_numeric": "780",
   "name": "Trinidad and Tobago",
-  "demonym": "Trinidadian",
+  "demonym": "Trinidadian and Tobagonian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Port of Spain",
@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-868",
+  "dialing_code": "1",
+  "area_codes": [
+    "868"
+  ],
   "tld": [
     ".tt"
   ],
-  "area": 5130,
   "latlng": [
     11,
     -61

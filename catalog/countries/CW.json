@@ -2,12 +2,29 @@
   "iso2": "CW",
   "iso3": "CUW",
   "iso_numeric": "531",
-  "name": "Curacao",
+  "name": "Curaçao",
+  "native_name": "Kòrsou",
+  "demonym": "Curaçaoan",
   "continent": "NA",
   "region": "Caribbean",
-  "capital": " Willemstad",
-  "currency": "ANG",
+  "capital": "Willemstad",
+  "currency": "XCG",
+  "languages": [
+    "nl",
+    "pap",
+    "en"
+  ],
   "dialing_code": "599",
+  "area_codes": [
+    "9"
+  ],
+  "tld": [
+    ".cw"
+  ],
+  "latlng": [
+    12.2,
+    -69
+  ],
   "timezones": [
     "America/Curacao"
   ]

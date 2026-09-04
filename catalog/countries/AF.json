@@ -6,20 +6,17 @@
   "native_name": "افغانستان",
   "demonym": "Afghan",
   "continent": "AS",
-  "region": "Central Asia",
+  "region": "Southern Asia",
   "capital": "Kabul",
   "currency": "AFN",
   "languages": [
     "ps",
-    "uz",
-    "tk"
+    "fa"
   ],
   "dialing_code": "93",
   "tld": [
-    ".af",
-    ".افغانستان"
+    ".af"
   ],
-  "area": 652230,
   "latlng": [
     33,
     65
@@ -29,7 +26,6 @@
   ],
   "borders": [
     "CN",
-    "IN",
     "IR",
     "PK",
     "TJ",

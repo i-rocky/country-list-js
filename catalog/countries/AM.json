@@ -10,14 +10,13 @@
   "capital": "Yerevan",
   "currency": "AMD",
   "languages": [
-    "hy",
-    "ru"
+    "hy"
   ],
   "dialing_code": "374",
   "tld": [
-    ".am"
+    ".am",
+    ".հայ"
   ],
-  "area": 29743,
   "latlng": [
     40,
     45

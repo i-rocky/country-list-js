@@ -6,7 +6,7 @@
   "native_name": "Polynésie française",
   "demonym": "French Polynesian",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Polynesia",
   "capital": "Papeete",
   "currency": "XPF",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".pf"
   ],
-  "area": 4167,
   "latlng": [
     -15,
     -140

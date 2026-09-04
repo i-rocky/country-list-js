@@ -5,17 +5,19 @@
   "name": "Bermuda",
   "demonym": "Bermudian",
   "continent": "NA",
-  "region": "Caribbean, North America",
+  "region": "Northern America",
   "capital": "Hamilton",
   "currency": "BMD",
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-441",
+  "dialing_code": "1",
+  "area_codes": [
+    "441"
+  ],
   "tld": [
     ".bm"
   ],
-  "area": 54,
   "latlng": [
     32.33333333,
     -64.75

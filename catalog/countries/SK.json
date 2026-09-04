@@ -6,7 +6,7 @@
   "native_name": "Slovensko",
   "demonym": "Slovak",
   "continent": "EU",
-  "region": "Central Europe",
+  "region": "Eastern Europe",
   "capital": "Bratislava",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".sk"
   ],
-  "area": 49037,
   "latlng": [
     48.66666666,
     19.5

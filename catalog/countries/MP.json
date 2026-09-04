@@ -3,20 +3,24 @@
   "iso3": "MNP",
   "iso_numeric": "580",
   "name": "Northern Mariana Islands",
-  "demonym": "American",
+  "native_name": "Notte Mariånas",
+  "demonym": "Northern Mariana Islander",
   "continent": "OC",
-  "region": "South-East Asia",
+  "region": "Micronesia",
   "capital": "Saipan",
   "currency": "USD",
   "languages": [
     "en",
-    "ch"
+    "ch",
+    "cal"
   ],
-  "dialing_code": "+1-670",
+  "dialing_code": "1",
+  "area_codes": [
+    "670"
+  ],
   "tld": [
     ".mp"
   ],
-  "area": 464,
   "latlng": [
     15.2,
     145.75

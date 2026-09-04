@@ -9,14 +9,12 @@
   "capital": "Windhoek",
   "currency": "NAD",
   "languages": [
-    "en",
-    "af"
+    "en"
   ],
   "dialing_code": "264",
   "tld": [
     ".na"
   ],
-  "area": 825615,
   "latlng": [
     -22,
     17

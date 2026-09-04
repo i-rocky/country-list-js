@@ -12,11 +12,14 @@
     "es",
     "en"
   ],
-  "dialing_code": "+1-787 and 1-939",
+  "dialing_code": "1",
+  "area_codes": [
+    "787",
+    "939"
+  ],
   "tld": [
     ".pr"
   ],
-  "area": 8870,
   "latlng": [
     18.25,
     -66.5

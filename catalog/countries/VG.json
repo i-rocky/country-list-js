@@ -3,11 +3,25 @@
   "iso3": "VGB",
   "iso_numeric": "092",
   "name": "British Virgin Islands",
+  "demonym": "Virgin Islander",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Road Town",
   "currency": "USD",
-  "dialing_code": "+1-284",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "284"
+  ],
+  "tld": [
+    ".vg"
+  ],
+  "latlng": [
+    18.45,
+    -64.54
+  ],
   "timezones": [
     "America/Tortola"
   ]

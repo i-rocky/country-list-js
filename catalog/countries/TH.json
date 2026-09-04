@@ -6,7 +6,7 @@
   "native_name": "ประเทศไทย",
   "demonym": "Thai",
   "continent": "AS",
-  "region": "South-East Asia",
+  "region": "South-eastern Asia",
   "capital": "Bangkok",
   "currency": "THB",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "66",
   "tld": [
-    ".th"
+    ".th",
+    ".ไทย"
   ],
-  "area": 513120,
   "latlng": [
     15,
     100

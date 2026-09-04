@@ -4,20 +4,18 @@
   "iso_numeric": "762",
   "name": "Tajikistan",
   "native_name": "Тоҷикистон",
-  "demonym": "Tadzhik",
+  "demonym": "Tajikistani",
   "continent": "AS",
   "region": "Central Asia",
   "capital": "Dushanbe",
   "currency": "TJS",
   "languages": [
-    "tg",
-    "ru"
+    "tg"
   ],
   "dialing_code": "992",
   "tld": [
     ".tj"
   ],
-  "area": 143100,
   "latlng": [
     39,
     71

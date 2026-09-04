@@ -6,7 +6,7 @@
   "native_name": "Latvija",
   "demonym": "Latvian",
   "continent": "EU",
-  "region": "Baltic Countries",
+  "region": "Northern Europe",
   "capital": "Riga",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".lv"
   ],
-  "area": 64559,
   "latlng": [
     57,
     25

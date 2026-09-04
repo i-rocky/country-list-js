@@ -6,7 +6,7 @@
   "native_name": "Shqipëria",
   "demonym": "Albanian",
   "continent": "EU",
-  "region": "Balkans",
+  "region": "Southern Europe",
   "capital": "Tirana",
   "currency": "ALL",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".al"
   ],
-  "area": 28748,
   "latlng": [
     41,
     20
@@ -28,7 +27,6 @@
     "GR",
     "ME",
     "MK",
-    "RS",
     "XK"
   ]
 }

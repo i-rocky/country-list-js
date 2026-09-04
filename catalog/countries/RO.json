@@ -6,7 +6,7 @@
   "native_name": "România",
   "demonym": "Romanian",
   "continent": "EU",
-  "region": "Central Europe",
+  "region": "Eastern Europe",
   "capital": "Bucharest",
   "currency": "RON",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".ro"
   ],
-  "area": 238391,
   "latlng": [
     46,
     25

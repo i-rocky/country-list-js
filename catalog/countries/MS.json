@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-664",
+  "dialing_code": "1",
+  "area_codes": [
+    "664"
+  ],
   "tld": [
     ".ms"
   ],
-  "area": 102,
   "latlng": [
     16.75,
     -62.2

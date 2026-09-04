@@ -3,9 +3,14 @@
   "iso3": "BVT",
   "iso_numeric": "074",
   "name": "Bouvet Island",
-  "continent": "AN",
-  "region": "Scandinavia, Nordic Countries",
-  "capital": "",
+  "continent": "SA",
+  "region": "South America",
   "currency": "NOK",
-  "dialing_code": ""
+  "tld": [
+    ".bv"
+  ],
+  "latlng": [
+    -54.42,
+    3.36
+  ]
 }

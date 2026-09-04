@@ -2,11 +2,21 @@
   "iso2": "XK",
   "iso3": "XKX",
   "name": "Kosovo",
+  "native_name": "Kosova / Косово",
+  "demonym": "Kosovar",
   "continent": "EU",
-  "region": "Balkans",
+  "region": "Southern Europe",
   "capital": "Pristina",
   "currency": "EUR",
-  "dialing_code": "",
+  "languages": [
+    "sq",
+    "sr"
+  ],
+  "dialing_code": "383",
+  "latlng": [
+    42.55,
+    20.83
+  ],
   "timezones": [
     "Europe/Belgrade"
   ],

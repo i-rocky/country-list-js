@@ -6,7 +6,7 @@
   "native_name": "السودان",
   "demonym": "Sudanese",
   "continent": "AF",
-  "region": "Northern Africa, East Africa",
+  "region": "Northern Africa",
   "capital": "Khartoum",
   "currency": "SDG",
   "languages": [
@@ -15,9 +15,9 @@
   ],
   "dialing_code": "249",
   "tld": [
-    ".sd"
+    ".sd",
+    ".سودان"
   ],
-  "area": 1886068,
   "latlng": [
     15,
     30

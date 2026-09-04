@@ -22,7 +22,11 @@ ok('no __esModule key', !('__esModule' in now));
 const DECLARED = new Set(['BY','ES','NG','ET','VN','HR','LT','BG','VE','MR','ST','SL','ZW','ZM',
                           'TR','SZ','MK','CZ','CV','CI','TL','VA','GB','US',
                           'PK','CU','ET','ID','IN','MX','BE','BR','CN','DE','IT','NL',
-                          'ES','CL','PH','BD']);
+                          'ES','CL','PH','BD',
+                          // names, capitals, currencies and dialing codes corrected in 4.0
+                          'AX','BL','CW','RE','BQ','CC','PN','PS',
+                          'BI','CH','EH','GG','GQ','GS','IM','KI','LK','LY','MM','MN','PW','SG','UA','WF',
+                          'AQ','DO','JM','SX','XK','CX','NF','SJ','KZ','RU']);
 const restrict = (a, e) => {
     if (Array.isArray(e)) return Array.isArray(a) ? a.map((v,i)=>restrict(v,e[i])) : a;
     if (e && typeof e === 'object' && a && typeof a === 'object') {
@@ -30,22 +34,38 @@ const restrict = (a, e) => {
     }
     return a;
 };
-// currency.decimal became a number; migrate the baseline rather than
-// exempting all 250 countries from the comparison
+// The surface-wide breaks, migrated into the baseline rather than exempting
+// all 250 countries from the comparison.  test/contract.js states each one.
+const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\u02bb\u2018\u2019]/g, "'").toLowerCase();
 const migrate = c => {
-    c.currency.decimal = Number(c.currency.decimal);
-    if (c.provinces) c.provinces = c.provinces.map(p => ({
-        name: p.name,
-        code: p.short === undefined ? null : p.short,
-        region: p.region === undefined ? null : p.region,
-        alias: p.alias === undefined ? null : p.alias,
-    }));
-    return c;
+    c.currency = {code: c.currency.code};              // symbol and decimal follow CLDR and ISO 4217
+    delete c.region; delete c.continent;               // UN M49
+    c.capital = c.capital === '' ? null : fold(c.capital);
+    const m = c.dialing_code.trim().match(/^\+?(\d+)(?:-(\d+))?(?: and 1-(\d+))?$/);
+    c.dialing_code = m ? m[1] : null;
+    if (m) { const a = [m[2], m[3]].filter(Boolean); if (a.length) c.area_codes = a; }
+    if (c.provinces) c.provinces = c.provinces.map(p => {
+        // 3.1.8 held an alias as an array, a bare string, or nothing at all
+        let alias = Array.isArray(p.alias) ? p.alias.filter(a => fold(a) !== fold(p.name))
+                  : p.alias == null ? null : p.alias;
+        if (Array.isArray(alias) && !alias.length) alias = null;
+        return {name: p.name, code: p.short === undefined ? null : p.short,
+                region: p.region === undefined ? null : p.region, alias};
+    });
+    return JSON.parse(JSON.stringify(c));
+};
+const normalise = a => {
+    a = JSON.parse(JSON.stringify(a));
+    a.capital = a.capital ? fold(a.capital) : null;
+    if (a.dialing_code === undefined) a.dialing_code = null;
+    return a;
 };
 const undeclared = [];
 for (const iso2 of Object.keys(old.all)) {
-    const e = migrate(old.findByIso2(iso2)), a = now.findByIso2(iso2);
-    if (JSON.stringify(e) !== JSON.stringify(restrict(a, e)) && !DECLARED.has(iso2))
+    const e = migrate(old.findByIso2(iso2)), a = normalise(now.findByIso2(iso2));
+    const r = restrict(a, e);
+    if ('dialing_code' in e && a.area_codes !== undefined) r.area_codes = a.area_codes;
+    if (JSON.stringify(e) !== JSON.stringify(r) && !DECLARED.has(iso2))
         undeclared.push(iso2);
 }
 assert.deepStrictEqual(undeclared, [], 'undeclared country differences: ' + undeclared);
@@ -56,14 +76,18 @@ checks++;
 // hand-maintained file. Same values, stated order.
 const RENAMED = {Turkey:'Türkiye', Swaziland:'Eswatini', Macedonia:'North Macedonia',
     'Czech Republic':'Czechia', 'Cape Verde':'Cabo Verde', 'Ivory Coast':"Côte d'Ivoire",
-    'East Timor':'Timor-Leste', Vatican:'Holy See'};
+    'East Timor':'Timor-Leste', Vatican:'Holy See',
+    'Aland Islands':'Åland Islands', 'Saint Barthelemy':'Saint Barthélemy', Curacao:'Curaçao',
+    Reunion:'Réunion', 'Sao Tome and Principe':'São Tomé and Príncipe',
+    'Bonaire, Saint Eustatius and Saba ':'Bonaire, Sint Eustatius and Saba',
+    'Cocos Islands':'Cocos (Keeling) Islands', Pitcairn:'Pitcairn Islands',
+    'Palestinian Territory':'Palestine'};
 const bag = a => [...a].sort();
 assert.deepStrictEqual(bag(now.names()), bag(old.names().map(n => RENAMED[n] || n)), 'names()');
 checks++;
-for (const fn of ['capitals', 'continents']) {
-    assert.deepStrictEqual(bag(now[fn]()), bag(old[fn]()), fn + '()'); checks++;
-}
-assert.deepStrictEqual(bag(now.ls('region')), bag(old.ls('region')), "ls('region')"); checks++;
+assert.deepStrictEqual(bag(now.continents()), bag(old.continents()), 'continents()'); checks++;
+ok('capitals() is one entry per country', now.capitals().length === old.capitals().length);
+ok("ls('region') is the M49 scheme", new Set(now.ls('region')).size === 23);
 ok('names() is in name order',
    now.names().every((n, i, a) => i === 0 || a[i-1].localeCompare(n, 'en') <= 0));
 
@@ -122,5 +146,11 @@ ok('a list finder always returns a list',
 ok('a unique finder always returns a country or undefined',
    ['findByIso2','findByIso3','findByName'].every(f => now[f]('nope') === undefined));
 ok('decimal is a number', typeof now.findByIso2('DK').currency.decimal === 'number');
+ok('area codes', now.findByIso2('AG').dialing_code === '1' && now.findByIso2('AG').area_codes[0] === '268');
+ok('area codes split a shared calling code', now.findByPhoneNbr('+18095551212')[0].code.iso2 === 'DO');
+ok('diacritics are folded on a miss', now.findByCapital('Bogota')[0].code.iso2 === 'CO');
+ok('a territory with no capital has none', now.findByIso2('AQ').capital === undefined);
+ok('Antarctica has no currency', now.findByIso2('AQ').currency === undefined);
+ok('Object.prototype is not data', now.findByIso2('constructor') === undefined);
 
 console.log('CJS: %d checks passed', checks);

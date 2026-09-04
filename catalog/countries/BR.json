@@ -7,7 +7,7 @@
   "demonym": "Brazilian",
   "continent": "SA",
   "region": "South America",
-  "capital": "Brasilia",
+  "capital": "Brasília",
   "currency": "BRL",
   "languages": [
     "pt"
@@ -16,7 +16,6 @@
   "tld": [
     ".br"
   ],
-  "area": 8515767,
   "latlng": [
     -10,
     -55
@@ -68,9 +67,7 @@
       "name": "Amapá",
       "code": "AP",
       "region": null,
-      "alias": [
-        "Amapa"
-      ]
+      "alias": null
     },
     {
       "name": "Amazonas",
@@ -88,9 +85,7 @@
       "name": "Ceará",
       "code": "CE",
       "region": null,
-      "alias": [
-        "Ceara"
-      ]
+      "alias": null
     },
     {
       "name": "Distrito Federal",
@@ -104,25 +99,19 @@
       "name": "Espírito Santo",
       "code": "ES",
       "region": null,
-      "alias": [
-        "Espirito Santo"
-      ]
+      "alias": null
     },
     {
       "name": "Goiás",
       "code": "GO",
       "region": null,
-      "alias": [
-        "Goias"
-      ]
+      "alias": null
     },
     {
       "name": "Maranhão",
       "code": "MA",
       "region": null,
-      "alias": [
-        "Maranhao"
-      ]
+      "alias": null
     },
     {
       "name": "Mato Grosso",
@@ -146,25 +135,19 @@
       "name": "Pará",
       "code": "PA",
       "region": null,
-      "alias": [
-        "Para"
-      ]
+      "alias": null
     },
     {
       "name": "Paraíba",
       "code": "PB",
       "region": null,
-      "alias": [
-        "Paraiba"
-      ]
+      "alias": null
     },
     {
       "name": "Paraná",
       "code": "PR",
       "region": null,
-      "alias": [
-        "Parana"
-      ]
+      "alias": null
     },
     {
       "name": "Pernambuco",
@@ -176,9 +159,7 @@
       "name": "Piauí",
       "code": "PI",
       "region": null,
-      "alias": [
-        "Piaui"
-      ]
+      "alias": null
     },
     {
       "name": "Rio de Janeiro",
@@ -202,9 +183,7 @@
       "name": "Rondônia",
       "code": "RO",
       "region": null,
-      "alias": [
-        "Rondonia"
-      ]
+      "alias": null
     },
     {
       "name": "Roraima",
@@ -222,9 +201,7 @@
       "name": "São Paulo",
       "code": "SP",
       "region": null,
-      "alias": [
-        "Sao Paulo"
-      ]
+      "alias": null
     },
     {
       "name": "Sergipe",

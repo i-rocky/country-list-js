@@ -5,7 +5,7 @@
   "name": "Türkiye",
   "demonym": "Turkish",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Ankara",
   "currency": "TRY",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".tr"
   ],
-  "area": 783562,
   "latlng": [
     39,
     35
@@ -112,9 +111,7 @@
       "name": "Bingöl",
       "code": null,
       "region": null,
-      "alias": [
-        "Bingol"
-      ]
+      "alias": null
     },
     {
       "name": "Bitlis",
@@ -144,9 +141,7 @@
       "name": "Çanakkale",
       "code": null,
       "region": null,
-      "alias": [
-        "Canakkale"
-      ]
+      "alias": null
     },
     {
       "name": "Çankırı",
@@ -160,9 +155,7 @@
       "name": "Çorum",
       "code": null,
       "region": null,
-      "alias": [
-        "Corum"
-      ]
+      "alias": null
     },
     {
       "name": "Denizli",
@@ -208,9 +201,7 @@
       "name": "Eskişehir",
       "code": null,
       "region": null,
-      "alias": [
-        "Eskisehir"
-      ]
+      "alias": null
     },
     {
       "name": "Gaziantep",
@@ -228,17 +219,13 @@
       "name": "Gümüşhane",
       "code": null,
       "region": null,
-      "alias": [
-        "Gumushane"
-      ]
+      "alias": null
     },
     {
       "name": "Hakkâri",
       "code": null,
       "region": null,
-      "alias": [
-        "Hakkari"
-      ]
+      "alias": null
     },
     {
       "name": "Hatay",
@@ -268,9 +255,7 @@
       "name": "İzmir",
       "code": null,
       "region": null,
-      "alias": [
-        "Izmir"
-      ]
+      "alias": null
     },
     {
       "name": "Kars",
@@ -300,9 +285,7 @@
       "name": "Kırşehir",
       "code": null,
       "region": null,
-      "alias": [
-        "Kırsehir"
-      ]
+      "alias": null
     },
     {
       "name": "Kocaeli",
@@ -320,9 +303,7 @@
       "name": "Kütahya",
       "code": null,
       "region": null,
-      "alias": [
-        "Kutahya"
-      ]
+      "alias": null
     },
     {
       "name": "Malatya",
@@ -340,9 +321,7 @@
       "name": "Kahramanmaraş",
       "code": null,
       "region": null,
-      "alias": [
-        "Kahramanmaras"
-      ]
+      "alias": null
     },
     {
       "name": "Mardin",
@@ -354,33 +333,25 @@
       "name": "Muğla",
       "code": null,
       "region": null,
-      "alias": [
-        "Mugla"
-      ]
+      "alias": null
     },
     {
       "name": "Muş",
       "code": null,
       "region": null,
-      "alias": [
-        "Mus"
-      ]
+      "alias": null
     },
     {
       "name": "Nevşehir",
       "code": null,
       "region": null,
-      "alias": [
-        "Nevsehir"
-      ]
+      "alias": null
     },
     {
       "name": "Niğde",
       "code": null,
       "region": null,
-      "alias": [
-        "Nigde"
-      ]
+      "alias": null
     },
     {
       "name": "Ordu",
@@ -428,9 +399,7 @@
       "name": "Tekirdağ",
       "code": null,
       "region": null,
-      "alias": [
-        "Tekirdag"
-      ]
+      "alias": null
     },
     {
       "name": "Tokat",
@@ -462,9 +431,7 @@
       "name": "Uşak",
       "code": null,
       "region": null,
-      "alias": [
-        "Usak"
-      ]
+      "alias": null
     },
     {
       "name": "Van",
@@ -556,9 +523,7 @@
       "name": "Karabük",
       "code": null,
       "region": null,
-      "alias": [
-        "Karabuk"
-      ]
+      "alias": null
     },
     {
       "name": "Kilis",
@@ -576,9 +541,7 @@
       "name": "Düzce",
       "code": null,
       "region": null,
-      "alias": [
-        "Duzce"
-      ]
+      "alias": null
     }
   ]
 }

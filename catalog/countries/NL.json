@@ -6,7 +6,7 @@
   "native_name": "Nederland",
   "demonym": "Dutch",
   "continent": "EU",
-  "region": "Western Europe, Nordic Countries",
+  "region": "Western Europe",
   "capital": "Amsterdam",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".nl"
   ],
-  "area": 41850,
   "latlng": [
     52.5,
     5.75

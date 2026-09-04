@@ -251,7 +251,7 @@ footer p{margin:.45rem 0;max-width:52rem}
     var withProv = records.filter(function (c) { return c.provinces; });
     [[codes.length, 'countries and territories'],
      [country.continents().length, 'continents'],
-     [new Set(records.map(function (c) { return c.currency.code; })).size, 'currencies'],
+     [new Set(records.filter(function (c) { return c.currency; }).map(function (c) { return c.currency.code; })).size, 'currencies'],
      [withProv.reduce(function (n, c) { return n + c.provinces.length; }, 0), 'subdivisions'],
      [new Set(flat(records.map(function (c) { return c.timezones || []; }))).size, 'time zones'],
      [0, 'runtime dependencies']]
@@ -274,17 +274,17 @@ footer p{margin:.45rem 0;max-width:52rem}
     var FIELDS = [
       ['native_name', 'Native name'], ['capital', 'Capital'], ['continent', 'Continent'],
       ['region', 'Region'], ['demonym', 'Demonym'], ['currency', 'Currency'],
-      ['dialing_code', 'Dialing code'], ['languages', 'Languages'], ['tld', 'Domain'],
-      ['area', 'Area'], ['latlng', 'Coordinates'], ['timezones', 'Time zones'],
+      ['dialing_code', 'Dialing code'], ['area_codes', 'Area codes'],
+      ['languages', 'Languages'], ['tld', 'Domain'],
+      ['latlng', 'Coordinates'], ['timezones', 'Time zones'],
       ['borders', 'Borders'], ['provinces', 'Subdivisions']
     ];
 
     function value(key, v) {
       if (v === undefined || v === null || v === '') return null;
       if (key === 'currency') return v.code + ' · ' + v.symbol + ' · ' + v.decimal + 'dp';
-      if (key === 'area') return v.toLocaleString() + ' km²';
       if (key === 'latlng') return v[0] + ', ' + v[1];
-      if (key === 'dialing_code') return '+' + String(v).replace(/^\+/, '');
+      if (key === 'dialing_code') return '+' + v;
       if (key === 'borders') return v.map(function (b) { return flag(b) + ' ' + b; }).join('  ');
       if (key === 'provinces') return v.length + ' — ' + v.slice(0, 3).map(function (p) { return p.name; }).join(', ')
         + (v.length > 3 ? ', …' : '');
@@ -351,8 +351,8 @@ footer p{margin:.45rem 0;max-width:52rem}
     var rows = records.map(function (c) {
       return {
         flag: flag(c.code.iso2), name: c.name, iso2: c.code.iso2, iso3: c.code.iso3,
-        capital: c.capital || '—', continent: c.continent, currency: c.currency.code,
-        dial: c.dialing_code ? '+' + c.dialing_code.replace(/^\+/, '') : '—',
+        capital: c.capital || '—', continent: c.continent, currency: c.currency ? c.currency.code : '—',
+        dial: c.dialing_code ? '+' + c.dialing_code + (c.area_codes ? ' ' + c.area_codes.join('/') : '') : '—',
         tzn: (c.timezones || []).length,
         borders: (c.borders || []).join(' ') || '—'
       };

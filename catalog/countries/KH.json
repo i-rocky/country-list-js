@@ -3,10 +3,10 @@
   "iso3": "KHM",
   "iso_numeric": "116",
   "name": "Cambodia",
-  "native_name": "Kâmpŭchéa",
+  "native_name": "កម្ពុជា",
   "demonym": "Cambodian",
   "continent": "AS",
-  "region": "South-East Asia",
+  "region": "South-eastern Asia",
   "capital": "Phnom Penh",
   "currency": "KHR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".kh"
   ],
-  "area": 181035,
   "latlng": [
     13,
     105

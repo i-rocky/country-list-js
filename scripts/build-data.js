@@ -45,16 +45,17 @@ for (const [alias, iso2] of Object.entries(aliases)) {
 }
 
 for (const [code, r] of Object.entries(retired)) {
-    if (!currencies[r.successor])
+    // a successor may itself have been retired since: VEF -> VES -> VED
+    if (!currencies[r.successor] && !retired[r.successor])
         fail('retired currency ' + code + ' names successor ' + r.successor +
-            ', which catalog/reference/currencies.json does not define');
+            ', which neither reference file defines');
     for (const iso2 of r.countries)
         if (!files.includes(iso2))
             fail('retired currency ' + code + ' names country ' + iso2 + ', which does not exist');
 }
 
 for (const c of countries) {
-    if (!currencies[c.currency])
+    if (c.currency !== undefined && !currencies[c.currency])
         fail(c.iso2 + ' uses currency ' + c.currency + ', which catalog/reference/currencies.json does not define');
     if (!continents[c.continent])
         fail(c.iso2 + ' is on continent ' + c.continent + ', which catalog/reference/continents.json does not define');
@@ -74,7 +75,8 @@ const write = (name, value, pretty) => {
 };
 
 // the compiled records, in canonical order, with continent and currency
-// already resolved -- exactly the shape index.js needs
+// already resolved -- exactly the shape index.js needs.  A key whose value is
+// undefined is dropped by JSON, which is what the runtime expects.
 const compiled = countries.map(c => ({
     iso2: c.iso2,
     iso3: c.iso3,
@@ -83,15 +85,15 @@ const compiled = countries.map(c => ({
     region: c.region,
     capital: c.capital,
     currency: c.currency,
-    currency_symbol: currencies[c.currency].symbol,
-    currency_decimal: currencies[c.currency].decimal,
+    currency_symbol: c.currency && currencies[c.currency].symbol,
+    currency_decimal: c.currency && currencies[c.currency].decimal,
     dialing_code: c.dialing_code,
+    area_codes: c.area_codes,
     iso_numeric: c.iso_numeric,
     native_name: c.native_name,
     demonym: c.demonym,
     languages: c.languages,
     tld: c.tld,
-    area: c.area,
     latlng: c.latlng,
     timezones: c.timezones,
     borders: c.borders,
@@ -130,7 +132,7 @@ fs.writeFileSync(path.join(root, 'src', 'generated.ts'),
         union(countries.map(c => c.iso3)) + ';\n\n' +
     '/** ISO 4217 currency code in current use, plus the retired codes that\n' +
     ' *  stay resolvable through findByCurrency. */\nexport type CurrencyCode =\n' +
-        union([...countries.map(c => c.currency), ...Object.keys(retired)]) + ';\n\n' +
+        union([...Object.keys(currencies), ...Object.keys(retired)]) + ';\n\n' +
     '/** Continent name, as returned on a country record. */\nexport type ContinentName =\n' +
         union(Object.values(continents)) + ';\n');
 

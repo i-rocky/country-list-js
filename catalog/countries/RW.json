@@ -5,19 +5,19 @@
   "name": "Rwanda",
   "demonym": "Rwandan",
   "continent": "AF",
-  "region": "East Africa, Central Africa",
+  "region": "Eastern Africa",
   "capital": "Kigali",
   "currency": "RWF",
   "languages": [
     "rw",
     "en",
-    "fr"
+    "fr",
+    "sw"
   ],
   "dialing_code": "250",
   "tld": [
     ".rw"
   ],
-  "area": 26338,
   "latlng": [
     -2,
     30

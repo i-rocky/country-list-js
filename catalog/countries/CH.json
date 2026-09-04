@@ -3,22 +3,22 @@
   "iso3": "CHE",
   "iso_numeric": "756",
   "name": "Switzerland",
-  "native_name": "Schweiz/Suisse/Svizzera/Svizra",
+  "native_name": "Schweiz / Suisse / Svizzera / Svizra",
   "demonym": "Swiss",
   "continent": "EU",
   "region": "Western Europe",
-  "capital": "Berne",
+  "capital": "Bern",
   "currency": "CHF",
   "languages": [
     "de",
     "fr",
-    "it"
+    "it",
+    "rm"
   ],
   "dialing_code": "41",
   "tld": [
     ".ch"
   ],
-  "area": 41284,
   "latlng": [
     47,
     8

@@ -6,7 +6,7 @@
   "demonym": "Colombian",
   "continent": "SA",
   "region": "South America",
-  "capital": "Bogota",
+  "capital": "Bogotá",
   "currency": "COP",
   "languages": [
     "es"
@@ -15,7 +15,6 @@
   "tld": [
     ".co"
   ],
-  "area": 1141748,
   "latlng": [
     4,
     -72

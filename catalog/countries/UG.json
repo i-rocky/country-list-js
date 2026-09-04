@@ -5,7 +5,7 @@
   "name": "Uganda",
   "demonym": "Ugandan",
   "continent": "AF",
-  "region": "East Africa",
+  "region": "Eastern Africa",
   "capital": "Kampala",
   "currency": "UGX",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".ug"
   ],
-  "area": 241550,
   "latlng": [
     1,
     32

@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-345",
+  "dialing_code": "1",
+  "area_codes": [
+    "345"
+  ],
   "tld": [
     ".ky"
   ],
-  "area": 264,
   "latlng": [
     19.5,
     -80.5

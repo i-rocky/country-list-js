@@ -4,18 +4,18 @@
   "iso_numeric": "626",
   "name": "Timor-Leste",
   "demonym": "East Timorese",
-  "continent": "OC",
-  "region": "South-East Asia",
+  "continent": "AS",
+  "region": "South-eastern Asia",
   "capital": "Dili",
   "currency": "USD",
   "languages": [
-    "pt"
+    "pt",
+    "tet"
   ],
   "dialing_code": "670",
   "tld": [
     ".tl"
   ],
-  "area": 14874,
   "latlng": [
     -8.83333333,
     125.91666666

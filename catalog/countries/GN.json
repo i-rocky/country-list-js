@@ -10,14 +10,12 @@
   "capital": "Conakry",
   "currency": "GNF",
   "languages": [
-    "fr",
-    "ff"
+    "fr"
   ],
   "dialing_code": "224",
   "tld": [
     ".gn"
   ],
-  "area": 245857,
   "latlng": [
     11,
     -10

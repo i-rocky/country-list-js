@@ -3,20 +3,18 @@
   "iso3": "ATF",
   "iso_numeric": "260",
   "name": "French Southern Territories",
-  "native_name": "Territoire des Terres australes et antarctiques françaises",
+  "native_name": "Terres australes et antarctiques françaises",
   "demonym": "French",
-  "continent": "AN",
-  "region": "Oceania",
-  "capital": "Port-aux-Francais",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Port-aux-Français",
   "currency": "EUR",
   "languages": [
     "fr"
   ],
-  "dialing_code": "",
   "tld": [
     ".tf"
   ],
-  "area": 7747,
   "latlng": [
     -49.25,
     69.167

@@ -3,20 +3,23 @@
   "iso3": "ETH",
   "iso_numeric": "231",
   "name": "Ethiopia",
-  "native_name": "ኢትዮጵያ",
+  "native_name": "ኢትዮጵያ / Itoophiyaa / Itoobiya",
   "demonym": "Ethiopian",
   "continent": "AF",
-  "region": "East Africa",
+  "region": "Eastern Africa",
   "capital": "Addis Ababa",
   "currency": "ETB",
   "languages": [
-    "am"
+    "am",
+    "aa",
+    "om",
+    "so",
+    "ti"
   ],
   "dialing_code": "251",
   "tld": [
     ".et"
   ],
-  "area": 1104300,
   "latlng": [
     8,
     38

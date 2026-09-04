@@ -3,10 +3,11 @@
   "iso3": "SGP",
   "iso_numeric": "702",
   "name": "Singapore",
+  "native_name": "Singapura / சிங்கப்பூர் / 新加坡",
   "demonym": "Singaporean",
   "continent": "AS",
-  "region": "South-East Asia",
-  "capital": "Singapur",
+  "region": "South-eastern Asia",
+  "capital": "Singapore",
   "currency": "SGD",
   "languages": [
     "en",
@@ -16,9 +17,10 @@
   ],
   "dialing_code": "65",
   "tld": [
-    ".sg"
+    ".sg",
+    ".சிங்கப்பூர்",
+    ".新加坡"
   ],
-  "area": 710,
   "latlng": [
     1.36666666,
     103.8

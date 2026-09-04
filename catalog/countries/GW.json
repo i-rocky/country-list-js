@@ -4,7 +4,7 @@
   "iso_numeric": "624",
   "name": "Guinea-Bissau",
   "native_name": "Guiné-Bissau",
-  "demonym": "Guinea-Bissauan",
+  "demonym": "Bissau-Guinean",
   "continent": "AF",
   "region": "Western Africa",
   "capital": "Bissau",
@@ -16,7 +16,6 @@
   "tld": [
     ".gw"
   ],
-  "area": 36125,
   "latlng": [
     12,
     -15

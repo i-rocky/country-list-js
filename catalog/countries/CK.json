@@ -6,17 +6,17 @@
   "native_name": "Kūki 'Āirani",
   "demonym": "Cook Islander",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Polynesia",
   "capital": "Avarua",
   "currency": "NZD",
   "languages": [
-    "en"
+    "en",
+    "rar"
   ],
   "dialing_code": "682",
   "tld": [
     ".ck"
   ],
-  "area": 236,
   "latlng": [
     -21.23333333,
     -159.76666666

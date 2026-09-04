@@ -6,13 +6,16 @@
   "native_name": "Svalbard og Jan Mayen",
   "demonym": "Norwegian",
   "continent": "EU",
-  "region": "Scandinavia",
+  "region": "Northern Europe",
   "capital": "Longyearbyen",
   "currency": "NOK",
   "languages": [
     "no"
   ],
   "dialing_code": "47",
+  "area_codes": [
+    "79"
+  ],
   "tld": [
     ".sj"
   ],

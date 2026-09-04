@@ -5,7 +5,7 @@
   "name": "Kenya",
   "demonym": "Kenyan",
   "continent": "AF",
-  "region": "East Africa",
+  "region": "Eastern Africa",
   "capital": "Nairobi",
   "currency": "KES",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".ke"
   ],
-  "area": 580367,
   "latlng": [
     1,
     38

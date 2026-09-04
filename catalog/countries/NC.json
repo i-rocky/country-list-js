@@ -6,8 +6,8 @@
   "native_name": "Nouvelle-Calédonie",
   "demonym": "New Caledonian",
   "continent": "OC",
-  "region": "Oceania",
-  "capital": "Noumea",
+  "region": "Melanesia",
+  "capital": "Nouméa",
   "currency": "XPF",
   "languages": [
     "fr"
@@ -16,7 +16,6 @@
   "tld": [
     ".nc"
   ],
-  "area": 18575,
   "latlng": [
     -21.5,
     165.5

@@ -3,20 +3,21 @@
   "iso3": "PAK",
   "iso_numeric": "586",
   "name": "Pakistan",
+  "native_name": "پاکستان",
   "demonym": "Pakistani",
   "continent": "AS",
   "region": "Southern Asia",
   "capital": "Islamabad",
   "currency": "PKR",
   "languages": [
-    "en",
-    "ur"
+    "ur",
+    "en"
   ],
   "dialing_code": "92",
   "tld": [
-    ".pk"
+    ".pk",
+    ".پاکستان"
   ],
-  "area": 881912,
   "latlng": [
     30,
     70

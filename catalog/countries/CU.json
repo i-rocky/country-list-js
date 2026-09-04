@@ -15,7 +15,6 @@
   "tld": [
     ".cu"
   ],
-  "area": 109884,
   "latlng": [
     21.5,
     -80
@@ -34,17 +33,13 @@
       "name": "Camagüey",
       "code": "09",
       "region": null,
-      "alias": [
-        "Camaguey"
-      ]
+      "alias": null
     },
     {
       "name": "Ciego de Ávila",
       "code": "08",
       "region": null,
-      "alias": [
-        "Ciego de Avila"
-      ]
+      "alias": null
     },
     {
       "name": "Cienfuegos",
@@ -64,9 +59,7 @@
       "name": "Guantánamo",
       "code": "14",
       "region": null,
-      "alias": [
-        "Guantanamo"
-      ]
+      "alias": null
     },
     {
       "name": "Havana",
@@ -81,9 +74,7 @@
       "name": "Holguín",
       "code": "11",
       "region": null,
-      "alias": [
-        "Holguin"
-      ]
+      "alias": null
     },
     {
       "name": "Isla de la Juventud",
@@ -119,17 +110,13 @@
       "name": "Pinar del Río",
       "code": "01",
       "region": null,
-      "alias": [
-        "Pinar del Rio"
-      ]
+      "alias": null
     },
     {
       "name": "Sancti Spíritus",
       "code": "07",
       "region": null,
-      "alias": [
-        "Sancti Spiritus"
-      ]
+      "alias": null
     },
     {
       "name": "Santiago de Cuba",

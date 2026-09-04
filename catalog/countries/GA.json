@@ -5,7 +5,7 @@
   "name": "Gabon",
   "demonym": "Gabonese",
   "continent": "AF",
-  "region": "Central Africa",
+  "region": "Middle Africa",
   "capital": "Libreville",
   "currency": "XAF",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".ga"
   ],
-  "area": 267668,
   "latlng": [
     -1,
     11.75

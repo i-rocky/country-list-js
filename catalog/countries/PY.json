@@ -3,10 +3,11 @@
   "iso3": "PRY",
   "iso_numeric": "600",
   "name": "Paraguay",
+  "native_name": "Paraguái",
   "demonym": "Paraguayan",
   "continent": "SA",
   "region": "South America",
-  "capital": "Asuncion",
+  "capital": "Asunción",
   "currency": "PYG",
   "languages": [
     "es",
@@ -16,7 +17,6 @@
   "tld": [
     ".py"
   ],
-  "area": 406752,
   "latlng": [
     -23,
     -58

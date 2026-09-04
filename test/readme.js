@@ -34,6 +34,16 @@ describe('README', () => {
         expect(country.findByIso2('dk').name).to.equal('Denmark');
     });
 
+    it('is right that lookups fold diacritics', () => {
+        expect(country.findByCapital('Bogota')[0].name).to.equal('Colombia');
+        expect(country.findByName('Sao Tome and Principe').name).to.equal('São Tomé and Príncipe');
+    });
+
+    it('shows the phone results for shared codes it actually returns', () => {
+        expect(country.findByPhoneNbr('+18095551212').map(c => c.name)).to.deep.equal(['Dominican Republic']);
+        expect(country.findByPhoneNbr('+77271234567').map(c => c.name)).to.deep.equal(['Kazakhstan']);
+    });
+
     it('resolves every alias it advertises', () => {
         const aliases = {Danmark: 'Denmark', USA: 'United States',
                          Turkey: 'Türkiye', Swaziland: 'Eswatini',
@@ -54,16 +64,21 @@ describe('README', () => {
         // the 3.1.8 README showed keys the code has never had
         const dk = country.findByIso2('DK');
         expect(dk.code).to.deep.equal({iso2: 'DK', iso3: 'DNK', numeric: '208'});
-        expect(dk.currency).to.deep.equal({code: 'DKK', symbol: 'Dkr', decimal: 2});
+        expect(dk.currency).to.deep.equal({code: 'DKK', symbol: 'kr', decimal: 2});
+        expect(dk.region).to.equal('Northern Europe');
         expect(dk.native_name).to.equal('Danmark');
         expect(dk.demonym).to.equal('Danish');
         expect(dk.languages).to.deep.equal(['da']);
         expect(dk.tld).to.deep.equal(['.dk']);
-        expect(dk.area).to.equal(43094);
+        expect(dk).to.not.have.property('area');
         expect(dk.latlng).to.deep.equal([56, 10]);
         expect(dk.timezones).to.deep.equal(['Europe/Copenhagen']);
         expect(dk.borders).to.deep.equal(['DE']);
         expect(dk.dialing_code).to.equal('45');
+        expect(dk.area_codes).to.equal(undefined);
+        const ag = country.findByIso2('AG');
+        expect(ag.dialing_code).to.equal('1');
+        expect(ag.area_codes).to.deep.equal(['268']);
         expect(dk.provinces.map(p => p.name)).to.deep.equal(
             ['Hovedstaden', 'Midtjylland', 'Nordjylland', 'Sjælland', 'Syddanmark']);
     });
@@ -144,7 +159,8 @@ describe('CHANGELOG', () => {
         const body = notes(version);
         for (const claim of ['currency.decimal', 'findByPhoneNbr', 'cache',
                              'Array.prototype', 'Türkiye', 'Vietnam',
-                             'United Kingdom'])
+                             'United Kingdom', 'M49', 'area_codes', 'Antarctica',
+                             'Kyiv', 'Åland', 'symbol', 'area'])
             expect(body, claim + ' is not mentioned').to.include(claim);
     });
 });

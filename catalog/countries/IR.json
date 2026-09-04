@@ -6,7 +6,7 @@
   "native_name": "ایران",
   "demonym": "Iranian",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Southern Asia",
   "capital": "Tehran",
   "currency": "IRR",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "98",
   "tld": [
-    ".ir"
+    ".ir",
+    ".ایران"
   ],
-  "area": 1648195,
   "latlng": [
     32,
     53
@@ -29,7 +29,6 @@
     "AM",
     "AZ",
     "IQ",
-    "KW",
     "PK",
     "TM",
     "TR"

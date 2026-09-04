@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-473",
+  "dialing_code": "1",
+  "area_codes": [
+    "473"
+  ],
   "tld": [
     ".gd"
   ],
-  "area": 344,
   "latlng": [
     12.11666666,
     -61.66666666

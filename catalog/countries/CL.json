@@ -15,7 +15,6 @@
   "tld": [
     ".cl"
   ],
-  "area": 756102,
   "latlng": [
     -30,
     -71
@@ -78,9 +77,7 @@
       "name": "Copiapó",
       "code": null,
       "region": "III Atacama",
-      "alias": [
-        "Copiapo"
-      ]
+      "alias": null
     },
     {
       "name": "Huasco",
@@ -92,9 +89,7 @@
       "name": "Chañaral",
       "code": null,
       "region": "III Atacama",
-      "alias": [
-        "Chanaral"
-      ]
+      "alias": null
     },
     {
       "name": "Elqui",
@@ -106,9 +101,7 @@
       "name": "Limarí",
       "code": null,
       "region": "IV Coquimbo",
-      "alias": [
-        "Limari"
-      ]
+      "alias": null
     },
     {
       "name": "Choapa",
@@ -162,9 +155,7 @@
       "name": "Valparaíso",
       "code": null,
       "region": "V Valparaíso",
-      "alias": [
-        "Valparaiso"
-      ]
+      "alias": null
     },
     {
       "name": "Cachapoal",
@@ -200,9 +191,7 @@
       "name": "Curicó",
       "code": null,
       "region": "VII Maule",
-      "alias": [
-        "Curico"
-      ]
+      "alias": null
     },
     {
       "name": "Cauquenes",
@@ -214,17 +203,13 @@
       "name": "Concepción",
       "code": null,
       "region": "VIII Biobío",
-      "alias": [
-        "Concepcion"
-      ]
+      "alias": null
     },
     {
       "name": "Diguillín",
       "code": null,
       "region": "Ñuble",
-      "alias": [
-        "Diguillin"
-      ]
+      "alias": null
     },
     {
       "name": "Itata",
@@ -242,9 +227,7 @@
       "name": "Biobío",
       "code": null,
       "region": "VIII Biobío",
-      "alias": [
-        "Biobio"
-      ]
+      "alias": null
     },
     {
       "name": "Arauco",
@@ -310,9 +293,7 @@
       "name": "Aisén",
       "code": null,
       "region": "XI Aisén",
-      "alias": [
-        "Aisen"
-      ]
+      "alias": null
     },
     {
       "name": "General Carrera",
@@ -348,9 +329,7 @@
       "name": "Antártica Chilena",
       "code": null,
       "region": "XII Magallanes",
-      "alias": [
-        "Antartica Chilena"
-      ]
+      "alias": null
     },
     {
       "name": "Santiago",

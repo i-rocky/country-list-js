@@ -3,10 +3,10 @@
   "iso3": "HUN",
   "iso_numeric": "348",
   "name": "Hungary",
-  "native_name": "Magyarorszag",
+  "native_name": "Magyarország",
   "demonym": "Hungarian",
   "continent": "EU",
-  "region": "Central Europe",
+  "region": "Eastern Europe",
   "capital": "Budapest",
   "currency": "HUF",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".hu"
   ],
-  "area": 93030,
   "latlng": [
     47,
     20

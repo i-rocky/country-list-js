@@ -29,8 +29,9 @@ describe('Retired currency codes', () => {
     });
 
     it('carries the corrected code on the country itself', () => {
-        const now = {HR: 'EUR', LT: 'EUR', BG: 'EUR', VE: 'VES', MR: 'MRU',
-                     ST: 'STN', SL: 'SLE', ZW: 'ZWG', ZM: 'ZMW', BY: 'BYN'};
+        const now = {HR: 'EUR', LT: 'EUR', BG: 'EUR', VE: 'VED', MR: 'MRU',
+                     ST: 'STN', SL: 'SLE', ZW: 'ZWG', ZM: 'ZMW', BY: 'BYN',
+                     CW: 'XCG', SX: 'XCG'};
         for (const [iso2, code] of Object.entries(now))
             expect(country.findByIso2(iso2).currency.code, iso2).to.equal(code);
     });
@@ -41,12 +42,40 @@ describe('Retired currency codes', () => {
                 .to.not.include(code);
     });
 
-    it('gives every active currency a symbol and a decimal', () => {
+    it('gives every currency a symbol and a decimal', () => {
         for (const iso2 of Object.keys(country.all)) {
             const c = country.findByIso2(iso2).currency;
+            if (iso2 === 'AQ') { expect(c).to.equal(undefined); continue; }
             expect(c.symbol, iso2).to.be.a('string').and.not.equal('');
-            expect(c.decimal, iso2).to.match(/^[0-9]$/);
+            expect(c.decimal, iso2).to.be.a('number').within(0, 3);
         }
+    });
+
+    it('decimal is the ISO 4217 minor unit exponent', () => {
+        const minor = {USD: 2, JPY: 0, BHD: 3, IQD: 3, KWD: 3, HUF: 2, IDR: 2,
+                       CLP: 0, ISK: 0, XOF: 0, MGA: 2, MRU: 2, VND: 0};
+        for (const [code, n] of Object.entries(minor))
+            expect(country.findByCurrency(code)[0].currency.decimal, code).to.equal(n);
+    });
+
+    it('symbol is the one the currency is written with, or the code where it has none', () => {
+        const symbol = {DKK: 'kr', NOK: 'kr', INR: '₹', RUB: '₽', TRY: '₺', GBP: '£',
+                        CAD: 'CA$', AUD: 'A$', CNY: 'CN¥', XCD: 'EC$', AED: 'AED', CHF: 'CHF'};
+        for (const [code, s] of Object.entries(symbol))
+            expect(country.findByCurrency(code)[0].currency.symbol, code).to.equal(s);
+    });
+
+    it('resolves the codes withdrawn since 3.1.8 as well', () => {
+        expect(names(country.findByCurrency('ANG')).sort()).to.deep.equal(['Curaçao', 'Sint Maarten']);
+        expect(names(country.findByCurrency('VES'))).to.deep.equal(['Venezuela']);
+        expect(country.findByIso2('CW').currency.code).to.equal('XCG');
+        expect(country.findByIso2('VE').currency.code).to.equal('VED');
+    });
+
+    it('gives Antarctica no currency rather than a wrong one', () => {
+        // 3.1.8 said XCD, the East Caribbean dollar
+        expect(country.findByIso2('AQ').currency).to.equal(undefined);
+        expect(country.findByCurrency('XCD').map(c => c.code.iso2)).to.not.include('AQ');
     });
 });
 
@@ -123,6 +152,14 @@ describe('Case-insensitive fallback', () => {
         expect(one(country.findByName('CZECH REPUBLIC'))).to.have.property('name', 'Czechia');
     });
 
+    it('folds Latin diacritics as well as case', () => {
+        expect(country.findByName('turkiye').name).to.equal('Türkiye');
+        expect(country.findByName('cote d\'ivoire').name).to.equal("Côte d'Ivoire");
+        expect(country.findByName('Côte d’Ivoire').name).to.equal("Côte d'Ivoire");   // typographic apostrophe
+        expect(names(country.findByCapital('Asuncion'))).to.deep.equal(['Paraguay']);
+        expect(names(country.findByProvince('Sao Paulo'))).to.deep.equal(['Brazil']);
+    });
+
     it('exact match always wins', () => {
         // every exact lookup must answer exactly what it answered before the
         // fallback existed -- the fallback runs only after an exact miss
@@ -156,13 +193,36 @@ describe('findByPhoneNbr', () => {
                             'United States Minor Outlying Islands']);
     });
 
-    it('answers every country from its own dialing code', () => {
+    it('answers every country from its own dialing code and area codes', () => {
         for (const iso2 of Object.keys(country.all)) {
-            const code = country.findByIso2(iso2).dialing_code.replace(/\D/g, '');
-            if (!code) continue;
-            expect(names(country.findByPhoneNbr('+' + code + '5551212')), iso2)
-                .to.not.be.empty;
+            const c = country.findByIso2(iso2);
+            if (!c.dialing_code) continue;
+            for (const area of c.area_codes || [''])
+                expect(country.findByPhoneNbr('+' + c.dialing_code + area + '5551212')
+                    .map(o => o.code.iso2), iso2 + ' +' + c.dialing_code + area).to.include(iso2);
         }
+    });
+
+    it('tells territories under one calling code apart by area code', () => {
+        const cases = {
+            '+18095551212': ['Dominican Republic'], '+18495551212': ['Dominican Republic'],
+            '+19395551212': ['Puerto Rico'], '+16585551212': ['Jamaica'],
+            '+17215551212': ['Sint Maarten'],
+            '+77271234567': ['Kazakhstan'], '+74951234567': ['Russia'],
+            '+59995551212': ['Curaçao'], '+59975551212': ['Bonaire, Sint Eustatius and Saba'],
+            '+672312345': ['Norfolk Island'], '+672112345': ['Antarctica'],
+            '+4779123456': ['Svalbard and Jan Mayen'], '+4722123456': ['Norway'],
+            '+3581812345': ['Åland Islands'], '+358912345': ['Finland'],
+        };
+        for (const [nbr, expected] of Object.entries(cases))
+            expect(names(country.findByPhoneNbr(nbr)), nbr).to.deep.equal(expected);
+    });
+
+    it('still answers every holder of a code that area codes do not split', () => {
+        expect(names(country.findByPhoneNbr('+262262123456')).sort())
+            .to.deep.equal(['Mayotte', 'Réunion']);
+        expect(names(country.findByPhoneNbr('+590590123456')).sort())
+            .to.deep.equal(['Guadeloupe', 'Saint Barthélemy', 'Saint Martin']);
     });
 
     it('answers undefined for input that matches nothing', () => {

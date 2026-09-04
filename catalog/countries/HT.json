@@ -3,7 +3,7 @@
   "iso3": "HTI",
   "iso_numeric": "332",
   "name": "Haiti",
-  "native_name": "Haïti",
+  "native_name": "Haïti / Ayiti",
   "demonym": "Haitian",
   "continent": "NA",
   "region": "Caribbean",
@@ -17,7 +17,6 @@
   "tld": [
     ".ht"
   ],
-  "area": 27750,
   "latlng": [
     19,
     -72.41666666

@@ -5,7 +5,7 @@
   "name": "Australia",
   "demonym": "Australian",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Australia and New Zealand",
   "capital": "Canberra",
   "currency": "AUD",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".au"
   ],
-  "area": 7692024,
   "latlng": [
     -27,
     133

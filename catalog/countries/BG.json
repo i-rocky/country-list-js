@@ -6,7 +6,7 @@
   "native_name": "България",
   "demonym": "Bulgarian",
   "continent": "EU",
-  "region": "Central Europe",
+  "region": "Eastern Europe",
   "capital": "Sofia",
   "currency": "EUR",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "359",
   "tld": [
-    ".bg"
+    ".bg",
+    ".бг"
   ],
-  "area": 110879,
   "latlng": [
     43,
     25

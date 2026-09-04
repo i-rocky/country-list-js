@@ -5,17 +5,17 @@
   "name": "Kiribati",
   "demonym": "I-Kiribati",
   "continent": "OC",
-  "region": "Oceania",
-  "capital": "Tarawa",
+  "region": "Micronesia",
+  "capital": "South Tarawa",
   "currency": "AUD",
   "languages": [
-    "en"
+    "en",
+    "gil"
   ],
   "dialing_code": "686",
   "tld": [
     ".ki"
   ],
-  "area": 811,
   "latlng": [
     1.41666666,
     173

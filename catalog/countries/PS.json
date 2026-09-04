@@ -2,11 +2,11 @@
   "iso2": "PS",
   "iso3": "PSE",
   "iso_numeric": "275",
-  "name": "Palestinian Territory",
+  "name": "Palestine",
   "native_name": "فلسطين",
   "demonym": "Palestinian",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "East Jerusalem",
   "currency": "ILS",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "970",
   "tld": [
-    ".ps"
+    ".ps",
+    ".فلسطين"
   ],
-  "area": 5655,
   "latlng": [
     31.9,
     35.2

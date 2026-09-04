@@ -5,7 +5,7 @@
   "name": "Canada",
   "demonym": "Canadian",
   "continent": "NA",
-  "region": "North America",
+  "region": "Northern America",
   "capital": "Ottawa",
   "currency": "CAD",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".ca"
   ],
-  "area": 9984670,
   "latlng": [
     60,
     -95
@@ -47,6 +46,7 @@
     "America/Winnipeg"
   ],
   "borders": [
+    "GL",
     "US"
   ],
   "provinces": [

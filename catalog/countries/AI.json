@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-264",
+  "dialing_code": "1",
+  "area_codes": [
+    "264"
+  ],
   "tld": [
     ".ai"
   ],
-  "area": 91,
   "latlng": [
     18.25,
     -63.16666666

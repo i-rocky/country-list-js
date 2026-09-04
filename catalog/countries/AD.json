@@ -3,23 +3,18 @@
   "iso3": "AND",
   "iso_numeric": "020",
   "name": "Andorra",
-  "native_name": "Principat d'Andorra",
   "demonym": "Andorran",
   "continent": "EU",
   "region": "Southern Europe",
   "capital": "Andorra la Vella",
   "currency": "EUR",
   "languages": [
-    "ca",
-    "fr",
-    "es",
-    "oc"
+    "ca"
   ],
   "dialing_code": "376",
   "tld": [
     ".ad"
   ],
-  "area": 467,
   "latlng": [
     42.5,
     1.5

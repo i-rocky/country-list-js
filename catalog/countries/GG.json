@@ -5,18 +5,19 @@
   "name": "Guernsey",
   "demonym": "Channel Islander",
   "continent": "EU",
-  "region": "Western Europe",
-  "capital": "St Peter Port",
+  "region": "Northern Europe",
+  "capital": "Saint Peter Port",
   "currency": "GBP",
   "languages": [
-    "en",
-    "fr"
+    "en"
   ],
-  "dialing_code": "+44-1481",
+  "dialing_code": "44",
+  "area_codes": [
+    "1481"
+  ],
   "tld": [
     ".gg"
   ],
-  "area": 78,
   "latlng": [
     49.46666666,
     -2.58333333

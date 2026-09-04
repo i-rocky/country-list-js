@@ -16,7 +16,6 @@
   "tld": [
     ".at"
   ],
-  "area": 83871,
   "latlng": [
     47.33333333,
     13.33333333
@@ -45,25 +44,19 @@
       "name": "Kärnten",
       "code": "K",
       "region": null,
-      "alias": [
-        "Karnten"
-      ]
+      "alias": null
     },
     {
       "name": "Niederösterreich",
       "code": "NÖ",
       "region": null,
-      "alias": [
-        "Niederosterreich"
-      ]
+      "alias": null
     },
     {
       "name": "Oberösterreich",
       "code": "OÖ",
       "region": null,
-      "alias": [
-        "Oberosterreich"
-      ]
+      "alias": null
     },
     {
       "name": "Salzburg",

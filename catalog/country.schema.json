@@ -10,10 +10,7 @@
     "iso3",
     "name",
     "continent",
-    "region",
-    "capital",
-    "currency",
-    "dialing_code"
+    "region"
   ],
   "properties": {
     "iso2": {
@@ -32,12 +29,12 @@
       "pattern": "^[0-9]{3}$"
     },
     "name": {
-      "description": "Common short name in English. The current name where a country has been renamed; the former name goes in name-aliases.json.",
+      "description": "Common short name in English, as the country spells it. The current name where a country has been renamed; the former name goes in name-aliases.json.",
       "type": "string",
       "minLength": 1
     },
     "native_name": {
-      "description": "Endonym, where it differs from name. Present only when it differs.",
+      "description": "Endonym in the country's own language, where it differs from name. Several official languages are separated by ' / '.",
       "type": "string",
       "minLength": 1
     },
@@ -60,26 +57,61 @@
       ]
     },
     "region": {
-      "description": "Sub-continental region. Free text, shared across countries.",
+      "description": "UN M49 geographic region: the intermediate region where the scheme has one, otherwise the sub-region. Antarctica for AQ.",
+      "type": "string",
+      "enum": [
+        "Antarctica",
+        "Australia and New Zealand",
+        "Caribbean",
+        "Central America",
+        "Central Asia",
+        "Eastern Africa",
+        "Eastern Asia",
+        "Eastern Europe",
+        "Melanesia",
+        "Micronesia",
+        "Middle Africa",
+        "Northern Africa",
+        "Northern America",
+        "Northern Europe",
+        "Polynesia",
+        "South America",
+        "South-eastern Asia",
+        "Southern Africa",
+        "Southern Asia",
+        "Southern Europe",
+        "Western Africa",
+        "Western Asia",
+        "Western Europe"
+      ]
+    },
+    "capital": {
+      "description": "Capital city, spelled as it is in English with its diacritics. Absent for territories that have none.",
       "type": "string",
       "minLength": 1
     },
-    "capital": {
-      "description": "Capital city. Empty for territories that have none.",
-      "type": "string"
-    },
     "currency": {
-      "description": "ISO 4217 code. Must be defined in reference/currencies.json.",
+      "description": "ISO 4217 code. Must be defined in reference/currencies.json. Absent for Antarctica, which has no currency.",
       "type": "string",
       "pattern": "^[A-Z]{3}$"
     },
     "dialing_code": {
-      "description": "E.164 country calling code. A string, never a number: merging 247 unquoted made require() itself throw. Empty for territories with no code.",
+      "description": "ITU-T E.164 country calling code, digits only, without the plus. A string, never a number: merging 247 unquoted made require() itself throw. Absent for territories with no telephone service.",
       "type": "string",
-      "pattern": "^$|^ $|^\\+?[0-9]+(-[0-9]+)?( and [0-9-]+)?$"
+      "pattern": "^[1-9][0-9]{0,2}$"
+    },
+    "area_codes": {
+      "description": "Where the calling code is shared, the area codes that belong to this territory within it: ['268'] for Antigua under 1, ['1534'] for Jersey under 44. Only with dialing_code.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]+$"
+      }
     },
     "languages": {
-      "description": "ISO 639-1 codes of official or widely used languages.",
+      "description": "Languages with official status for the whole country: ISO 639-1 codes, or ISO 639-3 where the language has no two-letter code.",
       "type": "array",
       "minItems": 1,
       "items": {
@@ -88,18 +120,13 @@
       }
     },
     "tld": {
-      "description": "Country code top-level domains, each with a leading dot. May be internationalized (Kazakhstan has .қаз).",
+      "description": "Country code top-level domains delegated in the IANA root zone, each with a leading dot, including internationalized ones (Kazakhstan has .қаз).",
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "string",
         "pattern": "^\\..+$"
       }
-    },
-    "area": {
-      "description": "Land area in square kilometres.",
-      "type": "number",
-      "exclusiveMinimum": 0
     },
     "latlng": {
       "description": "Approximate geographic centre, [latitude, longitude].",
@@ -175,5 +202,10 @@
         }
       }
     }
+  },
+  "dependencies": {
+    "area_codes": [
+      "dialing_code"
+    ]
   }
 }

@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-767",
+  "dialing_code": "1",
+  "area_codes": [
+    "767"
+  ],
   "tld": [
     ".dm"
   ],
-  "area": 751,
   "latlng": [
     15.41666666,
     -61.33333333

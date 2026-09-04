@@ -63,7 +63,7 @@ dup('iso_numeric', 'ISO numeric code');
 
 for (const code of codes) {
     const c = countries[code];
-    check(currencies[c.currency],
+    check(c.currency === undefined || currencies[c.currency],
         code + ' uses currency ' + c.currency + ', not defined in catalog/reference/currencies.json');
     check(continents[c.continent],
         code + ' is on continent ' + c.continent + ', not defined in catalog/reference/continents.json');
@@ -132,18 +132,41 @@ for (const code of codes) {
 
     check(c.native_name === undefined || c.native_name !== c.name,
         code + ' repeats its name as native_name; omit the field instead');
+
+    const langs = c.languages || [];
+    check(langs.length === new Set(langs).size, code + ' repeats a language');
 }
 
 // -- things the runtime assumes ----------------------------------------------
 
-// index.js calls .replace() on every dialing code and .trim() on capitals;
-// a number here is what took the module down
-for (const code of codes)
-    for (const field of ['iso3', 'name', 'continent', 'region', 'capital',
-                         'currency', 'dialing_code'])
-        check(typeof countries[code][field] === 'string',
-            code + '.' + field + ' is ' + typeof countries[code][field] +
-            ', must be a string');
+// index.js indexes these by value and concatenates dialing codes with area
+// codes; a number here is what took the module down
+for (const code of codes) {
+    const c = countries[code];
+    for (const field of ['iso3', 'name', 'continent', 'region'])
+        check(typeof c[field] === 'string',
+            code + '.' + field + ' is ' + typeof c[field] + ', must be a string');
+    for (const field of ['capital', 'currency', 'dialing_code'])
+        check(c[field] === undefined || typeof c[field] === 'string',
+            code + '.' + field + ' is ' + typeof c[field] + ', must be a string or absent');
+    check(c.capital === undefined || c.capital === c.capital.trim(),
+        code + '.capital has leading or trailing whitespace');
+    check(c.name === c.name.trim(), code + '.name has leading or trailing whitespace');
+    check(!c.area_codes || c.dialing_code, code + ' has area codes but no dialing code');
+}
+
+// every retired currency names a successor that is defined, and no active
+// country still uses a retired code
+const retired = readJson('catalog/reference/retired-currencies.json');
+for (const [code, r] of Object.entries(retired)) {
+    // a successor may itself have been retired since: VEF -> VES -> VED
+    check(currencies[r.successor] || retired[r.successor], 'retired currency ' + code +
+        ' names successor ' + r.successor + ', which neither reference file defines');
+    check(!codes.some(c => countries[c].currency === code),
+        'retired currency ' + code + ' is still in use');
+    check(!currencies[code], 'retired currency ' + code +
+        ' is also defined as active in catalog/reference/currencies.json');
+}
 
 // -- report ------------------------------------------------------------------
 
@@ -164,6 +187,6 @@ console.error('%d countries, %d with provinces (%d subdivisions), %d currencies,
     Object.keys(aliases).length);
 
 console.error('coverage: %s',
-    ['iso_numeric', 'native_name', 'demonym', 'languages', 'tld', 'area',
+    ['iso_numeric', 'native_name', 'demonym', 'languages', 'tld',
      'latlng', 'timezones', 'borders']
         .map(f => f + ' ' + count(f)).join(', '));

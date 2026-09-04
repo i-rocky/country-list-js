@@ -6,7 +6,7 @@
   "native_name": "Moçambique",
   "demonym": "Mozambican",
   "continent": "AF",
-  "region": "East Africa, Southern Africa",
+  "region": "Eastern Africa",
   "capital": "Maputo",
   "currency": "MZN",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".mz"
   ],
-  "area": 801590,
   "latlng": [
     -18.25,
     35

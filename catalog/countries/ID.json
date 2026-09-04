@@ -5,7 +5,7 @@
   "name": "Indonesia",
   "demonym": "Indonesian",
   "continent": "AS",
-  "region": "South-East Asia, Oceania",
+  "region": "South-eastern Asia",
   "capital": "Jakarta",
   "currency": "IDR",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".id"
   ],
-  "area": 1904569,
   "latlng": [
     -5,
     120

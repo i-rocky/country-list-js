@@ -3,20 +3,18 @@
   "iso3": "ARG",
   "iso_numeric": "032",
   "name": "Argentina",
-  "demonym": "Argentinean",
+  "demonym": "Argentine",
   "continent": "SA",
   "region": "South America",
   "capital": "Buenos Aires",
   "currency": "ARS",
   "languages": [
-    "es",
-    "gn"
+    "es"
   ],
   "dialing_code": "54",
   "tld": [
     ".ar"
   ],
-  "area": 2780400,
   "latlng": [
     -34,
     -64
@@ -47,9 +45,7 @@
       "name": "Ciudad Autónoma de Buenos Aires",
       "code": null,
       "region": null,
-      "alias": [
-        "Ciudad Autonoma de Buenos Aires"
-      ]
+      "alias": null
     },
     {
       "name": "Buenos Aires",
@@ -79,9 +75,7 @@
       "name": "Córdoba",
       "code": null,
       "region": null,
-      "alias": [
-        "Cordoba"
-      ]
+      "alias": null
     },
     {
       "name": "Corrientes",
@@ -93,9 +87,7 @@
       "name": "Entre Ríos",
       "code": null,
       "region": null,
-      "alias": [
-        "Entre Rios"
-      ]
+      "alias": null
     },
     {
       "name": "Formosa",
@@ -137,17 +129,13 @@
       "name": "Neuquén",
       "code": null,
       "region": null,
-      "alias": [
-        "Neuquen"
-      ]
+      "alias": null
     },
     {
       "name": "Río Negro",
       "code": null,
       "region": null,
-      "alias": [
-        "Rio Negro"
-      ]
+      "alias": null
     },
     {
       "name": "Salta",
@@ -189,17 +177,13 @@
       "name": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
       "code": null,
       "region": null,
-      "alias": [
-        "Tierra del Fuego, Antartida e Islas del Atlantico Sur"
-      ]
+      "alias": null
     },
     {
       "name": "Tucumán",
       "code": null,
       "region": null,
-      "alias": [
-        "Tucuman"
-      ]
+      "alias": null
     }
   ]
 }

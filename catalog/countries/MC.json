@@ -3,7 +3,7 @@
   "iso3": "MCO",
   "iso_numeric": "492",
   "name": "Monaco",
-  "demonym": "Monegasque",
+  "demonym": "Monégasque",
   "continent": "EU",
   "region": "Western Europe",
   "capital": "Monaco",
@@ -15,7 +15,6 @@
   "tld": [
     ".mc"
   ],
-  "area": 2.02,
   "latlng": [
     43.73333333,
     7.4

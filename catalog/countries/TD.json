@@ -3,10 +3,10 @@
   "iso3": "TCD",
   "iso_numeric": "148",
   "name": "Chad",
-  "native_name": "Tchad تشاد",
+  "native_name": "Tchad / تشاد",
   "demonym": "Chadian",
   "continent": "AF",
-  "region": "Central Africa",
+  "region": "Middle Africa",
   "capital": "N'Djamena",
   "currency": "XAF",
   "languages": [
@@ -17,7 +17,6 @@
   "tld": [
     ".td"
   ],
-  "area": 1284000,
   "latlng": [
     15,
     19
@@ -31,7 +30,6 @@
     "LY",
     "NE",
     "NG",
-    "SD",
-    "SS"
+    "SD"
   ]
 }

@@ -4,9 +4,9 @@
   "iso_numeric": "666",
   "name": "Saint Pierre and Miquelon",
   "native_name": "Saint-Pierre-et-Miquelon",
-  "demonym": "French",
+  "demonym": "Saint Pierre and Miquelon Islander",
   "continent": "NA",
-  "region": "North America",
+  "region": "Northern America",
   "capital": "Saint-Pierre",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".pm"
   ],
-  "area": 242,
   "latlng": [
     46.83333333,
     -56.33333333

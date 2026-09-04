@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-758",
+  "dialing_code": "1",
+  "area_codes": [
+    "758"
+  ],
   "tld": [
     ".lc"
   ],
-  "area": 616,
   "latlng": [
     13.88333333,
     -60.96666666

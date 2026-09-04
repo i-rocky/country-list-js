@@ -6,7 +6,7 @@
   "native_name": "조선민주주의인민공화국",
   "demonym": "North Korean",
   "continent": "AS",
-  "region": "East Asia",
+  "region": "Eastern Asia",
   "capital": "Pyongyang",
   "currency": "KPW",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".kp"
   ],
-  "area": 120538,
   "latlng": [
     40,
     127

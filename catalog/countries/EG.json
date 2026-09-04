@@ -3,7 +3,7 @@
   "iso3": "EGY",
   "iso_numeric": "818",
   "name": "Egypt",
-  "native_name": "مصر‎",
+  "native_name": "مصر",
   "demonym": "Egyptian",
   "continent": "AF",
   "region": "Northern Africa",
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "20",
   "tld": [
-    ".eg"
+    ".eg",
+    ".مصر"
   ],
-  "area": 1002450,
   "latlng": [
     27,
     30

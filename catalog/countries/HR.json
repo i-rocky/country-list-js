@@ -6,7 +6,7 @@
   "native_name": "Hrvatska",
   "demonym": "Croatian",
   "continent": "EU",
-  "region": "Balkans",
+  "region": "Southern Europe",
   "capital": "Zagreb",
   "currency": "EUR",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".hr"
   ],
-  "area": 56594,
   "latlng": [
     45.16666666,
     15.5

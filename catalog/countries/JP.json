@@ -6,7 +6,7 @@
   "native_name": "日本",
   "demonym": "Japanese",
   "continent": "AS",
-  "region": "East Asia",
+  "region": "Eastern Asia",
   "capital": "Tokyo",
   "currency": "JPY",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".jp"
   ],
-  "area": 377930,
   "latlng": [
     36,
     138

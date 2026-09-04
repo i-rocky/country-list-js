@@ -5,7 +5,7 @@
   "name": "Solomon Islands",
   "demonym": "Solomon Islander",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Melanesia",
   "capital": "Honiara",
   "currency": "SBD",
   "languages": [
@@ -15,7 +15,6 @@
   "tld": [
     ".sb"
   ],
-  "area": 28896,
   "latlng": [
     -8,
     159

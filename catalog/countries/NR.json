@@ -3,20 +3,20 @@
   "iso3": "NRU",
   "iso_numeric": "520",
   "name": "Nauru",
+  "native_name": "Naoero",
   "demonym": "Nauruan",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Micronesia",
   "capital": "Yaren",
   "currency": "AUD",
   "languages": [
-    "en",
-    "na"
+    "na",
+    "en"
   ],
   "dialing_code": "674",
   "tld": [
     ".nr"
   ],
-  "area": 21,
   "latlng": [
     -0.53333333,
     166.91666666

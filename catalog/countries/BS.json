@@ -11,11 +11,13 @@
   "languages": [
     "en"
   ],
-  "dialing_code": "+1-242",
+  "dialing_code": "1",
+  "area_codes": [
+    "242"
+  ],
   "tld": [
     ".bs"
   ],
-  "area": 13943,
   "latlng": [
     24.25,
     -76

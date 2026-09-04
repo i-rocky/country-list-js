@@ -20,12 +20,51 @@ const country = require('../index');
 // into what 4.0 promises, so every value not covered by one still compares
 // exactly.
 
+const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[\u02bb\u2018\u2019]/g, "'").toLowerCase();
+
 const BREAKING = [{
-    what: 'currency.decimal is a number, not a string',
-    why: 'it counts minor units. 3.1.8 returned the string "2"; code that ' +
-         'compares it against "2" now fails quietly, which is why this is ' +
-         'called out in the changelog and not only here.',
-    migrate: c => { c.currency.decimal = Number(c.currency.decimal); },
+    what: 'currency.symbol and currency.decimal come from CLDR and ISO 4217',
+    why: 'decimal was the string "2" and is now the number 2 -- the ISO 4217 ' +
+         'minor unit exponent, which 3.1.8 had wrong for 21 currencies (HUF ' +
+         'and IDR are 2, not 0; IQD is 3). symbol is the one CLDR gives the ' +
+         'currency, so DKK is "kr" rather than "Dkr". Neither is compared ' +
+         'against 3.1.8 here; test/lookup.js pins them to the standards.',
+    migrate: c => { if (c.currency) c.currency = {code: c.currency.code}; },
+}, {
+    what: 'region and continent follow the UN M49 geoscheme',
+    why: '3.1.8\'s region was free text: "Western African" beside "Western ' +
+         'Africa", the Netherlands in "Nordic Countries", the Cocos Islands ' +
+         'in "Central America". Every region is now an M49 name, and the ' +
+         'continent is the one M49 puts the region in, so Cyprus is Western ' +
+         'Asia. test/fields.js pins the scheme; nothing is compared to 3.1.8.',
+    migrate: c => { delete c.region; delete c.continent; },
+}, {
+    what: 'capital is undefined where a territory has none, and is spelled with its diacritics',
+    why: '3.1.8 carried "" for the six territories with no capital, and ' +
+         'transliterated the rest -- Bogota, Reykjavik, Asuncion. A capital ' +
+         'is now spelled as it is spelled, and a lookup that misses is ' +
+         'retried with diacritics folded, so findByCapital("Bogota") still ' +
+         'answers. Capitals are compared folded here; the ones that changed ' +
+         'in substance are declared per country.',
+    // '' becomes null in the baseline and undefined becomes null on the live
+    // side, so that a territory gaining a capital would still be noticed
+    migrate: c => { c.capital = c.capital === '' ? null : c.capital; },
+    normalise: c => { c.capital = c.capital ? fold(c.capital) : null; },
+}, {
+    what: 'dialing_code is the E.164 country calling code, and area codes are area_codes',
+    why: '3.1.8 mixed "45", "+1-268", "+44-1481" and "+1-809 and 1-829" in ' +
+         'one string field, and " " for Heard Island. dialing_code is now ' +
+         'digits only -- "1" for Antigua -- and the part that identifies a ' +
+         'territory within a shared code is area_codes: ["268"]. Undefined ' +
+         'where there is no telephone service.',
+    migrate: c => {
+        const m = c.dialing_code.trim().match(/^\+?(\d+)(?:-(\d+))?(?: and 1-(\d+))?$/);
+        c.dialing_code = m ? m[1] : null;
+        const areas = m ? [m[2], m[3]].filter(Boolean) : [];
+        if (areas.length) c.area_codes = areas;
+    },
+    normalise: c => { if (c.dialing_code === undefined) c.dialing_code = null; },
 }, {
     what: 'every subdivision carries the same four keys',
     why: '3.1.8 had three shapes -- {name, alias}, plus "short" for 14 ' +
@@ -41,6 +80,19 @@ const BREAKING = [{
             region: p.region === undefined ? null : p.region,
             alias: p.alias === undefined ? null : p.alias,
         }));
+    },
+}, {
+    what: 'an alias that is only the name without its diacritics is gone',
+    why: '176 subdivision aliases were the ASCII form of the name -- Cordoba ' +
+         'for Córdoba. A lookup that misses is now retried with diacritics ' +
+         'folded, so findByProvince("Cordoba") still answers, and the list ' +
+         'carries only the alternative names that are actually different.',
+    migrate: c => {
+        for (const p of c.provinces || []) {
+            if (!Array.isArray(p.alias)) continue;
+            p.alias = p.alias.filter(a => fold(a) !== fold(p.name));
+            if (!p.alias.length) p.alias = null;
+        }
     },
 }];
 
@@ -68,13 +120,21 @@ const REMOVED_MEMBERS = {
            'nothing left to expose.',
 };
 
+const isCountry = v => v && typeof v === 'object' && v.code && typeof v.code === 'object';
+
 (function migrate(v) {
     if (Array.isArray(v)) return v.forEach(migrate);
     if (!v || typeof v !== 'object') return;
-    if (v.currency && typeof v.currency === 'object')
-        for (const b of BREAKING) b.migrate(v);
+    if (isCountry(v)) for (const b of BREAKING) b.migrate(v);
     Object.values(v).forEach(migrate);
 })(base);
+
+// applied to both sides before a comparison
+const normalise = v => {
+    if (Array.isArray(v)) v.forEach(normalise);
+    else if (isCountry(v)) for (const b of BREAKING) if (b.normalise) b.normalise(v);
+    return v;
+};
 
 // Country records that intentionally differ from published 3.1.8.
 
@@ -85,6 +145,16 @@ const STRING_ALIAS =
     'three.  The three are now arrays like the other 440.';
 
 const RENAMED = {
+    AX: ['Aland Islands', 'Åland Islands', 'the name has an Å'],
+    BL: ['Saint Barthelemy', 'Saint Barthélemy', 'the name has an é'],
+    CW: ['Curacao', 'Curaçao', 'the name has a ç'],
+    RE: ['Reunion', 'Réunion', 'the name has an é'],
+    ST: ['Sao Tome and Principe', 'São Tomé and Príncipe', 'the name has its accents'],
+    BQ: ['Bonaire, Saint Eustatius and Saba ', 'Bonaire, Sint Eustatius and Saba',
+         'the ISO 3166-1 name -- Sint, not Saint -- and a trailing space removed'],
+    CC: ['Cocos Islands', 'Cocos (Keeling) Islands', 'the ISO 3166-1 name'],
+    PN: ['Pitcairn', 'Pitcairn Islands', 'the name of the territory'],
+    PS: ['Palestinian Territory', 'Palestine', 'the common short name; ISO 3166-1 has "Palestine, State of"'],
     TR: ['Turkey', 'Türkiye', 'the UN accepted the change in 2022'],
     SZ: ['Swaziland', 'Eswatini', 'renamed in 2018'],
     MK: ['Macedonia', 'North Macedonia', 'renamed in 2019 by the Prespa agreement'],
@@ -110,10 +180,62 @@ const ENGLISH_ALIAS =
 const currency = (from, to, on, why) =>
     'currency ' + from + ' -> ' + to + ' on ' + on + ' (' + why + ').';
 
+const capital = (from, to, why) =>
+    'capital ' + JSON.stringify(from) + ' -> ' + JSON.stringify(to) + ' (' + why + ').';
+
 const CHANGED = {
     BY: 'currency BYR -> BYN.  Belarus redenominated in 2016; master has ' +
         'carried the fix since before v3.1.8, but the v3.1.8 tag was cut off ' +
         'master and published a tree where it had been reverted.',
+
+    // Names spelled the way the place spells them, or the way ISO 3166-1 does.
+    AX: renamed('AX'), BL: renamed('BL'), RE: renamed('RE'), PS: renamed('PS'),
+    CW: renamed('CW') + '  Also ' +
+        capital(' Willemstad', 'Willemstad', 'a leading space') + '  Also ' +
+        currency('ANG', 'XCG', '2025-03-31', 'the Caribbean guilder replaced the Netherlands Antillean guilder') +
+        '  Also dialing "599" -> "599" with area_codes ["9"]: Curaçao shares +599 with the Caribbean Netherlands.',
+    ST: renamed('ST') + '  Also ' + currency('STD', 'STN', '2018-01-01', 'redenomination'),
+    BQ: renamed('BQ') + '  Also dialing "599" -> "599" with area_codes ["3", "4", "7"]: ' +
+        'the three islands have area codes under the +599 they share with Curaçao.',
+    CC: renamed('CC') + '  Also dialing "61" -> "61" with area_codes ["891"]: numbers are +61 8 91xx.',
+    PN: renamed('PN') + '  Also dialing "870" -> "64": +870 was the Inmarsat satellite ' +
+        'code; the islands are on New Zealand\'s +64.',
+
+    // Capitals that changed in substance, not spelling.
+    BI: capital('Bujumbura', 'Gitega', 'political capital since 2019; Bujumbura is the economic capital'),
+    CH: capital('Berne', 'Bern', 'the English spelling'),
+    EH: capital('El-Aaiun', 'Laayoune', 'the English spelling'),
+    GG: capital('St Peter Port', 'Saint Peter Port', 'spelled out'),
+    GQ: capital('Malabo', 'Ciudad de la Paz', 'the capital since January 2026'),
+    GS: capital('Grytviken', 'King Edward Point', 'Grytviken is an abandoned whaling station; the administration sits at King Edward Point') +
+        '  Also dialing "" -> "500": South Georgia is on the Falkland Islands\' +500.',
+    IM: capital('Douglas, Isle of Man', 'Douglas', 'the city is Douglas'),
+    KI: capital('Tarawa', 'South Tarawa', 'the capital is the South Tarawa council, not the whole atoll'),
+    LK: capital('Colombo', 'Sri Jayawardenepura Kotte', 'the official and legislative capital; Colombo is the commercial one'),
+    LY: capital('Tripolis', 'Tripoli', 'the English spelling'),
+    MM: capital('Nay Pyi Taw', 'Naypyidaw', 'the English spelling'),
+    MN: capital('Ulan Bator', 'Ulaanbaatar', 'the English spelling'),
+    PW: capital('Melekeok', 'Ngerulmud', 'the capital since 2006; Melekeok is the state it sits in'),
+    SG: capital('Singapur', 'Singapore', 'the English spelling'),
+    UA: capital('Kiev', 'Kyiv', 'the Ukrainian transliteration'),
+    WF: capital('Mata Utu', 'Mata-Utu', 'the hyphen'),
+
+    // The dialing-code model, where it changed more than the format.
+    AQ: 'currency XCD -> none: Antarctica has no currency; 3.1.8 said the East ' +
+        'Caribbean dollar.  Also dialing "" -> "672" with area_codes ["1"]: the ' +
+        'Australian bases are on +672 1x.',
+    DO: 'dialing "+1-809 and 1-829" -> "1" with area_codes ["809", "829", "849"]: ' +
+        '849 was added in 2013, and the old string never matched any number.',
+    JM: 'dialing "+1-876" -> "1" with area_codes ["876", "658"]: 658 overlays 876 since 2018.',
+    SX: 'dialing "599" -> "1" with area_codes ["721"]: Sint Maarten joined the ' +
+        'North American Numbering Plan on 2011-09-30.  Also ' +
+        currency('ANG', 'XCG', '2025-03-31', 'the Caribbean guilder replaced the Netherlands Antillean guilder'),
+    XK: 'dialing "" -> "383": assigned by the ITU in 2016.',
+    CX: 'dialing "61" -> "61" with area_codes ["891"]: numbers are +61 8 91xx.',
+    NF: 'dialing "672" -> "672" with area_codes ["3"]: Norfolk Island shares +672 with the Australian Antarctic Territory.',
+    SJ: 'dialing "47" -> "47" with area_codes ["79"]: Svalbard shares +47 with Norway.',
+    KZ: 'dialing "7" -> "7" with area_codes ["6", "7"]: Kazakhstan shares +7 with Russia and holds zones 6xx and 7xx.',
+    RU: 'dialing "7" -> "7" with area_codes ["3", "4", "8", "9"]: Russia shares +7 with Kazakhstan.',
 
     // Found by auditing all 31 subdivision lists against ISO 3166-2. Every
     // one of these was a fact that had stopped being true.
@@ -175,7 +297,8 @@ const CHANGED = {
         'sovereign UN member states in Compacts of Free Association, not US ' +
         'subdivisions, and this dataset carries each as a country in its own ' +
         'right. What remains is ISO 3166-2:US: 50 states, the District of ' +
-        'Columbia and 6 outlying areas.',
+        'Columbia and 6 outlying areas.  Also ' +
+        capital('Washington', 'Washington, D.C.', 'the name of the city'),
 
     VN: STRING_ALIAS,
     TR: STRING_ALIAS + '  Also ' + renamed('TR'),
@@ -190,9 +313,8 @@ const CHANGED = {
     HR: currency('HRK', 'EUR', '2023-01-01', 'euro area accession'),
     LT: currency('LTL', 'EUR', '2015-01-01', 'euro area accession'),
     BG: currency('BGN', 'EUR', '2026-01-01', 'euro area accession, issue #84'),
-    VE: currency('VEF', 'VES', '2018-08-20', 'redenomination'),
+    VE: currency('VEF', 'VED', '2021-10-01', 'two redenominations: VES in 2018, then VED, the bolívar digital'),
     MR: currency('MRO', 'MRU', '2018-01-01', 'redenomination'),
-    ST: currency('STD', 'STN', '2018-01-01', 'redenomination'),
     SL: currency('SLL', 'SLE', '2022-07-01', 'redenomination'),
     ZW: currency('ZWL', 'ZWG', '2024-04-08', 'replaced by Zimbabwe Gold'),
     ZM: currency('ZMK', 'ZMW', '2013-01-01', 'redenomination'),
@@ -227,6 +349,11 @@ const CHANGED_CALLS = {
     'findByPhoneNbr("+12125551212")': LONGEST_PREFIX,
     'findByPhoneNbr("+441534123456")': LONGEST_PREFIX,
 
+    'findByCapital("")':
+        '3.1.8 answered the six territories that have no capital, because it ' +
+        'stored "" for them. A territory with no capital now has none, and an ' +
+        'empty query matches nothing.',
+
     'findByProvince("")':
         '3.1.8 answered [Ethiopia, Turkey, Vietnam] for the empty string. ' +
         'Those three carry a bare-string province alias instead of an array, ' +
@@ -256,6 +383,10 @@ function restrict(actual, expected) {
     if (expected && typeof expected == 'object' && actual && typeof actual == 'object') {
         const out = {};
         for (const k of Object.keys(expected)) out[k] = restrict(actual[k], expected[k]);
+        // the area codes were part of the dialing code string in 3.1.8, so
+        // they are compared wherever the dialing code is
+        if ('dialing_code' in expected && actual.area_codes !== undefined)
+            out.area_codes = actual.area_codes;
         return out;
     }
     return actual;
@@ -269,8 +400,8 @@ function restrict(actual, expected) {
 // Nigeria -- while an undeclared change anywhere still fails.
 
 function compare(name, actual, expected) {
-    const wanted = new Map(asList(norm(expected)).map(o => [o.code.iso2, o]));
-    const a = new Map(asList(norm(actual))
+    const wanted = new Map(asList(normalise(norm(expected))).map(o => [o.code.iso2, o]));
+    const a = new Map(asList(normalise(norm(actual)))
         .map(o => [o.code.iso2, JSON.stringify(restrict(o, wanted.get(o.code.iso2) || o))]));
     const e = new Map([...wanted].map(([k, o]) => [k, JSON.stringify(o)]));
 
@@ -323,21 +454,21 @@ describe('Contract: module surface', () => {
 });
 
 describe('Contract: country records', () => {
+    const live = iso2 => JSON.stringify(normalise(restrict(
+        norm(country.findByIso2(iso2)), base.countries[iso2])));
+    const was = iso2 => JSON.stringify(normalise(norm(base.countries[iso2])));
+
     it('every country matches 3.1.8 except the declared changes', () => {
-        const undeclared = Object.keys(base.countries).filter(iso2 =>
-            !(iso2 in CHANGED) &&
-            JSON.stringify(base.countries[iso2]) !==
-            JSON.stringify(restrict(country.findByIso2(iso2), base.countries[iso2])));
+        const undeclared = Object.keys(base.countries)
+            .filter(iso2 => !(iso2 in CHANGED) && was(iso2) !== live(iso2));
         assert.deepStrictEqual(undeclared, [],
             'undeclared differences from 3.1.8: ' + undeclared.join(', '));
     });
 
     it('the declared changes really did change (the list is not stale)', () => {
         for (const iso2 of Object.keys(CHANGED))
-            expect(JSON.stringify(base.countries[iso2]),
-                iso2 + ' is declared as changed but is identical to 3.1.8')
-                .to.not.equal(JSON.stringify(
-                    restrict(country.findByIso2(iso2), base.countries[iso2])));
+            expect(was(iso2), iso2 + ' is declared as changed but is identical to 3.1.8')
+                .to.not.equal(live(iso2));
     });
 
     it('still carries every key 3.1.8 carried, on every country', () => {
@@ -351,7 +482,7 @@ describe('Contract: country records', () => {
     it('carries exactly this key set -- no more, no fewer', () => {
         // stated by name rather than counted, so that adding or dropping a
         // field is a deliberate edit to this list
-        const KEYS = ['area', 'borders', 'capital', 'code', 'continent',
+        const KEYS = ['area_codes', 'borders', 'capital', 'code', 'continent',
                       'currency', 'demonym', 'dialing_code', 'languages',
                       'latlng', 'name', 'native_name', 'provinces', 'region',
                       'timezones', 'tld'];
@@ -383,15 +514,21 @@ describe('Contract: country records', () => {
     it('keeps currency as {code, symbol, decimal}, decimal now a number', () => {
         for (const iso2 of Object.keys(base.countries)) {
             const c = country.findByIso2(iso2).currency;
+            if (iso2 === 'AQ') { expect(c, 'Antarctica has no currency').to.equal(undefined); continue; }
             expect(Object.keys(c).sort(), iso2).to.deep.equal(['code', 'decimal', 'symbol']);
             expect(c.decimal, iso2 + '.currency.decimal').to.be.a('number');
             expect(c.code, iso2 + '.currency.code').to.be.a('string');
         }
     });
 
-    it('keeps dialing_code a string', () => {
-        for (const iso2 of Object.keys(base.countries))
-            expect(country.findByIso2(iso2).dialing_code, iso2).to.be.a('string');
+    it('keeps dialing_code a string of digits, or undefined where there is no telephone service', () => {
+        for (const iso2 of Object.keys(base.countries)) {
+            const c = country.findByIso2(iso2);
+            expect(c.dialing_code, iso2).to.satisfy(v => v === undefined || /^[1-9][0-9]{0,2}$/.test(v));
+            expect(c.area_codes, iso2).to.satisfy(v => v === undefined || (Array.isArray(v) && v.length && c.dialing_code));
+        }
+        expect(Object.keys(base.countries).filter(k => country.findByIso2(k).dialing_code === undefined))
+            .to.deep.equal(['BV', 'HM', 'TF']);
     });
 
     it('returns a fresh object each call, so callers cannot corrupt the store', () => {
@@ -420,10 +557,18 @@ describe('Contract: list functions', () => {
         expect(n).to.not.deep.equal(base.names);
     });
 
-    for (const [fn, key] of [['capitals', 'capitals'], ['continents', 'continents']])
-        it(fn + '() holds the same values as 3.1.8', () => {
-            expect(bag(country[fn]())).to.deep.equal(bag(base[key]));
-        });
+    it('continents() holds the same values as 3.1.8', () => {
+        expect(bag(country.continents())).to.deep.equal(bag(base.continents));
+    });
+
+    it('capitals() holds the same values as 3.1.8, folded, outside the declared changes', () => {
+        const cap = c => c.capital ? fold(c.capital) : undefined;
+        const keep = iso2 => !(iso2 in CHANGED);
+        const was = Object.keys(base.countries).filter(keep).map(k => cap(base.countries[k]));
+        const now = Object.keys(base.countries).filter(keep).map(k => cap(country.findByIso2(k)));
+        expect(bag(now.filter(Boolean))).to.deep.equal(bag(was.filter(Boolean)));
+        expect(now.filter(c => c === undefined)).to.have.lengthOf(was.filter(c => c === undefined).length);
+    });
 
     it('every list is in the same order as names()', () => {
         const order = country.ls('name');
@@ -431,8 +576,9 @@ describe('Contract: list functions', () => {
         expect(country.capitals()).to.have.lengthOf(order.length);
     });
 
-    it("ls('region') holds the same values as 3.1.8", () => {
-        expect(bag(country.ls('region'))).to.deep.equal(bag(base.regions));
+    it("ls('region') is the M49 scheme, not 3.1.8's free text", () => {
+        expect(bag(country.ls('region'))).to.not.deep.equal(bag(base.regions));
+        expect(new Set(country.ls('region')).size).to.equal(23);
     });
 
     it("ls('iso3') holds the same codes as 3.1.8", () => {

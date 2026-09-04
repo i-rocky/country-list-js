@@ -6,17 +6,17 @@
   "native_name": "Niuē",
   "demonym": "Niuean",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Polynesia",
   "capital": "Alofi",
   "currency": "NZD",
   "languages": [
+    "niu",
     "en"
   ],
   "dialing_code": "683",
   "tld": [
     ".nu"
   ],
-  "area": 260,
   "latlng": [
     -19.03333333,
     -169.86666666

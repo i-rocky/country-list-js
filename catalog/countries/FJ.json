@@ -3,22 +3,21 @@
   "iso3": "FJI",
   "iso_numeric": "242",
   "name": "Fiji",
+  "native_name": "Viti",
   "demonym": "Fijian",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Melanesia",
   "capital": "Suva",
   "currency": "FJD",
   "languages": [
     "en",
     "fj",
-    "hi",
-    "ur"
+    "hif"
   ],
   "dialing_code": "679",
   "tld": [
     ".fj"
   ],
-  "area": 18272,
   "latlng": [
     -18,
     175

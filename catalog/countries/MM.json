@@ -3,11 +3,11 @@
   "iso3": "MMR",
   "iso_numeric": "104",
   "name": "Myanmar",
-  "native_name": "ပြည်ထောင်စု သမ္မတ မြန်မာနိုင်ငံတေ",
+  "native_name": "မြန်မာ",
   "demonym": "Burmese",
   "continent": "AS",
-  "region": "South-East Asia",
-  "capital": "Nay Pyi Taw",
+  "region": "South-eastern Asia",
+  "capital": "Naypyidaw",
   "currency": "MMK",
   "languages": [
     "my"
@@ -16,7 +16,6 @@
   "tld": [
     ".mm"
   ],
-  "area": 676578,
   "latlng": [
     19.75,
     96.1
@@ -26,7 +25,6 @@
   ],
   "borders": [
     "BD",
-    "BT",
     "CN",
     "IN",
     "LA",

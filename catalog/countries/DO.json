@@ -12,11 +12,15 @@
   "languages": [
     "es"
   ],
-  "dialing_code": "+1-809 and 1-829",
+  "dialing_code": "1",
+  "area_codes": [
+    "809",
+    "829",
+    "849"
+  ],
   "tld": [
     ".do"
   ],
-  "area": 48671,
   "latlng": [
     19,
     -70.66666666

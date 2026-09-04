@@ -6,17 +6,19 @@
   "native_name": "Papua Niugini",
   "demonym": "Papua New Guinean",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Melanesia",
   "capital": "Port Moresby",
   "currency": "PGK",
   "languages": [
-    "en"
+    "en",
+    "tpi",
+    "ho",
+    "pgz"
   ],
   "dialing_code": "675",
   "tld": [
     ".pg"
   ],
-  "area": 462840,
   "latlng": [
     -6,
     147

@@ -3,6 +3,7 @@
   "iso3": "SWZ",
   "iso_numeric": "748",
   "name": "Eswatini",
+  "native_name": "eSwatini",
   "demonym": "Swazi",
   "continent": "AF",
   "region": "Southern Africa",
@@ -16,7 +17,6 @@
   "tld": [
     ".sz"
   ],
-  "area": 17364,
   "latlng": [
     -26.5,
     31.5

@@ -2,21 +2,21 @@
   "iso2": "PN",
   "iso3": "PCN",
   "iso_numeric": "612",
-  "name": "Pitcairn",
-  "native_name": "Pitcairn Islands",
+  "name": "Pitcairn Islands",
+  "native_name": "Pitkern Ailen",
   "demonym": "Pitcairn Islander",
   "continent": "OC",
-  "region": "Oceania",
+  "region": "Polynesia",
   "capital": "Adamstown",
   "currency": "NZD",
   "languages": [
-    "en"
+    "en",
+    "pih"
   ],
-  "dialing_code": "870",
+  "dialing_code": "64",
   "tld": [
     ".pn"
   ],
-  "area": 47,
   "latlng": [
     -25.06666666,
     -130.1

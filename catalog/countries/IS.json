@@ -6,8 +6,8 @@
   "native_name": "Ísland",
   "demonym": "Icelander",
   "continent": "EU",
-  "region": "Scandinavia, Nordic Countries",
-  "capital": "Reykjavik",
+  "region": "Northern Europe",
+  "capital": "Reykjavík",
   "currency": "ISK",
   "languages": [
     "is"
@@ -16,7 +16,6 @@
   "tld": [
     ".is"
   ],
-  "area": 103000,
   "latlng": [
     65,
     -18

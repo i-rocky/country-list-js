@@ -3,10 +3,10 @@
   "iso3": "YEM",
   "iso_numeric": "887",
   "name": "Yemen",
-  "native_name": "اليَمَن",
+  "native_name": "اليمن",
   "demonym": "Yemeni",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Sanaa",
   "currency": "YER",
   "languages": [
@@ -16,7 +16,6 @@
   "tld": [
     ".ye"
   ],
-  "area": 527968,
   "latlng": [
     15,
     48

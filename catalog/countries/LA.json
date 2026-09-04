@@ -3,10 +3,10 @@
   "iso3": "LAO",
   "iso_numeric": "418",
   "name": "Laos",
-  "native_name": "ສປປລາວ",
+  "native_name": "ລາວ",
   "demonym": "Laotian",
   "continent": "AS",
-  "region": "South-East Asia",
+  "region": "South-eastern Asia",
   "capital": "Vientiane",
   "currency": "LAK",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "856",
   "tld": [
-    ".la"
+    ".la",
+    ".ລາວ"
   ],
-  "area": 236800,
   "latlng": [
     18,
     105

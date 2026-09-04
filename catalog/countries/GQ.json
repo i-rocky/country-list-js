@@ -3,21 +3,21 @@
   "iso3": "GNQ",
   "iso_numeric": "226",
   "name": "Equatorial Guinea",
-  "native_name": "Guinea Ecuatorial",
-  "demonym": "Equatorial Guinean",
+  "native_name": "Guinea Ecuatorial / Guinée équatoriale / Guiné Equatorial",
+  "demonym": "Equatoguinean",
   "continent": "AF",
-  "region": "Central Africa",
-  "capital": "Malabo",
+  "region": "Middle Africa",
+  "capital": "Ciudad de la Paz",
   "currency": "XAF",
   "languages": [
     "es",
-    "fr"
+    "fr",
+    "pt"
   ],
   "dialing_code": "240",
   "tld": [
     ".gq"
   ],
-  "area": 28051,
   "latlng": [
     2,
     10

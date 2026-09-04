@@ -4,20 +4,18 @@
   "iso_numeric": "795",
   "name": "Turkmenistan",
   "native_name": "Türkmenistan",
-  "demonym": "Turkmen",
+  "demonym": "Turkmenistani",
   "continent": "AS",
   "region": "Central Asia",
   "capital": "Ashgabat",
   "currency": "TMT",
   "languages": [
-    "tk",
-    "ru"
+    "tk"
   ],
   "dialing_code": "993",
   "tld": [
     ".tm"
   ],
-  "area": 488100,
   "latlng": [
     40,
     60

@@ -3,6 +3,7 @@
   "iso3": "BOL",
   "iso_numeric": "068",
   "name": "Bolivia",
+  "native_name": "Wuliwya / Volívia",
   "demonym": "Bolivian",
   "continent": "SA",
   "region": "South America",
@@ -11,13 +12,13 @@
   "languages": [
     "es",
     "ay",
-    "qu"
+    "qu",
+    "gn"
   ],
   "dialing_code": "591",
   "tld": [
     ".bo"
   ],
-  "area": 1098581,
   "latlng": [
     -17,
     -65
@@ -43,33 +44,25 @@
       "name": "Iténez",
       "code": null,
       "region": "Beni",
-      "alias": [
-        "Itenez"
-      ]
+      "alias": null
     },
     {
       "name": "José Ballivián",
       "code": null,
       "region": "Beni",
-      "alias": [
-        "Jose Ballivian"
-      ]
+      "alias": null
     },
     {
       "name": "Mamoré",
       "code": null,
       "region": "Beni",
-      "alias": [
-        "Mamore"
-      ]
+      "alias": null
     },
     {
       "name": "Marbán",
       "code": null,
       "region": "Beni",
-      "alias": [
-        "Marban"
-      ]
+      "alias": null
     },
     {
       "name": "Moxos",
@@ -81,9 +74,7 @@
       "name": "Vaca Díez",
       "code": null,
       "region": "Beni",
-      "alias": [
-        "Vaca Diez"
-      ]
+      "alias": null
     },
     {
       "name": "Yacuma",
@@ -113,9 +104,7 @@
       "name": "Jaime Zudáñez",
       "code": null,
       "region": "Chuquisaca",
-      "alias": [
-        "Jaime Zudanez"
-      ]
+      "alias": null
     },
     {
       "name": "Luis Calvo",
@@ -151,9 +140,7 @@
       "name": "Yamparáez",
       "code": null,
       "region": "Chuquisaca",
-      "alias": [
-        "Yamparaez"
-      ]
+      "alias": null
     },
     {
       "name": "Arani",
@@ -207,9 +194,7 @@
       "name": "Germán Jordán",
       "code": null,
       "region": "Cochabamba",
-      "alias": [
-        "German Jordan"
-      ]
+      "alias": null
     },
     {
       "name": "Mizque",
@@ -239,17 +224,13 @@
       "name": "Bolívar",
       "code": null,
       "region": "Cochabamba",
-      "alias": [
-        "Bolivar"
-      ]
+      "alias": null
     },
     {
       "name": "Tapacarí",
       "code": null,
       "region": "Cochabamba",
-      "alias": [
-        "Tapacari"
-      ]
+      "alias": null
     },
     {
       "name": "Tiraque",
@@ -315,9 +296,7 @@
       "name": "José Manuel Pando",
       "code": null,
       "region": "La Paz",
-      "alias": [
-        "Jose Manuel Pando"
-      ]
+      "alias": null
     },
     {
       "name": "Larecaja",
@@ -347,9 +326,7 @@
       "name": "Muñecas",
       "code": null,
       "region": "La Paz",
-      "alias": [
-        "Munecas"
-      ]
+      "alias": null
     },
     {
       "name": "Nor Yungas",
@@ -427,17 +404,13 @@
       "name": "Pantaléon Dalence",
       "code": null,
       "region": "Oruro",
-      "alias": [
-        "Pantaleon Dalence"
-      ]
+      "alias": null
     },
     {
       "name": "Poopó",
       "code": null,
       "region": "Oruro",
-      "alias": [
-        "Poopo"
-      ]
+      "alias": null
     },
     {
       "name": "Puerto de Mejillones",
@@ -461,17 +434,13 @@
       "name": "Saucarí",
       "code": null,
       "region": "Oruro",
-      "alias": [
-        "Saucari"
-      ]
+      "alias": null
     },
     {
       "name": "Sebastián Pagador",
       "code": null,
       "region": "Oruro",
-      "alias": [
-        "Sebastian Pagador"
-      ]
+      "alias": null
     },
     {
       "name": "Sud Carangas",
@@ -483,25 +452,19 @@
       "name": "Tomas Barrón",
       "code": null,
       "region": "Oruro",
-      "alias": [
-        "Tomas Barron"
-      ]
+      "alias": null
     },
     {
       "name": "Abuná",
       "code": null,
       "region": "Pando",
-      "alias": [
-        "Abuna"
-      ]
+      "alias": null
     },
     {
       "name": "Federico Román",
       "code": null,
       "region": "Pando",
-      "alias": [
-        "Federico Roman"
-      ]
+      "alias": null
     },
     {
       "name": "Madre de Dios",
@@ -519,17 +482,13 @@
       "name": "Nicolás Suárez",
       "code": null,
       "region": "Pando",
-      "alias": [
-        "Nicolas Suarez"
-      ]
+      "alias": null
     },
     {
       "name": "Alonso de Ibáñez",
       "code": null,
       "region": "Potosí",
-      "alias": [
-        "Alonso de Ibanez"
-      ]
+      "alias": null
     },
     {
       "name": "Antonio Quijarro",
@@ -577,9 +536,7 @@
       "name": "José María Linares",
       "code": null,
       "region": "Potosí",
-      "alias": [
-        "José Maria Linares"
-      ]
+      "alias": null
     },
     {
       "name": "Modesto Omiste",
@@ -597,9 +554,7 @@
       "name": "Nor Lípez",
       "code": null,
       "region": "Potosí",
-      "alias": [
-        "Nor Lipez"
-      ]
+      "alias": null
     },
     {
       "name": "Rafael Bustillo",
@@ -617,33 +572,25 @@
       "name": "Sur Lípez",
       "code": null,
       "region": "Potosí",
-      "alias": [
-        "Sur Lipez"
-      ]
+      "alias": null
     },
     {
       "name": "Tomás Frías",
       "code": null,
       "region": "Potosí",
-      "alias": [
-        "Tomas Frias"
-      ]
+      "alias": null
     },
     {
       "name": "Andrés Ibáñez",
       "code": null,
       "region": "Santa Cruz",
-      "alias": [
-        "Andres Ibanez"
-      ]
+      "alias": null
     },
     {
       "name": "Ángel Sandoval",
       "code": null,
       "region": "Santa Cruz",
-      "alias": [
-        "Angel Sandoval"
-      ]
+      "alias": null
     },
     {
       "name": "Chiquitos",
@@ -667,9 +614,7 @@
       "name": "Germán Busch",
       "code": null,
       "region": "Santa Cruz",
-      "alias": [
-        "German Busch"
-      ]
+      "alias": null
     },
     {
       "name": "Guarayos",
@@ -693,25 +638,19 @@
       "name": "José Miguel de Velasco",
       "code": null,
       "region": "Santa Cruz",
-      "alias": [
-        "Jose Miguel de Velasco"
-      ]
+      "alias": null
     },
     {
       "name": "Manuel María Caballero",
       "code": null,
       "region": "Santa Cruz",
-      "alias": [
-        "Manuel Maria Caballero"
-      ]
+      "alias": null
     },
     {
       "name": "Ñuflo de Chávez",
       "code": null,
       "region": "Santa Cruz",
-      "alias": [
-        "Nuflo de Chavez"
-      ]
+      "alias": null
     },
     {
       "name": "Obispo Santistevan",
@@ -753,9 +692,7 @@
       "name": "Eustaquio Méndez",
       "code": null,
       "region": "Tarija",
-      "alias": [
-        "Eustaquio Mendez"
-      ]
+      "alias": null
     },
     {
       "name": "Gran Chaco",
@@ -767,9 +704,7 @@
       "name": "José María Avilés",
       "code": null,
       "region": "Tarija",
-      "alias": [
-        "Jose María Aviles"
-      ]
+      "alias": null
     }
   ]
 }

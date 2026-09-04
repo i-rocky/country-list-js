@@ -3,9 +3,10 @@
   "iso3": "DJI",
   "iso_numeric": "262",
   "name": "Djibouti",
-  "demonym": "Djibouti",
+  "native_name": "جيبوتي",
+  "demonym": "Djiboutian",
   "continent": "AF",
-  "region": "East Africa",
+  "region": "Eastern Africa",
   "capital": "Djibouti",
   "currency": "DJF",
   "languages": [
@@ -16,7 +17,6 @@
   "tld": [
     ".dj"
   ],
-  "area": 23200,
   "latlng": [
     11.5,
     43

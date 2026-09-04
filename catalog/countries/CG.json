@@ -6,18 +6,16 @@
   "native_name": "République du Congo",
   "demonym": "Congolese",
   "continent": "AF",
-  "region": "Central Africa",
+  "region": "Middle Africa",
   "capital": "Brazzaville",
   "currency": "XAF",
   "languages": [
-    "fr",
-    "ln"
+    "fr"
   ],
   "dialing_code": "242",
   "tld": [
     ".cg"
   ],
-  "area": 342000,
   "latlng": [
     -1,
     15

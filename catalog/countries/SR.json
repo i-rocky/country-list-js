@@ -3,7 +3,7 @@
   "iso3": "SUR",
   "iso_numeric": "740",
   "name": "Suriname",
-  "demonym": "Surinamer",
+  "demonym": "Surinamese",
   "continent": "SA",
   "region": "South America",
   "capital": "Paramaribo",
@@ -15,7 +15,6 @@
   "tld": [
     ".sr"
   ],
-  "area": 163820,
   "latlng": [
     4,
     -56

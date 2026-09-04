@@ -6,7 +6,7 @@
   "native_name": "سوريا",
   "demonym": "Syrian",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Damascus",
   "currency": "SYP",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "963",
   "tld": [
-    ".sy"
+    ".sy",
+    ".سورية"
   ],
-  "area": 185180,
   "latlng": [
     35,
     38

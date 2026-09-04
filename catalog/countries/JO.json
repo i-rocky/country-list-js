@@ -6,7 +6,7 @@
   "native_name": "الأردن",
   "demonym": "Jordanian",
   "continent": "AS",
-  "region": "Western Asia, Middle East",
+  "region": "Western Asia",
   "capital": "Amman",
   "currency": "JOD",
   "languages": [
@@ -14,9 +14,9 @@
   ],
   "dialing_code": "962",
   "tld": [
-    ".jo"
+    ".jo",
+    ".الاردن"
   ],
-  "area": 89342,
   "latlng": [
     31,
     36

@@ -3,6 +3,7 @@
   "iso3": "ZAF",
   "iso_numeric": "710",
   "name": "South Africa",
+  "native_name": "Suid-Afrika / iNingizimu Afrika / UMzantsi Afrika / Afrika Borwa / Aferika Borwa / Isewula Afrika / Afrika-Dzonga / Afurika Tshipembe",
   "demonym": "South African",
   "continent": "AF",
   "region": "Southern Africa",
@@ -12,19 +13,20 @@
     "af",
     "en",
     "nr",
+    "nso",
     "st",
     "ss",
     "tn",
     "ts",
     "ve",
     "xh",
-    "zu"
+    "zu",
+    "sfs"
   ],
   "dialing_code": "27",
   "tld": [
     ".za"
   ],
-  "area": 1221037,
   "latlng": [
     -29,
     24

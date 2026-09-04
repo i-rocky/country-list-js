@@ -3,10 +3,10 @@
   "iso3": "CAF",
   "iso_numeric": "140",
   "name": "Central African Republic",
-  "native_name": "Ködörösêse tî Bêafrîka",
+  "native_name": "République centrafricaine / Ködörösêse tî Bêafrîka",
   "demonym": "Central African",
   "continent": "AF",
-  "region": "Central Africa",
+  "region": "Middle Africa",
   "capital": "Bangui",
   "currency": "XAF",
   "languages": [
@@ -17,7 +17,6 @@
   "tld": [
     ".cf"
   ],
-  "area": 622984,
   "latlng": [
     7,
     21
