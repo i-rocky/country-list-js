@@ -289,8 +289,8 @@ on them.** Checked against ISO 3166-2, eleven countries match its first tier
 exactly: Canada, Brazil, Germany, Mexico, India, China, the Netherlands, Japan,
 Argentina, the United Kingdom and the United States.
 
-Seven sit one tier lower — Spain's 48 provinces rather than 19 autonomous
-communities, Italy's 106 provinces rather than 20 regions, Peru's 196 rather
+Seven sit one tier lower — Spain's 50 provinces rather than 17 autonomous
+communities and 2 autonomous cities, Italy's 106 provinces rather than 20 regions, Peru's 196 rather
 than 26, and likewise the Philippines, Bangladesh, Bolivia and Chile. For
 Bangladesh, Bolivia, Chile and Peru the `region` field names the parent unit,
 so those are coherent one tier down.
