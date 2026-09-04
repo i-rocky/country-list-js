@@ -1,0 +1,169 @@
+{
+  "iso2": "BR",
+  "iso3": "BRA",
+  "name": "Brazil",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Brasilia",
+  "currency": "BRL",
+  "dialing_code": "55",
+  "provinces": [
+    {
+      "short": "AC",
+      "name": "Acre",
+      "alias": null
+    },
+    {
+      "short": "AL",
+      "name": "Alagoas",
+      "alias": null
+    },
+    {
+      "short": "AP",
+      "name": "Amapá",
+      "alias": [
+        "Amapa"
+      ]
+    },
+    {
+      "short": "AM",
+      "name": "Amazonas",
+      "alias": null
+    },
+    {
+      "short": "BA",
+      "name": "Bahia",
+      "alias": null
+    },
+    {
+      "short": "CE",
+      "name": "Ceará",
+      "alias": [
+        "Ceara"
+      ]
+    },
+    {
+      "short": "DF",
+      "name": "Distrito Federal",
+      "alias": null
+    },
+    {
+      "short": "ES",
+      "name": "Espírito Santo",
+      "alias": [
+        "Espirito Santo"
+      ]
+    },
+    {
+      "short": "GO",
+      "name": "Goiás",
+      "alias": [
+        "Goias"
+      ]
+    },
+    {
+      "short": "MA",
+      "name": "Maranhão",
+      "alias": [
+        "Maranhao"
+      ]
+    },
+    {
+      "short": "MT",
+      "name": "Mato Grosso",
+      "alias": null
+    },
+    {
+      "short": "MS",
+      "name": "Mato Grosso do Sul",
+      "alias": null
+    },
+    {
+      "short": "MG",
+      "name": "Minas Gerais",
+      "alias": null
+    },
+    {
+      "short": "PA",
+      "name": "Pará",
+      "alias": [
+        "Para"
+      ]
+    },
+    {
+      "short": "PB",
+      "name": "Paraíba",
+      "alias": [
+        "Paraiba"
+      ]
+    },
+    {
+      "short": "PR",
+      "name": "Paraná",
+      "alias": [
+        "Parana"
+      ]
+    },
+    {
+      "short": "PE",
+      "name": "Pernambuco",
+      "alias": null
+    },
+    {
+      "short": "PI",
+      "name": "Piauí",
+      "alias": [
+        "Piaui"
+      ]
+    },
+    {
+      "short": "RJ",
+      "name": "Rio de Janeiro",
+      "alias": null
+    },
+    {
+      "short": "RN",
+      "name": "Rio Grande do Norte",
+      "alias": null
+    },
+    {
+      "short": "RS",
+      "name": "Rio Grande do Sul",
+      "alias": null
+    },
+    {
+      "short": "RO",
+      "name": "Rondônia",
+      "alias": [
+        "Rondonia"
+      ]
+    },
+    {
+      "short": "RR",
+      "name": "Roraima",
+      "alias": null
+    },
+    {
+      "short": "SC",
+      "name": "Santa Catarina",
+      "alias": null
+    },
+    {
+      "short": "SP",
+      "name": "São Paulo",
+      "alias": [
+        "Sao Paulo"
+      ]
+    },
+    {
+      "short": "SE",
+      "name": "Sergipe",
+      "alias": null
+    },
+    {
+      "short": "TO",
+      "name": "Tocantins",
+      "alias": null
+    }
+  ]
+}

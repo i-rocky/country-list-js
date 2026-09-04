@@ -1,0 +1,1074 @@
+{
+  "iso2": "PE",
+  "iso3": "PER",
+  "name": "Peru",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Lima",
+  "currency": "PEN",
+  "dialing_code": "51",
+  "provinces": [
+    {
+      "name": "Chachapoyas",
+      "region": "Amazonas",
+      "alias": null
+    },
+    {
+      "name": "Bagua",
+      "region": "Amazonas",
+      "alias": null
+    },
+    {
+      "name": "Bongará",
+      "region": "Amazonas",
+      "alias": [
+        "Bongara"
+      ]
+    },
+    {
+      "name": "Condorcanqui",
+      "region": "Amazonas",
+      "alias": null
+    },
+    {
+      "name": "Luya",
+      "region": "Amazonas",
+      "alias": null
+    },
+    {
+      "name": "Rodríguez de Mendoza",
+      "region": "Amazonas",
+      "alias": [
+        "Rodriguez de Mendoza"
+      ]
+    },
+    {
+      "name": "Utcubamba",
+      "region": "Amazonas",
+      "alias": null
+    },
+    {
+      "name": "Huaraz",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Aija",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Antonio Raymondi",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Asunción",
+      "region": "Ancash",
+      "alias": [
+        "Asuncion"
+      ]
+    },
+    {
+      "name": "Bolognesi",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Carhuaz",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Carlos Fermín Fitzcarrald",
+      "region": "Ancash",
+      "alias": [
+        "Carlos Fermin Fitzcarrald"
+      ]
+    },
+    {
+      "name": "Casma",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Corongo",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Huari",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Huarmey",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Huaylas",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Mariscal Luzuriaga",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Ocros",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Pallasca",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Pomabamba",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Recuay",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Santa",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Sihuas",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Yungay",
+      "region": "Ancash",
+      "alias": null
+    },
+    {
+      "name": "Abancay",
+      "region": "Apurímac",
+      "alias": null
+    },
+    {
+      "name": "Andahuaylas",
+      "region": "Apurímac",
+      "alias": null
+    },
+    {
+      "name": "Antabamba",
+      "region": "Apurímac",
+      "alias": null
+    },
+    {
+      "name": "Aymaraes",
+      "region": "Apurímac",
+      "alias": null
+    },
+    {
+      "name": "Cotabambas",
+      "region": "Apurímac",
+      "alias": null
+    },
+    {
+      "name": "Chincheros",
+      "region": "Apurímac",
+      "alias": null
+    },
+    {
+      "name": "Grau",
+      "region": "Apurímac",
+      "alias": null
+    },
+    {
+      "name": "Arequipa",
+      "region": "Arequipa",
+      "alias": null
+    },
+    {
+      "name": "Camaná",
+      "region": "Arequipa",
+      "alias": [
+        "Camana"
+      ]
+    },
+    {
+      "name": "Caravelí",
+      "region": "Arequipa",
+      "alias": [
+        "Caraveli"
+      ]
+    },
+    {
+      "name": "Castilla",
+      "region": "Arequipa",
+      "alias": null
+    },
+    {
+      "name": "Caylloma",
+      "region": "Arequipa",
+      "alias": null
+    },
+    {
+      "name": "Condesuyos",
+      "region": "Arequipa",
+      "alias": null
+    },
+    {
+      "name": "Islay",
+      "region": "Arequipa",
+      "alias": null
+    },
+    {
+      "name": "La Unión",
+      "region": "Arequipa",
+      "alias": [
+        "La Union"
+      ]
+    },
+    {
+      "name": "Huamanga",
+      "region": "Ayacucho",
+      "alias": null
+    },
+    {
+      "name": "Cangallo",
+      "region": "Ayacucho",
+      "alias": null
+    },
+    {
+      "name": "Huanca Sancos",
+      "region": "Ayacucho",
+      "alias": null
+    },
+    {
+      "name": "Huanta",
+      "region": "Ayacucho",
+      "alias": null
+    },
+    {
+      "name": "La Mar",
+      "region": "Ayacucho",
+      "alias": null
+    },
+    {
+      "name": "Lucanas",
+      "region": "Ayacucho",
+      "alias": null
+    },
+    {
+      "name": "Parinacochas",
+      "region": "Ayacucho",
+      "alias": null
+    },
+    {
+      "name": "Páucar del Sara Sara",
+      "region": "Ayacucho",
+      "alias": [
+        "Paucar del Sara Sara"
+      ]
+    },
+    {
+      "name": "Sucre",
+      "region": "Ayacucho",
+      "alias": null
+    },
+    {
+      "name": "Víctor Fajardo",
+      "region": "Ayacucho",
+      "alias": [
+        "Victor Fajardo"
+      ]
+    },
+    {
+      "name": "Vilcas Huamán",
+      "region": "Ayacucho",
+      "alias": [
+        "Vilcas Huaman"
+      ]
+    },
+    {
+      "name": "Cajamarca",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "Cajabamba",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "Celendín",
+      "region": "Cajamarca",
+      "alias": [
+        "Celendin"
+      ]
+    },
+    {
+      "name": "Chota",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "Contumazá",
+      "region": "Cajamarca",
+      "alias": [
+        "Contumaza"
+      ]
+    },
+    {
+      "name": "Cutervo",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "Hualgayoc",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "Jaén",
+      "region": "Cajamarca",
+      "alias": [
+        "Jaen"
+      ]
+    },
+    {
+      "name": "San Ignacio",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "San Marcos",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "San Miguel",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "San Pablo",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "Santa Cruz",
+      "region": "Cajamarca",
+      "alias": null
+    },
+    {
+      "name": "Callao",
+      "region": "Callao",
+      "alias": null
+    },
+    {
+      "name": "Cusco",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Acomayo",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Anta",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Calca",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Canas",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Canchis",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Chumbivilcas",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Espinar",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "La Convención",
+      "region": "Cusco",
+      "alias": [
+        "La Convencion"
+      ]
+    },
+    {
+      "name": "Paruro",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Paucartambo",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Quispicanchi",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Urubamba",
+      "region": "Cusco",
+      "alias": null
+    },
+    {
+      "name": "Huancavelica",
+      "region": "Huancavelica",
+      "alias": null
+    },
+    {
+      "name": "Acobamba",
+      "region": "Huancavelica",
+      "alias": null
+    },
+    {
+      "name": "Angaraes",
+      "region": "Huancavelica",
+      "alias": null
+    },
+    {
+      "name": "Castrovirreyna",
+      "region": "Huancavelica",
+      "alias": null
+    },
+    {
+      "name": "Churcampa",
+      "region": "Huancavelica",
+      "alias": null
+    },
+    {
+      "name": "Huaytará",
+      "region": "Huancavelica",
+      "alias": [
+        "Huaytara"
+      ]
+    },
+    {
+      "name": "Tayacaja",
+      "region": "Huancavelica",
+      "alias": null
+    },
+    {
+      "name": "Huánuco",
+      "region": "Huánuco",
+      "alias": [
+        "Huanuco"
+      ]
+    },
+    {
+      "name": "Ambo",
+      "region": "Huánuco",
+      "alias": null
+    },
+    {
+      "name": "Dos de Mayo",
+      "region": "Huánuco",
+      "alias": null
+    },
+    {
+      "name": "Huacaybamba",
+      "region": "Huánuco",
+      "alias": null
+    },
+    {
+      "name": "Huamalíes",
+      "region": "Huánuco",
+      "alias": [
+        "Huamalies"
+      ]
+    },
+    {
+      "name": "Leoncio Prado",
+      "region": "Huánuco",
+      "alias": null
+    },
+    {
+      "name": "Marañón",
+      "region": "Huánuco",
+      "alias": [
+        "Maranon"
+      ]
+    },
+    {
+      "name": "Pachitea",
+      "region": "Huánuco",
+      "alias": null
+    },
+    {
+      "name": "Puerto Inca",
+      "region": "Huánuco",
+      "alias": null
+    },
+    {
+      "name": "Lauricocha",
+      "region": "Huánuco",
+      "alias": null
+    },
+    {
+      "name": "Yarowilca",
+      "region": "Huánuco",
+      "alias": null
+    },
+    {
+      "name": "Ica",
+      "region": "Ica",
+      "alias": null
+    },
+    {
+      "name": "Chincha",
+      "region": "Ica",
+      "alias": null
+    },
+    {
+      "name": "Nazca",
+      "region": "Ica",
+      "alias": null
+    },
+    {
+      "name": "Palpa",
+      "region": "Ica",
+      "alias": null
+    },
+    {
+      "name": "Pisco",
+      "region": "Ica",
+      "alias": null
+    },
+    {
+      "name": "Huancayo",
+      "region": "Junín",
+      "alias": null
+    },
+    {
+      "name": "Concepción",
+      "region": "Junín",
+      "alias": [
+        "Concepcion"
+      ]
+    },
+    {
+      "name": "Chanchamayo",
+      "region": "Junín",
+      "alias": null
+    },
+    {
+      "name": "Jauja",
+      "region": "Junín",
+      "alias": null
+    },
+    {
+      "name": "Junín",
+      "region": "Junín",
+      "alias": [
+        "Junin"
+      ]
+    },
+    {
+      "name": "Satipo",
+      "region": "Junín",
+      "alias": null
+    },
+    {
+      "name": "Tarma",
+      "region": "Junín",
+      "alias": null
+    },
+    {
+      "name": "Yauli",
+      "region": "Junín",
+      "alias": null
+    },
+    {
+      "name": "Chupaca",
+      "region": "Junín",
+      "alias": null
+    },
+    {
+      "name": "Trujillo",
+      "region": "La Libertad",
+      "alias": null
+    },
+    {
+      "name": "Ascope",
+      "region": "La Libertad",
+      "alias": null
+    },
+    {
+      "name": "Bolívar",
+      "region": "La Libertad",
+      "alias": [
+        "Bolivar"
+      ]
+    },
+    {
+      "name": "Chepén",
+      "region": "La Libertad",
+      "alias": [
+        "Chepen"
+      ]
+    },
+    {
+      "name": "Julcán",
+      "region": "La Libertad",
+      "alias": [
+        "Julcan"
+      ]
+    },
+    {
+      "name": "Otuzco",
+      "region": "La Libertad",
+      "alias": null
+    },
+    {
+      "name": "Pacasmayo",
+      "region": "La Libertad",
+      "alias": null
+    },
+    {
+      "name": "Pataz",
+      "region": "La Libertad",
+      "alias": null
+    },
+    {
+      "name": "Sánchez Carrión",
+      "region": "La Libertad",
+      "alias": [
+        "Sanchez Carrion"
+      ]
+    },
+    {
+      "name": "Santiago de Chuco",
+      "region": "La Libertad",
+      "alias": null
+    },
+    {
+      "name": "Gran Chimú",
+      "region": "La Libertad",
+      "alias": [
+        "Gran Chimu"
+      ]
+    },
+    {
+      "name": "Virú",
+      "region": "La Libertad",
+      "alias": [
+        "Viru"
+      ]
+    },
+    {
+      "name": "Chiclayo",
+      "region": "Lambayeque",
+      "alias": null
+    },
+    {
+      "name": "Ferreñafe",
+      "region": "Lambayeque",
+      "alias": [
+        "Ferrenafe"
+      ]
+    },
+    {
+      "name": "Lambayeque",
+      "region": "Lambayeque",
+      "alias": null
+    },
+    {
+      "name": "Lima",
+      "region": "autonomous",
+      "alias": null
+    },
+    {
+      "name": "Huaura",
+      "region": "Lima",
+      "alias": null
+    },
+    {
+      "name": "Barranca",
+      "region": "Lima",
+      "alias": null
+    },
+    {
+      "name": "Cajatambo",
+      "region": "Lima",
+      "alias": null
+    },
+    {
+      "name": "Canta",
+      "region": "Lima",
+      "alias": null
+    },
+    {
+      "name": "Cañete",
+      "region": "Lima",
+      "alias": [
+        "Canete"
+      ]
+    },
+    {
+      "name": "Huaral",
+      "region": "Lima",
+      "alias": null
+    },
+    {
+      "name": "Huarochirí",
+      "region": "Lima",
+      "alias": null
+    },
+    {
+      "name": "Oyón",
+      "region": "Lima",
+      "alias": [
+        "Oyon"
+      ]
+    },
+    {
+      "name": "Yauyos",
+      "region": "Lima",
+      "alias": null
+    },
+    {
+      "name": "Maynas",
+      "region": "Loreto",
+      "alias": null
+    },
+    {
+      "name": "Aliaso Amazonas",
+      "region": "Loreto",
+      "alias": null
+    },
+    {
+      "name": "Loreto",
+      "region": "Loreto",
+      "alias": null
+    },
+    {
+      "name": "Mariscal Ramón Castilla",
+      "region": "Loreto",
+      "alias": [
+        "Mariscal Ramon Castilla"
+      ]
+    },
+    {
+      "name": "Putumayo",
+      "region": "Loreto",
+      "alias": null
+    },
+    {
+      "name": "Requena",
+      "region": "Loreto",
+      "alias": null
+    },
+    {
+      "name": "Ucayali",
+      "region": "Loreto",
+      "alias": null
+    },
+    {
+      "name": "Datem del Marañón",
+      "region": "Loreto",
+      "alias": [
+        "Datem del Maranon"
+      ]
+    },
+    {
+      "name": "Tambopata",
+      "region": "Madre de Dios",
+      "alias": null
+    },
+    {
+      "name": "Manú",
+      "region": "Madre de Dios",
+      "alias": [
+        "Manu"
+      ]
+    },
+    {
+      "name": "Tahuamanu",
+      "region": "Madre de Dios",
+      "alias": null
+    },
+    {
+      "name": "Mariscal Nieto",
+      "region": "Moquegua",
+      "alias": null
+    },
+    {
+      "name": "General Sánchez Cerro",
+      "region": "Moquegua",
+      "alias": [
+        "General Sanchez Cerro"
+      ]
+    },
+    {
+      "name": "Ilo",
+      "region": "Moquegua",
+      "alias": null
+    },
+    {
+      "name": "Pasco",
+      "region": "Pasco",
+      "alias": null
+    },
+    {
+      "name": "Daniel Alcídes Carrión",
+      "region": "Pasco",
+      "alias": [
+        "Daniel Alcides Carrion"
+      ]
+    },
+    {
+      "name": "Oxapampa",
+      "region": "Pasco",
+      "alias": null
+    },
+    {
+      "name": "Piura",
+      "region": "Piura",
+      "alias": null
+    },
+    {
+      "name": "Ayabaca",
+      "region": "Piura",
+      "alias": null
+    },
+    {
+      "name": "Huancabamba",
+      "region": "Piura",
+      "alias": null
+    },
+    {
+      "name": "Morropón",
+      "region": "Piura",
+      "alias": [
+        "Morropon"
+      ]
+    },
+    {
+      "name": "Paita",
+      "region": "Piura",
+      "alias": null
+    },
+    {
+      "name": "Sullana",
+      "region": "Piura",
+      "alias": null
+    },
+    {
+      "name": "Talara",
+      "region": "Piura",
+      "alias": null
+    },
+    {
+      "name": "Sechura",
+      "region": "Piura",
+      "alias": null
+    },
+    {
+      "name": "Puno",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "Azángaro",
+      "region": "Puno",
+      "alias": [
+        "Azangaro"
+      ]
+    },
+    {
+      "name": "Carabaya",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "Chucuito",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "El Collao",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "Huancané",
+      "region": "Puno",
+      "alias": [
+        "Huancane"
+      ]
+    },
+    {
+      "name": "Lampa",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "Melgar",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "Moho",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "San Antonio de Putina",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "San Román",
+      "region": "Puno",
+      "alias": [
+        "San Roman"
+      ]
+    },
+    {
+      "name": "Sandia",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "Yunguyo",
+      "region": "Puno",
+      "alias": null
+    },
+    {
+      "name": "Moyobamba",
+      "region": "San Martín",
+      "alias": null
+    },
+    {
+      "name": "Bellavista",
+      "region": "San Martín",
+      "alias": null
+    },
+    {
+      "name": "El Dorado",
+      "region": "San Martín",
+      "alias": null
+    },
+    {
+      "name": "Huallaga",
+      "region": "San Martín",
+      "alias": null
+    },
+    {
+      "name": "Lamas",
+      "region": "San Martín",
+      "alias": null
+    },
+    {
+      "name": "Mariscal Cáceres",
+      "region": "San Martín",
+      "alias": [
+        "Mariscal Caceres"
+      ]
+    },
+    {
+      "name": "Picota",
+      "region": "San Martín",
+      "alias": null
+    },
+    {
+      "name": "Rioja",
+      "region": "San Martín",
+      "alias": null
+    },
+    {
+      "name": "San Martín",
+      "region": "San Martín",
+      "alias": [
+        "San Martin"
+      ]
+    },
+    {
+      "name": "Tocache",
+      "region": "San Martín",
+      "alias": null
+    },
+    {
+      "name": "Tacna",
+      "region": "Tacna",
+      "alias": null
+    },
+    {
+      "name": "Candarave",
+      "region": "Tacna",
+      "alias": null
+    },
+    {
+      "name": "Jorge Basadre",
+      "region": "Tacna",
+      "alias": null
+    },
+    {
+      "name": "Tarata",
+      "region": "Tacna",
+      "alias": null
+    },
+    {
+      "name": "Tumbes",
+      "region": "Tumbes",
+      "alias": null
+    },
+    {
+      "name": "Contralmirante Villar",
+      "region": "Tumbes",
+      "alias": null
+    },
+    {
+      "name": "Zarumilla",
+      "region": "Tumbes",
+      "alias": null
+    },
+    {
+      "name": "Coronel Portillo",
+      "region": "Ucayali",
+      "alias": null
+    },
+    {
+      "name": "Atalaya",
+      "region": "Ucayali",
+      "alias": null
+    },
+    {
+      "name": "Padre Abad",
+      "region": "Ucayali",
+      "alias": null
+    },
+    {
+      "name": "Purús",
+      "region": "Ucayali",
+      "alias": [
+        "Purus"
+      ]
+    }
+  ]
+}

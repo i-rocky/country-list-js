@@ -1,0 +1,34 @@
+{
+  "iso2": "DK",
+  "iso3": "DNK",
+  "name": "Denmark",
+  "continent": "EU",
+  "region": "Scandinavia, Nordic Countries",
+  "capital": "Copenhagen",
+  "currency": "DKK",
+  "dialing_code": "45",
+  "provinces": [
+    {
+      "name": "Hovedstaden",
+      "alias": null
+    },
+    {
+      "name": "Midtjylland",
+      "alias": null
+    },
+    {
+      "name": "Nordjylland",
+      "alias": null
+    },
+    {
+      "name": "Sjælland",
+      "alias": [
+        "Zealand"
+      ]
+    },
+    {
+      "name": "Syddanmark",
+      "alias": null
+    }
+  ]
+}

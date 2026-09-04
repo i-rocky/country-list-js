@@ -15,12 +15,20 @@ const country = require('../index');
 
 // Country records that intentionally differ from published 3.1.8.
 
+const STRING_ALIAS =
+    'one province alias was a bare string rather than an array (ET/SNNPR, ' +
+    'TR/Mugla, VN/Binh Phuoc).  String indexOf is a substring search, so ' +
+    'findByProvince("B") answered Vietnam and the empty string matched all ' +
+    'three.  The three are now arrays like the other 440.';
+
 const CHANGED = {
     BY: 'currency BYR -> BYN.  Belarus redenominated in 2016; master has ' +
         'carried the fix since before v3.1.8, but the v3.1.8 tag was cut off ' +
         'master and published a tree where it had been reverted.',
     ES: 'provinces 46 -> 48.  Merged community fixes (PRs #71, #75).',
     NG: 'provinces 12 -> 36.  Merged community fix (PR #69).',
+
+    ET: STRING_ALIAS, TR: STRING_ALIAS, VN: STRING_ALIAS,
 };
 
 // Individual recorded calls that intentionally differ, keyed as fn(arg).  Use

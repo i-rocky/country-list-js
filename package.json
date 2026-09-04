@@ -23,6 +23,16 @@
     }
   ],
   "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "data/",
+    "schema/",
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "country",
     "geopolitical",
@@ -34,14 +44,19 @@
     "region"
   ],
   "scripts": {
+    "build:data": "node scripts/build.js",
+    "validate": "node scripts/validate.js",
+    "prepare": "npm run build:data",
+    "pretest": "npm run build:data",
+    "test": "eslint . && npm run validate && mocha t/*.js",
     "build": "gulp",
     "start": "micro server.js",
     "dev": "micro-dev",
-    "test": "eslint . && mocha t/*.js",
-    "preversion": "npm run test",
-    "debug": "node --inspect node_modules/.bin/micro-dev server.js"
+    "debug": "node --inspect node_modules/.bin/micro-dev server.js",
+    "preversion": "npm run test"
   },
   "devDependencies": {
+    "ajv": "^8.20.0",
     "browserify": "^16.2.3",
     "chai": "^4.0.2",
     "eslint": "^9.32.0",

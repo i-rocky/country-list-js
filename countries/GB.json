@@ -1,0 +1,586 @@
+{
+  "iso2": "GB",
+  "iso3": "GBR",
+  "name": "United Kingdom",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "London",
+  "currency": "GBP",
+  "dialing_code": "44",
+  "provinces": [
+    {
+      "name": "Avon",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Bedfordshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Berkshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Borders",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Bristol",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Buckinghamshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Cambridgeshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Channel Islands",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Cheshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Cleveland",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Cornwall",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Cumbria",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Derbyshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Devon",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Dorset",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Durham",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "East Riding of Yorkshire",
+      "region": "England",
+      "alias": [
+        "East Yorkshire"
+      ]
+    },
+    {
+      "name": "East Sussex",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Essex",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Gloucestershire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Greater Manchester",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Hampshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Herefordshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Hertfordshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Humberside",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Isle of Man",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Isle of Wight",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Isles of Scilly",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Kent",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Lancashire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Leicestershire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Lincolnshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "London",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Merseyside",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Middlesex",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Norfolk",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "North Yorkshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Northamptonshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Northumberland",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Nottinghamshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Oxfordshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Rutland",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Shropshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Somerset",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "South Yorkshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Staffordshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Suffolk",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Surrey",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Tyne and Wear",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Warwickshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "West Midlands",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "West Sussex",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "West Yorkshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Wiltshire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Worcestershire",
+      "region": "England",
+      "alias": null
+    },
+    {
+      "name": "Antrim",
+      "region": "Northern Ireland",
+      "alias": null
+    },
+    {
+      "name": "Down",
+      "region": "Northern Ireland",
+      "alias": null
+    },
+    {
+      "name": "Fermanagh",
+      "region": "Northern Ireland",
+      "alias": null
+    },
+    {
+      "name": "Londonderry",
+      "region": "Northern Ireland",
+      "alias": null
+    },
+    {
+      "name": "Tyrone",
+      "region": "Northern Ireland",
+      "alias": null
+    },
+    {
+      "name": "Aberdeen City",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Aberdeenshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Angus",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Argyll and Bute",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Armagh",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Carmarthenshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Clackmannan",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Dumfries and Galloway",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "East Ayrshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "East Dunbartonshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "East Lothian",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "East Renfrewshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Edinburgh City",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Falkirk",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Fife",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Glasgow",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Highland",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Inverclyde",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Midlothian",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Moray",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "North Ayrshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "North Lanarkshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Orkney",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Perthshire and Kinross",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Renfrewshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Roxburghshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Shetland",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "South Ayrshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "South Lanarkshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Stirling",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "West Dunbartonshire",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "West Lothian",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Western Isles",
+      "region": "Scotland",
+      "alias": null
+    },
+    {
+      "name": "Blaenau Gwent",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Bridgend",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Caerphilly",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Cardiff",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Ceredigion",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Conwy",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Denbighshire",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Flintshire",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Gwynedd",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Isle of Anglesey",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Merthyr Tydfil",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Monmouthshire",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Neath Port Talbot",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Newport",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Pembrokeshire",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Powys",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Rhondda Cynon Taff",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Swansea",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "The Vale of Glamorgan",
+      "region": "Wales",
+      "alias": [
+        "The Vale"
+      ]
+    },
+    {
+      "name": "Torfaen",
+      "region": "Wales",
+      "alias": null
+    },
+    {
+      "name": "Wrexham",
+      "region": "Wales",
+      "alias": null
+    }
+  ]
+}

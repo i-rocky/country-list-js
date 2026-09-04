@@ -1,0 +1,156 @@
+{
+  "iso2": "NG",
+  "iso3": "NGA",
+  "name": "Nigeria",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Abuja",
+  "currency": "NGN",
+  "dialing_code": "234",
+  "provinces": [
+    {
+      "name": "Anambra",
+      "alias": null
+    },
+    {
+      "name": "Enugu",
+      "alias": null
+    },
+    {
+      "name": "Akwa Ibom",
+      "alias": null
+    },
+    {
+      "name": "Adamawa",
+      "alias": null
+    },
+    {
+      "name": "Abia",
+      "alias": null
+    },
+    {
+      "name": "Bauchi",
+      "alias": null
+    },
+    {
+      "name": "Bayelsa",
+      "alias": null
+    },
+    {
+      "name": "Benue",
+      "alias": null
+    },
+    {
+      "name": "Borno",
+      "alias": null
+    },
+    {
+      "name": "Cross River",
+      "alias": null
+    },
+    {
+      "name": "Delta",
+      "alias": null
+    },
+    {
+      "name": "Ebonyi",
+      "alias": null
+    },
+    {
+      "name": "Edo",
+      "alias": null
+    },
+    {
+      "name": "Ekiti",
+      "alias": null
+    },
+    {
+      "name": "Gombe",
+      "alias": null
+    },
+    {
+      "name": "Imo",
+      "alias": null
+    },
+    {
+      "name": "Jigawa",
+      "alias": null
+    },
+    {
+      "name": "Kaduna",
+      "alias": null
+    },
+    {
+      "name": "Kano",
+      "alias": null
+    },
+    {
+      "name": "Katsina",
+      "alias": null
+    },
+    {
+      "name": "Kebbi",
+      "alias": null
+    },
+    {
+      "name": "Kogi",
+      "alias": null
+    },
+    {
+      "name": "Kwara",
+      "alias": null
+    },
+    {
+      "name": "Lagos",
+      "alias": null
+    },
+    {
+      "name": "Nasarawa",
+      "alias": null
+    },
+    {
+      "name": "Niger",
+      "alias": null
+    },
+    {
+      "name": "Ogun",
+      "alias": null
+    },
+    {
+      "name": "Ondo",
+      "alias": null
+    },
+    {
+      "name": "Osun",
+      "alias": null
+    },
+    {
+      "name": "Oyo",
+      "alias": null
+    },
+    {
+      "name": "Plateau",
+      "alias": null
+    },
+    {
+      "name": "Rivers",
+      "alias": null
+    },
+    {
+      "name": "Sokoto",
+      "alias": null
+    },
+    {
+      "name": "Taraba",
+      "alias": null
+    },
+    {
+      "name": "Yobe",
+      "alias": null
+    },
+    {
+      "name": "Zamfara",
+      "alias": null
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "iso2": "PK",
+  "iso3": "PAK",
+  "name": "Pakistan",
+  "continent": "AS",
+  "region": "Southern Asia",
+  "capital": "Islamabad",
+  "currency": "PKR",
+  "dialing_code": "92",
+  "provinces": [
+    {
+      "name": "Azad Kashmir",
+      "alias": null
+    },
+    {
+      "name": "Bahawalpur",
+      "alias": null
+    },
+    {
+      "name": "Bannu",
+      "alias": null
+    },
+    {
+      "name": "Dera Ghazi Khan",
+      "alias": null
+    },
+    {
+      "name": "Dera Ismail Khan",
+      "alias": null
+    },
+    {
+      "name": "Faisalabad",
+      "alias": null
+    },
+    {
+      "name": "Federally Administered Tribal Areas",
+      "alias": [
+        "FATA",
+        "F.A.T.A."
+      ]
+    },
+    {
+      "name": "Gujranwala",
+      "alias": null
+    },
+    {
+      "name": "Hazara",
+      "alias": null
+    },
+    {
+      "name": "Hyderabad",
+      "alias": null
+    },
+    {
+      "name": "Islamabad",
+      "alias": null
+    },
+    {
+      "name": "Kalat",
+      "alias": null
+    },
+    {
+      "name": "Karachi",
+      "alias": null
+    },
+    {
+      "name": "Kohat",
+      "alias": null
+    },
+    {
+      "name": "Lahore",
+      "alias": null
+    },
+    {
+      "name": "Larkana",
+      "alias": null
+    },
+    {
+      "name": "Makran",
+      "alias": null
+    },
+    {
+      "name": "Malakand",
+      "alias": null
+    },
+    {
+      "name": "Mardan",
+      "alias": null
+    },
+    {
+      "name": "Mirpur Khas",
+      "alias": null
+    },
+    {
+      "name": "Multan",
+      "alias": null
+    },
+    {
+      "name": "Nasirabad",
+      "alias": null
+    },
+    {
+      "name": "Northern Areas",
+      "alias": null
+    },
+    {
+      "name": "Peshawar",
+      "alias": null
+    },
+    {
+      "name": "Quetta",
+      "alias": null
+    },
+    {
+      "name": "Rawalpindi",
+      "alias": null
+    },
+    {
+      "name": "Sargodha",
+      "alias": null
+    },
+    {
+      "name": "Sahiwal",
+      "alias": null
+    },
+    {
+      "name": "Sibi",
+      "alias": null
+    },
+    {
+      "name": "Sukkur",
+      "alias": null
+    },
+    {
+      "name": "Zhob",
+      "alias": null
+    }
+  ]
+}

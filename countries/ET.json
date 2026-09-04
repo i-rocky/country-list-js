@@ -1,0 +1,60 @@
+{
+  "iso2": "ET",
+  "iso3": "ETH",
+  "name": "Ethiopia",
+  "continent": "AF",
+  "region": "East Africa",
+  "capital": "Addis Ababa",
+  "currency": "ETB",
+  "dialing_code": "251",
+  "provinces": [
+    {
+      "name": "Addis Ababa",
+      "alias": null
+    },
+    {
+      "name": "Afar Region",
+      "alias": null
+    },
+    {
+      "name": "Amhara Region",
+      "alias": null
+    },
+    {
+      "name": "Benishangul-Gumuz",
+      "alias": [
+        "Benishangul Gumuz"
+      ]
+    },
+    {
+      "name": "Dire Dawa",
+      "alias": null
+    },
+    {
+      "name": "Gambela",
+      "alias": null
+    },
+    {
+      "name": "Harari",
+      "alias": null
+    },
+    {
+      "name": "Oromia",
+      "alias": null
+    },
+    {
+      "name": "Somali",
+      "alias": null
+    },
+    {
+      "name": "Southern Nations, Nationalities, and Peoples' Region",
+      "alias": [
+        "SNNPR"
+      ]
+    },
+    {
+      "name": "Tigray Region",
+      "alias": null
+    }
+  ]
+}
