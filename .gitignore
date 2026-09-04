@@ -10,3 +10,6 @@ yarn.lock
 /index.d.ts
 /dist
 /src/generated.ts
+
+# built into docs/ by the Pages workflow
+/docs/country.min.js

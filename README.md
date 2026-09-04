@@ -1,132 +1,182 @@
-# Country List JS
+# country-list-js
 
-[![npm version](https://badge.fury.io/js/country-list-js.svg)](https://badge.fury.io/js/country-list-js)
-[![Build Status](https://travis-ci.org/i-rocky/country-list-js.svg?branch=master)](https://travis-ci.org/i-rocky/country-list-js) [![Version](https://img.shields.io/npm/v/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
-[![Total Downloads](https://img.shields.io/npm/dt/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
-[![License](https://img.shields.io/github/license/i-rocky/country-list-js.svg)](https://github.com/i-rocky/country-list-js/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
+[![CI](https://github.com/i-rocky/country-list-js/actions/workflows/ci.yml/badge.svg)](https://github.com/i-rocky/country-list-js/actions/workflows/ci.yml)
+[![Downloads](https://img.shields.io/npm/dm/country-list-js.svg)](https://www.npmjs.com/package/country-list-js)
+[![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](package.json)
+[![Types](https://img.shields.io/npm/types/country-list-js.svg)](index.d.ts)
+[![License](https://img.shields.io/github/license/i-rocky/country-list-js.svg)](LICENSE)
 
-This module contains country information including 2 and 3 character ISO codes, country and capital names,
-currency information, telephone calling codes, and provinces (first-tier political subdivisions)
+Country data for 250 countries and territories: ISO 3166-1 codes, names,
+capitals, currencies, dialing codes, first-tier subdivisions, land borders and
+IANA time zones.
 
-The functionality in this package is also available as a service, hosted on the Now platform.  This modality
-lends itself well to microservice architectures.  For more information please see the section on *Now* at
-the end of this document
+No runtime dependencies. Ships CommonJS, ESM, TypeScript types and a browser
+bundle.
 
 ## Install
-Add to your project from the NPM repository:
-```
-npm install --save country-list-js
-```
-And get an instance of the module:
-```javascript
-// using ES6 modules
 
-import country from 'country-list-js';
-
-// using CommonJS modules
-var country = require('country-list-js'); 
+```sh
+npm install country-list-js
 ```
-In a web page, you can include the modulelike this:
+
+```js
+const country = require('country-list-js');          // CommonJS
+import country from 'country-list-js';               // ESM
+import { findByIso2, names } from 'country-list-js'; // ESM, named
+```
+
+In a browser, from a CDN:
+
 ```html
-<script src="/path/to/country.min.js"></script>
+<script src="https://unpkg.com/country-list-js@4/dist/country.min.js"></script>
+<script>
+  console.log(country.findByIso2('DK').name);   // Denmark
+</script>
 ```
 
-## Basic Usage
+## Looking things up
 
-The following methods are available:
-
-### Listing
-Lists can be generated using the following convenience functions:
 ```js
-var country_names = country.names();
-var continents = country.continents();
-var capitals = country.capitals();
+country.findByIso2('DK');            // by ISO 3166-1 alpha-2
+country.findByIso3('DNK');           // by ISO 3166-1 alpha-3
+country.findByName('Denmark');       // by name
+country.findByCapital('Copenhagen'); // by capital
+country.findByCurrency('DKK');       // by ISO 4217 code
+country.findByProvince('Zealand');   // by subdivision, name or alias
+country.findByPhoneNbr('+4505551212');
 ```
-but, in general, any of a country's attributes can be retrieved using
-the `ls` method, which can also produce the above:
+
+Nothing found is `undefined`. One match is the country itself. Several matches
+are an array:
+
 ```js
-var country_names = country.ls('name');
-var continents = country.ls('continent');
-var capitals = country.ls('capital');
+country.findByIso2('DK').name;              // 'Denmark'
+country.findByCurrency('EUR').length;       // 37
+country.findByIso2('ZZ');                   // undefined
 ```
 
-### Searching
-Searches can be conducted by any of the following methods:
+Lookups try the exact value first. If that misses, they try again
+case-insensitively, and `findByName` also tries 682 alternative names — native
+forms, official long forms, and the current ISO short names for countries this
+list still records under an older one:
 
-```javascript
-var found = country.findByIso2('BD');
-var found = country.findByIso3('BGD');
-var found = country.findByName('Bangladesh');
-var found = country.findByCapital('Dakha');
-var found = country.findByCurrency('BDT');
-var found = country.findByPhoneNbr('+8804005050');
-var found = country.findByProvince('Steiermark');
+```js
+country.findByName('denmark');    // Denmark
+country.findByName('Danmark');    // Denmark
+country.findByName('Türkiye');    // Turkey
+country.findByName('Eswatini');   // Swaziland
+country.findByName('Czechia');    // Czech Republic
+country.findByName('USA');        // United States
 ```
 
-If the country cannot be found, the return value is  `undefined`.
-If a single value is found, it is returned as an object similar to the
-one shown below, and if multiple matches are made, an array of such
-objects is returned
+The exact value always wins, so adding an alias can never change a lookup that
+already worked.
 
-```javascript
-{ 
-    name: 'Denmark',
-    continent: 'Europe',
-    region: 'Scandinavia, Nordic Countries',
-    capital: 'Copenhagen',
-    currency: { code: 'DKK', symbol: 'Dkr', decimal: '2' },
-    dialing_code: '45',
-    provinces: [
-        { name: 'Hovedstaden', alias: null },
-        { name: 'Midtjylland', alias: null },
-        { name: 'Nordjylland', alias: null },
-        { name: 'Sjælland', alias: [ 'Zealand' ] },
-        { name: 'Syddanmark', alias: null }
-    ],
-    code: { iso_alpha_2: 'DK', iso_alpha_3: 'DNK' } 
+### Telephone numbers
+
+`findByPhoneNbr` returns every country whose dialing code prefixes the number,
+most specific first. `+1-246` is Barbados and `+1` is three more territories,
+so all four come back:
+
+```js
+country.findByPhoneNbr('+12465551212').map(c => c.name);
+// ['Barbados', 'United States Minor Outlying Islands', 'United States', 'Canada']
+```
+
+Pass `{longestMatch: true}` for the most specific prefix only:
+
+```js
+country.findByPhoneNbr('+12465551212', {longestMatch: true}).name;   // 'Barbados'
+```
+
+### Lists
+
+```js
+country.names();          // all 250 names
+country.capitals();       // all 250 capitals
+country.continents();     // the 7 continents
+country.ls('region');     // any field, across every country
+country.all;              // everything, keyed by ISO-2
+```
+
+## What a country looks like
+
+```js
+{
+  name: 'Denmark',
+  continent: 'Europe',
+  region: 'Scandinavia, Nordic Countries',
+  capital: 'Copenhagen',
+  currency: { code: 'DKK', symbol: 'Dkr', decimal: '2' },
+  dialing_code: '45',
+  provinces: [
+    { name: 'Hovedstaden', alias: null },
+    { name: 'Midtjylland', alias: null },
+    { name: 'Nordjylland', alias: null },
+    { name: 'Sjælland', alias: ['Zealand'] },
+    { name: 'Syddanmark', alias: null }
+  ],
+  code: { iso2: 'DK', iso3: 'DNK', numeric: '208' },
+  native_name: 'Danmark',
+  demonym: 'Danish',
+  languages: ['da'],
+  tld: ['.dk'],
+  area: 43094,
+  latlng: [56, 10],
+  timezones: ['Europe/Copenhagen'],
+  borders: ['DE']
 }
 ```
 
-## Notes
+Every key is always present. The ones that can be `undefined` are undefined
+where the value does not exist: an uninhabited territory has no time zone, an
+island nation has no land border, Kosovo has no ISO numeric code.
 
-* Queries are cached so only the first time a country is searched by requires traversal
-of the internal structures and thus calls will resolve very quickly
+`currency.decimal` is a **string**, not a number. It has been since 1.0.
 
-* Search queries are case insensitive
+## Notes on the data
 
-* Province searches include aliases so you may search for either ***Sjælland*** or ***Zealand***
+**Names** are common short names in English, transliterated to ASCII —
+`Ivory Coast`, not `Côte d'Ivoire`; `Reykjavik`, not `Reykjavík`. They are not
+ISO 3166-1 official names. Both forms resolve through `findByName`.
 
-## NPM Commands
+**Currencies** follow ISO 4217. Codes ISO has retired still resolve to the
+country that used them, so `findByCurrency('HRK')` answers Croatia even though
+Croatia is on the euro now.
 
-The built-in test suite may be run in the traditional way
+**Time zones** come from the [IANA time zone
+database](https://www.iana.org/time-zones), which is in the public domain.
+
+**Borders** are symmetric: if A borders B then B borders A. Some entries
+follow de-facto rather than universally recognised boundaries.
+
+**Subdivisions** are first-tier only, and 31 of the 250 countries have them.
+
+## TypeScript
+
+Types ship with the package; nothing extra to install. The ISO code types are
+literal unions of the real codes, so typos are compile errors:
+
+```ts
+import country, { Country, Iso2 } from 'country-list-js';
+
+const dk: Country | undefined = country.findByIso2('DK');
+const code: Iso2 = 'DKK';   // Type '"DKK"' is not assignable to type 'Iso2'
 ```
-npm test
-```
 
-and to build the minified file for web, run:
-```
-npm run build
-```
-and retrieve the file from `dist/country.min.js`
+## Contributing
 
-## Module-as-a-service on the Now platform
+Country data lives in `countries/<ISO2>.json`, one file per country, validated
+against `schema/country.schema.json`. Correcting a country is a one-line diff.
+Everything under `data/` is generated from those files — don't edit it.
 
-The functionality in this module is also available via a REST API where any methods 
-may be called by passing parameters to the service's url.  The parameter "method" is
-used to indicate which method to call, and additional parameters should match the
-signature of the method, for example:
-```bash
-curl "http://country-list-js.npm.now.sh/?method=findByIso2&code=DK"
-```
-returns a JSON object with information for Denmark.  In Javascript you may use your fevourite
-package for fetching instead:
-```js
-const fetch = require('node-fetch')
-const url = 'http://country-list-js.npm.now.sh/?method=findByIso2&code=DK'
-fetch(url).then(res => res.json())
-    .then(o => {
-        console.log(o)  // will show Denmark
-    })
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+```sh
+npm install        # also builds data/
+npm test           # lint, validate the data, run the suite
+npm run build      # data, types and bundles
 ```
 
 ## Licence

@@ -1,0 +1,88 @@
+name: Release
+
+# Merging into master is the release. Nothing else publishes.
+#
+# The version in package.json decides which dist-tag it goes to:
+#
+#   4.0.0-rc.1  ->  next     `npm i country-list-js` is unaffected
+#   4.0.0       ->  latest   this is the one that reaches everybody
+#
+# So a release is always two merges: the prerelease first, then the stable one
+# once the prerelease has been out long enough to trust.
+on:
+  push:
+    branches: [master]
+
+permissions:
+  contents: write        # create the tag and the GitHub release
+  id-token: write        # npm provenance via OIDC
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: https://registry.npmjs.org
+          cache: npm
+
+      - name: Decide whether to publish, and to which tag
+        id: plan
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+          case "$VERSION" in
+            *-*) echo "tag=next"   >> "$GITHUB_OUTPUT" ;;
+            *)   echo "tag=latest" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+          if npm view "country-list-js@$VERSION" version >/dev/null 2>&1; then
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::$VERSION is already published. Nothing to do."
+          else
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.plan.outputs.publish == 'true'
+        run: npm ci
+
+      - if: steps.plan.outputs.publish == 'true'
+        run: npm run typecheck
+
+      - if: steps.plan.outputs.publish == 'true'
+        run: npm test
+
+      # Packs the tarball, installs it into a throwaway project beside the last
+      # published release, and runs every check against the installed package:
+      # every deep import, both module systems, the types, the browser bundle.
+      # A broken exports map or a file missing from `files` fails here.
+      - if: steps.plan.outputs.publish == 'true'
+        run: npm run verify:package
+
+      - name: Publish ${{ steps.plan.outputs.version }} to the ${{ steps.plan.outputs.tag }} tag
+        if: steps.plan.outputs.publish == 'true'
+        run: npm publish --provenance --access public --tag ${{ steps.plan.outputs.tag }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Tag and write the GitHub release
+        if: steps.plan.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.plan.outputs.version }}
+          TAG: ${{ steps.plan.outputs.tag }}
+        run: |
+          git tag "v$VERSION"
+          git push origin "v$VERSION"
+          node scripts/changelog-section.js "$VERSION" > /tmp/notes.md
+          gh release create "v$VERSION" --title "v$VERSION" --notes-file /tmp/notes.md \
+            $([ "$TAG" = "next" ] && echo --prerelease)

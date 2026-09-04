@@ -25,6 +25,8 @@ module.exports = [
         languageOptions: {sourceType: 'module', globals: {...globals.node}},
     },
     {
-        ignores: ['dist/**', 'node_modules/**'],
+        // build outputs, not source
+        ignores: ['dist/**', 'node_modules/**', 'index.js', 'index.d.ts',
+                  'docs/country.min.js', 'src/generated.ts'],
     },
 ];

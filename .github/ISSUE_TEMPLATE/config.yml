@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question
+    url: https://github.com/i-rocky/country-list-js/discussions
+    about: Ask about usage here rather than opening an issue
