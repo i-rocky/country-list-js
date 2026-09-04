@@ -368,9 +368,10 @@ Also:
 - Lookups go through indexes instead of scanning all 250 records, and every
   result is built fresh, so a caller writing to one cannot affect another.
 - **The subdivision data is described accurately for the first time.** It was
-  documented as first-tier only, which is false for six of the countries
-  checked against ISO 3166-2 — Spain carries 48 provinces where ISO defines 19
-  autonomous communities, Peru 196 against 26. The README now says which
+  documented as first-tier only, which is false for seven of the countries
+  checked against ISO 3166-2 — Spain carries 50 provinces where ISO's first
+  tier is 17 autonomous communities and 2 autonomous cities, Peru 196 against
+  26. The README now says which
   countries sit where, and that the completeness of a list is unwarranted
   except where this changelog says otherwise.
 - The stale browser bundle is no longer committed to the repository. Build
