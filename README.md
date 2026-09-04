@@ -7,6 +7,30 @@
 [![Types](https://img.shields.io/npm/types/country-list-js.svg)](index.d.ts)
 [![License](https://img.shields.io/github/license/i-rocky/country-list-js.svg)](LICENSE)
 
+> ## ⚠️ 4.0 breaks with 3.1.8. Read this before upgrading.
+>
+> The last release was 3.1.8 in 2023. 4.0 is a rewrite, and it changes
+> what the finders return and what the data says. The ones most likely to
+> bite:
+>
+> - `findByCapital`, `findByCurrency`, `findByProvince` and `findByPhoneNbr`
+>   **always return an array**, empty on a miss. They used to return a
+>   country, an array or `undefined` depending on how many matched.
+> - `currency.decimal` is a **number**, not the string `'2'`.
+> - `dialing_code` is the country calling code alone (`'1'`, not
+>   `'+1-268'`); the rest is in the new `area_codes`.
+> - `capital`, `currency` and `dialing_code` are **`undefined`** where a
+>   territory has none, not `''`.
+> - `cache`, `Array.prototype.unpack`/`unique` and the
+>   `country-list-js/data/*.json` deep imports are **gone**.
+> - Capitals, regions, names, currencies, subdivisions, borders and more
+>   were **corrected against their sources**. Values you compared against
+>   by string may differ.
+>
+> All twenty-one changes, with the reason for each, are in
+> [CHANGELOG.md](CHANGELOG.md#breaking-changes). To stay on the old
+> behaviour, pin `"country-list-js": "^3"`.
+
 Country data for 250 countries and territories: ISO 3166-1 codes, names,
 capitals, currencies, dialing codes, subdivisions, land borders and
 IANA time zones.

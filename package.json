@@ -1,6 +1,6 @@
 {
   "name": "country-list-js",
-  "version": "4.0.0-rc.1",
+  "version": "4.0.0",
   "description": "Country data for 250 countries and territories: ISO 3166-1 codes, names, capitals, currencies, dialing codes, subdivisions, borders and IANA time zones. No dependencies.",
   "homepage": "https://i-rocky.github.io/country-list-js",
   "author": {
