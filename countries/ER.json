@@ -1,10 +1,34 @@
 {
   "iso2": "ER",
   "iso3": "ERI",
+  "iso_numeric": "232",
   "name": "Eritrea",
+  "native_name": "ኤርትራ Eritrea إرتريا",
+  "demonym": "Eritrean",
   "continent": "AF",
   "region": "East Africa",
   "capital": "Asmara",
   "currency": "ERN",
-  "dialing_code": "291"
+  "languages": [
+    "ti",
+    "ar",
+    "en"
+  ],
+  "dialing_code": "291",
+  "tld": [
+    ".er"
+  ],
+  "area": 117600,
+  "latlng": [
+    15,
+    39
+  ],
+  "timezones": [
+    "Africa/Asmara"
+  ],
+  "borders": [
+    "DJ",
+    "ET",
+    "SD"
+  ]
 }

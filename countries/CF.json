@@ -1,10 +1,36 @@
 {
   "iso2": "CF",
   "iso3": "CAF",
+  "iso_numeric": "140",
   "name": "Central African Republic",
+  "native_name": "Ködörösêse tî Bêafrîka",
+  "demonym": "Central African",
   "continent": "AF",
   "region": "Central Africa",
   "capital": "Bangui",
   "currency": "XAF",
-  "dialing_code": "236"
+  "languages": [
+    "fr",
+    "sg"
+  ],
+  "dialing_code": "236",
+  "tld": [
+    ".cf"
+  ],
+  "area": 622984,
+  "latlng": [
+    7,
+    21
+  ],
+  "timezones": [
+    "Africa/Bangui"
+  ],
+  "borders": [
+    "CD",
+    "CG",
+    "CM",
+    "SD",
+    "SS",
+    "TD"
+  ]
 }

@@ -1,10 +1,14 @@
 {
   "iso2": "BL",
   "iso3": "BLM",
+  "iso_numeric": "652",
   "name": "Saint Barthelemy",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Gustavia",
   "currency": "EUR",
-  "dialing_code": "590"
+  "dialing_code": "590",
+  "timezones": [
+    "America/St_Barthelemy"
+  ]
 }

@@ -1,10 +1,30 @@
 {
   "iso2": "TL",
   "iso3": "TLS",
+  "iso_numeric": "626",
   "name": "East Timor",
+  "native_name": "Timor-Leste",
+  "demonym": "East Timorese",
   "continent": "OC",
   "region": "South-East Asia",
   "capital": "Dili",
   "currency": "USD",
-  "dialing_code": "670"
+  "languages": [
+    "pt"
+  ],
+  "dialing_code": "670",
+  "tld": [
+    ".tl"
+  ],
+  "area": 14874,
+  "latlng": [
+    -8.83333333,
+    125.91666666
+  ],
+  "timezones": [
+    "Asia/Dili"
+  ],
+  "borders": [
+    "ID"
+  ]
 }

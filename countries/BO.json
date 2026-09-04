@@ -1,12 +1,37 @@
 {
   "iso2": "BO",
   "iso3": "BOL",
+  "iso_numeric": "068",
   "name": "Bolivia",
+  "demonym": "Bolivian",
   "continent": "SA",
   "region": "South America",
   "capital": "Sucre",
   "currency": "BOB",
+  "languages": [
+    "es",
+    "ay",
+    "qu"
+  ],
   "dialing_code": "591",
+  "tld": [
+    ".bo"
+  ],
+  "area": 1098581,
+  "latlng": [
+    -17,
+    -65
+  ],
+  "timezones": [
+    "America/La_Paz"
+  ],
+  "borders": [
+    "AR",
+    "BR",
+    "CL",
+    "PE",
+    "PY"
+  ],
   "provinces": [
     {
       "name": "Cercado",

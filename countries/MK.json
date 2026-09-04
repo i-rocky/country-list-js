@@ -1,10 +1,34 @@
 {
   "iso2": "MK",
   "iso3": "MKD",
+  "iso_numeric": "807",
   "name": "Macedonia",
+  "native_name": "Македонија",
+  "demonym": "Macedonian",
   "continent": "EU",
   "region": "Balkans",
   "capital": "Skopje",
   "currency": "MKD",
-  "dialing_code": "389"
+  "languages": [
+    "mk"
+  ],
+  "dialing_code": "389",
+  "tld": [
+    ".mk"
+  ],
+  "area": 25713,
+  "latlng": [
+    41.83333333,
+    22
+  ],
+  "timezones": [
+    "Europe/Skopje"
+  ],
+  "borders": [
+    "AL",
+    "BG",
+    "GR",
+    "RS",
+    "XK"
+  ]
 }

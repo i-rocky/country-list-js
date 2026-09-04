@@ -1,10 +1,26 @@
 {
   "iso2": "GS",
   "iso3": "SGS",
+  "iso_numeric": "239",
   "name": "South Georgia and the South Sandwich Islands",
+  "native_name": "South Georgia",
+  "demonym": "South Georgia and the South Sandwich Islander",
   "continent": "AN",
   "region": "South America",
   "capital": "Grytviken",
   "currency": "GBP",
-  "dialing_code": ""
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "",
+  "tld": [
+    ".gs"
+  ],
+  "latlng": [
+    -54.5,
+    -37
+  ],
+  "timezones": [
+    "Atlantic/South_Georgia"
+  ]
 }

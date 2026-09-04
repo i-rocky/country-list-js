@@ -1,10 +1,30 @@
 {
   "iso2": "GL",
   "iso3": "GRL",
+  "iso_numeric": "304",
   "name": "Greenland",
+  "native_name": "Kalaallit Nunaat",
+  "demonym": "Greenlandic",
   "continent": "NA",
   "region": "North America",
   "capital": "Nuuk",
   "currency": "DKK",
-  "dialing_code": "299"
+  "languages": [
+    "kl"
+  ],
+  "dialing_code": "299",
+  "tld": [
+    ".gl"
+  ],
+  "area": 2166086,
+  "latlng": [
+    72,
+    -40
+  ],
+  "timezones": [
+    "America/Danmarkshavn",
+    "America/Nuuk",
+    "America/Scoresbysund",
+    "America/Thule"
+  ]
 }

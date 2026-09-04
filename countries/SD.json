@@ -1,10 +1,37 @@
 {
   "iso2": "SD",
   "iso3": "SDN",
+  "iso_numeric": "729",
   "name": "Sudan",
+  "native_name": "السودان",
+  "demonym": "Sudanese",
   "continent": "AF",
   "region": "Northern Africa, East Africa",
   "capital": "Khartoum",
   "currency": "SDG",
-  "dialing_code": "249"
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "dialing_code": "249",
+  "tld": [
+    ".sd"
+  ],
+  "area": 1886068,
+  "latlng": [
+    15,
+    30
+  ],
+  "timezones": [
+    "Africa/Khartoum"
+  ],
+  "borders": [
+    "CF",
+    "EG",
+    "ER",
+    "ET",
+    "LY",
+    "SS",
+    "TD"
+  ]
 }

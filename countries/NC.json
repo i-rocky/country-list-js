@@ -1,10 +1,27 @@
 {
   "iso2": "NC",
   "iso3": "NCL",
+  "iso_numeric": "540",
   "name": "New Caledonia",
+  "native_name": "Nouvelle-Calédonie",
+  "demonym": "New Caledonian",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Noumea",
   "currency": "XPF",
-  "dialing_code": "687"
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "687",
+  "tld": [
+    ".nc"
+  ],
+  "area": 18575,
+  "latlng": [
+    -21.5,
+    165.5
+  ],
+  "timezones": [
+    "Pacific/Noumea"
+  ]
 }

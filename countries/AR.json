@@ -1,12 +1,47 @@
 {
   "iso2": "AR",
   "iso3": "ARG",
+  "iso_numeric": "032",
   "name": "Argentina",
+  "demonym": "Argentinean",
   "continent": "SA",
   "region": "South America",
   "capital": "Buenos Aires",
   "currency": "ARS",
+  "languages": [
+    "es",
+    "gn"
+  ],
   "dialing_code": "54",
+  "tld": [
+    ".ar"
+  ],
+  "area": 2780400,
+  "latlng": [
+    -34,
+    -64
+  ],
+  "timezones": [
+    "America/Argentina/Buenos_Aires",
+    "America/Argentina/Catamarca",
+    "America/Argentina/Cordoba",
+    "America/Argentina/Jujuy",
+    "America/Argentina/La_Rioja",
+    "America/Argentina/Mendoza",
+    "America/Argentina/Rio_Gallegos",
+    "America/Argentina/Salta",
+    "America/Argentina/San_Juan",
+    "America/Argentina/San_Luis",
+    "America/Argentina/Tucuman",
+    "America/Argentina/Ushuaia"
+  ],
+  "borders": [
+    "BO",
+    "BR",
+    "CL",
+    "PY",
+    "UY"
+  ],
   "provinces": [
     {
       "name": "Ciudad Autónoma de Buenos Aires",

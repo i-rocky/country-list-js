@@ -1,10 +1,43 @@
 {
   "iso2": "ZA",
   "iso3": "ZAF",
+  "iso_numeric": "710",
   "name": "South Africa",
+  "demonym": "South African",
   "continent": "AF",
   "region": "Southern Africa",
   "capital": "Pretoria",
   "currency": "ZAR",
-  "dialing_code": "27"
+  "languages": [
+    "af",
+    "en",
+    "nr",
+    "st",
+    "ss",
+    "tn",
+    "ts",
+    "ve",
+    "xh",
+    "zu"
+  ],
+  "dialing_code": "27",
+  "tld": [
+    ".za"
+  ],
+  "area": 1221037,
+  "latlng": [
+    -29,
+    24
+  ],
+  "timezones": [
+    "Africa/Johannesburg"
+  ],
+  "borders": [
+    "BW",
+    "LS",
+    "MZ",
+    "NA",
+    "SZ",
+    "ZW"
+  ]
 }

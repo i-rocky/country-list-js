@@ -1,10 +1,42 @@
 {
   "iso2": "KZ",
   "iso3": "KAZ",
+  "iso_numeric": "398",
   "name": "Kazakhstan",
+  "native_name": "Қазақстан",
+  "demonym": "Kazakhstani",
   "continent": "AS",
   "region": "Central Asia",
   "capital": "Astana",
   "currency": "KZT",
-  "dialing_code": "7"
+  "languages": [
+    "kk",
+    "ru"
+  ],
+  "dialing_code": "7",
+  "tld": [
+    ".kz",
+    ".қаз"
+  ],
+  "area": 2724900,
+  "latlng": [
+    48,
+    68
+  ],
+  "timezones": [
+    "Asia/Almaty",
+    "Asia/Aqtau",
+    "Asia/Aqtobe",
+    "Asia/Atyrau",
+    "Asia/Oral",
+    "Asia/Qostanay",
+    "Asia/Qyzylorda"
+  ],
+  "borders": [
+    "CN",
+    "KG",
+    "RU",
+    "TM",
+    "UZ"
+  ]
 }

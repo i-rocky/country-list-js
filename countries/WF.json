@@ -1,10 +1,27 @@
 {
   "iso2": "WF",
   "iso3": "WLF",
+  "iso_numeric": "876",
   "name": "Wallis and Futuna",
+  "native_name": "Wallis et Futuna",
+  "demonym": "Wallis and Futuna Islander",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Mata Utu",
   "currency": "XPF",
-  "dialing_code": "681"
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "681",
+  "tld": [
+    ".wf"
+  ],
+  "area": 142,
+  "latlng": [
+    -13.3,
+    -176.2
+  ],
+  "timezones": [
+    "Pacific/Wallis"
+  ]
 }

@@ -1,10 +1,31 @@
 {
   "iso2": "LR",
   "iso3": "LBR",
+  "iso_numeric": "430",
   "name": "Liberia",
+  "demonym": "Liberian",
   "continent": "AF",
   "region": "Western Africa",
   "capital": "Monrovia",
   "currency": "LRD",
-  "dialing_code": "231"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "231",
+  "tld": [
+    ".lr"
+  ],
+  "area": 111369,
+  "latlng": [
+    6.5,
+    -9.5
+  ],
+  "timezones": [
+    "Africa/Monrovia"
+  ],
+  "borders": [
+    "CI",
+    "GN",
+    "SL"
+  ]
 }

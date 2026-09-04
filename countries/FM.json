@@ -1,10 +1,28 @@
 {
   "iso2": "FM",
   "iso3": "FSM",
+  "iso_numeric": "583",
   "name": "Micronesia",
+  "demonym": "Micronesian",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Palikir",
   "currency": "USD",
-  "dialing_code": "691"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "691",
+  "tld": [
+    ".fm"
+  ],
+  "area": 702,
+  "latlng": [
+    6.91666666,
+    158.25
+  ],
+  "timezones": [
+    "Pacific/Chuuk",
+    "Pacific/Kosrae",
+    "Pacific/Pohnpei"
+  ]
 }

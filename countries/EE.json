@@ -1,10 +1,31 @@
 {
   "iso2": "EE",
   "iso3": "EST",
+  "iso_numeric": "233",
   "name": "Estonia",
+  "native_name": "Eesti",
+  "demonym": "Estonian",
   "continent": "EU",
   "region": "Baltic Countries",
   "capital": "Tallinn",
   "currency": "EUR",
-  "dialing_code": "372"
+  "languages": [
+    "et"
+  ],
+  "dialing_code": "372",
+  "tld": [
+    ".ee"
+  ],
+  "area": 45227,
+  "latlng": [
+    59,
+    26
+  ],
+  "timezones": [
+    "Europe/Tallinn"
+  ],
+  "borders": [
+    "LV",
+    "RU"
+  ]
 }

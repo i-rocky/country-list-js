@@ -82,6 +82,23 @@ const norm = v => v === undefined ? undefined : JSON.parse(JSON.stringify(v));
 const label = c => c.fn + '(' + c.args.map(a => JSON.stringify(a)).join(', ') + ')';
 const asList = v => v === undefined ? [] : Array.isArray(v) ? v : [v];
 
+// 4.0 adds fields to the country record -- borders, timezones, native_name and
+// the rest.  The contract is that every field 3.1.8 returned still holds the
+// same value, not that no field was ever added, so comparisons are narrowed to
+// the keys the baseline actually has.  The new keys get pinned separately, by
+// name, below.
+
+function restrict(actual, expected) {
+    if (Array.isArray(expected))
+        return Array.isArray(actual) ? actual.map((v, i) => restrict(v, expected[i])) : actual;
+    if (expected && typeof expected == 'object' && actual && typeof actual == 'object') {
+        const out = {};
+        for (const k of Object.keys(expected)) out[k] = restrict(actual[k], expected[k]);
+        return out;
+    }
+    return actual;
+}
+
 // A recorded call still honours the contract if every country it returns is
 // byte-identical to 3.1.8, except for countries declared in CHANGED.  Stating
 // it that way rather than listing affected calls means a declared data change
@@ -90,9 +107,10 @@ const asList = v => v === undefined ? [] : Array.isArray(v) ? v : [v];
 // Nigeria -- while an undeclared change anywhere still fails.
 
 function compare(name, actual, expected) {
-    const index = list => new Map(list.map(o => [o.code.iso2, JSON.stringify(o)]));
-    const a = index(asList(norm(actual)));
-    const e = index(asList(norm(expected)));
+    const wanted = new Map(asList(norm(expected)).map(o => [o.code.iso2, o]));
+    const a = new Map(asList(norm(actual))
+        .map(o => [o.code.iso2, JSON.stringify(restrict(o, wanted.get(o.code.iso2) || o))]));
+    const e = new Map([...wanted].map(([k, o]) => [k, JSON.stringify(o)]));
 
     const offenders = [...new Set([...a.keys(), ...e.keys()])]
         .filter(k => a.get(k) !== e.get(k) && !(k in CHANGED)).sort();
@@ -136,7 +154,7 @@ describe('Contract: country records', () => {
         const undeclared = Object.keys(base.countries).filter(iso2 =>
             !(iso2 in CHANGED) &&
             JSON.stringify(base.countries[iso2]) !==
-            JSON.stringify(country.findByIso2(iso2)));
+            JSON.stringify(restrict(country.findByIso2(iso2), base.countries[iso2])));
         assert.deepStrictEqual(undeclared, [],
             'undeclared differences from 3.1.8: ' + undeclared.join(', '));
     });
@@ -145,15 +163,38 @@ describe('Contract: country records', () => {
         for (const iso2 of Object.keys(CHANGED))
             expect(JSON.stringify(base.countries[iso2]),
                 iso2 + ' is declared as changed but is identical to 3.1.8')
-                .to.not.equal(JSON.stringify(country.findByIso2(iso2)));
+                .to.not.equal(JSON.stringify(
+                    restrict(country.findByIso2(iso2), base.countries[iso2])));
     });
 
-    it('keeps the exact key set on every country record', () => {
+    it('still carries every key 3.1.8 carried, on every country', () => {
         const KEYS = ['capital', 'code', 'continent', 'currency',
                       'dialing_code', 'name', 'provinces', 'region'];
         for (const iso2 of Object.keys(base.countries))
+            expect(Object.keys(country.findByIso2(iso2)), iso2)
+                .to.include.members(KEYS);
+    });
+
+    it('carries exactly this key set -- no more, no fewer', () => {
+        // stated by name rather than counted, so that adding or dropping a
+        // field is a deliberate edit to this list
+        const KEYS = ['area', 'borders', 'capital', 'code', 'continent',
+                      'currency', 'demonym', 'dialing_code', 'languages',
+                      'latlng', 'name', 'native_name', 'provinces', 'region',
+                      'timezones', 'tld'];
+        for (const iso2 of Object.keys(country.all))
             expect(Object.keys(country.findByIso2(iso2)).sort(), iso2)
                 .to.deep.equal(KEYS);
+    });
+
+    it('keeps code as {iso2, iso3} and adds numeric alongside', () => {
+        for (const iso2 of Object.keys(base.countries)) {
+            const code = country.findByIso2(iso2).code;
+            expect(code.iso2, iso2).to.equal(base.countries[iso2].code.iso2);
+            expect(code.iso3, iso2).to.equal(base.countries[iso2].code.iso3);
+            expect(Object.keys(code).sort(), iso2)
+                .to.deep.equal(['iso2', 'iso3', 'numeric']);
+        }
     });
 
     it('carries `provinces` as a present-but-undefined key when there are none', () => {
@@ -175,13 +216,9 @@ describe('Contract: country records', () => {
         }
     });
 
-    it('keeps code as {iso2, iso3} and dialing_code as a string', () => {
-        for (const iso2 of Object.keys(base.countries)) {
-            const c = country.findByIso2(iso2);
-            expect(c.code, iso2).to.deep.equal(
-                {iso2: iso2, iso3: base.countries[iso2].code.iso3});
-            expect(c.dialing_code, iso2 + '.dialing_code').to.be.a('string');
-        }
+    it('keeps dialing_code a string', () => {
+        for (const iso2 of Object.keys(base.countries))
+            expect(country.findByIso2(iso2).dialing_code, iso2).to.be.a('string');
     });
 
     it('returns a fresh object each call, so callers cannot corrupt the store', () => {

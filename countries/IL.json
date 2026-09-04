@@ -1,10 +1,35 @@
 {
   "iso2": "IL",
   "iso3": "ISR",
+  "iso_numeric": "376",
   "name": "Israel",
+  "native_name": "יִשְׂרָאֵל",
+  "demonym": "Israeli",
   "continent": "AS",
   "region": "Western Asia, Middle East",
   "capital": "Jerusalem",
   "currency": "ILS",
-  "dialing_code": "972"
+  "languages": [
+    "he",
+    "ar"
+  ],
+  "dialing_code": "972",
+  "tld": [
+    ".il"
+  ],
+  "area": 20770,
+  "latlng": [
+    31.5,
+    34.75
+  ],
+  "timezones": [
+    "Asia/Jerusalem"
+  ],
+  "borders": [
+    "EG",
+    "JO",
+    "LB",
+    "PS",
+    "SY"
+  ]
 }

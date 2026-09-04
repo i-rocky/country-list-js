@@ -1,10 +1,27 @@
 {
   "iso2": "WS",
   "iso3": "WSM",
+  "iso_numeric": "882",
   "name": "Samoa",
+  "demonym": "Samoan",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Apia",
   "currency": "WST",
-  "dialing_code": "685"
+  "languages": [
+    "sm",
+    "en"
+  ],
+  "dialing_code": "685",
+  "tld": [
+    ".ws"
+  ],
+  "area": 2842,
+  "latlng": [
+    -13.58333333,
+    -172.33333333
+  ],
+  "timezones": [
+    "Pacific/Apia"
+  ]
 }

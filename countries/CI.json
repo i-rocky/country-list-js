@@ -1,10 +1,34 @@
 {
   "iso2": "CI",
   "iso3": "CIV",
+  "iso_numeric": "384",
   "name": "Ivory Coast",
+  "native_name": "Côte d'Ivoire",
+  "demonym": "Ivorian",
   "continent": "AF",
   "region": "Western Africa",
   "capital": "Yamoussoukro",
   "currency": "XOF",
-  "dialing_code": "225"
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "225",
+  "tld": [
+    ".ci"
+  ],
+  "area": 322463,
+  "latlng": [
+    8,
+    -5
+  ],
+  "timezones": [
+    "Africa/Abidjan"
+  ],
+  "borders": [
+    "BF",
+    "GH",
+    "GN",
+    "LR",
+    "ML"
+  ]
 }

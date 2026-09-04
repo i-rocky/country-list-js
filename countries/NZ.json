@@ -1,10 +1,29 @@
 {
   "iso2": "NZ",
   "iso3": "NZL",
+  "iso_numeric": "554",
   "name": "New Zealand",
+  "native_name": "New Zealand / Aotearoa",
+  "demonym": "New Zealander",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Wellington",
   "currency": "NZD",
-  "dialing_code": "64"
+  "languages": [
+    "en",
+    "mi"
+  ],
+  "dialing_code": "64",
+  "tld": [
+    ".nz"
+  ],
+  "area": 270467,
+  "latlng": [
+    -41,
+    174
+  ],
+  "timezones": [
+    "Pacific/Auckland",
+    "Pacific/Chatham"
+  ]
 }

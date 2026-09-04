@@ -1,10 +1,32 @@
 {
   "iso2": "OM",
   "iso3": "OMN",
+  "iso_numeric": "512",
   "name": "Oman",
+  "native_name": "عمان",
+  "demonym": "Omani",
   "continent": "AS",
   "region": "Western Asia, Middle East",
   "capital": "Muscat",
   "currency": "OMR",
-  "dialing_code": "968"
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "968",
+  "tld": [
+    ".om"
+  ],
+  "area": 309500,
+  "latlng": [
+    21,
+    57
+  ],
+  "timezones": [
+    "Asia/Muscat"
+  ],
+  "borders": [
+    "AE",
+    "SA",
+    "YE"
+  ]
 }

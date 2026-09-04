@@ -1,10 +1,30 @@
 {
   "iso2": "QA",
   "iso3": "QAT",
+  "iso_numeric": "634",
   "name": "Qatar",
+  "native_name": "قطر",
+  "demonym": "Qatari",
   "continent": "AS",
   "region": "Western Asia, Middle East",
   "capital": "Doha",
   "currency": "QAR",
-  "dialing_code": "974"
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "974",
+  "tld": [
+    ".qa"
+  ],
+  "area": 11586,
+  "latlng": [
+    25.5,
+    51.25
+  ],
+  "timezones": [
+    "Asia/Qatar"
+  ],
+  "borders": [
+    "SA"
+  ]
 }

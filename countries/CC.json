@@ -1,10 +1,27 @@
 {
   "iso2": "CC",
   "iso3": "CCK",
+  "iso_numeric": "166",
   "name": "Cocos Islands",
+  "native_name": "Cocos (Keeling) Islands",
+  "demonym": "Cocos Islander",
   "continent": "AS",
   "region": "Central America",
   "capital": "West Island",
   "currency": "AUD",
-  "dialing_code": "61"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "61",
+  "tld": [
+    ".cc"
+  ],
+  "area": 14,
+  "latlng": [
+    -12.5,
+    96.83333333
+  ],
+  "timezones": [
+    "Indian/Cocos"
+  ]
 }

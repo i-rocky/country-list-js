@@ -1,10 +1,26 @@
 {
   "iso2": "DM",
   "iso3": "DMA",
+  "iso_numeric": "212",
   "name": "Dominica",
+  "demonym": "Dominican",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Roseau",
   "currency": "XCD",
-  "dialing_code": "+1-767"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "+1-767",
+  "tld": [
+    ".dm"
+  ],
+  "area": 751,
+  "latlng": [
+    15.41666666,
+    -61.33333333
+  ],
+  "timezones": [
+    "America/Dominica"
+  ]
 }

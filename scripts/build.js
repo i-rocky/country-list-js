@@ -91,6 +91,15 @@ const compiled = countries.map(c => ({
     currency_symbol: currencies[c.currency].symbol,
     currency_decimal: currencies[c.currency].decimal,
     dialing_code: c.dialing_code,
+    iso_numeric: c.iso_numeric,
+    native_name: c.native_name,
+    demonym: c.demonym,
+    languages: c.languages,
+    tld: c.tld,
+    area: c.area,
+    latlng: c.latlng,
+    timezones: c.timezones,
+    borders: c.borders,
 }));
 
 const pick = f => Object.fromEntries(countries.map(c => [c.iso2, c[f]]));

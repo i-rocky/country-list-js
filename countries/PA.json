@@ -1,10 +1,31 @@
 {
   "iso2": "PA",
   "iso3": "PAN",
+  "iso_numeric": "591",
   "name": "Panama",
+  "native_name": "Panamá",
+  "demonym": "Panamanian",
   "continent": "NA",
   "region": "Central America",
   "capital": "Panama City",
   "currency": "PAB",
-  "dialing_code": "507"
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "507",
+  "tld": [
+    ".pa"
+  ],
+  "area": 75417,
+  "latlng": [
+    9,
+    -80
+  ],
+  "timezones": [
+    "America/Panama"
+  ],
+  "borders": [
+    "CO",
+    "CR"
+  ]
 }

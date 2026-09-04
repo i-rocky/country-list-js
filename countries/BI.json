@@ -1,10 +1,32 @@
 {
   "iso2": "BI",
   "iso3": "BDI",
+  "iso_numeric": "108",
   "name": "Burundi",
+  "demonym": "Burundian",
   "continent": "AF",
   "region": "East Africa, Central Africa",
   "capital": "Bujumbura",
   "currency": "BIF",
-  "dialing_code": "257"
+  "languages": [
+    "fr",
+    "rn"
+  ],
+  "dialing_code": "257",
+  "tld": [
+    ".bi"
+  ],
+  "area": 27834,
+  "latlng": [
+    -3.5,
+    30
+  ],
+  "timezones": [
+    "Africa/Bujumbura"
+  ],
+  "borders": [
+    "CD",
+    "RW",
+    "TZ"
+  ]
 }

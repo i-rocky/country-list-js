@@ -1,10 +1,31 @@
 {
   "iso2": "PT",
   "iso3": "PRT",
+  "iso_numeric": "620",
   "name": "Portugal",
+  "demonym": "Portuguese",
   "continent": "EU",
   "region": "Southern Europe",
   "capital": "Lisbon",
   "currency": "EUR",
-  "dialing_code": "351"
+  "languages": [
+    "pt"
+  ],
+  "dialing_code": "351",
+  "tld": [
+    ".pt"
+  ],
+  "area": 92090,
+  "latlng": [
+    39.5,
+    -8
+  ],
+  "timezones": [
+    "Atlantic/Azores",
+    "Atlantic/Madeira",
+    "Europe/Lisbon"
+  ],
+  "borders": [
+    "ES"
+  ]
 }

@@ -1,12 +1,37 @@
 {
   "iso2": "IT",
   "iso3": "ITA",
+  "iso_numeric": "380",
   "name": "Italy",
+  "native_name": "Italia",
+  "demonym": "Italian",
   "continent": "EU",
   "region": "Southern Europe",
   "capital": "Rome",
   "currency": "EUR",
+  "languages": [
+    "it"
+  ],
   "dialing_code": "39",
+  "tld": [
+    ".it"
+  ],
+  "area": 301336,
+  "latlng": [
+    42.83333333,
+    12.83333333
+  ],
+  "timezones": [
+    "Europe/Rome"
+  ],
+  "borders": [
+    "AT",
+    "CH",
+    "FR",
+    "SI",
+    "SM",
+    "VA"
+  ],
   "provinces": [
     {
       "short": "AG",

@@ -1,10 +1,15 @@
 {
   "iso2": "UM",
   "iso3": "UMI",
+  "iso_numeric": "581",
   "name": "United States Minor Outlying Islands",
   "continent": "OC",
   "region": "Oceania",
   "capital": "",
   "currency": "USD",
-  "dialing_code": "1"
+  "dialing_code": "1",
+  "timezones": [
+    "Pacific/Midway",
+    "Pacific/Wake"
+  ]
 }

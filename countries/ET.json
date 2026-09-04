@@ -1,12 +1,37 @@
 {
   "iso2": "ET",
   "iso3": "ETH",
+  "iso_numeric": "231",
   "name": "Ethiopia",
+  "native_name": "ኢትዮጵያ",
+  "demonym": "Ethiopian",
   "continent": "AF",
   "region": "East Africa",
   "capital": "Addis Ababa",
   "currency": "ETB",
+  "languages": [
+    "am"
+  ],
   "dialing_code": "251",
+  "tld": [
+    ".et"
+  ],
+  "area": 1104300,
+  "latlng": [
+    8,
+    38
+  ],
+  "timezones": [
+    "Africa/Addis_Ababa"
+  ],
+  "borders": [
+    "DJ",
+    "ER",
+    "KE",
+    "SD",
+    "SO",
+    "SS"
+  ],
   "provinces": [
     {
       "name": "Addis Ababa",

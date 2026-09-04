@@ -1,10 +1,31 @@
 {
   "iso2": "HT",
   "iso3": "HTI",
+  "iso_numeric": "332",
   "name": "Haiti",
+  "native_name": "Haïti",
+  "demonym": "Haitian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Port-au-Prince",
   "currency": "HTG",
-  "dialing_code": "509"
+  "languages": [
+    "fr",
+    "ht"
+  ],
+  "dialing_code": "509",
+  "tld": [
+    ".ht"
+  ],
+  "area": 27750,
+  "latlng": [
+    19,
+    -72.41666666
+  ],
+  "timezones": [
+    "America/Port-au-Prince"
+  ],
+  "borders": [
+    "DO"
+  ]
 }

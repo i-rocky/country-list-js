@@ -1,12 +1,39 @@
 {
   "iso2": "AT",
   "iso3": "AUT",
+  "iso_numeric": "040",
   "name": "Austria",
+  "native_name": "Österreich",
+  "demonym": "Austrian",
   "continent": "EU",
   "region": "Western Europe",
   "capital": "Vienna",
   "currency": "EUR",
+  "languages": [
+    "de"
+  ],
   "dialing_code": "43",
+  "tld": [
+    ".at"
+  ],
+  "area": 83871,
+  "latlng": [
+    47.33333333,
+    13.33333333
+  ],
+  "timezones": [
+    "Europe/Vienna"
+  ],
+  "borders": [
+    "CH",
+    "CZ",
+    "DE",
+    "HU",
+    "IT",
+    "LI",
+    "SI",
+    "SK"
+  ],
   "provinces": [
     {
       "short": "B",

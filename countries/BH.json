@@ -1,10 +1,27 @@
 {
   "iso2": "BH",
   "iso3": "BHR",
+  "iso_numeric": "048",
   "name": "Bahrain",
+  "native_name": "‏البحرين",
+  "demonym": "Bahraini",
   "continent": "AS",
   "region": "Western Asia, Middle East",
   "capital": "Manama",
   "currency": "BHD",
-  "dialing_code": "973"
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "973",
+  "tld": [
+    ".bh"
+  ],
+  "area": 765,
+  "latlng": [
+    26,
+    50.55
+  ],
+  "timezones": [
+    "Asia/Bahrain"
+  ]
 }

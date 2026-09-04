@@ -1,12 +1,33 @@
 {
   "iso2": "BD",
   "iso3": "BGD",
+  "iso_numeric": "050",
   "name": "Bangladesh",
+  "native_name": "বাংলাদেশ",
+  "demonym": "Bangladeshi",
   "continent": "AS",
   "region": "Southern Asia",
   "capital": "Dhaka",
   "currency": "BDT",
+  "languages": [
+    "bn"
+  ],
   "dialing_code": "880",
+  "tld": [
+    ".bd"
+  ],
+  "area": 147570,
+  "latlng": [
+    24,
+    90
+  ],
+  "timezones": [
+    "Asia/Dhaka"
+  ],
+  "borders": [
+    "IN",
+    "MM"
+  ],
   "provinces": [
     {
       "name": "বরগুনা",

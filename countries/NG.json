@@ -1,12 +1,34 @@
 {
   "iso2": "NG",
   "iso3": "NGA",
+  "iso_numeric": "566",
   "name": "Nigeria",
+  "demonym": "Nigerian",
   "continent": "AF",
   "region": "Western Africa",
   "capital": "Abuja",
   "currency": "NGN",
+  "languages": [
+    "en"
+  ],
   "dialing_code": "234",
+  "tld": [
+    ".ng"
+  ],
+  "area": 923768,
+  "latlng": [
+    10,
+    8
+  ],
+  "timezones": [
+    "Africa/Lagos"
+  ],
+  "borders": [
+    "BJ",
+    "CM",
+    "NE",
+    "TD"
+  ],
   "provinces": [
     {
       "name": "Anambra",

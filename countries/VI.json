@@ -1,10 +1,14 @@
 {
   "iso2": "VI",
   "iso3": "VIR",
+  "iso_numeric": "850",
   "name": "U.S. Virgin Islands",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Charlotte Amalie",
   "currency": "USD",
-  "dialing_code": "+1-340"
+  "dialing_code": "+1-340",
+  "timezones": [
+    "America/St_Thomas"
+  ]
 }

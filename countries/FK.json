@@ -1,10 +1,26 @@
 {
   "iso2": "FK",
   "iso3": "FLK",
+  "iso_numeric": "238",
   "name": "Falkland Islands",
+  "demonym": "Falkland Islander",
   "continent": "SA",
   "region": "South America",
   "capital": "Stanley",
   "currency": "FKP",
-  "dialing_code": "500"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "500",
+  "tld": [
+    ".fk"
+  ],
+  "area": 12173,
+  "latlng": [
+    -51.75,
+    -59
+  ],
+  "timezones": [
+    "Atlantic/Stanley"
+  ]
 }

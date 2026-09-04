@@ -1,10 +1,33 @@
 {
   "iso2": "SI",
   "iso3": "SVN",
+  "iso_numeric": "705",
   "name": "Slovenia",
+  "native_name": "Slovenija",
+  "demonym": "Slovene",
   "continent": "EU",
   "region": "Balkans",
   "capital": "Ljubljana",
   "currency": "EUR",
-  "dialing_code": "386"
+  "languages": [
+    "sl"
+  ],
+  "dialing_code": "386",
+  "tld": [
+    ".si"
+  ],
+  "area": 20273,
+  "latlng": [
+    46.11666666,
+    14.81666666
+  ],
+  "timezones": [
+    "Europe/Ljubljana"
+  ],
+  "borders": [
+    "AT",
+    "HR",
+    "HU",
+    "IT"
+  ]
 }

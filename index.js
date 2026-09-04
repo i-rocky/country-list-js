@@ -32,7 +32,12 @@ var self = module.exports = {
         return copy(self.cache.province[name]);
     },
 
-    findByPhoneNbr(nbr) {
+    // opts.longestMatch narrows the result to the most specific prefix:
+    // '+1246...' answers Barbados alone rather than [Barbados, UM, US,
+    // Canada].  Off by default -- the code comment in 3.1.8 says that is what
+    // it meant to do, but returning every match is what it has always done and
+    // what callers handle.
+    findByPhoneNbr(nbr, opts) {
         // a lookup has no business throwing on bad input: 3.1.8 raised a
         // TypeError for anything that was not a string, where every other
         // finder simply returned undefined
@@ -43,10 +48,13 @@ var self = module.exports = {
 
         // probe one hash per distinct prefix length, longest first, rather
         // than testing the number against all 250 prefixes
+        var longestOnly = !!(opts && opts.longestMatch);
         var hits = [];
         for (var i = 0; i < prefixLengths.length; i++) {
             var found = byPrefix[nbr.slice(0, prefixLengths[i])];
-            if (found) hits = hits.concat(found);
+            if (!found) continue;
+            hits = hits.concat(found);
+            if (longestOnly) break;
         }
         return pack(hits);
     },
@@ -75,6 +83,7 @@ var self = module.exports = {
 function transform(r) {
     if (!r) return;
     return {
+        // the eight fields 3.1.8 returned, in the order it returned them
         name: r.name,
         continent: r.continent,
         region: r.region,
@@ -86,7 +95,18 @@ function transform(r) {
         },
         dialing_code: r.dialing_code,
         provinces: r.provinces,
-        code: {iso2: r.iso2, iso3: r.iso3},
+        code: {iso2: r.iso2, iso3: r.iso3, numeric: r.iso_numeric},
+
+        // added in 4.0.  Always present, undefined where unknown, so every
+        // country has the same shape
+        native_name: r.native_name,
+        demonym: r.demonym,
+        languages: r.languages,
+        tld: r.tld,
+        area: r.area,
+        latlng: r.latlng,
+        timezones: r.timezones,
+        borders: r.borders,
     };
 }
 
@@ -121,7 +141,16 @@ function clone(c) {
         },
         dialing_code: c.dialing_code,
         provinces: c.provinces,
-        code: {iso2: c.code.iso2, iso3: c.code.iso3},
+        code: {iso2: c.code.iso2, iso3: c.code.iso3, numeric: c.code.numeric},
+
+        native_name: c.native_name,
+        demonym: c.demonym,
+        languages: c.languages,
+        tld: c.tld,
+        area: c.area,
+        latlng: c.latlng,
+        timezones: c.timezones,
+        borders: c.borders,
     };
 }
 

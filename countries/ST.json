@@ -1,10 +1,27 @@
 {
   "iso2": "ST",
   "iso3": "STP",
+  "iso_numeric": "678",
   "name": "Sao Tome and Principe",
+  "native_name": "São Tomé e Príncipe",
+  "demonym": "Sao Tomean",
   "continent": "AF",
   "region": "Central Africa",
   "capital": "Sao Tome",
   "currency": "STN",
-  "dialing_code": "239"
+  "languages": [
+    "pt"
+  ],
+  "dialing_code": "239",
+  "tld": [
+    ".st"
+  ],
+  "area": 964,
+  "latlng": [
+    1,
+    7
+  ],
+  "timezones": [
+    "Africa/Sao_Tome"
+  ]
 }

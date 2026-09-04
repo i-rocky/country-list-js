@@ -1,12 +1,36 @@
 {
   "iso2": "ID",
   "iso3": "IDN",
+  "iso_numeric": "360",
   "name": "Indonesia",
+  "demonym": "Indonesian",
   "continent": "AS",
   "region": "South-East Asia, Oceania",
   "capital": "Jakarta",
   "currency": "IDR",
+  "languages": [
+    "id"
+  ],
   "dialing_code": "62",
+  "tld": [
+    ".id"
+  ],
+  "area": 1904569,
+  "latlng": [
+    -5,
+    120
+  ],
+  "timezones": [
+    "Asia/Jakarta",
+    "Asia/Jayapura",
+    "Asia/Makassar",
+    "Asia/Pontianak"
+  ],
+  "borders": [
+    "MY",
+    "PG",
+    "TL"
+  ],
   "provinces": [
     {
       "short": "ID-AC",

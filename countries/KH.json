@@ -1,12 +1,34 @@
 {
   "iso2": "KH",
   "iso3": "KHM",
+  "iso_numeric": "116",
   "name": "Cambodia",
+  "native_name": "Kâmpŭchéa",
+  "demonym": "Cambodian",
   "continent": "AS",
   "region": "South-East Asia",
   "capital": "Phnom Penh",
   "currency": "KHR",
+  "languages": [
+    "km"
+  ],
   "dialing_code": "855",
+  "tld": [
+    ".kh"
+  ],
+  "area": 181035,
+  "latlng": [
+    13,
+    105
+  ],
+  "timezones": [
+    "Asia/Phnom_Penh"
+  ],
+  "borders": [
+    "LA",
+    "TH",
+    "VN"
+  ],
   "provinces": [
     {
       "name": "ភ្នំពេញ",

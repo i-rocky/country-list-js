@@ -1,10 +1,33 @@
 {
   "iso2": "GR",
   "iso3": "GRC",
+  "iso_numeric": "300",
   "name": "Greece",
+  "native_name": "Ελλάδα",
+  "demonym": "Greek",
   "continent": "EU",
   "region": "Southern Europe",
   "capital": "Athens",
   "currency": "EUR",
-  "dialing_code": "30"
+  "languages": [
+    "el"
+  ],
+  "dialing_code": "30",
+  "tld": [
+    ".gr"
+  ],
+  "area": 131990,
+  "latlng": [
+    39,
+    22
+  ],
+  "timezones": [
+    "Europe/Athens"
+  ],
+  "borders": [
+    "AL",
+    "BG",
+    "MK",
+    "TR"
+  ]
 }

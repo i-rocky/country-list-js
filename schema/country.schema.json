@@ -5,7 +5,16 @@
   "description": "One file per country under countries/, named <ISO2>.json. This is the source of truth; everything under data/ is generated from it.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["iso2", "iso3", "name", "continent", "region", "capital", "currency", "dialing_code"],
+  "required": [
+    "iso2",
+    "iso3",
+    "name",
+    "continent",
+    "region",
+    "capital",
+    "currency",
+    "dialing_code"
+  ],
   "properties": {
     "iso2": {
       "description": "ISO 3166-1 alpha-2 code. Must match the filename.",
@@ -17,15 +26,38 @@
       "type": "string",
       "pattern": "^[A-Z]{3}$"
     },
+    "iso_numeric": {
+      "description": "ISO 3166-1 numeric code, zero padded. Absent for XK, which is user-assigned and has none.",
+      "type": "string",
+      "pattern": "^[0-9]{3}$"
+    },
     "name": {
       "description": "Common short name in English, transliterated to ASCII.",
+      "type": "string",
+      "minLength": 1
+    },
+    "native_name": {
+      "description": "Endonym, where it differs from name. Present only when it differs.",
+      "type": "string",
+      "minLength": 1
+    },
+    "demonym": {
+      "description": "What a person from this country is called in English.",
       "type": "string",
       "minLength": 1
     },
     "continent": {
       "description": "Continent code, defined in reference/continents.json.",
       "type": "string",
-      "enum": ["AF", "AN", "AS", "EU", "NA", "OC", "SA"]
+      "enum": [
+        "AF",
+        "AN",
+        "AS",
+        "EU",
+        "NA",
+        "OC",
+        "SA"
+      ]
     },
     "region": {
       "description": "Sub-continental region. Free text, shared across countries.",
@@ -46,6 +78,57 @@
       "type": "string",
       "pattern": "^$|^ $|^\\+?[0-9]+(-[0-9]+)?( and [0-9-]+)?$"
     },
+    "languages": {
+      "description": "ISO 639-1 codes of official or widely used languages.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2,3}$"
+      }
+    },
+    "tld": {
+      "description": "Country code top-level domains, each with a leading dot. May be internationalized (Kazakhstan has .қаз).",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^\\..+$"
+      }
+    },
+    "area": {
+      "description": "Land area in square kilometres.",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "latlng": {
+      "description": "Approximate geographic centre, [latitude, longitude].",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "timezones": {
+      "description": "IANA time zone identifiers, from the tz database. Absent for uninhabited territories.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z_]+(/[A-Za-z_+-]+){1,2}$"
+      }
+    },
+    "borders": {
+      "description": "ISO 3166-1 alpha-2 codes of neighbours. The relation is symmetric: if A borders B then B borders A.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$"
+      }
+    },
     "provinces": {
       "description": "First-tier political subdivisions. Omit the key entirely rather than using an empty array.",
       "type": "array",
@@ -53,14 +136,29 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["name", "alias"],
+        "required": [
+          "name",
+          "alias"
+        ],
         "properties": {
-          "name": {"type": "string", "minLength": 1},
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
           "alias": {
             "description": "Alternative names. Always an array or null -- a bare string turns lookups into a substring search.",
             "oneOf": [
-              {"type": "null"},
-              {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+              {
+                "type": "null"
+              },
+              {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
             ]
           },
           "short": {

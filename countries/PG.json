@@ -1,10 +1,31 @@
 {
   "iso2": "PG",
   "iso3": "PNG",
+  "iso_numeric": "598",
   "name": "Papua New Guinea",
+  "native_name": "Papua Niugini",
+  "demonym": "Papua New Guinean",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Port Moresby",
   "currency": "PGK",
-  "dialing_code": "675"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "675",
+  "tld": [
+    ".pg"
+  ],
+  "area": 462840,
+  "latlng": [
+    -6,
+    147
+  ],
+  "timezones": [
+    "Pacific/Bougainville",
+    "Pacific/Port_Moresby"
+  ],
+  "borders": [
+    "ID"
+  ]
 }

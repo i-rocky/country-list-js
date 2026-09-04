@@ -1,12 +1,40 @@
 {
   "iso2": "IN",
   "iso3": "IND",
+  "iso_numeric": "356",
   "name": "India",
+  "native_name": "भारत",
+  "demonym": "Indian",
   "continent": "AS",
   "region": "Southern Asia",
   "capital": "New Delhi",
   "currency": "INR",
+  "languages": [
+    "hi",
+    "en"
+  ],
   "dialing_code": "91",
+  "tld": [
+    ".in"
+  ],
+  "area": 3287590,
+  "latlng": [
+    20,
+    77
+  ],
+  "timezones": [
+    "Asia/Kolkata"
+  ],
+  "borders": [
+    "AF",
+    "BD",
+    "BT",
+    "CN",
+    "LK",
+    "MM",
+    "NP",
+    "PK"
+  ],
   "provinces": [
     {
       "short": "AP",

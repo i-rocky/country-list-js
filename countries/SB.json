@@ -1,10 +1,26 @@
 {
   "iso2": "SB",
   "iso3": "SLB",
+  "iso_numeric": "090",
   "name": "Solomon Islands",
+  "demonym": "Solomon Islander",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Honiara",
   "currency": "SBD",
-  "dialing_code": "677"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "677",
+  "tld": [
+    ".sb"
+  ],
+  "area": 28896,
+  "latlng": [
+    -8,
+    159
+  ],
+  "timezones": [
+    "Pacific/Guadalcanal"
+  ]
 }

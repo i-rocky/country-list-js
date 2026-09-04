@@ -1,10 +1,31 @@
 {
   "iso2": "VE",
   "iso3": "VEN",
+  "iso_numeric": "862",
   "name": "Venezuela",
+  "demonym": "Venezuelan",
   "continent": "SA",
   "region": "South America",
   "capital": "Caracas",
   "currency": "VES",
-  "dialing_code": "58"
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "58",
+  "tld": [
+    ".ve"
+  ],
+  "area": 916445,
+  "latlng": [
+    8,
+    -66
+  ],
+  "timezones": [
+    "America/Caracas"
+  ],
+  "borders": [
+    "BR",
+    "CO",
+    "GY"
+  ]
 }

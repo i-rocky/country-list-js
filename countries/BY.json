@@ -1,10 +1,35 @@
 {
   "iso2": "BY",
   "iso3": "BLR",
+  "iso_numeric": "112",
   "name": "Belarus",
+  "native_name": "Белару́сь",
+  "demonym": "Belarusian",
   "continent": "EU",
   "region": "Central Europe",
   "capital": "Minsk",
   "currency": "BYN",
-  "dialing_code": "375"
+  "languages": [
+    "be",
+    "ru"
+  ],
+  "dialing_code": "375",
+  "tld": [
+    ".by"
+  ],
+  "area": 207600,
+  "latlng": [
+    53,
+    28
+  ],
+  "timezones": [
+    "Europe/Minsk"
+  ],
+  "borders": [
+    "LT",
+    "LV",
+    "PL",
+    "RU",
+    "UA"
+  ]
 }

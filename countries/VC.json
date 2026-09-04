@@ -1,10 +1,26 @@
 {
   "iso2": "VC",
   "iso3": "VCT",
+  "iso_numeric": "670",
   "name": "Saint Vincent and the Grenadines",
+  "demonym": "Saint Vincentian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Kingstown",
   "currency": "XCD",
-  "dialing_code": "+1-784"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "+1-784",
+  "tld": [
+    ".vc"
+  ],
+  "area": 389,
+  "latlng": [
+    13.25,
+    -61.2
+  ],
+  "timezones": [
+    "America/St_Vincent"
+  ]
 }

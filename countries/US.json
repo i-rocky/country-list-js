@@ -1,12 +1,60 @@
 {
   "iso2": "US",
   "iso3": "USA",
+  "iso_numeric": "840",
   "name": "United States",
+  "demonym": "American",
   "continent": "NA",
   "region": "North America",
   "capital": "Washington",
   "currency": "USD",
+  "languages": [
+    "en"
+  ],
   "dialing_code": "1",
+  "tld": [
+    ".us"
+  ],
+  "area": 9629091,
+  "latlng": [
+    38,
+    -97
+  ],
+  "timezones": [
+    "America/Adak",
+    "America/Anchorage",
+    "America/Boise",
+    "America/Chicago",
+    "America/Denver",
+    "America/Detroit",
+    "America/Indiana/Indianapolis",
+    "America/Indiana/Knox",
+    "America/Indiana/Marengo",
+    "America/Indiana/Petersburg",
+    "America/Indiana/Tell_City",
+    "America/Indiana/Vevay",
+    "America/Indiana/Vincennes",
+    "America/Indiana/Winamac",
+    "America/Juneau",
+    "America/Kentucky/Louisville",
+    "America/Kentucky/Monticello",
+    "America/Los_Angeles",
+    "America/Menominee",
+    "America/Metlakatla",
+    "America/New_York",
+    "America/Nome",
+    "America/North_Dakota/Beulah",
+    "America/North_Dakota/Center",
+    "America/North_Dakota/New_Salem",
+    "America/Phoenix",
+    "America/Sitka",
+    "America/Yakutat",
+    "Pacific/Honolulu"
+  ],
+  "borders": [
+    "CA",
+    "MX"
+  ],
   "provinces": [
     {
       "short": "AL",

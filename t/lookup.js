@@ -160,3 +160,45 @@ describe('Cache', () => {
         expect(country.cache.name.Denmark.name).to.equal('Denmark');
     });
 });
+
+describe('findByPhoneNbr longest-prefix option', () => {
+    const names = r => (r === undefined ? [] : Array.isArray(r) ? r : [r]).map(c => c.name);
+
+    it('returns every matching prefix by default, as it always has', () => {
+        expect(names(country.findByPhoneNbr('+12465551212')))
+            .to.deep.equal(['Barbados', 'United States Minor Outlying Islands',
+                            'United States', 'Canada']);
+        expect(names(country.findByPhoneNbr('+441534123456')))
+            .to.deep.equal(['Jersey', 'United Kingdom']);
+    });
+
+    it('narrows to the most specific prefix when asked', () => {
+        expect(country.findByPhoneNbr('+12465551212', {longestMatch: true}))
+            .to.have.property('name', 'Barbados');
+        expect(country.findByPhoneNbr('+441534123456', {longestMatch: true}))
+            .to.have.property('name', 'Jersey');
+    });
+
+    it('leaves genuine ties alone -- +1 really is three territories', () => {
+        expect(names(country.findByPhoneNbr('+12125551212', {longestMatch: true})))
+            .to.deep.equal(['United States Minor Outlying Islands',
+                            'United States', 'Canada']);
+    });
+
+    it('agrees with the default wherever only one prefix length matches', () => {
+        for (const iso2 of Object.keys(country.all)) {
+            const code = country.findByIso2(iso2).dialing_code.replace(/\D/g, '');
+            if (!code) continue;
+            const nbr = '+' + code + '5551212';
+            const a = names(country.findByPhoneNbr(nbr));
+            const b = names(country.findByPhoneNbr(nbr, {longestMatch: true}));
+            expect(a.slice(0, b.length), nbr).to.deep.equal(b);
+        }
+    });
+
+    it('ignores the option for input that matches nothing', () => {
+        for (const v of ['XX', '', '+', null, 42])
+            expect(country.findByPhoneNbr(v, {longestMatch: true}), String(v))
+                .to.equal(undefined);
+    });
+});

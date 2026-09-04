@@ -1,10 +1,23 @@
 {
   "iso2": "AQ",
   "iso3": "ATA",
+  "iso_numeric": "010",
   "name": "Antarctica",
   "continent": "AN",
   "region": "Antarctica",
   "capital": "",
   "currency": "XCD",
-  "dialing_code": ""
+  "dialing_code": "",
+  "timezones": [
+    "Antarctica/Casey",
+    "Antarctica/Davis",
+    "Antarctica/DumontDUrville",
+    "Antarctica/Mawson",
+    "Antarctica/McMurdo",
+    "Antarctica/Palmer",
+    "Antarctica/Rothera",
+    "Antarctica/Syowa",
+    "Antarctica/Troll",
+    "Antarctica/Vostok"
+  ]
 }

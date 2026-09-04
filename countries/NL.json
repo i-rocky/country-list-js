@@ -1,12 +1,33 @@
 {
   "iso2": "NL",
   "iso3": "NLD",
+  "iso_numeric": "528",
   "name": "Netherlands",
+  "native_name": "Nederland",
+  "demonym": "Dutch",
   "continent": "EU",
   "region": "Western Europe, Nordic Countries",
   "capital": "Amsterdam",
   "currency": "EUR",
+  "languages": [
+    "nl"
+  ],
   "dialing_code": "31",
+  "tld": [
+    ".nl"
+  ],
+  "area": 41850,
+  "latlng": [
+    52.5,
+    5.75
+  ],
+  "timezones": [
+    "Europe/Amsterdam"
+  ],
+  "borders": [
+    "BE",
+    "DE"
+  ],
   "provinces": [
     {
       "short": "DR",

@@ -37,7 +37,7 @@ describe('Lists', () => {
     })
 })
 describe('Searches', () => {
-    var DK = { 
+    var DK = {
         name: 'Denmark',
         continent: 'Europe',
         region: 'Scandinavia, Nordic Countries',
@@ -51,14 +51,28 @@ describe('Searches', () => {
             { name: 'Sjælland', alias: [ 'Zealand' ] },
             { name: 'Syddanmark', alias: null }
         ],
-        code: { iso2: 'DK', iso3: 'DNK' } 
+        code: { iso2: 'DK', iso3: 'DNK', numeric: '208' },
+        native_name: 'Danmark',
+        demonym: 'Danish',
+        languages: [ 'da' ],
+        tld: [ '.dk' ],
+        area: 43094,
+        latlng: [ 56, 10 ],
+        timezones: [ 'Europe/Copenhagen' ],
+        borders: [ 'DE' ]
     };
 
     it('There has to be specific number of countries', () => {
         expect(Object.keys(country.all).length).to.be.equal(NOF);
     });
-    it('There must be 8 keys in the object', () => {
-        expect(Object.keys(country.findByIso2('DK')).length).to.be.equal(8);
+    it('The object carries exactly these keys', () => {
+        // named rather than counted: a count says nothing about which field
+        // went missing, and it has to be edited every time one is added
+        expect(Object.keys(country.findByIso2('DK')).sort()).to.deep.equal([
+            'area', 'borders', 'capital', 'code', 'continent', 'currency',
+            'demonym', 'dialing_code', 'languages', 'latlng', 'name',
+            'native_name', 'provinces', 'region', 'timezones', 'tld'
+        ]);
     });
     it('Find by iso alpha 2', function() {
         var actual = country.findByIso2('DK');

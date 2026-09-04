@@ -1,12 +1,38 @@
 {
   "iso2": "ES",
   "iso3": "ESP",
+  "iso_numeric": "724",
   "name": "Spain",
+  "native_name": "España",
+  "demonym": "Spanish",
   "continent": "EU",
   "region": "Southern Europe",
   "capital": "Madrid",
   "currency": "EUR",
+  "languages": [
+    "es"
+  ],
   "dialing_code": "34",
+  "tld": [
+    ".es"
+  ],
+  "area": 505992,
+  "latlng": [
+    40,
+    -4
+  ],
+  "timezones": [
+    "Africa/Ceuta",
+    "Atlantic/Canary",
+    "Europe/Madrid"
+  ],
+  "borders": [
+    "AD",
+    "FR",
+    "GI",
+    "MA",
+    "PT"
+  ],
   "provinces": [
     {
       "name": "La Coruña",

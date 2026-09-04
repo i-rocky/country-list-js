@@ -1,10 +1,31 @@
 {
   "iso2": "TN",
   "iso3": "TUN",
+  "iso_numeric": "788",
   "name": "Tunisia",
+  "native_name": "تونس",
+  "demonym": "Tunisian",
   "continent": "AF",
   "region": "Northern Africa",
   "capital": "Tunis",
   "currency": "TND",
-  "dialing_code": "216"
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "216",
+  "tld": [
+    ".tn"
+  ],
+  "area": 163610,
+  "latlng": [
+    34,
+    9
+  ],
+  "timezones": [
+    "Africa/Tunis"
+  ],
+  "borders": [
+    "DZ",
+    "LY"
+  ]
 }

@@ -1,12 +1,41 @@
 {
   "iso2": "DE",
   "iso3": "DEU",
+  "iso_numeric": "276",
   "name": "Germany",
+  "native_name": "Deutschland",
+  "demonym": "German",
   "continent": "EU",
   "region": "Western Europe",
   "capital": "Berlin",
   "currency": "EUR",
+  "languages": [
+    "de"
+  ],
   "dialing_code": "49",
+  "tld": [
+    ".de"
+  ],
+  "area": 357114,
+  "latlng": [
+    51,
+    9
+  ],
+  "timezones": [
+    "Europe/Berlin",
+    "Europe/Busingen"
+  ],
+  "borders": [
+    "AT",
+    "BE",
+    "CH",
+    "CZ",
+    "DK",
+    "FR",
+    "LU",
+    "NL",
+    "PL"
+  ],
   "provinces": [
     {
       "short": "BW",

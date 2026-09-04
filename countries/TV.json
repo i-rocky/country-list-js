@@ -1,10 +1,26 @@
 {
   "iso2": "TV",
   "iso3": "TUV",
+  "iso_numeric": "798",
   "name": "Tuvalu",
+  "demonym": "Tuvaluan",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Funafuti",
   "currency": "AUD",
-  "dialing_code": "688"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "688",
+  "tld": [
+    ".tv"
+  ],
+  "area": 26,
+  "latlng": [
+    -8,
+    178
+  ],
+  "timezones": [
+    "Pacific/Funafuti"
+  ]
 }

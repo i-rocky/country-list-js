@@ -1,10 +1,31 @@
 {
   "iso2": "SE",
   "iso3": "SWE",
+  "iso_numeric": "752",
   "name": "Sweden",
+  "native_name": "Sverige",
+  "demonym": "Swedish",
   "continent": "EU",
   "region": "Scandinavia, Nordic Countries",
   "capital": "Stockholm",
   "currency": "SEK",
-  "dialing_code": "46"
+  "languages": [
+    "sv"
+  ],
+  "dialing_code": "46",
+  "tld": [
+    ".se"
+  ],
+  "area": 450295,
+  "latlng": [
+    62,
+    15
+  ],
+  "timezones": [
+    "Europe/Stockholm"
+  ],
+  "borders": [
+    "FI",
+    "NO"
+  ]
 }

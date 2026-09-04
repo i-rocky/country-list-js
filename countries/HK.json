@@ -1,10 +1,31 @@
 {
   "iso2": "HK",
   "iso3": "HKG",
+  "iso_numeric": "344",
   "name": "Hong Kong",
+  "native_name": "香港",
+  "demonym": "Chinese",
   "continent": "AS",
   "region": "East Asia",
   "capital": "Hong Kong",
   "currency": "HKD",
-  "dialing_code": "852"
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "dialing_code": "852",
+  "tld": [
+    ".hk"
+  ],
+  "area": 1104,
+  "latlng": [
+    22.25,
+    114.16666666
+  ],
+  "timezones": [
+    "Asia/Hong_Kong"
+  ],
+  "borders": [
+    "CN"
+  ]
 }
