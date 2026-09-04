@@ -33,13 +33,59 @@
     {
       "name": "Hà Nội",
       "alias": [
-        "Ha Noi"
+        "Ha Noi",
+        "Hanoi"
       ]
     },
     {
-      "name": "Hà Giang",
+      "name": "Thành phố Hồ Chí Minh",
       "alias": [
-        "Ha Giang"
+        "Thanh pho Ho Chi Minh",
+        "Ho Chi Minh City",
+        "Ho Chi Minh",
+        "Saigon"
+      ]
+    },
+    {
+      "name": "Hải Phòng",
+      "alias": [
+        "Hai Phong",
+        "Haiphong"
+      ]
+    },
+    {
+      "name": "Đà Nẵng",
+      "alias": [
+        "Da Nang"
+      ]
+    },
+    {
+      "name": "Huế",
+      "alias": [
+        "Hue",
+        "Thừa Thiên–Huế",
+        "Thua Thien–Hue",
+        "Thua Thien Hue",
+        "Thua Thien-Hue"
+      ]
+    },
+    {
+      "name": "Cần Thơ",
+      "alias": [
+        "Can Tho",
+        "Can Thơ"
+      ]
+    },
+    {
+      "name": "Quảng Ninh",
+      "alias": [
+        "Quang Ninh"
+      ]
+    },
+    {
+      "name": "Đồng Nai",
+      "alias": [
+        "Dong Nai"
       ]
     },
     {
@@ -49,21 +95,27 @@
       ]
     },
     {
-      "name": "Bắc Kạn",
+      "name": "Lạng Sơn",
       "alias": [
-        "Bac Kan"
+        "Lang Son"
+      ]
+    },
+    {
+      "name": "Phú Thọ",
+      "alias": [
+        "Phu Tho"
+      ]
+    },
+    {
+      "name": "Thái Nguyên",
+      "alias": [
+        "Thai Nguyen"
       ]
     },
     {
       "name": "Tuyên Quang",
       "alias": [
         "Tuyen Quang"
-      ]
-    },
-    {
-      "name": "Lào Cai",
-      "alias": [
-        "Lao Cai"
       ]
     },
     {
@@ -79,57 +131,15 @@
       ]
     },
     {
+      "name": "Lào Cai",
+      "alias": [
+        "Lao Cai"
+      ]
+    },
+    {
       "name": "Sơn La",
       "alias": [
         "Son La"
-      ]
-    },
-    {
-      "name": "Yên Bái",
-      "alias": [
-        "Yen Bai"
-      ]
-    },
-    {
-      "name": "Hòa Bình",
-      "alias": [
-        "Hoa Binh"
-      ]
-    },
-    {
-      "name": "Thái Nguyên",
-      "alias": [
-        "Thai Nguyen"
-      ]
-    },
-    {
-      "name": "Lạng Sơn",
-      "alias": [
-        "Lang Son"
-      ]
-    },
-    {
-      "name": "Quảng Ninh",
-      "alias": [
-        "Quang Ninh"
-      ]
-    },
-    {
-      "name": "Bắc Giang",
-      "alias": [
-        "Bac Giang"
-      ]
-    },
-    {
-      "name": "Phú Thọ",
-      "alias": [
-        "Phu Tho"
-      ]
-    },
-    {
-      "name": "Vĩnh Phúc",
-      "alias": [
-        "Vinh Phuc"
       ]
     },
     {
@@ -139,39 +149,9 @@
       ]
     },
     {
-      "name": "Hải Dương",
-      "alias": [
-        "Hai Duong"
-      ]
-    },
-    {
-      "name": "Hải Phòng",
-      "alias": [
-        "Hai Phong"
-      ]
-    },
-    {
       "name": "Hưng Yên",
       "alias": [
         "Hung Yen"
-      ]
-    },
-    {
-      "name": "Thái Bình",
-      "alias": [
-        "Thai Binh"
-      ]
-    },
-    {
-      "name": "Hà Nam",
-      "alias": [
-        "Ha Nam"
-      ]
-    },
-    {
-      "name": "Nam Định",
-      "alias": [
-        "Nam Dinh"
       ]
     },
     {
@@ -199,37 +179,9 @@
       ]
     },
     {
-      "name": "Quảng Bình",
-      "alias": [
-        "Quang Binh"
-      ]
-    },
-    {
       "name": "Quảng Trị",
       "alias": [
         "Quang Tri"
-      ]
-    },
-    {
-      "name": "Huế",
-      "alias": [
-        "Hue",
-        "Thừa Thiên–Huế",
-        "Thua Thien–Hue",
-        "Thua Thien Hue",
-        "Thua Thien-Hue"
-      ]
-    },
-    {
-      "name": "Đà Nẵng",
-      "alias": [
-        "Da Nang"
-      ]
-    },
-    {
-      "name": "Quảng Nam",
-      "alias": [
-        "Quang Nam"
       ]
     },
     {
@@ -239,53 +191,19 @@
       ]
     },
     {
-      "name": "Bình Định",
-      "alias": [
-        "Binh Dinh"
-      ]
-    },
-    {
-      "name": "Phú Yên",
-      "alias": [
-        "Phu Yen"
-      ]
-    },
-    {
-      "name": "Khánh Hòa",
-      "alias": [
-        "Khanh Hoa"
-      ]
-    },
-    {
-      "name": "Ninh Thuận",
-      "alias": [
-        "Ninh Thuan"
-      ]
-    },
-    {
-      "name": "Bình Thuận",
-      "alias": [
-        "Binh Thuan"
-      ]
-    },
-    {
-      "name": "Kon Tum",
-      "alias": null
-    },
-    {
-      "name": "Gia Lai",
-      "alias": null
-    },
-    {
       "name": "Đắk Lắk",
       "alias": [
         "Dak Lak"
       ]
     },
     {
-      "name": "Đắk Nông",
+      "name": "Gia Lai",
+      "alias": null
+    },
+    {
+      "name": "Khánh Hòa",
       "alias": [
-        "Dak Nong"
+        "Khanh Hoa"
       ]
     },
     {
@@ -295,71 +213,9 @@
       ]
     },
     {
-      "name": "Bình Phước",
-      "alias": [
-        "Binh Phuoc"
-      ]
-    },
-    {
       "name": "Tây Ninh",
       "alias": [
         "Tay Ninh"
-      ]
-    },
-    {
-      "name": "Bình Dương",
-      "alias": [
-        "Binh Duong"
-      ]
-    },
-    {
-      "name": "Đồng Nai",
-      "alias": [
-        "Dong Nai"
-      ]
-    },
-    {
-      "name": "Bà Rịa-Vũng Tàu",
-      "alias": [
-        "Ba Ria-Vung Tau",
-        "Ba Ria Vung Tau",
-        "BRVT",
-        "Bà Rịa–Vũng Tàu",
-        "Ba Ria–Vung Tau"
-      ]
-    },
-    {
-      "name": "Thành phố Hồ Chí Minh",
-      "alias": [
-        "Thanh pho Ho Chi Minh"
-      ]
-    },
-    {
-      "name": "Long An",
-      "alias": null
-    },
-    {
-      "name": "Tiền Giang",
-      "alias": [
-        "Tien Giang"
-      ]
-    },
-    {
-      "name": "Bến Tre",
-      "alias": [
-        "Ben Tre"
-      ]
-    },
-    {
-      "name": "Trà Vinh",
-      "alias": [
-        "Tra Vinh"
-      ]
-    },
-    {
-      "name": "Vĩnh Long",
-      "alias": [
-        "Vinh Long"
       ]
     },
     {
@@ -373,34 +229,9 @@
       "alias": null
     },
     {
-      "name": "Kiên Giang",
+      "name": "Vĩnh Long",
       "alias": [
-        "Kien Giang"
-      ]
-    },
-    {
-      "name": "Cần Thơ",
-      "alias": [
-        "Can Tho",
-        "Can Thơ"
-      ]
-    },
-    {
-      "name": "Hậu Giang",
-      "alias": [
-        "Hau Giang"
-      ]
-    },
-    {
-      "name": "Sóc Trăng",
-      "alias": [
-        "Soc Trang"
-      ]
-    },
-    {
-      "name": "Bạc Liêu",
-      "alias": [
-        "Bac Lieu"
+        "Vinh Long"
       ]
     },
     {

@@ -259,7 +259,7 @@ describe('Edge cases', () => {
         expect(country.findByProvince('Sjælland')[0].name).to.equal('Denmark');
         expect(country.findByProvince('Zealand')[0].name).to.equal('Denmark');
         expect(country.findByProvince('Muğla')[0].name).to.equal('Türkiye');
-        expect(country.findByProvince('Bình Phước')[0].name).to.equal('Vietnam');
+        expect(country.findByProvince('Bắc Ninh')[0].name).to.equal('Vietnam');
         expect(country.findByProvince('বরিশাল')[0].name).to.equal('Bangladesh');
         expect(country.findByName('Ivory Coast').code.iso2).to.equal('CI');
         expect(country.findByName("Côte d'Ivoire").code.iso2).to.equal('CI');
@@ -282,12 +282,12 @@ describe('Edge cases', () => {
             .to.be.greaterThan(100);
     });
 
-    it('does not turn a province alias into a substring search', () => {
-        // three province aliases are bare strings rather than arrays, and
-        // 'Binh Phuoc'.indexOf('B') > -1, so findByProvince('B') used to
-        // answer Vietnam
-        expect(country.findByProvince('Binh Phuoc')[0].name).to.equal('Vietnam');
-        for (const q of ['B', 'Binh', 'oc', 'Zeal', 'and', 'a'])
+    it('matches a province alias whole, never as a substring', () => {
+        // aliases are compared as list members. Held as bare strings, as three
+        // once were, String.indexOf makes every query a substring search and
+        // findByProvince('B') answers whichever country sorts first.
+        expect(country.findByProvince('Bac Ninh')[0].name).to.equal('Vietnam');
+        for (const q of ['B', 'Bac', 'inh', 'Zeal', 'and', 'a'])
             expect(country.findByProvince(q), q).to.deep.equal([]);
     });
 
