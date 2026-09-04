@@ -2,7 +2,7 @@
 
 // The compatibility contract.
 //
-// t/baseline-3.1.8.json is a capture of the observable surface of the real,
+// test/fixtures/baseline-3.1.8.json is a capture of the observable surface of the real,
 // published country-list-js@3.1.8 -- the version that 62k downloads a month
 // are actually running.  Every assertion here says "4.x still does what 3.1.8
 // did".  Anything that legitimately changes must be declared below, with a
@@ -10,7 +10,7 @@
 
 const expect = require('chai').expect;
 const assert = require('assert');
-const base = require('./baseline-3.1.8.json');
+const base = require('./fixtures/baseline-3.1.8.json');
 const country = require('../index');
 
 // Country records that intentionally differ from published 3.1.8.

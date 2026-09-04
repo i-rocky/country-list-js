@@ -180,7 +180,7 @@ describe('Edge cases', () => {
 
     it('adds nothing enumerable to Array.prototype', () => {
         // an enumerable prototype property shows up in every for..in loop over
-        // an array anywhere in the host application.  t/index.js deliberately
+        // an array anywhere in the host application.  test/api.js deliberately
         // pollutes Object.prototype, so assert about our own two properties
         // rather than demanding a pristine environment
         const seen = [];

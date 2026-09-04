@@ -39,12 +39,12 @@ try {
                 '--no-audit', '--no-fund'], dir);
 
     for (const f of ['cjs.js', 'esm.mjs'])
-        fs.copyFileSync(path.join(root, 't', 'package', f), path.join(dir, f));
+        fs.copyFileSync(path.join(root, 'test', 'package', f), path.join(dir, f));
 
     console.log();
     run('node', ['cjs.js'], dir);
     run('node', ['esm.mjs'], dir);
-    run('node', [path.join(root, 't', 'package', 'browser.js')], root);
+    run('node', [path.join(root, 'test', 'package', 'browser.js')], root);
 
     console.log('\npackage verified against the published %s', BASELINE);
 } catch (e) {

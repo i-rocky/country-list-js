@@ -66,7 +66,7 @@ the break sat on `master` for nearly two years because nothing checked.
 
 ## Changing behaviour
 
-The public API is frozen. `t/contract.js` diffs this package against the real,
+The public API is frozen. `test/contract.js` diffs this package against the real,
 published 3.1.8 for all 250 countries and 42 recorded calls, and it fails on
 any difference that is not declared in that file with a reason. It also fails
 if a declared difference turns out to be identical, so the list cannot go
