@@ -23,15 +23,34 @@
     }
   ],
   "main": "index.js",
+  "module": "dist/index.mjs",
   "types": "index.d.ts",
+  "unpkg": "dist/country.min.js",
+  "jsdelivr": "dist/country.min.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index.js": "./index.js",
+    "./index": "./index.js",
+    "./data/*.json": "./data/*.json",
+    "./data/*": "./data/*.json",
+    "./dist/*": "./dist/*",
+    "./schema/*": "./schema/*",
+    "./package.json": "./package.json"
+  },
   "files": [
     "index.js",
     "index.d.ts",
     "data/",
-    "schema/",
     "dist/",
+    "schema/",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "keywords": [
     "country",
@@ -45,30 +64,22 @@
   ],
   "scripts": {
     "build:data": "node scripts/build.js",
+    "build:types": "tsc",
+    "build:bundle": "node scripts/bundle.js",
+    "build": "npm run build:data && npm run build:types && npm run build:bundle",
     "validate": "node scripts/validate.js",
-    "prepare": "npm run build:data",
-    "pretest": "npm run build:data",
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build",
+    "pretest": "npm run build",
     "test": "eslint . && npm run validate && mocha t/*.js",
-    "build": "gulp",
-    "preversion": "npm run test"
+    "verify:package": "node scripts/verify-package.js"
   },
   "devDependencies": {
     "ajv": "^8.20.0",
-    "browserify": "^16.2.3",
     "chai": "^4.0.2",
+    "esbuild": "^0.25.12",
     "eslint": "^9.32.0",
-    "gulp": "^5.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-streamify": "^1.0.2",
-    "gulp-uglify-es": "^3.0.0",
-    "micro": "^9.3.3",
-    "micro-dev": "^3.0.0",
     "mocha": "^10.2.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "test-listen": "^1.1.0",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "typescript": "^5.9.3"
   }
 }

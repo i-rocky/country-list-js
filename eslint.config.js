@@ -21,6 +21,10 @@ module.exports = [
         languageOptions: {globals: {...globals.mocha}},
     },
     {
+        files: ['**/*.mjs'],
+        languageOptions: {sourceType: 'module', globals: {...globals.node}},
+    },
+    {
         ignores: ['dist/**', 'node_modules/**'],
     },
 ];
