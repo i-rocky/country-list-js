@@ -1,10 +1,33 @@
 {
   "iso2": "BJ",
   "iso3": "BEN",
+  "iso_numeric": "204",
   "name": "Benin",
+  "native_name": "Bénin",
+  "demonym": "Beninese",
   "continent": "AF",
   "region": "Western Africa",
   "capital": "Porto-Novo",
   "currency": "XOF",
-  "dialing_code": "229"
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "229",
+  "tld": [
+    ".bj"
+  ],
+  "area": 112622,
+  "latlng": [
+    9.5,
+    2.25
+  ],
+  "timezones": [
+    "Africa/Porto-Novo"
+  ],
+  "borders": [
+    "BF",
+    "NE",
+    "NG",
+    "TG"
+  ]
 }

@@ -6,12 +6,20 @@
 
 var records = require('./data/countries.json');
 var provincesByCode = require('./data/provinces.json');
+var retiredCurrencies = require('./data/retired-currencies.json');
+var nameAliases = require('./data/name-aliases.json');
 
 var self = module.exports = {
     all: {},
     cache: {},
 
-    findByIso2: code => transform(self.all[code]),
+    findByIso2(code) {
+        var r = self.all[code];
+        if (r) return transform(r);
+        if (typeof code != 'string') return;
+        var hit = lower.iso2[code.toLowerCase()];
+        return hit && transform(hit[0]);
+    },
     findByIso3: code => find('iso3', code),
     findByName: name => find('name', name),
     findByCapital: name => find('capital', name),
@@ -24,7 +32,12 @@ var self = module.exports = {
         return copy(self.cache.province[name]);
     },
 
-    findByPhoneNbr(nbr) {
+    // opts.longestMatch narrows the result to the most specific prefix:
+    // '+1246...' answers Barbados alone rather than [Barbados, UM, US,
+    // Canada].  Off by default -- the code comment in 3.1.8 says that is what
+    // it meant to do, but returning every match is what it has always done and
+    // what callers handle.
+    findByPhoneNbr(nbr, opts) {
         // a lookup has no business throwing on bad input: 3.1.8 raised a
         // TypeError for anything that was not a string, where every other
         // finder simply returned undefined
@@ -35,10 +48,13 @@ var self = module.exports = {
 
         // probe one hash per distinct prefix length, longest first, rather
         // than testing the number against all 250 prefixes
+        var longestOnly = !!(opts && opts.longestMatch);
         var hits = [];
         for (var i = 0; i < prefixLengths.length; i++) {
             var found = byPrefix[nbr.slice(0, prefixLengths[i])];
-            if (found) hits = hits.concat(found);
+            if (!found) continue;
+            hits = hits.concat(found);
+            if (longestOnly) break;
         }
         return pack(hits);
     },
@@ -67,6 +83,7 @@ var self = module.exports = {
 function transform(r) {
     if (!r) return;
     return {
+        // the eight fields 3.1.8 returned, in the order it returned them
         name: r.name,
         continent: r.continent,
         region: r.region,
@@ -78,7 +95,18 @@ function transform(r) {
         },
         dialing_code: r.dialing_code,
         provinces: r.provinces,
-        code: {iso2: r.iso2, iso3: r.iso3},
+        code: {iso2: r.iso2, iso3: r.iso3, numeric: r.iso_numeric},
+
+        // added in 4.0.  Always present, undefined where unknown, so every
+        // country has the same shape
+        native_name: r.native_name,
+        demonym: r.demonym,
+        languages: r.languages,
+        tld: r.tld,
+        area: r.area,
+        latlng: r.latlng,
+        timezones: r.timezones,
+        borders: r.borders,
     };
 }
 
@@ -113,20 +141,60 @@ function clone(c) {
         },
         dialing_code: c.dialing_code,
         provinces: c.provinces,
-        code: {iso2: c.code.iso2, iso3: c.code.iso3},
+        code: {iso2: c.code.iso2, iso3: c.code.iso3, numeric: c.code.numeric},
+
+        native_name: c.native_name,
+        demonym: c.demonym,
+        languages: c.languages,
+        tld: c.tld,
+        area: c.area,
+        latlng: c.latlng,
+        timezones: c.timezones,
+        borders: c.borders,
     };
 }
 
 function find(field, value) {
     if (!(field in self.cache)) self.cache[field] = {};
-    if (!(value in self.cache[field]))
-        self.cache[field][value] = pack(index[field][value]);
-    return copy(self.cache[field][value]);
+    if (value in self.cache[field]) return copy(self.cache[field][value]);
+
+    var hit = pack(resolve(field, value));
+
+    // only hits are cached.  3.1.8 cached misses too, so a caller feeding user
+    // input to findByName grew the cache by one key per distinct typo, with
+    // nothing to evict it.  Lookups are index reads now, so the cache buys no
+    // speed -- it is kept because it is observable, not because it is needed.
+    if (hit) self.cache[field][value] = hit;
+    return copy(hit);
+}
+
+// exact match first, always.  Everything after it only ever turns a lookup
+// that used to answer undefined into a hit; no query that works today can
+// start answering something else.
+
+function resolve(field, value) {
+    var hit = index[field][value];
+    if (hit) return hit;
+    if (typeof value != 'string') return;
+
+    if (field == 'name' && nameAliases[value])
+        return [self.all[nameAliases[value]]];
+
+    // the README has claimed case-insensitive search since 3.1.0 and it has
+    // never been true: findByName('denmark') answered undefined
+    var key = value.toLowerCase();
+    hit = lower[field][key];
+    if (hit) return hit;
+
+    if (field == 'name' && lowerAliases[key])
+        return [self.all[lowerAliases[key]]];
 }
 
 // -- indexes -----------------------------------------------------------------
 
 var index = {iso3: {}, name: {}, capital: {}, currency: {}};
+var lower = {iso2: {}, iso3: {}, name: {}, capital: {}, currency: {}};
+var lowerAliases = {};
 var byPrefix = {};
 var prefixLengths = [];
 
@@ -143,9 +211,11 @@ var prefixLengths = [];
 
         self.all[r.iso2] = r;
 
-        for (var f in index) {
+        for (var f in lower) {
             var v = r[f];
-            (index[f][v] || (index[f][v] = [])).push(r);
+            if (f in index) (index[f][v] || (index[f][v] = [])).push(r);
+            var k = String(v).toLowerCase();
+            (lower[f][k] || (lower[f][k] = [])).push(r);
         }
 
         var prefix = r.dialing_code.replace(/\D/g, '');
@@ -163,6 +233,20 @@ var prefixLengths = [];
 
     // longest prefix first, so +1-246 leads Barbados ahead of the +1 block
     prefixLengths = Object.keys(lengths).map(Number).sort((a, b) => b - a);
+
+    // Codes ISO 4217 has retired resolve to the countries that used them, so
+    // correcting the data does not silently turn a working findByCurrency
+    // call into undefined.  Folding them into the index rather than branching
+    // at lookup time keeps the hot path a single hash read.  An active code
+    // always wins: none currently collide, and this makes sure of it.
+    for (var code in retiredCurrencies)
+        if (!index.currency[code]) {
+            var was = retiredCurrencies[code].countries.map(c => self.all[c]);
+            index.currency[code] = was;
+            lower.currency[code.toLowerCase()] = lower.currency[code.toLowerCase()] || was;
+        }
+
+    for (var alias in nameAliases) lowerAliases[alias.toLowerCase()] = nameAliases[alias];
 })();
 
 // province lookup is built on the first call rather than at load: it walks

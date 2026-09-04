@@ -1,10 +1,25 @@
 {
   "iso2": "YT",
   "iso3": "MYT",
+  "iso_numeric": "175",
   "name": "Mayotte",
+  "demonym": "French",
   "continent": "AF",
   "region": "East Africa",
   "capital": "Mamoudzou",
   "currency": "EUR",
-  "dialing_code": "262"
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "262",
+  "tld": [
+    ".yt"
+  ],
+  "latlng": [
+    -12.83333333,
+    45.16666666
+  ],
+  "timezones": [
+    "Indian/Mayotte"
+  ]
 }

@@ -1,12 +1,29 @@
 {
   "iso2": "PH",
   "iso3": "PHL",
+  "iso_numeric": "608",
   "name": "Philippines",
+  "native_name": "Pilipinas / Philippines",
+  "demonym": "Filipino",
   "continent": "AS",
   "region": "South-East Asia",
   "capital": "Manila",
   "currency": "PHP",
+  "languages": [
+    "en"
+  ],
   "dialing_code": "63",
+  "tld": [
+    ".ph"
+  ],
+  "area": 342353,
+  "latlng": [
+    13,
+    122
+  ],
+  "timezones": [
+    "Asia/Manila"
+  ],
   "provinces": [
     {
       "name": "Abra",

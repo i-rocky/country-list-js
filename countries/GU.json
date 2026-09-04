@@ -1,10 +1,28 @@
 {
   "iso2": "GU",
   "iso3": "GUM",
+  "iso_numeric": "316",
   "name": "Guam",
+  "demonym": "Guamanian",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Hagatna",
   "currency": "USD",
-  "dialing_code": "+1-671"
+  "languages": [
+    "en",
+    "ch",
+    "es"
+  ],
+  "dialing_code": "+1-671",
+  "tld": [
+    ".gu"
+  ],
+  "area": 549,
+  "latlng": [
+    13.46666666,
+    144.78333333
+  ],
+  "timezones": [
+    "Pacific/Guam"
+  ]
 }

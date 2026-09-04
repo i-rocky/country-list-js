@@ -1,10 +1,27 @@
 {
   "iso2": "MU",
   "iso3": "MUS",
+  "iso_numeric": "480",
   "name": "Mauritius",
+  "native_name": "Maurice",
+  "demonym": "Mauritian",
   "continent": "AF",
   "region": "East Africa",
   "capital": "Port Louis",
   "currency": "MUR",
-  "dialing_code": "230"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "230",
+  "tld": [
+    ".mu"
+  ],
+  "area": 2040,
+  "latlng": [
+    -20.28333333,
+    57.55
+  ],
+  "timezones": [
+    "Indian/Mauritius"
+  ]
 }

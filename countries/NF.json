@@ -1,10 +1,26 @@
 {
   "iso2": "NF",
   "iso3": "NFK",
+  "iso_numeric": "574",
   "name": "Norfolk Island",
+  "demonym": "Norfolk Islander",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Kingston",
   "currency": "AUD",
-  "dialing_code": "672"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "672",
+  "tld": [
+    ".nf"
+  ],
+  "area": 36,
+  "latlng": [
+    -29.03333333,
+    167.95
+  ],
+  "timezones": [
+    "Pacific/Norfolk"
+  ]
 }

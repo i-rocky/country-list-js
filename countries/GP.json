@@ -1,10 +1,25 @@
 {
   "iso2": "GP",
   "iso3": "GLP",
+  "iso_numeric": "312",
   "name": "Guadeloupe",
+  "demonym": "Guadeloupian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Basse-Terre",
   "currency": "EUR",
-  "dialing_code": "590"
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "590",
+  "tld": [
+    ".gp"
+  ],
+  "latlng": [
+    16.25,
+    -61.583333
+  ],
+  "timezones": [
+    "America/Guadeloupe"
+  ]
 }

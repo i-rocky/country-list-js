@@ -1,12 +1,34 @@
 {
   "iso2": "VN",
   "iso3": "VNM",
+  "iso_numeric": "704",
   "name": "Vietnam",
+  "native_name": "Việt Nam",
+  "demonym": "Vietnamese",
   "continent": "AS",
   "region": "South-East Asia",
   "capital": "Hanoi",
   "currency": "VND",
+  "languages": [
+    "vi"
+  ],
   "dialing_code": "84",
+  "tld": [
+    ".vn"
+  ],
+  "area": 331212,
+  "latlng": [
+    16.16666666,
+    107.83333333
+  ],
+  "timezones": [
+    "Asia/Ho_Chi_Minh"
+  ],
+  "borders": [
+    "CN",
+    "KH",
+    "LA"
+  ],
   "provinces": [
     {
       "name": "Hà Nội",
@@ -189,10 +211,13 @@
       ]
     },
     {
-      "name": "Thừa Thiên–Huế",
+      "name": "Huế",
       "alias": [
+        "Hue",
+        "Thừa Thiên–Huế",
         "Thua Thien–Hue",
-        "Thua Thien Hue"
+        "Thua Thien Hue",
+        "Thua Thien-Hue"
       ]
     },
     {
@@ -294,10 +319,13 @@
       ]
     },
     {
-      "name": "Bà Rịa–Vũng Tàu",
+      "name": "Bà Rịa-Vũng Tàu",
       "alias": [
-        "Ba Ria–Vung Tau",
-        "Ba Ria Vung Tau"
+        "Ba Ria-Vung Tau",
+        "Ba Ria Vung Tau",
+        "BRVT",
+        "Bà Rịa–Vũng Tàu",
+        "Ba Ria–Vung Tau"
       ]
     },
     {
@@ -353,6 +381,7 @@
     {
       "name": "Cần Thơ",
       "alias": [
+        "Can Tho",
         "Can Thơ"
       ]
     },

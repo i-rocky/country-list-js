@@ -1,10 +1,26 @@
 {
   "iso2": "KN",
   "iso3": "KNA",
+  "iso_numeric": "659",
   "name": "Saint Kitts and Nevis",
+  "demonym": "Kittian and Nevisian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Basseterre",
   "currency": "XCD",
-  "dialing_code": "+1-869"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "+1-869",
+  "tld": [
+    ".kn"
+  ],
+  "area": 261,
+  "latlng": [
+    17.33333333,
+    -62.75
+  ],
+  "timezones": [
+    "America/St_Kitts"
+  ]
 }

@@ -1,10 +1,28 @@
 {
   "iso2": "MG",
   "iso3": "MDG",
+  "iso_numeric": "450",
   "name": "Madagascar",
+  "native_name": "Madagasikara",
+  "demonym": "Malagasy",
   "continent": "AF",
   "region": "East Africa, Southern Africa",
   "capital": "Antananarivo",
   "currency": "MGA",
-  "dialing_code": "261"
+  "languages": [
+    "fr",
+    "mg"
+  ],
+  "dialing_code": "261",
+  "tld": [
+    ".mg"
+  ],
+  "area": 587041,
+  "latlng": [
+    -20,
+    47
+  ],
+  "timezones": [
+    "Indian/Antananarivo"
+  ]
 }

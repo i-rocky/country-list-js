@@ -1,10 +1,34 @@
 {
   "iso2": "RW",
   "iso3": "RWA",
+  "iso_numeric": "646",
   "name": "Rwanda",
+  "demonym": "Rwandan",
   "continent": "AF",
   "region": "East Africa, Central Africa",
   "capital": "Kigali",
   "currency": "RWF",
-  "dialing_code": "250"
+  "languages": [
+    "rw",
+    "en",
+    "fr"
+  ],
+  "dialing_code": "250",
+  "tld": [
+    ".rw"
+  ],
+  "area": 26338,
+  "latlng": [
+    -2,
+    30
+  ],
+  "timezones": [
+    "Africa/Kigali"
+  ],
+  "borders": [
+    "BI",
+    "CD",
+    "TZ",
+    "UG"
+  ]
 }

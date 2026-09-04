@@ -1,10 +1,26 @@
 {
   "iso2": "BM",
   "iso3": "BMU",
+  "iso_numeric": "060",
   "name": "Bermuda",
+  "demonym": "Bermudian",
   "continent": "NA",
   "region": "Caribbean, North America",
   "capital": "Hamilton",
   "currency": "BMD",
-  "dialing_code": "+1-441"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "+1-441",
+  "tld": [
+    ".bm"
+  ],
+  "area": 54,
+  "latlng": [
+    32.33333333,
+    -64.75
+  ],
+  "timezones": [
+    "Atlantic/Bermuda"
+  ]
 }

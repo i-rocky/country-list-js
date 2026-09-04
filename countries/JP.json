@@ -1,12 +1,29 @@
 {
   "iso2": "JP",
   "iso3": "JPN",
+  "iso_numeric": "392",
   "name": "Japan",
+  "native_name": "日本",
+  "demonym": "Japanese",
   "continent": "AS",
   "region": "East Asia",
   "capital": "Tokyo",
   "currency": "JPY",
+  "languages": [
+    "ja"
+  ],
   "dialing_code": "81",
+  "tld": [
+    ".jp"
+  ],
+  "area": 377930,
+  "latlng": [
+    36,
+    138
+  ],
+  "timezones": [
+    "Asia/Tokyo"
+  ],
   "provinces": [
     {
       "name": "愛知県",

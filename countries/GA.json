@@ -1,10 +1,31 @@
 {
   "iso2": "GA",
   "iso3": "GAB",
+  "iso_numeric": "266",
   "name": "Gabon",
+  "demonym": "Gabonese",
   "continent": "AF",
   "region": "Central Africa",
   "capital": "Libreville",
   "currency": "XAF",
-  "dialing_code": "241"
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "241",
+  "tld": [
+    ".ga"
+  ],
+  "area": 267668,
+  "latlng": [
+    -1,
+    11.75
+  ],
+  "timezones": [
+    "Africa/Libreville"
+  ],
+  "borders": [
+    "CG",
+    "CM",
+    "GQ"
+  ]
 }

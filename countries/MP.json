@@ -1,10 +1,27 @@
 {
   "iso2": "MP",
   "iso3": "MNP",
+  "iso_numeric": "580",
   "name": "Northern Mariana Islands",
+  "demonym": "American",
   "continent": "OC",
   "region": "South-East Asia",
   "capital": "Saipan",
   "currency": "USD",
-  "dialing_code": "+1-670"
+  "languages": [
+    "en",
+    "ch"
+  ],
+  "dialing_code": "+1-670",
+  "tld": [
+    ".mp"
+  ],
+  "area": 464,
+  "latlng": [
+    15.2,
+    145.75
+  ],
+  "timezones": [
+    "Pacific/Saipan"
+  ]
 }

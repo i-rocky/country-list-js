@@ -1,10 +1,33 @@
 {
   "iso2": "GE",
   "iso3": "GEO",
+  "iso_numeric": "268",
   "name": "Georgia",
+  "native_name": "საქართველო",
+  "demonym": "Georgian",
   "continent": "AS",
   "region": "Western Asia",
   "capital": "Tbilisi",
   "currency": "GEL",
-  "dialing_code": "995"
+  "languages": [
+    "ka"
+  ],
+  "dialing_code": "995",
+  "tld": [
+    ".ge"
+  ],
+  "area": 69700,
+  "latlng": [
+    42,
+    43.5
+  ],
+  "timezones": [
+    "Asia/Tbilisi"
+  ],
+  "borders": [
+    "AM",
+    "AZ",
+    "RU",
+    "TR"
+  ]
 }

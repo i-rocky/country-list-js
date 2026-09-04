@@ -1,10 +1,26 @@
 {
   "iso2": "BB",
   "iso3": "BRB",
+  "iso_numeric": "052",
   "name": "Barbados",
+  "demonym": "Barbadian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Bridgetown",
   "currency": "BBD",
-  "dialing_code": "+1-246"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "+1-246",
+  "tld": [
+    ".bb"
+  ],
+  "area": 430,
+  "latlng": [
+    13.16666666,
+    -59.53333333
+  ],
+  "timezones": [
+    "America/Barbados"
+  ]
 }

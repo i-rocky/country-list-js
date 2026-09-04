@@ -1,12 +1,36 @@
 {
   "iso2": "JO",
   "iso3": "JOR",
+  "iso_numeric": "400",
   "name": "Jordan",
+  "native_name": "الأردن",
+  "demonym": "Jordanian",
   "continent": "AS",
   "region": "Western Asia, Middle East",
   "capital": "Amman",
   "currency": "JOD",
+  "languages": [
+    "ar"
+  ],
   "dialing_code": "962",
+  "tld": [
+    ".jo"
+  ],
+  "area": 89342,
+  "latlng": [
+    31,
+    36
+  ],
+  "timezones": [
+    "Asia/Amman"
+  ],
+  "borders": [
+    "IL",
+    "IQ",
+    "PS",
+    "SA",
+    "SY"
+  ],
   "provinces": [
     {
       "name": "Irbid",

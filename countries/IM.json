@@ -1,10 +1,27 @@
 {
   "iso2": "IM",
   "iso3": "IMN",
+  "iso_numeric": "833",
   "name": "Isle of Man",
+  "demonym": "Manx",
   "continent": "EU",
   "region": "Western Europe",
   "capital": "Douglas, Isle of Man",
   "currency": "GBP",
-  "dialing_code": "+44-1624"
+  "languages": [
+    "en",
+    "gv"
+  ],
+  "dialing_code": "+44-1624",
+  "tld": [
+    ".im"
+  ],
+  "area": 572,
+  "latlng": [
+    54.25,
+    -4.5
+  ],
+  "timezones": [
+    "Europe/Isle_of_Man"
+  ]
 }

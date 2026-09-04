@@ -1,10 +1,27 @@
 {
   "iso2": "MT",
   "iso3": "MLT",
+  "iso_numeric": "470",
   "name": "Malta",
+  "demonym": "Maltese",
   "continent": "EU",
   "region": "Southern Europe",
   "capital": "Valletta",
   "currency": "EUR",
-  "dialing_code": "356"
+  "languages": [
+    "mt",
+    "en"
+  ],
+  "dialing_code": "356",
+  "tld": [
+    ".mt"
+  ],
+  "area": 316,
+  "latlng": [
+    35.83333333,
+    14.58333333
+  ],
+  "timezones": [
+    "Europe/Malta"
+  ]
 }

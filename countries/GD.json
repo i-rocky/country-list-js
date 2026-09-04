@@ -1,10 +1,26 @@
 {
   "iso2": "GD",
   "iso3": "GRD",
+  "iso_numeric": "308",
   "name": "Grenada",
+  "demonym": "Grenadian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "St. George's",
   "currency": "XCD",
-  "dialing_code": "+1-473"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "+1-473",
+  "tld": [
+    ".gd"
+  ],
+  "area": 344,
+  "latlng": [
+    12.11666666,
+    -61.66666666
+  ],
+  "timezones": [
+    "America/Grenada"
+  ]
 }

@@ -1,10 +1,34 @@
 {
   "iso2": "NO",
   "iso3": "NOR",
+  "iso_numeric": "578",
   "name": "Norway",
+  "native_name": "Norge",
+  "demonym": "Norwegian",
   "continent": "EU",
   "region": "Scandinavia, Nordic Countries",
   "capital": "Oslo",
   "currency": "NOK",
-  "dialing_code": "47"
+  "languages": [
+    "no",
+    "nb",
+    "nn"
+  ],
+  "dialing_code": "47",
+  "tld": [
+    ".no"
+  ],
+  "area": 323802,
+  "latlng": [
+    62,
+    10
+  ],
+  "timezones": [
+    "Europe/Oslo"
+  ],
+  "borders": [
+    "FI",
+    "RU",
+    "SE"
+  ]
 }

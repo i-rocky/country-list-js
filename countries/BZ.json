@@ -1,10 +1,31 @@
 {
   "iso2": "BZ",
   "iso3": "BLZ",
+  "iso_numeric": "084",
   "name": "Belize",
+  "demonym": "Belizean",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Belmopan",
   "currency": "BZD",
-  "dialing_code": "501"
+  "languages": [
+    "en",
+    "es"
+  ],
+  "dialing_code": "501",
+  "tld": [
+    ".bz"
+  ],
+  "area": 22966,
+  "latlng": [
+    17.25,
+    -88.75
+  ],
+  "timezones": [
+    "America/Belize"
+  ],
+  "borders": [
+    "GT",
+    "MX"
+  ]
 }

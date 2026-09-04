@@ -1,10 +1,33 @@
 {
   "iso2": "LV",
   "iso3": "LVA",
+  "iso_numeric": "428",
   "name": "Latvia",
+  "native_name": "Latvija",
+  "demonym": "Latvian",
   "continent": "EU",
   "region": "Baltic Countries",
   "capital": "Riga",
   "currency": "EUR",
-  "dialing_code": "371"
+  "languages": [
+    "lv"
+  ],
+  "dialing_code": "371",
+  "tld": [
+    ".lv"
+  ],
+  "area": 64559,
+  "latlng": [
+    57,
+    25
+  ],
+  "timezones": [
+    "Europe/Riga"
+  ],
+  "borders": [
+    "BY",
+    "EE",
+    "LT",
+    "RU"
+  ]
 }

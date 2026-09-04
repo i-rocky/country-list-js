@@ -1,12 +1,36 @@
 {
   "iso2": "PE",
   "iso3": "PER",
+  "iso_numeric": "604",
   "name": "Peru",
+  "native_name": "Perú",
+  "demonym": "Peruvian",
   "continent": "SA",
   "region": "South America",
   "capital": "Lima",
   "currency": "PEN",
+  "languages": [
+    "es"
+  ],
   "dialing_code": "51",
+  "tld": [
+    ".pe"
+  ],
+  "area": 1285216,
+  "latlng": [
+    -10,
+    -76
+  ],
+  "timezones": [
+    "America/Lima"
+  ],
+  "borders": [
+    "BO",
+    "BR",
+    "CL",
+    "CO",
+    "EC"
+  ],
   "provinces": [
     {
       "name": "Chachapoyas",

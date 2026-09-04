@@ -1,10 +1,39 @@
 {
   "iso2": "AF",
   "iso3": "AFG",
+  "iso_numeric": "004",
   "name": "Afghanistan",
+  "native_name": "افغانستان",
+  "demonym": "Afghan",
   "continent": "AS",
   "region": "Central Asia",
   "capital": "Kabul",
   "currency": "AFN",
-  "dialing_code": "93"
+  "languages": [
+    "ps",
+    "uz",
+    "tk"
+  ],
+  "dialing_code": "93",
+  "tld": [
+    ".af",
+    ".افغانستان"
+  ],
+  "area": 652230,
+  "latlng": [
+    33,
+    65
+  ],
+  "timezones": [
+    "Asia/Kabul"
+  ],
+  "borders": [
+    "CN",
+    "IN",
+    "IR",
+    "PK",
+    "TJ",
+    "TM",
+    "UZ"
+  ]
 }

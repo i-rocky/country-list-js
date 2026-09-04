@@ -1,10 +1,30 @@
 {
   "iso2": "LI",
   "iso3": "LIE",
+  "iso_numeric": "438",
   "name": "Liechtenstein",
+  "demonym": "Liechtensteiner",
   "continent": "EU",
   "region": "Western Europe",
   "capital": "Vaduz",
   "currency": "CHF",
-  "dialing_code": "423"
+  "languages": [
+    "de"
+  ],
+  "dialing_code": "423",
+  "tld": [
+    ".li"
+  ],
+  "area": 160,
+  "latlng": [
+    47.26666666,
+    9.53333333
+  ],
+  "timezones": [
+    "Europe/Vaduz"
+  ],
+  "borders": [
+    "AT",
+    "CH"
+  ]
 }

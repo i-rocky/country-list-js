@@ -1,12 +1,48 @@
 {
   "iso2": "CN",
   "iso3": "CHN",
+  "iso_numeric": "156",
   "name": "China",
+  "native_name": "中国",
+  "demonym": "Chinese",
   "continent": "AS",
   "region": "East Asia",
   "capital": "Beijing",
   "currency": "CNY",
+  "languages": [
+    "zh"
+  ],
   "dialing_code": "86",
+  "tld": [
+    ".cn"
+  ],
+  "area": 9640011,
+  "latlng": [
+    35,
+    105
+  ],
+  "timezones": [
+    "Asia/Shanghai",
+    "Asia/Urumqi"
+  ],
+  "borders": [
+    "AF",
+    "BT",
+    "HK",
+    "IN",
+    "KG",
+    "KP",
+    "KZ",
+    "LA",
+    "MM",
+    "MN",
+    "MO",
+    "NP",
+    "PK",
+    "RU",
+    "TJ",
+    "VN"
+  ],
   "provinces": [
     {
       "name": "Chongqing",

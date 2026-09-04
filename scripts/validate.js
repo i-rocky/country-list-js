@@ -20,6 +20,7 @@ const order = readJson('reference/order.json');
 const continents = readJson('reference/continents.json');
 const currencies = readJson('reference/currencies.json');
 const unassigned = readJson('reference/unassigned-dialing-codes.json');
+const aliases = readJson('reference/name-aliases.json');
 
 const files = fs.readdirSync(path.join(root, 'countries'))
     .filter(f => f.endsWith('.json')).sort();
@@ -66,6 +67,7 @@ const dup = (field, label) => {
 };
 dup('iso3', 'ISO-3 code');
 dup('name', 'country name');
+dup('iso_numeric', 'ISO numeric code');
 
 for (const code of codes) {
     const c = countries[code];
@@ -92,9 +94,57 @@ for (const code of codes) {
         [...new Set(repeated)].map(n => JSON.stringify(n)).join(', '));
 }
 
+const realNames = new Map(codes.map(c => [countries[c].name.toLowerCase(), c]));
+for (const [alias, iso2] of Object.entries(aliases)) {
+    check(countries[iso2], 'alias ' + JSON.stringify(alias) + ' points at ' + iso2 +
+        ', which does not exist');
+    const owner = realNames.get(alias.toLowerCase());
+    check(!owner || owner === iso2, 'alias ' + JSON.stringify(alias) +
+        ' is the real name of ' + owner + ' but points at ' + iso2);
+}
+
 for (const code of Object.keys(unassigned))
     check(!countries[code], code + ' is in reference/unassigned-dialing-codes.json ' +
         'but countries/' + code + '.json exists');
+
+// -- the fields added in 4.0 -------------------------------------------------
+
+const zoneOk = z => {
+    // Intl.supportedValuesOf lists ICU's legacy aliases (Asia/Calcutta, not
+    // Asia/Kolkata), so constructing a formatter is the check that accepts the
+    // canonical names the tz database actually publishes
+    try { new Intl.DateTimeFormat('en', {timeZone: z}); return true; }
+    catch { return false; }
+};
+
+for (const code of codes) {
+    const c = countries[code];
+
+    // a shared boundary is symmetric by definition
+    for (const b of c.borders || []) {
+        check(countries[b], code + ' borders ' + b + ', which does not exist');
+        check(b !== code, code + ' is listed as its own neighbour');
+        check(countries[b] && (countries[b].borders || []).includes(code),
+            'one-way border: ' + code + ' lists ' + b + ' but ' + b + ' does not list ' + code);
+    }
+
+    for (const z of c.timezones || [])
+        check(zoneOk(z), code + ' has timezone ' + JSON.stringify(z) +
+            ', which is not an IANA identifier');
+
+    for (const t of c.tld || [])
+        check(t.startsWith('.') && t.length > 1,
+            code + ' has tld ' + JSON.stringify(t) + '; the dot leads, even for ' +
+            'right-to-left domains where a terminal renders it on the right');
+
+    if (c.latlng) {
+        check(Math.abs(c.latlng[0]) <= 90, code + ' latitude out of range: ' + c.latlng[0]);
+        check(Math.abs(c.latlng[1]) <= 180, code + ' longitude out of range: ' + c.latlng[1]);
+    }
+
+    check(c.native_name === undefined || c.native_name !== c.name,
+        code + ' repeats its name as native_name; omit the field instead');
+}
 
 // -- things the runtime assumes ----------------------------------------------
 
@@ -120,9 +170,16 @@ if (problems.length) {
 }
 
 const withProvinces = codes.filter(c => countries[c].provinces);
+const count = f => codes.filter(c => countries[c][f] !== undefined).length;
+
 console.log('%d countries, %d with provinces (%d subdivisions), %d currencies, ' +
-    '%d continents, %d unassigned dialing codes -- all valid',
+    '%d continents, %d aliases, %d unassigned dialing codes -- all valid',
     codes.length, withProvinces.length,
     withProvinces.reduce((n, c) => n + countries[c].provinces.length, 0),
     Object.keys(currencies).length, Object.keys(continents).length,
-    Object.keys(unassigned).length);
+    Object.keys(aliases).length, Object.keys(unassigned).length);
+
+console.log('coverage: %s',
+    ['iso_numeric', 'native_name', 'demonym', 'languages', 'tld', 'area',
+     'latlng', 'timezones', 'borders']
+        .map(f => f + ' ' + count(f)).join(', '));

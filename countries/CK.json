@@ -1,10 +1,27 @@
 {
   "iso2": "CK",
   "iso3": "COK",
+  "iso_numeric": "184",
   "name": "Cook Islands",
+  "native_name": "Kūki 'Āirani",
+  "demonym": "Cook Islander",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Avarua",
   "currency": "NZD",
-  "dialing_code": "682"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "682",
+  "tld": [
+    ".ck"
+  ],
+  "area": 236,
+  "latlng": [
+    -21.23333333,
+    -159.76666666
+  ],
+  "timezones": [
+    "Pacific/Rarotonga"
+  ]
 }

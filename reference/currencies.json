@@ -630,5 +630,29 @@
   "AWG": {
     "symbol": "Afl.",
     "decimal": "2"
+  },
+  "VES": {
+    "symbol": "Bs.S",
+    "decimal": "2"
+  },
+  "MRU": {
+    "symbol": "UM",
+    "decimal": "2"
+  },
+  "STN": {
+    "symbol": "Db",
+    "decimal": "2"
+  },
+  "SLE": {
+    "symbol": "Le",
+    "decimal": "2"
+  },
+  "ZWG": {
+    "symbol": "ZiG",
+    "decimal": "2"
+  },
+  "ZMW": {
+    "symbol": "ZK",
+    "decimal": "2"
   }
 }

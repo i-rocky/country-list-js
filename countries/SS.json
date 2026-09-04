@@ -1,10 +1,35 @@
 {
   "iso2": "SS",
   "iso3": "SSD",
+  "iso_numeric": "728",
   "name": "South Sudan",
+  "demonym": "South Sudanese",
   "continent": "AF",
   "region": "East Africa, Northern Africa",
   "capital": "Juba",
   "currency": "SSP",
-  "dialing_code": "211"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "211",
+  "tld": [
+    ".ss"
+  ],
+  "area": 619745,
+  "latlng": [
+    7,
+    30
+  ],
+  "timezones": [
+    "Africa/Juba"
+  ],
+  "borders": [
+    "CD",
+    "CF",
+    "ET",
+    "KE",
+    "SD",
+    "TD",
+    "UG"
+  ]
 }

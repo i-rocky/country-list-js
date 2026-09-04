@@ -1,10 +1,32 @@
 {
   "iso2": "KP",
   "iso3": "PRK",
+  "iso_numeric": "408",
   "name": "North Korea",
+  "native_name": "조선민주주의인민공화국",
+  "demonym": "North Korean",
   "continent": "AS",
   "region": "East Asia",
   "capital": "Pyongyang",
   "currency": "KPW",
-  "dialing_code": "850"
+  "languages": [
+    "ko"
+  ],
+  "dialing_code": "850",
+  "tld": [
+    ".kp"
+  ],
+  "area": 120538,
+  "latlng": [
+    40,
+    127
+  ],
+  "timezones": [
+    "Asia/Pyongyang"
+  ],
+  "borders": [
+    "CN",
+    "KR",
+    "RU"
+  ]
 }

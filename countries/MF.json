@@ -1,10 +1,14 @@
 {
   "iso2": "MF",
   "iso3": "MAF",
+  "iso_numeric": "663",
   "name": "Saint Martin",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Marigot",
   "currency": "EUR",
-  "dialing_code": "590"
+  "dialing_code": "590",
+  "timezones": [
+    "America/Marigot"
+  ]
 }

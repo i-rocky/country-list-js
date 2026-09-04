@@ -1,10 +1,26 @@
 {
   "iso2": "LC",
   "iso3": "LCA",
+  "iso_numeric": "662",
   "name": "Saint Lucia",
+  "demonym": "Saint Lucian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Castries",
   "currency": "XCD",
-  "dialing_code": "+1-758"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "+1-758",
+  "tld": [
+    ".lc"
+  ],
+  "area": 616,
+  "latlng": [
+    13.88333333,
+    -60.96666666
+  ],
+  "timezones": [
+    "America/St_Lucia"
+  ]
 }

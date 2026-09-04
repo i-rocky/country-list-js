@@ -1,10 +1,37 @@
 {
   "iso2": "IR",
   "iso3": "IRN",
+  "iso_numeric": "364",
   "name": "Iran",
+  "native_name": "ایران",
+  "demonym": "Iranian",
   "continent": "AS",
   "region": "Western Asia, Middle East",
   "capital": "Tehran",
   "currency": "IRR",
-  "dialing_code": "98"
+  "languages": [
+    "fa"
+  ],
+  "dialing_code": "98",
+  "tld": [
+    ".ir"
+  ],
+  "area": 1648195,
+  "latlng": [
+    32,
+    53
+  ],
+  "timezones": [
+    "Asia/Tehran"
+  ],
+  "borders": [
+    "AF",
+    "AM",
+    "AZ",
+    "IQ",
+    "KW",
+    "PK",
+    "TM",
+    "TR"
+  ]
 }

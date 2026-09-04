@@ -1,10 +1,32 @@
 {
   "iso2": "DJ",
   "iso3": "DJI",
+  "iso_numeric": "262",
   "name": "Djibouti",
+  "demonym": "Djibouti",
   "continent": "AF",
   "region": "East Africa",
   "capital": "Djibouti",
   "currency": "DJF",
-  "dialing_code": "253"
+  "languages": [
+    "fr",
+    "ar"
+  ],
+  "dialing_code": "253",
+  "tld": [
+    ".dj"
+  ],
+  "area": 23200,
+  "latlng": [
+    11.5,
+    43
+  ],
+  "timezones": [
+    "Africa/Djibouti"
+  ],
+  "borders": [
+    "ER",
+    "ET",
+    "SO"
+  ]
 }

@@ -1,10 +1,31 @@
 {
   "iso2": "SZ",
   "iso3": "SWZ",
+  "iso_numeric": "748",
   "name": "Swaziland",
+  "demonym": "Swazi",
   "continent": "AF",
   "region": "Southern Africa",
   "capital": "Mbabane",
   "currency": "SZL",
-  "dialing_code": "268"
+  "languages": [
+    "en",
+    "ss"
+  ],
+  "dialing_code": "268",
+  "tld": [
+    ".sz"
+  ],
+  "area": 17364,
+  "latlng": [
+    -26.5,
+    31.5
+  ],
+  "timezones": [
+    "Africa/Mbabane"
+  ],
+  "borders": [
+    "MZ",
+    "ZA"
+  ]
 }

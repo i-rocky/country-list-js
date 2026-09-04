@@ -1,10 +1,34 @@
 {
   "iso2": "LA",
   "iso3": "LAO",
+  "iso_numeric": "418",
   "name": "Laos",
+  "native_name": "ສປປລາວ",
+  "demonym": "Laotian",
   "continent": "AS",
   "region": "South-East Asia",
   "capital": "Vientiane",
   "currency": "LAK",
-  "dialing_code": "856"
+  "languages": [
+    "lo"
+  ],
+  "dialing_code": "856",
+  "tld": [
+    ".la"
+  ],
+  "area": 236800,
+  "latlng": [
+    18,
+    105
+  ],
+  "timezones": [
+    "Asia/Vientiane"
+  ],
+  "borders": [
+    "CN",
+    "KH",
+    "MM",
+    "TH",
+    "VN"
+  ]
 }

@@ -1,10 +1,34 @@
 {
   "iso2": "SY",
   "iso3": "SYR",
+  "iso_numeric": "760",
   "name": "Syria",
+  "native_name": "سوريا",
+  "demonym": "Syrian",
   "continent": "AS",
   "region": "Western Asia, Middle East",
   "capital": "Damascus",
   "currency": "SYP",
-  "dialing_code": "963"
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "963",
+  "tld": [
+    ".sy"
+  ],
+  "area": 185180,
+  "latlng": [
+    35,
+    38
+  ],
+  "timezones": [
+    "Asia/Damascus"
+  ],
+  "borders": [
+    "IL",
+    "IQ",
+    "JO",
+    "LB",
+    "TR"
+  ]
 }

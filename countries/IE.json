@@ -1,10 +1,31 @@
 {
   "iso2": "IE",
   "iso3": "IRL",
+  "iso_numeric": "372",
   "name": "Ireland",
+  "native_name": "Éire / Ireland",
+  "demonym": "Irish",
   "continent": "EU",
   "region": "Western Europe",
   "capital": "Dublin",
   "currency": "EUR",
-  "dialing_code": "353"
+  "languages": [
+    "ga",
+    "en"
+  ],
+  "dialing_code": "353",
+  "tld": [
+    ".ie"
+  ],
+  "area": 70273,
+  "latlng": [
+    53,
+    -8
+  ],
+  "timezones": [
+    "Europe/Dublin"
+  ],
+  "borders": [
+    "GB"
+  ]
 }

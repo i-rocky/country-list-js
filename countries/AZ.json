@@ -1,10 +1,35 @@
 {
   "iso2": "AZ",
   "iso3": "AZE",
+  "iso_numeric": "031",
   "name": "Azerbaijan",
+  "native_name": "Azərbaycan",
+  "demonym": "Azerbaijani",
   "continent": "AS",
   "region": "Western Asia",
   "capital": "Baku",
   "currency": "AZN",
-  "dialing_code": "994"
+  "languages": [
+    "az",
+    "hy"
+  ],
+  "dialing_code": "994",
+  "tld": [
+    ".az"
+  ],
+  "area": 86600,
+  "latlng": [
+    40.5,
+    47.5
+  ],
+  "timezones": [
+    "Asia/Baku"
+  ],
+  "borders": [
+    "AM",
+    "GE",
+    "IR",
+    "RU",
+    "TR"
+  ]
 }

@@ -1,12 +1,39 @@
 {
   "iso2": "TR",
   "iso3": "TUR",
+  "iso_numeric": "792",
   "name": "Turkey",
+  "native_name": "Türkiye",
+  "demonym": "Turkish",
   "continent": "AS",
   "region": "Western Asia, Middle East",
   "capital": "Ankara",
   "currency": "TRY",
+  "languages": [
+    "tr"
+  ],
   "dialing_code": "90",
+  "tld": [
+    ".tr"
+  ],
+  "area": 783562,
+  "latlng": [
+    39,
+    35
+  ],
+  "timezones": [
+    "Europe/Istanbul"
+  ],
+  "borders": [
+    "AM",
+    "AZ",
+    "BG",
+    "GE",
+    "GR",
+    "IQ",
+    "IR",
+    "SY"
+  ],
   "provinces": [
     {
       "name": "Adana",

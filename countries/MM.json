@@ -1,10 +1,35 @@
 {
   "iso2": "MM",
   "iso3": "MMR",
+  "iso_numeric": "104",
   "name": "Myanmar",
+  "native_name": "ပြည်ထောင်စု သမ္မတ မြန်မာနိုင်ငံတေ",
+  "demonym": "Burmese",
   "continent": "AS",
   "region": "South-East Asia",
   "capital": "Nay Pyi Taw",
   "currency": "MMK",
-  "dialing_code": "95"
+  "languages": [
+    "my"
+  ],
+  "dialing_code": "95",
+  "tld": [
+    ".mm"
+  ],
+  "area": 676578,
+  "latlng": [
+    19.75,
+    96.1
+  ],
+  "timezones": [
+    "Asia/Yangon"
+  ],
+  "borders": [
+    "BD",
+    "BT",
+    "CN",
+    "IN",
+    "LA",
+    "TH"
+  ]
 }

@@ -1,10 +1,36 @@
 {
   "iso2": "GN",
   "iso3": "GIN",
+  "iso_numeric": "324",
   "name": "Guinea",
+  "native_name": "Guinée",
+  "demonym": "Guinean",
   "continent": "AF",
   "region": "Western Africa",
   "capital": "Conakry",
   "currency": "GNF",
-  "dialing_code": "224"
+  "languages": [
+    "fr",
+    "ff"
+  ],
+  "dialing_code": "224",
+  "tld": [
+    ".gn"
+  ],
+  "area": 245857,
+  "latlng": [
+    11,
+    -10
+  ],
+  "timezones": [
+    "Africa/Conakry"
+  ],
+  "borders": [
+    "CI",
+    "GW",
+    "LR",
+    "ML",
+    "SL",
+    "SN"
+  ]
 }

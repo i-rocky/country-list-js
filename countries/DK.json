@@ -1,12 +1,32 @@
 {
   "iso2": "DK",
   "iso3": "DNK",
+  "iso_numeric": "208",
   "name": "Denmark",
+  "native_name": "Danmark",
+  "demonym": "Danish",
   "continent": "EU",
   "region": "Scandinavia, Nordic Countries",
   "capital": "Copenhagen",
   "currency": "DKK",
+  "languages": [
+    "da"
+  ],
   "dialing_code": "45",
+  "tld": [
+    ".dk"
+  ],
+  "area": 43094,
+  "latlng": [
+    56,
+    10
+  ],
+  "timezones": [
+    "Europe/Copenhagen"
+  ],
+  "borders": [
+    "DE"
+  ],
   "provinces": [
     {
       "name": "Hovedstaden",

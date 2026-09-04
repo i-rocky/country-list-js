@@ -226,7 +226,8 @@ describe('Edge cases', () => {
             expect(c.name, iso2).to.be.a('string').and.not.equal('');
             expect(c.capital, iso2).to.be.a('string');
             expect(c.dialing_code, iso2).to.be.a('string');
-            expect(c.code, iso2).to.deep.equal({iso2: iso2, iso3: c.code.iso3});
+            expect(c.code.iso2, iso2).to.equal(iso2);
+            expect(c.code.iso3, iso2).to.match(/^[A-Z]{3}$/);
         }
     });
 

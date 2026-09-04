@@ -1,10 +1,26 @@
 {
   "iso2": "PW",
   "iso3": "PLW",
+  "iso_numeric": "585",
   "name": "Palau",
+  "demonym": "Palauan",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Melekeok",
   "currency": "USD",
-  "dialing_code": "680"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "680",
+  "tld": [
+    ".pw"
+  ],
+  "area": 459,
+  "latlng": [
+    7.5,
+    134.5
+  ],
+  "timezones": [
+    "Pacific/Palau"
+  ]
 }

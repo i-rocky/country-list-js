@@ -1,10 +1,14 @@
 {
   "iso2": "AX",
   "iso3": "ALA",
+  "iso_numeric": "248",
   "name": "Aland Islands",
   "continent": "EU",
   "region": "Scandinavia",
   "capital": "Mariehamn",
   "currency": "EUR",
-  "dialing_code": "+358-18"
+  "dialing_code": "+358-18",
+  "timezones": [
+    "Europe/Mariehamn"
+  ]
 }

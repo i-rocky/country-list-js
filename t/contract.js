@@ -21,6 +21,9 @@ const STRING_ALIAS =
     'findByProvince("B") answered Vietnam and the empty string matched all ' +
     'three.  The three are now arrays like the other 440.';
 
+const currency = (from, to, on, why) =>
+    'currency ' + from + ' -> ' + to + ' on ' + on + ' (' + why + ').';
+
 const CHANGED = {
     BY: 'currency BYR -> BYN.  Belarus redenominated in 2016; master has ' +
         'carried the fix since before v3.1.8, but the v3.1.8 tag was cut off ' +
@@ -29,13 +32,39 @@ const CHANGED = {
     NG: 'provinces 12 -> 36.  Merged community fix (PR #69).',
 
     ET: STRING_ALIAS, TR: STRING_ALIAS, VN: STRING_ALIAS,
+
+    // ISO 4217 corrections.  Every one is a documented redenomination or euro
+    // accession, and the retired code stays resolvable through
+    // reference/retired-currencies.json, so findByCurrency('HRK') still
+    // answers Croatia rather than turning into undefined.
+    HR: currency('HRK', 'EUR', '2023-01-01', 'euro area accession'),
+    LT: currency('LTL', 'EUR', '2015-01-01', 'euro area accession'),
+    BG: currency('BGN', 'EUR', '2026-01-01', 'euro area accession, issue #84'),
+    VE: currency('VEF', 'VES', '2018-08-20', 'redenomination'),
+    MR: currency('MRO', 'MRU', '2018-01-01', 'redenomination'),
+    ST: currency('STD', 'STN', '2018-01-01', 'redenomination'),
+    SL: currency('SLL', 'SLE', '2022-07-01', 'redenomination'),
+    ZW: currency('ZWL', 'ZWG', '2024-04-08', 'replaced by Zimbabwe Gold'),
+    ZM: currency('ZMK', 'ZMW', '2013-01-01', 'redenomination'),
 };
 
 // Individual recorded calls that intentionally differ, keyed as fn(arg).  Use
 // this only where the country records themselves are unchanged and it is the
 // lookup behaviour that moved.
 
+const CASE_INSENSITIVE =
+    'the README has claimed case-insensitive search since 3.1.0 and it was ' +
+    'never true.  Exact matching is untouched and still wins; a lowercase ' +
+    'fallback runs only after an exact miss, so this turns undefined into a ' +
+    'hit and can never change a lookup that already worked.';
+
 const CHANGED_CALLS = {
+    'findByIso2("dk")': CASE_INSENSITIVE,
+    'findByIso3("dnk")': CASE_INSENSITIVE,
+    'findByName("denmark")': CASE_INSENSITIVE,
+    'findByCapital("copenhagen")': CASE_INSENSITIVE,
+    'findByCurrency("dkk")': CASE_INSENSITIVE,
+
     'findByProvince("")':
         '3.1.8 answered [Ethiopia, Turkey, Vietnam] for the empty string. ' +
         'Those three carry a bare-string province alias instead of an array, ' +
@@ -53,6 +82,23 @@ const norm = v => v === undefined ? undefined : JSON.parse(JSON.stringify(v));
 const label = c => c.fn + '(' + c.args.map(a => JSON.stringify(a)).join(', ') + ')';
 const asList = v => v === undefined ? [] : Array.isArray(v) ? v : [v];
 
+// 4.0 adds fields to the country record -- borders, timezones, native_name and
+// the rest.  The contract is that every field 3.1.8 returned still holds the
+// same value, not that no field was ever added, so comparisons are narrowed to
+// the keys the baseline actually has.  The new keys get pinned separately, by
+// name, below.
+
+function restrict(actual, expected) {
+    if (Array.isArray(expected))
+        return Array.isArray(actual) ? actual.map((v, i) => restrict(v, expected[i])) : actual;
+    if (expected && typeof expected == 'object' && actual && typeof actual == 'object') {
+        const out = {};
+        for (const k of Object.keys(expected)) out[k] = restrict(actual[k], expected[k]);
+        return out;
+    }
+    return actual;
+}
+
 // A recorded call still honours the contract if every country it returns is
 // byte-identical to 3.1.8, except for countries declared in CHANGED.  Stating
 // it that way rather than listing affected calls means a declared data change
@@ -61,9 +107,10 @@ const asList = v => v === undefined ? [] : Array.isArray(v) ? v : [v];
 // Nigeria -- while an undeclared change anywhere still fails.
 
 function compare(name, actual, expected) {
-    const index = list => new Map(list.map(o => [o.code.iso2, JSON.stringify(o)]));
-    const a = index(asList(norm(actual)));
-    const e = index(asList(norm(expected)));
+    const wanted = new Map(asList(norm(expected)).map(o => [o.code.iso2, o]));
+    const a = new Map(asList(norm(actual))
+        .map(o => [o.code.iso2, JSON.stringify(restrict(o, wanted.get(o.code.iso2) || o))]));
+    const e = new Map([...wanted].map(([k, o]) => [k, JSON.stringify(o)]));
 
     const offenders = [...new Set([...a.keys(), ...e.keys()])]
         .filter(k => a.get(k) !== e.get(k) && !(k in CHANGED)).sort();
@@ -107,7 +154,7 @@ describe('Contract: country records', () => {
         const undeclared = Object.keys(base.countries).filter(iso2 =>
             !(iso2 in CHANGED) &&
             JSON.stringify(base.countries[iso2]) !==
-            JSON.stringify(country.findByIso2(iso2)));
+            JSON.stringify(restrict(country.findByIso2(iso2), base.countries[iso2])));
         assert.deepStrictEqual(undeclared, [],
             'undeclared differences from 3.1.8: ' + undeclared.join(', '));
     });
@@ -116,15 +163,38 @@ describe('Contract: country records', () => {
         for (const iso2 of Object.keys(CHANGED))
             expect(JSON.stringify(base.countries[iso2]),
                 iso2 + ' is declared as changed but is identical to 3.1.8')
-                .to.not.equal(JSON.stringify(country.findByIso2(iso2)));
+                .to.not.equal(JSON.stringify(
+                    restrict(country.findByIso2(iso2), base.countries[iso2])));
     });
 
-    it('keeps the exact key set on every country record', () => {
+    it('still carries every key 3.1.8 carried, on every country', () => {
         const KEYS = ['capital', 'code', 'continent', 'currency',
                       'dialing_code', 'name', 'provinces', 'region'];
         for (const iso2 of Object.keys(base.countries))
+            expect(Object.keys(country.findByIso2(iso2)), iso2)
+                .to.include.members(KEYS);
+    });
+
+    it('carries exactly this key set -- no more, no fewer', () => {
+        // stated by name rather than counted, so that adding or dropping a
+        // field is a deliberate edit to this list
+        const KEYS = ['area', 'borders', 'capital', 'code', 'continent',
+                      'currency', 'demonym', 'dialing_code', 'languages',
+                      'latlng', 'name', 'native_name', 'provinces', 'region',
+                      'timezones', 'tld'];
+        for (const iso2 of Object.keys(country.all))
             expect(Object.keys(country.findByIso2(iso2)).sort(), iso2)
                 .to.deep.equal(KEYS);
+    });
+
+    it('keeps code as {iso2, iso3} and adds numeric alongside', () => {
+        for (const iso2 of Object.keys(base.countries)) {
+            const code = country.findByIso2(iso2).code;
+            expect(code.iso2, iso2).to.equal(base.countries[iso2].code.iso2);
+            expect(code.iso3, iso2).to.equal(base.countries[iso2].code.iso3);
+            expect(Object.keys(code).sort(), iso2)
+                .to.deep.equal(['iso2', 'iso3', 'numeric']);
+        }
     });
 
     it('carries `provinces` as a present-but-undefined key when there are none', () => {
@@ -146,13 +216,9 @@ describe('Contract: country records', () => {
         }
     });
 
-    it('keeps code as {iso2, iso3} and dialing_code as a string', () => {
-        for (const iso2 of Object.keys(base.countries)) {
-            const c = country.findByIso2(iso2);
-            expect(c.code, iso2).to.deep.equal(
-                {iso2: iso2, iso3: base.countries[iso2].code.iso3});
-            expect(c.dialing_code, iso2 + '.dialing_code').to.be.a('string');
-        }
+    it('keeps dialing_code a string', () => {
+        for (const iso2 of Object.keys(base.countries))
+            expect(country.findByIso2(iso2).dialing_code, iso2).to.be.a('string');
     });
 
     it('returns a fresh object each call, so callers cannot corrupt the store', () => {

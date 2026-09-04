@@ -1,12 +1,56 @@
 {
   "iso2": "BR",
   "iso3": "BRA",
+  "iso_numeric": "076",
   "name": "Brazil",
+  "native_name": "Brasil",
+  "demonym": "Brazilian",
   "continent": "SA",
   "region": "South America",
   "capital": "Brasilia",
   "currency": "BRL",
+  "languages": [
+    "pt"
+  ],
   "dialing_code": "55",
+  "tld": [
+    ".br"
+  ],
+  "area": 8515767,
+  "latlng": [
+    -10,
+    -55
+  ],
+  "timezones": [
+    "America/Araguaina",
+    "America/Bahia",
+    "America/Belem",
+    "America/Boa_Vista",
+    "America/Campo_Grande",
+    "America/Cuiaba",
+    "America/Eirunepe",
+    "America/Fortaleza",
+    "America/Maceio",
+    "America/Manaus",
+    "America/Noronha",
+    "America/Porto_Velho",
+    "America/Recife",
+    "America/Rio_Branco",
+    "America/Santarem",
+    "America/Sao_Paulo"
+  ],
+  "borders": [
+    "AR",
+    "BO",
+    "CO",
+    "GF",
+    "GY",
+    "PE",
+    "PY",
+    "SR",
+    "UY",
+    "VE"
+  ],
   "provinces": [
     {
       "short": "AC",

@@ -1,10 +1,29 @@
 {
   "iso2": "MC",
   "iso3": "MCO",
+  "iso_numeric": "492",
   "name": "Monaco",
+  "demonym": "Monegasque",
   "continent": "EU",
   "region": "Western Europe",
   "capital": "Monaco",
   "currency": "EUR",
-  "dialing_code": "377"
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "377",
+  "tld": [
+    ".mc"
+  ],
+  "area": 2.02,
+  "latlng": [
+    43.73333333,
+    7.4
+  ],
+  "timezones": [
+    "Europe/Monaco"
+  ],
+  "borders": [
+    "FR"
+  ]
 }

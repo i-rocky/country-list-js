@@ -1,10 +1,36 @@
 {
   "iso2": "PL",
   "iso3": "POL",
+  "iso_numeric": "616",
   "name": "Poland",
+  "native_name": "Polska",
+  "demonym": "Polish",
   "continent": "EU",
   "region": "Central Europe",
   "capital": "Warsaw",
   "currency": "PLN",
-  "dialing_code": "48"
+  "languages": [
+    "pl"
+  ],
+  "dialing_code": "48",
+  "tld": [
+    ".pl"
+  ],
+  "area": 312679,
+  "latlng": [
+    52,
+    20
+  ],
+  "timezones": [
+    "Europe/Warsaw"
+  ],
+  "borders": [
+    "BY",
+    "CZ",
+    "DE",
+    "LT",
+    "RU",
+    "SK",
+    "UA"
+  ]
 }

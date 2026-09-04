@@ -1,10 +1,27 @@
 {
   "iso2": "MV",
   "iso3": "MDV",
+  "iso_numeric": "462",
   "name": "Maldives",
+  "native_name": "ދިވެހިރާއްޖެ",
+  "demonym": "Maldivan",
   "continent": "AS",
   "region": "Southern Asia",
   "capital": "Male",
   "currency": "MVR",
-  "dialing_code": "960"
+  "languages": [
+    "dv"
+  ],
+  "dialing_code": "960",
+  "tld": [
+    ".mv"
+  ],
+  "area": 300,
+  "latlng": [
+    3.25,
+    73
+  ],
+  "timezones": [
+    "Indian/Maldives"
+  ]
 }

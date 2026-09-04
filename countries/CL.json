@@ -1,12 +1,36 @@
 {
   "iso2": "CL",
   "iso3": "CHL",
+  "iso_numeric": "152",
   "name": "Chile",
+  "demonym": "Chilean",
   "continent": "SA",
   "region": "South America",
   "capital": "Santiago",
   "currency": "CLP",
+  "languages": [
+    "es"
+  ],
   "dialing_code": "56",
+  "tld": [
+    ".cl"
+  ],
+  "area": 756102,
+  "latlng": [
+    -30,
+    -71
+  ],
+  "timezones": [
+    "America/Coyhaique",
+    "America/Punta_Arenas",
+    "America/Santiago",
+    "Pacific/Easter"
+  ],
+  "borders": [
+    "AR",
+    "BO",
+    "PE"
+  ],
   "provinces": [
     {
       "name": "Arica",

@@ -1,12 +1,54 @@
 {
   "iso2": "CA",
   "iso3": "CAN",
+  "iso_numeric": "124",
   "name": "Canada",
+  "demonym": "Canadian",
   "continent": "NA",
   "region": "North America",
   "capital": "Ottawa",
   "currency": "CAD",
+  "languages": [
+    "en",
+    "fr"
+  ],
   "dialing_code": "1",
+  "tld": [
+    ".ca"
+  ],
+  "area": 9984670,
+  "latlng": [
+    60,
+    -95
+  ],
+  "timezones": [
+    "America/Atikokan",
+    "America/Blanc-Sablon",
+    "America/Cambridge_Bay",
+    "America/Creston",
+    "America/Dawson",
+    "America/Dawson_Creek",
+    "America/Edmonton",
+    "America/Fort_Nelson",
+    "America/Glace_Bay",
+    "America/Goose_Bay",
+    "America/Halifax",
+    "America/Inuvik",
+    "America/Iqaluit",
+    "America/Moncton",
+    "America/Rankin_Inlet",
+    "America/Regina",
+    "America/Resolute",
+    "America/St_Johns",
+    "America/Swift_Current",
+    "America/Toronto",
+    "America/Vancouver",
+    "America/Whitehorse",
+    "America/Winnipeg"
+  ],
+  "borders": [
+    "US"
+  ],
   "provinces": [
     {
       "short": "AB",

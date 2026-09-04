@@ -1,12 +1,39 @@
 {
   "iso2": "AU",
   "iso3": "AUS",
+  "iso_numeric": "036",
   "name": "Australia",
+  "demonym": "Australian",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Canberra",
   "currency": "AUD",
+  "languages": [
+    "en"
+  ],
   "dialing_code": "61",
+  "tld": [
+    ".au"
+  ],
+  "area": 7692024,
+  "latlng": [
+    -27,
+    133
+  ],
+  "timezones": [
+    "Antarctica/Macquarie",
+    "Australia/Adelaide",
+    "Australia/Brisbane",
+    "Australia/Broken_Hill",
+    "Australia/Darwin",
+    "Australia/Eucla",
+    "Australia/Hobart",
+    "Australia/Lindeman",
+    "Australia/Lord_Howe",
+    "Australia/Melbourne",
+    "Australia/Perth",
+    "Australia/Sydney"
+  ],
   "provinces": [
     {
       "name": "Ashmore and Cartier Islands",

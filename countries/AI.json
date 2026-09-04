@@ -1,10 +1,26 @@
 {
   "iso2": "AI",
   "iso3": "AIA",
+  "iso_numeric": "660",
   "name": "Anguilla",
+  "demonym": "Anguillian",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "The Valley",
   "currency": "XCD",
-  "dialing_code": "+1-264"
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "+1-264",
+  "tld": [
+    ".ai"
+  ],
+  "area": 91,
+  "latlng": [
+    18.25,
+    -63.16666666
+  ],
+  "timezones": [
+    "America/Anguilla"
+  ]
 }

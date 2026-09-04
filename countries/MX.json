@@ -1,12 +1,45 @@
 {
   "iso2": "MX",
   "iso3": "MEX",
+  "iso_numeric": "484",
   "name": "Mexico",
+  "native_name": "México",
+  "demonym": "Mexican",
   "continent": "NA",
   "region": "North America",
   "capital": "Mexico City",
   "currency": "MXN",
+  "languages": [
+    "es"
+  ],
   "dialing_code": "52",
+  "tld": [
+    ".mx"
+  ],
+  "area": 1964375,
+  "latlng": [
+    23,
+    -102
+  ],
+  "timezones": [
+    "America/Bahia_Banderas",
+    "America/Cancun",
+    "America/Chihuahua",
+    "America/Ciudad_Juarez",
+    "America/Hermosillo",
+    "America/Matamoros",
+    "America/Mazatlan",
+    "America/Merida",
+    "America/Mexico_City",
+    "America/Monterrey",
+    "America/Ojinaga",
+    "America/Tijuana"
+  ],
+  "borders": [
+    "BZ",
+    "GT",
+    "US"
+  ],
   "provinces": [
     {
       "name": "Aguascalientes",

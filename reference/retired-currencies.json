@@ -1,0 +1,86 @@
+{
+  "HRK": {
+    "successor": "EUR",
+    "countries": [
+      "HR"
+    ],
+    "retired": "2023-01-01"
+  },
+  "LTL": {
+    "successor": "EUR",
+    "countries": [
+      "LT"
+    ],
+    "retired": "2015-01-01"
+  },
+  "BGN": {
+    "successor": "EUR",
+    "countries": [
+      "BG"
+    ],
+    "retired": "2026-01-01"
+  },
+  "VEF": {
+    "successor": "VES",
+    "countries": [
+      "VE"
+    ],
+    "retired": "2018-08-20"
+  },
+  "MRO": {
+    "successor": "MRU",
+    "countries": [
+      "MR"
+    ],
+    "retired": "2018-01-01"
+  },
+  "STD": {
+    "successor": "STN",
+    "countries": [
+      "ST"
+    ],
+    "retired": "2018-01-01"
+  },
+  "SLL": {
+    "successor": "SLE",
+    "countries": [
+      "SL"
+    ],
+    "retired": "2022-07-01"
+  },
+  "ZWL": {
+    "successor": "ZWG",
+    "countries": [
+      "ZW"
+    ],
+    "retired": "2024-04-08"
+  },
+  "ZMK": {
+    "successor": "ZMW",
+    "countries": [
+      "ZM"
+    ],
+    "retired": "2013-01-01"
+  },
+  "BYR": {
+    "successor": "BYN",
+    "countries": [
+      "BY"
+    ],
+    "retired": "2016-07-01"
+  },
+  "EEK": {
+    "successor": "EUR",
+    "countries": [
+      "EE"
+    ],
+    "retired": "2011-01-01"
+  },
+  "LVL": {
+    "successor": "EUR",
+    "countries": [
+      "LV"
+    ],
+    "retired": "2014-01-01"
+  }
+}

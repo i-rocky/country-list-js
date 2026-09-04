@@ -1,10 +1,33 @@
 {
   "iso2": "BW",
   "iso3": "BWA",
+  "iso_numeric": "072",
   "name": "Botswana",
+  "demonym": "Motswana",
   "continent": "AF",
   "region": "Southern Africa",
   "capital": "Gaborone",
   "currency": "BWP",
-  "dialing_code": "267"
+  "languages": [
+    "en",
+    "tn"
+  ],
+  "dialing_code": "267",
+  "tld": [
+    ".bw"
+  ],
+  "area": 582000,
+  "latlng": [
+    -22,
+    24
+  ],
+  "timezones": [
+    "Africa/Gaborone"
+  ],
+  "borders": [
+    "NA",
+    "ZA",
+    "ZM",
+    "ZW"
+  ]
 }

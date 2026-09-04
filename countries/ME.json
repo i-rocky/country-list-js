@@ -1,10 +1,34 @@
 {
   "iso2": "ME",
   "iso3": "MNE",
+  "iso_numeric": "499",
   "name": "Montenegro",
+  "native_name": "Crna Gora",
+  "demonym": "Montenegrin",
   "continent": "EU",
   "region": "Balkans",
   "capital": "Podgorica",
   "currency": "EUR",
-  "dialing_code": "382"
+  "languages": [
+    "cnr"
+  ],
+  "dialing_code": "382",
+  "tld": [
+    ".me"
+  ],
+  "area": 13812,
+  "latlng": [
+    42.7044223,
+    19.3957785
+  ],
+  "timezones": [
+    "Europe/Podgorica"
+  ],
+  "borders": [
+    "AL",
+    "BA",
+    "HR",
+    "RS",
+    "XK"
+  ]
 }

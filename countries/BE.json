@@ -1,12 +1,37 @@
 {
   "iso2": "BE",
   "iso3": "BEL",
+  "iso_numeric": "056",
   "name": "Belgium",
+  "native_name": "België / Belgique / Belgien",
+  "demonym": "Belgian",
   "continent": "EU",
   "region": "Western Europe",
   "capital": "Brussels",
   "currency": "EUR",
+  "languages": [
+    "nl",
+    "fr",
+    "de"
+  ],
   "dialing_code": "32",
+  "tld": [
+    ".be"
+  ],
+  "area": 30528,
+  "latlng": [
+    50.83333333,
+    4
+  ],
+  "timezones": [
+    "Europe/Brussels"
+  ],
+  "borders": [
+    "DE",
+    "FR",
+    "LU",
+    "NL"
+  ],
   "provinces": [
     {
       "short": "ANT",

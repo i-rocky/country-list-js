@@ -1,10 +1,27 @@
 {
   "iso2": "AW",
   "iso3": "ABW",
+  "iso_numeric": "533",
   "name": "Aruba",
+  "demonym": "Aruban",
   "continent": "NA",
   "region": "Caribbean",
   "capital": "Oranjestad",
   "currency": "AWG",
-  "dialing_code": "297"
+  "languages": [
+    "nl",
+    "pa"
+  ],
+  "dialing_code": "297",
+  "tld": [
+    ".aw"
+  ],
+  "area": 180,
+  "latlng": [
+    12.5,
+    -69.96666666
+  ],
+  "timezones": [
+    "America/Aruba"
+  ]
 }

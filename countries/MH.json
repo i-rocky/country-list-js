@@ -1,10 +1,29 @@
 {
   "iso2": "MH",
   "iso3": "MHL",
+  "iso_numeric": "584",
   "name": "Marshall Islands",
+  "native_name": "M̧ajeļ",
+  "demonym": "Marshallese",
   "continent": "OC",
   "region": "Oceania",
   "capital": "Majuro",
   "currency": "USD",
-  "dialing_code": "692"
+  "languages": [
+    "en",
+    "mh"
+  ],
+  "dialing_code": "692",
+  "tld": [
+    ".mh"
+  ],
+  "area": 181,
+  "latlng": [
+    9,
+    168
+  ],
+  "timezones": [
+    "Pacific/Kwajalein",
+    "Pacific/Majuro"
+  ]
 }

@@ -1,10 +1,14 @@
 {
   "iso2": "CW",
   "iso3": "CUW",
+  "iso_numeric": "531",
   "name": "Curacao",
   "continent": "NA",
   "region": "Caribbean",
   "capital": " Willemstad",
   "currency": "ANG",
-  "dialing_code": "599"
+  "dialing_code": "599",
+  "timezones": [
+    "America/Curacao"
+  ]
 }
