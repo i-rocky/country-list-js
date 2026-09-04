@@ -85,7 +85,7 @@ describe('README', () => {
 
         const withProvinces = Object.keys(country.all)
             .filter(k => country.findByIso2(k).provinces);
-        const provinceClaim = README.match(/(\d+) of the 250 countries have them/);
+        const provinceClaim = README.match(/cover (\d+) of the 250 countries/);
         expect(provinceClaim, 'the subdivision count went missing').to.not.equal(null);
         expect(withProvinces.length).to.equal(Number(provinceClaim[1]));
     });

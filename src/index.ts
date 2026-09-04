@@ -233,7 +233,7 @@ const country = {
      */
     findByCurrency: (code: string): Country[] => many(resolve('currency', code)),
 
-    /** Find by first-tier subdivision, by name or by alias. */
+    /** Find by subdivision, by name or by alias. */
     findByProvince: (name: string): Country[] => many(provinceIndex().get(name)),
 
     /**

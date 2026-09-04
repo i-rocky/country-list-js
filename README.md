@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/github/license/i-rocky/country-list-js.svg)](LICENSE)
 
 Country data for 250 countries and territories: ISO 3166-1 codes, names,
-capitals, currencies, dialing codes, first-tier subdivisions, land borders and
+capitals, currencies, dialing codes, subdivisions, land borders and
 IANA time zones.
 
 No runtime dependencies. Ships CommonJS, ESM, TypeScript types and a browser
@@ -172,11 +172,29 @@ Pakistan-administered Gilgit-Baltistan — territory India claims and does not
 control. It is kept because removing it would take the opposite side just as
 firmly, and named here so it is a documented choice rather than a silent one.
 
-**Subdivisions** are first-tier only, and 31 of the 250 countries have them.
-Every entry carries the same four keys — `name`, `code` (the local
-subdivision code, `AL` for Alabama), `region` (the parent grouping,
-`England` for Berkshire) and `alias` — null where the country has no such
-thing, so there is nothing to test for before reading one.
+**Subdivisions** cover 31 of the 250 countries. Every entry carries the same
+four keys — `name`, `code` (the local subdivision code, `AL` for Alabama),
+`region` (the parent unit, where the country has one above this tier) and
+`alias` — null where the country has no such thing, so there is nothing to
+test for before reading one.
+
+**They are not all at the same tier, and that is worth knowing before you rely
+on them.** Ten of the countries checked against ISO 3166-2 match its first tier
+exactly (Canada, Brazil, Germany, Mexico, India, China, the Netherlands, Japan,
+Argentina, the United Kingdom). Six sit one tier lower: Spain's 48 provinces
+rather than 19 autonomous communities, Italy's 106 provinces rather than 20
+regions, Peru's 196 provinces rather than 26 regions, and similarly the
+Philippines, Australia and the United States. For Bangladesh, Bolivia, Chile
+and Peru the `region` field names the parent unit, so those are coherent one
+tier down.
+
+This is inherited data whose provenance predates the 4.0 rewrite. It is checked
+for structure — unique within a country, aliases well formed, no duplicate
+(name, region) pair — but the *currency* of each list is verified only where
+this changelog says so. Vietnam and the United Kingdom were both found to be
+years out of date and corrected in 4.0; the other 29 have not been audited
+against ISO 3166-2 one by one. Treat `code` and `name` as reliable and the
+completeness of a country's list as unwarranted.
 
 **Sources.** Native names, demonyms, languages, TLDs, areas, coordinates,
 borders and the alternative-name list were imported from

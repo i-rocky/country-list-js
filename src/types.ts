@@ -21,8 +21,12 @@ export interface Currency {
 }
 
 /**
- * A first-tier political subdivision. Every key is always present, and null
- * where the country has no such thing -- there is nothing to test for.
+ * A political subdivision. Every key is always present, and null where the
+ * country has no such thing -- there is nothing to test for.
+ *
+ * Which tier this is varies by country: most match ISO 3166-2's first tier,
+ * some sit one below it, and `region` names the parent where there is one.
+ * See "Subdivisions" in the README.
  */
 export interface Province {
     name: string;
