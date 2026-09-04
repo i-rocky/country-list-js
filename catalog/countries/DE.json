@@ -51,7 +51,9 @@
       "name": "Bayern",
       "code": "BY",
       "region": null,
-      "alias": null
+      "alias": [
+        "Bavaria"
+      ]
     },
     {
       "name": "Berlin",
@@ -81,7 +83,9 @@
       "name": "Hessen",
       "code": "HE",
       "region": null,
-      "alias": null
+      "alias": [
+        "Hesse"
+      ]
     },
     {
       "name": "Mecklenburg-Vorpommern",
@@ -95,14 +99,17 @@
       "name": "Niedersachsen",
       "code": "NI",
       "region": null,
-      "alias": null
+      "alias": [
+        "Lower Saxony"
+      ]
     },
     {
       "name": "Nordrhein-Westfalen",
       "code": "NW",
       "region": null,
       "alias": [
-        "Nordrhein Westfalen"
+        "Nordrhein Westfalen",
+        "North Rhine-Westphalia"
       ]
     },
     {
@@ -110,7 +117,8 @@
       "code": "RP",
       "region": null,
       "alias": [
-        "Rheinland Pfalz"
+        "Rheinland Pfalz",
+        "Rhineland-Palatinate"
       ]
     },
     {
@@ -123,14 +131,17 @@
       "name": "Sachsen",
       "code": "SN",
       "region": null,
-      "alias": null
+      "alias": [
+        "Saxony"
+      ]
     },
     {
       "name": "Sachsen-Anhalt",
       "code": "ST",
       "region": null,
       "alias": [
-        "Sachsen Anhalt"
+        "Sachsen Anhalt",
+        "Saxony-Anhalt"
       ]
     },
     {
@@ -146,7 +157,8 @@
       "code": "TH",
       "region": null,
       "alias": [
-        "Thuringen"
+        "Thuringen",
+        "Thuringia"
       ]
     }
   ]

@@ -176,10 +176,13 @@
       "alias": null
     },
     {
-      "name": "Compostela Valley",
+      "name": "Davao de Oro",
       "code": null,
       "region": null,
-      "alias": null
+      "alias": [
+        "ComVal",
+        "Compostela Valley"
+      ]
     },
     {
       "name": "Cotabato",
@@ -296,8 +299,16 @@
       "alias": null
     },
     {
-      "name": "Maguindanao",
-      "code": null,
+      "name": "Maguindanao del Norte",
+      "code": "MGN",
+      "region": null,
+      "alias": [
+        "Maguindanao"
+      ]
+    },
+    {
+      "name": "Maguindanao del Sur",
+      "code": "MGS",
       "region": null,
       "alias": null
     },

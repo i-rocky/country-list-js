@@ -32,7 +32,7 @@
     {
       "name": "বরগুনা",
       "code": null,
-      "region": "Barisal",
+      "region": "Barishal",
       "alias": [
         "Barguna"
       ]
@@ -40,15 +40,16 @@
     {
       "name": "বরিশাল",
       "code": null,
-      "region": "Barisal",
+      "region": "Barishal",
       "alias": [
-        "Barisal"
+        "Barisal",
+        "Barishal"
       ]
     },
     {
       "name": "ভোলা",
       "code": null,
-      "region": "Barisal",
+      "region": "Barishal",
       "alias": [
         "Bhola"
       ]
@@ -56,7 +57,7 @@
     {
       "name": "ঝালকাঠি",
       "code": null,
-      "region": "Barisal",
+      "region": "Barishal",
       "alias": [
         "Jhalokati"
       ]
@@ -64,7 +65,7 @@
     {
       "name": "পটুয়াখালী",
       "code": null,
-      "region": "Barisal",
+      "region": "Barishal",
       "alias": [
         "Patuakhali"
       ]
@@ -72,7 +73,7 @@
     {
       "name": "পিরোজপুর",
       "code": null,
-      "region": "Barisal",
+      "region": "Barishal",
       "alias": [
         "Pirojpur"
       ]
@@ -80,7 +81,7 @@
     {
       "name": "বান্দরবান",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Bandarban"
       ]
@@ -88,7 +89,7 @@
     {
       "name": "ব্রাহ্মণবাড়ীয়া",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Brahmanbaria"
       ]
@@ -96,7 +97,7 @@
     {
       "name": "চাঁদপুর",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Chandpur"
       ]
@@ -104,23 +105,25 @@
     {
       "name": "চট্টগ্রাম",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
+        "Chattogram",
         "Chittagong"
       ]
     },
     {
       "name": "কুমিল্লা",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
-        "Comilla"
+        "Comilla",
+        "Cumilla"
       ]
     },
     {
       "name": "কক্সবাজার",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Cox's Bazar"
       ]
@@ -128,7 +131,7 @@
     {
       "name": "ফেনী",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Feni"
       ]
@@ -136,7 +139,7 @@
     {
       "name": "খাগড়াছড়ি",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Khagrachhari"
       ]
@@ -144,7 +147,7 @@
     {
       "name": "লক্ষীপুর",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Lakshmipur"
       ]
@@ -152,7 +155,7 @@
     {
       "name": "নোয়াখালী",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Noakhali"
       ]
@@ -160,7 +163,7 @@
     {
       "name": "রাঙ্গামাটি",
       "code": null,
-      "region": "Chittagong",
+      "region": "Chattogram",
       "alias": [
         "Rangamati"
       ]
@@ -200,7 +203,7 @@
     {
       "name": "জামালপুর",
       "code": null,
-      "region": "Dhaka",
+      "region": "Mymensingh",
       "alias": [
         "Jamalpur"
       ]
@@ -240,7 +243,7 @@
     {
       "name": "ময়মনসিংহ",
       "code": null,
-      "region": "Dhaka",
+      "region": "Mymensingh",
       "alias": [
         "Mymensingh"
       ]
@@ -264,9 +267,10 @@
     {
       "name": "নেত্রকোনা",
       "code": null,
-      "region": "Dhaka",
+      "region": "Mymensingh",
       "alias": [
-        "Netrakona"
+        "Netrakona",
+        "Netrokona"
       ]
     },
     {
@@ -288,7 +292,7 @@
     {
       "name": "শেরপুর",
       "code": null,
-      "region": "Dhaka",
+      "region": "Mymensingh",
       "alias": [
         "Sherpur"
       ]
@@ -322,6 +326,7 @@
       "code": null,
       "region": "Khulna",
       "alias": [
+        "Jashore",
         "Jessore"
       ]
     },
@@ -386,7 +391,8 @@
       "code": null,
       "region": "Rajshahi",
       "alias": [
-        "Bogra"
+        "Bogra",
+        "Bogura"
       ]
     },
     {

@@ -20,7 +20,9 @@ ok('no __esModule key', !('__esModule' in now));
 // data corrections, plus the eight countries carrying a name they were
 // renamed to since 3.1.8 was published
 const DECLARED = new Set(['BY','ES','NG','ET','VN','HR','LT','BG','VE','MR','ST','SL','ZW','ZM',
-                          'TR','SZ','MK','CZ','CV','CI','TL','VA','GB','US']);
+                          'TR','SZ','MK','CZ','CV','CI','TL','VA','GB','US',
+                          'PK','CU','ET','ID','IN','MX','BE','BR','CN','DE','IT','NL',
+                          'ES','CL','PH','BD']);
 const restrict = (a, e) => {
     if (Array.isArray(e)) return Array.isArray(a) ? a.map((v,i)=>restrict(v,e[i])) : a;
     if (e && typeof e === 'object' && a && typeof a === 'object') {

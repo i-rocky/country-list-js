@@ -65,11 +65,13 @@ jobs:
       - if: steps.plan.outputs.publish == 'true'
         run: npm run verify
 
+      # Trusted publishing: npm authenticates the workflow itself through the
+      # OIDC token granted by `id-token: write` above. There is no npm token
+      # in this repository, so there is none to leak or rotate. Provenance is
+      # attested from the same identity.
       - name: Publish ${{ steps.plan.outputs.version }} to the ${{ steps.plan.outputs.tag }} tag
         if: steps.plan.outputs.publish == 'true'
         run: npm publish --provenance --access public --tag ${{ steps.plan.outputs.tag }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Tag and write the GitHub release
         if: steps.plan.outputs.publish == 'true'

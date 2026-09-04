@@ -35,71 +35,94 @@
   "provinces": [
     {
       "name": "Addis Ababa",
-      "code": null,
+      "code": "AA",
       "region": null,
       "alias": null
     },
     {
-      "name": "Afar Region",
-      "code": null,
+      "name": "Afar",
+      "code": "AF",
       "region": null,
       "alias": null
     },
     {
-      "name": "Amhara Region",
-      "code": null,
+      "name": "Amhara",
+      "code": "AM",
       "region": null,
       "alias": null
     },
     {
       "name": "Benishangul-Gumuz",
-      "code": null,
+      "code": "BE",
       "region": null,
       "alias": [
         "Benishangul Gumuz"
       ]
     },
     {
+      "name": "Central Ethiopia",
+      "code": "CE",
+      "region": null,
+      "alias": null
+    },
+    {
       "name": "Dire Dawa",
-      "code": null,
+      "code": "DD",
       "region": null,
       "alias": null
     },
     {
       "name": "Gambela",
-      "code": null,
+      "code": "GA",
       "region": null,
-      "alias": null
+      "alias": [
+        "Gambella"
+      ]
     },
     {
       "name": "Harari",
-      "code": null,
+      "code": "HA",
       "region": null,
       "alias": null
     },
     {
       "name": "Oromia",
-      "code": null,
+      "code": "OR",
+      "region": null,
+      "alias": [
+        "Oromiya"
+      ]
+    },
+    {
+      "name": "Sidama",
+      "code": "SI",
       "region": null,
       "alias": null
     },
     {
       "name": "Somali",
-      "code": null,
+      "code": "SO",
       "region": null,
       "alias": null
     },
     {
-      "name": "Southern Nations, Nationalities, and Peoples' Region",
-      "code": null,
+      "name": "South Ethiopia",
+      "code": "SE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South West Ethiopia Peoples",
+      "code": "SW",
       "region": null,
       "alias": [
-        "SNNPR"
+        "Southwest Ethiopia",
+        "South West Ethiopia"
       ]
     },
     {
-      "name": "Tigray Region",
-      "code": null,
+      "name": "Tigray",
+      "code": "TI",
       "region": null,
       "alias": null
     }

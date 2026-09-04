@@ -127,7 +127,9 @@
       "name": "Bolzano",
       "code": "BZ",
       "region": null,
-      "alias": null
+      "alias": [
+        "South Tyrol"
+      ]
     },
     {
       "name": "Brescia",
@@ -235,7 +237,9 @@
       "name": "Firenze",
       "code": "FI",
       "region": null,
-      "alias": null
+      "alias": [
+        "Florence"
+      ]
     },
     {
       "name": "Foggia",
@@ -259,7 +263,9 @@
       "name": "Genova",
       "code": "GE",
       "region": null,
-      "alias": null
+      "alias": [
+        "Genoa"
+      ]
     },
     {
       "name": "Gorizia",
@@ -343,7 +349,9 @@
       "name": "Mantova",
       "code": "MN",
       "region": null,
-      "alias": null
+      "alias": [
+        "Mantua"
+      ]
     },
     {
       "name": "Massa-Carrara",
@@ -367,7 +375,9 @@
       "name": "Milano",
       "code": "MI",
       "region": null,
-      "alias": null
+      "alias": [
+        "Milan"
+      ]
     },
     {
       "name": "Modena",
@@ -379,13 +389,17 @@
       "name": "Monza e della Brianza",
       "code": "MB",
       "region": null,
-      "alias": null
+      "alias": [
+        "Monza and Brianza"
+      ]
     },
     {
       "name": "Napoli",
       "code": "NA",
       "region": null,
-      "alias": null
+      "alias": [
+        "Naples"
+      ]
     },
     {
       "name": "Novara",
@@ -409,7 +423,9 @@
       "name": "Padova",
       "code": "PD",
       "region": null,
-      "alias": null
+      "alias": [
+        "Padua"
+      ]
     },
     {
       "name": "Palermo",
@@ -439,7 +455,9 @@
       "name": "Pesaro e Urbino",
       "code": "PU",
       "region": null,
-      "alias": null
+      "alias": [
+        "Pesaro and Urbino"
+      ]
     },
     {
       "name": "Pescara",
@@ -523,7 +541,9 @@
       "name": "Roma",
       "code": "RM",
       "region": null,
-      "alias": null
+      "alias": [
+        "Rome"
+      ]
     },
     {
       "name": "Rovigo",
@@ -559,7 +579,9 @@
       "name": "Siracusa",
       "code": "SR",
       "region": null,
-      "alias": null
+      "alias": [
+        "Syracuse"
+      ]
     },
     {
       "name": "Sondrio",
@@ -589,7 +611,9 @@
       "name": "Torino",
       "code": "TO",
       "region": null,
-      "alias": null
+      "alias": [
+        "Turin"
+      ]
     },
     {
       "name": "Trapani",
@@ -601,7 +625,9 @@
       "name": "Trento",
       "code": "TN",
       "region": null,
-      "alias": null
+      "alias": [
+        "Trentino"
+      ]
     },
     {
       "name": "Treviso",
@@ -631,7 +657,9 @@
       "name": "Venezia",
       "code": "VE",
       "region": null,
-      "alias": null
+      "alias": [
+        "Venice"
+      ]
     },
     {
       "name": "Verbano-Cusio-Ossola",
@@ -668,6 +696,15 @@
       "code": "VT",
       "region": null,
       "alias": null
+    },
+    {
+      "name": "Sud Sardegna",
+      "code": "SU",
+      "region": null,
+      "alias": [
+        "South Sardinia",
+        "Sud Sardinia"
+      ]
     }
   ]
 }

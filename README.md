@@ -197,13 +197,18 @@ assigns them their own codes. Both facts are true at once, and
 `findByProvince('Norfolk Island')` answers Australia while
 `findByIso2('NF')` answers Norfolk Island.
 
-This is inherited data whose provenance predates the 4.0 rewrite. It is checked
-for structure — unique within a country, aliases well formed, no duplicate
-(name, region) pair — but the *currency* of each list is verified only where
-this changelog says so. Vietnam and the United Kingdom were both found to be
-years out of date and corrected in 4.0; the other 29 have not been audited
-against ISO 3166-2 one by one. Treat `code` and `name` as reliable and the
-completeness of a country's list as unwarranted.
+**All 31 lists were audited against ISO 3166-2 for 4.0**, and fourteen of them
+were wrong — see the changelog. Pakistan was still listing divisions abolished
+in 2000, Cuba had four capital cities where provinces belonged, and the United
+Kingdom's were counties abolished in 1965 and 1996. Where ISO itself lags the
+country, the country wins: Ethiopia carries the fourteen regions it has, not
+the twelve ISO still lists.
+
+Names that were superseded stay reachable — `findByProvince('Compostela
+Valley')` still answers, as do `Bogra`, `Chittagong` and `Northern Areas` —
+except where a unit was dissolved outright rather than renamed. Vietnam's 29
+merged-away provinces are gone: recording Hà Giang as another name for Tuyên
+Quang would trade a stale fact for a false one.
 
 **Sources.** Native names, demonyms, languages, TLDs, areas, coordinates,
 borders and the alternative-name list were imported from

@@ -110,11 +110,15 @@
       ]
     },
     {
-      "name": "Federal District",
-      "code": "DF",
+      "name": "Ciudad de México",
+      "code": "CMX",
       "region": null,
       "alias": [
-        "DIF"
+        "CDMX",
+        "DIF",
+        "Distrito Federal",
+        "Federal District",
+        "Mexico City"
       ]
     },
     {

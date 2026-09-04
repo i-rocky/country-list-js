@@ -61,13 +61,16 @@
       "name": "Vizcaya",
       "code": "BI",
       "region": null,
-      "alias": null
+      "alias": [
+        "Biscay"
+      ]
     },
     {
       "name": "Guipúzcoa",
       "code": "SS",
       "region": null,
       "alias": [
+        "Gipuzkoa",
         "Guipuzcoa"
       ]
     },
@@ -82,14 +85,17 @@
       "code": "L",
       "region": null,
       "alias": [
-        "Lerida"
+        "Lerida",
+        "Lleida"
       ]
     },
     {
       "name": "Gerona",
       "code": "GI",
       "region": null,
-      "alias": null
+      "alias": [
+        "Girona"
+      ]
     },
     {
       "name": "Barcelona",
@@ -157,7 +163,9 @@
       "name": "Almeria",
       "code": "AL",
       "region": null,
-      "alias": null
+      "alias": [
+        "Almería"
+      ]
     },
     {
       "name": "Granada",
@@ -177,7 +185,9 @@
       "name": "Tenerife",
       "code": "TF",
       "region": null,
-      "alias": null
+      "alias": [
+        "Santa Cruz de Tenerife"
+      ]
     },
     {
       "name": "Cádiz",
@@ -191,7 +201,9 @@
       "name": "Sevilla",
       "code": "SE",
       "region": null,
-      "alias": null
+      "alias": [
+        "Seville"
+      ]
     },
     {
       "name": "Huelva",
@@ -317,7 +329,9 @@
       "name": "Orense",
       "code": "OR",
       "region": null,
-      "alias": null
+      "alias": [
+        "Ourense"
+      ]
     },
     {
       "name": "Palencia",
@@ -349,6 +363,21 @@
       "region": null,
       "alias": [
         "Balears"
+      ]
+    },
+    {
+      "name": "Cantabria",
+      "code": "S",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Navarra",
+      "code": "NA",
+      "region": null,
+      "alias": [
+        "Navarre",
+        "Nafarroa"
       ]
     }
   ]

@@ -96,7 +96,9 @@
       "name": "Distrito Federal",
       "code": "DF",
       "region": null,
-      "alias": null
+      "alias": [
+        "Federal"
+      ]
     },
     {
       "name": "Espírito Santo",

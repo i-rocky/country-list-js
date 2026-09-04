@@ -25,8 +25,14 @@
   ],
   "provinces": [
     {
+      "name": "Artemisa",
+      "code": "15",
+      "region": null,
+      "alias": null
+    },
+    {
       "name": "Camagüey",
-      "code": null,
+      "code": "09",
       "region": null,
       "alias": [
         "Camaguey"
@@ -34,7 +40,7 @@
     },
     {
       "name": "Ciego de Ávila",
-      "code": null,
+      "code": "08",
       "region": null,
       "alias": [
         "Ciego de Avila"
@@ -42,73 +48,76 @@
     },
     {
       "name": "Cienfuegos",
-      "code": null,
+      "code": "06",
       "region": null,
       "alias": null
     },
     {
-      "name": "Havana",
-      "code": null,
+      "name": "Granma",
+      "code": "12",
       "region": null,
-      "alias": null
-    },
-    {
-      "name": "Bayamo",
-      "code": null,
-      "region": null,
-      "alias": null
+      "alias": [
+        "Bayamo"
+      ]
     },
     {
       "name": "Guantánamo",
-      "code": null,
+      "code": "14",
       "region": null,
       "alias": [
         "Guantanamo"
       ]
     },
     {
+      "name": "Havana",
+      "code": "03",
+      "region": null,
+      "alias": [
+        "La Habana",
+        "Ciudad de La Habana"
+      ]
+    },
+    {
       "name": "Holguín",
-      "code": null,
+      "code": "11",
       "region": null,
       "alias": [
         "Holguin"
       ]
     },
     {
-      "name": "Nueva Gerona",
-      "code": null,
+      "name": "Isla de la Juventud",
+      "code": "99",
       "region": null,
-      "alias": null
-    },
-    {
-      "name": "Artemisa",
-      "code": null,
-      "region": null,
-      "alias": null
+      "alias": [
+        "Isle of Youth",
+        "Nueva Gerona"
+      ]
     },
     {
       "name": "Las Tunas",
-      "code": null,
+      "code": "10",
       "region": null,
       "alias": null
     },
     {
       "name": "Matanzas",
-      "code": null,
+      "code": "04",
       "region": null,
       "alias": null
     },
     {
-      "name": "San José de las Lajas",
-      "code": null,
+      "name": "Mayabeque",
+      "code": "16",
       "region": null,
       "alias": [
+        "San José de las Lajas",
         "San Jose de las Lajas"
       ]
     },
     {
       "name": "Pinar del Río",
-      "code": null,
+      "code": "01",
       "region": null,
       "alias": [
         "Pinar del Rio"
@@ -116,7 +125,7 @@
     },
     {
       "name": "Sancti Spíritus",
-      "code": null,
+      "code": "07",
       "region": null,
       "alias": [
         "Sancti Spiritus"
@@ -124,15 +133,17 @@
     },
     {
       "name": "Santiago de Cuba",
-      "code": null,
+      "code": "13",
       "region": null,
       "alias": null
     },
     {
-      "name": "Santa Clara",
-      "code": null,
+      "name": "Villa Clara",
+      "code": "05",
       "region": null,
-      "alias": null
+      "alias": [
+        "Santa Clara"
+      ]
     }
   ]
 }

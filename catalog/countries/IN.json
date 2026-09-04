@@ -222,18 +222,6 @@
       "alias": null
     },
     {
-      "name": "Dadra and Nagar Haveli",
-      "code": "DN",
-      "region": null,
-      "alias": null
-    },
-    {
-      "name": "Daman and Diu",
-      "code": "DD",
-      "region": null,
-      "alias": null
-    },
-    {
       "name": "Lakshadweep",
       "code": "LD",
       "region": null,
@@ -248,6 +236,21 @@
     {
       "name": "Puducherry",
       "code": "PY",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Dadra and Nagar Haveli and Daman and Diu",
+      "code": "DH",
+      "region": null,
+      "alias": [
+        "Dadra and Nagar Haveli",
+        "Daman and Diu"
+      ]
+    },
+    {
+      "name": "Ladakh",
+      "code": "LA",
       "region": null,
       "alias": null
     }

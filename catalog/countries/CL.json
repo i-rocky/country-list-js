@@ -219,12 +219,24 @@
       ]
     },
     {
-      "name": "Ñuble",
+      "name": "Diguillín",
       "code": null,
-      "region": "VIII Biobío",
+      "region": "Ñuble",
       "alias": [
-        "Nuble"
+        "Diguillin"
       ]
+    },
+    {
+      "name": "Itata",
+      "code": null,
+      "region": "Ñuble",
+      "alias": null
+    },
+    {
+      "name": "Punilla",
+      "code": null,
+      "region": "Ñuble",
+      "alias": null
     },
     {
       "name": "Biobío",

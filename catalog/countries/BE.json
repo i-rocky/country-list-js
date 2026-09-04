@@ -87,6 +87,7 @@
       "code": "VBR",
       "region": null,
       "alias": [
+        "Flemish Brabant",
         "Vlaams Brabant"
       ]
     },
@@ -95,7 +96,8 @@
       "code": "WBR",
       "region": null,
       "alias": [
-        "Waals Brabant"
+        "Waals Brabant",
+        "Walloon Brabant"
       ]
     },
     {

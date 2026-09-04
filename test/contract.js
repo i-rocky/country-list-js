@@ -102,6 +102,11 @@ const renamed = iso2 => {
         ') still answers.';
 };
 
+const ENGLISH_ALIAS =
+    "ISO 3166-2's English subdivision name added as an alias beside the local " +
+    'one, so Bavaria finds Bayern and Florence finds Firenze. Nothing was ' +
+    'removed: the ASCII transliterations callers actually type are untouched.';
+
 const currency = (from, to, on, why) =>
     'currency ' + from + ' -> ' + to + ' on ' + on + ' (' + why + ').';
 
@@ -109,13 +114,61 @@ const CHANGED = {
     BY: 'currency BYR -> BYN.  Belarus redenominated in 2016; master has ' +
         'carried the fix since before v3.1.8, but the v3.1.8 tag was cut off ' +
         'master and published a tree where it had been reverted.',
-    ES: 'provinces 46 -> 48.  Merged community fixes (PRs #71, #75).',
+
+    // Found by auditing all 31 subdivision lists against ISO 3166-2. Every
+    // one of these was a fact that had stopped being true.
+    PK: 'subdivisions 31 -> 7. The list was divisions -- a tier abolished in ' +
+        '2000 -- and still carried the Federally Administered Tribal Areas, ' +
+        'merged into Khyber Pakhtunkhwa in 2018, and the Northern Areas, ' +
+        'renamed Gilgit-Baltistan in 2009. Replaced with ISO 3166-2:PK.',
+    CU: 'four entries were capital cities, not provinces: Bayamo is the ' +
+        'capital of Granma, Santa Clara of Villa Clara, Nueva Gerona of Isla ' +
+        'de la Juventud, San Jose de las Lajas of Mayabeque. The cities stay ' +
+        'reachable as aliases of the province they administer.',
+    ET: STRING_ALIAS + '  Also, regions 11 -> 14. The Southern Nations, Nationalities and Peoples\' ' +
+        'Region was dissolved on 2023-08-19; Sidama (2020), South West ' +
+        'Ethiopia Peoples (2021), Central Ethiopia and South Ethiopia (both ' +
+        '2023) replace it. ISO 3166-2 still lists 12 and knows nothing of the ' +
+        'last two, so this follows Ethiopia rather than the standard.',
+    ID: 'provinces 34 -> 38. Central Papua, Highland Papua, South Papua and ' +
+        'Southwest Papua were created in 2022 and were missing.',
+    IN: 'Dadra and Nagar Haveli and Daman and Diu merged into one union ' +
+        'territory in 2020 and were still listed separately; Ladakh, created ' +
+        'in 2019, was missing.',
+    MX: 'Federal District -> Ciudad de México. It stopped being the Federal ' +
+        'District when the constitution was amended in 2016. The old name is ' +
+        'an alias.',
+    ES: 'provinces 46 -> 50. Merged community fixes (PRs #71, #75), and then ' +
+        'Cantabria and Navarra, which were missing. Both are ' +
+        'single-province autonomous communities, which is how they get ' +
+        'overlooked -- issue #27 reported Navarra and Asturias, and only ' +
+        'Asturias was ever fixed.',
+    IT: 'provinces 106 -> 107. Sud Sardegna was created in 2016 and was ' +
+        'missing.  Plus ' + ENGLISH_ALIAS,
+    CL: 'provinces 54 -> 56. Ñuble stopped being a province in 2018 when it ' +
+        'became a region; it is now Diguillín, Itata and Punilla.',
+    PH: 'provinces 82 -> 83. Compostela Valley was renamed Davao de Oro by ' +
+        'plebiscite in December 2019, and Maguindanao was divided into ' +
+        'Maguindanao del Norte and Maguindanao del Sur on 2022-09-17. Both ' +
+        'former names remain aliases. The 83rd entry is Metro Manila, which ' +
+        'is a region rather than a province but covers territory no province ' +
+        'does.',
+    BD: 'Mymensingh Division, created in 2015, was missing, so its four ' +
+        'districts were still filed under Dhaka. Barisal and Chittagong ' +
+        'divisions carry the spellings they were renamed to in 2018, and the ' +
+        'districts renamed at the same time -- Bogra, Comilla, Jessore -- ' +
+        'answer to both.',
+
+    // Additive only: ISO 3166-2's English name added alongside the local one.
+    BE: ENGLISH_ALIAS, BR: ENGLISH_ALIAS, CN: ENGLISH_ALIAS, DE: ENGLISH_ALIAS,
+    NL: ENGLISH_ALIAS,
     GB: 'subdivisions 114 -> 4. The list was historic counties, and four of ' +
         'them -- Avon, Cleveland, Humberside, Middlesex -- have not existed ' +
         'since 1996, 1996, 1996 and 1965. Replaced with what ISO 3166-2:GB ' +
         'actually defines at the first tier: England, Northern Ireland, ' +
         'Scotland and Wales.',
-    NG: 'provinces 12 -> 36.  Merged community fix (PR #69).',
+    NG: 'provinces 12 -> 36.  Merged community fix (PR #69).  Also, the ' +
+        'Federal Capital Territory was missing entirely.',
     US: 'subdivisions 60 -> 57. The list was USPS postal abbreviations, which ' +
         'include the Federated States of Micronesia, the Marshall Islands and ' +
         'Palau because the postal service serves them. All three are ' +
@@ -124,7 +177,7 @@ const CHANGED = {
         'right. What remains is ISO 3166-2:US: 50 states, the District of ' +
         'Columbia and 6 outlying areas.',
 
-    ET: STRING_ALIAS, VN: STRING_ALIAS,
+    VN: STRING_ALIAS,
     TR: STRING_ALIAS + '  Also ' + renamed('TR'),
 
     SZ: renamed('SZ'), MK: renamed('MK'), CZ: renamed('CZ'),

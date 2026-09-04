@@ -102,7 +102,9 @@
       "name": "District of Columbia",
       "code": "DC",
       "region": null,
-      "alias": null
+      "alias": [
+        "Columbia"
+      ]
     },
     {
       "name": "Delaware",
@@ -396,7 +398,9 @@
       "name": "Virgin Islands",
       "code": "VI",
       "region": null,
-      "alias": null
+      "alias": [
+        "United States Virgin Islands"
+      ]
     }
   ]
 }

@@ -14,7 +14,7 @@ fails again if a declared difference turns out not to have happened.
 
 ### Breaking changes
 
-Thirteen of them, ordered by how likely they are to bite. The first is the only
+Fourteen of them, ordered by how likely they are to bite. The first is the only
 one that fails quietly.
 
 1. **`currency.decimal` is a number.** It was the string `'2'`; it is now `2`.
@@ -101,7 +101,36 @@ one that fails quietly.
     remains is ISO 3166-2:US: 50 states, the District of Columbia and 6
     outlying areas.
 
-13. **Two borders removed.** India–Sri Lanka is the Palk Strait, a maritime
+13. **Fourteen subdivision lists were wrong.** All 31 were audited against
+    ISO 3166-2. Beyond Vietnam, the United Kingdom and the United States
+    above:
+
+    | | was | now | |
+    |---|---|---|---|
+    | Pakistan | 31 divisions | 7 | the divisions tier was abolished in 2000, and the list still held the Federally Administered Tribal Areas, merged into Khyber Pakhtunkhwa in 2018, and the Northern Areas, renamed Gilgit-Baltistan in 2009 |
+    | Cuba | 16 | 16 | four entries were **capital cities, not provinces**: Bayamo is the capital of Granma, Santa Clara of Villa Clara |
+    | Ethiopia | 11 | 14 | SNNPR was dissolved on 2023-08-19; Sidama, South West Ethiopia Peoples, Central Ethiopia and South Ethiopia replace it |
+    | Indonesia | 34 | 38 | Central Papua, Highland Papua, South Papua and Southwest Papua were created in 2022 |
+    | Chile | 54 | 56 | Ñuble stopped being a province in 2018 and became a region: Diguillín, Itata, Punilla |
+    | Spain | 48 | 50 | Cantabria and Navarra were missing — issue #27 reported Navarra and only Asturias was fixed |
+    | Philippines | 82 | 83 | Compostela Valley was renamed Davao de Oro in 2019; Maguindanao split in two in 2022 |
+    | Bangladesh | 7 divisions | 8 | Mymensingh Division was created in 2015 and four districts were still filed under Dhaka |
+    | Italy | 106 | 107 | Sud Sardegna was created in 2016 |
+    | India | 36 | 36 | two union territories merged in 2020 and were still separate; Ladakh, created 2019, was missing |
+    | Nigeria | 36 | 37 | the Federal Capital Territory was missing — 36 states and no Abuja |
+    | Mexico | — | — | Mexico City stopped being the Federal District in 2016 |
+
+    Superseded names stay reachable as aliases, so `findByProvince` still
+    answers for `Compostela Valley`, `Bogra`, `Chittagong` and `Northern
+    Areas`. Where ISO itself lags the country, the country wins: Ethiopia
+    carries fourteen regions, not the twelve ISO still lists.
+
+    ISO 3166-2's English names were also added as aliases beside local ones,
+    so `Bavaria` finds `Bayern` and `Florence` finds `Firenze`. Nothing was
+    removed: the ASCII transliterations callers type — `Camaguey`, `Mugla`,
+    `Michoacan` — are untouched.
+
+14. **Two borders removed.** India–Sri Lanka is the Palk Strait, a maritime
     boundary, so Sri Lanka now correctly has none. France–Suriname duplicated
     French Guiana, which is a separate entry carrying its own `BR` and `SR`
     — and the inconsistency showed, because France was never listed as

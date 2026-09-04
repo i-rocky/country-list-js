@@ -70,7 +70,8 @@
       "code": "NB",
       "region": null,
       "alias": [
-        "Noord Brabant"
+        "Noord Brabant",
+        "North Brabant"
       ]
     },
     {
@@ -78,7 +79,8 @@
       "code": "NH",
       "region": null,
       "alias": [
-        "Noord Holland"
+        "Noord Holland",
+        "North Holland"
       ]
     },
     {
@@ -98,6 +100,7 @@
       "code": "ZH",
       "region": null,
       "alias": [
+        "South Holland",
         "Zuid Holland"
       ]
     },

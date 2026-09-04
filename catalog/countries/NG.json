@@ -245,6 +245,15 @@
       "code": null,
       "region": null,
       "alias": null
+    },
+    {
+      "name": "Federal Capital Territory",
+      "code": "FC",
+      "region": null,
+      "alias": [
+        "Abuja",
+        "FCT"
+      ]
     }
   ]
 }
