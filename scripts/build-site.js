@@ -1,12 +1,8 @@
 'use strict';
 
-// Assembles the demo site into build/site/: the page from docs/, and the
-// browser bundle from dist/.  The bundle used to be copied into docs/, which
-// put a build output inside a source directory and meant the published site
-// and the local preview were assembled two different ways.
-//
-// The Pages workflow publishes what this produces, so previewing build/site/
-// locally shows exactly what deploys.
+// Assembles the demo site into build/site/: the page from docs/, the browser
+// bundle from dist/.  The Pages workflow publishes what this produces, so
+// previewing build/site/ locally shows exactly what deploys.
 
 const fs = require('fs');
 const path = require('path');

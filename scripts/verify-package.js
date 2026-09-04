@@ -38,13 +38,28 @@ try {
     run('npm', ['install', './' + tarball, 'old@npm:country-list-js@' + BASELINE,
                 '--no-audit', '--no-fund'], dir);
 
-    for (const f of ['cjs.js', 'esm.mjs'])
+    for (const f of ['cjs.js', 'esm.mjs', 'types.ts'])
         fs.copyFileSync(path.join(root, 'test', 'package', f), path.join(dir, f));
 
     console.error();
     run('node', ['cjs.js'], dir);
     run('node', ['esm.mjs'], dir);
     run('node', [path.join(root, 'test', 'package', 'browser.js')], root);
+
+    // The declarations get compiled against the installed package, not the
+    // source tree: "types" pointing somewhere that is not in the tarball, or
+    // a .d.ts that does not describe what ships, fails only from out here.
+    console.error('\nchecking the shipped declarations');
+    fs.writeFileSync(path.join(dir, 'tsconfig.json'), JSON.stringify({
+        compilerOptions: {
+            strict: true, noEmit: true, target: 'ES2020',
+            module: 'node16', moduleResolution: 'node16',
+            esModuleInterop: true, types: [],
+        },
+        files: ['types.ts'],
+    }, null, 2) + '\n');
+    run(path.join(root, 'node_modules', '.bin', 'tsc'), ['--project', '.'], dir);
+    console.error('types: compiled against the installed package');
 
     console.error('\npackage verified against the published %s', BASELINE);
 } catch (e) {

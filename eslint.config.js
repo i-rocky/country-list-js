@@ -1,7 +1,7 @@
 'use strict';
 
-// Flat config.  ESLint 9 no longer reads .eslintrc.json, so `npm test` had
-// been failing before it ever reached mocha.
+// Flat config.  @eslint/js and globals are direct devDependencies: ESLint 10
+// stopped hoisting them, and relying on that was a phantom dependency.
 
 const js = require('@eslint/js');
 const globals = require('globals');

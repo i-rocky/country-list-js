@@ -50,8 +50,8 @@ describe('README', () => {
     });
 
     it('shows a Denmark record that matches the real one', () => {
-        // the 3.1.8 README showed `code: { iso_alpha_2, iso_alpha_3 }`, which
-        // the code has never returned
+        // the record in the README has to be the record the code returns:
+        // the 3.1.8 README showed keys the code has never had
         const dk = country.findByIso2('DK');
         expect(dk.code).to.deep.equal({iso2: 'DK', iso3: 'DNK', numeric: '208'});
         expect(dk.currency).to.deep.equal({code: 'DKK', symbol: 'Dkr', decimal: 2});

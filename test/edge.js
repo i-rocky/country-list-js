@@ -138,9 +138,9 @@ describe('Error path', () => {
 
 describe('Edge cases', () => {
     it('findByProvince is stable across repeated calls', () => {
-        // the shipped 3.1.8 caches the unpacked result and then calls .map on
-        // it, so the second lookup of any single-country province throws
-        // "self.cache.province[name].map is not a function"
+        // a memoised lookup that stores its result unpacked and unpacks it
+        // again on the way out throws on the second call. 3.1.8 did exactly
+        // that; there is no cache here, and this holds it to that.
         for (const name of ['Nordjylland', 'Zealand', 'Texas', 'XX']) {
             const first = country.findByProvince(name);
             for (let i = 0; i < 3; i++)
@@ -244,13 +244,17 @@ describe('Edge cases', () => {
             if (!provinces) continue;
             expect(provinces, iso2).to.be.an('array').that.is.not.empty;
             for (const p of provinces) {
+                expect(Object.keys(p).sort(), iso2 + '/' + p.name)
+                    .to.deep.equal(['alias', 'code', 'name', 'region']);
                 expect(p.name, iso2).to.be.a('string').and.not.equal('');
-                if (p.alias !== null && p.alias !== undefined)
-                    // three entries carry a bare string rather than an array;
-                    // Phase 2 normalises the data, and findByProvince already
-                    // copes either way
-                    expect(p.alias, iso2 + '/' + p.name)
-                        .to.satisfy(a => Array.isArray(a) || typeof a === 'string');
+                expect(p.code, iso2 + '/' + p.name)
+                    .to.satisfy(v => v === null || typeof v === 'string');
+                expect(p.region, iso2 + '/' + p.name)
+                    .to.satisfy(v => v === null || typeof v === 'string');
+                // never a bare string: String.indexOf makes a lookup a
+                // substring search
+                expect(p.alias, iso2 + '/' + p.name)
+                    .to.satisfy(a => a === null || Array.isArray(a));
             }
         }
     });
@@ -299,10 +303,9 @@ describe('Edge cases', () => {
     });
 
     it('a mutated result does not corrupt the next lookup', () => {
-        // 3.1.8 cached the transformed object and handed back that very
-        // object every time, so `findByName('Denmark').name = 'x'` poisoned
-        // the cache for the life of the process -- every later lookup of
-        // Denmark answered 'x'.  findByIso2 was fine; the other five were not.
+        // every result is built fresh, so writing to one cannot reach
+        // another. Handing back a shared object made
+        // `findByName('Denmark').name = 'x'` answer 'x' from then on.
         const calls = [['findByIso2', 'FR'], ['findByIso3', 'FRA'],
                        ['findByName', 'France'], ['findByCapital', 'Paris'],
                        ['findByProvince', 'Texas'], ['findByPhoneNbr', '+33123456789']];
