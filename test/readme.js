@@ -16,9 +16,9 @@ describe('README', () => {
         expect(country.findByIso2('DK').name).to.equal('Denmark');
         expect(country.findByIso3('DNK').name).to.equal('Denmark');
         expect(country.findByName('Denmark').name).to.equal('Denmark');
-        expect(country.findByCapital('Copenhagen').name).to.equal('Denmark');
-        expect(country.findByProvince('Zealand').name).to.equal('Denmark');
-        expect(country.findByPhoneNbr('+4505551212').name).to.equal('Denmark');
+        expect(country.findByCapital('Copenhagen')[0].name).to.equal('Denmark');
+        expect(country.findByProvince('Zealand')[0].name).to.equal('Denmark');
+        expect(country.findByPhoneNbr('+4505551212')[0].name).to.equal('Denmark');
         expect(country.findByCurrency('DKK')).to.be.an('array');
         expect(country.findByIso2('ZZ')).to.equal(undefined);
     });
@@ -43,7 +43,7 @@ describe('README', () => {
     });
 
     it('shows the phone results it actually returns', () => {
-        expect(country.findByPhoneNbr('+12465551212').name).to.equal('Barbados');
+        expect(country.findByPhoneNbr('+12465551212')[0].name).to.equal('Barbados');
         expect(country.findByPhoneNbr('+12125551212').map(c => c.name))
             .to.deep.equal(['Canada', 'United States',
                             'United States Minor Outlying Islands']);
@@ -91,7 +91,7 @@ describe('README', () => {
     });
 
     it('is right that retired currency codes still resolve', () => {
-        expect(country.findByCurrency('HRK').name).to.equal('Croatia');
+        expect(country.findByCurrency('HRK')[0].name).to.equal('Croatia');
         expect(country.findByIso2('HR').currency.code).to.equal('EUR');
     });
 

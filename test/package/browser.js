@@ -31,13 +31,13 @@ ok('with all 12 members', Object.keys(country).length === 12);
 ok('findByIso2', country.findByIso2('DK').name === 'Denmark');
 ok('case-insensitive', country.findByIso2('dk').name === 'Denmark');
 ok('name alias', country.findByName('Türkiye').name === 'Turkey');
-ok('retired currency', country.findByCurrency('HRK').name === 'Croatia');
+ok('retired currency', country.findByCurrency('HRK')[0].name === 'Croatia');
 ok('corrected currency', country.findByIso2('BG').currency.code === 'EUR');
 ok('timezones', country.findByIso2('DK').timezones[0] === 'Europe/Copenhagen');
 ok('borders', country.findByIso2('PT').borders[0] === 'ES');
 ok('names()', country.names().length === 250);
 ok('continents()', country.continents().length === 7);
-ok('provinces', country.findByProvince('Zealand').name === 'Denmark');
+ok('provinces', country.findByProvince('Zealand')[0].name === 'Denmark');
 
 const seen = [];
 for (const k in [1, 2]) seen.push(k);

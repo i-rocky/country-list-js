@@ -7,8 +7,11 @@
 const expect = require('chai').expect;
 const country = require('../index');
 
-const FINDERS = ['findByIso2', 'findByIso3', 'findByName', 'findByCapital',
-                 'findByCurrency', 'findByProvince', 'findByPhoneNbr'];
+// Finders on a field the data guarantees unique answer a country or undefined;
+// the rest always answer a list.
+const UNIQUE = ['findByIso2', 'findByIso3', 'findByName'];
+const LIST = ['findByCapital', 'findByCurrency', 'findByProvince', 'findByPhoneNbr'];
+const FINDERS = [...UNIQUE, ...LIST];
 
 describe('Happy path', () => {
     it('findByIso2 returns a single country', () => {
@@ -36,8 +39,11 @@ describe('Happy path', () => {
         }
     });
 
-    it('findByCapital returns a single country', () => {
-        expect(country.findByCapital('Copenhagen').name).to.equal('Denmark');
+    it('findByCapital returns a list, because capitals are not unique', () => {
+        expect(country.findByCapital('Copenhagen').map(c => c.name))
+            .to.deep.equal(['Denmark']);
+        expect(country.findByCapital('Kingston').map(c => c.name).sort())
+            .to.deep.equal(['Jamaica', 'Norfolk Island']);
     });
 
     it('findByCurrency returns an array when several countries share one', () => {
@@ -47,24 +53,25 @@ describe('Happy path', () => {
     });
 
     it('findByProvince matches on name and on alias', () => {
-        expect(country.findByProvince('Nordjylland').name).to.equal('Denmark');
-        expect(country.findByProvince('Zealand').name).to.equal('Denmark');
-        expect(country.findByProvince('Texas').name).to.equal('United States');
+        expect(country.findByProvince('Nordjylland')[0].name).to.equal('Denmark');
+        expect(country.findByProvince('Zealand')[0].name).to.equal('Denmark');
+        expect(country.findByProvince('Texas')[0].name).to.equal('United States');
     });
 
     it('findByPhoneNbr matches a unique dialing code', () => {
-        expect(country.findByPhoneNbr('+4505551212').name).to.equal('Denmark');
-        expect(country.findByPhoneNbr('+8804005050').name).to.equal('Bangladesh');
+        expect(country.findByPhoneNbr('+4505551212')[0].name).to.equal('Denmark');
+        expect(country.findByPhoneNbr('+8804005050')[0].name).to.equal('Bangladesh');
     });
 
     it('findByPhoneNbr answers on the most specific prefix', () => {
         // +1-246 is Barbados and +1 is US/Canada/UM.  Barbados is the answer;
         // the wider block is not.
-        expect(country.findByPhoneNbr('+12465551212').name).to.equal('Barbados');
+        expect(country.findByPhoneNbr('+12465551212').map(c => c.name))
+            .to.deep.equal(['Barbados']);
     });
 
     it('findByPhoneNbr distinguishes +44 from +44-1534', () => {
-        expect(country.findByPhoneNbr('+442071234567').name).to.equal('United Kingdom');
+        expect(country.findByPhoneNbr('+442071234567')[0].name).to.equal('United Kingdom');
         const jersey = country.findByPhoneNbr('+441534123456');
         expect((Array.isArray(jersey) ? jersey[0] : jersey).name).to.equal('Jersey');
     });
@@ -99,22 +106,22 @@ describe('Error path', () => {
                 expect(() => country[fn](value), fn + '(' + label + ')').to.not.throw();
         });
 
-    it('unknown values return undefined, never null and never a throw', () => {
-        for (const fn of FINDERS)
+    it('a miss is undefined on a unique finder and empty on a list one', () => {
+        for (const fn of UNIQUE)
             expect(country[fn]('ZZZ_NO_SUCH_THING'), fn).to.equal(undefined);
+        for (const fn of LIST)
+            expect(country[fn]('ZZZ_NO_SUCH_THING'), fn).to.deep.equal([]);
     });
 
-    it('findByPhoneNbr returns undefined for non-strings', () => {
-        // 3.1.8 raised a TypeError here while every other finder returned
-        // undefined; a lookup has no business throwing on bad input
+    it('findByPhoneNbr answers empty for non-strings rather than throwing', () => {
         for (const v of [undefined, null, 42, {}, [], true, NaN])
-            expect(country.findByPhoneNbr(v)).to.equal(undefined);
+            expect(country.findByPhoneNbr(v)).to.deep.equal([]);
     });
 
     it('findByPhoneNbr tolerates junk strings', () => {
         for (const v of ['XX', '+', '', '()- ', '+999999999999999', 'x'.repeat(5000)])
             expect(country.findByPhoneNbr(v), JSON.stringify(v.slice(0, 20)))
-                .to.equal(undefined);
+                .to.deep.equal([]);
     });
 
     it('ls() on an unknown field yields undefineds rather than throwing', () => {
@@ -124,7 +131,8 @@ describe('Error path', () => {
 
     it('a very long lookup value does not blow up', () => {
         const long = 'A'.repeat(100000);
-        for (const fn of FINDERS) expect(country[fn](long), fn).to.equal(undefined);
+        for (const fn of UNIQUE) expect(country[fn](long), fn).to.equal(undefined);
+        for (const fn of LIST) expect(country[fn](long), fn).to.deep.equal([]);
     });
 });
 
@@ -159,9 +167,8 @@ describe('Edge cases', () => {
                         '+15551212', '+3312345678'];
         for (const nbr of probes) {
             const r = country.findByPhoneNbr(nbr);
-            if (Array.isArray(r))
-                expect(r.every(o => o && o.name), nbr + ' -> ' + JSON.stringify(r))
-                    .to.equal(true);
+            expect(r.every(o => o && o.name), nbr + ' -> ' + JSON.stringify(r))
+                .to.equal(true);
         }
     });
 
@@ -170,9 +177,8 @@ describe('Edge cases', () => {
             const code = country.findByIso2(iso2).dialing_code.replace(/\D/g, '');
             if (!code) continue;
             const r = country.findByPhoneNbr('+' + code + '5551212');
-            const list = r === undefined ? [] : Array.isArray(r) ? r : [r];
-            expect(list.every(o => o && o.name), iso2 + ' (+' + code + ')')
-                .to.equal(true);
+            expect(r.length && r.every(o => o && o.name), iso2 + ' (+' + code + ')')
+                .to.be.ok;
         }
     });
 
@@ -250,11 +256,11 @@ describe('Edge cases', () => {
     });
 
     it('round-trips non-ASCII values', () => {
-        expect(country.findByProvince('Sjælland').name).to.equal('Denmark');
-        expect(country.findByProvince('Zealand').name).to.equal('Denmark');
-        expect(country.findByProvince('Muğla').name).to.equal('Turkey');
-        expect(country.findByProvince('Bình Phước').name).to.equal('Vietnam');
-        expect(country.findByProvince('বরিশাল').name).to.equal('Bangladesh');
+        expect(country.findByProvince('Sjælland')[0].name).to.equal('Denmark');
+        expect(country.findByProvince('Zealand')[0].name).to.equal('Denmark');
+        expect(country.findByProvince('Muğla')[0].name).to.equal('Turkey');
+        expect(country.findByProvince('Bình Phước')[0].name).to.equal('Vietnam');
+        expect(country.findByProvince('বরিশাল')[0].name).to.equal('Bangladesh');
         expect(country.findByName('Ivory Coast').code.iso2).to.equal('CI');
     });
 
@@ -278,9 +284,9 @@ describe('Edge cases', () => {
         // three province aliases are bare strings rather than arrays, and
         // 'Binh Phuoc'.indexOf('B') > -1, so findByProvince('B') used to
         // answer Vietnam
-        expect(country.findByProvince('Binh Phuoc').name).to.equal('Vietnam');
+        expect(country.findByProvince('Binh Phuoc')[0].name).to.equal('Vietnam');
         for (const q of ['B', 'Binh', 'oc', 'Zeal', 'and', 'a'])
-            expect(country.findByProvince(q), q).to.equal(undefined);
+            expect(country.findByProvince(q), q).to.deep.equal([]);
     });
 
     it('keeps ISO codes unique across the whole list', () => {
@@ -318,8 +324,9 @@ describe('Edge cases', () => {
         const calls = [['findByIso2', 'DK'], ['findByIso3', 'DNK'],
                        ['findByName', 'Denmark'], ['findByCapital', 'Copenhagen'],
                        ['findByProvince', 'Zealand'], ['findByPhoneNbr', '+4505551212']];
+        const first = r => Array.isArray(r) ? r[0] : r;
         for (const [fn, arg] of calls) {
-            const a = country[fn](arg), b = country[fn](arg);
+            const a = first(country[fn](arg)), b = first(country[fn](arg));
             expect(a, fn).to.not.equal(b);
             expect(a.currency, fn + ' currency').to.not.equal(b.currency);
             expect(a.code, fn + ' code').to.not.equal(b.code);

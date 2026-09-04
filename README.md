@@ -37,24 +37,29 @@ In a browser, from a CDN:
 
 ## Looking things up
 
-```js
-country.findByIso2('DK');            // by ISO 3166-1 alpha-2
-country.findByIso3('DNK');           // by ISO 3166-1 alpha-3
-country.findByName('Denmark');       // by name
-country.findByCapital('Copenhagen'); // by capital
-country.findByCurrency('DKK');       // by ISO 4217 code
-country.findByProvince('Zealand');   // by subdivision, name or alias
-country.findByPhoneNbr('+4505551212');
-```
-
-Nothing found is `undefined`. One match is the country itself. Several matches
-are an array:
+Three of the fields are unique, so those finders answer **a country or
+`undefined`**:
 
 ```js
-country.findByIso2('DK').name;              // 'Denmark'
-country.findByCurrency('EUR').length;       // 37
-country.findByIso2('ZZ');                   // undefined
+country.findByIso2('DK').name;    // 'Denmark'   by ISO 3166-1 alpha-2
+country.findByIso3('DNK').name;   // 'Denmark'   by ISO 3166-1 alpha-3
+country.findByName('Denmark');    //             by name
+country.findByIso2('ZZ');         // undefined
 ```
+
+The rest can match more than one country, so they always answer **a list**,
+empty when nothing matched — never a bare country, never `undefined`:
+
+```js
+country.findByCapital('Copenhagen');    // [Denmark]
+country.findByCapital('Kingston');      // [Jamaica, Norfolk Island]
+country.findByCurrency('EUR').length;   // 37
+country.findByProvince('Zealand');      // [Denmark]  by subdivision or alias
+country.findByPhoneNbr('+4505551212');  // [Denmark]
+country.findByCurrency('ZZZ');          // []
+```
+
+You never have to test the shape of a result before using it.
 
 Lookups try the exact value first. If that misses, they try again
 case-insensitively, and `findByName` also tries 682 alternative names — native
@@ -79,7 +84,7 @@ already worked.
 number. `+1-246` is Barbados, not the whole `+1` block:
 
 ```js
-country.findByPhoneNbr('+12465551212').name;   // 'Barbados'
+country.findByPhoneNbr('+12465551212');   // [Barbados]
 ```
 
 Codes genuinely shared at the same length still return every country holding

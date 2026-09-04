@@ -28,6 +28,22 @@ const BREAKING = [{
     migrate: c => { c.currency.decimal = Number(c.currency.decimal); },
 }];
 
+// Finders whose return type changed from "country, list, or undefined,
+// depending on how many matched" to a plain list.  The other three read a
+// field the data guarantees unique and answer a country or undefined.
+//
+// 3.1.8 made every caller test the shape of a result before using it, and the
+// shape depended on the data rather than on the call. Recorded calls to these
+// four are migrated to what a list looks like; the matched countries and their
+// order are then compared exactly as before.
+
+const NOW_A_LIST = ['findByCapital', 'findByCurrency', 'findByProvince',
+                    'findByPhoneNbr'];
+
+for (const c of base.calls)
+    if (NOW_A_LIST.includes(c.fn))
+        c.out = {v: 'u' in c.out ? [] : [].concat(c.out.v)};
+
 // Members 3.1.8 exported that 4.0 does not.
 
 const REMOVED_MEMBERS = {

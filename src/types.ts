@@ -64,9 +64,6 @@ export interface Country {
     borders: Iso2[] | undefined;
 }
 
-/** No match is `undefined`, one match is the country, several are an array. */
-export type Found = Country | Country[] | undefined;
-
 /** The stored record. Exposed through `all`; flatter than what finders return. */
 export interface CountryRecord {
     iso2: Iso2;

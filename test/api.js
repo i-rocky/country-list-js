@@ -80,22 +80,43 @@ describe('lookups', () => {
         expect(country.findByName('Denmark').code.iso2).to.equal('DK');
     });
 
-    it('findByCapital answers the country', () => {
-        expect(country.findByCapital('Copenhagen').code.iso2).to.equal('DK');
+    it('findByCapital answers a list -- capitals are not unique', () => {
+        expect(country.findByCapital('Copenhagen').map(c => c.code.iso2))
+            .to.deep.equal(['DK']);
+        expect(country.findByCapital('Kingston').map(c => c.code.iso2).sort())
+            .to.deep.equal(['JM', 'NF']);
     });
 
     it('findByCurrency answers every country using the code', () => {
-        const dkk = country.findByCurrency('DKK');
-        expect(dkk.map(c => c.code.iso2).sort()).to.deep.equal(['DK', 'FO', 'GL']);
+        expect(country.findByCurrency('DKK').map(c => c.code.iso2).sort())
+            .to.deep.equal(['DK', 'FO', 'GL']);
+    });
+
+    it('a finder that can match several always answers a list', () => {
+        for (const fn of ['findByCapital', 'findByCurrency', 'findByProvince',
+                          'findByPhoneNbr']) {
+            expect(country[fn]('no such thing'), fn + ' miss').to.deep.equal([]);
+            expect(country[fn](null), fn + '(null)').to.deep.equal([]);
+        }
+    });
+
+    it('a finder on a unique field always answers a country or undefined', () => {
+        for (const fn of ['findByIso2', 'findByIso3', 'findByName']) {
+            expect(country[fn]('no such thing'), fn + ' miss').to.equal(undefined);
+            expect(country[fn](null), fn + '(null)').to.equal(undefined);
+        }
     });
 
     it('findByProvince answers by name and by alias', () => {
-        expect(country.findByProvince('Nordjylland').code.iso2).to.equal('DK');
-        expect(country.findByProvince('Zealand').code.iso2).to.equal('DK');
+        expect(country.findByProvince('Nordjylland')[0].code.iso2).to.equal('DK');
+        expect(country.findByProvince('Zealand')[0].code.iso2).to.equal('DK');
     });
 
     it('findByPhoneNbr answers on the most specific prefix', () => {
-        expect(country.findByPhoneNbr('+4505551212').code.iso2).to.equal('DK');
+        expect(country.findByPhoneNbr('+4505551212').map(c => c.code.iso2))
+            .to.deep.equal(['DK']);
+        expect(country.findByPhoneNbr('+12465551212').map(c => c.name))
+            .to.deep.equal(['Barbados']);
     });
 
     it('returns a fresh object every time, so a caller cannot poison a later one', () => {

@@ -60,10 +60,10 @@ ok('deep import index.js', require('country-list-js/index.js') === now);
 
 // 5. the fixes
 now.findByProvince('Nordjylland');
-ok('findByProvince twice', now.findByProvince('Nordjylland').name === 'Denmark');
+ok('findByProvince twice', now.findByProvince('Nordjylland')[0].name === 'Denmark');
 const p290 = now.findByPhoneNbr('+2901234');
-ok('+290 has no holes', p290 && !Array.isArray(p290) && p290.name === 'Saint Helena');
-ok('findByPhoneNbr(null) does not throw', now.findByPhoneNbr(null) === undefined);
+ok('+290 has no holes', p290.length === 1 && p290[0].name === 'Saint Helena');
+ok('findByPhoneNbr(null) does not throw', now.findByPhoneNbr(null).length === 0);
 // In a child process, because 3.1.8 is loaded in this one and patches
 // Array.prototype enumerably itself -- testing here would measure the baseline,
 // not us.
@@ -88,9 +88,14 @@ ok('timezones', now.findByIso2('DK').timezones[0] === 'Europe/Copenhagen');
 ok('iso numeric', now.findByIso2('DK').code.numeric === '208');
 ok('alias', now.findByName('Türkiye').name === 'Turkey');
 ok('case-insensitive', now.findByIso2('dk').name === 'Denmark');
-ok('retired currency', now.findByCurrency('HRK').name === 'Croatia');
+ok('retired currency', now.findByCurrency('HRK')[0].name === 'Croatia');
 ok('Bulgaria is on the euro', now.findByIso2('BG').currency.code === 'EUR');
-ok('longest prefix wins', now.findByPhoneNbr('+12465551212').name === 'Barbados');
+ok('longest prefix wins', now.findByPhoneNbr('+12465551212')[0].name === 'Barbados');
+ok('a list finder always returns a list',
+   ['findByCapital','findByCurrency','findByProvince','findByPhoneNbr']
+     .every(f => Array.isArray(now[f]('nope')) && now[f]('nope').length === 0));
+ok('a unique finder always returns a country or undefined',
+   ['findByIso2','findByIso3','findByName'].every(f => now[f]('nope') === undefined));
 ok('decimal is a number', typeof now.findByIso2('DK').currency.decimal === 'number');
 
 console.log('CJS: %d checks passed', checks);

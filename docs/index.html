@@ -268,7 +268,7 @@ footer p{margin:.45rem 0;max-width:52rem}
       ['findByCapital', function (q) { return country.findByCapital(q); }],
       ['findByCurrency', function (q) { return country.findByCurrency(q); }],
       ['findByProvince', function (q) { return country.findByProvince(q); }],
-      ['findByPhoneNbr', function (q) { return /[+\d]/.test(q) ? country.findByPhoneNbr(q) : undefined; }]
+      ['findByPhoneNbr', function (q) { return /[+\d]/.test(q) ? country.findByPhoneNbr(q) : []; }]
     ];
 
     var FIELDS = [
@@ -316,15 +316,17 @@ footer p{margin:.45rem 0;max-width:52rem}
       for (var i = 0; i < LOOKUPS.length; i++) {
         var hit;
         try { hit = LOOKUPS[i][1](q); } catch (e) { hit = undefined; }
-        if (!hit) continue;
-        var list = Array.isArray(hit) ? hit : [hit];
+        // a unique finder answers a country or undefined; the rest answer a
+        // list, empty when nothing matched
+        var list = hit === undefined ? [] : Array.isArray(hit) ? hit : [hit];
+        if (!list.length) continue;
         var name = LOOKUPS[i][0];
         out.innerHTML = list.slice(0, 8).map(function (c) { return card(c, name, q); }).join('')
           + (list.length > 8 ? '<p class="notice">and ' + (list.length - 8) + ' more</p>' : '');
         return;
       }
       out.innerHTML = '<p class="notice">Nothing matched <b>' + esc(q)
-        + '</b>. Every finder returned <code>undefined</code>.</p>';
+        + '</b>. Every finder came back empty.</p>';
     }
 
     var timer;

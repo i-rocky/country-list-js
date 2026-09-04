@@ -4,12 +4,12 @@
  */
 
 import type {
-    Country, CountryCode, CountryRecord, Currency, Found, Iso2, Iso3,
+    Country, CountryCode, CountryRecord, Currency, Iso2, Iso3,
     Province, CurrencyCode, ContinentName,
 } from './types';
 
 export type {
-    Country, CountryCode, CountryRecord, Currency, Found, Iso2, Iso3,
+    Country, CountryCode, CountryRecord, Currency, Iso2, Iso3,
     Province, CurrencyCode, ContinentName,
 };
 
@@ -60,17 +60,16 @@ function transform(r: CountryRecord | undefined): Country | undefined {
     };
 }
 
-// No match is undefined, one match is the country itself, several are an array.
+// A lookup on a field the data guarantees unique answers the country or
+// undefined; one that can match several always answers a list, empty when
+// nothing matched. Neither ever hands back a shape the caller has to test for.
 
-function pack(list: CountryRecord[] | undefined): Found {
-    if (!list || !list.length) return undefined;
-    return list.length === 1
-        ? transform(list[0])
-        : (list.map(transform) as Country[]);
+function one(list: CountryRecord[] | undefined): Country | undefined {
+    return list && list.length ? transform(list[0]) : undefined;
 }
 
-function find(field: Field, value: unknown): Found {
-    return pack(resolve(field, value));
+function many(list: CountryRecord[] | undefined): Country[] {
+    return list ? (list.map(transform) as Country[]) : [];
 }
 
 // Exact match first, always: an alias or a case fold can only turn a lookup
@@ -213,20 +212,29 @@ const country = {
         return hit && transform(hit[0]);
     },
 
-    /** Find by ISO 3166-1 alpha-3 code. */
-    findByIso3: (code: string): Found => find('iso3', code),
+    /** Find by ISO 3166-1 alpha-3 code. Unique, so one country or none. */
+    findByIso3: (code: string): Country | undefined => one(resolve('iso3', code)),
 
-    /** Find by name. Accepts native forms, official long forms and former names. */
-    findByName: (name: string): Found => find('name', name),
+    /**
+     * Find by name. Unique, so one country or none. Accepts native forms,
+     * official long forms and former names.
+     */
+    findByName: (name: string): Country | undefined => one(resolve('name', name)),
 
-    /** Find by capital city. */
-    findByCapital: (name: string): Found => find('capital', name),
+    /**
+     * Find by capital city. A list: Kingston is both Jamaica and Norfolk
+     * Island, and six territories have no capital at all.
+     */
+    findByCapital: (name: string): Country[] => many(resolve('capital', name)),
 
-    /** Find by ISO 4217 code. Retired codes still resolve to the countries that used them. */
-    findByCurrency: (code: string): Found => find('currency', code),
+    /**
+     * Find by ISO 4217 code. A list: most currencies are used by more than one
+     * country. Retired codes still resolve to the countries that used them.
+     */
+    findByCurrency: (code: string): Country[] => many(resolve('currency', code)),
 
     /** Find by first-tier subdivision, by name or by alias. */
-    findByProvince: (name: string): Found => pack(provinceIndex().get(name)),
+    findByProvince: (name: string): Country[] => many(provinceIndex().get(name)),
 
     /**
      * Find by telephone number, on the most specific dialing code that prefixes
@@ -235,19 +243,19 @@ const country = {
      * `'+1...'` answers Canada, the United States and the U.S. Minor Outlying
      * Islands together.
      */
-    findByPhoneNbr(nbr: string): Found {
-        if (typeof nbr !== 'string') return undefined;
+    findByPhoneNbr(nbr: string): Country[] {
+        if (typeof nbr !== 'string') return [];
 
         const digits = nbr.replace(/\D/g, '');
-        if (!digits) return undefined;
+        if (!digits) return [];
 
         // one hash read per distinct prefix length, longest first, rather than
         // testing the number against every prefix in the table
         for (const len of prefixLengths) {
             const found = byPrefix[digits.slice(0, len)];
-            if (found) return pack(found);
+            if (found) return many(found);
         }
-        return undefined;
+        return [];
     },
 
     /** List one field across every country, in name order. */
