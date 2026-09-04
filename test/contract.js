@@ -116,6 +116,13 @@ const CHANGED = {
         'actually defines at the first tier: England, Northern Ireland, ' +
         'Scotland and Wales.',
     NG: 'provinces 12 -> 36.  Merged community fix (PR #69).',
+    US: 'subdivisions 60 -> 57. The list was USPS postal abbreviations, which ' +
+        'include the Federated States of Micronesia, the Marshall Islands and ' +
+        'Palau because the postal service serves them. All three are ' +
+        'sovereign UN member states in Compacts of Free Association, not US ' +
+        'subdivisions, and this dataset carries each as a country in its own ' +
+        'right. What remains is ISO 3166-2:US: 50 states, the District of ' +
+        'Columbia and 6 outlying areas.',
 
     ET: STRING_ALIAS, VN: STRING_ALIAS,
     TR: STRING_ALIAS + '  Also ' + renamed('TR'),

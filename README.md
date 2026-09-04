@@ -179,14 +179,23 @@ four keys — `name`, `code` (the local subdivision code, `AL` for Alabama),
 test for before reading one.
 
 **They are not all at the same tier, and that is worth knowing before you rely
-on them.** Ten of the countries checked against ISO 3166-2 match its first tier
-exactly (Canada, Brazil, Germany, Mexico, India, China, the Netherlands, Japan,
-Argentina, the United Kingdom). Six sit one tier lower: Spain's 48 provinces
-rather than 19 autonomous communities, Italy's 106 provinces rather than 20
-regions, Peru's 196 provinces rather than 26 regions, and similarly the
-Philippines, Australia and the United States. For Bangladesh, Bolivia, Chile
-and Peru the `region` field names the parent unit, so those are coherent one
-tier down.
+on them.** Checked against ISO 3166-2, eleven countries match its first tier
+exactly: Canada, Brazil, Germany, Mexico, India, China, the Netherlands, Japan,
+Argentina, the United Kingdom and the United States.
+
+Seven sit one tier lower — Spain's 48 provinces rather than 19 autonomous
+communities, Italy's 106 provinces rather than 20 regions, Peru's 196 rather
+than 26, and likewise the Philippines, Bangladesh, Bolivia and Chile. For
+Bangladesh, Bolivia, Chile and Peru the `region` field names the parent unit,
+so those are coherent one tier down.
+
+Australia is ISO's eight states and territories plus eight external and
+internal territories ISO does not code — Christmas Island, the Cocos Islands,
+Norfolk Island and Heard Island and McDonald Islands among them. Those four
+are also countries in their own right in this dataset, because ISO 3166-1
+assigns them their own codes. Both facts are true at once, and
+`findByProvince('Norfolk Island')` answers Australia while
+`findByIso2('NF')` answers Norfolk Island.
 
 This is inherited data whose provenance predates the 4.0 rewrite. It is checked
 for structure — unique within a country, aliases well formed, no duplicate

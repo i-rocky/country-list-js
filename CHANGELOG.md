@@ -14,8 +14,8 @@ fails again if a declared difference turns out not to have happened.
 
 ### Breaking changes
 
-Ordered by how likely they are to bite. The first one is the only one that
-fails quietly.
+Thirteen of them, ordered by how likely they are to bite. The first is the only
+one that fails quietly.
 
 1. **`currency.decimal` is a number.** It was the string `'2'`; it is now `2`.
    Code doing `c.currency.decimal === '2'` now always misses, silently. Code
@@ -93,7 +93,15 @@ fails quietly.
     were abolished in 1996, Middlesex in 1965. It is now what ISO 3166-2:GB
     defines at the first tier: England, Northern Ireland, Scotland, Wales.
 
-12. **Two borders removed.** India–Sri Lanka is the Palk Strait, a maritime
+12. **The United States has 57 subdivisions, not 60.** The list was USPS
+    postal abbreviations, which include the Federated States of Micronesia,
+    the Marshall Islands and Palau because the postal service serves them.
+    All three are sovereign UN member states in Compacts of Free Association
+    — and this package already carries each as a country of its own. What
+    remains is ISO 3166-2:US: 50 states, the District of Columbia and 6
+    outlying areas.
+
+13. **Two borders removed.** India–Sri Lanka is the Palk Strait, a maritime
     boundary, so Sri Lanka now correctly has none. France–Suriname duplicated
     French Guiana, which is a separate entry carrying its own `BR` and `SR`
     — and the inconsistency showed, because France was never listed as

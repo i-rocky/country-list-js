@@ -117,12 +117,6 @@
       "alias": null
     },
     {
-      "name": "Micronesia",
-      "code": "FM",
-      "region": null,
-      "alias": null
-    },
-    {
       "name": "Georgia",
       "code": "GA",
       "region": null,
@@ -203,12 +197,6 @@
     {
       "name": "Minnesota",
       "code": "MN",
-      "region": null,
-      "alias": null
-    },
-    {
-      "name": "Marshall Islands",
-      "code": "MH",
       "region": null,
       "alias": null
     },
@@ -299,12 +287,6 @@
     {
       "name": "Pennsylvania",
       "code": "PA",
-      "region": null,
-      "alias": null
-    },
-    {
-      "name": "Palau",
-      "code": "PW",
       "region": null,
       "alias": null
     },
