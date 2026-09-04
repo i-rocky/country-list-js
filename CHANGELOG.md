@@ -103,9 +103,9 @@ Also:
 
 - **Zero runtime dependencies.** `micro` was a dependency for `server.js`, the
   Now/Vercel demo that has answered 404 since 2021 (#25). Both are gone.
-- Country data is now one file per country under `countries/`, validated
-  against a JSON schema. Everything under `data/` is generated from it and
-  still ships unchanged.
+- Country data is now one file per country under `catalog/countries/`,
+  validated against a JSON schema. Everything under `data/` is generated from
+  it and still ships unchanged.
 - Lookups go through indexes instead of scanning all 250 records. Repeat
   lookups of the same value do a little more work than before, because a fresh
   object is built rather than a shared one handed back — which is what stops a
