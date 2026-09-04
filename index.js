@@ -10,47 +10,69 @@ var self = module.exports = {
     findByCurrency: code => find('currency', code),
     findByProvince(name) {
         if (!self.cache.province) self.cache.province = {};
-        if (self.cache.province[name])
-            return self.cache.province[name].map(o => x(o));
-    
-        return self.cache.province[name] = Object.keys(self.all)
-            .map(k => self.all[k])
-            .filter(o => o.provinces)
-            .filter(o => o.provinces.filter(
-                o => o.name == name || (o.alias || []).indexOf(name) > -1
-              ).length > 0
-            )
-            .map(o => x(o))
-            .unpack(undefined);
+        if (!(name in self.cache.province)) {
+            // cache the raw matches, not the transformed result, so that
+            // repeated lookups re-transform rather than calling .map on
+            // whatever unpack() happened to return the first time round
+
+            self.cache.province[name] = Object.keys(self.all)
+                .map(k => self.all[k])
+                .filter(o => o.provinces)
+                .filter(o => o.provinces.filter(
+                    o => o.name == name || alias(o).indexOf(name) > -1
+                  ).length > 0
+                );
+        }
+        return self.cache.province[name].map(o => x(o)).unpack(undefined);
     },
     findByPhoneNbr(nbr) {
+        // a lookup has no business throwing on bad input: 3.1.8 raised a
+        // TypeError for anything that was not a string, where every other
+        // finder simply returned undefined
+        if (typeof nbr != 'string') return;
+
         // make sure the phone number is clean
         nbr = nbr.replace(/\D/g, '');
         
-        // now match prefixes against the phone number
+        // now match prefixes against the phone number.  a prefix may belong
+        // to a territory we carry no country record for, so drop the blanks
+
         return phones.filter(o => o.nbr && nbr.startsWith(o.nbr))
             .map(o => x(self.all[o.code]))
+            .filter(o => o)
             .unpack(undefined);
     },
+    // these close over `self` rather than using `this` so that they survive
+    // being destructured off the module: `const {names} = require(...)`
     ls(field) {
-        return Object.keys(this.all).map(k => this.all[k][field]);
+        return Object.keys(self.all).map(k => self.all[k][field]);
     },
     continents() {
-        return this.ls('continent').unique();
+        return self.ls('continent').unique();
     },
     names() {
-        return this.ls('name');
+        return self.ls('name');
     },
     capitals() {
-        return this.ls('capital');
+        return self.ls('capital');
     }
 };
+
+// a province alias is normally an array, but three entries in the data carry
+// a bare string.  `'Binh Phuoc'.indexOf('B') > -1` is true, so without this
+// those three turned findByProvince into a substring search: findByProvince('B')
+// answered Vietnam
+
+function alias(province) {
+    var a = province.alias;
+    return a === null || a === undefined ? [] : Array.isArray(a) ? a : [a];
+}
 
 // transform to the old format for backward-compatibility
 
 function x(o) {
     if (!o) return;
-    if (Array.isArray(o)) return o.map(x(o));
+    if (Array.isArray(o)) return o.map(e => x(e));
 
     var ret = Object.assign({}, o);
     ret.currency = {
@@ -124,14 +146,28 @@ var phones = Object.keys(phone).map(function (k) {
 phones.sort((a,b) => a.nbr.length < b.nbr.length ? 1 : -1);
 phone = null;
 
-Array.prototype.unpack = function() {
-    var l = this.length;
-    return l == 1 ? this[0] 
-        : l == 0 && arguments.length > 0
-        ? undefined
-        : this;
-}
+// these are installed on the prototype for the convenience of callers, but
+// they must not be enumerable: an enumerable prototype property shows up in
+// every for..in loop over an array in the host application
 
-Array.prototype.unique = function() {
-    return this.filter((e, pos) => this.indexOf(e) == pos);
-}
+Object.defineProperty(Array.prototype, 'unpack', {
+    configurable: true,
+    writable: true,
+    enumerable: false,
+    value: function() {
+        var l = this.length;
+        return l == 1 ? this[0] 
+            : l == 0 && arguments.length > 0
+            ? undefined
+            : this;
+    }
+});
+
+Object.defineProperty(Array.prototype, 'unique', {
+    configurable: true,
+    writable: true,
+    enumerable: false,
+    value: function() {
+        return this.filter((e, pos) => this.indexOf(e) == pos);
+    }
+});
