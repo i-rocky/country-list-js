@@ -1,0 +1,33 @@
+{
+  "iso2": "MR",
+  "iso3": "MRT",
+  "iso_numeric": "478",
+  "name": "Mauritania",
+  "native_name": "موريتانيا",
+  "demonym": "Mauritanian",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Nouakchott",
+  "currency": "MRU",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "222",
+  "tld": [
+    ".mr",
+    ".موريتانيا"
+  ],
+  "latlng": [
+    20,
+    -12
+  ],
+  "timezones": [
+    "Africa/Nouakchott"
+  ],
+  "borders": [
+    "DZ",
+    "EH",
+    "ML",
+    "SN"
+  ]
+}

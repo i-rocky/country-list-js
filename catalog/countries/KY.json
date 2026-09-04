@@ -1,0 +1,28 @@
+{
+  "iso2": "KY",
+  "iso3": "CYM",
+  "iso_numeric": "136",
+  "name": "Cayman Islands",
+  "demonym": "Caymanian",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "George Town",
+  "currency": "KYD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "345"
+  ],
+  "tld": [
+    ".ky"
+  ],
+  "latlng": [
+    19.5,
+    -80.5
+  ],
+  "timezones": [
+    "America/Cayman"
+  ]
+}

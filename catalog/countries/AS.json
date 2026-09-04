@@ -1,0 +1,30 @@
+{
+  "iso2": "AS",
+  "iso3": "ASM",
+  "iso_numeric": "016",
+  "name": "American Samoa",
+  "native_name": "Amerika Sāmoa",
+  "demonym": "American Samoan",
+  "continent": "OC",
+  "region": "Polynesia",
+  "capital": "Pago Pago",
+  "currency": "USD",
+  "languages": [
+    "en",
+    "sm"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "684"
+  ],
+  "tld": [
+    ".as"
+  ],
+  "latlng": [
+    -14.33333333,
+    -170
+  ],
+  "timezones": [
+    "Pacific/Pago_Pago"
+  ]
+}

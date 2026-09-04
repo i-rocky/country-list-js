@@ -1,0 +1,547 @@
+{
+  "iso2": "TR",
+  "iso3": "TUR",
+  "iso_numeric": "792",
+  "name": "Türkiye",
+  "demonym": "Turkish",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Ankara",
+  "currency": "TRY",
+  "languages": [
+    "tr"
+  ],
+  "dialing_code": "90",
+  "tld": [
+    ".tr"
+  ],
+  "latlng": [
+    39,
+    35
+  ],
+  "timezones": [
+    "Europe/Istanbul"
+  ],
+  "borders": [
+    "AM",
+    "AZ",
+    "BG",
+    "GE",
+    "GR",
+    "IQ",
+    "IR",
+    "SY"
+  ],
+  "provinces": [
+    {
+      "name": "Adana",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Adıyaman",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Adiyaman"
+      ]
+    },
+    {
+      "name": "Afyonkarahisar",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ağrı",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Agri"
+      ]
+    },
+    {
+      "name": "Amasya",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ankara",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Antalya",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Artvin",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Aydın",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Aydin"
+      ]
+    },
+    {
+      "name": "Balıkesir",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Balikesir"
+      ]
+    },
+    {
+      "name": "Bilecik",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bingöl",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bitlis",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bolu",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Burdur",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bursa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Çanakkale",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Çankırı",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Cankiri"
+      ]
+    },
+    {
+      "name": "Çorum",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Denizli",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Diyarbakır",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Diyarbakir"
+      ]
+    },
+    {
+      "name": "Edirne",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Elazığ",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Elazig"
+      ]
+    },
+    {
+      "name": "Erzincan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Erzurum",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Eskişehir",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Gaziantep",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Giresun",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Gümüşhane",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Hakkâri",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Hatay",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Isparta",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mersin",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Istanbul",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "İzmir",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kars",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kastamonu",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kayseri",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kırklareli",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kırşehir",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kocaeli",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Konya",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kütahya",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Malatya",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Manisa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kahramanmaraş",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mardin",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Muğla",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Muş",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nevşehir",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Niğde",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ordu",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rize",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sakarya",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Samsun",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Siirt",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sinop",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sivas",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tekirdağ",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tokat",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Trabzon",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tunceli",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Şanlıurfa",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Sanliurfa"
+      ]
+    },
+    {
+      "name": "Uşak",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Van",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Yozgat",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zonguldak",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Aksaray",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bayburt",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Karaman",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kırıkkale",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Kirikkale"
+      ]
+    },
+    {
+      "name": "Batman",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Şırnak",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Sirnak"
+      ]
+    },
+    {
+      "name": "Bartın",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Bartin"
+      ]
+    },
+    {
+      "name": "Ardahan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Iğdır",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Igdir"
+      ]
+    },
+    {
+      "name": "Yalova",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Karabük",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kilis",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Osmaniye",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Düzce",
+      "code": null,
+      "region": null,
+      "alias": null
+    }
+  ]
+}

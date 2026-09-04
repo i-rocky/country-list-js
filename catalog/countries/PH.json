@@ -1,0 +1,534 @@
+{
+  "iso2": "PH",
+  "iso3": "PHL",
+  "iso_numeric": "608",
+  "name": "Philippines",
+  "native_name": "Pilipinas",
+  "demonym": "Filipino",
+  "continent": "AS",
+  "region": "South-eastern Asia",
+  "capital": "Manila",
+  "currency": "PHP",
+  "languages": [
+    "en",
+    "fil"
+  ],
+  "dialing_code": "63",
+  "tld": [
+    ".ph"
+  ],
+  "latlng": [
+    13,
+    122
+  ],
+  "timezones": [
+    "Asia/Manila"
+  ],
+  "provinces": [
+    {
+      "name": "Abra",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Agusan del Norte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Agusan del Sur",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Aklan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Albay",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Antique",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Apayao",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Aurora",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Basilan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bataan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Batanes",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Batangas",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Benguet",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Biliran",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bohol",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bukidnon",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bulacan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cagayan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Camarines Norte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Camarines Sur",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Camiguin",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Capiz",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Catanduanes",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cavite",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cebu",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Davao de Oro",
+      "code": null,
+      "region": null,
+      "alias": [
+        "ComVal",
+        "Compostela Valley"
+      ]
+    },
+    {
+      "name": "Cotabato",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Davao del Norte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Davao del Sur",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Davao Occidental",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Davao Oriental",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Dinagat Islands",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Eastern Samar",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Guimaras",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ifugao",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ilocos Norte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ilocos Sur",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Iloilo",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Isabela",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kalinga",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "La Union",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Laguna",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lanao del Norte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lanao del Sur",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Leyte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Maguindanao del Norte",
+      "code": "MGN",
+      "region": null,
+      "alias": [
+        "Maguindanao"
+      ]
+    },
+    {
+      "name": "Maguindanao del Sur",
+      "code": "MGS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Marinduque",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Masbate",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Misamis Occidental",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Misamis Oriental",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mountain Province",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Negros Occidental",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Negros Oriental",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Northern Samar",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nueva Ecija",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nueva Vizcaya",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Occidental Mindoro",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Oriental Mindoro",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Palawan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pampanga",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pangasinan",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Quezon",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Quirino",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rizal",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Romblon",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Samar",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sarangani",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Siquijor",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sorsogon",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Cotabato",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Southern Leyte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sultan Kudarat",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sulu",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Surigao del Norte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Surigao del Sur",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tarlac",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tawi-Tawi",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Tawi Tawi"
+      ]
+    },
+    {
+      "name": "Zambales",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zamboanga del Norte",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zamboanga del Sur",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zamboanga Sibugay",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Metro Manila",
+      "code": null,
+      "region": null,
+      "alias": null
+    }
+  ]
+}

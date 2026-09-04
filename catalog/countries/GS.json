@@ -1,0 +1,24 @@
+{
+  "iso2": "GS",
+  "iso3": "SGS",
+  "iso_numeric": "239",
+  "name": "South Georgia and the South Sandwich Islands",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "King Edward Point",
+  "currency": "GBP",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "500",
+  "tld": [
+    ".gs"
+  ],
+  "latlng": [
+    -54.5,
+    -37
+  ],
+  "timezones": [
+    "Atlantic/South_Georgia"
+  ]
+}

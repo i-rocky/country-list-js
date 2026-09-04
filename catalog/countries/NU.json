@@ -1,0 +1,27 @@
+{
+  "iso2": "NU",
+  "iso3": "NIU",
+  "iso_numeric": "570",
+  "name": "Niue",
+  "native_name": "Niuē",
+  "demonym": "Niuean",
+  "continent": "OC",
+  "region": "Polynesia",
+  "capital": "Alofi",
+  "currency": "NZD",
+  "languages": [
+    "niu",
+    "en"
+  ],
+  "dialing_code": "683",
+  "tld": [
+    ".nu"
+  ],
+  "latlng": [
+    -19.03333333,
+    -169.86666666
+  ],
+  "timezones": [
+    "Pacific/Niue"
+  ]
+}

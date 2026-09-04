@@ -1,0 +1,133 @@
+{
+  "iso2": "ET",
+  "iso3": "ETH",
+  "iso_numeric": "231",
+  "name": "Ethiopia",
+  "native_name": "ኢትዮጵያ / Itoophiyaa / Itoobiya",
+  "demonym": "Ethiopian",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Addis Ababa",
+  "currency": "ETB",
+  "languages": [
+    "am",
+    "aa",
+    "om",
+    "so",
+    "ti"
+  ],
+  "dialing_code": "251",
+  "tld": [
+    ".et"
+  ],
+  "latlng": [
+    8,
+    38
+  ],
+  "timezones": [
+    "Africa/Addis_Ababa"
+  ],
+  "borders": [
+    "DJ",
+    "ER",
+    "KE",
+    "SD",
+    "SO",
+    "SS"
+  ],
+  "provinces": [
+    {
+      "name": "Addis Ababa",
+      "code": "AA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Afar",
+      "code": "AF",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Amhara",
+      "code": "AM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Benishangul-Gumuz",
+      "code": "BE",
+      "region": null,
+      "alias": [
+        "Benishangul Gumuz"
+      ]
+    },
+    {
+      "name": "Central Ethiopia",
+      "code": "CE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Dire Dawa",
+      "code": "DD",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Gambela",
+      "code": "GA",
+      "region": null,
+      "alias": [
+        "Gambella"
+      ]
+    },
+    {
+      "name": "Harari",
+      "code": "HA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Oromia",
+      "code": "OR",
+      "region": null,
+      "alias": [
+        "Oromiya"
+      ]
+    },
+    {
+      "name": "Sidama",
+      "code": "SI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Somali",
+      "code": "SO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Ethiopia",
+      "code": "SE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South West Ethiopia Peoples",
+      "code": "SW",
+      "region": null,
+      "alias": [
+        "Southwest Ethiopia",
+        "South West Ethiopia"
+      ]
+    },
+    {
+      "name": "Tigray",
+      "code": "TI",
+      "region": null,
+      "alias": null
+    }
+  ]
+}

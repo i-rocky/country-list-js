@@ -1,0 +1,31 @@
+{
+  "iso2": "SG",
+  "iso3": "SGP",
+  "iso_numeric": "702",
+  "name": "Singapore",
+  "native_name": "Singapura / சிங்கப்பூர் / 新加坡",
+  "demonym": "Singaporean",
+  "continent": "AS",
+  "region": "South-eastern Asia",
+  "capital": "Singapore",
+  "currency": "SGD",
+  "languages": [
+    "en",
+    "ms",
+    "ta",
+    "zh"
+  ],
+  "dialing_code": "65",
+  "tld": [
+    ".sg",
+    ".சிங்கப்பூர்",
+    ".新加坡"
+  ],
+  "latlng": [
+    1.36666666,
+    103.8
+  ],
+  "timezones": [
+    "Asia/Singapore"
+  ]
+}

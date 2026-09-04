@@ -1,0 +1,24 @@
+{
+  "iso2": "IO",
+  "iso3": "IOT",
+  "iso_numeric": "086",
+  "name": "British Indian Ocean Territory",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Diego Garcia",
+  "currency": "USD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "246",
+  "tld": [
+    ".io"
+  ],
+  "latlng": [
+    -6,
+    71.5
+  ],
+  "timezones": [
+    "Indian/Chagos"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "iso2": "BI",
+  "iso3": "BDI",
+  "iso_numeric": "108",
+  "name": "Burundi",
+  "native_name": "Uburundi",
+  "demonym": "Burundian",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Gitega",
+  "currency": "BIF",
+  "languages": [
+    "fr",
+    "rn",
+    "en"
+  ],
+  "dialing_code": "257",
+  "tld": [
+    ".bi"
+  ],
+  "latlng": [
+    -3.5,
+    30
+  ],
+  "timezones": [
+    "Africa/Bujumbura"
+  ],
+  "borders": [
+    "CD",
+    "RW",
+    "TZ"
+  ]
+}

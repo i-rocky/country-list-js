@@ -1,0 +1,32 @@
+{
+  "iso2": "AL",
+  "iso3": "ALB",
+  "iso_numeric": "008",
+  "name": "Albania",
+  "native_name": "Shqipëria",
+  "demonym": "Albanian",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Tirana",
+  "currency": "ALL",
+  "languages": [
+    "sq"
+  ],
+  "dialing_code": "355",
+  "tld": [
+    ".al"
+  ],
+  "latlng": [
+    41,
+    20
+  ],
+  "timezones": [
+    "Europe/Tirane"
+  ],
+  "borders": [
+    "GR",
+    "ME",
+    "MK",
+    "XK"
+  ]
+}

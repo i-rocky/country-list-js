@@ -1,0 +1,30 @@
+{
+  "iso2": "TG",
+  "iso3": "TGO",
+  "iso_numeric": "768",
+  "name": "Togo",
+  "demonym": "Togolese",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Lomé",
+  "currency": "XOF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "228",
+  "tld": [
+    ".tg"
+  ],
+  "latlng": [
+    8,
+    1.16666666
+  ],
+  "timezones": [
+    "Africa/Lome"
+  ],
+  "borders": [
+    "BF",
+    "BJ",
+    "GH"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "iso2": "BR",
+  "iso3": "BRA",
+  "iso_numeric": "076",
+  "name": "Brazil",
+  "native_name": "Brasil",
+  "demonym": "Brazilian",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Brasília",
+  "currency": "BRL",
+  "languages": [
+    "pt"
+  ],
+  "dialing_code": "55",
+  "tld": [
+    ".br"
+  ],
+  "latlng": [
+    -10,
+    -55
+  ],
+  "timezones": [
+    "America/Araguaina",
+    "America/Bahia",
+    "America/Belem",
+    "America/Boa_Vista",
+    "America/Campo_Grande",
+    "America/Cuiaba",
+    "America/Eirunepe",
+    "America/Fortaleza",
+    "America/Maceio",
+    "America/Manaus",
+    "America/Noronha",
+    "America/Porto_Velho",
+    "America/Recife",
+    "America/Rio_Branco",
+    "America/Santarem",
+    "America/Sao_Paulo"
+  ],
+  "borders": [
+    "AR",
+    "BO",
+    "CO",
+    "GF",
+    "GY",
+    "PE",
+    "PY",
+    "SR",
+    "UY",
+    "VE"
+  ],
+  "provinces": [
+    {
+      "name": "Acre",
+      "code": "AC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Alagoas",
+      "code": "AL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Amapá",
+      "code": "AP",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Amazonas",
+      "code": "AM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bahia",
+      "code": "BA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ceará",
+      "code": "CE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Distrito Federal",
+      "code": "DF",
+      "region": null,
+      "alias": [
+        "Federal"
+      ]
+    },
+    {
+      "name": "Espírito Santo",
+      "code": "ES",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Goiás",
+      "code": "GO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Maranhão",
+      "code": "MA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mato Grosso",
+      "code": "MT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mato Grosso do Sul",
+      "code": "MS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Minas Gerais",
+      "code": "MG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pará",
+      "code": "PA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Paraíba",
+      "code": "PB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Paraná",
+      "code": "PR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pernambuco",
+      "code": "PE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Piauí",
+      "code": "PI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rio de Janeiro",
+      "code": "RJ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rio Grande do Norte",
+      "code": "RN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rio Grande do Sul",
+      "code": "RS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rondônia",
+      "code": "RO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Roraima",
+      "code": "RR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Santa Catarina",
+      "code": "SC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "São Paulo",
+      "code": "SP",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sergipe",
+      "code": "SE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tocantins",
+      "code": "TO",
+      "region": null,
+      "alias": null
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "iso2": "CZ",
+  "iso3": "CZE",
+  "iso_numeric": "203",
+  "name": "Czechia",
+  "native_name": "Česko",
+  "demonym": "Czech",
+  "continent": "EU",
+  "region": "Eastern Europe",
+  "capital": "Prague",
+  "currency": "CZK",
+  "languages": [
+    "cs"
+  ],
+  "dialing_code": "420",
+  "tld": [
+    ".cz"
+  ],
+  "latlng": [
+    49.75,
+    15.5
+  ],
+  "timezones": [
+    "Europe/Prague"
+  ],
+  "borders": [
+    "AT",
+    "DE",
+    "PL",
+    "SK"
+  ]
+}

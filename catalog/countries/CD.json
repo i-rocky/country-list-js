@@ -1,0 +1,38 @@
+{
+  "iso2": "CD",
+  "iso3": "COD",
+  "iso_numeric": "180",
+  "name": "Democratic Republic of the Congo",
+  "native_name": "République démocratique du Congo",
+  "demonym": "Congolese",
+  "continent": "AF",
+  "region": "Middle Africa",
+  "capital": "Kinshasa",
+  "currency": "CDF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "243",
+  "tld": [
+    ".cd"
+  ],
+  "latlng": [
+    0,
+    25
+  ],
+  "timezones": [
+    "Africa/Kinshasa",
+    "Africa/Lubumbashi"
+  ],
+  "borders": [
+    "AO",
+    "BI",
+    "CF",
+    "CG",
+    "RW",
+    "SS",
+    "TZ",
+    "UG",
+    "ZM"
+  ]
+}

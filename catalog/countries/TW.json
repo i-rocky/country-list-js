@@ -1,0 +1,28 @@
+{
+  "iso2": "TW",
+  "iso3": "TWN",
+  "iso_numeric": "158",
+  "name": "Taiwan",
+  "native_name": "臺灣",
+  "demonym": "Taiwanese",
+  "continent": "AS",
+  "region": "Eastern Asia",
+  "capital": "Taipei",
+  "currency": "TWD",
+  "languages": [
+    "zh"
+  ],
+  "dialing_code": "886",
+  "tld": [
+    ".tw",
+    ".台湾",
+    ".台灣"
+  ],
+  "latlng": [
+    23.5,
+    121
+  ],
+  "timezones": [
+    "Asia/Taipei"
+  ]
+}

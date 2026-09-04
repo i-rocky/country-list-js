@@ -1,0 +1,34 @@
+{
+  "iso2": "DO",
+  "iso3": "DOM",
+  "iso_numeric": "214",
+  "name": "Dominican Republic",
+  "native_name": "República Dominicana",
+  "demonym": "Dominican",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "Santo Domingo",
+  "currency": "DOP",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "809",
+    "829",
+    "849"
+  ],
+  "tld": [
+    ".do"
+  ],
+  "latlng": [
+    19,
+    -70.66666666
+  ],
+  "timezones": [
+    "America/Santo_Domingo"
+  ],
+  "borders": [
+    "HT"
+  ]
+}

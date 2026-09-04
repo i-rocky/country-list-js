@@ -1,0 +1,29 @@
+{
+  "iso2": "NI",
+  "iso3": "NIC",
+  "iso_numeric": "558",
+  "name": "Nicaragua",
+  "demonym": "Nicaraguan",
+  "continent": "NA",
+  "region": "Central America",
+  "capital": "Managua",
+  "currency": "NIO",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "505",
+  "tld": [
+    ".ni"
+  ],
+  "latlng": [
+    13,
+    -85
+  ],
+  "timezones": [
+    "America/Managua"
+  ],
+  "borders": [
+    "CR",
+    "HN"
+  ]
+}

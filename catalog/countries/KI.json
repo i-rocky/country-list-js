@@ -1,0 +1,28 @@
+{
+  "iso2": "KI",
+  "iso3": "KIR",
+  "iso_numeric": "296",
+  "name": "Kiribati",
+  "demonym": "I-Kiribati",
+  "continent": "OC",
+  "region": "Micronesia",
+  "capital": "South Tarawa",
+  "currency": "AUD",
+  "languages": [
+    "en",
+    "gil"
+  ],
+  "dialing_code": "686",
+  "tld": [
+    ".ki"
+  ],
+  "latlng": [
+    1.41666666,
+    173
+  ],
+  "timezones": [
+    "Pacific/Kanton",
+    "Pacific/Kiritimati",
+    "Pacific/Tarawa"
+  ]
+}

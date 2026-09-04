@@ -1,0 +1,26 @@
+{
+  "iso2": "RE",
+  "iso3": "REU",
+  "iso_numeric": "638",
+  "name": "Réunion",
+  "native_name": "La Réunion",
+  "demonym": "Réunionese",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Saint-Denis",
+  "currency": "EUR",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "262",
+  "tld": [
+    ".re"
+  ],
+  "latlng": [
+    -21.15,
+    55.5
+  ],
+  "timezones": [
+    "Indian/Reunion"
+  ]
+}

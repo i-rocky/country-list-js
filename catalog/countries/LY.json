@@ -1,0 +1,34 @@
+{
+  "iso2": "LY",
+  "iso3": "LBY",
+  "iso_numeric": "434",
+  "name": "Libya",
+  "native_name": "ليبيا",
+  "demonym": "Libyan",
+  "continent": "AF",
+  "region": "Northern Africa",
+  "capital": "Tripoli",
+  "currency": "LYD",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "218",
+  "tld": [
+    ".ly"
+  ],
+  "latlng": [
+    25,
+    17
+  ],
+  "timezones": [
+    "Africa/Tripoli"
+  ],
+  "borders": [
+    "DZ",
+    "EG",
+    "NE",
+    "SD",
+    "TD",
+    "TN"
+  ]
+}

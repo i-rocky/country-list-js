@@ -1,0 +1,28 @@
+{
+  "iso2": "BN",
+  "iso3": "BRN",
+  "iso_numeric": "096",
+  "name": "Brunei",
+  "demonym": "Bruneian",
+  "continent": "AS",
+  "region": "South-eastern Asia",
+  "capital": "Bandar Seri Begawan",
+  "currency": "BND",
+  "languages": [
+    "ms"
+  ],
+  "dialing_code": "673",
+  "tld": [
+    ".bn"
+  ],
+  "latlng": [
+    4.5,
+    114.66666666
+  ],
+  "timezones": [
+    "Asia/Brunei"
+  ],
+  "borders": [
+    "MY"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "iso2": "KW",
+  "iso3": "KWT",
+  "iso_numeric": "414",
+  "name": "Kuwait",
+  "native_name": "الكويت",
+  "demonym": "Kuwaiti",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Kuwait City",
+  "currency": "KWD",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "965",
+  "tld": [
+    ".kw"
+  ],
+  "latlng": [
+    29.5,
+    45.75
+  ],
+  "timezones": [
+    "Asia/Kuwait"
+  ],
+  "borders": [
+    "IQ",
+    "SA"
+  ]
+}

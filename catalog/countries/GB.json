@@ -1,0 +1,56 @@
+{
+  "iso2": "GB",
+  "iso3": "GBR",
+  "iso_numeric": "826",
+  "name": "United Kingdom",
+  "demonym": "British",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "London",
+  "currency": "GBP",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "44",
+  "tld": [
+    ".uk"
+  ],
+  "latlng": [
+    54,
+    -2
+  ],
+  "timezones": [
+    "Europe/London"
+  ],
+  "borders": [
+    "IE"
+  ],
+  "provinces": [
+    {
+      "name": "England",
+      "code": "ENG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Northern Ireland",
+      "code": "NIR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Scotland",
+      "code": "SCT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Wales",
+      "code": "WLS",
+      "region": null,
+      "alias": [
+        "Cymru"
+      ]
+    }
+  ]
+}

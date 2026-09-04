@@ -1,8 +1,8 @@
 {
   "name": "country-list-js",
-  "version": "3.1.3",
-  "description": "Country list with ISO2, ISO3 code, continent, capital, dialing code",
-  "homepage": "https://github.com/i-rocky/country-list-js.git",
+  "version": "4.0.0-rc.1",
+  "description": "Country data for 250 countries and territories: ISO 3166-1 codes, names, capitals, currencies, dialing codes, subdivisions, borders and IANA time zones. No dependencies.",
+  "homepage": "https://i-rocky.github.io/country-list-js",
   "author": {
     "name": "Rocky",
     "url": "https://github.com/users/i-rocky",
@@ -16,52 +16,78 @@
     "url": "https://github.com/i-rocky/country-list-js/issues"
   },
   "license": "MIT",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/i-rocky/country-list-js/blob/master/LICENSE"
-    }
-  ],
   "main": "index.js",
+  "module": "dist/index.mjs",
+  "types": "index.d.ts",
+  "unpkg": "dist/country.min.js",
+  "jsdelivr": "dist/country.min.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index.js": "./index.js",
+    "./index": "./index.js",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "data/",
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
   "keywords": [
     "country",
-    "geopolitical",
+    "countries",
+    "iso3166",
+    "iso-3166",
     "iso2",
     "iso3",
+    "country-codes",
+    "capital",
+    "currency",
+    "iso4217",
+    "dialing-code",
+    "calling-code",
     "phone",
     "continent",
-    "capital",
-    "region"
+    "region",
+    "province",
+    "state",
+    "subdivision",
+    "timezone",
+    "borders",
+    "geography"
   ],
   "scripts": {
-    "build": "gulp",
-    "start": "micro server.js",
-    "dev": "micro-dev",
-    "pretest": "npm install",
-    "test": "eslint *.js && mocha t/*.js",
-    "preversion": "npm run test",
-    "version": "",
-    "postversion": "git push --tags && npm publish",
-    "debug": "node --inspect node_modules/.bin/micro-dev server.js"
+    "build": "npm run build:data && npm run build:types && npm run build:bundles",
+    "build:data": "node scripts/build-data.js",
+    "build:types": "tsc",
+    "build:bundles": "node scripts/build-bundles.js",
+    "site": "node scripts/build-site.js",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate-data.js",
+    "test:unit": "mocha test/*.js",
+    "test": "npm run lint && npm run typecheck && npm run validate && npm run test:unit",
+    "verify": "node scripts/verify-package.js",
+    "prepare": "npm run build",
+    "pretest": "npm run build"
   },
   "devDependencies": {
-    "browserify": "^16.2.3",
-    "chai": "^4.0.2",
-    "eslint": "^9.32.0",
-    "gulp": "^5.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-streamify": "^1.0.2",
-    "gulp-uglify-es": "^3.0.0",
-    "micro-dev": "^3.0.0",
-    "mocha": "^10.2.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "test-listen": "^1.1.0",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
-  },
-  "dependencies": {
-    "micro": "^9.3.3"
+    "@eslint/js": "^10.0.1",
+    "ajv": "^8.20.0",
+    "chai": "^4.5.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.9.1",
+    "globals": "^17.12.0",
+    "mocha": "^12.0.0",
+    "typescript": "^7.0.2"
   }
 }

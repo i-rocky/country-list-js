@@ -1,0 +1,135 @@
+{
+  "iso2": "CA",
+  "iso3": "CAN",
+  "iso_numeric": "124",
+  "name": "Canada",
+  "demonym": "Canadian",
+  "continent": "NA",
+  "region": "Northern America",
+  "capital": "Ottawa",
+  "currency": "CAD",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "dialing_code": "1",
+  "tld": [
+    ".ca"
+  ],
+  "latlng": [
+    60,
+    -95
+  ],
+  "timezones": [
+    "America/Atikokan",
+    "America/Blanc-Sablon",
+    "America/Cambridge_Bay",
+    "America/Creston",
+    "America/Dawson",
+    "America/Dawson_Creek",
+    "America/Edmonton",
+    "America/Fort_Nelson",
+    "America/Glace_Bay",
+    "America/Goose_Bay",
+    "America/Halifax",
+    "America/Inuvik",
+    "America/Iqaluit",
+    "America/Moncton",
+    "America/Rankin_Inlet",
+    "America/Regina",
+    "America/Resolute",
+    "America/St_Johns",
+    "America/Swift_Current",
+    "America/Toronto",
+    "America/Vancouver",
+    "America/Whitehorse",
+    "America/Winnipeg"
+  ],
+  "borders": [
+    "GL",
+    "US"
+  ],
+  "provinces": [
+    {
+      "name": "Alberta",
+      "code": "AB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "British Columbia",
+      "code": "BC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Manitoba",
+      "code": "MB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "New Brunswick",
+      "code": "NB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Newfoundland and Labrador",
+      "code": "NL",
+      "region": null,
+      "alias": [
+        "Newfoundland",
+        "Labrador"
+      ]
+    },
+    {
+      "name": "Nova Scotia",
+      "code": "NS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nunavut",
+      "code": "NU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Northwest Territories",
+      "code": "NT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ontario",
+      "code": "ON",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Prince Edward Island",
+      "code": "PE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Quebec",
+      "code": "QC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Saskatchewan",
+      "code": "SK",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Yukon",
+      "code": "YT",
+      "region": null,
+      "alias": null
+    }
+  ]
+}

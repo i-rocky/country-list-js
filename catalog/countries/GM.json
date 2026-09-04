@@ -1,0 +1,28 @@
+{
+  "iso2": "GM",
+  "iso3": "GMB",
+  "iso_numeric": "270",
+  "name": "Gambia",
+  "demonym": "Gambian",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Banjul",
+  "currency": "GMD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "220",
+  "tld": [
+    ".gm"
+  ],
+  "latlng": [
+    13.46666666,
+    -16.56666666
+  ],
+  "timezones": [
+    "Africa/Banjul"
+  ],
+  "borders": [
+    "SN"
+  ]
+}

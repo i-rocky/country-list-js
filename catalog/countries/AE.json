@@ -1,0 +1,31 @@
+{
+  "iso2": "AE",
+  "iso3": "ARE",
+  "iso_numeric": "784",
+  "name": "United Arab Emirates",
+  "native_name": "الإمارات العربية المتحدة",
+  "demonym": "Emirati",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Abu Dhabi",
+  "currency": "AED",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "971",
+  "tld": [
+    ".ae",
+    ".امارات"
+  ],
+  "latlng": [
+    24,
+    54
+  ],
+  "timezones": [
+    "Asia/Dubai"
+  ],
+  "borders": [
+    "OM",
+    "SA"
+  ]
+}

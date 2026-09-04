@@ -1,0 +1,32 @@
+{
+  "iso2": "CO",
+  "iso3": "COL",
+  "iso_numeric": "170",
+  "name": "Colombia",
+  "demonym": "Colombian",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Bogotá",
+  "currency": "COP",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "57",
+  "tld": [
+    ".co"
+  ],
+  "latlng": [
+    4,
+    -72
+  ],
+  "timezones": [
+    "America/Bogota"
+  ],
+  "borders": [
+    "BR",
+    "EC",
+    "PA",
+    "PE",
+    "VE"
+  ]
+}

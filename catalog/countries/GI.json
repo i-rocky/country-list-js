@@ -1,0 +1,28 @@
+{
+  "iso2": "GI",
+  "iso3": "GIB",
+  "iso_numeric": "292",
+  "name": "Gibraltar",
+  "demonym": "Gibraltarian",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Gibraltar",
+  "currency": "GIP",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "350",
+  "tld": [
+    ".gi"
+  ],
+  "latlng": [
+    36.13333333,
+    -5.35
+  ],
+  "timezones": [
+    "Europe/Gibraltar"
+  ],
+  "borders": [
+    "ES"
+  ]
+}

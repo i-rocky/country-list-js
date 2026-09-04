@@ -1,0 +1,29 @@
+{
+  "iso2": "EH",
+  "iso3": "ESH",
+  "iso_numeric": "732",
+  "name": "Western Sahara",
+  "native_name": "الصحراء الغربية / Sahara Occidental",
+  "demonym": "Sahrawi",
+  "continent": "AF",
+  "region": "Northern Africa",
+  "capital": "Laayoune",
+  "currency": "MAD",
+  "languages": [
+    "ar",
+    "es"
+  ],
+  "dialing_code": "212",
+  "latlng": [
+    24.5,
+    -13
+  ],
+  "timezones": [
+    "Africa/El_Aaiun"
+  ],
+  "borders": [
+    "DZ",
+    "MA",
+    "MR"
+  ]
+}

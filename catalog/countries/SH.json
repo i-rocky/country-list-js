@@ -1,0 +1,25 @@
+{
+  "iso2": "SH",
+  "iso3": "SHN",
+  "iso_numeric": "654",
+  "name": "Saint Helena",
+  "demonym": "Saint Helenian",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Jamestown",
+  "currency": "SHP",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "290",
+  "tld": [
+    ".sh"
+  ],
+  "latlng": [
+    -15.95,
+    -5.7
+  ],
+  "timezones": [
+    "Atlantic/St_Helena"
+  ]
+}

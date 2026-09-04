@@ -1,0 +1,35 @@
+{
+  "iso2": "TD",
+  "iso3": "TCD",
+  "iso_numeric": "148",
+  "name": "Chad",
+  "native_name": "Tchad / تشاد",
+  "demonym": "Chadian",
+  "continent": "AF",
+  "region": "Middle Africa",
+  "capital": "N'Djamena",
+  "currency": "XAF",
+  "languages": [
+    "fr",
+    "ar"
+  ],
+  "dialing_code": "235",
+  "tld": [
+    ".td"
+  ],
+  "latlng": [
+    15,
+    19
+  ],
+  "timezones": [
+    "Africa/Ndjamena"
+  ],
+  "borders": [
+    "CF",
+    "CM",
+    "LY",
+    "NE",
+    "NG",
+    "SD"
+  ]
+}

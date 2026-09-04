@@ -1,0 +1,323 @@
+{
+  "iso2": "MX",
+  "iso3": "MEX",
+  "iso_numeric": "484",
+  "name": "Mexico",
+  "native_name": "México",
+  "demonym": "Mexican",
+  "continent": "NA",
+  "region": "Central America",
+  "capital": "Mexico City",
+  "currency": "MXN",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "52",
+  "tld": [
+    ".mx"
+  ],
+  "latlng": [
+    23,
+    -102
+  ],
+  "timezones": [
+    "America/Bahia_Banderas",
+    "America/Cancun",
+    "America/Chihuahua",
+    "America/Ciudad_Juarez",
+    "America/Hermosillo",
+    "America/Matamoros",
+    "America/Mazatlan",
+    "America/Merida",
+    "America/Mexico_City",
+    "America/Monterrey",
+    "America/Ojinaga",
+    "America/Tijuana"
+  ],
+  "borders": [
+    "BZ",
+    "GT",
+    "US"
+  ],
+  "provinces": [
+    {
+      "name": "Aguascalientes",
+      "code": "AG",
+      "region": null,
+      "alias": [
+        "AGS"
+      ]
+    },
+    {
+      "name": "Baja California",
+      "code": "BC",
+      "region": null,
+      "alias": [
+        "BCN"
+      ]
+    },
+    {
+      "name": "Baja California Sur",
+      "code": "BS",
+      "region": null,
+      "alias": [
+        "BCS"
+      ]
+    },
+    {
+      "name": "Campeche",
+      "code": "CM",
+      "region": null,
+      "alias": [
+        "Camp",
+        "CAM"
+      ]
+    },
+    {
+      "name": "Chiapas",
+      "code": "CS",
+      "region": null,
+      "alias": [
+        "Chis",
+        "CHP"
+      ]
+    },
+    {
+      "name": "Chihuahua",
+      "code": "CH",
+      "region": null,
+      "alias": [
+        "Chih",
+        "CHH"
+      ]
+    },
+    {
+      "name": "Coahuila",
+      "code": "MX",
+      "region": null,
+      "alias": [
+        "Coah",
+        "COA"
+      ]
+    },
+    {
+      "name": "Colima",
+      "code": "CL",
+      "region": null,
+      "alias": [
+        "COL"
+      ]
+    },
+    {
+      "name": "Ciudad de México",
+      "code": "CMX",
+      "region": null,
+      "alias": [
+        "CDMX",
+        "DIF",
+        "Distrito Federal",
+        "Federal District",
+        "Mexico City"
+      ]
+    },
+    {
+      "name": "Durango",
+      "code": "DG",
+      "region": null,
+      "alias": [
+        "Dgo",
+        "DUR"
+      ]
+    },
+    {
+      "name": "Guanajuato",
+      "code": "GT",
+      "region": null,
+      "alias": [
+        "Gto",
+        "GUA"
+      ]
+    },
+    {
+      "name": "Guerrero",
+      "code": "GR",
+      "region": null,
+      "alias": [
+        "Gro",
+        "GRO"
+      ]
+    },
+    {
+      "name": "Hidalgo",
+      "code": "HG",
+      "region": null,
+      "alias": [
+        "Hgo",
+        "HID"
+      ]
+    },
+    {
+      "name": "Jalisco",
+      "code": "JA",
+      "region": null,
+      "alias": [
+        "Jal",
+        "JAL"
+      ]
+    },
+    {
+      "name": "Mexico",
+      "code": "ME",
+      "region": null,
+      "alias": [
+        "Edomex",
+        "MEX"
+      ]
+    },
+    {
+      "name": "Michoacán",
+      "code": "MI",
+      "region": null,
+      "alias": [
+        "Mich",
+        "MIC"
+      ]
+    },
+    {
+      "name": "Morelos",
+      "code": "MO",
+      "region": null,
+      "alias": [
+        "Mor",
+        "MOR"
+      ]
+    },
+    {
+      "name": "Nayarit",
+      "code": "NA",
+      "region": null,
+      "alias": [
+        "Nay",
+        "NAY"
+      ]
+    },
+    {
+      "name": "Nuevo León",
+      "code": "NL",
+      "region": null,
+      "alias": [
+        "NLE"
+      ]
+    },
+    {
+      "name": "Oaxaca",
+      "code": "OA",
+      "region": null,
+      "alias": [
+        "Oax",
+        "OAX"
+      ]
+    },
+    {
+      "name": "Puebla",
+      "code": "PU",
+      "region": null,
+      "alias": [
+        "Pue",
+        "PUE"
+      ]
+    },
+    {
+      "name": "Querétaro",
+      "code": "QE",
+      "region": null,
+      "alias": [
+        "Qro",
+        "QUE"
+      ]
+    },
+    {
+      "name": "Quintana Roo",
+      "code": "QR",
+      "region": null,
+      "alias": [
+        "Q Roo",
+        "ROO"
+      ]
+    },
+    {
+      "name": "San Luis Potosí",
+      "code": "SL",
+      "region": null,
+      "alias": [
+        "SLP"
+      ]
+    },
+    {
+      "name": "Sinaloa",
+      "code": "SI",
+      "region": null,
+      "alias": [
+        "SIN"
+      ]
+    },
+    {
+      "name": "Sonora",
+      "code": "SO",
+      "region": null,
+      "alias": [
+        "SON"
+      ]
+    },
+    {
+      "name": "Tabasco",
+      "code": "TB",
+      "region": null,
+      "alias": [
+        "TAB"
+      ]
+    },
+    {
+      "name": "Tamaulipas",
+      "code": "TM",
+      "region": null,
+      "alias": [
+        "Tamps",
+        "TAM"
+      ]
+    },
+    {
+      "name": "Tlaxcala",
+      "code": "TL",
+      "region": null,
+      "alias": [
+        "Tlax",
+        "TLA"
+      ]
+    },
+    {
+      "name": "Veracruz",
+      "code": "VE",
+      "region": null,
+      "alias": [
+        "VER"
+      ]
+    },
+    {
+      "name": "Yucatán",
+      "code": "YU",
+      "region": null,
+      "alias": [
+        "YUC"
+      ]
+    },
+    {
+      "name": "Zacatecas",
+      "code": "ZA",
+      "region": null,
+      "alias": [
+        "ZAC"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "iso2": "BT",
+  "iso3": "BTN",
+  "iso_numeric": "064",
+  "name": "Bhutan",
+  "native_name": "འབྲུག་ཡུལ་",
+  "demonym": "Bhutanese",
+  "continent": "AS",
+  "region": "Southern Asia",
+  "capital": "Thimphu",
+  "currency": "BTN",
+  "languages": [
+    "dz"
+  ],
+  "dialing_code": "975",
+  "tld": [
+    ".bt"
+  ],
+  "latlng": [
+    27.5,
+    90.5
+  ],
+  "timezones": [
+    "Asia/Thimphu"
+  ],
+  "borders": [
+    "CN",
+    "IN"
+  ]
+}

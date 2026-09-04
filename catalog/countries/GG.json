@@ -1,0 +1,28 @@
+{
+  "iso2": "GG",
+  "iso3": "GGY",
+  "iso_numeric": "831",
+  "name": "Guernsey",
+  "demonym": "Channel Islander",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Saint Peter Port",
+  "currency": "GBP",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "44",
+  "area_codes": [
+    "1481"
+  ],
+  "tld": [
+    ".gg"
+  ],
+  "latlng": [
+    49.46666666,
+    -2.58333333
+  ],
+  "timezones": [
+    "Europe/Guernsey"
+  ]
+}

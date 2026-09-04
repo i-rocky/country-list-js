@@ -1,0 +1,34 @@
+{
+  "iso2": "NE",
+  "iso3": "NER",
+  "iso_numeric": "562",
+  "name": "Niger",
+  "demonym": "Nigerien",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Niamey",
+  "currency": "XOF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "227",
+  "tld": [
+    ".ne"
+  ],
+  "latlng": [
+    16,
+    8
+  ],
+  "timezones": [
+    "Africa/Niamey"
+  ],
+  "borders": [
+    "BF",
+    "BJ",
+    "DZ",
+    "LY",
+    "ML",
+    "NG",
+    "TD"
+  ]
+}

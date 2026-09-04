@@ -1,0 +1,32 @@
+{
+  "iso2": "MN",
+  "iso3": "MNG",
+  "iso_numeric": "496",
+  "name": "Mongolia",
+  "native_name": "Монгол Улс",
+  "demonym": "Mongolian",
+  "continent": "AS",
+  "region": "Eastern Asia",
+  "capital": "Ulaanbaatar",
+  "currency": "MNT",
+  "languages": [
+    "mn"
+  ],
+  "dialing_code": "976",
+  "tld": [
+    ".mn",
+    ".мон"
+  ],
+  "latlng": [
+    46,
+    105
+  ],
+  "timezones": [
+    "Asia/Hovd",
+    "Asia/Ulaanbaatar"
+  ],
+  "borders": [
+    "CN",
+    "RU"
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "iso2": "US",
+  "iso3": "USA",
+  "iso_numeric": "840",
+  "name": "United States",
+  "demonym": "American",
+  "continent": "NA",
+  "region": "Northern America",
+  "capital": "Washington, D.C.",
+  "currency": "USD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "1",
+  "tld": [
+    ".us"
+  ],
+  "latlng": [
+    38,
+    -97
+  ],
+  "timezones": [
+    "America/Adak",
+    "America/Anchorage",
+    "America/Boise",
+    "America/Chicago",
+    "America/Denver",
+    "America/Detroit",
+    "America/Indiana/Indianapolis",
+    "America/Indiana/Knox",
+    "America/Indiana/Marengo",
+    "America/Indiana/Petersburg",
+    "America/Indiana/Tell_City",
+    "America/Indiana/Vevay",
+    "America/Indiana/Vincennes",
+    "America/Indiana/Winamac",
+    "America/Juneau",
+    "America/Kentucky/Louisville",
+    "America/Kentucky/Monticello",
+    "America/Los_Angeles",
+    "America/Menominee",
+    "America/Metlakatla",
+    "America/New_York",
+    "America/Nome",
+    "America/North_Dakota/Beulah",
+    "America/North_Dakota/Center",
+    "America/North_Dakota/New_Salem",
+    "America/Phoenix",
+    "America/Sitka",
+    "America/Yakutat",
+    "Pacific/Honolulu"
+  ],
+  "borders": [
+    "CA",
+    "MX"
+  ],
+  "provinces": [
+    {
+      "name": "Alabama",
+      "code": "AL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Alaska",
+      "code": "AK",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Arizona",
+      "code": "AZ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Arkansas",
+      "code": "AR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "California",
+      "code": "CA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Colorado",
+      "code": "CO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Connecticut",
+      "code": "CT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "District of Columbia",
+      "code": "DC",
+      "region": null,
+      "alias": [
+        "Columbia"
+      ]
+    },
+    {
+      "name": "Delaware",
+      "code": "DE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Florida",
+      "code": "FL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Georgia",
+      "code": "GA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Hawaii",
+      "code": "HI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Idaho",
+      "code": "ID",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Illinois",
+      "code": "IL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Indiana",
+      "code": "IN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Iowa",
+      "code": "IA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kansas",
+      "code": "KS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kentucky",
+      "code": "KY",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Louisiana",
+      "code": "LA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Maine",
+      "code": "ME",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Maryland",
+      "code": "MD",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Massachusetts",
+      "code": "MA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Michigan",
+      "code": "MI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Minnesota",
+      "code": "MN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mississippi",
+      "code": "MS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Missouri",
+      "code": "MO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Montana",
+      "code": "MT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nebraska",
+      "code": "NE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nevada",
+      "code": "NV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "New Hampshire",
+      "code": "NH",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "New Jersey",
+      "code": "NJ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "New Mexico",
+      "code": "NM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "New York",
+      "code": "NY",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "North Carolina",
+      "code": "NC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "North Dakota",
+      "code": "ND",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ohio",
+      "code": "OH",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Oklahoma",
+      "code": "OK",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Oregon",
+      "code": "OR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pennsylvania",
+      "code": "PA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rhode Island",
+      "code": "RI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Carolina",
+      "code": "SC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Dakota",
+      "code": "SD",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tennessee",
+      "code": "TN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Texas",
+      "code": "TX",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Utah",
+      "code": "UT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Vermont",
+      "code": "VT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Virginia",
+      "code": "VA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Washington",
+      "code": "WA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "West Virginia",
+      "code": "WV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Wisconsin",
+      "code": "WI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Wyoming",
+      "code": "WY",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "American Samoa",
+      "code": "AS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Guam",
+      "code": "GU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "code": "MP",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Puerto Rico",
+      "code": "PR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "United States Minor Outlying Islands",
+      "code": "UM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Virgin Islands",
+      "code": "VI",
+      "region": null,
+      "alias": [
+        "United States Virgin Islands"
+      ]
+    }
+  ]
+}

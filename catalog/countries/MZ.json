@@ -1,0 +1,34 @@
+{
+  "iso2": "MZ",
+  "iso3": "MOZ",
+  "iso_numeric": "508",
+  "name": "Mozambique",
+  "native_name": "Moçambique",
+  "demonym": "Mozambican",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Maputo",
+  "currency": "MZN",
+  "languages": [
+    "pt"
+  ],
+  "dialing_code": "258",
+  "tld": [
+    ".mz"
+  ],
+  "latlng": [
+    -18.25,
+    35
+  ],
+  "timezones": [
+    "Africa/Maputo"
+  ],
+  "borders": [
+    "MW",
+    "SZ",
+    "TZ",
+    "ZA",
+    "ZM",
+    "ZW"
+  ]
+}

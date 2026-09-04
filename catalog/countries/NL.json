@@ -1,0 +1,149 @@
+{
+  "iso2": "NL",
+  "iso3": "NLD",
+  "iso_numeric": "528",
+  "name": "Netherlands",
+  "native_name": "Nederland",
+  "demonym": "Dutch",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Amsterdam",
+  "currency": "EUR",
+  "languages": [
+    "nl"
+  ],
+  "dialing_code": "31",
+  "tld": [
+    ".nl"
+  ],
+  "latlng": [
+    52.5,
+    5.75
+  ],
+  "timezones": [
+    "Europe/Amsterdam"
+  ],
+  "borders": [
+    "BE",
+    "DE"
+  ],
+  "provinces": [
+    {
+      "name": "Drenthe",
+      "code": "DR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Flevoland",
+      "code": "FL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Friesland",
+      "code": "FR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Gelderland",
+      "code": "GD",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Groningen",
+      "code": "GR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Limburg",
+      "code": "LB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Noord-Brabant",
+      "code": "NB",
+      "region": null,
+      "alias": [
+        "Noord Brabant",
+        "North Brabant"
+      ]
+    },
+    {
+      "name": "Noord-Holland",
+      "code": "NH",
+      "region": null,
+      "alias": [
+        "Noord Holland",
+        "North Holland"
+      ]
+    },
+    {
+      "name": "Overijssel",
+      "code": "OV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Utrecht",
+      "code": "UT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zuid-Holland",
+      "code": "ZH",
+      "region": null,
+      "alias": [
+        "South Holland",
+        "Zuid Holland"
+      ]
+    },
+    {
+      "name": "Zeeland",
+      "code": "ZL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Aruba",
+      "code": "AW",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bonaire",
+      "code": "BQ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Saba",
+      "code": "BQ2",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sint Eustatius",
+      "code": "BQ3",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Curaçao",
+      "code": "CW",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sint Maarten",
+      "code": "SX",
+      "region": null,
+      "alias": null
+    }
+  ]
+}

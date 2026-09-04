@@ -1,0 +1,33 @@
+{
+  "iso2": "UG",
+  "iso3": "UGA",
+  "iso_numeric": "800",
+  "name": "Uganda",
+  "demonym": "Ugandan",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Kampala",
+  "currency": "UGX",
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "dialing_code": "256",
+  "tld": [
+    ".ug"
+  ],
+  "latlng": [
+    1,
+    32
+  ],
+  "timezones": [
+    "Africa/Kampala"
+  ],
+  "borders": [
+    "CD",
+    "KE",
+    "RW",
+    "SS",
+    "TZ"
+  ]
+}

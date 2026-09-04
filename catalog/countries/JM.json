@@ -1,0 +1,29 @@
+{
+  "iso2": "JM",
+  "iso3": "JAM",
+  "iso_numeric": "388",
+  "name": "Jamaica",
+  "demonym": "Jamaican",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "Kingston",
+  "currency": "JMD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "876",
+    "658"
+  ],
+  "tld": [
+    ".jm"
+  ],
+  "latlng": [
+    17.971389,
+    -76.793056
+  ],
+  "timezones": [
+    "America/Jamaica"
+  ]
+}

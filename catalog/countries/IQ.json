@@ -1,0 +1,36 @@
+{
+  "iso2": "IQ",
+  "iso3": "IRQ",
+  "iso_numeric": "368",
+  "name": "Iraq",
+  "native_name": "العراق",
+  "demonym": "Iraqi",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Baghdad",
+  "currency": "IQD",
+  "languages": [
+    "ar",
+    "ku"
+  ],
+  "dialing_code": "964",
+  "tld": [
+    ".iq",
+    ".عراق"
+  ],
+  "latlng": [
+    33,
+    44
+  ],
+  "timezones": [
+    "Asia/Baghdad"
+  ],
+  "borders": [
+    "IR",
+    "JO",
+    "KW",
+    "SA",
+    "SY",
+    "TR"
+  ]
+}

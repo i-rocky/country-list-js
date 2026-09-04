@@ -1,0 +1,30 @@
+{
+  "iso2": "PR",
+  "iso3": "PRI",
+  "iso_numeric": "630",
+  "name": "Puerto Rico",
+  "demonym": "Puerto Rican",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "San Juan",
+  "currency": "USD",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "787",
+    "939"
+  ],
+  "tld": [
+    ".pr"
+  ],
+  "latlng": [
+    18.25,
+    -66.5
+  ],
+  "timezones": [
+    "America/Puerto_Rico"
+  ]
+}

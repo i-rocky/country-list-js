@@ -1,0 +1,30 @@
+{
+  "iso2": "NP",
+  "iso3": "NPL",
+  "iso_numeric": "524",
+  "name": "Nepal",
+  "native_name": "नेपाल",
+  "demonym": "Nepali",
+  "continent": "AS",
+  "region": "Southern Asia",
+  "capital": "Kathmandu",
+  "currency": "NPR",
+  "languages": [
+    "ne"
+  ],
+  "dialing_code": "977",
+  "tld": [
+    ".np"
+  ],
+  "latlng": [
+    28,
+    84
+  ],
+  "timezones": [
+    "Asia/Kathmandu"
+  ],
+  "borders": [
+    "CN",
+    "IN"
+  ]
+}

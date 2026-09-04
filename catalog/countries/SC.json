@@ -1,0 +1,28 @@
+{
+  "iso2": "SC",
+  "iso3": "SYC",
+  "iso_numeric": "690",
+  "name": "Seychelles",
+  "native_name": "Sesel",
+  "demonym": "Seychellois",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Victoria",
+  "currency": "SCR",
+  "languages": [
+    "fr",
+    "en",
+    "crs"
+  ],
+  "dialing_code": "248",
+  "tld": [
+    ".sc"
+  ],
+  "latlng": [
+    -4.58333333,
+    55.66666666
+  ],
+  "timezones": [
+    "Indian/Mahe"
+  ]
+}

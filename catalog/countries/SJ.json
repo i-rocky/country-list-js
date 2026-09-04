@@ -1,0 +1,29 @@
+{
+  "iso2": "SJ",
+  "iso3": "SJM",
+  "iso_numeric": "744",
+  "name": "Svalbard and Jan Mayen",
+  "native_name": "Svalbard og Jan Mayen",
+  "demonym": "Norwegian",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Longyearbyen",
+  "currency": "NOK",
+  "languages": [
+    "no"
+  ],
+  "dialing_code": "47",
+  "area_codes": [
+    "79"
+  ],
+  "tld": [
+    ".sj"
+  ],
+  "latlng": [
+    78,
+    20
+  ],
+  "timezones": [
+    "Arctic/Longyearbyen"
+  ]
+}

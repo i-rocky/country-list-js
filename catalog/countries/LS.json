@@ -1,0 +1,29 @@
+{
+  "iso2": "LS",
+  "iso3": "LSO",
+  "iso_numeric": "426",
+  "name": "Lesotho",
+  "demonym": "Mosotho",
+  "continent": "AF",
+  "region": "Southern Africa",
+  "capital": "Maseru",
+  "currency": "LSL",
+  "languages": [
+    "en",
+    "st"
+  ],
+  "dialing_code": "266",
+  "tld": [
+    ".ls"
+  ],
+  "latlng": [
+    -29.5,
+    28.5
+  ],
+  "timezones": [
+    "Africa/Maseru"
+  ],
+  "borders": [
+    "ZA"
+  ]
+}

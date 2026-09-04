@@ -1,0 +1,26 @@
+{
+  "iso2": "PM",
+  "iso3": "SPM",
+  "iso_numeric": "666",
+  "name": "Saint Pierre and Miquelon",
+  "native_name": "Saint-Pierre-et-Miquelon",
+  "demonym": "Saint Pierre and Miquelon Islander",
+  "continent": "NA",
+  "region": "Northern America",
+  "capital": "Saint-Pierre",
+  "currency": "EUR",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "508",
+  "tld": [
+    ".pm"
+  ],
+  "latlng": [
+    46.83333333,
+    -56.33333333
+  ],
+  "timezones": [
+    "America/Miquelon"
+  ]
+}

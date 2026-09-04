@@ -1,0 +1,35 @@
+{
+  "iso2": "ZM",
+  "iso3": "ZMB",
+  "iso_numeric": "894",
+  "name": "Zambia",
+  "demonym": "Zambian",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Lusaka",
+  "currency": "ZMW",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "260",
+  "tld": [
+    ".zm"
+  ],
+  "latlng": [
+    -15,
+    30
+  ],
+  "timezones": [
+    "Africa/Lusaka"
+  ],
+  "borders": [
+    "AO",
+    "BW",
+    "CD",
+    "MW",
+    "MZ",
+    "NA",
+    "TZ",
+    "ZW"
+  ]
+}

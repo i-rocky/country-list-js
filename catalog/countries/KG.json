@@ -1,0 +1,33 @@
+{
+  "iso2": "KG",
+  "iso3": "KGZ",
+  "iso_numeric": "417",
+  "name": "Kyrgyzstan",
+  "native_name": "Кыргызстан",
+  "demonym": "Kyrgyzstani",
+  "continent": "AS",
+  "region": "Central Asia",
+  "capital": "Bishkek",
+  "currency": "KGS",
+  "languages": [
+    "ky",
+    "ru"
+  ],
+  "dialing_code": "996",
+  "tld": [
+    ".kg"
+  ],
+  "latlng": [
+    41,
+    75
+  ],
+  "timezones": [
+    "Asia/Bishkek"
+  ],
+  "borders": [
+    "CN",
+    "KZ",
+    "TJ",
+    "UZ"
+  ]
+}

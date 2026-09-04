@@ -1,0 +1,108 @@
+{
+  "iso2": "JO",
+  "iso3": "JOR",
+  "iso_numeric": "400",
+  "name": "Jordan",
+  "native_name": "الأردن",
+  "demonym": "Jordanian",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Amman",
+  "currency": "JOD",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "962",
+  "tld": [
+    ".jo",
+    ".الاردن"
+  ],
+  "latlng": [
+    31,
+    36
+  ],
+  "timezones": [
+    "Asia/Amman"
+  ],
+  "borders": [
+    "IL",
+    "IQ",
+    "PS",
+    "SA",
+    "SY"
+  ],
+  "provinces": [
+    {
+      "name": "Irbid",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ajloun",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Jerash",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mafraq",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Balqa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Amman",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zarqa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Madaba",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Karak",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tafilah",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ma'an",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Aqaba",
+      "code": null,
+      "region": null,
+      "alias": null
+    }
+  ]
+}

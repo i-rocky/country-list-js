@@ -1,0 +1,26 @@
+{
+  "iso2": "TO",
+  "iso3": "TON",
+  "iso_numeric": "776",
+  "name": "Tonga",
+  "demonym": "Tongan",
+  "continent": "OC",
+  "region": "Polynesia",
+  "capital": "Nukuʻalofa",
+  "currency": "TOP",
+  "languages": [
+    "to",
+    "en"
+  ],
+  "dialing_code": "676",
+  "tld": [
+    ".to"
+  ],
+  "latlng": [
+    -20,
+    -175
+  ],
+  "timezones": [
+    "Pacific/Tongatapu"
+  ]
+}

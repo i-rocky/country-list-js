@@ -1,0 +1,30 @@
+{
+  "iso2": "SR",
+  "iso3": "SUR",
+  "iso_numeric": "740",
+  "name": "Suriname",
+  "demonym": "Surinamese",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Paramaribo",
+  "currency": "SRD",
+  "languages": [
+    "nl"
+  ],
+  "dialing_code": "597",
+  "tld": [
+    ".sr"
+  ],
+  "latlng": [
+    4,
+    -56
+  ],
+  "timezones": [
+    "America/Paramaribo"
+  ],
+  "borders": [
+    "BR",
+    "GF",
+    "GY"
+  ]
+}

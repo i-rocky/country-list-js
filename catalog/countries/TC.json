@@ -1,0 +1,28 @@
+{
+  "iso2": "TC",
+  "iso3": "TCA",
+  "iso_numeric": "796",
+  "name": "Turks and Caicos Islands",
+  "demonym": "Turks and Caicos Islander",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "Cockburn Town",
+  "currency": "USD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "649"
+  ],
+  "tld": [
+    ".tc"
+  ],
+  "latlng": [
+    21.78,
+    -71.8
+  ],
+  "timezones": [
+    "America/Grand_Turk"
+  ]
+}

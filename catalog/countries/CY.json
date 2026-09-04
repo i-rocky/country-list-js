@@ -1,0 +1,28 @@
+{
+  "iso2": "CY",
+  "iso3": "CYP",
+  "iso_numeric": "196",
+  "name": "Cyprus",
+  "native_name": "Κύπρος / Kıbrıs",
+  "demonym": "Cypriot",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Nicosia",
+  "currency": "EUR",
+  "languages": [
+    "el",
+    "tr"
+  ],
+  "dialing_code": "357",
+  "tld": [
+    ".cy"
+  ],
+  "latlng": [
+    35,
+    33
+  ],
+  "timezones": [
+    "Asia/Famagusta",
+    "Asia/Nicosia"
+  ]
+}

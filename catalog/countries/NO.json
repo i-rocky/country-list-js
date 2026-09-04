@@ -1,0 +1,31 @@
+{
+  "iso2": "NO",
+  "iso3": "NOR",
+  "iso_numeric": "578",
+  "name": "Norway",
+  "native_name": "Norge / Noreg",
+  "demonym": "Norwegian",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Oslo",
+  "currency": "NOK",
+  "languages": [
+    "no"
+  ],
+  "dialing_code": "47",
+  "tld": [
+    ".no"
+  ],
+  "latlng": [
+    62,
+    10
+  ],
+  "timezones": [
+    "Europe/Oslo"
+  ],
+  "borders": [
+    "FI",
+    "RU",
+    "SE"
+  ]
+}

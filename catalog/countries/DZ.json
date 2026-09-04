@@ -1,0 +1,36 @@
+{
+  "iso2": "DZ",
+  "iso3": "DZA",
+  "iso_numeric": "012",
+  "name": "Algeria",
+  "native_name": "الجزائر",
+  "demonym": "Algerian",
+  "continent": "AF",
+  "region": "Northern Africa",
+  "capital": "Algiers",
+  "currency": "DZD",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "213",
+  "tld": [
+    ".dz",
+    ".الجزائر"
+  ],
+  "latlng": [
+    28,
+    3
+  ],
+  "timezones": [
+    "Africa/Algiers"
+  ],
+  "borders": [
+    "EH",
+    "LY",
+    "MA",
+    "ML",
+    "MR",
+    "NE",
+    "TN"
+  ]
+}

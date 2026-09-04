@@ -1,0 +1,30 @@
+{
+  "iso2": "IM",
+  "iso3": "IMN",
+  "iso_numeric": "833",
+  "name": "Isle of Man",
+  "native_name": "Mannin",
+  "demonym": "Manx",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Douglas",
+  "currency": "GBP",
+  "languages": [
+    "en",
+    "gv"
+  ],
+  "dialing_code": "44",
+  "area_codes": [
+    "1624"
+  ],
+  "tld": [
+    ".im"
+  ],
+  "latlng": [
+    54.25,
+    -4.5
+  ],
+  "timezones": [
+    "Europe/Isle_of_Man"
+  ]
+}

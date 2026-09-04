@@ -1,0 +1,28 @@
+{
+  "iso2": "BS",
+  "iso3": "BHS",
+  "iso_numeric": "044",
+  "name": "Bahamas",
+  "demonym": "Bahamian",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "Nassau",
+  "currency": "BSD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "242"
+  ],
+  "tld": [
+    ".bs"
+  ],
+  "latlng": [
+    24.25,
+    -76
+  ],
+  "timezones": [
+    "America/Nassau"
+  ]
+}

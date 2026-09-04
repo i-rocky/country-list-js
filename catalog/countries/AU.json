@@ -1,0 +1,136 @@
+{
+  "iso2": "AU",
+  "iso3": "AUS",
+  "iso_numeric": "036",
+  "name": "Australia",
+  "demonym": "Australian",
+  "continent": "OC",
+  "region": "Australia and New Zealand",
+  "capital": "Canberra",
+  "currency": "AUD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "61",
+  "tld": [
+    ".au"
+  ],
+  "latlng": [
+    -27,
+    133
+  ],
+  "timezones": [
+    "Antarctica/Macquarie",
+    "Australia/Adelaide",
+    "Australia/Brisbane",
+    "Australia/Broken_Hill",
+    "Australia/Darwin",
+    "Australia/Eucla",
+    "Australia/Hobart",
+    "Australia/Lindeman",
+    "Australia/Lord_Howe",
+    "Australia/Melbourne",
+    "Australia/Perth",
+    "Australia/Sydney"
+  ],
+  "provinces": [
+    {
+      "name": "Ashmore and Cartier Islands",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Australian Antarctic Territory",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Australian Capital Territory",
+      "code": "ACT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Christmas Island",
+      "code": "CX",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cocos Islands",
+      "code": "CC",
+      "region": null,
+      "alias": [
+        "Keeling Islands"
+      ]
+    },
+    {
+      "name": "Coral Sea Islands",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Heard Island and McDonald Islands",
+      "code": "HM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Jervis Bay Territory",
+      "code": "JBT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "New South Wales",
+      "code": "NSW",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Norfolk Island",
+      "code": "NF",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Northern Territory",
+      "code": "NT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Queensland",
+      "code": "QLD",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Australia",
+      "code": "SA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tasmania",
+      "code": "TAS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Victoria",
+      "code": "VIC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Western Australia",
+      "code": "WA",
+      "region": null,
+      "alias": null
+    }
+  ]
+}

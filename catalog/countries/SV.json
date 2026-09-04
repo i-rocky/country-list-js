@@ -1,0 +1,29 @@
+{
+  "iso2": "SV",
+  "iso3": "SLV",
+  "iso_numeric": "222",
+  "name": "El Salvador",
+  "demonym": "Salvadoran",
+  "continent": "NA",
+  "region": "Central America",
+  "capital": "San Salvador",
+  "currency": "USD",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "503",
+  "tld": [
+    ".sv"
+  ],
+  "latlng": [
+    13.83333333,
+    -88.91666666
+  ],
+  "timezones": [
+    "America/El_Salvador"
+  ],
+  "borders": [
+    "GT",
+    "HN"
+  ]
+}

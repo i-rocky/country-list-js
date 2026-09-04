@@ -1,0 +1,25 @@
+{
+  "iso2": "CV",
+  "iso3": "CPV",
+  "iso_numeric": "132",
+  "name": "Cabo Verde",
+  "demonym": "Cabo Verdean",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Praia",
+  "currency": "CVE",
+  "languages": [
+    "pt"
+  ],
+  "dialing_code": "238",
+  "tld": [
+    ".cv"
+  ],
+  "latlng": [
+    16,
+    -24
+  ],
+  "timezones": [
+    "Atlantic/Cape_Verde"
+  ]
+}

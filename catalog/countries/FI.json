@@ -1,0 +1,32 @@
+{
+  "iso2": "FI",
+  "iso3": "FIN",
+  "iso_numeric": "246",
+  "name": "Finland",
+  "native_name": "Suomi",
+  "demonym": "Finnish",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Helsinki",
+  "currency": "EUR",
+  "languages": [
+    "fi",
+    "sv"
+  ],
+  "dialing_code": "358",
+  "tld": [
+    ".fi"
+  ],
+  "latlng": [
+    64,
+    26
+  ],
+  "timezones": [
+    "Europe/Helsinki"
+  ],
+  "borders": [
+    "NO",
+    "RU",
+    "SE"
+  ]
+}

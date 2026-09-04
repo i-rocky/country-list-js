@@ -1,0 +1,74 @@
+{
+  "iso2": "RU",
+  "iso3": "RUS",
+  "iso_numeric": "643",
+  "name": "Russia",
+  "native_name": "Россия",
+  "demonym": "Russian",
+  "continent": "EU",
+  "region": "Eastern Europe",
+  "capital": "Moscow",
+  "currency": "RUB",
+  "languages": [
+    "ru"
+  ],
+  "dialing_code": "7",
+  "area_codes": [
+    "3",
+    "4",
+    "8",
+    "9"
+  ],
+  "tld": [
+    ".ru",
+    ".рф"
+  ],
+  "latlng": [
+    60,
+    100
+  ],
+  "timezones": [
+    "Asia/Anadyr",
+    "Asia/Barnaul",
+    "Asia/Chita",
+    "Asia/Irkutsk",
+    "Asia/Kamchatka",
+    "Asia/Khandyga",
+    "Asia/Krasnoyarsk",
+    "Asia/Magadan",
+    "Asia/Novokuznetsk",
+    "Asia/Novosibirsk",
+    "Asia/Omsk",
+    "Asia/Sakhalin",
+    "Asia/Srednekolymsk",
+    "Asia/Tomsk",
+    "Asia/Ust-Nera",
+    "Asia/Vladivostok",
+    "Asia/Yakutsk",
+    "Asia/Yekaterinburg",
+    "Europe/Astrakhan",
+    "Europe/Kaliningrad",
+    "Europe/Kirov",
+    "Europe/Moscow",
+    "Europe/Samara",
+    "Europe/Saratov",
+    "Europe/Ulyanovsk",
+    "Europe/Volgograd"
+  ],
+  "borders": [
+    "AZ",
+    "BY",
+    "CN",
+    "EE",
+    "FI",
+    "GE",
+    "KP",
+    "KZ",
+    "LT",
+    "LV",
+    "MN",
+    "NO",
+    "PL",
+    "UA"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "iso2": "LB",
+  "iso3": "LBN",
+  "iso_numeric": "422",
+  "name": "Lebanon",
+  "native_name": "لبنان",
+  "demonym": "Lebanese",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Beirut",
+  "currency": "LBP",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "961",
+  "tld": [
+    ".lb"
+  ],
+  "latlng": [
+    33.83333333,
+    35.83333333
+  ],
+  "timezones": [
+    "Asia/Beirut"
+  ],
+  "borders": [
+    "IL",
+    "SY"
+  ]
+}

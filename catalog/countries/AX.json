@@ -1,0 +1,29 @@
+{
+  "iso2": "AX",
+  "iso3": "ALA",
+  "iso_numeric": "248",
+  "name": "Åland Islands",
+  "native_name": "Åland",
+  "demonym": "Ålandic",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Mariehamn",
+  "currency": "EUR",
+  "languages": [
+    "sv"
+  ],
+  "dialing_code": "358",
+  "area_codes": [
+    "18"
+  ],
+  "tld": [
+    ".ax"
+  ],
+  "latlng": [
+    60.25,
+    20
+  ],
+  "timezones": [
+    "Europe/Mariehamn"
+  ]
+}

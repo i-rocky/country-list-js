@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
+    # Everything here is a devDependency; the package itself has none. Grouping
+    # them keeps the six of them from becoming six pull requests a month.
+    groups:
+      dev-dependencies:
+        patterns: ['*']

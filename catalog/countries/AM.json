@@ -1,0 +1,33 @@
+{
+  "iso2": "AM",
+  "iso3": "ARM",
+  "iso_numeric": "051",
+  "name": "Armenia",
+  "native_name": "Հայաստան",
+  "demonym": "Armenian",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Yerevan",
+  "currency": "AMD",
+  "languages": [
+    "hy"
+  ],
+  "dialing_code": "374",
+  "tld": [
+    ".am",
+    ".հայ"
+  ],
+  "latlng": [
+    40,
+    45
+  ],
+  "timezones": [
+    "Asia/Yerevan"
+  ],
+  "borders": [
+    "AZ",
+    "GE",
+    "IR",
+    "TR"
+  ]
+}

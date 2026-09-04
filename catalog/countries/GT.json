@@ -1,0 +1,31 @@
+{
+  "iso2": "GT",
+  "iso3": "GTM",
+  "iso_numeric": "320",
+  "name": "Guatemala",
+  "demonym": "Guatemalan",
+  "continent": "NA",
+  "region": "Central America",
+  "capital": "Guatemala City",
+  "currency": "GTQ",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "502",
+  "tld": [
+    ".gt"
+  ],
+  "latlng": [
+    15.5,
+    -90.25
+  ],
+  "timezones": [
+    "America/Guatemala"
+  ],
+  "borders": [
+    "BZ",
+    "HN",
+    "MX",
+    "SV"
+  ]
+}

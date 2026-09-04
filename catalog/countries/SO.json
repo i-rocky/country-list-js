@@ -1,0 +1,32 @@
+{
+  "iso2": "SO",
+  "iso3": "SOM",
+  "iso_numeric": "706",
+  "name": "Somalia",
+  "native_name": "Soomaaliya / الصومال",
+  "demonym": "Somali",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Mogadishu",
+  "currency": "SOS",
+  "languages": [
+    "so",
+    "ar"
+  ],
+  "dialing_code": "252",
+  "tld": [
+    ".so"
+  ],
+  "latlng": [
+    10,
+    49
+  ],
+  "timezones": [
+    "Africa/Mogadishu"
+  ],
+  "borders": [
+    "DJ",
+    "ET",
+    "KE"
+  ]
+}

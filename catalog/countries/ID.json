@@ -1,0 +1,277 @@
+{
+  "iso2": "ID",
+  "iso3": "IDN",
+  "iso_numeric": "360",
+  "name": "Indonesia",
+  "demonym": "Indonesian",
+  "continent": "AS",
+  "region": "South-eastern Asia",
+  "capital": "Jakarta",
+  "currency": "IDR",
+  "languages": [
+    "id"
+  ],
+  "dialing_code": "62",
+  "tld": [
+    ".id"
+  ],
+  "latlng": [
+    -5,
+    120
+  ],
+  "timezones": [
+    "Asia/Jakarta",
+    "Asia/Jayapura",
+    "Asia/Makassar",
+    "Asia/Pontianak"
+  ],
+  "borders": [
+    "MY",
+    "PG",
+    "TL"
+  ],
+  "provinces": [
+    {
+      "name": "Aceh",
+      "code": "AC",
+      "region": null,
+      "alias": [
+        "Nanggroe Aceh Darussalam",
+        "Special Region of Aceh"
+      ]
+    },
+    {
+      "name": "Bali",
+      "code": "BA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bangka–Belitung Islands",
+      "code": "BB",
+      "region": null,
+      "alias": [
+        "Bangka Belitung Islands"
+      ]
+    },
+    {
+      "name": "Banten",
+      "code": "BT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bengkulu",
+      "code": "BE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Central Java",
+      "code": "JT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Central Kalimantan",
+      "code": "KT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Central Papua",
+      "code": "PT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Central Sulawesi",
+      "code": "ST",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "East Java",
+      "code": "JI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "East Kalimantan",
+      "code": "KI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "East Nusa Tenggara",
+      "code": "NT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Gorontalo",
+      "code": "GO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Highland Papua",
+      "code": "PE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Jakarta",
+      "code": "JK",
+      "region": null,
+      "alias": [
+        "DKI Jakarta",
+        "Jakarta Special Capital Region"
+      ]
+    },
+    {
+      "name": "Jambi",
+      "code": "JA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lampung",
+      "code": "LA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Maluku",
+      "code": "MA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "North Kalimantan",
+      "code": "KU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "North Maluku",
+      "code": "MU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "North Sulawesi",
+      "code": "SA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "North Sumatra",
+      "code": "SU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Papua",
+      "code": "PA",
+      "region": null,
+      "alias": [
+        "Special Region of Papua"
+      ]
+    },
+    {
+      "name": "Riau",
+      "code": "RI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Riau Islands",
+      "code": "KR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Kalimantan",
+      "code": "KS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Papua",
+      "code": "PS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Sulawesi",
+      "code": "SN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "South Sumatra",
+      "code": "SS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Southeast Sulawesi",
+      "code": "SG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Southwest Papua",
+      "code": "PD",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Special Region of Yogyakarta",
+      "code": "YO",
+      "region": null,
+      "alias": [
+        "Yogyakarta"
+      ]
+    },
+    {
+      "name": "West Java",
+      "code": "JB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "West Kalimantan",
+      "code": "KB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "West Nusa Tenggara",
+      "code": "NB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "West Papua",
+      "code": "PB",
+      "region": null,
+      "alias": [
+        "Special Region of West Papua"
+      ]
+    },
+    {
+      "name": "West Sulawesi",
+      "code": "SR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "West Sumatra",
+      "code": "SB",
+      "region": null,
+      "alias": null
+    }
+  ]
+}

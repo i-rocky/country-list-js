@@ -1,0 +1,36 @@
+{
+  "iso2": "SA",
+  "iso3": "SAU",
+  "iso_numeric": "682",
+  "name": "Saudi Arabia",
+  "native_name": "السعودية",
+  "demonym": "Saudi Arabian",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Riyadh",
+  "currency": "SAR",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "966",
+  "tld": [
+    ".sa",
+    ".السعودية"
+  ],
+  "latlng": [
+    25,
+    45
+  ],
+  "timezones": [
+    "Asia/Riyadh"
+  ],
+  "borders": [
+    "AE",
+    "IQ",
+    "JO",
+    "KW",
+    "OM",
+    "QA",
+    "YE"
+  ]
+}

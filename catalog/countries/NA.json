@@ -1,0 +1,31 @@
+{
+  "iso2": "NA",
+  "iso3": "NAM",
+  "iso_numeric": "516",
+  "name": "Namibia",
+  "demonym": "Namibian",
+  "continent": "AF",
+  "region": "Southern Africa",
+  "capital": "Windhoek",
+  "currency": "NAD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "264",
+  "tld": [
+    ".na"
+  ],
+  "latlng": [
+    -22,
+    17
+  ],
+  "timezones": [
+    "Africa/Windhoek"
+  ],
+  "borders": [
+    "AO",
+    "BW",
+    "ZA",
+    "ZM"
+  ]
+}

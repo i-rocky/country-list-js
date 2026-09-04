@@ -1,0 +1,34 @@
+{
+  "iso2": "UZ",
+  "iso3": "UZB",
+  "iso_numeric": "860",
+  "name": "Uzbekistan",
+  "native_name": "Oʻzbekiston",
+  "demonym": "Uzbekistani",
+  "continent": "AS",
+  "region": "Central Asia",
+  "capital": "Tashkent",
+  "currency": "UZS",
+  "languages": [
+    "uz"
+  ],
+  "dialing_code": "998",
+  "tld": [
+    ".uz"
+  ],
+  "latlng": [
+    41,
+    64
+  ],
+  "timezones": [
+    "Asia/Samarkand",
+    "Asia/Tashkent"
+  ],
+  "borders": [
+    "AF",
+    "KG",
+    "KZ",
+    "TJ",
+    "TM"
+  ]
+}

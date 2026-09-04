@@ -1,0 +1,29 @@
+{
+  "iso2": "CR",
+  "iso3": "CRI",
+  "iso_numeric": "188",
+  "name": "Costa Rica",
+  "demonym": "Costa Rican",
+  "continent": "NA",
+  "region": "Central America",
+  "capital": "San José",
+  "currency": "CRC",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "506",
+  "tld": [
+    ".cr"
+  ],
+  "latlng": [
+    10,
+    -84
+  ],
+  "timezones": [
+    "America/Costa_Rica"
+  ],
+  "borders": [
+    "NI",
+    "PA"
+  ]
+}

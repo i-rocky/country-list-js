@@ -1,0 +1,360 @@
+{
+  "iso2": "ES",
+  "iso3": "ESP",
+  "iso_numeric": "724",
+  "name": "Spain",
+  "native_name": "España",
+  "demonym": "Spanish",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Madrid",
+  "currency": "EUR",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "34",
+  "tld": [
+    ".es"
+  ],
+  "latlng": [
+    40,
+    -4
+  ],
+  "timezones": [
+    "Africa/Ceuta",
+    "Atlantic/Canary",
+    "Europe/Madrid"
+  ],
+  "borders": [
+    "AD",
+    "FR",
+    "GI",
+    "MA",
+    "PT"
+  ],
+  "provinces": [
+    {
+      "name": "La Coruña",
+      "code": "C",
+      "region": null,
+      "alias": [
+        "A Coruña"
+      ]
+    },
+    {
+      "name": "Asturias",
+      "code": "O",
+      "region": null,
+      "alias": [
+        "Asturies"
+      ]
+    },
+    {
+      "name": "Lugo",
+      "code": "LU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Vizcaya",
+      "code": "BI",
+      "region": null,
+      "alias": [
+        "Biscay"
+      ]
+    },
+    {
+      "name": "Guipúzcoa",
+      "code": "SS",
+      "region": null,
+      "alias": [
+        "Gipuzkoa"
+      ]
+    },
+    {
+      "name": "Huesca",
+      "code": "HU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lérida",
+      "code": "L",
+      "region": null,
+      "alias": [
+        "Lleida"
+      ]
+    },
+    {
+      "name": "Gerona",
+      "code": "GI",
+      "region": null,
+      "alias": [
+        "Girona"
+      ]
+    },
+    {
+      "name": "Barcelona",
+      "code": "B",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tarragona",
+      "code": "T",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Castellón",
+      "code": "CS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Valencia",
+      "code": "V",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Alicante",
+      "code": "A",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Murcia",
+      "code": "MU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zaragoza",
+      "code": "Z",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Teruel",
+      "code": "TE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cuenca",
+      "code": "CU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Albacete",
+      "code": "AB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Almeria",
+      "code": "AL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Granada",
+      "code": "GR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Málaga",
+      "code": "MA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tenerife",
+      "code": "TF",
+      "region": null,
+      "alias": [
+        "Santa Cruz de Tenerife"
+      ]
+    },
+    {
+      "name": "Cádiz",
+      "code": "CA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sevilla",
+      "code": "SE",
+      "region": null,
+      "alias": [
+        "Seville"
+      ]
+    },
+    {
+      "name": "Huelva",
+      "code": "H",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Las Palmas",
+      "code": "GC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Madrid",
+      "code": "M",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Badajoz",
+      "code": "BA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cáceres",
+      "code": "CC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Toledo",
+      "code": "TO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ciudad Real",
+      "code": "CR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Salamanca",
+      "code": "SA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Córdoba",
+      "code": "CO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Jaén",
+      "code": "J",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ávila",
+      "code": "AV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Valladolid",
+      "code": "VA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zamora",
+      "code": "ZA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Álava",
+      "code": "VI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Segovia",
+      "code": "SG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Burgos",
+      "code": "BU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pontevedra",
+      "code": "PO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "León",
+      "code": "LE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Orense",
+      "code": "OR",
+      "region": null,
+      "alias": [
+        "Ourense"
+      ]
+    },
+    {
+      "name": "Palencia",
+      "code": "P",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "La Rioja",
+      "code": "LO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Soria",
+      "code": "SO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Guadalajara",
+      "code": "GU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Baleares",
+      "code": "PM",
+      "region": null,
+      "alias": [
+        "Balears"
+      ]
+    },
+    {
+      "name": "Cantabria",
+      "code": "S",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Navarra",
+      "code": "NA",
+      "region": null,
+      "alias": [
+        "Navarre",
+        "Nafarroa"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+name: Pages
+
+# The demo site is built and deployed rather than committed, so the bundle it
+# runs can never go stale against the source -- which is exactly what happened
+# to the old docs page: it loaded a bundle from rawgit, shut down in 2019, and
+# called an API that had not existed for years.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with: {node-version: '24', cache: npm}
+      - run: npm ci
+      - run: npm run site
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with: {path: build/site}
+      - id: deploy
+        uses: actions/deploy-pages@v5

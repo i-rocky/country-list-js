@@ -1,0 +1,30 @@
+{
+  "iso2": "GW",
+  "iso3": "GNB",
+  "iso_numeric": "624",
+  "name": "Guinea-Bissau",
+  "native_name": "Guiné-Bissau",
+  "demonym": "Bissau-Guinean",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Bissau",
+  "currency": "XOF",
+  "languages": [
+    "pt"
+  ],
+  "dialing_code": "245",
+  "tld": [
+    ".gw"
+  ],
+  "latlng": [
+    12,
+    -15
+  ],
+  "timezones": [
+    "Africa/Bissau"
+  ],
+  "borders": [
+    "GN",
+    "SN"
+  ]
+}

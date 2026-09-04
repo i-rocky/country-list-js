@@ -1,0 +1,29 @@
+{
+  "iso2": "LK",
+  "iso3": "LKA",
+  "iso_numeric": "144",
+  "name": "Sri Lanka",
+  "native_name": "ශ්‍රී ලංකාව / இலங்கை",
+  "demonym": "Sri Lankan",
+  "continent": "AS",
+  "region": "Southern Asia",
+  "capital": "Sri Jayawardenepura Kotte",
+  "currency": "LKR",
+  "languages": [
+    "si",
+    "ta"
+  ],
+  "dialing_code": "94",
+  "tld": [
+    ".lk",
+    ".ලංකා",
+    ".இலங்கை"
+  ],
+  "latlng": [
+    7,
+    81
+  ],
+  "timezones": [
+    "Asia/Colombo"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "iso2": "MS",
+  "iso3": "MSR",
+  "iso_numeric": "500",
+  "name": "Montserrat",
+  "demonym": "Montserratian",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "Plymouth",
+  "currency": "XCD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "664"
+  ],
+  "tld": [
+    ".ms"
+  ],
+  "latlng": [
+    16.75,
+    -62.2
+  ],
+  "timezones": [
+    "America/Montserrat"
+  ]
+}

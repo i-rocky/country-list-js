@@ -1,0 +1,262 @@
+{
+  "iso2": "VN",
+  "iso3": "VNM",
+  "iso_numeric": "704",
+  "name": "Vietnam",
+  "native_name": "Việt Nam",
+  "demonym": "Vietnamese",
+  "continent": "AS",
+  "region": "South-eastern Asia",
+  "capital": "Hanoi",
+  "currency": "VND",
+  "languages": [
+    "vi"
+  ],
+  "dialing_code": "84",
+  "tld": [
+    ".vn"
+  ],
+  "latlng": [
+    16.16666666,
+    107.83333333
+  ],
+  "timezones": [
+    "Asia/Ho_Chi_Minh"
+  ],
+  "borders": [
+    "CN",
+    "KH",
+    "LA"
+  ],
+  "provinces": [
+    {
+      "name": "Hà Nội",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Hanoi"
+      ]
+    },
+    {
+      "name": "Thành phố Hồ Chí Minh",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Ho Chi Minh City",
+        "Ho Chi Minh",
+        "Saigon"
+      ]
+    },
+    {
+      "name": "Hải Phòng",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Haiphong"
+      ]
+    },
+    {
+      "name": "Đà Nẵng",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Da Nang"
+      ]
+    },
+    {
+      "name": "Huế",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Thừa Thiên–Huế",
+        "Thua Thien–Hue",
+        "Thua Thien Hue",
+        "Thua Thien-Hue"
+      ]
+    },
+    {
+      "name": "Cần Thơ",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Quảng Ninh",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Đồng Nai",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Dong Nai"
+      ]
+    },
+    {
+      "name": "Cao Bằng",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lạng Sơn",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Phú Thọ",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Thái Nguyên",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tuyên Quang",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Điện Biên",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Dien Bien"
+      ]
+    },
+    {
+      "name": "Lai Châu",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lào Cai",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sơn La",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bắc Ninh",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Hưng Yên",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ninh Bình",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Thanh Hóa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nghệ An",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Hà Tĩnh",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Quảng Trị",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Quảng Ngãi",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Đắk Lắk",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Dak Lak"
+      ]
+    },
+    {
+      "name": "Gia Lai",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Khánh Hòa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lâm Đồng",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Lam Dong"
+      ]
+    },
+    {
+      "name": "Tây Ninh",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Đồng Tháp",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Dong Thap"
+      ]
+    },
+    {
+      "name": "An Giang",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Vĩnh Long",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cà Mau",
+      "code": null,
+      "region": null,
+      "alias": null
+    }
+  ]
+}

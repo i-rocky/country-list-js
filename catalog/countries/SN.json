@@ -1,0 +1,33 @@
+{
+  "iso2": "SN",
+  "iso3": "SEN",
+  "iso_numeric": "686",
+  "name": "Senegal",
+  "native_name": "Sénégal",
+  "demonym": "Senegalese",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Dakar",
+  "currency": "XOF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "221",
+  "tld": [
+    ".sn"
+  ],
+  "latlng": [
+    14,
+    -14
+  ],
+  "timezones": [
+    "Africa/Dakar"
+  ],
+  "borders": [
+    "GM",
+    "GN",
+    "GW",
+    "ML",
+    "MR"
+  ]
+}

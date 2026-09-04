@@ -1,0 +1,136 @@
+{
+  "iso2": "CU",
+  "iso3": "CUB",
+  "iso_numeric": "192",
+  "name": "Cuba",
+  "demonym": "Cuban",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "Havana",
+  "currency": "CUP",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "53",
+  "tld": [
+    ".cu"
+  ],
+  "latlng": [
+    21.5,
+    -80
+  ],
+  "timezones": [
+    "America/Havana"
+  ],
+  "provinces": [
+    {
+      "name": "Artemisa",
+      "code": "15",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Camagüey",
+      "code": "09",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ciego de Ávila",
+      "code": "08",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cienfuegos",
+      "code": "06",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Granma",
+      "code": "12",
+      "region": null,
+      "alias": [
+        "Bayamo"
+      ]
+    },
+    {
+      "name": "Guantánamo",
+      "code": "14",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Havana",
+      "code": "03",
+      "region": null,
+      "alias": [
+        "La Habana",
+        "Ciudad de La Habana"
+      ]
+    },
+    {
+      "name": "Holguín",
+      "code": "11",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Isla de la Juventud",
+      "code": "99",
+      "region": null,
+      "alias": [
+        "Isle of Youth",
+        "Nueva Gerona"
+      ]
+    },
+    {
+      "name": "Las Tunas",
+      "code": "10",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Matanzas",
+      "code": "04",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mayabeque",
+      "code": "16",
+      "region": null,
+      "alias": [
+        "San José de las Lajas",
+        "San Jose de las Lajas"
+      ]
+    },
+    {
+      "name": "Pinar del Río",
+      "code": "01",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sancti Spíritus",
+      "code": "07",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Santiago de Cuba",
+      "code": "13",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Villa Clara",
+      "code": "05",
+      "region": null,
+      "alias": [
+        "Santa Clara"
+      ]
+    }
+  ]
+}

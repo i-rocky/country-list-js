@@ -1,0 +1,37 @@
+{
+  "iso2": "UA",
+  "iso3": "UKR",
+  "iso_numeric": "804",
+  "name": "Ukraine",
+  "native_name": "Україна",
+  "demonym": "Ukrainian",
+  "continent": "EU",
+  "region": "Eastern Europe",
+  "capital": "Kyiv",
+  "currency": "UAH",
+  "languages": [
+    "uk"
+  ],
+  "dialing_code": "380",
+  "tld": [
+    ".ua",
+    ".укр"
+  ],
+  "latlng": [
+    49,
+    32
+  ],
+  "timezones": [
+    "Europe/Kyiv",
+    "Europe/Simferopol"
+  ],
+  "borders": [
+    "BY",
+    "HU",
+    "MD",
+    "PL",
+    "RO",
+    "RU",
+    "SK"
+  ]
+}

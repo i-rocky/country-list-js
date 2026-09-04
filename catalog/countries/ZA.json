@@ -1,0 +1,45 @@
+{
+  "iso2": "ZA",
+  "iso3": "ZAF",
+  "iso_numeric": "710",
+  "name": "South Africa",
+  "native_name": "Suid-Afrika / iNingizimu Afrika / UMzantsi Afrika / Afrika Borwa / Aferika Borwa / Isewula Afrika / Afrika-Dzonga / Afurika Tshipembe",
+  "demonym": "South African",
+  "continent": "AF",
+  "region": "Southern Africa",
+  "capital": "Pretoria",
+  "currency": "ZAR",
+  "languages": [
+    "af",
+    "en",
+    "nr",
+    "nso",
+    "st",
+    "ss",
+    "tn",
+    "ts",
+    "ve",
+    "xh",
+    "zu",
+    "sfs"
+  ],
+  "dialing_code": "27",
+  "tld": [
+    ".za"
+  ],
+  "latlng": [
+    -29,
+    24
+  ],
+  "timezones": [
+    "Africa/Johannesburg"
+  ],
+  "borders": [
+    "BW",
+    "LS",
+    "MZ",
+    "NA",
+    "SZ",
+    "ZW"
+  ]
+}

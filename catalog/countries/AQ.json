@@ -1,0 +1,31 @@
+{
+  "iso2": "AQ",
+  "iso3": "ATA",
+  "iso_numeric": "010",
+  "name": "Antarctica",
+  "continent": "AN",
+  "region": "Antarctica",
+  "dialing_code": "672",
+  "area_codes": [
+    "1"
+  ],
+  "tld": [
+    ".aq"
+  ],
+  "latlng": [
+    -90,
+    0
+  ],
+  "timezones": [
+    "Antarctica/Casey",
+    "Antarctica/Davis",
+    "Antarctica/DumontDUrville",
+    "Antarctica/Mawson",
+    "Antarctica/McMurdo",
+    "Antarctica/Palmer",
+    "Antarctica/Rothera",
+    "Antarctica/Syowa",
+    "Antarctica/Troll",
+    "Antarctica/Vostok"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "iso2": "YE",
+  "iso3": "YEM",
+  "iso_numeric": "887",
+  "name": "Yemen",
+  "native_name": "اليمن",
+  "demonym": "Yemeni",
+  "continent": "AS",
+  "region": "Western Asia",
+  "capital": "Sanaa",
+  "currency": "YER",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "967",
+  "tld": [
+    ".ye"
+  ],
+  "latlng": [
+    15,
+    48
+  ],
+  "timezones": [
+    "Asia/Aden"
+  ],
+  "borders": [
+    "OM",
+    "SA"
+  ]
+}

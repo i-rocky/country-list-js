@@ -1,0 +1,29 @@
+{
+  "iso2": "MD",
+  "iso3": "MDA",
+  "iso_numeric": "498",
+  "name": "Moldova",
+  "demonym": "Moldovan",
+  "continent": "EU",
+  "region": "Eastern Europe",
+  "capital": "Chișinău",
+  "currency": "MDL",
+  "languages": [
+    "ro"
+  ],
+  "dialing_code": "373",
+  "tld": [
+    ".md"
+  ],
+  "latlng": [
+    47,
+    29
+  ],
+  "timezones": [
+    "Europe/Chisinau"
+  ],
+  "borders": [
+    "RO",
+    "UA"
+  ]
+}

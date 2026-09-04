@@ -1,0 +1,27 @@
+{
+  "iso2": "FO",
+  "iso3": "FRO",
+  "iso_numeric": "234",
+  "name": "Faroe Islands",
+  "native_name": "Føroyar / Færøerne",
+  "demonym": "Faroese",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Tórshavn",
+  "currency": "DKK",
+  "languages": [
+    "fo",
+    "da"
+  ],
+  "dialing_code": "298",
+  "tld": [
+    ".fo"
+  ],
+  "latlng": [
+    62,
+    -7
+  ],
+  "timezones": [
+    "Atlantic/Faroe"
+  ]
+}

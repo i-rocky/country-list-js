@@ -1,0 +1,29 @@
+{
+  "iso2": "VA",
+  "iso3": "VAT",
+  "iso_numeric": "336",
+  "name": "Holy See",
+  "native_name": "Santa Sede",
+  "demonym": "Vatican",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Vatican City",
+  "currency": "EUR",
+  "languages": [
+    "it"
+  ],
+  "dialing_code": "379",
+  "tld": [
+    ".va"
+  ],
+  "latlng": [
+    41.90244,
+    12.45389
+  ],
+  "timezones": [
+    "Europe/Vatican"
+  ],
+  "borders": [
+    "IT"
+  ]
+}

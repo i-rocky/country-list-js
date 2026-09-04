@@ -1,0 +1,35 @@
+{
+  "iso2": "CM",
+  "iso3": "CMR",
+  "iso_numeric": "120",
+  "name": "Cameroon",
+  "native_name": "Cameroun",
+  "demonym": "Cameroonian",
+  "continent": "AF",
+  "region": "Middle Africa",
+  "capital": "Yaoundé",
+  "currency": "XAF",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "dialing_code": "237",
+  "tld": [
+    ".cm"
+  ],
+  "latlng": [
+    6,
+    12
+  ],
+  "timezones": [
+    "Africa/Douala"
+  ],
+  "borders": [
+    "CF",
+    "CG",
+    "GA",
+    "GQ",
+    "NG",
+    "TD"
+  ]
+}

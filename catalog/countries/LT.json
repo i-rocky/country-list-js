@@ -1,0 +1,32 @@
+{
+  "iso2": "LT",
+  "iso3": "LTU",
+  "iso_numeric": "440",
+  "name": "Lithuania",
+  "native_name": "Lietuva",
+  "demonym": "Lithuanian",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Vilnius",
+  "currency": "EUR",
+  "languages": [
+    "lt"
+  ],
+  "dialing_code": "370",
+  "tld": [
+    ".lt"
+  ],
+  "latlng": [
+    56,
+    24
+  ],
+  "timezones": [
+    "Europe/Vilnius"
+  ],
+  "borders": [
+    "BY",
+    "LV",
+    "PL",
+    "RU"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "iso2": "AT",
+  "iso3": "AUT",
+  "iso_numeric": "040",
+  "name": "Austria",
+  "native_name": "Österreich",
+  "demonym": "Austrian",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Vienna",
+  "currency": "EUR",
+  "languages": [
+    "de"
+  ],
+  "dialing_code": "43",
+  "tld": [
+    ".at"
+  ],
+  "latlng": [
+    47.33333333,
+    13.33333333
+  ],
+  "timezones": [
+    "Europe/Vienna"
+  ],
+  "borders": [
+    "CH",
+    "CZ",
+    "DE",
+    "HU",
+    "IT",
+    "LI",
+    "SI",
+    "SK"
+  ],
+  "provinces": [
+    {
+      "name": "Burgenland",
+      "code": "B",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kärnten",
+      "code": "K",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Niederösterreich",
+      "code": "NÖ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Oberösterreich",
+      "code": "OÖ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Salzburg",
+      "code": "S",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Steiermark",
+      "code": "ST",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Tirol",
+      "code": "T",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Vorarlberg",
+      "code": "V",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Wien",
+      "code": "W",
+      "region": null,
+      "alias": null
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "iso2": "BF",
+  "iso3": "BFA",
+  "iso_numeric": "854",
+  "name": "Burkina Faso",
+  "demonym": "Burkinabé",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Ouagadougou",
+  "currency": "XOF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "226",
+  "tld": [
+    ".bf"
+  ],
+  "latlng": [
+    13,
+    -2
+  ],
+  "timezones": [
+    "Africa/Ouagadougou"
+  ],
+  "borders": [
+    "BJ",
+    "CI",
+    "GH",
+    "ML",
+    "NE",
+    "TG"
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "iso2": "BD",
+  "iso3": "BGD",
+  "iso_numeric": "050",
+  "name": "Bangladesh",
+  "native_name": "বাংলাদেশ",
+  "demonym": "Bangladeshi",
+  "continent": "AS",
+  "region": "Southern Asia",
+  "capital": "Dhaka",
+  "currency": "BDT",
+  "languages": [
+    "bn"
+  ],
+  "dialing_code": "880",
+  "tld": [
+    ".bd",
+    ".বাংলা"
+  ],
+  "latlng": [
+    24,
+    90
+  ],
+  "timezones": [
+    "Asia/Dhaka"
+  ],
+  "borders": [
+    "IN",
+    "MM"
+  ],
+  "provinces": [
+    {
+      "name": "বরগুনা",
+      "code": null,
+      "region": "Barishal",
+      "alias": [
+        "Barguna"
+      ]
+    },
+    {
+      "name": "বরিশাল",
+      "code": null,
+      "region": "Barishal",
+      "alias": [
+        "Barisal",
+        "Barishal"
+      ]
+    },
+    {
+      "name": "ভোলা",
+      "code": null,
+      "region": "Barishal",
+      "alias": [
+        "Bhola"
+      ]
+    },
+    {
+      "name": "ঝালকাঠি",
+      "code": null,
+      "region": "Barishal",
+      "alias": [
+        "Jhalokati"
+      ]
+    },
+    {
+      "name": "পটুয়াখালী",
+      "code": null,
+      "region": "Barishal",
+      "alias": [
+        "Patuakhali"
+      ]
+    },
+    {
+      "name": "পিরোজপুর",
+      "code": null,
+      "region": "Barishal",
+      "alias": [
+        "Pirojpur"
+      ]
+    },
+    {
+      "name": "বান্দরবান",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Bandarban"
+      ]
+    },
+    {
+      "name": "ব্রাহ্মণবাড়ীয়া",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Brahmanbaria"
+      ]
+    },
+    {
+      "name": "চাঁদপুর",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Chandpur"
+      ]
+    },
+    {
+      "name": "চট্টগ্রাম",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Chattogram",
+        "Chittagong"
+      ]
+    },
+    {
+      "name": "কুমিল্লা",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Comilla",
+        "Cumilla"
+      ]
+    },
+    {
+      "name": "কক্সবাজার",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Cox's Bazar"
+      ]
+    },
+    {
+      "name": "ফেনী",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Feni"
+      ]
+    },
+    {
+      "name": "খাগড়াছড়ি",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Khagrachhari"
+      ]
+    },
+    {
+      "name": "লক্ষীপুর",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Lakshmipur"
+      ]
+    },
+    {
+      "name": "নোয়াখালী",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Noakhali"
+      ]
+    },
+    {
+      "name": "রাঙ্গামাটি",
+      "code": null,
+      "region": "Chattogram",
+      "alias": [
+        "Rangamati"
+      ]
+    },
+    {
+      "name": "ঢাকা",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Dhaka"
+      ]
+    },
+    {
+      "name": "ফরিদপুর",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Faridpur"
+      ]
+    },
+    {
+      "name": "গাজীপুর",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Gazipur"
+      ]
+    },
+    {
+      "name": "গোপালগঞ্জ",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Gopalganj"
+      ]
+    },
+    {
+      "name": "জামালপুর",
+      "code": null,
+      "region": "Mymensingh",
+      "alias": [
+        "Jamalpur"
+      ]
+    },
+    {
+      "name": "কিশোরগঞ্জ",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Kishoreganj"
+      ]
+    },
+    {
+      "name": "মাদারীপুর",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Madaripur"
+      ]
+    },
+    {
+      "name": "মানিকগঞ্জ",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Manikganj"
+      ]
+    },
+    {
+      "name": "মুন্সীগঞ্জ",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Munshiganj"
+      ]
+    },
+    {
+      "name": "ময়মনসিংহ",
+      "code": null,
+      "region": "Mymensingh",
+      "alias": [
+        "Mymensingh"
+      ]
+    },
+    {
+      "name": "নারায়ণগঞ্জ",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Narayanganj"
+      ]
+    },
+    {
+      "name": "নরসিংদী",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Narsingdi"
+      ]
+    },
+    {
+      "name": "নেত্রকোনা",
+      "code": null,
+      "region": "Mymensingh",
+      "alias": [
+        "Netrakona",
+        "Netrokona"
+      ]
+    },
+    {
+      "name": "রাজবাড়ী",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Rajbari"
+      ]
+    },
+    {
+      "name": "শরীয়তপুর",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Shariatpur"
+      ]
+    },
+    {
+      "name": "শেরপুর",
+      "code": null,
+      "region": "Mymensingh",
+      "alias": [
+        "Sherpur"
+      ]
+    },
+    {
+      "name": "টাঙ্গাইল",
+      "code": null,
+      "region": "Dhaka",
+      "alias": [
+        "Tangail"
+      ]
+    },
+    {
+      "name": "বাগেরহাট",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Bagerhat"
+      ]
+    },
+    {
+      "name": "চুয়াডাঙ্গা",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Chuadanga"
+      ]
+    },
+    {
+      "name": "যশোর",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Jashore",
+        "Jessore"
+      ]
+    },
+    {
+      "name": "ঝিনাইদহ",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Jhenaidah"
+      ]
+    },
+    {
+      "name": "খুলনা",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Khulna"
+      ]
+    },
+    {
+      "name": "কুষ্টিয়া",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Kushtia"
+      ]
+    },
+    {
+      "name": "মাগুরা",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Magura"
+      ]
+    },
+    {
+      "name": "মেহেরপুর",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Meherpur"
+      ]
+    },
+    {
+      "name": "নড়াইল",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Narail"
+      ]
+    },
+    {
+      "name": "সাতক্ষিরা",
+      "code": null,
+      "region": "Khulna",
+      "alias": [
+        "Satkhira"
+      ]
+    },
+    {
+      "name": "বগুড়া",
+      "code": null,
+      "region": "Rajshahi",
+      "alias": [
+        "Bogra",
+        "Bogura"
+      ]
+    },
+    {
+      "name": "জয়পুরহাট",
+      "code": null,
+      "region": "Rajshahi",
+      "alias": [
+        "Joypurhat"
+      ]
+    },
+    {
+      "name": "নওগাঁ",
+      "code": null,
+      "region": "Rajshahi",
+      "alias": [
+        "Naogaon"
+      ]
+    },
+    {
+      "name": "নাটোর",
+      "code": null,
+      "region": "Rajshahi",
+      "alias": [
+        "Natore"
+      ]
+    },
+    {
+      "name": "নওয়াবগঞ্জ",
+      "code": null,
+      "region": "Rajshahi",
+      "alias": [
+        "Chapainawabganj"
+      ]
+    },
+    {
+      "name": "পাবনা",
+      "code": null,
+      "region": "Rajshahi",
+      "alias": [
+        "Pabna"
+      ]
+    },
+    {
+      "name": "রাজশাহী",
+      "code": null,
+      "region": "Rajshahi",
+      "alias": [
+        "Rajshahi"
+      ]
+    },
+    {
+      "name": "সিরাজগঞ্জ",
+      "code": null,
+      "region": "Rajshahi",
+      "alias": [
+        "Sirajganj"
+      ]
+    },
+    {
+      "name": "দিনাজপুর",
+      "code": null,
+      "region": "Rangpur",
+      "alias": [
+        "Dinajpur"
+      ]
+    },
+    {
+      "name": "গাইবান্ধা",
+      "code": null,
+      "region": "Rangpur",
+      "alias": [
+        "Gaibandha"
+      ]
+    },
+    {
+      "name": "কুড়িগ্রাম",
+      "code": null,
+      "region": "Rangpur",
+      "alias": [
+        "Kurigram"
+      ]
+    },
+    {
+      "name": "লালমনিরহাট",
+      "code": null,
+      "region": "Rangpur",
+      "alias": [
+        "Lalmonirhat"
+      ]
+    },
+    {
+      "name": "নীলফামারী",
+      "code": null,
+      "region": "Rangpur",
+      "alias": [
+        "Nilphamari"
+      ]
+    },
+    {
+      "name": "পঞ্চগড়",
+      "code": null,
+      "region": "Rangpur",
+      "alias": [
+        "Panchagarh"
+      ]
+    },
+    {
+      "name": "রংপুর",
+      "code": null,
+      "region": "Rangpur",
+      "alias": [
+        "Rangpur"
+      ]
+    },
+    {
+      "name": "ঠাকুরগাঁ",
+      "code": null,
+      "region": "Rangpur",
+      "alias": [
+        "Thakurgaon"
+      ]
+    },
+    {
+      "name": "হবিগঞ্জ",
+      "code": null,
+      "region": "Sylhet",
+      "alias": [
+        "Habiganj"
+      ]
+    },
+    {
+      "name": "মৌলভীবাজার",
+      "code": null,
+      "region": "Sylhet",
+      "alias": [
+        "Moulvibazar"
+      ]
+    },
+    {
+      "name": "সুনামগঞ্জ",
+      "code": null,
+      "region": "Sylhet",
+      "alias": [
+        "Sunamganj"
+      ]
+    },
+    {
+      "name": "সিলেট",
+      "code": null,
+      "region": "Sylhet",
+      "alias": [
+        "Sylhet"
+      ]
+    }
+  ]
+}

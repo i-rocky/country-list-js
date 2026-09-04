@@ -1,0 +1,33 @@
+{
+  "iso2": "MM",
+  "iso3": "MMR",
+  "iso_numeric": "104",
+  "name": "Myanmar",
+  "native_name": "မြန်မာ",
+  "demonym": "Burmese",
+  "continent": "AS",
+  "region": "South-eastern Asia",
+  "capital": "Naypyidaw",
+  "currency": "MMK",
+  "languages": [
+    "my"
+  ],
+  "dialing_code": "95",
+  "tld": [
+    ".mm"
+  ],
+  "latlng": [
+    19.75,
+    96.1
+  ],
+  "timezones": [
+    "Asia/Yangon"
+  ],
+  "borders": [
+    "BD",
+    "CN",
+    "IN",
+    "LA",
+    "TH"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "iso2": "IS",
+  "iso3": "ISL",
+  "iso_numeric": "352",
+  "name": "Iceland",
+  "native_name": "Ísland",
+  "demonym": "Icelander",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Reykjavík",
+  "currency": "ISK",
+  "languages": [
+    "is"
+  ],
+  "dialing_code": "354",
+  "tld": [
+    ".is"
+  ],
+  "latlng": [
+    65,
+    -18
+  ],
+  "timezones": [
+    "Atlantic/Reykjavik"
+  ]
+}

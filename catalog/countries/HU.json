@@ -1,0 +1,35 @@
+{
+  "iso2": "HU",
+  "iso3": "HUN",
+  "iso_numeric": "348",
+  "name": "Hungary",
+  "native_name": "Magyarország",
+  "demonym": "Hungarian",
+  "continent": "EU",
+  "region": "Eastern Europe",
+  "capital": "Budapest",
+  "currency": "HUF",
+  "languages": [
+    "hu"
+  ],
+  "dialing_code": "36",
+  "tld": [
+    ".hu"
+  ],
+  "latlng": [
+    47,
+    20
+  ],
+  "timezones": [
+    "Europe/Budapest"
+  ],
+  "borders": [
+    "AT",
+    "HR",
+    "RO",
+    "RS",
+    "SI",
+    "SK",
+    "UA"
+  ]
+}

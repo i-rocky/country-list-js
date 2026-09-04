@@ -1,0 +1,111 @@
+{
+  "iso2": "BE",
+  "iso3": "BEL",
+  "iso_numeric": "056",
+  "name": "Belgium",
+  "native_name": "België / Belgique / Belgien",
+  "demonym": "Belgian",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Brussels",
+  "currency": "EUR",
+  "languages": [
+    "nl",
+    "fr",
+    "de"
+  ],
+  "dialing_code": "32",
+  "tld": [
+    ".be"
+  ],
+  "latlng": [
+    50.83333333,
+    4
+  ],
+  "timezones": [
+    "Europe/Brussels"
+  ],
+  "borders": [
+    "DE",
+    "FR",
+    "LU",
+    "NL"
+  ],
+  "provinces": [
+    {
+      "name": "Antwerpen",
+      "code": "ANT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Henegouwen",
+      "code": "HAI",
+      "region": null,
+      "alias": [
+        "Hainaut"
+      ]
+    },
+    {
+      "name": "Luik",
+      "code": "LIE",
+      "region": null,
+      "alias": [
+        "Liège",
+        "Liege"
+      ]
+    },
+    {
+      "name": "Limburg",
+      "code": "LIM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Luxemburg",
+      "code": "LUX",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Namen",
+      "code": "NAM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Oost-Vlaanderen",
+      "code": "OVL",
+      "region": null,
+      "alias": [
+        "Oost Vlaanderen"
+      ]
+    },
+    {
+      "name": "Vlaams-Brabant",
+      "code": "VBR",
+      "region": null,
+      "alias": [
+        "Flemish Brabant",
+        "Vlaams Brabant"
+      ]
+    },
+    {
+      "name": "Waals-Brabant",
+      "code": "WBR",
+      "region": null,
+      "alias": [
+        "Waals Brabant",
+        "Walloon Brabant"
+      ]
+    },
+    {
+      "name": "West-Vlaanderen",
+      "code": "WVL",
+      "region": null,
+      "alias": [
+        "West Vlaanderen"
+      ]
+    }
+  ]
+}

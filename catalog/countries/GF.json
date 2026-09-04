@@ -1,0 +1,30 @@
+{
+  "iso2": "GF",
+  "iso3": "GUF",
+  "iso_numeric": "254",
+  "name": "French Guiana",
+  "native_name": "Guyane",
+  "demonym": "French Guianese",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Cayenne",
+  "currency": "EUR",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "594",
+  "tld": [
+    ".gf"
+  ],
+  "latlng": [
+    4,
+    -53
+  ],
+  "timezones": [
+    "America/Cayenne"
+  ],
+  "borders": [
+    "BR",
+    "SR"
+  ]
+}

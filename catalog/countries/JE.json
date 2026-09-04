@@ -1,0 +1,29 @@
+{
+  "iso2": "JE",
+  "iso3": "JEY",
+  "iso_numeric": "832",
+  "name": "Jersey",
+  "demonym": "Channel Islander",
+  "continent": "EU",
+  "region": "Northern Europe",
+  "capital": "Saint Helier",
+  "currency": "GBP",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "dialing_code": "44",
+  "area_codes": [
+    "1534"
+  ],
+  "tld": [
+    ".je"
+  ],
+  "latlng": [
+    49.25,
+    -2.16666666
+  ],
+  "timezones": [
+    "Europe/Jersey"
+  ]
+}

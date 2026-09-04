@@ -1,0 +1,30 @@
+{
+  "iso2": "GU",
+  "iso3": "GUM",
+  "iso_numeric": "316",
+  "name": "Guam",
+  "native_name": "Guåhan",
+  "demonym": "Guamanian",
+  "continent": "OC",
+  "region": "Micronesia",
+  "capital": "Hagåtña",
+  "currency": "USD",
+  "languages": [
+    "en",
+    "ch"
+  ],
+  "dialing_code": "1",
+  "area_codes": [
+    "671"
+  ],
+  "tld": [
+    ".gu"
+  ],
+  "latlng": [
+    13.46666666,
+    144.78333333
+  ],
+  "timezones": [
+    "Pacific/Guam"
+  ]
+}

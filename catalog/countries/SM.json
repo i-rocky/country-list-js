@@ -1,0 +1,28 @@
+{
+  "iso2": "SM",
+  "iso3": "SMR",
+  "iso_numeric": "674",
+  "name": "San Marino",
+  "demonym": "Sammarinese",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "San Marino",
+  "currency": "EUR",
+  "languages": [
+    "it"
+  ],
+  "dialing_code": "378",
+  "tld": [
+    ".sm"
+  ],
+  "latlng": [
+    43.76666666,
+    12.41666666
+  ],
+  "timezones": [
+    "Europe/San_Marino"
+  ],
+  "borders": [
+    "IT"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "iso2": "GH",
+  "iso3": "GHA",
+  "iso_numeric": "288",
+  "name": "Ghana",
+  "demonym": "Ghanaian",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Accra",
+  "currency": "GHS",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "233",
+  "tld": [
+    ".gh"
+  ],
+  "latlng": [
+    8,
+    -2
+  ],
+  "timezones": [
+    "Africa/Accra"
+  ],
+  "borders": [
+    "BF",
+    "CI",
+    "TG"
+  ]
+}

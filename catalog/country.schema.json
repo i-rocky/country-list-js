@@ -1,0 +1,211 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/i-rocky/country-list-js/schema/country.schema.json",
+  "title": "country-list-js country record",
+  "description": "One file per country under countries/, named <ISO2>.json. This is the source of truth; everything under data/ is generated from it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "iso2",
+    "iso3",
+    "name",
+    "continent",
+    "region"
+  ],
+  "properties": {
+    "iso2": {
+      "description": "ISO 3166-1 alpha-2 code. Must match the filename.",
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "iso3": {
+      "description": "ISO 3166-1 alpha-3 code.",
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "iso_numeric": {
+      "description": "ISO 3166-1 numeric code, zero padded. Absent for XK, which is user-assigned and has none.",
+      "type": "string",
+      "pattern": "^[0-9]{3}$"
+    },
+    "name": {
+      "description": "Common short name in English, as the country spells it. The current name where a country has been renamed; the former name goes in name-aliases.json.",
+      "type": "string",
+      "minLength": 1
+    },
+    "native_name": {
+      "description": "Endonym in the country's own language, where it differs from name. Several official languages are separated by ' / '.",
+      "type": "string",
+      "minLength": 1
+    },
+    "demonym": {
+      "description": "What a person from this country is called in English.",
+      "type": "string",
+      "minLength": 1
+    },
+    "continent": {
+      "description": "Continent code, defined in reference/continents.json.",
+      "type": "string",
+      "enum": [
+        "AF",
+        "AN",
+        "AS",
+        "EU",
+        "NA",
+        "OC",
+        "SA"
+      ]
+    },
+    "region": {
+      "description": "UN M49 geographic region: the intermediate region where the scheme has one, otherwise the sub-region. Antarctica for AQ.",
+      "type": "string",
+      "enum": [
+        "Antarctica",
+        "Australia and New Zealand",
+        "Caribbean",
+        "Central America",
+        "Central Asia",
+        "Eastern Africa",
+        "Eastern Asia",
+        "Eastern Europe",
+        "Melanesia",
+        "Micronesia",
+        "Middle Africa",
+        "Northern Africa",
+        "Northern America",
+        "Northern Europe",
+        "Polynesia",
+        "South America",
+        "South-eastern Asia",
+        "Southern Africa",
+        "Southern Asia",
+        "Southern Europe",
+        "Western Africa",
+        "Western Asia",
+        "Western Europe"
+      ]
+    },
+    "capital": {
+      "description": "Capital city, spelled as it is in English with its diacritics. Absent for territories that have none.",
+      "type": "string",
+      "minLength": 1
+    },
+    "currency": {
+      "description": "ISO 4217 code. Must be defined in reference/currencies.json. Absent for Antarctica, which has no currency.",
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "dialing_code": {
+      "description": "ITU-T E.164 country calling code, digits only, without the plus. A string, never a number: merging 247 unquoted made require() itself throw. Absent for territories with no telephone service.",
+      "type": "string",
+      "pattern": "^[1-9][0-9]{0,2}$"
+    },
+    "area_codes": {
+      "description": "Where the calling code is shared, the area codes that belong to this territory within it: ['268'] for Antigua under 1, ['1534'] for Jersey under 44. Only with dialing_code.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]+$"
+      }
+    },
+    "languages": {
+      "description": "Languages with official status for the whole country: ISO 639-1 codes, or ISO 639-3 where the language has no two-letter code.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2,3}$"
+      }
+    },
+    "tld": {
+      "description": "Country code top-level domains delegated in the IANA root zone, each with a leading dot, including internationalized ones (Kazakhstan has .қаз).",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^\\..+$"
+      }
+    },
+    "latlng": {
+      "description": "Approximate geographic centre, [latitude, longitude].",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "timezones": {
+      "description": "IANA time zone identifiers, from the tz database. Absent for uninhabited territories.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z_]+(/[A-Za-z_+-]+){1,2}$"
+      }
+    },
+    "borders": {
+      "description": "ISO 3166-1 alpha-2 codes of neighbours. The relation is symmetric: if A borders B then B borders A.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$"
+      }
+    },
+    "provinces": {
+      "description": "First-tier political subdivisions. Omit the key entirely rather than using an empty array.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "code",
+          "region",
+          "alias"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "code": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Local subdivision code, null where the country has none."
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Parent grouping, null where the country has none above this tier."
+          },
+          "alias": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "description": "Alternative names. Always a list or null -- never a bare string."
+          }
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "area_codes": [
+      "dialing_code"
+    ]
+  }
+}

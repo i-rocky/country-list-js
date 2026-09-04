@@ -1,0 +1,16 @@
+{
+  "iso2": "BV",
+  "iso3": "BVT",
+  "iso_numeric": "074",
+  "name": "Bouvet Island",
+  "continent": "SA",
+  "region": "South America",
+  "currency": "NOK",
+  "tld": [
+    ".bv"
+  ],
+  "latlng": [
+    -54.42,
+    3.36
+  ]
+}

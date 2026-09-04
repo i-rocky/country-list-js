@@ -1,0 +1,31 @@
+{
+  "iso2": "AO",
+  "iso3": "AGO",
+  "iso_numeric": "024",
+  "name": "Angola",
+  "demonym": "Angolan",
+  "continent": "AF",
+  "region": "Middle Africa",
+  "capital": "Luanda",
+  "currency": "AOA",
+  "languages": [
+    "pt"
+  ],
+  "dialing_code": "244",
+  "tld": [
+    ".ao"
+  ],
+  "latlng": [
+    -12.5,
+    18.5
+  ],
+  "timezones": [
+    "Africa/Luanda"
+  ],
+  "borders": [
+    "CD",
+    "CG",
+    "NA",
+    "ZM"
+  ]
+}

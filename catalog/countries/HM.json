@@ -1,0 +1,16 @@
+{
+  "iso2": "HM",
+  "iso3": "HMD",
+  "iso_numeric": "334",
+  "name": "Heard Island and McDonald Islands",
+  "continent": "OC",
+  "region": "Australia and New Zealand",
+  "currency": "AUD",
+  "tld": [
+    ".hm"
+  ],
+  "latlng": [
+    -53.1,
+    72.51666666
+  ]
+}

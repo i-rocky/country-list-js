@@ -1,0 +1,30 @@
+{
+  "iso2": "NF",
+  "iso3": "NFK",
+  "iso_numeric": "574",
+  "name": "Norfolk Island",
+  "native_name": "Norfuk Ailen",
+  "demonym": "Norfolk Islander",
+  "continent": "OC",
+  "region": "Australia and New Zealand",
+  "capital": "Kingston",
+  "currency": "AUD",
+  "languages": [
+    "en",
+    "pih"
+  ],
+  "dialing_code": "672",
+  "area_codes": [
+    "3"
+  ],
+  "tld": [
+    ".nf"
+  ],
+  "latlng": [
+    -29.03333333,
+    167.95
+  ],
+  "timezones": [
+    "Pacific/Norfolk"
+  ]
+}

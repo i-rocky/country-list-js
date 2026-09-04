@@ -1,0 +1,33 @@
+{
+  "iso2": "EG",
+  "iso3": "EGY",
+  "iso_numeric": "818",
+  "name": "Egypt",
+  "native_name": "مصر",
+  "demonym": "Egyptian",
+  "continent": "AF",
+  "region": "Northern Africa",
+  "capital": "Cairo",
+  "currency": "EGP",
+  "languages": [
+    "ar"
+  ],
+  "dialing_code": "20",
+  "tld": [
+    ".eg",
+    ".مصر"
+  ],
+  "latlng": [
+    27,
+    30
+  ],
+  "timezones": [
+    "Africa/Cairo"
+  ],
+  "borders": [
+    "IL",
+    "LY",
+    "PS",
+    "SD"
+  ]
+}

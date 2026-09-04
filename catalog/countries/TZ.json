@@ -1,0 +1,36 @@
+{
+  "iso2": "TZ",
+  "iso3": "TZA",
+  "iso_numeric": "834",
+  "name": "Tanzania",
+  "demonym": "Tanzanian",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Dodoma",
+  "currency": "TZS",
+  "languages": [
+    "sw",
+    "en"
+  ],
+  "dialing_code": "255",
+  "tld": [
+    ".tz"
+  ],
+  "latlng": [
+    -6,
+    35
+  ],
+  "timezones": [
+    "Africa/Dar_es_Salaam"
+  ],
+  "borders": [
+    "BI",
+    "CD",
+    "KE",
+    "MW",
+    "MZ",
+    "RW",
+    "UG",
+    "ZM"
+  ]
+}

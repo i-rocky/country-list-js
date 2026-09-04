@@ -1,0 +1,27 @@
+{
+  "iso2": "KM",
+  "iso3": "COM",
+  "iso_numeric": "174",
+  "name": "Comoros",
+  "native_name": "Komori / جزر القمر / Comores",
+  "demonym": "Comorian",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Moroni",
+  "currency": "KMF",
+  "languages": [
+    "ar",
+    "fr"
+  ],
+  "dialing_code": "269",
+  "tld": [
+    ".km"
+  ],
+  "latlng": [
+    -12.16666666,
+    44.25
+  ],
+  "timezones": [
+    "Indian/Comoro"
+  ]
+}

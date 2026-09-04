@@ -1,0 +1,31 @@
+{
+  "iso2": "MO",
+  "iso3": "MAC",
+  "iso_numeric": "446",
+  "name": "Macao",
+  "native_name": "澳門 / Macau",
+  "demonym": "Macanese",
+  "continent": "AS",
+  "region": "Eastern Asia",
+  "capital": "Macao",
+  "currency": "MOP",
+  "languages": [
+    "zh",
+    "pt"
+  ],
+  "dialing_code": "853",
+  "tld": [
+    ".mo",
+    ".澳門"
+  ],
+  "latlng": [
+    22.16666666,
+    113.55
+  ],
+  "timezones": [
+    "Asia/Macau"
+  ],
+  "borders": [
+    "CN"
+  ]
+}

@@ -1,0 +1,614 @@
+{
+  "AED": {
+    "symbol": "AED",
+    "decimal": 2
+  },
+  "AFN": {
+    "symbol": "؋",
+    "decimal": 2
+  },
+  "ALL": {
+    "symbol": "ALL",
+    "decimal": 2
+  },
+  "AMD": {
+    "symbol": "֏",
+    "decimal": 2
+  },
+  "AOA": {
+    "symbol": "Kz",
+    "decimal": 2
+  },
+  "ARS": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "AUD": {
+    "symbol": "A$",
+    "decimal": 2
+  },
+  "AWG": {
+    "symbol": "AWG",
+    "decimal": 2
+  },
+  "AZN": {
+    "symbol": "₼",
+    "decimal": 2
+  },
+  "BAM": {
+    "symbol": "KM",
+    "decimal": 2
+  },
+  "BBD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "BDT": {
+    "symbol": "৳",
+    "decimal": 2
+  },
+  "BHD": {
+    "symbol": "BHD",
+    "decimal": 3
+  },
+  "BIF": {
+    "symbol": "BIF",
+    "decimal": 0
+  },
+  "BMD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "BND": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "BOB": {
+    "symbol": "Bs",
+    "decimal": 2
+  },
+  "BRL": {
+    "symbol": "R$",
+    "decimal": 2
+  },
+  "BSD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "BTN": {
+    "symbol": "BTN",
+    "decimal": 2
+  },
+  "BWP": {
+    "symbol": "P",
+    "decimal": 2
+  },
+  "BYN": {
+    "symbol": "BYN",
+    "decimal": 2
+  },
+  "BZD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "CAD": {
+    "symbol": "CA$",
+    "decimal": 2
+  },
+  "CDF": {
+    "symbol": "CDF",
+    "decimal": 2
+  },
+  "CHF": {
+    "symbol": "CHF",
+    "decimal": 2
+  },
+  "CLP": {
+    "symbol": "$",
+    "decimal": 0
+  },
+  "CNY": {
+    "symbol": "CN¥",
+    "decimal": 2
+  },
+  "COP": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "CRC": {
+    "symbol": "₡",
+    "decimal": 2
+  },
+  "CUP": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "CVE": {
+    "symbol": "CVE",
+    "decimal": 2
+  },
+  "CZK": {
+    "symbol": "Kč",
+    "decimal": 2
+  },
+  "DJF": {
+    "symbol": "DJF",
+    "decimal": 0
+  },
+  "DKK": {
+    "symbol": "kr",
+    "decimal": 2
+  },
+  "DOP": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "DZD": {
+    "symbol": "DZD",
+    "decimal": 2
+  },
+  "EGP": {
+    "symbol": "E£",
+    "decimal": 2
+  },
+  "ERN": {
+    "symbol": "ERN",
+    "decimal": 2
+  },
+  "ETB": {
+    "symbol": "ETB",
+    "decimal": 2
+  },
+  "EUR": {
+    "symbol": "€",
+    "decimal": 2
+  },
+  "FJD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "FKP": {
+    "symbol": "£",
+    "decimal": 2
+  },
+  "GBP": {
+    "symbol": "£",
+    "decimal": 2
+  },
+  "GEL": {
+    "symbol": "₾",
+    "decimal": 2
+  },
+  "GHS": {
+    "symbol": "GH₵",
+    "decimal": 2
+  },
+  "GIP": {
+    "symbol": "£",
+    "decimal": 2
+  },
+  "GMD": {
+    "symbol": "GMD",
+    "decimal": 2
+  },
+  "GNF": {
+    "symbol": "FG",
+    "decimal": 0
+  },
+  "GTQ": {
+    "symbol": "Q",
+    "decimal": 2
+  },
+  "GYD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "HKD": {
+    "symbol": "HK$",
+    "decimal": 2
+  },
+  "HNL": {
+    "symbol": "L",
+    "decimal": 2
+  },
+  "HTG": {
+    "symbol": "HTG",
+    "decimal": 2
+  },
+  "HUF": {
+    "symbol": "Ft",
+    "decimal": 2
+  },
+  "IDR": {
+    "symbol": "Rp",
+    "decimal": 2
+  },
+  "ILS": {
+    "symbol": "₪",
+    "decimal": 2
+  },
+  "INR": {
+    "symbol": "₹",
+    "decimal": 2
+  },
+  "IQD": {
+    "symbol": "IQD",
+    "decimal": 3
+  },
+  "IRR": {
+    "symbol": "IRR",
+    "decimal": 2
+  },
+  "ISK": {
+    "symbol": "kr",
+    "decimal": 0
+  },
+  "JMD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "JOD": {
+    "symbol": "JOD",
+    "decimal": 3
+  },
+  "JPY": {
+    "symbol": "¥",
+    "decimal": 0
+  },
+  "KES": {
+    "symbol": "KES",
+    "decimal": 2
+  },
+  "KGS": {
+    "symbol": "⃀",
+    "decimal": 2
+  },
+  "KHR": {
+    "symbol": "៛",
+    "decimal": 2
+  },
+  "KMF": {
+    "symbol": "CF",
+    "decimal": 0
+  },
+  "KPW": {
+    "symbol": "₩",
+    "decimal": 2
+  },
+  "KRW": {
+    "symbol": "₩",
+    "decimal": 0
+  },
+  "KWD": {
+    "symbol": "KWD",
+    "decimal": 3
+  },
+  "KYD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "KZT": {
+    "symbol": "₸",
+    "decimal": 2
+  },
+  "LAK": {
+    "symbol": "₭",
+    "decimal": 2
+  },
+  "LBP": {
+    "symbol": "L£",
+    "decimal": 2
+  },
+  "LKR": {
+    "symbol": "Rs",
+    "decimal": 2
+  },
+  "LRD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "LSL": {
+    "symbol": "LSL",
+    "decimal": 2
+  },
+  "LYD": {
+    "symbol": "LYD",
+    "decimal": 3
+  },
+  "MAD": {
+    "symbol": "MAD",
+    "decimal": 2
+  },
+  "MDL": {
+    "symbol": "MDL",
+    "decimal": 2
+  },
+  "MGA": {
+    "symbol": "Ar",
+    "decimal": 2
+  },
+  "MKD": {
+    "symbol": "MKD",
+    "decimal": 2
+  },
+  "MMK": {
+    "symbol": "K",
+    "decimal": 2
+  },
+  "MNT": {
+    "symbol": "₮",
+    "decimal": 2
+  },
+  "MOP": {
+    "symbol": "MOP",
+    "decimal": 2
+  },
+  "MRU": {
+    "symbol": "MRU",
+    "decimal": 2
+  },
+  "MUR": {
+    "symbol": "Rs",
+    "decimal": 2
+  },
+  "MVR": {
+    "symbol": "MVR",
+    "decimal": 2
+  },
+  "MWK": {
+    "symbol": "MWK",
+    "decimal": 2
+  },
+  "MXN": {
+    "symbol": "MX$",
+    "decimal": 2
+  },
+  "MYR": {
+    "symbol": "RM",
+    "decimal": 2
+  },
+  "MZN": {
+    "symbol": "MZN",
+    "decimal": 2
+  },
+  "NAD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "NGN": {
+    "symbol": "₦",
+    "decimal": 2
+  },
+  "NIO": {
+    "symbol": "C$",
+    "decimal": 2
+  },
+  "NOK": {
+    "symbol": "kr",
+    "decimal": 2
+  },
+  "NPR": {
+    "symbol": "Rs",
+    "decimal": 2
+  },
+  "NZD": {
+    "symbol": "NZ$",
+    "decimal": 2
+  },
+  "OMR": {
+    "symbol": "OMR",
+    "decimal": 3
+  },
+  "PAB": {
+    "symbol": "PAB",
+    "decimal": 2
+  },
+  "PEN": {
+    "symbol": "PEN",
+    "decimal": 2
+  },
+  "PGK": {
+    "symbol": "PGK",
+    "decimal": 2
+  },
+  "PHP": {
+    "symbol": "₱",
+    "decimal": 2
+  },
+  "PKR": {
+    "symbol": "Rs",
+    "decimal": 2
+  },
+  "PLN": {
+    "symbol": "zł",
+    "decimal": 2
+  },
+  "PYG": {
+    "symbol": "₲",
+    "decimal": 0
+  },
+  "QAR": {
+    "symbol": "QAR",
+    "decimal": 2
+  },
+  "RON": {
+    "symbol": "lei",
+    "decimal": 2
+  },
+  "RSD": {
+    "symbol": "RSD",
+    "decimal": 2
+  },
+  "RUB": {
+    "symbol": "₽",
+    "decimal": 2
+  },
+  "RWF": {
+    "symbol": "RF",
+    "decimal": 0
+  },
+  "SAR": {
+    "symbol": "SAR",
+    "decimal": 2
+  },
+  "SBD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "SCR": {
+    "symbol": "SCR",
+    "decimal": 2
+  },
+  "SDG": {
+    "symbol": "SDG",
+    "decimal": 2
+  },
+  "SEK": {
+    "symbol": "kr",
+    "decimal": 2
+  },
+  "SGD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "SHP": {
+    "symbol": "£",
+    "decimal": 2
+  },
+  "SLE": {
+    "symbol": "SLE",
+    "decimal": 2
+  },
+  "SOS": {
+    "symbol": "SOS",
+    "decimal": 2
+  },
+  "SRD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "SSP": {
+    "symbol": "£",
+    "decimal": 2
+  },
+  "STN": {
+    "symbol": "Db",
+    "decimal": 2
+  },
+  "SYP": {
+    "symbol": "£",
+    "decimal": 2
+  },
+  "SZL": {
+    "symbol": "SZL",
+    "decimal": 2
+  },
+  "THB": {
+    "symbol": "฿",
+    "decimal": 2
+  },
+  "TJS": {
+    "symbol": "TJS",
+    "decimal": 2
+  },
+  "TMT": {
+    "symbol": "TMT",
+    "decimal": 2
+  },
+  "TND": {
+    "symbol": "TND",
+    "decimal": 3
+  },
+  "TOP": {
+    "symbol": "T$",
+    "decimal": 2
+  },
+  "TRY": {
+    "symbol": "₺",
+    "decimal": 2
+  },
+  "TTD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "TWD": {
+    "symbol": "NT$",
+    "decimal": 2
+  },
+  "TZS": {
+    "symbol": "TZS",
+    "decimal": 2
+  },
+  "UAH": {
+    "symbol": "₴",
+    "decimal": 2
+  },
+  "UGX": {
+    "symbol": "UGX",
+    "decimal": 0
+  },
+  "USD": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "UYU": {
+    "symbol": "$",
+    "decimal": 2
+  },
+  "UZS": {
+    "symbol": "UZS",
+    "decimal": 2
+  },
+  "VED": {
+    "symbol": "VED",
+    "decimal": 2
+  },
+  "VND": {
+    "symbol": "₫",
+    "decimal": 0
+  },
+  "VUV": {
+    "symbol": "VUV",
+    "decimal": 0
+  },
+  "WST": {
+    "symbol": "WST",
+    "decimal": 2
+  },
+  "XAF": {
+    "symbol": "FCFA",
+    "decimal": 0
+  },
+  "XCD": {
+    "symbol": "EC$",
+    "decimal": 2
+  },
+  "XCG": {
+    "symbol": "Cg.",
+    "decimal": 2
+  },
+  "XOF": {
+    "symbol": "F CFA",
+    "decimal": 0
+  },
+  "XPF": {
+    "symbol": "CFPF",
+    "decimal": 0
+  },
+  "YER": {
+    "symbol": "YER",
+    "decimal": 2
+  },
+  "ZAR": {
+    "symbol": "R",
+    "decimal": 2
+  },
+  "ZMW": {
+    "symbol": "ZK",
+    "decimal": 2
+  },
+  "ZWG": {
+    "symbol": "ZWG",
+    "decimal": 2
+  }
+}

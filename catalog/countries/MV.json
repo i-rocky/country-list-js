@@ -1,0 +1,26 @@
+{
+  "iso2": "MV",
+  "iso3": "MDV",
+  "iso_numeric": "462",
+  "name": "Maldives",
+  "native_name": "ދިވެހިރާއްޖެ",
+  "demonym": "Maldivian",
+  "continent": "AS",
+  "region": "Southern Asia",
+  "capital": "Malé",
+  "currency": "MVR",
+  "languages": [
+    "dv"
+  ],
+  "dialing_code": "960",
+  "tld": [
+    ".mv"
+  ],
+  "latlng": [
+    3.25,
+    73
+  ],
+  "timezones": [
+    "Indian/Maldives"
+  ]
+}

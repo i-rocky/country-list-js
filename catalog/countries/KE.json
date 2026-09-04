@@ -1,0 +1,33 @@
+{
+  "iso2": "KE",
+  "iso3": "KEN",
+  "iso_numeric": "404",
+  "name": "Kenya",
+  "demonym": "Kenyan",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Nairobi",
+  "currency": "KES",
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "dialing_code": "254",
+  "tld": [
+    ".ke"
+  ],
+  "latlng": [
+    1,
+    38
+  ],
+  "timezones": [
+    "Africa/Nairobi"
+  ],
+  "borders": [
+    "ET",
+    "SO",
+    "SS",
+    "TZ",
+    "UG"
+  ]
+}

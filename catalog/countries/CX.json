@@ -1,0 +1,28 @@
+{
+  "iso2": "CX",
+  "iso3": "CXR",
+  "iso_numeric": "162",
+  "name": "Christmas Island",
+  "demonym": "Christmas Islander",
+  "continent": "OC",
+  "region": "Australia and New Zealand",
+  "capital": "Flying Fish Cove",
+  "currency": "AUD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "61",
+  "area_codes": [
+    "891"
+  ],
+  "tld": [
+    ".cx"
+  ],
+  "latlng": [
+    -10.5,
+    105.66666666
+  ],
+  "timezones": [
+    "Indian/Christmas"
+  ]
+}

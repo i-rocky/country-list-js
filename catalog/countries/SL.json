@@ -1,0 +1,29 @@
+{
+  "iso2": "SL",
+  "iso3": "SLE",
+  "iso_numeric": "694",
+  "name": "Sierra Leone",
+  "demonym": "Sierra Leonean",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Freetown",
+  "currency": "SLE",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "232",
+  "tld": [
+    ".sl"
+  ],
+  "latlng": [
+    8.5,
+    -11.5
+  ],
+  "timezones": [
+    "Africa/Freetown"
+  ],
+  "borders": [
+    "GN",
+    "LR"
+  ]
+}

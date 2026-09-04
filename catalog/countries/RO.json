@@ -1,0 +1,33 @@
+{
+  "iso2": "RO",
+  "iso3": "ROU",
+  "iso_numeric": "642",
+  "name": "Romania",
+  "native_name": "România",
+  "demonym": "Romanian",
+  "continent": "EU",
+  "region": "Eastern Europe",
+  "capital": "Bucharest",
+  "currency": "RON",
+  "languages": [
+    "ro"
+  ],
+  "dialing_code": "40",
+  "tld": [
+    ".ro"
+  ],
+  "latlng": [
+    46,
+    25
+  ],
+  "timezones": [
+    "Europe/Bucharest"
+  ],
+  "borders": [
+    "BG",
+    "HU",
+    "MD",
+    "RS",
+    "UA"
+  ]
+}

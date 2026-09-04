@@ -1,0 +1,30 @@
+{
+  "iso2": "HN",
+  "iso3": "HND",
+  "iso_numeric": "340",
+  "name": "Honduras",
+  "demonym": "Honduran",
+  "continent": "NA",
+  "region": "Central America",
+  "capital": "Tegucigalpa",
+  "currency": "HNL",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "504",
+  "tld": [
+    ".hn"
+  ],
+  "latlng": [
+    15,
+    -86.5
+  ],
+  "timezones": [
+    "America/Tegucigalpa"
+  ],
+  "borders": [
+    "GT",
+    "NI",
+    "SV"
+  ]
+}

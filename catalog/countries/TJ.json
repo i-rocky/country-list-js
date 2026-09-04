@@ -1,0 +1,32 @@
+{
+  "iso2": "TJ",
+  "iso3": "TJK",
+  "iso_numeric": "762",
+  "name": "Tajikistan",
+  "native_name": "Тоҷикистон",
+  "demonym": "Tajikistani",
+  "continent": "AS",
+  "region": "Central Asia",
+  "capital": "Dushanbe",
+  "currency": "TJS",
+  "languages": [
+    "tg"
+  ],
+  "dialing_code": "992",
+  "tld": [
+    ".tj"
+  ],
+  "latlng": [
+    39,
+    71
+  ],
+  "timezones": [
+    "Asia/Dushanbe"
+  ],
+  "borders": [
+    "AF",
+    "CN",
+    "KG",
+    "UZ"
+  ]
+}

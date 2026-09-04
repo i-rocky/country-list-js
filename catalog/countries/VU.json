@@ -1,0 +1,27 @@
+{
+  "iso2": "VU",
+  "iso3": "VUT",
+  "iso_numeric": "548",
+  "name": "Vanuatu",
+  "demonym": "Ni-Vanuatu",
+  "continent": "OC",
+  "region": "Melanesia",
+  "capital": "Port Vila",
+  "currency": "VUV",
+  "languages": [
+    "bi",
+    "en",
+    "fr"
+  ],
+  "dialing_code": "678",
+  "tld": [
+    ".vu"
+  ],
+  "latlng": [
+    -16,
+    167
+  ],
+  "timezones": [
+    "Pacific/Efate"
+  ]
+}

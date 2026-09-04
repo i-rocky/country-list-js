@@ -1,0 +1,27 @@
+{
+  "iso2": "PW",
+  "iso3": "PLW",
+  "iso_numeric": "585",
+  "name": "Palau",
+  "native_name": "Belau",
+  "demonym": "Palauan",
+  "continent": "OC",
+  "region": "Micronesia",
+  "capital": "Ngerulmud",
+  "currency": "USD",
+  "languages": [
+    "en",
+    "pau"
+  ],
+  "dialing_code": "680",
+  "tld": [
+    ".pw"
+  ],
+  "latlng": [
+    7.5,
+    134.5
+  ],
+  "timezones": [
+    "Pacific/Palau"
+  ]
+}

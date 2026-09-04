@@ -1,0 +1,35 @@
+{
+  "iso2": "FR",
+  "iso3": "FRA",
+  "iso_numeric": "250",
+  "name": "France",
+  "demonym": "French",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Paris",
+  "currency": "EUR",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "33",
+  "tld": [
+    ".fr"
+  ],
+  "latlng": [
+    46,
+    2
+  ],
+  "timezones": [
+    "Europe/Paris"
+  ],
+  "borders": [
+    "AD",
+    "BE",
+    "CH",
+    "DE",
+    "ES",
+    "IT",
+    "LU",
+    "MC"
+  ]
+}

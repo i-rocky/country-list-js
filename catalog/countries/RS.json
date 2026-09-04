@@ -1,0 +1,37 @@
+{
+  "iso2": "RS",
+  "iso3": "SRB",
+  "iso_numeric": "688",
+  "name": "Serbia",
+  "native_name": "Србија / Srbija",
+  "demonym": "Serbian",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Belgrade",
+  "currency": "RSD",
+  "languages": [
+    "sr"
+  ],
+  "dialing_code": "381",
+  "tld": [
+    ".rs",
+    ".срб"
+  ],
+  "latlng": [
+    44.016521,
+    21.005859
+  ],
+  "timezones": [
+    "Europe/Belgrade"
+  ],
+  "borders": [
+    "BA",
+    "BG",
+    "HR",
+    "HU",
+    "ME",
+    "MK",
+    "RO",
+    "XK"
+  ]
+}

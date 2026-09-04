@@ -1,0 +1,30 @@
+{
+  "iso2": "GY",
+  "iso3": "GUY",
+  "iso_numeric": "328",
+  "name": "Guyana",
+  "demonym": "Guyanese",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Georgetown",
+  "currency": "GYD",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "592",
+  "tld": [
+    ".gy"
+  ],
+  "latlng": [
+    5,
+    -59
+  ],
+  "timezones": [
+    "America/Guyana"
+  ],
+  "borders": [
+    "BR",
+    "SR",
+    "VE"
+  ]
+}

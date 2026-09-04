@@ -1,0 +1,33 @@
+{
+  "iso2": "MA",
+  "iso3": "MAR",
+  "iso_numeric": "504",
+  "name": "Morocco",
+  "native_name": "المغرب / ⵍⵎⵖⵔⵉⴱ",
+  "demonym": "Moroccan",
+  "continent": "AF",
+  "region": "Northern Africa",
+  "capital": "Rabat",
+  "currency": "MAD",
+  "languages": [
+    "ar",
+    "zgh"
+  ],
+  "dialing_code": "212",
+  "tld": [
+    ".ma",
+    ".المغرب"
+  ],
+  "latlng": [
+    32,
+    -5
+  ],
+  "timezones": [
+    "Africa/Casablanca"
+  ],
+  "borders": [
+    "DZ",
+    "EH",
+    "ES"
+  ]
+}

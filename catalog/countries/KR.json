@@ -1,0 +1,30 @@
+{
+  "iso2": "KR",
+  "iso3": "KOR",
+  "iso_numeric": "410",
+  "name": "South Korea",
+  "native_name": "대한민국",
+  "demonym": "South Korean",
+  "continent": "AS",
+  "region": "Eastern Asia",
+  "capital": "Seoul",
+  "currency": "KRW",
+  "languages": [
+    "ko"
+  ],
+  "dialing_code": "82",
+  "tld": [
+    ".kr",
+    ".한국"
+  ],
+  "latlng": [
+    37,
+    127.5
+  ],
+  "timezones": [
+    "Asia/Seoul"
+  ],
+  "borders": [
+    "KP"
+  ]
+}

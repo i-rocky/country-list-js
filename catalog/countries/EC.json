@@ -1,0 +1,30 @@
+{
+  "iso2": "EC",
+  "iso3": "ECU",
+  "iso_numeric": "218",
+  "name": "Ecuador",
+  "demonym": "Ecuadorian",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Quito",
+  "currency": "USD",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "593",
+  "tld": [
+    ".ec"
+  ],
+  "latlng": [
+    -2,
+    -77.5
+  ],
+  "timezones": [
+    "America/Guayaquil",
+    "Pacific/Galapagos"
+  ],
+  "borders": [
+    "CO",
+    "PE"
+  ]
+}

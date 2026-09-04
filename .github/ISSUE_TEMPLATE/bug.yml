@@ -1,0 +1,19 @@
+name: Bug
+description: Something in the library does not behave as documented
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 4.0.0
+    validations: {required: true}
+  - type: textarea
+    id: repro
+    attributes:
+      label: What you ran, and what happened
+      render: javascript
+      placeholder: |
+        const country = require('country-list-js');
+        country.findByName('denmark');   // expected Denmark, got undefined
+    validations: {required: true}

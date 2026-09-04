@@ -1,0 +1,29 @@
+{
+  "iso2": "UY",
+  "iso3": "URY",
+  "iso_numeric": "858",
+  "name": "Uruguay",
+  "demonym": "Uruguayan",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Montevideo",
+  "currency": "UYU",
+  "languages": [
+    "es"
+  ],
+  "dialing_code": "598",
+  "tld": [
+    ".uy"
+  ],
+  "latlng": [
+    -33,
+    -56
+  ],
+  "timezones": [
+    "America/Montevideo"
+  ],
+  "borders": [
+    "AR",
+    "BR"
+  ]
+}

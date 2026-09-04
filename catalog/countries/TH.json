@@ -1,0 +1,33 @@
+{
+  "iso2": "TH",
+  "iso3": "THA",
+  "iso_numeric": "764",
+  "name": "Thailand",
+  "native_name": "ประเทศไทย",
+  "demonym": "Thai",
+  "continent": "AS",
+  "region": "South-eastern Asia",
+  "capital": "Bangkok",
+  "currency": "THB",
+  "languages": [
+    "th"
+  ],
+  "dialing_code": "66",
+  "tld": [
+    ".th",
+    ".ไทย"
+  ],
+  "latlng": [
+    15,
+    100
+  ],
+  "timezones": [
+    "Asia/Bangkok"
+  ],
+  "borders": [
+    "KH",
+    "LA",
+    "MM",
+    "MY"
+  ]
+}

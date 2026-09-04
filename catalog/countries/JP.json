@@ -1,0 +1,409 @@
+{
+  "iso2": "JP",
+  "iso3": "JPN",
+  "iso_numeric": "392",
+  "name": "Japan",
+  "native_name": "日本",
+  "demonym": "Japanese",
+  "continent": "AS",
+  "region": "Eastern Asia",
+  "capital": "Tokyo",
+  "currency": "JPY",
+  "languages": [
+    "ja"
+  ],
+  "dialing_code": "81",
+  "tld": [
+    ".jp"
+  ],
+  "latlng": [
+    36,
+    138
+  ],
+  "timezones": [
+    "Asia/Tokyo"
+  ],
+  "provinces": [
+    {
+      "name": "愛知県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Aichi"
+      ]
+    },
+    {
+      "name": "秋田県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Akita"
+      ]
+    },
+    {
+      "name": "青森県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Aomori"
+      ]
+    },
+    {
+      "name": "千葉県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Chiba"
+      ]
+    },
+    {
+      "name": "愛媛県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Ehime"
+      ]
+    },
+    {
+      "name": "福井県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Fukui"
+      ]
+    },
+    {
+      "name": "福岡県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Fukuoka"
+      ]
+    },
+    {
+      "name": "福島県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Fukushima"
+      ]
+    },
+    {
+      "name": "岐阜県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Gifu"
+      ]
+    },
+    {
+      "name": "群馬県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Gunma"
+      ]
+    },
+    {
+      "name": "広島県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Hiroshima"
+      ]
+    },
+    {
+      "name": "北海道",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Hokkaidō"
+      ]
+    },
+    {
+      "name": "兵庫県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Hyōgo",
+        "Hyogo"
+      ]
+    },
+    {
+      "name": "茨城県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Ibaraki"
+      ]
+    },
+    {
+      "name": "石川県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Ishikawa"
+      ]
+    },
+    {
+      "name": "岩手県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Iwate"
+      ]
+    },
+    {
+      "name": "香川県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Kagawa"
+      ]
+    },
+    {
+      "name": "鹿児島県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Kagoshima"
+      ]
+    },
+    {
+      "name": "神奈川県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Kanagawa"
+      ]
+    },
+    {
+      "name": "高知県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Kōchi",
+        "Kochi"
+      ]
+    },
+    {
+      "name": "熊本県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Kumamoto"
+      ]
+    },
+    {
+      "name": "京都府",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Kyōto",
+        "Kyoto"
+      ]
+    },
+    {
+      "name": "三重県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Mie"
+      ]
+    },
+    {
+      "name": "宮城県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Miyagi"
+      ]
+    },
+    {
+      "name": "宮崎県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Miyazaki"
+      ]
+    },
+    {
+      "name": "長野県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Nagano"
+      ]
+    },
+    {
+      "name": "長崎県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Nagasaki"
+      ]
+    },
+    {
+      "name": "奈良県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Nara"
+      ]
+    },
+    {
+      "name": "新潟県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Niigata"
+      ]
+    },
+    {
+      "name": "大分県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Ōita",
+        "Oita"
+      ]
+    },
+    {
+      "name": "岡山県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Okayama"
+      ]
+    },
+    {
+      "name": "沖縄県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Okinawa"
+      ]
+    },
+    {
+      "name": "大阪府",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Ōsaka"
+      ]
+    },
+    {
+      "name": "佐賀県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Saga"
+      ]
+    },
+    {
+      "name": "埼玉県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Saitama"
+      ]
+    },
+    {
+      "name": "滋賀県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Shiga"
+      ]
+    },
+    {
+      "name": "島根県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Shimane"
+      ]
+    },
+    {
+      "name": "静岡県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Shizuoka"
+      ]
+    },
+    {
+      "name": "栃木県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Tochigi"
+      ]
+    },
+    {
+      "name": "徳島県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Tokushima"
+      ]
+    },
+    {
+      "name": "東京都",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Tōkyō",
+        "Tokyo"
+      ]
+    },
+    {
+      "name": "鳥取県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Tottori"
+      ]
+    },
+    {
+      "name": "富山県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Toyama"
+      ]
+    },
+    {
+      "name": "和歌山県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Wakayama"
+      ]
+    },
+    {
+      "name": "山形県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Yamagata"
+      ]
+    },
+    {
+      "name": "山口県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Yamaguchi"
+      ]
+    },
+    {
+      "name": "山梨県",
+      "code": null,
+      "region": null,
+      "alias": [
+        "Yamanashi"
+      ]
+    }
+  ]
+}

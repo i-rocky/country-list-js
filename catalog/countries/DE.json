@@ -1,0 +1,162 @@
+{
+  "iso2": "DE",
+  "iso3": "DEU",
+  "iso_numeric": "276",
+  "name": "Germany",
+  "native_name": "Deutschland",
+  "demonym": "German",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Berlin",
+  "currency": "EUR",
+  "languages": [
+    "de"
+  ],
+  "dialing_code": "49",
+  "tld": [
+    ".de"
+  ],
+  "latlng": [
+    51,
+    9
+  ],
+  "timezones": [
+    "Europe/Berlin",
+    "Europe/Busingen"
+  ],
+  "borders": [
+    "AT",
+    "BE",
+    "CH",
+    "CZ",
+    "DK",
+    "FR",
+    "LU",
+    "NL",
+    "PL"
+  ],
+  "provinces": [
+    {
+      "name": "Baden-Württemberg",
+      "code": "BW",
+      "region": null,
+      "alias": [
+        "Baden Württemberg",
+        "Baden Wurttemberg"
+      ]
+    },
+    {
+      "name": "Bayern",
+      "code": "BY",
+      "region": null,
+      "alias": [
+        "Bavaria"
+      ]
+    },
+    {
+      "name": "Berlin",
+      "code": "BE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Brandenburg",
+      "code": "BB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bremen",
+      "code": "HB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Hamburg",
+      "code": "HH",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Hessen",
+      "code": "HE",
+      "region": null,
+      "alias": [
+        "Hesse"
+      ]
+    },
+    {
+      "name": "Mecklenburg-Vorpommern",
+      "code": "MV",
+      "region": null,
+      "alias": [
+        "Mecklenburg Vorpommern"
+      ]
+    },
+    {
+      "name": "Niedersachsen",
+      "code": "NI",
+      "region": null,
+      "alias": [
+        "Lower Saxony"
+      ]
+    },
+    {
+      "name": "Nordrhein-Westfalen",
+      "code": "NW",
+      "region": null,
+      "alias": [
+        "Nordrhein Westfalen",
+        "North Rhine-Westphalia"
+      ]
+    },
+    {
+      "name": "Rheinland-Pfalz",
+      "code": "RP",
+      "region": null,
+      "alias": [
+        "Rheinland Pfalz",
+        "Rhineland-Palatinate"
+      ]
+    },
+    {
+      "name": "Saarland",
+      "code": "SL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sachsen",
+      "code": "SN",
+      "region": null,
+      "alias": [
+        "Saxony"
+      ]
+    },
+    {
+      "name": "Sachsen-Anhalt",
+      "code": "ST",
+      "region": null,
+      "alias": [
+        "Sachsen Anhalt",
+        "Saxony-Anhalt"
+      ]
+    },
+    {
+      "name": "Schleswig-Holstein",
+      "code": "SH",
+      "region": null,
+      "alias": [
+        "Schleswig Holstein"
+      ]
+    },
+    {
+      "name": "Thüringen",
+      "code": "TH",
+      "region": null,
+      "alias": [
+        "Thuringia"
+      ]
+    }
+  ]
+}

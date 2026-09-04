@@ -1,0 +1,34 @@
+{
+  "iso2": "ML",
+  "iso3": "MLI",
+  "iso_numeric": "466",
+  "name": "Mali",
+  "demonym": "Malian",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Bamako",
+  "currency": "XOF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "223",
+  "tld": [
+    ".ml"
+  ],
+  "latlng": [
+    17,
+    -4
+  ],
+  "timezones": [
+    "Africa/Bamako"
+  ],
+  "borders": [
+    "BF",
+    "CI",
+    "DZ",
+    "GN",
+    "MR",
+    "NE",
+    "SN"
+  ]
+}

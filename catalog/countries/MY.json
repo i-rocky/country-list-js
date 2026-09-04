@@ -1,0 +1,32 @@
+{
+  "iso2": "MY",
+  "iso3": "MYS",
+  "iso_numeric": "458",
+  "name": "Malaysia",
+  "demonym": "Malaysian",
+  "continent": "AS",
+  "region": "South-eastern Asia",
+  "capital": "Kuala Lumpur",
+  "currency": "MYR",
+  "languages": [
+    "ms"
+  ],
+  "dialing_code": "60",
+  "tld": [
+    ".my",
+    ".مليسيا"
+  ],
+  "latlng": [
+    2.5,
+    112.5
+  ],
+  "timezones": [
+    "Asia/Kuala_Lumpur",
+    "Asia/Kuching"
+  ],
+  "borders": [
+    "BN",
+    "ID",
+    "TH"
+  ]
+}

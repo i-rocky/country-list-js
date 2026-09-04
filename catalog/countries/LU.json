@@ -1,0 +1,33 @@
+{
+  "iso2": "LU",
+  "iso3": "LUX",
+  "iso_numeric": "442",
+  "name": "Luxembourg",
+  "native_name": "Lëtzebuerg / Luxemburg",
+  "demonym": "Luxembourger",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Luxembourg",
+  "currency": "EUR",
+  "languages": [
+    "lb",
+    "fr",
+    "de"
+  ],
+  "dialing_code": "352",
+  "tld": [
+    ".lu"
+  ],
+  "latlng": [
+    49.75,
+    6.16666666
+  ],
+  "timezones": [
+    "Europe/Luxembourg"
+  ],
+  "borders": [
+    "BE",
+    "DE",
+    "FR"
+  ]
+}

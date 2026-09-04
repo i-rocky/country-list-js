@@ -1,0 +1,709 @@
+{
+  "iso2": "IT",
+  "iso3": "ITA",
+  "iso_numeric": "380",
+  "name": "Italy",
+  "native_name": "Italia",
+  "demonym": "Italian",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Rome",
+  "currency": "EUR",
+  "languages": [
+    "it"
+  ],
+  "dialing_code": "39",
+  "tld": [
+    ".it"
+  ],
+  "latlng": [
+    42.83333333,
+    12.83333333
+  ],
+  "timezones": [
+    "Europe/Rome"
+  ],
+  "borders": [
+    "AT",
+    "CH",
+    "FR",
+    "SI",
+    "SM",
+    "VA"
+  ],
+  "provinces": [
+    {
+      "name": "Agrigento",
+      "code": "AG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Alessandria",
+      "code": "AL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ancona",
+      "code": "AN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Aosta",
+      "code": "AO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Arezzo",
+      "code": "AR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ascoli Piceno",
+      "code": "AP",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Asti",
+      "code": "AT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Avellino",
+      "code": "AV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bari",
+      "code": "BA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Barletta-Andria-Trani",
+      "code": "BT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Belluno",
+      "code": "BL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Benevento",
+      "code": "BN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bergamo",
+      "code": "BG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Biella",
+      "code": "BI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bologna",
+      "code": "BO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bolzano",
+      "code": "BZ",
+      "region": null,
+      "alias": [
+        "South Tyrol"
+      ]
+    },
+    {
+      "name": "Brescia",
+      "code": "BS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Brindisi",
+      "code": "BR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cagliari",
+      "code": "CA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Caltanissetta",
+      "code": "CL",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Campobasso",
+      "code": "CB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Caserta",
+      "code": "CE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Catania",
+      "code": "CT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Catanzaro",
+      "code": "CZ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Chieti",
+      "code": "CH",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Como",
+      "code": "CO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cosenza",
+      "code": "CS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cremona",
+      "code": "CR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Crotone",
+      "code": "KR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cuneo",
+      "code": "CN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Enna",
+      "code": "EN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Fermo",
+      "code": "FM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ferrara",
+      "code": "FE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Firenze",
+      "code": "FI",
+      "region": null,
+      "alias": [
+        "Florence"
+      ]
+    },
+    {
+      "name": "Foggia",
+      "code": "FG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Forlì-Cesena",
+      "code": "FC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Frosinone",
+      "code": "FR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Genova",
+      "code": "GE",
+      "region": null,
+      "alias": [
+        "Genoa"
+      ]
+    },
+    {
+      "name": "Gorizia",
+      "code": "GO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Grosseto",
+      "code": "GR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Imperia",
+      "code": "IM",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Isernia",
+      "code": "IS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "L'Aquila",
+      "code": "AQ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "La Spezia",
+      "code": "SP",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Latina",
+      "code": "LT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lecce",
+      "code": "LE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lecco",
+      "code": "LC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Livorno",
+      "code": "LI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lodi",
+      "code": "LO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lucca",
+      "code": "LU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Macerata",
+      "code": "MC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Mantova",
+      "code": "MN",
+      "region": null,
+      "alias": [
+        "Mantua"
+      ]
+    },
+    {
+      "name": "Massa-Carrara",
+      "code": "MS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Matera",
+      "code": "MT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Messina",
+      "code": "ME",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Milano",
+      "code": "MI",
+      "region": null,
+      "alias": [
+        "Milan"
+      ]
+    },
+    {
+      "name": "Modena",
+      "code": "MO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Monza e della Brianza",
+      "code": "MB",
+      "region": null,
+      "alias": [
+        "Monza and Brianza"
+      ]
+    },
+    {
+      "name": "Napoli",
+      "code": "NA",
+      "region": null,
+      "alias": [
+        "Naples"
+      ]
+    },
+    {
+      "name": "Novara",
+      "code": "NO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nuoro",
+      "code": "NU",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Oristano",
+      "code": "OR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Padova",
+      "code": "PD",
+      "region": null,
+      "alias": [
+        "Padua"
+      ]
+    },
+    {
+      "name": "Palermo",
+      "code": "PA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Parma",
+      "code": "PR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pavia",
+      "code": "PV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Perugia",
+      "code": "PG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pesaro e Urbino",
+      "code": "PU",
+      "region": null,
+      "alias": [
+        "Pesaro and Urbino"
+      ]
+    },
+    {
+      "name": "Pescara",
+      "code": "PE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Piacenza",
+      "code": "PC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pisa",
+      "code": "PI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pistoia",
+      "code": "PT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Pordenone",
+      "code": "PN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Potenza",
+      "code": "PZ",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Prato",
+      "code": "PO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ragusa",
+      "code": "RG",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ravenna",
+      "code": "RA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Reggio Calabria",
+      "code": "RC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Reggio Emilia",
+      "code": "RE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rieti",
+      "code": "RI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rimini",
+      "code": "RN",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Roma",
+      "code": "RM",
+      "region": null,
+      "alias": [
+        "Rome"
+      ]
+    },
+    {
+      "name": "Rovigo",
+      "code": "RO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Salerno",
+      "code": "SA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sassari",
+      "code": "SS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Savona",
+      "code": "SV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Siena",
+      "code": "SI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Siracusa",
+      "code": "SR",
+      "region": null,
+      "alias": [
+        "Syracuse"
+      ]
+    },
+    {
+      "name": "Sondrio",
+      "code": "SO",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Taranto",
+      "code": "TA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Teramo",
+      "code": "TE",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Terni",
+      "code": "TR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Torino",
+      "code": "TO",
+      "region": null,
+      "alias": [
+        "Turin"
+      ]
+    },
+    {
+      "name": "Trapani",
+      "code": "TP",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Trento",
+      "code": "TN",
+      "region": null,
+      "alias": [
+        "Trentino"
+      ]
+    },
+    {
+      "name": "Treviso",
+      "code": "TV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Trieste",
+      "code": "TS",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Udine",
+      "code": "UD",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Varese",
+      "code": "VA",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Venezia",
+      "code": "VE",
+      "region": null,
+      "alias": [
+        "Venice"
+      ]
+    },
+    {
+      "name": "Verbano-Cusio-Ossola",
+      "code": "VB",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Vercelli",
+      "code": "VC",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Verona",
+      "code": "VR",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Vibo Valentia",
+      "code": "VV",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Vicenza",
+      "code": "VI",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Viterbo",
+      "code": "VT",
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sud Sardegna",
+      "code": "SU",
+      "region": null,
+      "alias": [
+        "South Sardinia",
+        "Sud Sardinia"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "iso2": "ZW",
+  "iso3": "ZWE",
+  "iso_numeric": "716",
+  "name": "Zimbabwe",
+  "demonym": "Zimbabwean",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Harare",
+  "currency": "ZWG",
+  "languages": [
+    "en",
+    "ny",
+    "bwg",
+    "kck",
+    "nd",
+    "ndc",
+    "nmq",
+    "sn",
+    "st",
+    "tn",
+    "toi",
+    "ts",
+    "ve",
+    "xh",
+    "zib"
+  ],
+  "dialing_code": "263",
+  "tld": [
+    ".zw"
+  ],
+  "latlng": [
+    -20,
+    30
+  ],
+  "timezones": [
+    "Africa/Harare"
+  ],
+  "borders": [
+    "BW",
+    "MZ",
+    "ZA",
+    "ZM"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "iso2": "MQ",
+  "iso3": "MTQ",
+  "iso_numeric": "474",
+  "name": "Martinique",
+  "demonym": "Martinican",
+  "continent": "NA",
+  "region": "Caribbean",
+  "capital": "Fort-de-France",
+  "currency": "EUR",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "596",
+  "tld": [
+    ".mq"
+  ],
+  "latlng": [
+    14.666667,
+    -61
+  ],
+  "timezones": [
+    "America/Martinique"
+  ]
+}

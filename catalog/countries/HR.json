@@ -1,0 +1,33 @@
+{
+  "iso2": "HR",
+  "iso3": "HRV",
+  "iso_numeric": "191",
+  "name": "Croatia",
+  "native_name": "Hrvatska",
+  "demonym": "Croatian",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Zagreb",
+  "currency": "EUR",
+  "languages": [
+    "hr"
+  ],
+  "dialing_code": "385",
+  "tld": [
+    ".hr"
+  ],
+  "latlng": [
+    45.16666666,
+    15.5
+  ],
+  "timezones": [
+    "Europe/Zagreb"
+  ],
+  "borders": [
+    "BA",
+    "HU",
+    "ME",
+    "RS",
+    "SI"
+  ]
+}

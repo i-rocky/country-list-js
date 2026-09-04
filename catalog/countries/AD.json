@@ -1,0 +1,29 @@
+{
+  "iso2": "AD",
+  "iso3": "AND",
+  "iso_numeric": "020",
+  "name": "Andorra",
+  "demonym": "Andorran",
+  "continent": "EU",
+  "region": "Southern Europe",
+  "capital": "Andorra la Vella",
+  "currency": "EUR",
+  "languages": [
+    "ca"
+  ],
+  "dialing_code": "376",
+  "tld": [
+    ".ad"
+  ],
+  "latlng": [
+    42.5,
+    1.5
+  ],
+  "timezones": [
+    "Europe/Andorra"
+  ],
+  "borders": [
+    "ES",
+    "FR"
+  ]
+}

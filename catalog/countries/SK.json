@@ -1,0 +1,33 @@
+{
+  "iso2": "SK",
+  "iso3": "SVK",
+  "iso_numeric": "703",
+  "name": "Slovakia",
+  "native_name": "Slovensko",
+  "demonym": "Slovak",
+  "continent": "EU",
+  "region": "Eastern Europe",
+  "capital": "Bratislava",
+  "currency": "EUR",
+  "languages": [
+    "sk"
+  ],
+  "dialing_code": "421",
+  "tld": [
+    ".sk"
+  ],
+  "latlng": [
+    48.66666666,
+    19.5
+  ],
+  "timezones": [
+    "Europe/Bratislava"
+  ],
+  "borders": [
+    "AT",
+    "CZ",
+    "HU",
+    "PL",
+    "UA"
+  ]
+}

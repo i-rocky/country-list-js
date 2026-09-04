@@ -1,0 +1,33 @@
+{
+  "iso2": "CG",
+  "iso3": "COG",
+  "iso_numeric": "178",
+  "name": "Republic of the Congo",
+  "native_name": "République du Congo",
+  "demonym": "Congolese",
+  "continent": "AF",
+  "region": "Middle Africa",
+  "capital": "Brazzaville",
+  "currency": "XAF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "242",
+  "tld": [
+    ".cg"
+  ],
+  "latlng": [
+    -1,
+    15
+  ],
+  "timezones": [
+    "Africa/Brazzaville"
+  ],
+  "borders": [
+    "AO",
+    "CD",
+    "CF",
+    "CM",
+    "GA"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "iso2": "CH",
+  "iso3": "CHE",
+  "iso_numeric": "756",
+  "name": "Switzerland",
+  "native_name": "Schweiz / Suisse / Svizzera / Svizra",
+  "demonym": "Swiss",
+  "continent": "EU",
+  "region": "Western Europe",
+  "capital": "Bern",
+  "currency": "CHF",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "rm"
+  ],
+  "dialing_code": "41",
+  "tld": [
+    ".ch"
+  ],
+  "latlng": [
+    47,
+    8
+  ],
+  "timezones": [
+    "Europe/Zurich"
+  ],
+  "borders": [
+    "AT",
+    "DE",
+    "FR",
+    "IT",
+    "LI"
+  ]
+}

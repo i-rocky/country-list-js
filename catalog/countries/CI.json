@@ -1,0 +1,32 @@
+{
+  "iso2": "CI",
+  "iso3": "CIV",
+  "iso_numeric": "384",
+  "name": "Côte d'Ivoire",
+  "demonym": "Ivorian",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Yamoussoukro",
+  "currency": "XOF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "225",
+  "tld": [
+    ".ci"
+  ],
+  "latlng": [
+    8,
+    -5
+  ],
+  "timezones": [
+    "Africa/Abidjan"
+  ],
+  "borders": [
+    "BF",
+    "GH",
+    "GN",
+    "LR",
+    "ML"
+  ]
+}

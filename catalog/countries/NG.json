@@ -1,0 +1,258 @@
+{
+  "iso2": "NG",
+  "iso3": "NGA",
+  "iso_numeric": "566",
+  "name": "Nigeria",
+  "demonym": "Nigerian",
+  "continent": "AF",
+  "region": "Western Africa",
+  "capital": "Abuja",
+  "currency": "NGN",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "234",
+  "tld": [
+    ".ng"
+  ],
+  "latlng": [
+    10,
+    8
+  ],
+  "timezones": [
+    "Africa/Lagos"
+  ],
+  "borders": [
+    "BJ",
+    "CM",
+    "NE",
+    "TD"
+  ],
+  "provinces": [
+    {
+      "name": "Anambra",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Enugu",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Akwa Ibom",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Adamawa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Abia",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bauchi",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Bayelsa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Benue",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Borno",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Cross River",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Delta",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ebonyi",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Edo",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ekiti",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Gombe",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Imo",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Jigawa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kaduna",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kano",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Katsina",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kebbi",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kogi",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Kwara",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Lagos",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Nasarawa",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Niger",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ogun",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Ondo",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Osun",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Oyo",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Plateau",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Rivers",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Sokoto",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Taraba",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Yobe",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Zamfara",
+      "code": null,
+      "region": null,
+      "alias": null
+    },
+    {
+      "name": "Federal Capital Territory",
+      "code": "FC",
+      "region": null,
+      "alias": [
+        "Abuja",
+        "FCT"
+      ]
+    }
+  ]
+}

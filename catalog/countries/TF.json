@@ -1,0 +1,25 @@
+{
+  "iso2": "TF",
+  "iso3": "ATF",
+  "iso_numeric": "260",
+  "name": "French Southern Territories",
+  "native_name": "Terres australes et antarctiques françaises",
+  "demonym": "French",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Port-aux-Français",
+  "currency": "EUR",
+  "languages": [
+    "fr"
+  ],
+  "tld": [
+    ".tf"
+  ],
+  "latlng": [
+    -49.25,
+    69.167
+  ],
+  "timezones": [
+    "Indian/Kerguelen"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "iso2": "PF",
+  "iso3": "PYF",
+  "iso_numeric": "258",
+  "name": "French Polynesia",
+  "native_name": "Polynésie française",
+  "demonym": "French Polynesian",
+  "continent": "OC",
+  "region": "Polynesia",
+  "capital": "Papeete",
+  "currency": "XPF",
+  "languages": [
+    "fr"
+  ],
+  "dialing_code": "689",
+  "tld": [
+    ".pf"
+  ],
+  "latlng": [
+    -15,
+    -140
+  ],
+  "timezones": [
+    "Pacific/Gambier",
+    "Pacific/Marquesas",
+    "Pacific/Tahiti"
+  ]
+}

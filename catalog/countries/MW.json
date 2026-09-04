@@ -1,0 +1,30 @@
+{
+  "iso2": "MW",
+  "iso3": "MWI",
+  "iso_numeric": "454",
+  "name": "Malawi",
+  "demonym": "Malawian",
+  "continent": "AF",
+  "region": "Eastern Africa",
+  "capital": "Lilongwe",
+  "currency": "MWK",
+  "languages": [
+    "en"
+  ],
+  "dialing_code": "265",
+  "tld": [
+    ".mw"
+  ],
+  "latlng": [
+    -13.5,
+    34
+  ],
+  "timezones": [
+    "Africa/Blantyre"
+  ],
+  "borders": [
+    "MZ",
+    "TZ",
+    "ZM"
+  ]
+}

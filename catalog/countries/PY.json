@@ -1,0 +1,32 @@
+{
+  "iso2": "PY",
+  "iso3": "PRY",
+  "iso_numeric": "600",
+  "name": "Paraguay",
+  "native_name": "Paraguái",
+  "demonym": "Paraguayan",
+  "continent": "SA",
+  "region": "South America",
+  "capital": "Asunción",
+  "currency": "PYG",
+  "languages": [
+    "es",
+    "gn"
+  ],
+  "dialing_code": "595",
+  "tld": [
+    ".py"
+  ],
+  "latlng": [
+    -23,
+    -58
+  ],
+  "timezones": [
+    "America/Asuncion"
+  ],
+  "borders": [
+    "AR",
+    "BO",
+    "BR"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "iso2": "TK",
+  "iso3": "TKL",
+  "iso_numeric": "772",
+  "name": "Tokelau",
+  "demonym": "Tokelauan",
+  "continent": "OC",
+  "region": "Polynesia",
+  "currency": "NZD",
+  "languages": [
+    "tkl",
+    "en"
+  ],
+  "dialing_code": "690",
+  "tld": [
+    ".tk"
+  ],
+  "latlng": [
+    -9,
+    -172
+  ],
+  "timezones": [
+    "Pacific/Fakaofo"
+  ]
+}
