@@ -6,11 +6,100 @@ The last release was 3.1.8, in October 2023. `master` has been broken since
 shortly after: `require('country-list-js')` threw on load, so nothing could be
 published.
 
-**Nothing that worked in 3.1.8 stops working.** The thirteen exported members,
-the shape of a country record, the values of every existing field, and every
-deep import path are unchanged, and a test suite diffs this release against the
-real published 3.1.8 to prove it. The major version reflects an internal
-rewrite and the corrected data, not a moved API.
+**This release breaks with 3.1.8 deliberately.** Read the next section before
+upgrading. Every break is declared in `test/contract.js`, which diffs this
+release against the real published 3.1.8 for all 250 countries and every
+recorded call, fails on any difference that is not declared with a reason, and
+fails again if a declared difference turns out not to have happened.
+
+### Breaking changes
+
+Ordered by how likely they are to bite. The first one is the only one that
+fails quietly.
+
+1. **`currency.decimal` is a number.** It was the string `'2'`; it is now `2`.
+   Code doing `c.currency.decimal === '2'` now always misses, silently. Code
+   doing `parseInt(...)` is unaffected.
+
+2. **Every finder has one return type.** 3.1.8 gave you a country when one
+   matched, an array when several did and `undefined` when none did, so the
+   shape depended on the data rather than the call.
+
+   | | returns |
+   |---|---|
+   | `findByIso2` `findByIso3` `findByName` | `Country` or `undefined` |
+   | `findByCapital` `findByCurrency` `findByProvince` `findByPhoneNbr` | `Country[]`, empty on a miss |
+
+   The split follows the data: names and ISO-3 codes are unique and validated
+   so; capitals are not — Kingston is Jamaica *and* Norfolk Island, and six
+   territories have no capital at all.
+
+3. **`findByPhoneNbr` answers on the most specific prefix.** `'+1246…'` is
+   `[Barbados]`, where 3.1.8 returned Barbados, the U.S. Minor Outlying
+   Islands, the United States and Canada and left you to know the first
+   element was the specific one. Codes genuinely shared at one length still
+   return every holder, so `'+1…'` is still three territories. The
+   `{longestMatch: true}` option is gone with the behaviour it selected.
+
+4. **`require('country-list-js/data/names.json')` throws.** The ten aggregate
+   files 3.1.8 shipped under `data/` are no longer built or published, and
+   `data/` is not reachable through the exports map. Use the API.
+
+5. **Eight countries carry the name they were renamed to**, with the former
+   name kept as an alias so `findByName('Turkey')` still answers:
+
+   | was | now | when |
+   |---|---|---|
+   | Turkey | Türkiye | UN accepted 2022 |
+   | Swaziland | Eswatini | 2018 |
+   | Macedonia | North Macedonia | 2019 |
+   | Czech Republic | Czechia | 2016 |
+   | Cape Verde | Cabo Verde | 2013 |
+   | Ivory Coast | Côte d'Ivoire | ISO and UN form |
+   | East Timor | Timor-Leste | ISO and UN form |
+   | Vatican | Holy See | ISO and UN form |
+
+   `name` is therefore no longer pure ASCII. Capitals still are.
+
+   This is deliberately *not* "adopt the ISO 3166-1 short names". Those are
+   inverted for indexing — Korea, Republic of; Russian Federation; Virgin
+   Islands, British — and taking them wholesale would have replaced good
+   display names with registry entries for about fifteen countries. Only
+   genuine renames are applied.
+
+6. **Every list is sorted by country name.** `names()`, `capitals()`, `ls()`,
+   the key order of `all` and the order within any multi-country result now
+   use `localeCompare(…, 'en')`. 3.1.8's order was the insertion order of a
+   hand-maintained file and was stated nowhere.
+
+7. **`cache` is no longer exported.** It was internal memoisation exposed
+   because it always had been. Lookups are index reads and keep no state.
+
+8. **`Array.prototype.unpack` and `.unique` are gone.** 3.1.8 installed them
+   on a global, so requiring this package changed `Array` for the whole host
+   application. Nothing in this package used them.
+
+9. **Every subdivision carries the same four keys**: `{name, code, region,
+   alias}`, null where the country has no such thing. 3.1.8 had three shapes.
+   `short` is renamed `code` — it holds a subdivision code (`AL` for
+   Alabama), and `short` said the opposite.
+
+10. **Vietnam has 34 subdivisions, not 63**, following the merger of 1 July
+    2025. The 29 that were merged away are removed rather than aliased to
+    whatever absorbed them: Hà Giang is not another name for Tuyên Quang.
+
+11. **The United Kingdom has 4 subdivisions, not 114.** The list was historic
+    counties, four of which no longer exist — Avon, Cleveland and Humberside
+    were abolished in 1996, Middlesex in 1965. It is now what ISO 3166-2:GB
+    defines at the first tier: England, Northern Ireland, Scotland, Wales.
+
+12. **Two borders removed.** India–Sri Lanka is the Palk Strait, a maritime
+    boundary, so Sri Lanka now correctly has none. France–Suriname duplicated
+    French Guiana, which is a separate entry carrying its own `BR` and `SR`
+    — and the inconsistency showed, because France was never listed as
+    bordering Brazil on the same ground.
+
+If none of the above touches your code, nothing else will.
 
 ### Fixed
 
@@ -23,13 +112,12 @@ rewrite and the corrected data, not a moved API.
   suite asked for each province exactly once, so it never fired.
 - **`findByPhoneNbr('+290…')` returned `[null, Saint Helena]`.** AC and TA have
   dialing codes but no country record, so they surfaced as holes in the array.
-- **`findByPhoneNbr` threw a `TypeError` on any non-string.** It returns
-  `undefined` now, like every other finder.
+- **`findByPhoneNbr` threw a `TypeError` on any non-string.** It returns an
+  empty list now.
 - **Requiring this package polluted every array in your application.**
   `Array.prototype.unpack` and `.unique` were enumerable, so
-  `for (const k in someArray)` yielded `'unpack'` and `'unique'` anywhere in the
-  process. They are still installed, and still work, but are no longer
-  enumerable.
+  `for (const k in someArray)` yielded `'unpack'` and `'unique'` anywhere in
+  the process. Both are removed; see breaking change 8.
 - **`findByProvince('B')` answered Vietnam.** Three province aliases were bare
   strings rather than arrays, and `String.indexOf` is a substring search. The
   empty string matched all three.
@@ -43,7 +131,7 @@ rewrite and the corrected data, not a moved API.
   in every released version, despite what the README said.
 - **The cache grew without bound on misses.** Feeding user input to
   `findByName` added one key per distinct typo, with nothing to evict it.
-  Only hits are cached now.
+  There is no cache at all now; see breaking change 7.
 - **`npm test` failed before it ran.** eslint 9 does not read `.eslintrc.json`.
 
 ### Data corrected
@@ -69,8 +157,8 @@ been reverted.
 **Retired codes still resolve.** `findByCurrency('HRK')` answers Croatia — not
 undefined, and not all 37 euro countries.
 
-Vietnam's provinces are updated (PR #74), with the previous names kept as
-aliases.
+Vietnam's provinces are updated (PR #74) and then replaced wholesale by the
+34 units in force since 1 July 2025; see breaking change 10.
 
 ### Added
 
@@ -93,11 +181,11 @@ Also:
   `CurrencyCode` are literal unions generated from the data, so your editor
   autocompletes all 250 codes and a typo is a compile error.
 - **ESM**, via `import` — named exports included. It shares one runtime with
-  the CommonJS build, so `all` and `cache` are the same objects either way.
+  the CommonJS build, so `all` is the same object either way.
 - **A browser bundle that works**, at the same `dist/country.min.js` path, with
   `unpkg` and `jsdelivr` fields. It assigns `window.country`.
-- `findByPhoneNbr(nbr, {longestMatch: true})` narrows `'+1246…'` to Barbados
-  alone. The default is unchanged.
+- `code` and `region` on every subdivision, filled where the country has
+  them.
 
 ### Changed
 
@@ -105,18 +193,36 @@ Also:
   Now/Vercel demo that has answered 404 since 2021 (#25). Both are gone.
 - Country data is now one file per country under `catalog/countries/`,
   validated against a JSON schema. Everything under `data/` is generated from
-  it and still ships unchanged.
-- Lookups go through indexes instead of scanning all 250 records. Repeat
-  lookups of the same value do a little more work than before, because a fresh
-  object is built rather than a shared one handed back — which is what stops a
-  caller writing to a result and poisoning the cache.
+  it and is private to the runtime.
+- Lookups go through indexes instead of scanning all 250 records, and every
+  result is built fresh, so a caller writing to one cannot affect another.
+- **The subdivision data is described accurately for the first time.** It was
+  documented as first-tier only, which is false for six of the countries
+  checked against ISO 3166-2 — Spain carries 48 provinces where ISO defines 19
+  autonomous communities, Peru 196 against 26. The README now says which
+  countries sit where, and that the completeness of a list is unwarranted
+  except where this changelog says otherwise.
 - The stale browser bundle is no longer committed to the repository. Build
   outputs are generated at publish time.
 
 ### Closed
 
-#8 (borders), #17 (time zones), #25 (dead API), #60 (naming standard),
-#84 (Bulgaria), PR #74 (Vietnam).
+#8 (borders), #9 and #28 (subdivision metadata — normalised shape, `code` and
+`region`; a per-subdivision ISO 3166-2 category is *not* included, see below),
+#17 (time zones), #25 (dead API), #60 (naming standard), #84 (Bulgaria),
+PR #74 (Vietnam).
+
+### Deliberately not done
+
+**A per-subdivision category label** (`state`, `province`, `union
+territory`). ISO 3166-2's own category is the right value and is not available
+in a form that can be trusted unattended: Wikidata, the only machine-readable
+CC0 source, returns 43 rows for India's 36 subdivisions, including withdrawn
+codes presented as current, duplicate rows per code, and classifications such
+as "ISO standard" and "globe". Shipping that would put abolished subdivisions
+behind an authoritative-looking field — the exact defect corrected here in GB
+and VN. An accurate description and no field beats a field that is right most
+of the time.
 
 ---
 

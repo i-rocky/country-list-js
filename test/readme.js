@@ -112,3 +112,39 @@ describe('README', () => {
         expect(README).to.not.match(/travis/i);
     });
 });
+
+describe('CHANGELOG', () => {
+    const {execFileSync} = require('child_process');
+    const script = path.join(__dirname, '..', 'scripts', 'release-notes.js');
+    const notes = v => execFileSync(process.execPath, [script, v], {encoding: 'utf8'});
+
+    const version = require('../package.json').version;
+
+    it('has a section for the version in package.json', () => {
+        // including when that version is a prerelease: 4.0.0-rc.1 documents
+        // 4.0.0, and matching only exact headings left the RC with no notes
+        expect(notes(version).trim()).to.not.equal('');
+    });
+
+    it('states the breaking changes in the release body', () => {
+        expect(notes(version)).to.match(/Breaking changes/i);
+    });
+
+    it('says which prerelease it is, and where it lands', () => {
+        if (version === version.replace(/[-+].*$/, '')) return;
+        expect(notes(version)).to.match(/prerelease of/);
+        expect(notes(version)).to.match(/`next`/);
+    });
+
+    it('fails rather than publishing a release nobody can read', () => {
+        expect(() => notes('99.0.0')).to.throw();
+    });
+
+    it('documents every breaking change the contract declares', () => {
+        const body = notes(version);
+        for (const claim of ['currency.decimal', 'findByPhoneNbr', 'cache',
+                             'Array.prototype', 'Türkiye', 'Vietnam',
+                             'United Kingdom'])
+            expect(body, claim + ' is not mentioned').to.include(claim);
+    });
+});
