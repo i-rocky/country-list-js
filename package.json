@@ -37,11 +37,8 @@
     "build": "gulp",
     "start": "micro server.js",
     "dev": "micro-dev",
-    "pretest": "npm install",
-    "test": "eslint *.js && mocha t/*.js",
+    "test": "eslint . && mocha t/*.js",
     "preversion": "npm run test",
-    "version": "",
-    "postversion": "git push --tags && npm publish",
     "debug": "node --inspect node_modules/.bin/micro-dev server.js"
   },
   "devDependencies": {
